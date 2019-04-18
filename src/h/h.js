@@ -1,6 +1,6 @@
 import * as r from 'ramda'
-import executeComponent from './executeComponent'
 import createElement from './createElement'
+import executeComponent from './executeComponent'
 
 const h = r.cond([
   [r.is(String), createElement],
