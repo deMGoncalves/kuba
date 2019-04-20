@@ -1,7 +1,8 @@
-import * as r from 'ramda'
+import is from 'ramda/src/is'
+import map from 'ramda/src/map'
 
 const mapTextNode = child =>
-  r.is(HTMLElement, child) ? child : document.createTextNode(child)
+  is(HTMLElement, child) ? child : document.createTextNode(child)
 
 export default (children) =>
-  r.map(mapTextNode, children)
+  map(mapTextNode, children)

@@ -1,6 +1,6 @@
-import * as r from 'ramda'
+import compose from 'ramda/src/compose'
 import appendChildren from './appendChildren'
 import extendAttributes from './extendAttributes'
 
 export default (tagName, attributes, children) =>
-  r.compose(appendChildren(children), extendAttributes(attributes))(document.createElement(tagName))
+  compose(appendChildren(children), extendAttributes(attributes))(document.createElement(tagName))

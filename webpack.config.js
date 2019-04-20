@@ -1,5 +1,4 @@
 const path = require('path')
-const { CheckerPlugin } = require('awesome-typescript-loader')
 
 module.exports = {
   entry: {
@@ -18,9 +17,6 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  plugins: [
-    new CheckerPlugin()
-  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'

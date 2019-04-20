@@ -1,6 +1,6 @@
-import * as r from 'ramda'
+import curry from 'ramda/src/curry'
 
 const setAttribute = (element, key, value) =>
   element.setAttribute(key, value)
 
-export default r.curry(setAttribute)
+export default curry(setAttribute)

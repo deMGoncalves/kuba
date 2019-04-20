@@ -1,9 +1,10 @@
-import * as r from 'ramda'
+import curry from 'ramda/src/curry'
+import forEach from 'ramda/src/forEach'
 import mapTextNode from './mapTextNode'
 
 const appendChildren = (children, element) => {
-  r.forEach(child => element.appendChild(child), mapTextNode(children))
+  forEach(child => element.appendChild(child), mapTextNode(children))
   return element
 }
 
-export default r.curry(appendChildren)
+export default curry(appendChildren)
