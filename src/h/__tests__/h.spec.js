@@ -1,18 +1,18 @@
 import h from '../'
 
-test('Deve retornar um DIV quando executar a funcao h passando o tagName div', () => {
+test('Retornar um elemento div quando executar a funcao h passando parametro "div"', () => {
   expect(h('div')).toEqual(<div />)
 })
 
-test('Deve retornar um P quando executar a funcao h passando o tagName p', () => {
+test('Retornar um elemento p quando executar a funcao h passando o parametro "p"', () => {
   expect(h('p')).toEqual(<p />)
 })
 
-test('Deve retornar um DIV com o id johzao quando executar a funcao h passando atributo id johzao', () => {
+test('Retornar um elemento div com o id egual a johzao quando executar a funcao h passando o segundo parametro um objeto com o id', () => {
   expect(h('div', { id: 'johzao' })).toEqual(<div id='johzao' />)
 })
 
-test('Deve retornar um P com a classe johzao quando executar a funcao h passando o atributo class johzao', () => {
+test('Retornar um elemento p com a classe egual a johzao quando executar a funcao h passando o segundo parametro um objeto com a classe', () => {
   expect(h('p', { class: 'johzao' })).toEqual(<p class='johzao' />)
 })
 
