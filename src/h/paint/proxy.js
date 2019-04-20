@@ -1,4 +1,5 @@
-import { is, prop } from '../../share'
+import is from 'ramda/src/is'
+import prop from 'ramda/src/prop'
 import hook from './hook'
 
 export default (target, Component) =>

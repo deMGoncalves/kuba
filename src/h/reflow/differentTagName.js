@@ -1,4 +1,5 @@
-import { different } from '../../share'
+import equals from 'ramda/src/equals'
+import not from 'ramda/src/not'
 
 export default (element, vElement) =>
-  different(element.tagName, vElement.tagName)
+  not(equals(element.tagName, vElement.tagName))

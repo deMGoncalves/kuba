@@ -1,4 +1,4 @@
-import { has, not } from '../../share'
+import not from 'ramda/src/not'
 
 export default (vElement) =>
-  not(has(vElement))
+  not(!!vElement)
