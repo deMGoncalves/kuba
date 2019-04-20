@@ -6,12 +6,12 @@ import appendChild from './appendChild'
 import remove from './remove'
 import replaceChild from './replaceChild'
 import replaceElement from './replaceElement'
-import replaceTextNode from './replaceTextNode'
+import setTextContent from './setTextContent'
 
 export default cond([
   [(element) => not(!!element), appendChild],
   [(_, vElement) => not(!!vElement), remove],
+  [(element) => equals(element.nodeType, 3), setTextContent],
   [(element, vElement) => not(equals(element.tagName, vElement.tagName)), replaceChild],
-  [(element) => equals(element.nodeType, 3), replaceTextNode],
   [T, replaceElement]
 ])
