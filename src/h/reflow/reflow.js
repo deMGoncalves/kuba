@@ -1,9 +1,9 @@
 import cond from 'ramda/src/cond'
+import not from 'ramda/src/not'
 import T from 'ramda/src/T'
-import appendVElement from './appendVElement'
+import appendChild from './appendChild'
 import differentTagName from './differentTagName'
 import isTextNode from './isTextNode'
-import notHasElement from './notHasElement'
 import notHasVElement from './notHasVElement'
 import removeElement from './removeElement'
 import replaceChild from './replaceChild'
@@ -11,7 +11,7 @@ import replaceElement from './replaceElement'
 import replaceTextNode from './replaceTextNode'
 
 export default cond([
-  [notHasElement, appendVElement],
+  [(element) => not(!!element), appendChild],
   [notHasVElement, removeElement],
   [differentTagName, replaceChild],
   [isTextNode, replaceTextNode],
