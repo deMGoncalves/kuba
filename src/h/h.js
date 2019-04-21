@@ -3,9 +3,10 @@ import flatten from 'ramda/src/flatten'
 import is from 'ramda/src/is'
 import createElement from './createElement'
 import executeComponent from './executeComponent'
+import isTagName from './isTagName'
 
 const h = cond([
-  [is(String), createElement],
+  [isTagName, createElement],
   [is(Function), executeComponent]
 ])
 
