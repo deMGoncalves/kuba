@@ -1,13 +1,13 @@
 import cond from 'ramda/src/cond'
 import flatten from 'ramda/src/flatten'
-import is from 'ramda/src/is'
+import T from 'ramda/src/T'
 import createElement from './createElement'
 import executeComponent from './executeComponent'
 import isTagName from './isTagName'
 
 const h = cond([
   [isTagName, createElement],
-  [is(Function), executeComponent]
+  [T, executeComponent]
 ])
 
 export default (tagNameOrComponent, attributes, ...children) =>
