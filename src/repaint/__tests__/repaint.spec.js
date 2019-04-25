@@ -1,5 +1,4 @@
-import h from '../../h'
-import paint from '../../paint'
+import h, { paint } from '../../h'
 import repaint from '../'
 
 const Component = (attrs) =>
