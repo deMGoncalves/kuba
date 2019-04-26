@@ -2,7 +2,7 @@
   "name": "exo",
   "version": "1.0.0",
   "description": "Simples, pequeno e imperfeito - Uma visão alem da programação",
-  "main": "dist/exo.js",
+  "main": "index.js",
   "scripts": {
     "exo:build": "webpack",
     "exo:test": "jest --verbose",
