@@ -4,7 +4,7 @@ import mapComponent from './mapComponent'
 import mapTextNode from './mapTextNode'
 
 const appendChildren = (children, element) => {
-  forEach(child => element.appendChild(child), mapComponent(mapTextNode(children)))
+  forEach(child => element.appendChild(child), mapTextNode(mapComponent(children)))
   return element
 }
 
