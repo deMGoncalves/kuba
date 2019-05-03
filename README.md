@@ -15,10 +15,10 @@ Essas instruções farão com que você tenha uma cópia do projeto em execuçã
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+O que você precisa instalar o [Node](https://nodejs.org/en/) para executar este framework, segue versão que estou usando neste momento
 
 ```
-Give examples
+Latest LTS Version: 10.15.3 (includes npm 6.4.1)
 ```
 
 ### Installing
