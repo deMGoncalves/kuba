@@ -11,7 +11,7 @@ Este é meu jeito de programar
 
 ## Getting Started
 
-Essas instruções farão com que você tenha uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste. Veja a implantação de notas sobre como implantar o projeto em um sistema ativo.
+Essas instruções farão com que você tenha uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste. Veja a implantação de notas sobre como implantar o projeto em um sistema ativo
 
 ### Prerequisites
 
@@ -23,21 +23,21 @@ Latest LTS Version: 10.15.3 (includes npm 6.4.1)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Uma série passo a passo de exemplos que informam como obter um ambiente de desenvolvimento em execução
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Quero usar no meu projeto
 
 ```
-until finished
+npm install https://github.com/oneoffjs/exo.git --save
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Quero contribuir
+
+```
+git clone https://github.com/oneoffjs/exo.git
+cd exo
+npm install
+```
 
 ## Running the tests
 
