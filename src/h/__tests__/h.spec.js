@@ -65,3 +65,22 @@ test('Retorna um Component quando executar a funcao h passando uma funcao como p
 
   expect(h(Name, { name: 'Johzao' })).toEqual(<p>Johzao</p>)
 })
+
+test('Retorna um componente select com tres options quando executar a funcao h', () => {
+  const Component = (props) =>
+    <select onChange={() => null}>
+      <option value='' />
+      <option value='P'>P</option>
+      <option value='m'>M</option>
+      <option value='g'>G</option>
+    </select>
+
+  expect(Component()).toEqual(
+    <select>
+      <option value='' />
+      <option value='P'>P</option>
+      <option value='m'>M</option>
+      <option value='g'>G</option>
+    </select>
+  )
+})
