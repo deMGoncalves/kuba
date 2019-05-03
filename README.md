@@ -6,6 +6,7 @@
 # exo
 
 > JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido pra você!
+
 Este é meu jeito de programar
 
 ## Getting Started
