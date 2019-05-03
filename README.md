@@ -3,10 +3,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/oneoffjs/exo.svg)](https://github.com/oneoffjs/exo/stargazers)
 [![GitHub license](https://img.shields.io/github/license/oneoffjs/exo.svg)](https://github.com/oneoffjs/exo/blob/master/LICENSE)
 
-# EXO
-Simples, pequeno e imperfeito. Uma visão alem da programação
+# exo
 
-> JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido pra você! E este é jeito que faz sentido para mim
+> JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido pra você!
+Este é meu jeito de programar
 
 ## Getting Started
 
