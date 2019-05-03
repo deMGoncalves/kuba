@@ -41,22 +41,22 @@ npm install
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Os testes estão dividido em duas etapas
 
-### Break down into end to end tests
+### Unit tests
 
-Explain what these tests test and why
+Teste unitario do hyperscript, paint e repaint
 
 ```
-Give an example
+npm run exo:test
 ```
 
 ### And coding style tests
 
-Explain what these tests test and why
+Teste de estilo, padrão standard
 
 ```
-Give an example
+npm run exo:lint
 ```
 
 ## Deployment
