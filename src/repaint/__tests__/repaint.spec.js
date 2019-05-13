@@ -13,7 +13,7 @@ class Counter {
     return this.__score__
   }
 
-  constructor (attrs) {
+  constructor (attrs = {}) {
     this.__score__ = attrs.score || 0
     return this
   }
