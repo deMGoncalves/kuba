@@ -1,3 +1,3 @@
 test('h', () => {
-  expect(true).toBeTruth()
+  expect(true).toBeTruthy()
 })

@@ -12,5 +12,9 @@ export default (target, Component, children) => {
     }
   })
 
+  Object.assign(target.__element__, {
+    __target__: target
+  })
+
   return target.__element__
 }
