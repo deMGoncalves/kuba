@@ -1,5 +1,2 @@
-export default (element, vElement, parent) => {
-  console.log('appendChild', element, parent)
-  console.log('appendChild', vElement, vElement.onclick)
+export default (element, vElement, parent) =>
   parent.appendChild(vElement)
-}

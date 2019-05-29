@@ -1,3 +1,3 @@
-test('repaint', () => {
+test('reflow', () => {
   expect(true).toBeTruthy()
 })

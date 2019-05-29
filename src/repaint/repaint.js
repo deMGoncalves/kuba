@@ -4,7 +4,7 @@ export default (target, _, descriptor) => {
   Object.assign(descriptor, {
     value (...args) {
       const result = method.call(this, ...args)
-      this.__reflow__ && this.__reflow__()
+      this.__reflow__()
       return result
     }
   })

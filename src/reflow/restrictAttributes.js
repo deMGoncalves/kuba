@@ -1,6 +1,10 @@
+import removeEventListener from './removeEventListener'
+import addEventListener from './addEventListener'
+import setAttribute from './setAttribute'
+
 export default (element, vElement) => {
-  (element.__events__ || []).forEach((eventName) => { element[eventName] = undefined });
-  (vElement.__events__ || []).forEach((eventName) => { element[eventName] = vElement[eventName] });
-  [].slice.call(vElement.attributes).forEach(({ name, value }) => element.setAttribute(name, value))
+  removeEventListener(element)
+  addEventListener(element, vElement)
+  setAttribute(element, vElement)
   return element
 }
