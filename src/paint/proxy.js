@@ -2,8 +2,8 @@ import is from 'ramda/src/is'
 import prop from 'ramda/src/prop'
 import hook from './hook'
 
-export default (target, Component) =>
-  new Proxy(
+export default (target, Component) => {
+  return new Proxy(
     (_, children) =>
       hook(target, Component, children),
     {
@@ -16,3 +16,4 @@ export default (target, Component) =>
       }
     }
   )
+}
