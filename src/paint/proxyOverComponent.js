@@ -1,20 +1,10 @@
-import reflow from '../reflow'
+import cond from 'ramda/src/cond'
+import T from 'ramda/src/T'
+import createHookReflow from './createHookReflow'
+import createVElementToCompare from './createVElementToCompare'
+import hasElementInTarget from './hasElementInTarget'
 
-export default (target, Component, children) => {
-  if (target.__element__) {
-    return Component(target, children)
-  }
-
-  Object.assign(target, {
-    __element__: Component(target, children),
-    __reflow__ () {
-      reflow(this.__element__, Component(this, children))
-    }
-  })
-
-  Object.assign(target.__element__, {
-    __target__: target
-  })
-
-  return target.__element__
-}
+export default cond([
+  [hasElementInTarget, createVElementToCompare],
+  [T, createHookReflow]
+])

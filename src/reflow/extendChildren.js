@@ -1,13 +1,12 @@
 import greaterNumberOfChildren from './greaterNumberOfChildren'
 import reflow from './reflow'
-import reflowChildren from './reflowChildren'
 
 export default (element, vElement) => {
-  const numberOfChildren = greaterNumberOfChildren(element, vElement)
+  let children = Array(greaterNumberOfChildren(element, vElement)).toString().split(',')
 
-  for (var i = 0; i < numberOfChildren; i++) {
-    reflow(element.childNodes[i], vElement.childNodes[i], element)
-  }
+  children
+    .map((_, i) => [element.childNodes[i], vElement.childNodes[i], element])
+    .forEach((args) => reflow(...args))
 
   return element
 }
