@@ -3,60 +3,54 @@
 [![GitHub stars](https://img.shields.io/github/stars/oneoffjs/exo.svg)](https://github.com/oneoffjs/exo/stargazers)
 [![GitHub license](https://img.shields.io/github/license/oneoffjs/exo.svg)](https://github.com/oneoffjs/exo/blob/master/LICENSE)
 
-# exo
-
-> JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido pra você!
-
-Este é meu jeito de programar
-
 ## Getting Started
 
-Essas instruções farão com que você tenha uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste. Veja a implantação de notas sobre como implantar o projeto em um sistema ativo
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-O que você precisa instalar o [Node](https://nodejs.org/en/) para executar este framework, segue versão que estou usando neste momento
+What things you need to install the software and how to install them
 
 ```
-Latest LTS Version: 10.15.3 (includes npm 6.4.1)
+Give examples
 ```
 
 ### Installing
 
-Uma série passo a passo de exemplos que informam como obter um ambiente de desenvolvimento em execução
+A step by step series of examples that tell you how to get a development env running
 
-Quero usar no meu projeto
-
-```
-npm install https://github.com/oneoffjs/exo.git --save
-```
-
-Quero contribuir
+Say what the step will be
 
 ```
-git clone https://github.com/oneoffjs/exo.git
-cd exo
-npm install
+Give the example
 ```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
-Os testes estão dividido em duas etapas
+Explain how to run the automated tests for this system
 
-### Unit tests
+### Break down into end to end tests
 
-Teste unitario do hyperscript, paint e repaint
+Explain what these tests test and why
 
 ```
-npm run exo:test
+Give an example
 ```
 
 ### And coding style tests
 
-Teste de estilo, padrão standard
+Explain what these tests test and why
 
 ```
-npm run exo:lint
+Give an example
 ```
 
 ## Deployment
@@ -85,7 +79,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
