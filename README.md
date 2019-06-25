@@ -7,6 +7,23 @@ Simples, pequeno e imperfeito. Uma visão além da programação.
 [![GitHub stars](https://img.shields.io/github/stars/oneoffjs/exo.svg)](https://github.com/oneoffjs/exo/stargazers)
 [![GitHub license](https://img.shields.io/github/license/oneoffjs/exo.svg)](https://github.com/oneoffjs/exo/blob/master/LICENSE)
 
+Se você procura por um **Guia de Estilo**, **Design Pattern**, **Code Pattern**, **Anti Pattern** e **Arquitetura com Vanilla JS**, então siga em frente! Estes estilos são baseados em minha experiência com desenvolvimento com **JavaScript**.
+
+> "*A sintropia, também designada negentropia - entropia negativa, é o contrário de entropia (que é a medida do grau de desorganização do sistema), ou seja, mede a organização das partículas do sistema. Um elemento negentrópico é aquele que contribui para o equilíbrio e para o desenvolvimento organizacional.*" [Ernst Gotsch](http://agendagotsch.com/)
+
+Enquanto a entropia é a medida da desordem ou da imprevisibilidade da informação, a **sintropia é a função que representa o grau de ordem e de previsibilidade existente num sistema**.
+
+> "*JavaScript é como uma folha em branco - A liberdade de programar do jeito que lhe faça sentido! - Este é meu jeito de programar*" [cleber.programmer](https://github.com/oneoffjs)
+
+A proposta deste repositório é fornecer uma direção na construção de **Arquitetura JavaScript** em **Aplicações de Larga Escala**, mostrando convenções que uso, e o mais importante, porque eu as escolhi.
+
+Embora esta estruturação explique o **o quê**, **porque** e **como**, acho útil ver tudo isso em prática. Este repositório é acompanhado de uma aplicação de exemplo que segue estes estilos e **Padrões**.
+
+. [Vagão Madrinha](https://github.com/oneoffjs/vagao-madrinha)
+. [Repetição Espaçada](https://github.com/oneoffjs/repeticao-espacada)
+
+Para eventuais erros de digitação e/ou tradução, favor enviar um pull-request!
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
