@@ -77,9 +77,9 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Vanilla JS](http://vanilla-js.com/) - Vanilla JS is a fast, lightweight, cross-platform framework
+for building incredible, powerful JavaScript applications
+* [Ramda](https://ramdajs.com) - A practical functional library for JavaScript programmers.
 
 ## Contributing
 
