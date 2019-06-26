@@ -93,7 +93,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * **Cleber de Moraes Gonçalves** - *Initial Work* - [oneoffjs](https://github.com/oneoffjs)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Veja também a lista de [colaboradores](https://github.com/oneoffjs/exo/graphs/contributors) que participaram deste projeto.
 
 ## License
 
