@@ -17,10 +17,11 @@ Enquanto a entropia é a medida da desordem ou da imprevisibilidade da informaç
 
 A proposta deste repositório é fornecer uma direção na construção de **Arquitetura JavaScript** em **Aplicações de Larga Escala**, mostrando convenções que uso, e o mais importante, porque eu as escolhi.
 
-Embora esta estruturação explique o **o quê**, **porque** e **como**, acho útil ver tudo isso em prática. Este repositório é acompanhado de uma aplicação de exemplo que segue estes estilos e **Padrões**.
+Embora esta estruturação explique o **o quê**, **porque** e **como**, acho útil ver tudo isso em prática. Este repositório é acompanhado de alguns links de exemplo que segue estes **Padrões**.
 
-. [Vagão Madrinha](https://github.com/oneoffjs/vagao-madrinha)
-. [Repetição Espaçada](https://github.com/oneoffjs/repeticao-espacada)
+  * [Vagão Madrinha](https://github.com/oneoffjs/vagao-madrinha)
+  * [Repetição Espaçada](https://github.com/oneoffjs/repeticao-espacada)
+  * [Desafio Frontend VAGAS.com](https://github.com/oneoffjs/desafio-front-end)
 
 Para eventuais erros de digitação e/ou tradução, favor enviar um pull-request!
 
