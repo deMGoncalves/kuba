@@ -101,6 +101,5 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](L
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* A minha família (Pai, Mãe, Irmã, Esposa e Filho)
+* E todos aques que usam o Exo nos seus projetos
