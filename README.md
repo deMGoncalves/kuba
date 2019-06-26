@@ -38,9 +38,7 @@ apt-get install git
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Uma série passo a passo de exemplos que informam como obter um ambiente de desenvolvimento em execução
 
 ```
 Give the example
