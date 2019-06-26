@@ -97,7 +97,7 @@ Veja também a lista de [colaboradores](https://github.com/oneoffjs/exo/graphs/c
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes
 
 ## Acknowledgments
 
