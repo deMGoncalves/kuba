@@ -47,22 +47,18 @@ npm install
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Temos duas etapas de teste, os teste unitários e estilos de código e que ambos serão executados antes de executar a publicacao de suas alterações no Git.
 
-### Break down into end to end tests
-
-Explain what these tests test and why
+### Unit tests
 
 ```
-Give an example
+npm test
 ```
 
 ### And coding style tests
 
-Explain what these tests test and why
-
 ```
-Give an example
+npm run lint
 ```
 
 ## Deployment
