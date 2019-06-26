@@ -41,16 +41,15 @@ apt-get install git
 Uma série passo a passo de exemplos que informam como obter um ambiente de desenvolvimento em execução
 
 ```
-Give the example
+git clone https://github.com/oneoffjs/exo.git
+cd exo
 ```
 
-And repeat
+Para instalar as dependências do Exo basta executar o comando abaixo:
 
 ```
-until finished
+npm install
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
