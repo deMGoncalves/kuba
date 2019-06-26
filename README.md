@@ -13,8 +13,6 @@ Se você procura por um **Guia de Estilo**, **Design Pattern**, **Code Pattern**
 
 Enquanto a entropia é a medida da desordem ou da imprevisibilidade da informação, a **sintropia é a função que representa o grau de ordem e de previsibilidade existente num sistema**.
 
-> "*JavaScript é como uma folha em branco - A liberdade de programar do jeito que lhe faça sentido! - Este é meu jeito de programar*" [cleber.engineer](https://github.com/oneoffjs)
-
 A proposta deste repositório é fornecer uma direção na construção de **Arquitetura JavaScript** em **Aplicações de Larga Escala**, mostrando convenções que uso, e o mais importante, porque eu as escolhi.
 
 Embora esta estruturação explique o **o quê**, **porque** e **como**, acho útil ver tudo isso em prática. Este repositório é acompanhado de alguns links de exemplo que segue estes **Padrões**.
