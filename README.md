@@ -29,10 +29,11 @@ Essas instruções farão com que você tenha uma cópia do projeto em execuçã
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Basicamente você precisa do Node e Git para seguir ao próximo passo
 
 ```
-Give examples
+apt-get install nodejs
+apt-get install git
 ```
 
 ### Installing
