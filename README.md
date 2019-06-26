@@ -102,4 +102,4 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](L
 ## Acknowledgments
 
 * A minha família (Pai, Mãe, Irmã, Esposa e Filho)
-* E todos aques que usam o Exo nos seus projetos
+* E todos aqueles que usam o Exo em seus projetos
