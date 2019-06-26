@@ -91,7 +91,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Cleber de Moraes Gonçalves** - *Initial Work* - [oneoffjs](https://github.com/oneoffjs)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
