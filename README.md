@@ -23,10 +23,6 @@ Simples, pequeno e imperfeito. Uma visão além da programação.
 
 Se você procura por um **Guia de Estilo**, **Design Pattern**, **Code Pattern**, **Anti Pattern** e **Arquitetura com Vanilla JS**, então siga em frente! Estes estilos são baseados em minha experiência com desenvolvimento com **JavaScript**.
 
-> "*A sintropia, também designada negentropia - entropia negativa, é o contrário de entropia (que é a medida do grau de desorganização do sistema), ou seja, mede a organização das partículas do sistema. Um elemento negentrópico é aquele que contribui para o equilíbrio e para o desenvolvimento organizacional.*" [Ernst Gotsch](http://agendagotsch.com/)
-
-Enquanto a entropia é a medida da desordem ou da imprevisibilidade da informação, a **sintropia é a função que representa o grau de ordem e de previsibilidade existente num sistema**.
-
 A proposta deste repositório é fornecer uma direção na construção de **Arquitetura JavaScript** em **Aplicações de Larga Escala**, mostrando convenções que uso, e o mais importante, porque eu as escolhi.
 
 Para eventuais erros de digitação e/ou tradução, favor enviar um pull-request!
