@@ -7,11 +7,16 @@ Simples, pequeno e imperfeito. Uma visão além da programação.
 [![GitHub stars](https://img.shields.io/github/stars/oneoffjs/exo.svg)](https://github.com/oneoffjs/exo/stargazers)
 [![GitHub license](https://img.shields.io/github/license/oneoffjs/exo.svg)](https://github.com/oneoffjs/exo/blob/master/LICENSE)
 
+Se você procura por um **Guia de Estilo**, **Design Pattern**, **Code Pattern**, **Anti Pattern** e **Arquitetura com Vanilla JS**, então siga em frente! Estes estilos são baseados em minha experiência com desenvolvimento com **JavaScript**.
+
+A proposta deste repositório é fornecer uma direção na construção de **Arquitetura JavaScript** em **Aplicações de Larga Escala**, mostrando convenções que uso, e o mais importante, porque eu as escolhi.
+
+Para eventuais erros de digitação e/ou tradução, favor enviar um pull-request!
+
 -------
 <p align="center">
   <a href="#getting-started">Getting Started</a> &bull;
-  <a href="#prerequisites">Prerequisites</a> &bull;
-  <a href="#installing">Installing</a> &bull;
+  <a href="#running-the-tests">Running the tests</a> &bull;
   <a href="#deployment">Deployment</a> &bull;
   <a href="#built-with">Built With</a> &bull;
   <a href="#contributing">Contributing</a> &bull;
@@ -20,12 +25,6 @@ Simples, pequeno e imperfeito. Uma visão além da programação.
   <a href="#license">License</a> &bull;
   <a href="#acknowledgments">Acknowledgments</a>
 </p>
-
-Se você procura por um **Guia de Estilo**, **Design Pattern**, **Code Pattern**, **Anti Pattern** e **Arquitetura com Vanilla JS**, então siga em frente! Estes estilos são baseados em minha experiência com desenvolvimento com **JavaScript**.
-
-A proposta deste repositório é fornecer uma direção na construção de **Arquitetura JavaScript** em **Aplicações de Larga Escala**, mostrando convenções que uso, e o mais importante, porque eu as escolhi.
-
-Para eventuais erros de digitação e/ou tradução, favor enviar um pull-request!
 
 ## Getting Started
 
