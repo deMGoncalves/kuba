@@ -7,6 +7,20 @@ Simples, pequeno e imperfeito. Uma visão além da programação.
 [![GitHub stars](https://img.shields.io/github/stars/oneoffjs/exo.svg)](https://github.com/oneoffjs/exo/stargazers)
 [![GitHub license](https://img.shields.io/github/license/oneoffjs/exo.svg)](https://github.com/oneoffjs/exo/blob/master/LICENSE)
 
+-------
+<p align="center">
+  <a href="#getting-started">Getting Started</a> &bull;
+  <a href="#prerequisites">Prerequisites</a> &bull;
+  <a href="#installing">Installing</a> &bull;
+  <a href="#deployment">Deployment</a> &bull;
+  <a href="#built-with">Built With</a> &bull;
+  <a href="#contributing">Contributing</a> &bull;
+  <a href="#versioning">Versioning</a> &bull;
+  <a href="#authors">Authors</a> &bull;
+  <a href="#license">License</a> &bull;
+  <a href="#acknowledgments">Acknowledgments</a>
+</p>
+
 Se você procura por um **Guia de Estilo**, **Design Pattern**, **Code Pattern**, **Anti Pattern** e **Arquitetura com Vanilla JS**, então siga em frente! Estes estilos são baseados em minha experiência com desenvolvimento com **JavaScript**.
 
 > "*A sintropia, também designada negentropia - entropia negativa, é o contrário de entropia (que é a medida do grau de desorganização do sistema), ou seja, mede a organização das partículas do sistema. Um elemento negentrópico é aquele que contribui para o equilíbrio e para o desenvolvimento organizacional.*" [Ernst Gotsch](http://agendagotsch.com/)
