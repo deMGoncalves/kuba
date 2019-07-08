@@ -1,4 +1,4 @@
-# Exo
+# Rex.JS
 
 Simples, pequeno e imperfeito. Uma visão além da programação.
 
