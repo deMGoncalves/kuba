@@ -10,7 +10,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint src/**/*.js"
+      "pre-commit": "eslint src/**/*.js",
+      "pre-push": "jest"
     }
   },
   "author": "Cleber de Moraes Gonçalves <cleber.engineer@hotmail.com>",
