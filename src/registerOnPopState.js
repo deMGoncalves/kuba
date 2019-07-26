@@ -1,3 +1,3 @@
-window.addEventListener('popstate', (e) => {
-  console.log(e)
+window.addEventListener('popstate',  (event) => {
+  console.log(event)
 })
