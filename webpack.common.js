@@ -10,7 +10,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'OneoffJS',
-      filename: './index.html'
+      filename: './src/index.html'
     })
   ],
   module: {
