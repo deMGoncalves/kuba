@@ -1,8 +1,4 @@
+import h from './h'
 import './registerSW.js'
-import './registerOnPopState.js'
 
-let isDone = false
-
-export {
-  isDone
-}
+document.body.appendChild(<h1>Rex.JS</h1>)

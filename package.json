@@ -50,6 +50,7 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "ramda": "^0.26.1"
   }
 }
