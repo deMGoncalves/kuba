@@ -1,6 +1,6 @@
 import { isDone } from '../'
 
-const timeout = 20000
+const timeout = 30000
 
 describe('Index', () => {
   beforeAll(async () => {
