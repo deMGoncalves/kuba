@@ -3,8 +3,9 @@ import { isDone } from '../'
 const timeout = 30000
 
 describe('Index', () => {
-  beforeAll(async () => {
-    await page.goto('http:localhost:9000')
+  beforeEach(async () => {
+    await page.goto('http:localhost:9000', { timeout })
+    await page.awaitForSelector('body')
   }, timeout)
 
   test('Shound display "OneoffJS" text on page', async () => {
