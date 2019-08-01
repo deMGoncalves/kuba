@@ -88,4 +88,4 @@ typings/
 .dynamodb/
 
 # Build files
-dist/
+public/

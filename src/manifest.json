@@ -1,0 +1,19 @@
+{
+  "background_color": "#0A0A0A",
+  "description": "Simples, pequeno e imperfeito. Uma visão além da programação",
+  "display": "standalone",
+  "lang": "Portuguese",
+	"name": "Rex.JS",
+  "orientation": "portrait",
+	"scope": "/",
+  "short_name": "Rex.JS",
+	"start_url": "https://rex-js.web.app",
+	"theme_color": "#0A0A0A",
+	"icons": [
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+}
+  ]

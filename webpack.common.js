@@ -1,6 +1,9 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
+const SocialTags = require('social-tags-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -8,10 +11,62 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      title: 'OneoffJS'
-    })
+		new HtmlWebpackPlugin({
+			meta: {
+				description: 'Simples, pequeno e imperfeito. Uma visão além da programação'
+			},
+			template: './src/index.html',
+			title: 'Rex.JS · O bom e velho amigo do programador'
+		}),
+    new FaviconsWebpackPlugin({
+			logo: './src/Rex.JS.png',
+			prefix: 'icons-[hash]/',
+			emitStats: true,
+			statsFilename: 'iconstats-[hash].json',
+			persistentCache: true,
+			inject: true,
+			background: '#0A0A0A',
+			title: 'Rex.JS',
+			icons: {
+				android: true,
+				appleIcon: true,
+				appleStartup: true,
+				coast: true,
+				favicons: true,
+				firefox: true,
+				opengraph: true,
+				twitter: true,
+				yandex: true,
+				windows: true
+			}
+		}),
+		new SocialTags({
+			appUrl: 'https://rex-js.web.app',
+			facebook: {
+				'fb:app_id': "",
+				'og:url': "https://rex-js.web.app",
+				'og:type': "website",
+				'og:title': "Rex · O bom e velhor amigo do programador",
+				'og:image': 'src/favicon.png',
+				'og:description': "Simples pequeno e imperfeito. Uma visão além da programação",
+				'og:site_name': "Rex.JS",
+				'og:locale': "pt_BR",
+				'og:article:author': "Cleber de Moraes Gonçalves"
+			},
+			twitter: {
+				"twitter:card": "summary",
+				"twitter:site": "@zuen",
+				"twitter:creator": "@zuen",
+				"twitter:url": "http://www.zuen.com.br",
+				"twitter:title": "Zuen · Venha economizar com a gente",
+				"twitter:description": "Reunimos as melhores ofertas da internet, venha economizar com a gente",
+				"twitter:image": './src/favicon.png'
+			}
+		}),
+		new CopyPlugin([
+			'./src/Rex.JS.png',
+			'./src/manifest.json'
+		])
   ],
   module: {
     rules: [
@@ -52,11 +107,16 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias: {
+      '@h': path.resolve(__dirname, 'src/infra/h'),
+      '@gps': path.resolve(__dirname, 'src/infra/gps')
+    }
   },
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'public'),
+		publicPath: '/'
   },
   optimization: {
     moduleIds: 'hashed',

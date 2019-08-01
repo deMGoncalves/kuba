@@ -1,4 +1,4 @@
-import h from './h'
 import './registerSW.js'
+import './index.css'
 
-document.body.appendChild(<h1>Rex.JS</h1>)
+import './application/home.jsx'
