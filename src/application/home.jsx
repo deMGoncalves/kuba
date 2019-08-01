@@ -3,7 +3,7 @@ import gps from '@gps'
 import RexJS from '../favicon.png'
 import './style.css'
 
-gps(/^\/$/, async () => {
+gps(/^\/$/, () =>
   document.body.appendChild(
     <main>
       <img src={ RexJS } alt="Rex.JS" />
@@ -11,4 +11,4 @@ gps(/^\/$/, async () => {
       <p>Simples, pequeno e imperfeito. Uma visão além da programação</p>
     </main>
   )
-})
+)
