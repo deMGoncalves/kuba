@@ -19,7 +19,7 @@ module.exports = {
 			title: 'Rex.JS · O bom e velho amigo do programador'
 		}),
     new FaviconsWebpackPlugin({
-			logo: './src/Rex.JS.png',
+			logo: './src/favicon.png',
 			prefix: 'icons-[hash]/',
 			emitStats: true,
 			statsFilename: 'iconstats-[hash].json',
@@ -55,16 +55,16 @@ module.exports = {
 			},
 			twitter: {
 				"twitter:card": "summary",
-				"twitter:site": "@zuen",
-				"twitter:creator": "@zuen",
-				"twitter:url": "http://www.zuen.com.br",
-				"twitter:title": "Zuen · Venha economizar com a gente",
-				"twitter:description": "Reunimos as melhores ofertas da internet, venha economizar com a gente",
+				"twitter:site": "@rexjs",
+				"twitter:creator": "@rexjs",
+				"twitter:url": "https://rex-js.web.app",
+				"twitter:title": "Rex.JS · O bom e velho amigo do programador",
+				"twitter:description": "Simples, pequeno e imperfeito. Uma visão além da programação",
 				"twitter:image": './src/favicon.png'
 			}
 		}),
 		new CopyPlugin([
-			'./src/Rex.JS.png',
+			'./src/favicon.png',
 			'./src/manifest.json'
 		])
   ],

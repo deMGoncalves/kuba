@@ -1,6 +1,6 @@
 import h from '@h'
 import gps from '@gps'
-import RexJS from '../Rex.JS.png'
+import RexJS from '../favicon.png'
 import './style.css'
 
 gps(/^\/$/, async () => {
