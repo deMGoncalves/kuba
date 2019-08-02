@@ -1,3 +1,5 @@
+import h from '../'
+
 test('h', () => {
-  expect(true).toBeTruthy()
+  expect(h).toBeDefined()
 })
