@@ -51,3 +51,27 @@ test('Deve retornar o resultado do component quando o parametro tagNameOrCompone
   expect(executeComponent).toHaveBeenCalledTimes(1)
   expect(executeComponent).toHaveBeenCalledWith(component, {}, [])
 })
+
+test('Os atributos do elemento e/ou componente devem ser clonados para evitar a referancia', () => {
+  const attributes = {}
+
+  isTagName.mockReset()
+  isTagName.mockReturnValue(true)
+
+  createElement.mockReset()
+  createElement.mockImplementation((tagName, attrs, children) => {
+    expect(tagName).toBe('div')
+    expect(attrs).not.toBe(attributes)
+    expect(children).toEqual([])
+  })
+
+  h('div', attributes)
+
+  expect(isTagName).toHaveBeenCalled()
+  expect(isTagName).toHaveBeenCalledTimes(1)
+  expect(isTagName).toHaveBeenCalledWith('div')
+
+  expect(createElement).toHaveBeenCalled()
+  expect(createElement).toHaveBeenCalledTimes(1)
+  expect(createElement).toHaveBeenCalledWith('div', {}, [])
+})
