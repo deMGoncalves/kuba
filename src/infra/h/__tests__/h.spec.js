@@ -7,7 +7,7 @@ jest.mock('../createElement.js')
 jest.mock('../executeComponent.js')
 jest.mock('../isTagName.js')
 
-test('h', () => {
+test('O modulo de hyperscript deve ser exportado como default', () => {
   expect(h).toBeDefined()
 })
 
