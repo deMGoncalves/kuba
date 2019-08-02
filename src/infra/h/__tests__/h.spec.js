@@ -2,10 +2,12 @@ import h from '../'
 import createElement from '../createElement.js'
 import executeComponent from '../executeComponent.js'
 import isTagName from '../isTagName'
+import flatten from 'ramda/src/flatten'
 
 jest.mock('../createElement.js')
 jest.mock('../executeComponent.js')
 jest.mock('../isTagName.js')
+jest.mock('ramda/src/flatten')
 
 test('O modulo de hyperscript deve ser exportado como default', () => {
   expect(h).toBeDefined()
@@ -20,6 +22,9 @@ test('Deve criar um elemento quando o parametro tagNameOrComponent for uma strin
   createElement.mockReset()
   createElement.mockReturnValue(element)
 
+  flatten.mockReset()
+  flatten.mockReturnValue([])
+
   expect(h('div')).toEqual(element)
 
   expect(isTagName).toHaveBeenCalled()
@@ -29,6 +34,10 @@ test('Deve criar um elemento quando o parametro tagNameOrComponent for uma strin
   expect(createElement).toHaveBeenCalled()
   expect(createElement).toHaveBeenCalledTimes(1)
   expect(createElement).toHaveBeenCalledWith('div', {}, [])
+
+  expect(flatten).toHaveBeenCalled()
+  expect(flatten).toHaveBeenCalledTimes(1)
+  expect(flatten).toHaveBeenCalledWith([])
 })
 
 test('Deve retornar o resultado do component quando o parametro tagNameOrComponent for uma funcao', () => {
@@ -41,6 +50,9 @@ test('Deve retornar o resultado do component quando o parametro tagNameOrCompone
   executeComponent.mockReset()
   executeComponent.mockReturnValue(element)
 
+  flatten.mockReset()
+  flatten.mockReturnValue([])
+
   expect(h(component)).toEqual(element)
 
   expect(isTagName).toHaveBeenCalled()
@@ -50,6 +62,10 @@ test('Deve retornar o resultado do component quando o parametro tagNameOrCompone
   expect(executeComponent).toHaveBeenCalled()
   expect(executeComponent).toHaveBeenCalledTimes(1)
   expect(executeComponent).toHaveBeenCalledWith(component, {}, [])
+
+  expect(flatten).toHaveBeenCalled()
+  expect(flatten).toHaveBeenCalledTimes(1)
+  expect(flatten).toHaveBeenCalledWith([])
 })
 
 test('Os atributos do elemento e/ou componente devem ser clonados para evitar a referancia', () => {
@@ -65,6 +81,9 @@ test('Os atributos do elemento e/ou componente devem ser clonados para evitar a 
     expect(children).toEqual([])
   })
 
+  flatten.mockReset()
+  flatten.mockReturnValue([])
+
   h('div', attributes)
 
   expect(isTagName).toHaveBeenCalled()
@@ -74,4 +93,37 @@ test('Os atributos do elemento e/ou componente devem ser clonados para evitar a 
   expect(createElement).toHaveBeenCalled()
   expect(createElement).toHaveBeenCalledTimes(1)
   expect(createElement).toHaveBeenCalledWith('div', {}, [])
+
+  expect(flatten).toHaveBeenCalled()
+  expect(flatten).toHaveBeenCalledTimes(1)
+  expect(flatten).toHaveBeenCalledWith([])
+})
+
+test('Os elementos filhos serao passado como spread e devem ser achatados em um unico array', () => {
+  isTagName.mockReset()
+  isTagName.mockReturnValue(true)
+
+  createElement.mockReset()
+  createElement.mockImplementation((tagName, attrs, children) => {
+    expect(tagName).toBe('div')
+    expect(attrs).toEqual({})
+    expect(children).toEqual([1, 2, 3, 4])
+  })
+
+  flatten.mockReset()
+  flatten.mockReturnValue([1, 2, 3, 4])
+
+  h('div', {}, 1, [2, 3], 4)
+
+  expect(isTagName).toHaveBeenCalled()
+  expect(isTagName).toHaveBeenCalledTimes(1)
+  expect(isTagName).toHaveBeenCalledWith('div')
+
+  expect(createElement).toHaveBeenCalled()
+  expect(createElement).toHaveBeenCalledTimes(1)
+  expect(createElement).toHaveBeenCalledWith('div', {}, [1, 2, 3, 4])
+
+  expect(flatten).toHaveBeenCalled()
+  expect(flatten).toHaveBeenCalledTimes(1)
+  expect(flatten).toHaveBeenCalledWith([1, [2, 3], 4])
 })
