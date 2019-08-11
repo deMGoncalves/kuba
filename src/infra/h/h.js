@@ -1,6 +1,4 @@
-import cond from 'ramda/src/cond'
 import flatten from 'ramda/src/flatten'
-import T from 'ramda/src/T'
 import createElement from './createElement'
 import executeComponent from './executeComponent'
 import isTagName from './isTagName'
@@ -17,9 +15,8 @@ import isTagName from './isTagName'
  * @returns {Node} Elemento HTML
  */
 const h = (tagNameOrComponent, attributes, ...children) =>
-  cond([
-    [isTagName, createElement],
-    [T, executeComponent]
-  ])(tagNameOrComponent, { ...attributes }, flatten(children))
+  (isTagName(tagNameOrComponent)
+    ? createElement
+    : executeComponent)(tagNameOrComponent, { ...attributes }, flatten(children))
 
 export default h
