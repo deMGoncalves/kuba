@@ -14,9 +14,9 @@ import isTagName from './isTagName'
  * @args {array} children Elementos filhos
  * @returns {Node} Elemento HTML
  */
-const x = (tagNameOrComponent, attributes, ...children) =>
+const h = (tagNameOrComponent, attributes, ...children) =>
   (isTagName(tagNameOrComponent)
     ? createElement
     : executeComponent)(tagNameOrComponent, { ...attributes }, flatten(children))
 
-export default x
+export default h
