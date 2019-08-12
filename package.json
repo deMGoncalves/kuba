@@ -8,7 +8,10 @@
     "test": "jest"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": ["eslint src/**/*.js --fix", "git add"]
+    "src/**/*.{js,jsx}": [
+      "eslint src/**/* --ext .js,.jsx --fix",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
