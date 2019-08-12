@@ -7,9 +7,12 @@
     "start": "node server.js",
     "test": "jest"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": ["eslint src/**/** --fix", "git add"]
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint src/**/*.js",
+      "pre-commit": "lint-staged",
       "pre-push": "jest"
     }
   },
@@ -38,6 +41,7 @@
     "jest": "^24.8.0",
     "jest-puppeteer": "^4.3.0",
     "jsdom": "^15.1.1",
+    "lint-staged": "^9.2.1",
     "postcss-loader": "^3.0.0",
     "puppeteer": "^1.18.1",
     "social-tags-webpack-plugin": "^1.1.0",
