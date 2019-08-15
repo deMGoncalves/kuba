@@ -8,8 +8,8 @@
     "test": "jest"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint src/**/* --ext .js,.jsx --fix",
+    "*.{js,jsx}": [
+      "eslint src/**/*.{js,jsx}  --fix",
       "git add"
     ]
   },
@@ -37,7 +37,7 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-standard": "^4.0.0",
     "express": "^4.17.1",
-    "favicons-webpack-plugin": "0.0.9",
+    "favicons-webpack-plugin": "^1.0.0",
     "file-loader": "^4.1.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.1",

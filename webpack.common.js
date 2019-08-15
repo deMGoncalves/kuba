@@ -11,62 +11,62 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-		new HtmlWebpackPlugin({
-			meta: {
-				description: 'Simples, pequeno e imperfeito. Uma visão além da programação'
-			},
-			template: './src/index.html',
-			title: 'Rex.JS · O bom e velho amigo do programador'
-		}),
+    new HtmlWebpackPlugin({
+      meta: {
+        description: 'Simples, pequeno e imperfeito. Uma visão além da programação'
+      },
+      template: './src/index.html',
+      title: 'Rex.JS · O bom e velho amigo do programador'
+    }),
     new FaviconsWebpackPlugin({
-			logo: './src/favicon.png',
-			prefix: 'icons-[hash]/',
-			emitStats: true,
-			statsFilename: 'iconstats-[hash].json',
-			persistentCache: true,
-			inject: true,
-			background: '#0A0A0A',
-			title: 'Rex.JS',
-			icons: {
-				android: true,
-				appleIcon: true,
-				appleStartup: true,
-				coast: true,
-				favicons: true,
-				firefox: true,
-				opengraph: true,
-				twitter: true,
-				yandex: true,
-				windows: true
-			}
-		}),
-		new SocialTags({
-			appUrl: 'https://rex-js.web.app',
-			facebook: {
-				'fb:app_id': "",
-				'og:url': "https://rex-js.web.app",
-				'og:type': "website",
-				'og:title': "Rex · O bom e velhor amigo do programador",
-				'og:image': 'src/favicon.png',
-				'og:description': "Simples pequeno e imperfeito. Uma visão além da programação",
-				'og:site_name': "Rex.JS",
-				'og:locale': "pt_BR",
-				'og:article:author': "Cleber de Moraes Gonçalves"
-			},
-			twitter: {
-				"twitter:card": "summary",
-				"twitter:site": "@rexjs",
-				"twitter:creator": "@rexjs",
-				"twitter:url": "https://rex-js.web.app",
-				"twitter:title": "Rex.JS · O bom e velho amigo do programador",
-				"twitter:description": "Simples, pequeno e imperfeito. Uma visão além da programação",
-				"twitter:image": './src/favicon.png'
-			}
-		}),
-		new CopyPlugin([
-			'./src/favicon.png',
-			'./src/manifest.json'
-		])
+      logo: './src/favicon.png',
+      prefix: 'icons-[hash]/',
+      emitStats: true,
+      statsFilename: 'iconstats-[hash].json',
+      persistentCache: true,
+      inject: true,
+      background: '#0A0A0A',
+      title: 'Rex.JS',
+      icons: {
+        android: true,
+        appleIcon: true,
+        appleStartup: true,
+        coast: true,
+        favicons: true,
+        firefox: true,
+        opengraph: true,
+        twitter: true,
+        yandex: true,
+        windows: true
+      }
+    }),
+    new SocialTags({
+      appUrl: 'https://rex-js.web.app',
+      facebook: {
+        'fb:app_id': '',
+        'og:url': 'https://rex-js.web.app',
+        'og:type': 'website',
+        'og:title': 'Rex · O bom e velhor amigo do programador',
+        'og:image': 'src/favicon.png',
+        'og:description': 'Simples pequeno e imperfeito. Uma visão além da programação',
+        'og:site_name': 'Rex.JS',
+        'og:locale': 'pt_BR',
+        'og:article:author': 'Cleber de Moraes Gonçalves'
+      },
+      twitter: {
+        'twitter:card': 'summary',
+        'twitter:site': '@rexjs',
+        'twitter:creator': '@rexjs',
+        'twitter:url': 'https://rex-js.web.app',
+        'twitter:title': 'Rex.JS · O bom e velho amigo do programador',
+        'twitter:description': 'Simples, pequeno e imperfeito. Uma visão além da programação',
+        'twitter:image': './src/favicon.png'
+      }
+    }),
+    new CopyPlugin([
+      './src/favicon.png',
+      './src/manifest.json'
+    ])
   ],
   module: {
     rules: [
@@ -109,14 +109,14 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@h': path.resolve(__dirname, 'src/infra/h'),
-      '@gps': path.resolve(__dirname, 'src/infra/gps')
+      '@h': path.resolve(__dirname, 'src/h'),
+      '@gps': path.resolve(__dirname, 'src/gps')
     }
   },
   output: {
     filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'public'),
-		publicPath: '/'
+    publicPath: '/'
   },
   optimization: {
     moduleIds: 'hashed',
