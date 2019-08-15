@@ -1,4 +1,4 @@
-main {
+.home {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -6,6 +6,6 @@ main {
   justify-content: center;
 }
 
-img {
+.home__logo {
   height: 200px;
 }
