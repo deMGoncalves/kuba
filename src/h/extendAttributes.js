@@ -6,10 +6,12 @@ import test from 'ramda/src/test'
 import T from 'ramda/src/T'
 import addEventListener from './addEventListener'
 import setAttribute from './setAttribute'
+import setClassName from './setClassName'
 
 const extendAttributes = curry((element, args) =>
   cond([
-    [test(/^on[A-Z]/), addEventListener(element)],
+    [test(/^on[A-Z]$/), addEventListener(element)],
+    [test(/^className$/), setClassName(element)],
     [T, setAttribute(element)]
   ])(...args))
 
