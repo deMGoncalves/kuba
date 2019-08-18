@@ -31,7 +31,13 @@ module.exports = {
     "jest"
   ],
   "rules": {
-    "no-unused-vars": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "^[h]$",
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "react/react-in-jsx-scope": "off"
   }
 };
