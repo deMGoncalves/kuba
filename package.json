@@ -16,8 +16,13 @@
       "stylelint src/*.css src/**/*.css --fix",
       "git add"
     ],
-    "*src/**/*.{js,jsx,css}": [
-      "es6-plato -r -e .eslintrc -x spec.js -d ./report ./src",
+    "src/**/*.{js,jsx,css}": [
+      "es6-plato -r -e .eslintrc -x spec.js -d ./report ./src"
+    ],
+    "report/**/*.*": [
+      "git add"
+    ],
+    "coverage/**/*.*": [
       "git add"
     ]
   },
@@ -35,7 +40,6 @@
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.1.0",
     "csv-loader": "^3.0.2",
-    "es6-plato": "^1.2.2",
     "eslint": "^6.1.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-config-standard-react": "^8.0.0",
