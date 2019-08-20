@@ -16,7 +16,7 @@
       "stylelint src/*.css src/**/*.css --fix",
       "git add"
     ],
-    "src/**/*.{js,jsx,css}": [
+    "src/**/*.{js,jsx}": [
       "es6-plato -r -e .eslintrc -x spec.js -d ./report ./src"
     ],
     "report/**/*.*": [
