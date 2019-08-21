@@ -1,5 +1,4 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
@@ -10,16 +9,18 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+      base: '/',
+      favicon: './src/favicon.png',
       meta: {
+        'Content-Security-Policy': {
+          'http-equiv': 'Content-Security-Policy',
+          content: 'block-all-mixed-content'
+        },
         description: 'Simples, pequeno e imperfeito. Uma visão além da programação'
       },
       template: './src/index.html',
       title: 'Rex.JS · O bom e velho amigo do programador'
-    }),
-    new CopyPlugin([
-      './src/favicon.png',
-      './src/manifest.json'
-    ])
+    })
   ],
   module: {
     rules: [
