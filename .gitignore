@@ -87,5 +87,7 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-# Build files
+# Build, coverage and report files
+coverage/
 public/
+report/
