@@ -8,21 +8,12 @@
     "test": "jest"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint src/**/*.{js,jsx}  --fix",
+    "*.{js,jsx}": [
+      "eslint --fix",
       "git add"
     ],
-    "src/**/*.css": [
-      "stylelint src/*.css src/**/*.css --fix",
-      "git add"
-    ],
-    "src/**/*.{js,jsx}": [
-      "es6-plato -r -e .eslintrc -x spec.js -d ./report ./src"
-    ],
-    "report/**/*.*": [
-      "git add"
-    ],
-    "coverage/**/*.*": [
+    "*.css": [
+      "stylelint --fix",
       "git add"
     ]
   },
