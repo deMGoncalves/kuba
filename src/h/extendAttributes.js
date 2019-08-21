@@ -5,12 +5,18 @@ import toPairs from 'ramda/src/toPairs'
 import test from 'ramda/src/test'
 import T from 'ramda/src/T'
 import addEventListener from './addEventListener'
+import addEventListenerWithPrevent from './addEventListenerWithPrevent'
+import addEventListenerWithStop from './addEventListenerWithStop'
+import addEventListenerWithStopAndPrevent from './addEventListenerWithStopAndPrevent'
 import setAttribute from './setAttribute'
 import setClassName from './setClassName'
 
 const extendAttributes = curry((element, args) =>
   cond([
-    [test(/^on[A-Z]/), addEventListener(element)],
+    [test(/^on[A-Z][a-z]+$/), addEventListener(element)],
+    [test(/^on[A-Z][a-z]+.stop$/), addEventListenerWithStop(element)],
+    [test(/^on[A-Z][a-z]+.prevent$/), addEventListenerWithPrevent(element)],
+    [test(/^on[A-Z][a-z]+.(stop|prevent).(stop|prevent)$/), addEventListenerWithStopAndPrevent(element)],
     [test(/^className$/), setClassName(element)],
     [T, setAttribute(element)]
   ])(...args))
