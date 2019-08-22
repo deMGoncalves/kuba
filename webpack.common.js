@@ -25,7 +25,27 @@ module.exports = {
     new BaseHrefWebpackPlugin({
       baseHref: '/'
     }),
-    new ManifestPlugin()
+    new ManifestPlugin({
+      seed: {
+        background_color: '#0a0a0a',
+        description: 'Simples, pequeno e imperfeiro. Uma visão além da programação',
+        display: 'standalone',
+        icons: [
+          {
+            src: '/favicon.png',
+            type: 'image/png',
+            size: '512x512'
+          }
+        ],
+        lang: 'Portuguese',
+        name: 'Rex.JS',
+        orientation: 'portrait',
+        scope: '/',
+        short_name: 'Rex',
+        start_url: 'https://rex-js.web.app',
+        theme_color: '#0a0a0a'
+      }
+    })
   ],
   module: {
     rules: [
