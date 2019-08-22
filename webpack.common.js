@@ -1,3 +1,4 @@
+const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
@@ -9,7 +10,6 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      base: '/',
       favicon: './src/favicon.png',
       meta: {
         'Content-Security-Policy': {
@@ -20,6 +20,9 @@ module.exports = {
       },
       template: './src/index.html',
       title: 'Rex.JS · O bom e velho amigo do programador'
+    }),
+    new BaseHrefWebpackPlugin({
+      baseHref: '/'
     })
   ],
   module: {
