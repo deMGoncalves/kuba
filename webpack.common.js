@@ -11,6 +11,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+      cache: true,
       favicon: './src/favicon.png',
       meta: {
         'Content-Security-Policy': {
