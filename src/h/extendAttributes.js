@@ -14,9 +14,9 @@ import setClassName from './setClassName'
 const extendAttributes = curry((element, args) =>
   cond([
     [test(/^on[A-Z][a-z]+$/), addEventListener(element)],
-    [test(/^on[A-Z][a-z]+.stop$/), addEventListenerWithStop(element)],
-    [test(/^on[A-Z][a-z]+.prevent$/), addEventListenerWithPrevent(element)],
-    [test(/^on[A-Z][a-z]+.(stop|prevent).(stop|prevent)$/), addEventListenerWithStopAndPrevent(element)],
+    [test(/^on[A-Z][a-z]+_stop$/), addEventListenerWithStop(element)],
+    [test(/^on[A-Z][a-z]+_prevent$/), addEventListenerWithPrevent(element)],
+    [test(/^on[A-Z][a-z]+_(stop|prevent)_(stop|prevent)$/), addEventListenerWithStopAndPrevent(element)],
     [test(/^className$/), setClassName(element)],
     [T, setAttribute(element)]
   ])(...args))
