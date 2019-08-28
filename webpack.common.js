@@ -2,6 +2,7 @@ const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPreconnectPlugin = require('html-webpack-preconnect-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const path = require('path')
 
@@ -20,9 +21,13 @@ module.exports = {
         },
         description: 'Simples, pequeno e imperfeito. Uma visão além da programação'
       },
+      preconnect: [
+        'https://fonts.googleapis.com'
+      ],
       template: './src/index.html',
       title: 'Rex.JS · O bom e velho amigo do programador'
     }),
+    new HtmlWebpackPreconnectPlugin(),
     new ScriptExtHtmlWebpackPlugin({
       prefetch: /\.js$/
     }),
