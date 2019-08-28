@@ -1,5 +1,6 @@
 const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const path = require('path')
@@ -21,6 +22,9 @@ module.exports = {
       },
       template: './src/index.html',
       title: 'Rex.JS · O bom e velho amigo do programador'
+    }),
+    new ScriptExtHtmlWebpackPlugin({
+      prefetch: /\.js$/
     }),
     new BaseHrefWebpackPlugin({
       baseHref: '/'
