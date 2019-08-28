@@ -19,7 +19,8 @@ module.exports = {
           'http-equiv': 'Content-Security-Policy',
           content: 'block-all-mixed-content'
         },
-        description: 'Simples, pequeno e imperfeito. Uma visão além da programação'
+        description: 'Simples, pequeno e imperfeito. Uma visão além da programação',
+        'google-site-verification': 'O2NHRDzHBdUXxeKwEduXEmAU8Gqe79BE4ajkw9IFu5Y'
       },
       preconnect: [
         'https://fonts.googleapis.com'
