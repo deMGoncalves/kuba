@@ -1,13 +1,13 @@
-import h from '../'
+import flatten from '../../f/flatten.js'
+import h from '../h'
 import createElement from '../createElement.js'
 import executeComponent from '../executeComponent.js'
 import isTagName from '../isTagName'
-import flatten from 'ramda/src/flatten'
 
 jest.mock('../createElement.js')
 jest.mock('../executeComponent.js')
 jest.mock('../isTagName.js')
-jest.mock('ramda/src/flatten')
+jest.mock('../../f/flatten.js')
 
 test('O modulo de hyperscript deve ser exportado como default', () => {
   expect(h).toBeDefined()
