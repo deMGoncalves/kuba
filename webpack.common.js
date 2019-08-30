@@ -1,3 +1,4 @@
+const { BundleStatsWebpackPlugin } = require('bundle-stats')
 const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
@@ -55,7 +56,8 @@ module.exports = {
         start_url: 'https://rex-js.web.app',
         theme_color: '#0a0a0a'
       }
-    })
+    }),
+    new BundleStatsWebpackPlugin()
   ],
   module: {
     rules: [
