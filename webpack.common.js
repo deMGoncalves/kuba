@@ -57,7 +57,9 @@ module.exports = {
         theme_color: '#0a0a0a'
       }
     }),
-    new BundleStatsWebpackPlugin()
+    new BundleStatsWebpackPlugin({
+      baseline: true
+    })
   ],
   module: {
     rules: [

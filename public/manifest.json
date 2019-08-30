@@ -19,9 +19,10 @@
   "app.js": "/app.2498244d042c31ee8de6.js",
   "runtime.js": "/runtime.2498244d042c31ee8de6.js",
   "vendors.js": "/vendors.2498244d042c31ee8de6.js",
+  "../node_modules/.cache/bundle-stats/baseline.json": "/../node_modules/.cache/bundle-stats/baseline.json",
   "favicon.png": "/favicon.png",
   "bundle-stats.html": "/bundle-stats.html",
   "index.html": "/index.html",
-  "precache-manifest.5d65cd2676666e662384237d4efbbf14.js": "/precache-manifest.5d65cd2676666e662384237d4efbbf14.js",
+  "precache-manifest.2f5832c965283b59a4ea4fbbd02b5bc3.js": "/precache-manifest.2f5832c965283b59a4ea4fbbd02b5bc3.js",
   "service-worker.js": "/service-worker.js"
 }
