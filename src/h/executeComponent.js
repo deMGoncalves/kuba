@@ -9,7 +9,5 @@
  * @param {Array} children Uma matriz de elementos filhos
  * @returns {HTMLElement} Um elemento html
  */
-const executeComponent = (component, attributes, children) =>
+export default (component, attributes, children) =>
   component(attributes, children)
-
-export default executeComponent
