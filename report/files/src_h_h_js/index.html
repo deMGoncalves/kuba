@@ -108,13 +108,13 @@ import isTagName from &#039;./isTagName&#039;
  * @param {array} children Elementos filhos
  * @returns {Node} Elemento HTML
  */
-function h (tagNameOrComponent, attributes, ...children) {
+function hyperScript (tagNameOrComponent, attributes, ...children) {
   return (isTagName(tagNameOrComponent)
     ? createElement
     : executeComponent)(tagNameOrComponent, { ...attributes }, flatten(children))
 }
 
-export default h
+export default hyperScript
 </textarea>
   </div>
 </div>

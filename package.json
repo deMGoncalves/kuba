@@ -8,6 +8,9 @@
     "test": "jest"
   },
   "lint-staged": {
+    "report/**/*": [
+      "git add"
+    ],
     "src/**/*.{js,jsx}": [
       "eslint --fix",
       "es6-plato -r -t Rex.JS -e .eslintrc.js -x .spec.js -d report src/**/*",

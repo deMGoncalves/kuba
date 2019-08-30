@@ -14,10 +14,10 @@ import isTagName from './isTagName'
  * @param {array} children Elementos filhos
  * @returns {Node} Elemento HTML
  */
-function hyperScript (tagNameOrComponent, attributes, ...children) {
+function h (tagNameOrComponent, attributes, ...children) {
   return (isTagName(tagNameOrComponent)
     ? createElement
     : executeComponent)(tagNameOrComponent, { ...attributes }, flatten(children))
 }
 
-export default hyperScript
+export default h
