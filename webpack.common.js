@@ -8,7 +8,7 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    app: './src/index.jsx'
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -99,11 +99,12 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       '@h': path.resolve(__dirname, 'src/h'),
-      '@gps': path.resolve(__dirname, 'src/gps')
+      '@router': path.resolve(__dirname, 'src/router')
     }
   },
   output: {
     filename: '[name].[hash].js',
+    chunkFilename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, 'public'),
     publicPath: '/'
   },
