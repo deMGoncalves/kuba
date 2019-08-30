@@ -4,7 +4,7 @@ import style from './style.css'
 
 const component = () =>
   <main className={style.home} itemScope itemType='https://schema.org/Organization'>
-    <a href='/' itemProp='url'>
+    <a className={style.home_url} href='/' itemProp='url'>
       <img className={style.home__logo} src={RexJS} alt='Rex.JS' itemProp='logo' />
       <h1 itemProp='name'>Rex.JS</h1>
       <p itemProp='description'>Simples, pequeno e imperfeito. Uma visão além da programação</p>
