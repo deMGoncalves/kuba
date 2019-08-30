@@ -1,4 +1,4 @@
-import flatten from 'ramda/src/flatten'
+import * as f from '@f'
 import createElement from './createElement'
 import executeComponent from './executeComponent'
 import isTagName from './isTagName'
@@ -17,6 +17,6 @@ import isTagName from './isTagName'
 const h = (tagNameOrComponent, attributes, ...children) =>
   (isTagName(tagNameOrComponent)
     ? createElement
-    : executeComponent)(tagNameOrComponent, { ...attributes }, flatten(children))
+    : executeComponent)(tagNameOrComponent, { ...attributes }, f.flatten(children))
 
 export default h
