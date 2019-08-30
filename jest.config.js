@@ -91,6 +91,7 @@ module.exports = {
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
+    '@f': '<rootDir>/src/f',
     '@h': '<rootDir>/src/h',
     '@gps': '<rootDir>/src/gps'
   },
