@@ -7,7 +7,5 @@
  * @param {Array} target Uma matriz com sub-matrizes
  * @returns {Array} Uma nova matriz com seus sub-matrizes em primeiro na profundidade
  */
-const flatten = (target) =>
+export default (target) =>
   target.reduce((a, b) => a.concat(b), [])
-
-export default flatten
