@@ -3,7 +3,6 @@ import curry from 'ramda/src/curry'
 import forEach from 'ramda/src/forEach'
 import toPairs from 'ramda/src/toPairs'
 import test from 'ramda/src/test'
-import T from 'ramda/src/T'
 import addEventListener from './addEventListener'
 import addEventListenerWithPrevent from './addEventListenerWithPrevent'
 import addEventListenerWithStop from './addEventListenerWithStop'
@@ -18,7 +17,7 @@ const extendAttributes = curry((element, args) =>
     [test(/^on[A-Z][a-z]+_prevent$/), addEventListenerWithPrevent(element)],
     [test(/^on[A-Z][a-z]+_(stop|prevent)_(stop|prevent)$/), addEventListenerWithStopAndPrevent(element)],
     [test(/^className$/), setClassName(element)],
-    [T, setAttribute(element)]
+    [f.T, setAttribute(element)]
   )(...args))
 
 export default curry((attributes, element) => {
