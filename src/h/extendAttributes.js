@@ -20,7 +20,5 @@ const extendAttributes = curry((element, args) =>
     [f.T, setAttribute(element)]
   )(...args))
 
-export default curry((attributes, element) => {
-  forEach(extendAttributes(element), toPairs(attributes))
-  return element
-})
+export default (attributes, element) =>
+  f.always(element)(forEach(extendAttributes(element), toPairs(attributes)))
