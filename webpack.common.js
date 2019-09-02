@@ -87,7 +87,14 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ['file-upload']
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ]
       },
       {
         test: /\.(csv|tsv)$/,
