@@ -1,4 +1,3 @@
-import compose from 'ramda/src/compose'
 import appendChildren from './appendChildren'
 import extendAttributes from './extendAttributes'
 
@@ -14,4 +13,4 @@ import extendAttributes from './extendAttributes'
  * @returns {HTMLElement} Um elemento html
  */
 export default (tagName, attributes, children) =>
-  compose(appendChildren(children), extendAttributes(attributes))(document.createElement(tagName, { is: attributes.is }))
+  appendChildren(children, extendAttributes(attributes, document.createElement(tagName, { is: attributes.is })))
