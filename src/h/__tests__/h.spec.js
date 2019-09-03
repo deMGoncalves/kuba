@@ -88,7 +88,7 @@ test('Os atributos do elemento e/ou componente devem ser clonados para evitar a 
 
   expect(isTagName).toHaveBeenCalled()
   expect(isTagName).toHaveBeenCalledTimes(1)
-  expect(isTagName).toHaveBeenCalledWith('div', attributes)
+  expect(isTagName).toHaveBeenCalledWith('div', attributes, [])
 
   expect(createElement).toHaveBeenCalled()
   expect(createElement).toHaveBeenCalledTimes(1)
