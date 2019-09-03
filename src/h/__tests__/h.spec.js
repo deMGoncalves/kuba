@@ -29,7 +29,7 @@ test('Deve criar um elemento quando o parametro tagNameOrComponent for uma strin
 
   expect(isTagName).toHaveBeenCalled()
   expect(isTagName).toHaveBeenCalledTimes(1)
-  expect(isTagName).toHaveBeenCalledWith('div')
+  expect(isTagName).toHaveBeenCalledWith('div', {}, [])
 
   expect(createElement).toHaveBeenCalled()
   expect(createElement).toHaveBeenCalledTimes(1)
@@ -57,7 +57,7 @@ test('Deve retornar o resultado do component quando o parametro tagNameOrCompone
 
   expect(isTagName).toHaveBeenCalled()
   expect(isTagName).toHaveBeenCalledTimes(1)
-  expect(isTagName).toHaveBeenCalledWith(component)
+  expect(isTagName).toHaveBeenCalledWith(component, {}, [])
 
   expect(executeComponent).toHaveBeenCalled()
   expect(executeComponent).toHaveBeenCalledTimes(1)
@@ -88,7 +88,7 @@ test('Os atributos do elemento e/ou componente devem ser clonados para evitar a 
 
   expect(isTagName).toHaveBeenCalled()
   expect(isTagName).toHaveBeenCalledTimes(1)
-  expect(isTagName).toHaveBeenCalledWith('div')
+  expect(isTagName).toHaveBeenCalledWith('div', attributes)
 
   expect(createElement).toHaveBeenCalled()
   expect(createElement).toHaveBeenCalledTimes(1)
@@ -117,7 +117,7 @@ test('Os elementos filhos serao passado como spread e devem ser achatados em um 
 
   expect(isTagName).toHaveBeenCalled()
   expect(isTagName).toHaveBeenCalledTimes(1)
-  expect(isTagName).toHaveBeenCalledWith('div')
+  expect(isTagName).toHaveBeenCalledWith('div', {}, [1, 2, 3, 4])
 
   expect(createElement).toHaveBeenCalled()
   expect(createElement).toHaveBeenCalledTimes(1)
