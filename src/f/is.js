@@ -1,4 +1,5 @@
 import and from './and'
+import curry from './curry'
 import different from './different'
 import equal from './equal'
 import or from './or'
@@ -13,5 +14,7 @@ import or from './or'
  * @param {*} target Objeto a ser comparado
  * @returns {Boolean} Retorna verdadeiro se tipo for igual
  */
-export default (klass, target) =>
+const is = (klass, target) =>
   and(different(target, null), or(equal(target.constructor, klass), target instanceof klass))
+
+export default curry(is)

@@ -1,3 +1,5 @@
+import always from './always'
+
 /**
  * Uma funcao que sempre ira retornar verdadeiro
  *
@@ -6,4 +8,4 @@
  * @access public
  * @returns {Boolean} Verdadeiro
  */
-export default () => true
+export default always(true)

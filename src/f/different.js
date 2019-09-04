@@ -1,3 +1,4 @@
+import curry from './curry'
 import equal from './equal'
 
 /**
@@ -10,5 +11,7 @@ import equal from './equal'
  * @param {*} y Segundo valor
  * @returns {Boolean} Verdadeiro se os valores forem diferente
  */
-export default (x, y) =>
+const different = (x, y) =>
   !equal(x, y)
+
+export default curry(different)

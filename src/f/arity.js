@@ -1,3 +1,5 @@
+import curry from './curry'
+
 /**
  * Redefine o numero de parametros de uma funcao
  *
@@ -8,7 +10,7 @@
  * @param {Function} target Funcao que tera seus numero de parametros redefinido
  * @returns {*} Retorna o valor que a funcao alvo retornara
  */
-export default (n, target) => {
+const arity = (n, target) => {
   switch (n) {
     case 0: return () => target()
     case 1: return (a0) => target(a0)
@@ -17,3 +19,5 @@ export default (n, target) => {
     default: throw new Error('O primeiro argumento para arity deve ser um número inteiro não negativo não superior a três')
   }
 }
+
+export default curry(arity)

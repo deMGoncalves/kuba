@@ -1,3 +1,5 @@
+import curry from './curry'
+
 /**
  * Compara se dois valores sao iguais, tanto tipo quanto valor
  *
@@ -8,5 +10,7 @@
  * @param {*} y Segundo valor
  * @returns {Boolean} Verdadeio se os valores forem iguais
  */
-export default (x, y) =>
+const equal = (x, y) =>
   x === y
+
+export default curry(equal)

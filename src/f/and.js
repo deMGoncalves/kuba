@@ -1,3 +1,5 @@
+import curry from './curry'
+
 /**
  * Operador logico and
  *
@@ -8,5 +10,7 @@
  * @param {*} y Segundo valor
  * @returns {Boolean} Verdadeio se a condicao for verdadeiro
  */
-export default (x, y) =>
+const and = (x, y) =>
   x && y
+
+export default curry(and)

@@ -1,3 +1,5 @@
+import curry from './curry'
+
 /**
  * Condicional Or, havalia se pelo um dos valores eh verdadeiro
  *
@@ -8,5 +10,7 @@
  * @param {*} y Segundo valor
  * @returns {Boolean} Verdadriro ser um dos valores for verdadeiro
  */
-export default (x, y) =>
+const or = (x, y) =>
   x || y
+
+export default curry(or)
