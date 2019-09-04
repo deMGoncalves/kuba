@@ -47,6 +47,20 @@ export default (target) =>
               ? curryTwo((_a1, _a2) => target(a0, _a1, _a2))
               : curryOne((_a2) => target(a0, a1, _a2))
       default:
-        return target(a0, a1, a2)
+        return isGap(a0) && isGap(a1) && isGap(a2)
+          ? target
+          : isGap(a0) && isGap(a1)
+            ? curryTwo((_a0, _a1) => target(_a0, _a1, a2))
+            : isGap(a0) && isGap(a2)
+              ? curryTwo((_a0, _a2) => target(_a0, a1, _a2))
+              : isGap(a1) && isGap(a2)
+                ? curryTwo((_a1, _a2) => target(a0, _a1, _a2))
+                : isGap(a0)
+                  ? curryOne((_a0) => target(_a0, a1, a2))
+                  : isGap(a1)
+                    ? curryOne((_a1) => target(a0, _a1, a2))
+                    : isGap(a2)
+                      ? curryOne((_a2) => target(a0, a1, _a2))
+                      : target(a0, a1, a2)
     }
   }
