@@ -6,7 +6,7 @@ import curry from './curry'
 import different from './different'
 import flatten from './flatten'
 import equal from './equal'
-import gap from './gap'
+import __ from './gap'
 import or from './or'
 import is from './is'
 import T from './T'
@@ -21,7 +21,7 @@ export {
   different,
   equal,
   flatten,
-  gap,
+  __,
   or,
   is,
   T,
