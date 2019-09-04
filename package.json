@@ -4,6 +4,8 @@
   "description": "Simples, pequeno e imperfeito. Uma visão além da programação",
   "private": true,
   "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.js --open",
+    "prod": "webpack --config webpack.prod.js",
     "start": "node server.js",
     "test": "jest"
   },

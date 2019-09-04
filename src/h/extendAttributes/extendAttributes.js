@@ -1,7 +1,6 @@
 import * as f from '@f'
 import forEach from 'ramda/src/forEach'
 import toPairs from 'ramda/src/toPairs'
-import test from 'ramda/src/test'
 import addEventListener from './addEventListener'
 import addEventListenerWithPrevent from './addEventListenerWithPrevent'
 import addEventListenerWithStop from './addEventListenerWithStop'
@@ -12,11 +11,11 @@ import setClassName from './setClassName'
 const extendAttributes = (element) =>
   (args) =>
     f.cond(
-      [test(/^on[A-Z][a-z]+$/), addEventListener(element)],
-      [test(/^on[A-Z][a-z]+_stop$/), addEventListenerWithStop(element)],
-      [test(/^on[A-Z][a-z]+_prevent$/), addEventListenerWithPrevent(element)],
-      [test(/^on[A-Z][a-z]+_(stop|prevent)_(stop|prevent)$/), addEventListenerWithStopAndPrevent(element)],
-      [test(/^className$/), setClassName(element)],
+      [f.test(/^on[A-Z][a-z]+$/, f.__), addEventListener(element)],
+      [f.test(/^on[A-Z][a-z]+_stop$/, f.__), addEventListenerWithStop(element)],
+      [f.test(/^on[A-Z][a-z]+_prevent$/, f.__), addEventListenerWithPrevent(element)],
+      [f.test(/^on[A-Z][a-z]+_(stop|prevent)_(stop|prevent)$/, f.__), addEventListenerWithStopAndPrevent(element)],
+      [f.test(/^className$/, f.__), setClassName(element)],
       [f.T, setAttribute(element)]
     )(...args)
 
