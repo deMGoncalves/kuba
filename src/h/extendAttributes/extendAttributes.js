@@ -4,14 +4,14 @@ import toPairs from 'ramda/src/toPairs'
 import addEventListener from './addEventListener'
 import addEventListenerWithPrevent from './addEventListenerWithPrevent'
 import addEventListenerWithStop from './addEventListenerWithStop'
-import addEventListenerWithStopAndPrevent from './addEventListenerWithStopAndPrevent'
-import setAttribute from './setAttribute'
-import setClassName from './setClassName'
-
+import isClassName from './isClassName'
 import isEvent from './isEvent'
 import isEventWithStop from './isEventWithStop'
 import isEventWithPrevent from './isEventWithPrevent'
 import isEventWithStopAndPrevent from './isEventWithStopAndPrevent'
+import addEventListenerWithStopAndPrevent from './addEventListenerWithStopAndPrevent'
+import setAttribute from './setAttribute'
+import setClassName from './setClassName'
 
 const extendAttributes = (element) =>
   (args) =>
@@ -20,7 +20,7 @@ const extendAttributes = (element) =>
       [isEventWithStop, addEventListenerWithStop(element)],
       [isEventWithPrevent, addEventListenerWithPrevent(element)],
       [isEventWithStopAndPrevent, addEventListenerWithStopAndPrevent(element)],
-      [f.test(/^className$/, f.__), setClassName(element)],
+      [isClassName, setClassName(element)],
       [f.T, setAttribute(element)]
     )(...args)
 
