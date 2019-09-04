@@ -1,3 +1,8 @@
+import and from './and'
+import different from './different'
+import equal from './equal'
+import or from './or'
+
 /**
  * Compara se o valor é do mesmo tipo da classe
  *
@@ -9,4 +14,4 @@
  * @returns {Boolean} Retorna verdadeiro se tipo for igual
  */
 export default (klass, target) =>
-  target != null && (target.constructor === klass || target instanceof klass)
+  and(different(target, null), or(equal(target.constructor, klass), target instanceof klass))
