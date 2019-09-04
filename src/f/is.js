@@ -1,3 +1,4 @@
+import and from './and'
 import equal from './equal'
 
 /**
@@ -11,4 +12,4 @@ import equal from './equal'
  * @returns {Boolean} Retorna verdadeiro se tipo for igual
  */
 export default (klass, target) =>
-  target !== null && (equal(target.constructor, klass) || target instanceof klass)
+  and(target !== null, (equal(target.constructor, klass) || target instanceof klass))
