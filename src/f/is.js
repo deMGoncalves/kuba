@@ -1,4 +1,5 @@
 import and from './and'
+import different from './different'
 import equal from './equal'
 
 /**
@@ -12,4 +13,4 @@ import equal from './equal'
  * @returns {Boolean} Retorna verdadeiro se tipo for igual
  */
 export default (klass, target) =>
-  and(target !== null, (equal(target.constructor, klass) || target instanceof klass))
+  and(different(target, null), (equal(target.constructor, klass) || target instanceof klass))
