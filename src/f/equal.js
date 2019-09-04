@@ -4,8 +4,8 @@
  * @name equal
  * @function
  * @access public
- * @param {*} Primeiro valor
- * @param {*} Segundo valor
+ * @param {*} x Primeiro valor
+ * @param {*} y Segundo valor
  * @returns {Boolean} Verdadeio se os valores forem iguais
  */
 export default (x, y) =>
