@@ -1,5 +1,3 @@
-import equal from './equal'
-
 /**
  * Gap eh um valor unico sera gerado a cada onload do window, com o proposito de ser unico
  *
@@ -19,7 +17,7 @@ const gap = (new Date()).getTime().toString(32)
  * @returns {Boolean} Verdadeio se o valor for um gap
  */
 const isGap = (target) =>
-  equal(gap, target)
+  gap === target
 
 export default gap
 export {
