@@ -1,4 +1,5 @@
 import always from './always'
+import and from './and'
 import arity from './arity'
 import cond from './cond'
 import flatten from './flatten'
@@ -10,6 +11,7 @@ import test from './test'
 
 export {
   always,
+  and,
   arity,
   cond,
   equal,
