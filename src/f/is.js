@@ -1,3 +1,5 @@
+import equal from './equal'
+
 /**
  * Compara se o valor é do mesmo tipo da classe
  *
@@ -9,4 +11,4 @@
  * @returns {Boolean} Retorna verdadeiro se tipo for igual
  */
 export default (klass, target) =>
-  target != null && (target.constructor === klass || target instanceof klass)
+  target !== null && (equal(target.constructor, klass) || target instanceof klass)
