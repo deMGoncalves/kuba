@@ -10,14 +10,16 @@ import setClassName from './setClassName'
 
 import isEvent from './isEvent'
 import isEventWithStop from './isEventWithStop'
+import isEventWithPrevent from './isEventWithPrevent'
+import isEventWithStopAndPrevent from './isEventWithStopAndPrevent'
 
 const extendAttributes = (element) =>
   (args) =>
     f.cond(
       [isEvent, addEventListener(element)],
       [isEventWithStop, addEventListenerWithStop(element)],
-      [f.test(/^on[A-Z][a-z]+_prevent$/, f.__), addEventListenerWithPrevent(element)],
-      [f.test(/^on[A-Z][a-z]+_(stop|prevent)_(stop|prevent)$/, f.__), addEventListenerWithStopAndPrevent(element)],
+      [isEventWithPrevent, addEventListenerWithPrevent(element)],
+      [isEventWithStopAndPrevent, addEventListenerWithStopAndPrevent(element)],
       [f.test(/^className$/, f.__), setClassName(element)],
       [f.T, setAttribute(element)]
     )(...args)
