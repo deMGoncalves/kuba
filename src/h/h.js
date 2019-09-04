@@ -15,6 +15,7 @@ import isTagName from './isTagName'
  * @returns {Node} Elemento HTML
  */
 export default (tagNameOrComponent, attributes, ...children) =>
-  (isTagName(tagNameOrComponent)
-    ? createElement
-    : executeComponent)(tagNameOrComponent, { ...attributes }, f.flatten(children))
+  f.cond(
+    [isTagName, createElement],
+    [f.T, executeComponent]
+  )(tagNameOrComponent, { ...attributes }, f.flatten(children))

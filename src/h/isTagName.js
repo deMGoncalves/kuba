@@ -1,4 +1,4 @@
-import is from 'ramda/src/is'
+import * as f from '@f'
 
-export default (tagNameOrComponent) =>
-  is(String, tagNameOrComponent)
+export default f.arity(1, (tagNameOrComponent) =>
+  f.is(String, tagNameOrComponent))
