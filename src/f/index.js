@@ -6,6 +6,7 @@ import different from './different'
 import flatten from './flatten'
 import equal from './equal'
 import gap from './gap'
+import or from './or'
 import is from './is'
 import T from './T'
 import test from './test'
@@ -19,6 +20,7 @@ export {
   equal,
   flatten,
   gap,
+  or,
   is,
   T,
   test
