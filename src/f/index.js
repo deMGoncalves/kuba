@@ -2,6 +2,7 @@ import always from './always'
 import and from './and'
 import arity from './arity'
 import assign from './assign'
+import concat from './concat'
 import cond from './cond'
 import curry from './curry'
 import different from './different'
@@ -19,6 +20,7 @@ export {
   and,
   arity,
   assign,
+  concat,
   cond,
   curry,
   different,
