@@ -11,6 +11,7 @@ import or from './or'
 import is from './is'
 import T from './T'
 import test from './test'
+import toLower from './toLower'
 
 export {
   always,
@@ -25,5 +26,6 @@ export {
   or,
   is,
   T,
-  test
+  test,
+  toLower
 }
