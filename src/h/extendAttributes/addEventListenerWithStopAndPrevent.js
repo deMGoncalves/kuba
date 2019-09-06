@@ -1,11 +1,19 @@
-import curry from 'ramda/src/curry'
+import * as f from '@f'
 import addEventListener from './addEventListener'
+import stopPropagation from './stopPropagation'
+import preventDefault from './preventDefault'
 
-const addEventListenerWithStopAndPrevent = (element, eventName, listener) =>
-  addEventListener(element, eventName.slice(0, -13), (e) => {
-    e.preventDevaul()
-    e.stopPropagation()
-    listener(e)
-  })
-
-export default curry(addEventListenerWithStopAndPrevent)
+/**
+ * Adicionar um evento ao elemento com a tratativa do stopPropagation e preventDefault
+ *
+ * @name addEventListenerWithStopAndPrevent
+ * @function
+ * @access private
+ * @param {HTMLElement} Elemento que tera um evento adicionado
+ * @param {String} eventName Nome do evento
+ * @param {Function} listener Funcao que sera vinculado ao evento
+ * @returns {*} O retorno da funcao alvo
+ */
+export default (element) =>
+  (eventName, listener) =>
+    addEventListener(element, f.slice(eventName, 0, -13), stopPropagation(preventDefault(listener)))
