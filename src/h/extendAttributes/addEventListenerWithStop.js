@@ -1,3 +1,4 @@
+import * as f from '@f'
 import addEventListener from './addEventListener'
 import stopPropagation from './stopPropagation'
 
@@ -14,4 +15,4 @@ import stopPropagation from './stopPropagation'
  */
 export default (element) =>
   (eventName, listener) =>
-    addEventListener(element, eventName.slice(0, -5), stopPropagation(listener))
+    addEventListener(element, f.slice(eventName, 0, -5), stopPropagation(listener))
