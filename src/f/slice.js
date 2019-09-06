@@ -1,4 +1,4 @@
-import * as f from '@f'
+import curry from './curry'
 
 /**
  * Recorta um um litera/matrix
@@ -14,4 +14,4 @@ import * as f from '@f'
 const slice = (target, start, end) =>
   target.slice(start, end)
 
-export default f.curry(slice)
+export default curry(slice)

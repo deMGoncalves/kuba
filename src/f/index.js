@@ -10,6 +10,7 @@ import equal from './equal'
 import flatten from './flatten'
 import __ from './gap'
 import is from './is'
+import join from './join'
 import or from './or'
 import slice from './slice'
 import T from './T'
@@ -29,6 +30,7 @@ export {
   flatten,
   __,
   is,
+  join,
   or,
   slice,
   T,

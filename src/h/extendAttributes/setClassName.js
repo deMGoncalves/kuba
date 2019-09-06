@@ -1,3 +1,5 @@
+import * as f from '@f'
+
 /**
  * Adiciona a(s) classe(s) css no element
  *
@@ -10,4 +12,4 @@
  */
 export default (element) =>
   (_, className) =>
-    (element.className = [].concat(className).join(' '))
+    f.always(element)(element.className = f.join(f.concat([], className), ' '))

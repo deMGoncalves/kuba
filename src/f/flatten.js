@@ -1,3 +1,5 @@
+import concat from './concat'
+
 /**
  * Retorna uma nova lista, retirando todas as sub-matrizes e colocando nas nova matriz em primeira profundidade
  *
@@ -8,4 +10,4 @@
  * @returns {Array} Uma nova matriz com seus sub-matrizes em primeiro na profundidade
  */
 export default (target) =>
-  target.reduce((a, b) => a.concat(b), [])
+  target.reduce(concat, [])
