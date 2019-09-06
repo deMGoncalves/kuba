@@ -6,11 +6,12 @@ import concat from './concat'
 import cond from './cond'
 import curry from './curry'
 import different from './different'
-import flatten from './flatten'
 import equal from './equal'
+import flatten from './flatten'
 import __ from './gap'
-import or from './or'
 import is from './is'
+import or from './or'
+import slice from './slice'
 import T from './T'
 import test from './test'
 import toLower from './toLower'
@@ -23,12 +24,13 @@ export {
   concat,
   cond,
   curry,
-  different,
   equal,
+  different,
   flatten,
   __,
-  or,
   is,
+  or,
+  slice,
   T,
   test,
   toLower
