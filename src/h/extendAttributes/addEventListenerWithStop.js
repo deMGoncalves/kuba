@@ -1,10 +1,17 @@
-import curry from 'ramda/src/curry'
 import addEventListener from './addEventListener'
+import stopPropagation from './stopPropagation'
 
-const addEventListenerWithStop = (element, eventName, listener) =>
-  addEventListener(element, eventName.slice(0, -5), (e) => {
-    e.stopPropagation()
-    listener(e)
-  })
-
-export default curry(addEventListenerWithStop)
+/**
+ * Adicionar um evento ao elemento com a tratativa do stopPropagation
+ *
+ * @name addEventListenerWithStop
+ * @function
+ * @access private
+ * @param {HTMLElement} Elemento que tera um evento adicionado
+ * @param {String} eventName Nome do evento
+ * @param {Function} listener Funcao que sera vinculado ao evento
+ * @returns {*} O retorno da funcao alvo
+ */
+export default (element) =>
+  (eventName, listener) =>
+    addEventListener(element, eventName.slice(0, -5), stopPropagation(listener))
