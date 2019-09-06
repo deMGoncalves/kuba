@@ -1,10 +1,18 @@
-import curry from 'ramda/src/curry'
+import * as f from '@f'
 import addEventListener from './addEventListener'
+import preventDefault from './preventDefault'
 
-const addEventListenerWithPrevent = (element, eventName, listener) =>
-  addEventListener(element, eventName.slice(0, -8), (e) => {
-    e.preventDefault()
-    listener(e)
-  })
-
-export default curry(addEventListenerWithPrevent)
+/**
+ * Adicionar um evento ao elemento com a tratativa do preventdefault
+ *
+ * @name addEventListenerWithPrevent
+ * @function
+ * @access private
+ * @param {HTMLElement} Elemento que tera um evento adicionado
+ * @param {String} eventName Nome do evento
+ * @param {Function} listener Funcao que sera vinculado ao evento
+ * @returns {*} O retorno da funcao alvo
+ */
+export default (element) =>
+  (eventName, listener) =>
+    addEventListener(element, f.slice(eventName, 0, -8), preventDefault(listener))
