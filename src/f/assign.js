@@ -1,4 +1,4 @@
-import * as f from '@f'
+import curry from './curry'
 
 /**
  * Extende um objeto com mais propriedades
@@ -13,4 +13,4 @@ import * as f from '@f'
 const assign = (target, descriptor) =>
   Object.assign(target, descriptor)
 
-export default f.curry(assign)
+export default curry(assign)
