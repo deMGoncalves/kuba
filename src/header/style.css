@@ -1,5 +1,5 @@
 .header {
-  padding: 40px 10px;
+  padding: 40px;
 }
 
 .header__link {
@@ -17,7 +17,7 @@
   float: right;
   height: 55px;
   justify-content: center;
-  width: 80%;
+  width: 85%;
 }
 
 .header__name {
