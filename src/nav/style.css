@@ -1,0 +1,11 @@
+.nav {
+  padding: 40px 10px;
+}
+
+.nav__link {
+  color: #2c2c2c;
+  font-size: 48px;
+  font-weight: 500;
+  margin-left: 15%;
+  text-decoration: none;
+}
