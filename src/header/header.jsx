@@ -1,5 +1,5 @@
 import h from '@h'
-import Container from '../container'
+import Container from '@/container'
 import RexJS from './rex-jx.png'
 import style from './style.css'
 

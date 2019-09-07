@@ -21,7 +21,7 @@ module.exports = {
           content: 'block-all-mixed-content'
         },
         description: 'Simples, pequeno e imperfeito. Uma visão além da programação',
-        'google-site-verification': 'O2NHRDzHBdUXxeKwEduXEmAU8Gqe79BE4ajkw9IFu5Y'
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
       },
       preconnect: [
         'https://fonts.googleapis.com'
@@ -109,6 +109,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
+      '@': path.resolve(__dirname, 'src'),
       '@f': path.resolve(__dirname, 'src/f'),
       '@h': path.resolve(__dirname, 'src/h'),
       '@router': path.resolve(__dirname, 'src/router')
