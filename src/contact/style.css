@@ -1,0 +1,17 @@
+.home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.home__link {
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.home__logo {
+  height: 200px;
+}
