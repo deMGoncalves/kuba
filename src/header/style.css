@@ -1,0 +1,34 @@
+.header {
+  padding: 40px 10px;
+}
+
+.header__link {
+  float: left;
+}
+
+.header__logo {
+  height: 50px;
+  width: 50px;
+}
+
+.header__definition {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  height: 55px;
+  justify-content: center;
+  width: 80%;
+}
+
+.header__name {
+  color: #2c2c2c;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  text-indent: -1px;
+}
+
+.header__description {
+  font-size: 11px;
+  font-weight: 300;
+}
