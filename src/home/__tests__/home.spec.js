@@ -15,6 +15,6 @@ describe('Home', () => {
   })
 
   test('Deve ter uma descricao do que é o Rex', async () => [
-    await expect(page.$eval('p', el => el.textContent)).resolves.toBe('Simples, pequeno e imperfeito. Uma visão além da programação')
+    await expect(page.$eval('p', el => el.textContent)).resolves.toBe('Simples, pequeno e imperfeito · Uma visão além da programação')
   ])
 }, timeout)
