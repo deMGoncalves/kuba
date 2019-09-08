@@ -1,5 +1,11 @@
 .header {
-  padding: 40px 10px 40px 20px;
+  padding: 40px 10px 40px 10px;
+}
+
+@media (min-width: 425px) {
+  .header {
+    padding-left: 20px;
+  }
 }
 
 .header__link {
@@ -17,7 +23,13 @@
   float: right;
   height: 55px;
   justify-content: center;
-  width: 85%;
+  width: calc(100% - 60px);
+}
+
+@media (min-width: 425px) {
+  .header__definition {
+    width: 85%;
+  }
 }
 
 .header__name {

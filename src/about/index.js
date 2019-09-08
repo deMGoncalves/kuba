@@ -1,3 +1,3 @@
-import about from './about'
+import About from './about'
 
-export default about
+export default About

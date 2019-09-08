@@ -6,6 +6,12 @@
   color: #2c2c2c;
   font-size: 60px;
   font-weight: 500;
-  margin-left: 15%;
+  margin-left: 58px;
   text-decoration: none;
+}
+
+@media (min-width: 425px) {
+  .nav__link {
+    margin-left: calc(15% + 4px);
+  }
 }

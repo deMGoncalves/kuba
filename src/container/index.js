@@ -1,3 +1,3 @@
-import container from './container'
+import Container from './container'
 
-export default container
+export default Container

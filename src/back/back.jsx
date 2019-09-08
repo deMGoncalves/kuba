@@ -1,13 +1,14 @@
 import h from '@h'
 import Container from '@/container'
+import Link from '@/link'
 import style from './style.css'
 
 const component = () =>
   <header className={style.back}>
     <Container>
-      <a className={style.back__link} href='/'>
+      <Link href='/'>
         <i className={[style.back__icon, 'material-icons']}>keyboard_backspace</i> Home
-      </a>
+      </Link>
     </Container>
   </header>
 
