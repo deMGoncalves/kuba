@@ -1,0 +1,29 @@
+{
+  "background_color": "#0a0a0a",
+  "description": "Simples, pequeno e imperfeiro. Uma visão além da programação",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "size": "512x512"
+    }
+  ],
+  "lang": "Portuguese",
+  "name": "Rex.JS",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "Rex",
+  "start_url": "https://rex-js.web.app",
+  "theme_color": "#0a0a0a",
+  "app.js": "/app.e19cec553335cab19594.js",
+  "runtime.js": "/runtime.e19cec553335cab19594.js",
+  "vendors.js": "/vendors.e19cec553335cab19594.js",
+  "../node_modules/.cache/bundle-stats/baseline.json": "/../node_modules/.cache/bundle-stats/baseline.json",
+  "rex-jx.png": "/3b09e82c36058ff0664dc9426ab3d6b3.png",
+  "bundle-stats.html": "/bundle-stats.html",
+  "favicon.png": "/favicon.png",
+  "index.html": "/index.html",
+  "precache-manifest.29bb405f7f24397c2aa62eda5d4c5484.js": "/precache-manifest.29bb405f7f24397c2aa62eda5d4c5484.js",
+  "service-worker.js": "/service-worker.js"
+}
