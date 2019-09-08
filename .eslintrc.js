@@ -38,6 +38,7 @@ module.exports = {
         "argsIgnorePattern": "^_"
       }
     ],
+    "react/prop-types": "off",
     "react/react-in-jsx-scope": "off"
   }
 };

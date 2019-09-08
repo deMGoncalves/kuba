@@ -4,6 +4,10 @@
   max-width: 1024px;
 }
 
+.container.fit {
+  max-width: 800px;
+}
+
 .container::after {
   clear: both;
   content: '';
