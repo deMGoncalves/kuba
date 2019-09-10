@@ -16,6 +16,7 @@ import slice from './slice'
 import T from './T'
 import test from './test'
 import toLower from './toLower'
+import toPairs from './toPairs'
 
 export {
   always,
@@ -35,5 +36,6 @@ export {
   slice,
   T,
   test,
-  toLower
+  toLower,
+  toPairs
 }

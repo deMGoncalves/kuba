@@ -1,6 +1,5 @@
 import * as f from '@f'
 import forEach from 'ramda/src/forEach'
-import toPairs from 'ramda/src/toPairs'
 import addEventListener from './addEventListener'
 import addEventListenerWithPrevent from './addEventListenerWithPrevent'
 import addEventListenerWithStop from './addEventListenerWithStop'
@@ -25,4 +24,4 @@ const extendAttributes = (element) =>
     )(...args)
 
 export default (attributes, element) =>
-  f.always(element)(forEach(extendAttributes(element), toPairs(attributes)))
+  f.always(element)(forEach(extendAttributes(element), f.toPairs(attributes)))
