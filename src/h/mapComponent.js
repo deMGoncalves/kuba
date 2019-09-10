@@ -1,8 +1,14 @@
-import is from 'ramda/src/is'
-import map from 'ramda/src/map'
+import * as f from '@f'
+import isComponent from './isComponent'
 
-const mapComponent = child =>
-  is(Function, child) ? child() : child
-
+/**
+ * Busca todos os components no meio dos elementos filhos e os executa
+ *
+ * @name mapComponent
+ * @function
+ * @access private
+ * @param {Array} children Elementos filhos
+ * @returns {Array} Retorna todos os elmentos filhos com o components executado
+ */
 export default (children) =>
-  map(mapComponent, children)
+  f.map(children, child => isComponent(child) ? child() : child)

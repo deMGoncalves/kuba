@@ -1,8 +1,14 @@
-import is from 'ramda/src/is'
-import map from 'ramda/src/map'
+import * as f from '@f'
+import isTextNode from './isTextNode'
 
-const mapTextNode = child =>
-  is(HTMLElement, child) ? child : document.createTextNode(child)
-
+/**
+ * Mapeia todos os textos dentros da matrix de elementos filhos
+ *
+ * @name mapTextNode
+ * @function
+ * @access private
+ * @param {Array} children Elemento filhos
+ * @returns {Array} Elementos filhos com os textos mapeados
+ */
 export default (children) =>
-  map(mapTextNode, children)
+  f.map(children, child => isTextNode(child) ? document.createTextNode(child) : child)

@@ -13,6 +13,7 @@ import __ from './gap'
 import is from './is'
 import join from './join'
 import or from './or'
+import map from './map'
 import slice from './slice'
 import T from './T'
 import test from './test'
@@ -35,6 +36,7 @@ export {
   is,
   join,
   or,
+  map,
   slice,
   T,
   test,
