@@ -8,6 +8,7 @@ import curry from './curry'
 import different from './different'
 import equal from './equal'
 import flatten from './flatten'
+import forEach from './forEach'
 import __ from './gap'
 import is from './is'
 import join from './join'
@@ -29,6 +30,7 @@ export {
   equal,
   different,
   flatten,
+  forEach,
   __,
   is,
   join,
