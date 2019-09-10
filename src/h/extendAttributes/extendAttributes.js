@@ -32,5 +32,8 @@ const extendAttributes = (element) =>
       [f.T, setAttribute(element)]
     )(...args)
 
+/**
+ * Para cada par de key e value extenda no elemento html
+ */
 export default (attributes, element) =>
   f.always(element)(f.forEach(f.toPairs(attributes), extendAttributes(element)))
