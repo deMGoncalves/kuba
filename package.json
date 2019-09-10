@@ -2,17 +2,15 @@
   "name": "Rex.JS",
   "version": "1.0.0",
   "description": "Simples, pequeno e imperfeito. Uma visão além da programação",
-  "private": true,
+  "private": false,
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.js --open",
-    "prod": "webpack --config webpack.prod.js",
-    "start": "node server.js",
-    "test": "jest"
+    "serve": "webpack-dev-server --config webpack.dev.js --open",
+    "lift": "webpack --config webpack.prod.js && firebase deploy",
+    "test": "jest --detectOpenHandles"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
       "eslint --fix",
-      "es6-plato -r -t Rex.JS -e .eslintrc.js -x .spec.js -d report src/**/*",
       "git add"
     ],
     "src/**/*.css": [
@@ -30,12 +28,9 @@
   "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/parser": "^1.13.0",
-    "base-href-webpack-plugin": "^2.0.0",
-    "bundle-stats": "^1.6.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.1.0",
     "csv-loader": "^3.0.2",
-    "es6-plato": "^1.2.3",
     "eslint": "^6.1.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-config-standard-react": "^8.0.0",
@@ -45,10 +40,9 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-standard": "^4.0.0",
-    "express": "^4.17.1",
     "file-loader": "^4.1.0",
+    "firebase-tools": "^7.3.1",
     "html-webpack-plugin": "^3.2.0",
-    "html-webpack-preconnect-plugin": "^1.1.0",
     "husky": "^3.0.1",
     "jest": "^24.8.0",
     "jest-puppeteer": "^4.3.0",
@@ -57,7 +51,6 @@
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "puppeteer": "^1.18.1",
-    "script-ext-html-webpack-plugin": "^2.1.4",
     "style-loader": "^0.23.1",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
@@ -66,9 +59,7 @@
     "typescript": "^3.5.3",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6",
-    "webpack-dev-middleware": "^3.7.0",
     "webpack-dev-server": "^3.7.2",
-    "webpack-manifest-plugin": "^2.0.4",
     "webpack-merge": "^4.2.1",
     "workbox-webpack-plugin": "^4.3.1",
     "xml-loader": "^1.2.1"

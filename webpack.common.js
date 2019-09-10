@@ -1,10 +1,5 @@
-const { BundleStatsWebpackPlugin } = require('bundle-stats')
-const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackPreconnectPlugin = require('html-webpack-preconnect-plugin')
-const ManifestPlugin = require('webpack-manifest-plugin')
 const path = require('path')
 
 module.exports = {
@@ -15,50 +10,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       favicon: './src/favicon.png',
-      meta: {
-        'Content-Security-Policy': {
-          'http-equiv': 'Content-Security-Policy',
-          content: 'block-all-mixed-content'
-        },
-        description: 'Simples, pequeno e imperfeito. Uma visão além da programação',
-        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
-      },
-      preconnect: [
-        'https://fonts.googleapis.com'
-      ],
       template: './src/index.html',
       title: 'Rex.JS · O bom e velho amigo do programador'
-    }),
-    new HtmlWebpackPreconnectPlugin(),
-    new ScriptExtHtmlWebpackPlugin({
-      prefetch: /\.js$/
-    }),
-    new BaseHrefWebpackPlugin({
-      baseHref: '/'
-    }),
-    new ManifestPlugin({
-      seed: {
-        background_color: '#0a0a0a',
-        description: 'Simples, pequeno e imperfeiro. Uma visão além da programação',
-        display: 'standalone',
-        icons: [
-          {
-            src: '/favicon.png',
-            type: 'image/png',
-            size: '512x512'
-          }
-        ],
-        lang: 'Portuguese',
-        name: 'Rex.JS',
-        orientation: 'portrait',
-        scope: '/',
-        short_name: 'Rex',
-        start_url: 'https://rex-js.web.app',
-        theme_color: '#0a0a0a'
-      }
-    }),
-    new BundleStatsWebpackPlugin({
-      baseline: true
     })
   ],
   module: {
