@@ -1,11 +1,23 @@
-import curry from 'ramda/src/curry'
-import forEach from 'ramda/src/forEach'
+import * as f from '@f'
 import mapComponent from './mapComponent'
 import mapTextNode from './mapTextNode'
 
-const appendChildren = (children, element) => {
-  forEach(child => element.appendChild(child), mapTextNode(mapComponent(children)))
-  return element
-}
+/**
+ * Adiciona um filho no elemento pai
+ */
+const appendChild = (element) =>
+  (child) =>
+    element.appendChild(child)
 
-export default curry(appendChildren)
+/**
+ * Apenda os elementos filhos no elemento pai
+ *
+ * @name appendChildren
+ * @function
+ * @access private
+ * @param {Array} children Elemento filhos
+ * @param {HTMLElment} element Elmento html pai
+ * @returns {HTMLElment} Elmento com o seus filhos adicionados
+ */
+export default (children, element) =>
+  f.always(element)(f.forEach(mapTextNode(mapComponent(children)), appendChild(element)))

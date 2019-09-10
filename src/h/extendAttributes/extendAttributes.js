@@ -11,6 +11,16 @@ import addEventListenerWithStopAndPrevent from './addEventListenerWithStopAndPre
 import setAttribute from './setAttribute'
 import setClassName from './setClassName'
 
+/**
+ * Extenda as propriedades, eventos e funcoes para um elemento
+ *
+ * @name extendAttributes
+ * @function
+ * @access private
+ * @param {HTMLElement} elment Elemento html
+ * @param {Object} args Key e value referente ao atributo, evento ou classe
+ * @returns {HTMLElement} Elemento com as propriedade, classes e evento atribuido
+ */
 const extendAttributes = (element) =>
   (args) =>
     f.cond(
