@@ -1,7 +1,7 @@
 module.exports = {
   server: {
-    command: 'webpack-dev-server --config webpack.dev.js',
+    command: 'webpack-dev-server --config webpack.test.js',
     launchTimeout: 99999,
-    port: 9000
+    port: 9001
   }
 }

@@ -2,7 +2,7 @@ const timeout = 99999
 
 describe('Index', () => {
   beforeEach(async () => {
-    await page.goto('http:localhost:9000', { timeout })
+    await page.goto('http:localhost:9001', { timeout })
   }, timeout)
 
   test('A linguagem da pagina deve ser pt-br', async () => {
