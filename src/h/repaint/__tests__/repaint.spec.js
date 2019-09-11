@@ -1,3 +1,5 @@
-test('repaint', () => {
-  expect(true).toBeTruthy()
+describe('h', () => {
+  test('repaint', () => {
+    expect(true).toBeTruthy()
+  })
 })
