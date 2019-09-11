@@ -1,4 +1,4 @@
 import router from './router'
-import './startDriving'
+import './start.js'
 
 export default router
