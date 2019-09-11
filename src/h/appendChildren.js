@@ -1,4 +1,5 @@
 import * as f from '@f'
+import isNode from './isNode'
 import mapComponent from './mapComponent'
 import mapTextNode from './mapTextNode'
 
@@ -7,7 +8,7 @@ import mapTextNode from './mapTextNode'
  */
 const appendChild = (element) =>
   (child) =>
-    element.appendChild(child)
+    isNode(child) && element.appendChild(child)
 
 /**
  * Apenda os elementos filhos no elemento pai
