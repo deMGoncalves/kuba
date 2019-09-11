@@ -2,7 +2,7 @@ const timeout = 99999
 
 describe('Index', () => {
   beforeEach(async () => {
-    await page.goto('http:localhost:9000', { timeout })
+    await page.goto('http:localhost:9001', { timeout })
   }, timeout)
 
   test('A linguagem da pagina deve ser pt-br', async () => {
@@ -10,7 +10,7 @@ describe('Index', () => {
   })
 
   test('A pagina deve apontar a url base para o caminho "/"', async () => {
-    await expect(page.$eval('base', el => el.href)).resolves.toBe('http://localhost:9000/')
+    await expect(page.$eval('base', el => el.href)).resolves.toBe('http://localhost:9001/')
   })
 
   test('O charset da pagina deve ser utf-8', async () => {
