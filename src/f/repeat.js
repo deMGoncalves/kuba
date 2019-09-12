@@ -1,3 +1,5 @@
+import curry from './curry'
+
 /**
  * Repete um valor uma quantidade expecificada
  *
@@ -8,5 +10,7 @@
  * @param {Number} n Quantidade de vezes que o elemento sera repetido
  * @returns {Array} Uma matriz com os valores petetido
  */
-export default (target, n) =>
+const repeat = (target, n) =>
   n ? Array(n).toString().split(',').map(() => target) : []
+
+export default curry(repeat)
