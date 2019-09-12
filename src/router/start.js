@@ -1,5 +1,6 @@
 import * as f from '@f'
 import paths from './paths'
+import stub from './stub'
 
 /**
  * Quando o window dispara o evento onload sera feito uma busca de uma rota compativel
@@ -11,9 +12,9 @@ import paths from './paths'
  */
 f.assign(window, {
   onload () {
-    const [path, listener] = paths
+    const [path, listener] = f.or(paths
       .filter(([route]) => f.test(route, location.pathname))
-      .shift()
+      .shift(), stub)
 
     listener(...path.exec(location.pathname).slice(1))
   }
