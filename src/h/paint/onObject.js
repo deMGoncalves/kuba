@@ -1,6 +1,6 @@
 import is from 'ramda/src/is'
 import prop from 'ramda/src/prop'
-import proxyOverComponent from './proxyOverComponent'
+import proxyOverComponent from './onComponent'
 
 export default (target, Component) => {
   return new Proxy(
