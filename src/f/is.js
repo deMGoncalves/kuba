@@ -15,6 +15,6 @@ import or from './or'
  * @returns {Boolean} Retorna verdadeiro se tipo for igual
  */
 const is = (klass, target) =>
-  and(different(target, null), or(equal(target.constructor, klass), target instanceof klass))
+  and(different(target, null), different(target, undefined)) && or(equal(target.constructor, klass), target instanceof klass)
 
 export default curry(is)
