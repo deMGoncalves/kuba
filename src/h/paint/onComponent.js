@@ -1,10 +1,9 @@
-import cond from 'ramda/src/cond'
-import T from 'ramda/src/T'
+import * as f from '@f'
 import createHookReflow from './createHookReflow'
 import createVElementToCompare from './createVElementToCompare'
 import hasElementInTarget from './hasElementInTarget'
 
-export default cond([
+export default f.cond(
   [hasElementInTarget, createVElementToCompare],
-  [T, createHookReflow]
-])
+  [f.T, createHookReflow]
+)

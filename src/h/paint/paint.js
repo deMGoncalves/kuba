@@ -1,10 +1,21 @@
-import proxyOverComponent from './proxyOverComponent'
-import proxyOverObject from './proxyOverObject'
+import onComponent from './onComponent'
+import onObject from './onObject'
 
-export default (Component) =>
-  (Target) =>
-    function Stub (attrs, children) {
-      return (this instanceof Stub)
-        ? proxyOverObject(new Target(...arguments), Component)
-        : proxyOverComponent(new Target({ ...attrs }), Component, children)
+/**
+ * Encapsula a class com um component, quando o cliente instanciar a classe sera
+ * executado normalmente mas quando usar a classe como um component
+ * sera apenas executado a class seguindo a assinatura do jsx
+ *
+ * @name paint
+ * @function
+ * @access public
+ * @param {Functino} component Componente html
+ * @return {Class} A classe alvo encapsulado
+ */
+export default (component) =>
+  (Klass) =>
+    function paint (attrs, children) {
+      return (this instanceof paint)
+        ? onObject(new Klass(...arguments), component)
+        : onComponent(new Klass({ ...attrs }), component, children)
     }
