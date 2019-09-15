@@ -9,7 +9,7 @@ import * as f from '@f'
  * @param {HTMLElement} element Elemento html alvo
  * @param {String} key Nome da atributo
  * @param {String} value Valor do atributo
- * @returns {HTMLElement} O elemento alvo com o novo atributo
+ * @return {HTMLElement} O elemento alvo com o novo atributo
  */
 export default (element) =>
   (key, value) =>

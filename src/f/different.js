@@ -9,7 +9,7 @@ import equal from './equal'
  * @access public
  * @param {*} x Primeiro valor
  * @param {*} y Segundo valor
- * @returns {Boolean} Verdadeiro se os valores forem diferente
+ * @return {Boolean} Verdadeiro se os valores forem diferente
  */
 const different = (x, y) =>
   !equal(x, y)

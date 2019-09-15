@@ -9,7 +9,7 @@ import * as f from '@f'
  * @args {HTMLElement} element Elemento html que tera um evento adicionado
  * @args {String} eventName Nome do evento
  * @args {Function} listener Funcao que sera executado quando o evenfo for disparado
- * @returns {HTMLElement} Elemento html com o evento adicionado
+ * @return {HTMLElement} Elemento html com o evento adicionado
  */
 const addEventListener = (element, eventName, listener) =>
   f.assign(element, {

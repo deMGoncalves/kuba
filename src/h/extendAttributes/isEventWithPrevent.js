@@ -7,6 +7,6 @@ import * as f from '@f'
  * @function
  * @access private
  * @param {String} target Nome do atributo
- * @returns {Boolean} Verdadeiro se for um evento com a tratativa prevent
+ * @return {Boolean} Verdadeiro se for um evento com a tratativa prevent
  */
 export default f.test(/^on[A-Z][a-z]+_prevent$/, f.__)

@@ -8,7 +8,7 @@ import curry from './curry'
  * @access public
  * @param {*} x Primeiro valor
  * @param {*} y Segundo valor
- * @returns {Boolean} Verdadriro ser um dos valores for verdadeiro
+ * @return {Boolean} Verdadriro ser um dos valores for verdadeiro
  */
 const or = (x, y) =>
   x || y

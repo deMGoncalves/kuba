@@ -19,7 +19,7 @@ import setClassName from './setClassName'
  * @access private
  * @param {HTMLElement} elment Elemento html
  * @param {Object} args Key e value referente ao atributo, evento ou classe
- * @returns {HTMLElement} Elemento com as propriedade, classes e evento atribuido
+ * @return {HTMLElement} Elemento com as propriedade, classes e evento atribuido
  */
 const extendAttributes = (element) =>
   (args) =>

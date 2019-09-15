@@ -11,7 +11,7 @@ import { isGap } from '../gap'
  * @param {*} a0 Parametro valido que nao seja um gap
  * @param {*} a1 Parametro valido que nao seja um gap
  * @param {*} a2 Parametro valido que nao seja um gap
- * @returns {*} O valor que a funcao alvo retornar
+ * @return {*} O valor que a funcao alvo retornar
  */
 export default (target) =>
   function (a0, a1, a2) {

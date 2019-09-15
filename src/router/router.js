@@ -7,7 +7,7 @@ import paths from './paths'
  * @function
  * @access public
  * @param {Array} ...args Mapa de uma nova rota
- * @returns {undefined} Nao retorna nada
+ * @return {undefined} Nao retorna nada
  */
 export default (...args) =>
   paths.push(args)

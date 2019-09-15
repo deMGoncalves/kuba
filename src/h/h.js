@@ -14,7 +14,7 @@ import isTagName from './isTagName'
  * @param {string|function} tagNameOrComponent Nome do tag HTML ou referencia do componente
  * @param {object} attributes Atributos do elemento HTML ou componente
  * @param {array} children Elementos filhos
- * @returns {Node} Elemento HTML
+ * @return {Node} Elemento HTML
  */
 export default (tagNameOrComponent, attributes, ...children) =>
   f.cond(

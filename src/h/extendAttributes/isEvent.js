@@ -7,6 +7,6 @@ import * as f from '@f'
  * @function
  * @access private
  * @param {String} target Nome do event
- * @returns {Boolean} Verdadeiro ser for um evento
+ * @return {Boolean} Verdadeiro ser for um evento
  */
 export default f.test(/^on[A-Z][a-z]+$/, f.__)

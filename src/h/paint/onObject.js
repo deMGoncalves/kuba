@@ -10,7 +10,7 @@ import onComponent from './onComponent'
  * @access private
  * @param {Object} context Instancia da classe que foi encapsulado
  * @param {Function} component Component representativo da classe
- * @returns {Proxy} Um proxy que fara a orquestracao para um funcionamento hibrido
+ * @return {Proxy} Um proxy que fara a orquestracao para um funcionamento hibrido
  */
 export default (context, component) =>
   new Proxy(

@@ -8,7 +8,7 @@ import stub from './stub'
  * @name onload
  * @function
  * @access public
- * @returns {undefined} Nao retorna nada
+ * @return {undefined} Nao retorna nada
  */
 f.assign(window, {
   onload () {

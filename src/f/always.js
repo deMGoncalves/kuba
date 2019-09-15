@@ -5,7 +5,7 @@
  * @function
  * @access public
  * @param {*} target Valor que sera retornado nas proximas chamadas
- * @returns {*} Retorna o valor fornecido anteriormente
+ * @return {*} Retorna o valor fornecido anteriormente
  */
 export default (target) =>
   () => target

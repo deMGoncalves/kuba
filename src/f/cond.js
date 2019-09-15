@@ -7,7 +7,7 @@ import T from './T'
  * @function
  * @access public
  * @args {Object} target=result[__target__] O resultado da funcao processadora
- * @returns {Object} O resultado da funcao processadora ou undefined como padrao
+ * @return {Object} O resultado da funcao processadora ou undefined como padrao
  */
 const result = (target) =>
   (result['__target__'] = target || result['__target__'])

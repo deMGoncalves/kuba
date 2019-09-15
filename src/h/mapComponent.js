@@ -8,7 +8,7 @@ import isComponent from './isComponent'
  * @function
  * @access private
  * @param {Array} children Elementos filhos
- * @returns {Array} Retorna todos os elmentos filhos com o components executado
+ * @return {Array} Retorna todos os elmentos filhos com o components executado
  */
 export default (children) =>
   f.map(children, child => isComponent(child) ? child() : child)

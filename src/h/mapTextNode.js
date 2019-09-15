@@ -8,7 +8,7 @@ import isTextNode from './isTextNode'
  * @function
  * @access private
  * @param {Array} children Elemento filhos
- * @returns {Array} Elementos filhos com os textos mapeados
+ * @return {Array} Elementos filhos com os textos mapeados
  */
 export default (children) =>
   f.map(children, child => isTextNode(child) ? document.createTextNode(child) : child)

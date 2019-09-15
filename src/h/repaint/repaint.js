@@ -9,7 +9,7 @@ import * as f from '@f'
  * @args {Class} _target Classe que tera seu metodo encapsulado
  * @args {String} _method Nome do metodo encapsulado
  * @args {Object} descriptor Descricao da definicao do metodo
- * @returns {*} O retorno do metodo encapsulado
+ * @return {*} O retorno do metodo encapsulado
  */
 export default (_target, _method, descriptor) => {
   const { value } = descriptor

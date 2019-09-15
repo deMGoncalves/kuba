@@ -18,7 +18,7 @@ const appendChild = (element) =>
  * @access private
  * @param {Array} children Elemento filhos
  * @param {HTMLElment} element Elmento html pai
- * @returns {HTMLElment} Elmento com o seus filhos adicionados
+ * @return {HTMLElment} Elmento com o seus filhos adicionados
  */
 export default (children, element) =>
   f.always(element)(f.forEach(mapTextNode(mapComponent(children)), appendChild(element)))
