@@ -11,7 +11,7 @@ const { window } = jsdom
  * @access public
  * @args {Object} src Ambiente window, todos os recursos do browser
  * @args {Object} target Global do node, onde iremos extender o window
- * @returns {Object} Global do node com as web api do window
+ * @return {Object} Global do node com as web api do window
  */
 function copyProps(src, target) {
   const props = Object.getOwnPropertyNames(src)
