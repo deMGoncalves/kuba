@@ -7,6 +7,6 @@ import * as f from '@f'
  * @function
  * @access private
  * @param {HTMLElement} target Elemento que sera havaliado
- * @returns {Boolean} Verdadeiro se for um Node element
+ * @return {Boolean} Verdadeiro se for um Node element
  */
 export default f.is(Node, f.__)

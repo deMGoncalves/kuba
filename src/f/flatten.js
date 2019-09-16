@@ -7,7 +7,7 @@ import concat from './concat'
  * @function
  * @access private
  * @param {Array} target Uma matriz com sub-matrizes
- * @returns {Array} Uma nova matriz com seus sub-matrizes em primeiro na profundidade
+ * @return {Array} Uma nova matriz com seus sub-matrizes em primeiro na profundidade
  */
 export default (target) =>
   target.reduce(concat, [])

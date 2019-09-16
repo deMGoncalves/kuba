@@ -3,7 +3,7 @@
  *
  * @name gap
  * @access public
- * @returns {String} Leteral que contem um valor unico
+ * @return {String} Leteral que contem um valor unico
  */
 const gap = (new Date()).getTime().toString(32)
 
@@ -14,7 +14,7 @@ const gap = (new Date()).getTime().toString(32)
  * @function
  * @access private
  * @args {String} target Proposto valor de ser um gap
- * @returns {Boolean} Verdadeio se o valor for um gap
+ * @return {Boolean} Verdadeio se o valor for um gap
  */
 const isGap = (target) =>
   gap === target

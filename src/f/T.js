@@ -6,6 +6,6 @@ import always from './always'
  * @name T
  * @function
  * @access public
- * @returns {Boolean} Verdadeiro
+ * @return {Boolean} Verdadeiro
  */
 export default always(true)

@@ -7,6 +7,6 @@ import * as f from '@f'
  * @function
  * @access private
  * @param {*} element Elemento ha ser havaliado
- * @returns {Boolean} Verdadeiro se o elemento eh um component
+ * @return {Boolean} Verdadeiro se o elemento eh um component
  */
 export default f.is(Function, f.__)

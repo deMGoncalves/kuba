@@ -10,22 +10,18 @@ import onComponent from './onComponent'
  * @access private
  * @param {Object} context Instancia da classe que foi encapsulado
  * @param {Function} component Component representativo da classe
- * @returns {Proxy} Um proxy que fara a orquestracao para um funcionamento hibrido
+ * @return {Proxy} Um proxy que fara a orquestracao para um funcionamento hibrido
  */
 export default (context, component) =>
   new Proxy(
 
-    /**
-     * Sera entregue uma funcao ao invez do contexto, com isso posso
-     * fazer a renderizacao do component quando esta instancia for colocado
-     * no DOM
-     */
+    // Sera entregue uma funcao ao invez do contexto, com isso posso
+    // fazer a renderizacao do component quando esta instancia for colocado
+    // no DOM
     (_, children) => onComponent(context, component, children),
 
-    /**
-     * Remap das keys para o contexto, senao o get sera feito sobre
-     * wrapper do component
-     */
+    // Remap das keys para o contexto, senao o get sera feito sobre
+    // wrapper do component
     {
       get (_, key) {
         const target = context[key]

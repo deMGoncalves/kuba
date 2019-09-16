@@ -7,6 +7,6 @@ import * as f from '@f'
  * @function
  * @access private
  * @param {*} target Elemento alvo
- * @returns {Boolean} Verdadeiro se o elemento for um texto
+ * @return {Boolean} Verdadeiro se o elemento for um texto
  */
 export default f.is(String, f.__)

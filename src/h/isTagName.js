@@ -7,6 +7,6 @@ import * as f from '@f'
  * @function
  * @access private
  * @param {String|Function} tagNameOrComponent Suposto tagName ou Component
- * @returns {Boolean} Verdadeiro se o elemento for um nome de elemento html
+ * @return {Boolean} Verdadeiro se o elemento for um nome de elemento html
  */
 export default f.is(String, f.__)

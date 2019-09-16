@@ -6,9 +6,9 @@ import curry from './curry'
  * @name test
  * @function
  * @access public
- * @param {RegExp} Expressao regular havaliadora
- * @param {Strinmg} Valor a ser havaliado
- * @returns {Boolean} Verdadeiro se o valor passar no teste da expressao regular
+ * @param {RegExp} pattern Expressao regular havaliadora
+ * @param {Strinmg} target Valor a ser havaliado
+ * @return {Boolean} Verdadeiro se o valor passar no teste da expressao regular
  */
 const test = (pattern, target) =>
   pattern.test(target)
