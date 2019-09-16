@@ -14,6 +14,8 @@ import * as f from '@f'
 export default (_target, _method, descriptor) => {
   const { value } = descriptor
 
+  // Dispara o metodo __reflow__ que fora adicionado no processo
+  // inicial paint
   f.assign(descriptor, {
     value (...args) {
       return f.always(value.call(this, ...args))(this.__reflow__ && this.__reflow__())
