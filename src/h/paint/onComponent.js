@@ -4,16 +4,17 @@ import createVElementToCompare from './createVElementToCompare'
 import hasElementInTarget from './hasElementInTarget'
 
 /**
- * Se o contexto tiver um elemento sera criado apenas outro vDom
- * para fins de comparacao, caso trontario sera criado o primeiro elemento
+ * Sera feito um wrapper sobre o contexto da classe para com o componente,
+ * incluindo algumas inteligencias de que se o contexto tiver um elmento
+ * ja apendado sera feito apenas um elmento virtual para comparacao apenas
  *
  * @name onComponent
  * @function
  * @access private
- * @param {Object} context Instancia da classe para encapsulado pelo component
- * @param {Function} component Web component
- * @param {Array} children Elemento filhos que seram incluidos no web component
- * @return {HTMLElement} Elemento html quer fora gerado pelo component
+ * @param {Object} context Objeto instanciado
+ * @param {Function} component Component que sera o wrapper para a instancia
+ * @param {Array} children Elemento filhos do component
+ * @return {HTMLElement} Elemento html montado
  */
 export default f.cond(
   [hasElementInTarget, createVElementToCompare],
