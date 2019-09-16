@@ -6,6 +6,6 @@ import * as f from '@f'
  * @name createComment
  * @function
  * @access private
- * @returns {Comment} Um comentario vazio
+ * @return {Comment} Um comentario vazio
  */
 export default f.always(document.createComment(''))

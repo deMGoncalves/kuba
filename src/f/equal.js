@@ -8,7 +8,7 @@ import curry from './curry'
  * @access public
  * @param {*} x Primeiro valor
  * @param {*} y Segundo valor
- * @returns {Boolean} Verdadeio se os valores forem iguais
+ * @return {Boolean} Verdadeio se os valores forem iguais
  */
 const equal = (x, y) =>
   x === y

@@ -12,7 +12,7 @@ import or from './or'
  * @access public
  * @param {*} klass Classe a ser comparado
  * @param {*} target Objeto a ser comparado
- * @returns {Boolean} Retorna verdadeiro se tipo for igual
+ * @return {Boolean} Retorna verdadeiro se tipo for igual
  */
 const is = (klass, target) =>
   and(different(target, null), different(target, undefined)) && or(equal(target.constructor, klass), target instanceof klass)

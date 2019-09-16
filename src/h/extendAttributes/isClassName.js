@@ -7,6 +7,6 @@ import * as f from '@f'
  * @function
  * @access private
  * @param {String} target Nome do atributo
- * @returns {Boolean} Verdadeiro ser o atributo for um className
+ * @return {Boolean} Verdadeiro ser o atributo for um className
  */
 export default f.test(/^className$/, f.__)

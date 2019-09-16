@@ -8,7 +8,7 @@ import curry from './curry'
  * @access public
  * @param {*} target O elemento a ser repetido
  * @param {Number} n Quantidade de vezes que o elemento sera repetido
- * @returns {Array} Uma matriz com os valores petetido
+ * @return {Array} Uma matriz com os valores petetido
  */
 const repeat = (target, n) =>
   n ? Array(n).toString().split(',').map(() => target) : []
