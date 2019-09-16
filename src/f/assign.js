@@ -8,7 +8,7 @@ import curry from './curry'
  * @access public
  * @param {*} target Objeto que sera extendido
  * @param {Object} descriptor Novas chaves e valores
- * @returns {*} Objeto com as novas propriedades
+ * @return {*} Objeto com as novas propriedades
  */
 const assign = (target, descriptor) =>
   Object.assign(target, descriptor)

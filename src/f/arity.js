@@ -8,7 +8,7 @@ import curry from './curry'
  * @access public
  * @param {Number} n Numero de parametros
  * @param {Function} target Funcao que tera seus numero de parametros redefinido
- * @returns {*} Retorna o valor que a funcao alvo retornara
+ * @return {*} Retorna o valor que a funcao alvo retornara
  */
 const arity = (n, target) => {
   switch (n) {

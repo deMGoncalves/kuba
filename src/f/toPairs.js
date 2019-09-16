@@ -5,7 +5,7 @@
  * @function
  * @access public
  * @param {Object} target Objeto alvo
- * @returns {Array} Uma matriz de key e values
+ * @return {Array} Uma matriz de key e values
  */
 export default (target) =>
   Object.entries(target)

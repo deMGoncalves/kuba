@@ -9,10 +9,10 @@ import preventDefault from './preventDefault'
  * @name addEventListenerWithStopAndPrevent
  * @function
  * @access private
- * @param {HTMLElement} Elemento que tera um evento adicionado
+ * @param {HTMLElement} element Elemento que tera um evento adicionado
  * @param {String} eventName Nome do evento
  * @param {Function} listener Funcao que sera vinculado ao evento
- * @returns {*} O retorno da funcao alvo
+ * @return {*} O retorno da funcao alvo
  */
 export default (element) =>
   (eventName, listener) =>

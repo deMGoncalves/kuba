@@ -7,7 +7,7 @@ import * as f from '@f'
  * @function
  * @access private
  * @param {Function} listener Evento que sera executado apos o stopPropagation
- * @returns {*} O retorno do evento alvo
+ * @return {*} O retorno do evento alvo
  */
 export default (listener) =>
   (e) =>
