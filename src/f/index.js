@@ -10,6 +10,7 @@ import equal from './equal'
 import flatten from './flatten'
 import forEach from './forEach'
 import __ from './gap'
+import has from './has'
 import is from './is'
 import join from './join'
 import map from './map'
@@ -34,6 +35,7 @@ export {
   flatten,
   forEach,
   __,
+  has,
   is,
   join,
   map,

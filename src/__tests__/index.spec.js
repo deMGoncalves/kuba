@@ -29,7 +29,7 @@ describe('Index', () => {
     await expect(page.$eval('meta[http-equiv=X-UA-Compatible]', (el) => el.content)).resolves.toBe('IE=edge')
   })
 
-  test('O titulo da pagina deve ser "Click Control"', async () => {
+  test('O titulo da pagina deve ser "Rex.JS"', async () => {
     await expect(page.title()).resolves.toMatch('Rex.JS · O bom e velho amigo do programador')
   })
 }, timeout)

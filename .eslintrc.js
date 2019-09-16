@@ -31,6 +31,7 @@ module.exports = {
     "jest"
   ],
   "rules": {
+    "no-prototype-builtins": "off",
     "no-unused-vars": [
       "error",
       {
