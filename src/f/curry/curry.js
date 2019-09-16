@@ -8,7 +8,7 @@ import threeParameters from './threeParameters'
  * @name curry
  * @function
  * @access public
- * @param {Function} Funcao alvo, que sera encapsulado
+ * @param {Function} target Funcao alvo, que sera encapsulado
  * @return {Function} A funcao alvo encapsulado
  */
 export default (target) =>

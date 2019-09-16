@@ -6,7 +6,7 @@ import T from './T'
  * @name result
  * @function
  * @access public
- * @args {Object} target=result[__target__] O resultado da funcao processadora
+ * @args {Object} target O resultado da funcao processadora
  * @return {Object} O resultado da funcao processadora ou undefined como padrao
  */
 const result = (target) =>

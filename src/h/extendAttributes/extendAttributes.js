@@ -17,7 +17,7 @@ import setClassName from './setClassName'
  * @name extendAttributes
  * @function
  * @access private
- * @param {HTMLElement} elment Elemento html
+ * @param {HTMLElement} element Elemento html
  * @param {Object} args Key e value referente ao atributo, evento ou classe
  * @return {HTMLElement} Elemento com as propriedade, classes e evento atribuido
  */
@@ -32,8 +32,6 @@ const extendAttributes = (element) =>
       [f.T, setAttribute(element)]
     )(...args)
 
-/**
- * Para cada par de key e value extenda no elemento html
- */
+// Para cada par de key e value extenda no elemento html
 export default (attributes, element) =>
   f.always(element)(f.forEach(f.toPairs(attributes), extendAttributes(element)))

@@ -11,4 +11,5 @@ import isComponent from './isComponent'
  * @return {Array} Retorna todos os elmentos filhos com o components executado
  */
 export default (children) =>
-  f.map(children, child => isComponent(child) ? child() : child)
+  f.map(children, (child) =>
+    isComponent(child) ? child() : child)

@@ -3,9 +3,7 @@ import isNode from './isNode'
 import mapComponent from './mapComponent'
 import mapTextNode from './mapTextNode'
 
-/**
- * Adiciona um filho no elemento pai
- */
+// Adiciona um filho no elemento pai
 const appendChild = (element) =>
   (child) =>
     isNode(child) && element.appendChild(child)

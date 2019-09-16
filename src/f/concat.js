@@ -7,7 +7,7 @@ import curry from './curry'
  * @function
  * @access public
  * @param {Array} target Matrix base
- * @param {*} Novo valor a ser adicionado
+ * @param {*} values Novo valor a ser adicionado
  * @return {Array} Uma nova matrix com os novos valores
  */
 const concat = (target, values) =>
