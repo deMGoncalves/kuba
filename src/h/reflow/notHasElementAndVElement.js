@@ -1,6 +1,6 @@
-import and from 'ramda/src/and'
+import * as f from '@f'
 import notHasElement from './notHasElement'
 import notHasVElement from './notHasVElement'
 
 export default (element, vElement) =>
-  and(notHasElement(element), notHasVElement(undefined, vElement))
+  f.and(notHasElement(element), notHasVElement(undefined, vElement))
