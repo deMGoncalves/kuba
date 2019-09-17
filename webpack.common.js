@@ -4,7 +4,10 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    app: './src/index.jsx'
+    app: './src/index.jsx',
+    f: './src/f/index.js',
+    h: './src/h/index.js',
+    router: './src/router/index.js'
   },
   plugins: [
     new CleanWebpackPlugin(),
