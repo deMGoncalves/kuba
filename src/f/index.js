@@ -12,8 +12,10 @@ import forEach from './forEach'
 import __ from './gap'
 import has from './has'
 import is from './is'
+import isNil from './isNil'
 import join from './join'
 import map from './map'
+import not from './not'
 import or from './or'
 import repeat from './repeat'
 import slice from './slice'
@@ -37,8 +39,10 @@ export {
   __,
   has,
   is,
+  isNil,
   join,
   map,
+  not,
   or,
   repeat,
   slice,
