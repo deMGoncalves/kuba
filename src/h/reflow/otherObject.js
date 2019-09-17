@@ -1,9 +1,15 @@
-import and from 'ramda/src/and'
-import equals from 'ramda/src/equals'
-import has from 'ramda/src/has'
-import not from 'ramda/src/not'
+import * as f from '@f'
+import hasTarget from './hasTarget'
 
-const hasTarget = has('__target__')
-
+/**
+ * Valida se ambos os elemento tem contexto diferentes
+ *
+ * @name sameObject
+ * @function
+ * @access private
+ * @param {HTMLElement} element Elemento html que esta no DOM
+ * @param {HTMLElement} vElement Elmento html virtual
+ * @return {Boolean} Verdadeiro se ambos nao tiverem o mesmo contexto
+ */
 export default (element, vElement) =>
-  and(and(hasTarget(element), hasTarget(vElement)), not(equals(element.__target__, vElement.__target__)))
+  f.and(f.and(hasTarget(element), hasTarget(vElement)), f.not(f.equal(element.__target__, vElement.__target__)))
