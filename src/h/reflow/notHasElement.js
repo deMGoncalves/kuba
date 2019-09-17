@@ -9,5 +9,4 @@ import * as f from '@f'
  * @param {HTMLElement} element Elmento real que esta no DOM
  * @return {Boolean} Verdadeiro se o elemento real existir
  */
-export default (element) =>
-  f.isNil(element)
+export default f.isNil
