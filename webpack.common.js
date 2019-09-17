@@ -4,7 +4,7 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    app: './src/index.jsx',
+    app: './src/index.js',
     f: './src/f/index.js',
     h: './src/h/index.js',
     router: './src/router/index.js'
