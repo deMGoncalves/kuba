@@ -14,6 +14,7 @@ import has from './has'
 import is from './is'
 import join from './join'
 import map from './map'
+import not from './not'
 import or from './or'
 import repeat from './repeat'
 import slice from './slice'
@@ -39,6 +40,7 @@ export {
   is,
   join,
   map,
+  not,
   or,
   repeat,
   slice,
