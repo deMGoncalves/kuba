@@ -1,7 +1,7 @@
-import and from './and'
 import curry from './curry'
-import different from './different'
 import equal from './equal'
+import isNil from './isNil'
+import not from './not'
 import or from './or'
 
 /**
@@ -15,6 +15,6 @@ import or from './or'
  * @return {Boolean} Retorna verdadeiro se tipo for igual
  */
 const is = (klass, target) =>
-  and(different(target, null), different(target, undefined)) && or(equal(target.constructor, klass), target instanceof klass)
+  not(isNil(target)) && or(equal(target.constructor, klass), target instanceof klass)
 
 export default curry(is)
