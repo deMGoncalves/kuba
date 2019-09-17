@@ -1,4 +1,4 @@
-import * as f from '@f'
+import notHasElement from './notHasElement'
 
 /**
  * Valida a existencia do elemento virtual
@@ -10,4 +10,4 @@ import * as f from '@f'
  * @return {Boolean} Verdadeiro se o novo elemento existir
  */
 export default (_, vElement) =>
-  f.isNil(vElement)
+  notHasElement(vElement)
