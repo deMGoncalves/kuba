@@ -9,4 +9,4 @@ import * as f from '@f'
  * @param {String} target Nome do event
  * @return {Boolean} Verdadeiro ser for um evento
  */
-export default f.test(/^on[A-Z][a-z]+$/, f.__)
+export default f.test(/^on[a-z]+$/i, f.__)

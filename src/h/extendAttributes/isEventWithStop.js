@@ -9,4 +9,4 @@ import * as f from '@f'
  * @param {String} target Nome do atributo
  * @return {Boolean} Verdadeiro se o atributo for um evento com stop
  */
-export default f.test(/^on[A-Z][a-z]+_stop$/, f.__)
+export default f.test(/^on[a-z]+_stop$/i, f.__)

@@ -9,4 +9,4 @@ import * as f from '@f'
  * @param {String} target Nome do atributo
  * @return {Boolean} Verdadeiro se for um evento com a tratativa prevent
  */
-export default f.test(/^on[A-Z][a-z]+_prevent$/, f.__)
+export default f.test(/^on[a-z]+_prevent$/i, f.__)
