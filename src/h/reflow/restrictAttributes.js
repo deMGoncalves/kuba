@@ -1,11 +1,7 @@
 import removeEventListener from './removeEventListener'
 import removeAttributes from './removeAttributes'
-import addEventListener from './addEventListener'
-import setAttribute from './setAttribute'
 
-export default (element, vElement) => {
+export default (element, _vElement) => {
   removeAttributes(removeEventListener(element))
-  addEventListener(element, vElement)
-  setAttribute(element, vElement)
   return element
 }
