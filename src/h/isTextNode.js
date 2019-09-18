@@ -9,4 +9,5 @@ import * as f from '@f'
  * @param {*} target Elemento alvo
  * @return {Boolean} Verdadeiro se o elemento for um texto
  */
-export default f.is(String, f.__)
+export default (target) =>
+  f.or(f.is(String, target), f.is(Number, target))
