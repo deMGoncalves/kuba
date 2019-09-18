@@ -1,3 +1,4 @@
+import * as f from '@f'
 /**
  * Monta um objeto com todos os eventos adicionado ao elemento
  *
@@ -10,6 +11,6 @@
 export default (vElement) =>
   []
     .slice
-    .call(vElement.__events__)
+    .call(f.or(vElement.__events__, []))
     .reduce((reducer, event) =>
       ({ ...reducer, [event]: vElement[event] }), {})

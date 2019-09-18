@@ -1,3 +1,5 @@
+import * as f from '@f'
+
 /**
  * Monta um objeto com os atributos de um elemento
  *
@@ -10,6 +12,6 @@
 export default (vElement) =>
   []
     .slice
-    .call(vElement.attributes)
+    .call(f.or(vElement.attributes, []))
     .reduce((reducer, { name, value }) =>
       ({ ...reducer, [name]: value }), {})
