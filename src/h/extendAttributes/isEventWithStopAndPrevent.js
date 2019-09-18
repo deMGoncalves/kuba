@@ -9,4 +9,4 @@ import * as f from '@f'
  * @param {String} target Nome do evennto
  * @return {Boolean} Verdadeiro se o atributo eh um evento valido
  */
-export default f.test(/^on[A-Z][a-z]+_(stop|prevent)_(stop|prevent)$/, f.__)
+export default f.test(/^on[a-z]+_(stop|prevent)_(stop|prevent)$/i, f.__)
