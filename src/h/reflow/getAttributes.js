@@ -3,7 +3,7 @@
  *
  * @name default
  * @function
- * @access public
+ * @access private
  * @param {HTMLElement} vElement Atributos de um elemento
  * @return {Object} Atributos de um elemento
  */
