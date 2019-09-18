@@ -12,5 +12,14 @@ import * as f from '@f'
  * @return {HTMLElement} O elemento alvo com o novo atributo
  */
 export default (element) =>
-  (key, value) =>
-    f.always(element)(element.setAttribute(key, value))
+  (key, value) => {
+    // Guardo os atributos adicionados para usar no processwo de reflow, preciso
+    // garantir que os atributos seja removido antes de inputar os novos
+    element.__attributes__ = f.concat(f.or(element.__attributes__, []), key)
+
+    // Seto os atributos segundo o setAttribute para grantir os dataset, assim
+    // encaro tudo como atributo
+    element.setAttribute(key, value)
+
+    return element
+  }
