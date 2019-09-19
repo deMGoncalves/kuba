@@ -9,4 +9,4 @@ import * as f from '@f'
  * @param {String} target Nome do atributo
  * @return {Boolean} Verdadeiro ser o atributo for um className
  */
-export default f.test(/^className$/, f.__)
+export default f.test(/^class/, f.__)
