@@ -6,19 +6,24 @@ import isComponent from './isComponent'
 import isTagName from './isTagName'
 
 /**
- * Hyperscript, syntaxe javascript para construir elementos HTML
+ * Hyperscript, crie um HyperText com JavaScript no cliente usando JSX
+ *
+ * Esta sintaxe estranha de tags não é uma string, nem HTML
+ * É chamada JSX e é uma extensão de sintaxe para JavaScript
+ * Recomendo usar JSX com o h para descrever como a UI deveria parecer
+ * JSX pode lembrar uma linguagem de template, mas que vem com todo o poder do JavaScript
  *
  * @name h
  * @function
  * @access public
- * @param {string|function} tagNameOrComponent Nome do tag HTML ou referencia do componente
- * @param {object} attributes Atributos do elemento HTML ou componente
- * @param {array} children Elementos filhos
- * @return {Node} Elemento HTML
+ * @param {String|function} tagNameOrComponent Nome do tag HTML ou nome do Web Componente
+ * @param {Object} descriptor Atributos, classes e eventos do Elemento ou Web componente
+ * @param {Array} children Elementos filhos
+ * @return {HTMLElement} Elemento com os atributos, classes, eventos e filhos que foram especificados
  */
-export default (tagNameOrComponent, attributes, ...children) =>
+export default (tagNameOrComponent, descriptor, ...children) =>
   f.cond(
     [isTagName, createElement],
     [isComponent, executeComponent],
     [f.T, createComment]
-  )(tagNameOrComponent, { ...attributes }, f.flatten(children))
+  )(tagNameOrComponent, { ...descriptor }, f.flatten(children))
