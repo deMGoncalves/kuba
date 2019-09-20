@@ -1,13 +1,19 @@
 import flatten from '../../f/flatten.js'
+import T from '../../f/T.js'
 import h from '../h'
 import createElement from '../createElement.js'
+import createComment from '../createComment.js'
 import executeComponent from '../executeComponent.js'
+import isComponent from '../isComponent.js'
 import isTagName from '../isTagName'
 
 jest.mock('../createElement.js')
+jest.mock('../createComment.js')
 jest.mock('../executeComponent.js')
+jest.mock('../isComponent.js')
 jest.mock('../isTagName.js')
 jest.mock('../../f/flatten.js')
+jest.mock('../../f/T.js')
 
 describe('h', () => {
   test('O modulo de hyperscript deve ser exportado como default', () => {
@@ -48,6 +54,9 @@ describe('h', () => {
     isTagName.mockReset()
     isTagName.mockReturnValue(false)
 
+    isComponent.mockReset()
+    isComponent.mockReturnValue(true)
+
     executeComponent.mockReset()
     executeComponent.mockReturnValue(element)
 
@@ -60,9 +69,54 @@ describe('h', () => {
     expect(isTagName).toHaveBeenCalledTimes(1)
     expect(isTagName).toHaveBeenCalledWith(component, {}, [])
 
+    expect(isComponent).toHaveBeenCalled()
+    expect(isComponent).toHaveBeenCalledTimes(1)
+    expect(isComponent).toHaveBeenCalledWith(component, {}, [])
+
     expect(executeComponent).toHaveBeenCalled()
     expect(executeComponent).toHaveBeenCalledTimes(1)
     expect(executeComponent).toHaveBeenCalledWith(component, {}, [])
+
+    expect(flatten).toHaveBeenCalled()
+    expect(flatten).toHaveBeenCalledTimes(1)
+    expect(flatten).toHaveBeenCalledWith([])
+  })
+
+  test('Deve retornar um comentario quando o parametro tagNameOrComponent for diferente de um literal ou uma funcao', () => {
+    const comment = document.createComment('')
+
+    isTagName.mockReset()
+    isTagName.mockReturnValue(false)
+
+    isComponent.mockReset()
+    isComponent.mockReturnValue(false)
+
+    T.mockReset()
+    T.mockReturnValue(true)
+
+    createComment.mockReset()
+    createComment.mockReturnValue(comment)
+
+    flatten.mockReset()
+    flatten.mockReturnValue([])
+
+    expect(h(null)).toEqual(comment)
+
+    expect(isTagName).toHaveBeenCalled()
+    expect(isTagName).toHaveBeenCalledTimes(1)
+    expect(isTagName).toHaveBeenCalledWith(null, {}, [])
+
+    expect(isComponent).toHaveBeenCalled()
+    expect(isComponent).toHaveBeenCalledTimes(1)
+    expect(isComponent).toHaveBeenCalledWith(null, {}, [])
+
+    expect(T).toHaveBeenCalled()
+    expect(T).toHaveBeenCalledTimes(2)
+    expect(T).toHaveBeenCalledWith(null, {}, [])
+
+    expect(createComment).toHaveBeenCalled()
+    expect(createComment).toHaveBeenCalledTimes(1)
+    expect(createComment).toHaveBeenCalledWith(null, {}, [])
 
     expect(flatten).toHaveBeenCalled()
     expect(flatten).toHaveBeenCalledTimes(1)
