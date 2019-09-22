@@ -22,7 +22,11 @@ describe('and', () => {
     expect(and(true, __)).toEqual(expect.any(Function))
   })
 
-  test('Deve retornar verdadeiro na segunda execucao quanto terminar de passar o segundo parametro', () => {
+  test('Deve retornar verdadeiro na segunda execucao quando terminar de passar o segundo parametro', () => {
     expect(and(true, __)(true)).toEqual(true)
+  })
+
+  test('Deve retornar a funcao callback quando executar a funcao apenas com o segundo parametro', () => {
+    expect(and(__, false)).toEqual(expect.any(Function))
   })
 })
