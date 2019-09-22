@@ -1,4 +1,5 @@
 import and from '../and'
+import __ from '../gap'
 
 describe('and', () => {
   test('Deve retornar verdadeiro apenas quando os dois parametros forem verdadeiros', () => {
@@ -15,5 +16,9 @@ describe('and', () => {
 
   test('Deve retornar falso quando os dois parametros forem falso', () => {
     expect(and(false, false)).toBeFalsy()
+  })
+
+  test('Deve retornar a funcao callback quando executar a funcao apenas com o primeiro parametro', () => {
+    expect(and(true, __)).toEqual(expect.any(Function))
   })
 })
