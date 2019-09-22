@@ -23,10 +23,14 @@ describe('and', () => {
   })
 
   test('Deve retornar verdadeiro na segunda execucao quando terminar de passar o segundo parametro', () => {
-    expect(and(true, __)(true)).toEqual(true)
+    expect(and(true, __)(true)).toBeTruthy()
   })
 
   test('Deve retornar a funcao callback quando executar a funcao apenas com o segundo parametro', () => {
     expect(and(__, false)).toEqual(expect.any(Function))
+  })
+
+  test('Deve retornar falso na segunda execucao quando terminar de passar o primeiro parametro', () => {
+    expect(and(__, false)(false)).toBeFalsy()
   })
 })
