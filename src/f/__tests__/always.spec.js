@@ -11,7 +11,7 @@ describe('always', () => {
     expect(pi(4.13)).toBe(3.14)
   })
 
-  test('Deve retornar undefined na segunca execucao', () => {
+  test('Deve retornar undefined na segunda execucao', () => {
     const pi = always()
     expect(pi()).toBeUndefined()
   })
