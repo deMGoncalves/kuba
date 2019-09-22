@@ -8,4 +8,8 @@ describe('and', () => {
   test('Deve retornar falso quando primeiro parametro for falso', () => {
     expect(and(false, true)).toBeFalsy()
   })
+
+  test('Deve retornar falso quando o segundo parametro for falso', () => {
+    expect(and(true, false)).toBeFalsy()
+  })
 })
