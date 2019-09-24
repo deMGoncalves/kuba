@@ -4,7 +4,7 @@
   "description": "Simples, pequeno e imperfeito. Uma visão além da programação",
   "private": false,
   "scripts": {
-    "serve": "webpack-dev-server --config webpack.dev.js --open",
+    "start": "webpack-dev-server --config webpack.dev.js --open",
     "lift": "webpack --config webpack.prod.js && firebase deploy",
     "test": "jest --detectOpenHandles"
   },
