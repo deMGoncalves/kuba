@@ -19,13 +19,16 @@ export default (context, component) =>
     // fazer a renderizacao do component quando esta instancia for colocado
     // no DOM
     (_, children) => onComponent(context, component, children),
-
-    // Remap das keys para o contexto, senao o get sera feito sobre
-    // wrapper do component
     {
+      // Remap das keys para o contexto, senao o get sera feito sobre
+      // wrapper do component
       get (_, key) {
         const target = context[key]
         return f.is(Function, target) ? target.bind(context) : target
-      }
+      },
+
+      // Remap das key/value para o contexto, senao o set sera feito
+      // sobre o wrapper do component
+      set: (_, key, value) => f.T(context[key] = value)
     }
   )

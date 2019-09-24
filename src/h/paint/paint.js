@@ -22,7 +22,12 @@ export default (component) =>
           : onComponent(new Klass({ ...attrs }), component, children)
       },
       {
+        // Remap das key para o contexto, senao o get sera feito
+        // sobre o wrapper do component
         get: (_, key) => Klass[key],
+
+        // Remap das key/value para o contexto, senao o set sera feito
+        // sobre o wrapper do component
         set: (_, key, value) => f.T(Klass[key] = value)
       }
     )
