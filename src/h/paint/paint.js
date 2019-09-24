@@ -14,8 +14,13 @@ import onObject from './onObject'
  */
 export default (component) =>
   (Klass) =>
-    function paint (attrs, children) {
-      return (this instanceof paint)
-        ? onObject(new Klass(...arguments), component)
-        : onComponent(new Klass({ ...attrs }), component, children)
-    }
+    new Proxy(
+      function paint (attrs, children) {
+        return (this instanceof paint)
+          ? onObject(new Klass(...arguments), component)
+          : onComponent(new Klass({ ...attrs }), component, children)
+      },
+      {
+        get: (_, key) => Klass[key]
+      }
+    )
