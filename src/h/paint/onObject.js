@@ -24,6 +24,7 @@ export default (context, component) =>
       // wrapper do component
       get (_, key) {
         const target = context[key]
+        console.log(key, target)
         return f.is(Function, target) ? target.bind(context) : target
       },
 
