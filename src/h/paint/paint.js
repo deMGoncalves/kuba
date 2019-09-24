@@ -1,3 +1,4 @@
+import * as f from '@f'
 import onComponent from './onComponent'
 import onObject from './onObject'
 
@@ -21,6 +22,7 @@ export default (component) =>
           : onComponent(new Klass({ ...attrs }), component, children)
       },
       {
-        get: (_, key) => Klass[key]
+        get: (_, key) => Klass[key],
+        set: (_, key, value) => f.T(Klass[key] = value)
       }
     )
