@@ -16,7 +16,7 @@ const arity = (n, target) => {
     case 1: return (a0) => target(a0)
     case 2: return (a0, a1) => target(a0, a1)
     case 3: return (a0, a1, a2) => target(a0, a1, a2)
-    default: throw new Error('O primeiro argumento para arity deve ser um número inteiro não negativo não superior a três')
+    default: throw new Error('O primeiro argumento para arity deve ser um número inteiro não negativo e não superior a três')
   }
 }
 

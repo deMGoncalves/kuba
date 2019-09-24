@@ -14,4 +14,10 @@ describe('arity', () => {
   test('Deve retornar NaN quando executar a funcao add passando os parametros 1, 2', () => {
     expect(add(1, 2)).toBeNaN()
   })
+
+  test('Deve retornar um erro quando o primeiro parametro nao for um numero', () => {
+    const operation = () => arity('', () => null)
+    const error = new Error('O primeiro argumento para arity deve ser um número inteiro não negativo e não superior a três')
+    expect(operation).toThrowError(error)
+  })
 })
