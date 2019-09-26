@@ -1,3 +1,3 @@
-test('gps', () => {
+test('router', () => {
   expect(true).toBeTruthy()
 })

@@ -1,23 +1,13 @@
 import curry from './curry'
 import equal from './equal'
+import F from './F'
+import has from './has'
 import isNil from './isNil'
-import not from './not'
 import or from './or'
 
-/**
- * Compara se a instancia eh o mesmo da classe, esta funcao
- * auxiliar eh usada para os caso em que o temos o decorator
- * paint sobre a classe
- *
- * @name sameInstanceof
- * @function
- * @access private
- * @param {*} klass Classe base para validacao
- * @param {*} target Instancia que sera validada
- * @return {Boolean} Verdadeiro se for a mesma instancia
- */
-const sameInstanceof = (klass, target) =>
-  or(target instanceof klass, target.__target__ instanceof klass)
+// Dunder is: sera usado para criar um magic method na classe que
+// sera usado com a funcao is
+const __is__ = Symbol('is')
 
 /**
  * Compara se o valor é do mesmo tipo da classe
@@ -29,7 +19,14 @@ const sameInstanceof = (klass, target) =>
  * @param {*} target Objeto a ser comparado
  * @return {Boolean} Retorna verdadeiro se tipo for igual
  */
-const is = (klass, target) =>
-  not(isNil(target)) && or(equal(target.constructor, klass), sameInstanceof(klass, target))
+const is = (Klass, target) => {
+  if (isNil(target)) return F()
+  if (has(__is__, target)) return target[__is__](Klass)
+
+  return or(equal(target.constructor, Klass), target instanceof Klass)
+}
 
 export default curry(is)
+export {
+  __is__
+}

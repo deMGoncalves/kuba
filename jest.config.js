@@ -93,7 +93,7 @@ module.exports = {
   moduleNameMapper: {
     '@f': '<rootDir>/src/f',
     '@h': '<rootDir>/src/h',
-    '@gps': '<rootDir>/src/gps'
+    '@router': '<rootDir>/src/router'
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

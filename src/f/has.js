@@ -1,4 +1,7 @@
 import curry from './curry'
+import isNil from './isNil'
+import not from './not'
+import or from './or'
 
 /**
  * Verifica se uma propriedade foi definida em um objeto
@@ -12,6 +15,6 @@ import curry from './curry'
  * @return {Boolean} Verdadeiro se a propriedade foi definida
  */
 const has = (key, target) =>
-  target.hasOwnProperty(key)
+  not(isNil(target)) && or(target[key], target.hasOwnProperty(key))
 
 export default curry(has)

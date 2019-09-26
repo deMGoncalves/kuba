@@ -16,8 +16,8 @@ import onObject from './onObject'
 export default (component) =>
   (Klass) =>
     new Proxy(
-      function paint (attrs, children) {
-        return (this instanceof paint)
+      function (attrs, children) {
+        return (this instanceof Klass)
           ? onObject(new Klass(...arguments), component)
           : onComponent(new Klass({ ...attrs }), component, children)
       },

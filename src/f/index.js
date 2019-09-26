@@ -7,11 +7,12 @@ import cond from './cond'
 import curry from './curry'
 import different from './different'
 import equal from './equal'
+import F from './F'
 import flatten from './flatten'
 import forEach from './forEach'
 import __ from './gap'
 import has from './has'
-import is from './is'
+import is, { __is__ } from './is'
 import isNil from './isNil'
 import join from './join'
 import map from './map'
@@ -34,11 +35,13 @@ export {
   curry,
   equal,
   different,
+  F,
   flatten,
   forEach,
   __,
   has,
   is,
+  __is__,
   isNil,
   join,
   map,
