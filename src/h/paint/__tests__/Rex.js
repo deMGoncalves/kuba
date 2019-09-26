@@ -10,6 +10,10 @@ class Rex {
   static set nome (value) {
     throw new Error(`Nao pode alterar o nome para ${value}`)
   }
+
+  static cante () {
+    return 'NaNNaNNaNNaNNaN Batman!'
+  }
 }
 
 export default Rex

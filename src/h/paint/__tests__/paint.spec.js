@@ -10,4 +10,8 @@ describe('paint', () => {
     const error = new Error('Nao pode alterar o nome para Lupy.JS')
     expect(expression).toThrowError(error)
   })
+
+  test('Deve cantar NaNNaNNaNNaNNaN Batman! quando executar o metodo cante', () => {
+    expect(Rex.cante()).toBe('NaNNaNNaNNaNNaN Batman!')
+  })
 })
