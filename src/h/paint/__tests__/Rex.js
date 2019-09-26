@@ -1,15 +1,14 @@
-import * as f from '@f'
 import paint from '../paint'
 import component from './component'
 
 @paint(component)
 class Rex {
-  static get ehUmCachorro () {
-    return 'Claro que NaN'
+  static get nome () {
+    return 'Rex.JS'
   }
 
-  [f.__is__] (Klass) {
-    return this instanceof Klass
+  static set nome (value) {
+    throw new Error(`Nao pode alterar o nome para ${value}`)
   }
 }
 
