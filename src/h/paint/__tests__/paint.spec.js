@@ -35,4 +35,16 @@ describe('paint', () => {
     expect(onObject).toHaveBeenCalledTimes(1)
     expect(onObject).toHaveBeenCalledWith({}, component)
   })
+
+  test('Deve retornar um elemento html quando executar Rex como um web component', () => {
+    const div = document.createElement('div')
+
+    onComponent.mockReturnValue(div)
+
+    expect(Rex({}, [])).toEqual(div)
+
+    expect(onComponent).toHaveBeenCalled()
+    expect(onComponent).toHaveBeenCalledTimes(1)
+    expect(onComponent).toHaveBeenCalledWith({}, component, [])
+  })
 })
