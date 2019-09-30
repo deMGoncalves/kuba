@@ -15,6 +15,9 @@ import reflow from './reflow'
 export default (element, vElement) =>
   f.always(element)(
     f.forEach(
-      f.repeat(null, greaterNumberOfChildren(element, vElement)),
-      (_, i) =>
-        reflow(element.childNodes[i], vElement.childNodes[i], element)))
+      f.map(
+        f.repeat(null, greaterNumberOfChildren(element, vElement)),
+        (_, i) =>
+          [element.childNodes[i], vElement.childNodes[i], element]
+      ),
+      (args) => reflow(...args)))
