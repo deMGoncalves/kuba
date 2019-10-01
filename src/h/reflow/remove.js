@@ -8,4 +8,4 @@
  * @return {undefined} Nao retorna nada
  */
 export default (element) =>
-  element.remove()
+  requestAnimationFrame(() => element.remove())
