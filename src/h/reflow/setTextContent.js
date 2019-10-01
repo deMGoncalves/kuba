@@ -9,4 +9,4 @@
  * @return {String} Novo texto que fora adicionado ao DOM
  */
 export default (element, vElement) =>
-  (element.textContent = vElement.textContent)
+  requestAnimationFrame(() => (element.textContent = vElement.textContent))
