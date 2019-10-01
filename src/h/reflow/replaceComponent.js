@@ -10,4 +10,4 @@
  * @return {HTMLElement} Novo elemento que fora colocado no DOM
  */
 export default (element, vElement, parent) =>
-  parent.replaceChild(vElement.__target__.__element__, element)
+  requestAnimationFrame(() => parent.replaceChild(vElement.__target__.__element__, element))
