@@ -20,6 +20,4 @@ export default (element) =>
     // Seto os atributos segundo o setAttribute para grantir os dataset, assim
     // encaro tudo como atributo
     element.setAttribute(key, value)
-
-    return element
   }

@@ -10,5 +10,6 @@ import * as f from '@f'
  * @return {HTMLElement} Elemento html sem os eventos
  */
 export default (element) =>
-  f.always(element)(f.forEach(f.or(element.__events__, []), (event) =>
-    (element[event] = undefined)))
+  requestAnimationFrame(() =>
+    f.forEach(f.or(element.__events__, []), (event) =>
+      (element[event] = undefined)))

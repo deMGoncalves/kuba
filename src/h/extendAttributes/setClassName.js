@@ -12,4 +12,5 @@ import * as f from '@f'
  */
 export default (element) =>
   (_, className) =>
-    f.always(element)(element.className = f.join(f.concat([], className), ' '))
+    requestAnimationFrame(() =>
+      (element.className = f.join(f.flatten(f.concat([], className)), ' ')))

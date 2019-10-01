@@ -10,5 +10,6 @@ import * as f from '@f'
  * @return {HTMLElement} Elemento html sem os atributos
  */
 export default (element) =>
-  f.always(element)(f.forEach(f.or(element.__attributes__, []), (key) =>
-    element.removeAttribute(key)))
+  requestAnimationFrame(() =>
+    f.forEach(f.or(element.__attributes__, []), (key) =>
+      element.removeAttribute(key)))

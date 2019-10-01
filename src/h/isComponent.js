@@ -9,4 +9,5 @@ import * as f from '@f'
  * @param {*} element Elemento ha ser havaliado
  * @return {Boolean} Verdadeiro se o elemento eh um component
  */
-export default f.is(Function, f.__)
+export default (target) =>
+  f.test(/Function/g, ({}).toString.call(target))
