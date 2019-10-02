@@ -5,6 +5,7 @@ const path = require('path')
 module.exports = {
   entry: {
     app: './src/index.js',
+    drums: './src/drums/index.js',
     f: './src/f/index.js',
     h: './src/h/index.js',
     router: './src/router/index.js'
