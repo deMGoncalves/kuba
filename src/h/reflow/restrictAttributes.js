@@ -14,9 +14,8 @@ import removeAttributes from './removeAttributes'
  * @param {HTMLElement} vElement Elemento virtual com os novos atributos e eventos
  * @return {HTMLElement} Elemento com os novos atributos e eventos
  */
-export default (element, vElement) => {
-  removeEventListener(element)
-  removeAttributes(element)
-  extendAttributes({ ...getAttributes(vElement), ...getEventListeners(vElement) }, element)
-  return element
-}
+export default (element, vElement) =>
+  extendAttributes({
+    ...getAttributes(vElement),
+    ...getEventListeners(vElement) },
+  removeEventListener(removeAttributes(element)))

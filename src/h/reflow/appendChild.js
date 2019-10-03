@@ -10,4 +10,4 @@
  * @return {HTMLElement} Elemento filho que foi adicionado no elemento pai
  */
 export default (_element, vElement, parent) =>
-  requestAnimationFrame(() => parent.appendChild(vElement))
+  parent.appendChild(vElement)
