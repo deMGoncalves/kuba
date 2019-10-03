@@ -1,8 +1,11 @@
 import { paint, repaint } from '@h'
-import component, { audio } from './component'
+import Part from './Part'
+import drumstick from './drumstick'
+import component from './component'
+import file from './sounds/openhat.wav'
 
 @paint(component)
-class OpenHat {
+class OpenHat extends Part {
   get key () {
     return 'F'
   }
@@ -11,16 +14,21 @@ class OpenHat {
     return 'OpenHat'
   }
 
+  constructor () {
+    super(file)
+    drumstick(70, this)
+    return this
+  }
+
   @repaint
   play () {
-    this[audio] = 'playing'
-    setTimeout(() => this.stop(), 100)
+    super.play()
     return this
   }
 
   @repaint
   stop () {
-    this[audio] = 'stopped'
+    super.stop()
     return this
   }
 }

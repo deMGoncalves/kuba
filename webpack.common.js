@@ -54,6 +54,10 @@ module.exports = {
         ]
       },
       {
+        test: /\.(wav)$/,
+        use: ['file-loader']
+      },
+      {
         test: /\.(csv|tsv)$/,
         use: ['csv-loader']
       },

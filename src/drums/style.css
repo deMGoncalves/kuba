@@ -1,6 +1,6 @@
 .drums {
   align-items: center;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background: url('./audience.jpg') bottom center;
   background-size: cover;
   display: flex;
   height: 100vh;

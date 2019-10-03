@@ -1,8 +1,11 @@
 import { paint, repaint } from '@h'
-import component, { audio } from './component'
+import Part from './Part'
+import drumstick from './drumstick'
+import component from './component'
+import file from './sounds/hihat.wav'
 
 @paint(component)
-class HiHat {
+class HiHat extends Part {
   get key () {
     return 'S'
   }
@@ -11,16 +14,21 @@ class HiHat {
     return 'hihat'
   }
 
+  constructor () {
+    super(file)
+    drumstick(83, this)
+    return this
+  }
+
   @repaint
   play () {
-    this[audio] = 'playing'
-    setTimeout(() => this.stop(), 100)
+    super.play()
     return this
   }
 
   @repaint
   stop () {
-    this[audio] = 'stopped'
+    super.stop()
     return this
   }
 }
