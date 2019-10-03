@@ -1,6 +1,6 @@
 import { paint, repaint } from '@h'
 import Part from './Part'
-import drumstick from './drumstick'
+import pedal from './pedal'
 import component from './component'
 import file from './sounds/boom.wav'
 
@@ -16,7 +16,7 @@ class Boom extends Part {
 
   constructor () {
     super(file)
-    drumstick(71, this)
+    pedal(71, this)
     return this
   }
 
