@@ -4,9 +4,9 @@
   "description": "Simples, pequeno e imperfeito. Uma visão além da programação",
   "private": false,
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "lift": "webpack --config webpack.prod.js && firebase deploy",
-    "test": "jest --detectOpenHandles"
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "lift": "jest && webpack --config webpack.prod.js && firebase deploy",
+    "test": "jest --watchAll --detectOpenHandles"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
