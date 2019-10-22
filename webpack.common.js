@@ -1,22 +1,23 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
   entry: {
-    app: './src/index.js',
-    drums: './src/drums/index.js',
-    f: './src/f/index.js',
-    h: './src/h/index.js',
-    router: './src/router/index.js'
+    app: './src/index.js'
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       favicon: './src/favicon.png',
-      template: './src/index.html',
-      title: 'Rex.JS · O bom e velho amigo do programador'
-    })
+      template: './src/index.html'
+    }),
+    new CopyWebpackPlugin([
+      './src/images',
+      './src/manifest.json',
+      './src/robots.txt'
+    ])
   ],
   module: {
     rules: [
