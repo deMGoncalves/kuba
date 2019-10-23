@@ -5,7 +5,7 @@
   "private": false,
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
-    "lift": "jest && webpack --config webpack.prod.js && firebase deploy",
+    "lift": "git-branch-is master && jest && webpack --config webpack.prod.js && firebase deploy",
     "test": "jest --watchAll --detectOpenHandles"
   },
   "lint-staged": {
@@ -43,6 +43,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "file-loader": "^4.1.0",
     "firebase-tools": "^7.3.1",
+    "git-branch-is": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.1",
     "jest": "^24.8.0",
