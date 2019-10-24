@@ -1,4 +1,3 @@
-import * as f from '@f'
 import appendChild from '../appendChild'
 import elementsAreDifferent from '../elementsAreDifferent'
 import elementsIsTextNode from '../elementsIsTextNode'
@@ -19,6 +18,8 @@ jest.mock('../appendChild.js')
 jest.mock('../doNothing.js')
 jest.mock('../notHasElement.js')
 jest.mock('../notHasElementAndVElement.js')
+jest.mock('../notHasVElement.js')
+jest.mock('../remove.js')
 
 describe('reflow', () => {
   beforeEach(() => {
@@ -26,6 +27,8 @@ describe('reflow', () => {
     doNothing.mockReset()
     notHasElement.mockReset()
     notHasElementAndVElement.mockReset()
+    notHasVElement.mockReset()
+    remove.mockReset()
   })
 
   test('Deve fazer nada quando o element e vElement nao existir', () => {
@@ -69,5 +72,34 @@ describe('reflow', () => {
     expect(appendChild).toHaveBeenCalled()
     expect(appendChild).toHaveBeenCalledTimes(1)
     expect(appendChild).toHaveBeenCalledWith(element, vElement, parent)
+  })
+
+  test('Deve remover o elemento quando o vElemento nao existir mais', () => {
+    const element = document.createElement('div')
+    const vElement = undefined
+    const parent = document.createElement('div')
+
+    notHasElement.mockReturnValue(false)
+    notHasElementAndVElement.mockReturnValue(false)
+    notHasVElement.mockReturnValue(true)
+    remove.mockReturnValue(true)
+
+    expect(reflow(element, vElement, parent)).toBeTruthy()
+
+    expect(notHasElementAndVElement).toHaveBeenCalled()
+    expect(notHasElementAndVElement).toHaveBeenCalledTimes(1)
+    expect(notHasElementAndVElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(notHasElement).toHaveBeenCalled()
+    expect(notHasElement).toHaveBeenCalledTimes(1)
+    expect(notHasElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(notHasVElement).toHaveBeenCalled()
+    expect(notHasVElement).toHaveBeenCalledTimes(1)
+    expect(notHasVElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(remove).toHaveBeenCalled()
+    expect(remove).toHaveBeenCalledTimes(1)
+    expect(remove).toHaveBeenCalledWith(element, vElement, parent)
   })
 })
