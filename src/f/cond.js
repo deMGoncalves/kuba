@@ -10,7 +10,7 @@ import T from './T'
  * @return {Object} O resultado da funcao processadora ou undefined como padrao
  */
 const result = (target) =>
-  (result['__target__'] = target || result['__target__'])
+  (result['__target__'] = target === undefined ? result['__target__'] : target)
 
 /**
  * Retorna uma funcao callback, que encapsula o funcionamento do if/else...
