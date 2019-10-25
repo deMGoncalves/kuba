@@ -23,6 +23,7 @@ jest.mock('../notHasElementAndVElement.js')
 jest.mock('../notHasVElement.js')
 jest.mock('../remove.js')
 jest.mock('../replaceChild.js')
+jest.mock('../sameObject.js')
 jest.mock('../setTextContent.js')
 
 describe('reflow', () => {
@@ -36,6 +37,7 @@ describe('reflow', () => {
     notHasVElement.mockReset()
     remove.mockReset()
     replaceChild.mockReset()
+    sameObject.mockReset()
     setTextContent.mockReset()
   })
 
@@ -90,9 +92,9 @@ describe('reflow', () => {
     notHasElement.mockReturnValue(false)
     notHasElementAndVElement.mockReturnValue(false)
     notHasVElement.mockReturnValue(true)
-    remove.mockReturnValue(true)
+    remove.mockReturnValue(undefined)
 
-    expect(reflow(element, vElement, parent)).toBeTruthy()
+    expect(reflow(element, vElement, parent)).toBeUndefined()
 
     expect(notHasElementAndVElement).toHaveBeenCalled()
     expect(notHasElementAndVElement).toHaveBeenCalledTimes(1)
@@ -182,5 +184,49 @@ describe('reflow', () => {
     expect(replaceChild).toHaveBeenCalled()
     expect(replaceChild).toHaveBeenCalledTimes(1)
     expect(replaceChild).toHaveBeenCalledWith(element, vElement, parent)
+  })
+
+  test('Deve fazer nada quando os elementos tivem a mesma instancia de classe', () => {
+    const element = document.createElement('div')
+    const vElement = document.createElement('div')
+    const parent = document.createElement('div')
+
+    doNothing.mockReturnValue(undefined)
+    elementsAreDifferent.mockReturnValue(false)
+    elementsIsTextNode.mockReturnValue(false)
+    notHasElement.mockReturnValue(false)
+    notHasElementAndVElement.mockReturnValue(false)
+    notHasVElement.mockReturnValue(false)
+    sameObject.mockReturnValue(true)
+
+    expect(reflow(element, vElement, parent)).toBeUndefined()
+
+    expect(notHasElementAndVElement).toHaveBeenCalled()
+    expect(notHasElementAndVElement).toHaveBeenCalledTimes(1)
+    expect(notHasElementAndVElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(notHasElement).toHaveBeenCalled()
+    expect(notHasElement).toHaveBeenCalledTimes(1)
+    expect(notHasElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(notHasVElement).toHaveBeenCalled()
+    expect(notHasVElement).toHaveBeenCalledTimes(1)
+    expect(notHasVElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(elementsIsTextNode).toHaveBeenCalled()
+    expect(elementsIsTextNode).toHaveBeenCalledTimes(1)
+    expect(elementsIsTextNode).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(elementsAreDifferent).toHaveBeenCalled()
+    expect(elementsAreDifferent).toHaveBeenCalledTimes(1)
+    expect(elementsAreDifferent).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(sameObject).toHaveBeenCalled()
+    expect(sameObject).toHaveBeenCalledTimes(1)
+    expect(sameObject).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(doNothing).toHaveBeenCalled()
+    expect(doNothing).toHaveBeenCalledTimes(1)
+    expect(doNothing).toHaveBeenCalledWith(element, vElement, parent)
   })
 })
