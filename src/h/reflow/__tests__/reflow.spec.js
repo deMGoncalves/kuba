@@ -1,3 +1,4 @@
+import * as f from '@f'
 import appendChild from '../appendChild'
 import elementsAreDifferent from '../elementsAreDifferent'
 import elementsIsTextNode from '../elementsIsTextNode'
@@ -14,6 +15,7 @@ import replaceElement from '../replaceElement'
 import sameObject from '../sameObject'
 import setTextContent from '../setTextContent'
 
+jest.mock('../../../f/T.js')
 jest.mock('../appendChild.js')
 jest.mock('../doNothing.js')
 jest.mock('../elementsAreDifferent.js')
@@ -25,11 +27,13 @@ jest.mock('../otherObject.js')
 jest.mock('../remove.js')
 jest.mock('../replaceChild.js')
 jest.mock('../replaceComponent.js')
+jest.mock('../replaceElement.js')
 jest.mock('../sameObject.js')
 jest.mock('../setTextContent.js')
 
 describe('reflow', () => {
   beforeEach(() => {
+    f.T.mockReset()
     appendChild.mockReset()
     doNothing.mockReset()
     elementsAreDifferent.mockReset()
@@ -41,6 +45,7 @@ describe('reflow', () => {
     remove.mockReset()
     replaceChild.mockReset()
     replaceComponent.mockReset()
+    replaceElement.mockReset()
     sameObject.mockReset()
     setTextContent.mockReset()
   })
@@ -280,5 +285,58 @@ describe('reflow', () => {
     expect(replaceComponent).toHaveBeenCalled()
     expect(replaceComponent).toHaveBeenCalledTimes(1)
     expect(replaceComponent).toHaveBeenCalledWith(element, vElement, parent)
+  })
+
+  test('Deve trocar o vElemento pelo element como processo de fallback do reflow', () => {
+    const element = document.createElement('div')
+    const vElement = document.createElement('div')
+    const parent = document.createElement('div')
+
+    f.T.mockReturnValue(true)
+    elementsAreDifferent.mockReturnValue(false)
+    elementsIsTextNode.mockReturnValue(false)
+    notHasElement.mockReturnValue(false)
+    notHasElementAndVElement.mockReturnValue(false)
+    notHasVElement.mockReturnValue(false)
+    otherObject.mockReturnValue(false)
+    replaceElement.mockReturnValue(vElement)
+
+    expect(reflow(element, vElement, parent)).toBe(vElement)
+
+    expect(notHasElementAndVElement).toHaveBeenCalled()
+    expect(notHasElementAndVElement).toHaveBeenCalledTimes(1)
+    expect(notHasElementAndVElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(notHasElement).toHaveBeenCalled()
+    expect(notHasElement).toHaveBeenCalledTimes(1)
+    expect(notHasElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(notHasVElement).toHaveBeenCalled()
+    expect(notHasVElement).toHaveBeenCalledTimes(1)
+    expect(notHasVElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(elementsIsTextNode).toHaveBeenCalled()
+    expect(elementsIsTextNode).toHaveBeenCalledTimes(1)
+    expect(elementsIsTextNode).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(elementsAreDifferent).toHaveBeenCalled()
+    expect(elementsAreDifferent).toHaveBeenCalledTimes(1)
+    expect(elementsAreDifferent).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(sameObject).toHaveBeenCalled()
+    expect(sameObject).toHaveBeenCalledTimes(1)
+    expect(sameObject).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(otherObject).toHaveBeenCalled()
+    expect(otherObject).toHaveBeenCalledTimes(1)
+    expect(otherObject).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(f.T).toHaveBeenCalled()
+    expect(f.T).toHaveBeenCalledTimes(2)
+    expect(f.T).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(replaceElement).toHaveBeenCalled()
+    expect(replaceElement).toHaveBeenCalledTimes(1)
+    expect(replaceElement).toHaveBeenCalledWith(element, vElement, parent)
   })
 })
