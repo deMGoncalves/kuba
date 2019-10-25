@@ -16,19 +16,23 @@ import setTextContent from '../setTextContent'
 
 jest.mock('../appendChild.js')
 jest.mock('../doNothing.js')
+jest.mock('../elementsIsTextNode.js')
 jest.mock('../notHasElement.js')
 jest.mock('../notHasElementAndVElement.js')
 jest.mock('../notHasVElement.js')
 jest.mock('../remove.js')
+jest.mock('../setTextContent.js')
 
 describe('reflow', () => {
   beforeEach(() => {
     appendChild.mockReset()
     doNothing.mockReset()
+    elementsIsTextNode.mockReset()
     notHasElement.mockReset()
     notHasElementAndVElement.mockReset()
     notHasVElement.mockReset()
     remove.mockReset()
+    setTextContent.mockReset()
   })
 
   test('Deve fazer nada quando o element e vElement nao existir', () => {
@@ -76,7 +80,7 @@ describe('reflow', () => {
 
   test('Deve remover o elemento quando o vElemento nao existir mais', () => {
     const element = document.createElement('div')
-    const vElement = undefined
+    const vElement = undefined;
     const parent = document.createElement('div')
 
     notHasElement.mockReturnValue(false)
@@ -101,5 +105,39 @@ describe('reflow', () => {
     expect(remove).toHaveBeenCalled()
     expect(remove).toHaveBeenCalledTimes(1)
     expect(remove).toHaveBeenCalledWith(element, vElement, parent)
+  })
+
+  test('Deve alterar o texto do elemento quando os elementos forem do tipo TextNode', () => {
+    const element = document.createTextNode('')
+    const vElement = document.createTextNode('Rex.JS')
+    const parent = document.createElement('h1')
+
+    elementsIsTextNode.mockReturnValue(true)
+    notHasElement.mockReturnValue(false)
+    notHasElementAndVElement.mockReturnValue(false)
+    notHasVElement.mockReturnValue(false)
+    setTextContent.mockReturnValue('Rex.JS')
+
+    expect(reflow(element, vElement, parent)).toBe('Rex.JS')
+
+    expect(notHasElementAndVElement).toHaveBeenCalled()
+    expect(notHasElementAndVElement).toHaveBeenCalledTimes(1)
+    expect(notHasElementAndVElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(notHasElement).toHaveBeenCalled()
+    expect(notHasElement).toHaveBeenCalledTimes(1)
+    expect(notHasElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(notHasVElement).toHaveBeenCalled()
+    expect(notHasVElement).toHaveBeenCalledTimes(1)
+    expect(notHasVElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(elementsIsTextNode).toHaveBeenCalled()
+    expect(elementsIsTextNode).toHaveBeenCalledTimes(1)
+    expect(elementsIsTextNode).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(setTextContent).toHaveBeenCalled()
+    expect(setTextContent).toHaveBeenCalledTimes(1)
+    expect(setTextContent).toHaveBeenCalledWith(element, vElement, parent)
   })
 })
