@@ -1,6 +1,7 @@
 import * as f from '@f'
 import appendChild from '../appendChild'
 import elementsAreDifferent from '../elementsAreDifferent'
+import elementsIsCustomNode from '../elementsIsCustomNode'
 import elementsIsTextNode from '../elementsIsTextNode'
 import doNothing from '../doNothing'
 import notHasElement from '../notHasElement'
@@ -12,6 +13,7 @@ import remove from '../remove'
 import replaceChild from '../replaceChild'
 import replaceComponent from '../replaceComponent'
 import replaceElement from '../replaceElement'
+import restrictAttributes from '../restrictAttributes'
 import sameObject from '../sameObject'
 import setTextContent from '../setTextContent'
 
@@ -19,6 +21,7 @@ jest.mock('../../../f/T.js')
 jest.mock('../appendChild.js')
 jest.mock('../doNothing.js')
 jest.mock('../elementsAreDifferent.js')
+jest.mock('../elementsIsCustomNode.js')
 jest.mock('../elementsIsTextNode.js')
 jest.mock('../notHasElement.js')
 jest.mock('../notHasElementAndVElement.js')
@@ -28,6 +31,7 @@ jest.mock('../remove.js')
 jest.mock('../replaceChild.js')
 jest.mock('../replaceComponent.js')
 jest.mock('../replaceElement.js')
+jest.mock('../restrictAttributes.js')
 jest.mock('../sameObject.js')
 jest.mock('../setTextContent.js')
 
@@ -37,6 +41,7 @@ describe('reflow', () => {
     appendChild.mockReset()
     doNothing.mockReset()
     elementsAreDifferent.mockReset()
+    elementsIsCustomNode.mockReset()
     elementsIsTextNode.mockReset()
     notHasElement.mockReset()
     notHasElementAndVElement.mockReset()
@@ -46,6 +51,7 @@ describe('reflow', () => {
     replaceChild.mockReset()
     replaceComponent.mockReset()
     replaceElement.mockReset()
+    restrictAttributes.mockReset()
     sameObject.mockReset()
     setTextContent.mockReset()
   })
@@ -287,21 +293,21 @@ describe('reflow', () => {
     expect(replaceComponent).toHaveBeenCalledWith(element, vElement, parent)
   })
 
-  test('Deve trocar o vElemento pelo element como processo de fallback do reflow', () => {
-    const element = document.createElement('div')
-    const vElement = document.createElement('div')
+  test('Deve alterar apenas os atributos do elemento quando os elementos forem elementos customizados', () => {
+    const element = document.createElement('rex-logo')
+    const vElement = document.createElement('rex-logo')
     const parent = document.createElement('div')
 
-    f.T.mockReturnValue(true)
     elementsAreDifferent.mockReturnValue(false)
     elementsIsTextNode.mockReturnValue(false)
+    elementsIsCustomNode.mockReturnValue(true)
     notHasElement.mockReturnValue(false)
     notHasElementAndVElement.mockReturnValue(false)
     notHasVElement.mockReturnValue(false)
     otherObject.mockReturnValue(false)
-    replaceElement.mockReturnValue(vElement)
+    restrictAttributes.mockReturnValue(element)
 
-    expect(reflow(element, vElement, parent)).toBe(vElement)
+    expect(reflow(element, vElement, parent)).toBe(element)
 
     expect(notHasElementAndVElement).toHaveBeenCalled()
     expect(notHasElementAndVElement).toHaveBeenCalledTimes(1)
@@ -330,6 +336,64 @@ describe('reflow', () => {
     expect(otherObject).toHaveBeenCalled()
     expect(otherObject).toHaveBeenCalledTimes(1)
     expect(otherObject).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(elementsIsCustomNode).toHaveBeenCalled()
+    expect(elementsIsCustomNode).toHaveBeenCalledTimes(1)
+    expect(elementsIsCustomNode).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(restrictAttributes).toHaveBeenCalled()
+    expect(restrictAttributes).toHaveBeenCalledTimes(1)
+    expect(restrictAttributes).toHaveBeenCalledWith(element, vElement, parent)
+  })
+
+  test('Deve trocar o vElemento pelo element como processo de fallback do reflow', () => {
+    const element = document.createElement('div')
+    const vElement = document.createElement('div')
+    const parent = document.createElement('div')
+
+    f.T.mockReturnValue(true)
+    elementsAreDifferent.mockReturnValue(false)
+    elementsIsTextNode.mockReturnValue(false)
+    elementsIsCustomNode.mockReturnValue(false)
+    notHasElement.mockReturnValue(false)
+    notHasElementAndVElement.mockReturnValue(false)
+    notHasVElement.mockReturnValue(false)
+    otherObject.mockReturnValue(false)
+    replaceElement.mockReturnValue(element)
+
+    expect(reflow(element, vElement, parent)).toBe(element)
+
+    expect(notHasElementAndVElement).toHaveBeenCalled()
+    expect(notHasElementAndVElement).toHaveBeenCalledTimes(1)
+    expect(notHasElementAndVElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(notHasElement).toHaveBeenCalled()
+    expect(notHasElement).toHaveBeenCalledTimes(1)
+    expect(notHasElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(notHasVElement).toHaveBeenCalled()
+    expect(notHasVElement).toHaveBeenCalledTimes(1)
+    expect(notHasVElement).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(elementsIsTextNode).toHaveBeenCalled()
+    expect(elementsIsTextNode).toHaveBeenCalledTimes(1)
+    expect(elementsIsTextNode).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(elementsAreDifferent).toHaveBeenCalled()
+    expect(elementsAreDifferent).toHaveBeenCalledTimes(1)
+    expect(elementsAreDifferent).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(sameObject).toHaveBeenCalled()
+    expect(sameObject).toHaveBeenCalledTimes(1)
+    expect(sameObject).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(otherObject).toHaveBeenCalled()
+    expect(otherObject).toHaveBeenCalledTimes(1)
+    expect(otherObject).toHaveBeenCalledWith(element, vElement, parent)
+
+    expect(elementsIsCustomNode).toHaveBeenCalled()
+    expect(elementsIsCustomNode).toHaveBeenCalledTimes(1)
+    expect(elementsIsCustomNode).toHaveBeenCalledWith(element, vElement, parent)
 
     expect(f.T).toHaveBeenCalled()
     expect(f.T).toHaveBeenCalledTimes(2)

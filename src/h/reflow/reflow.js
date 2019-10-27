@@ -1,6 +1,7 @@
 import * as f from '@f'
 import appendChild from './appendChild'
 import elementsAreDifferent from './elementsAreDifferent'
+import elementsIsCustomNode from './elementsIsCustomNode'
 import elementsIsTextNode from './elementsIsTextNode'
 import doNothing from './doNothing'
 import notHasElement from './notHasElement'
@@ -10,6 +11,7 @@ import otherObject from './otherObject'
 import remove from './remove'
 import replaceChild from './replaceChild'
 import replaceComponent from './replaceComponent'
+import restrictAttributes from './restrictAttributes'
 import replaceElement from './replaceElement'
 import sameObject from './sameObject'
 import setTextContent from './setTextContent'
@@ -34,5 +36,6 @@ export default f.cond(
   [elementsAreDifferent, replaceChild],
   [sameObject, doNothing],
   [otherObject, replaceComponent],
+  [elementsIsCustomNode, restrictAttributes],
   [f.T, replaceElement]
 )
