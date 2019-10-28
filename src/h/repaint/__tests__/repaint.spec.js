@@ -20,7 +20,7 @@ describe('repaint', () => {
     f.assign.mockReturnValue(descriptor)
     hook.mockReturnValue(value)
 
-    expect(repaint(target, method, descriptor)).toBe(descriptor)
+    expect(repaint(target, method, descriptor)).toBe({ value })
 
     expect(f.assign).toHaveBeenCalled()
     expect(f.assign).toHaveBeenCalledTimes(1)
