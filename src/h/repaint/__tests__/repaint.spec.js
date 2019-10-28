@@ -15,13 +15,19 @@ describe('repaint', () => {
     const target = {}
     const method = ''
     const descriptor = { value: () => {} }
+    const value = () => {}
 
     f.assign.mockReturnValue(descriptor)
+    hook.mockReturnValue(value)
 
     expect(repaint(target, method, descriptor)).toBe(descriptor)
 
     expect(f.assign).toHaveBeenCalled()
     expect(f.assign).toHaveBeenCalledTimes(1)
-    expect(f.assign).toHaveBeenCalledWith(descriptor, {})
+    expect(f.assign).toHaveBeenCalledWith(descriptor, { value })
+
+    expect(hook).toHaveBeenCalled()
+    expect(hook).toHaveBeenCalledTimes(1)
+    expect(hook).toHaveBeenCalledWith(descriptor.value)
   })
 })
