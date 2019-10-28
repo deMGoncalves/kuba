@@ -1,18 +1,6 @@
 import T from './T'
 
 /**
- * Armazena o resultado da funcao processadora
- *
- * @name result
- * @function
- * @access public
- * @args {Object} target O resultado da funcao processadora
- * @return {Object} O resultado da funcao processadora ou undefined como padrao
- */
-const result = (target) =>
-  (result['__target__'] = target || result['__target__'])
-
-/**
  * Retorna uma funcao callback, que encapsula o funcionamento do if/else...
  *
  * @name cond
@@ -23,8 +11,10 @@ const result = (target) =>
  */
 export default (...pairs) =>
   (...args) => {
-    pairs.some(([can, process]) =>
-      can(...args) && T(result(process(...args))))
+    var result
 
-    return result()
+    pairs.some(([can, process]) =>
+      can(...args) && T(result = process(...args)))
+
+    return result
   }
