@@ -1,4 +1,5 @@
 import * as f from '@f'
+import hook from './hook'
 
 /**
  * Dispara o processo repaint do component
@@ -11,16 +12,5 @@ import * as f from '@f'
  * @args {Object} descriptor Descricao da definicao do metodo
  * @return {*} O retorno do metodo encapsulado
  */
-export default (_target, _method, descriptor) => {
-  const { value } = descriptor
-
-  // Dispara o metodo __reflow__ que fora adicionado no processo
-  // inicial paint
-  f.assign(descriptor, {
-    value (...args) {
-      return f.always(value.call(this, ...args))(this.__reflow__ && this.__reflow__())
-    }
-  })
-
-  return descriptor
-}
+export default (_target, _method, descriptor) =>
+  f.assign(descriptor, { value: hook(descriptor.value) })
