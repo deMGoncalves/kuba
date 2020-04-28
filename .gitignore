@@ -115,4 +115,5 @@ dist
 .pnp.*
 
 # Firebase
+.firebase/
 public/
