@@ -17,11 +17,11 @@
     "lift:deploy": "firebase deploy --token \"$FIREBASE_TOKEN\""
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "src/**/*.{js,jsx}": [
       "eslint --fix",
       "git add"
     ],
-    "*.css": [
+    "src/**/*.css": [
       "stylelint --fix",
       "git add"
     ]
@@ -39,6 +39,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.5.3",
     "csv-loader": "^3.0.3",
+    "cypress": "^4.4.1",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-config-standard-react": "^8.0.0",
