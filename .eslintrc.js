@@ -2,7 +2,6 @@ module.exports = {
   "env": {
     "browser": true,
     "es6": true,
-    "jest/globals": true,
     "node": true
   },
   "extends": [
@@ -10,12 +9,6 @@ module.exports = {
     "standard-react"
   ],
   "globals": {
-    "Atomics": "readonly",
-    "Event": true,
-    "HTMLElement": true,
-    "HTMLDivElement": true,
-    "page": true,
-    "SharedArrayBuffer": "readonly"
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -28,7 +21,6 @@ module.exports = {
     "useJSXTextNode": true
   },
   "plugins": [
-    "jest"
   ],
   "rules": {
     "no-prototype-builtins": "off",

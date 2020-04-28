@@ -5,8 +5,8 @@
   "private": false,
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
-    "lift": "git-branch-is master && jest && webpack --config webpack.prod.js && firebase deploy",
-    "test": "jest --watchAll --detectOpenHandles"
+    "lift": "git-branch-is master && webpack --config webpack.prod.js && firebase deploy",
+    "test": ""
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -21,7 +21,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "jest"
+      "pre-push": "npm run test"
     }
   },
   "author": "Cleber de Moraes Gonçalves <cleber.engineer@hotmail.com>",
