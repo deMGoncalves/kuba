@@ -9,7 +9,6 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      favicon: './src/favicon.png',
       template: './src/index.html'
     })
   ],
