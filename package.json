@@ -9,11 +9,11 @@
     "test": "jest --watchAll --detectOpenHandles"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
+    "*.{js,jsx}": [
       "eslint --fix",
       "git add"
     ],
-    "src/**/*.css": [
+    "*.css": [
       "stylelint --fix",
       "git add"
     ]
