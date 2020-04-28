@@ -87,8 +87,5 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-# ES6 Plato
-report/
-
-# Coverage
-coverage/
+# Firebase
+public/
