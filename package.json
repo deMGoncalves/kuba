@@ -6,11 +6,10 @@
   "scripts": {
     "start": "run-s dev:*",
     "start:server": "webpack-dev-server --config webpack.dev.js",
-    "start:test": "cypress open --port 9000",
+    "start:test": "cypress open",
     "test": "run-s test:*",
     "test:branch": "git-branch-is master",
-    "test:server": "webpack-dev-server --config webpack.test.js",
-    "test:spec": "cypress run --port 9001",
+    "test:run": "cypress run",
     "lift": "run-s lift:*",
     "lift:branch": "git-branch-is master",
     "lift:build": "webpack --config webpack.prod.js",
