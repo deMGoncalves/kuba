@@ -1,9 +1,0 @@
-.drums {
-  align-items: center;
-  background: url('./audience.jpg') bottom center;
-  background-size: cover;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  user-select: none;
-}
