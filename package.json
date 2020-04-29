@@ -4,7 +4,7 @@
   "description": "Simples, pequeno e imperfeito. Uma visão além da programação",
   "private": false,
   "scripts": {
-    "start": "run-s dev:*",
+    "start": "run-p start:*",
     "start:server": "webpack-dev-server --config webpack.dev.js",
     "start:test": "cypress open",
     "test": "run-s test:*",
@@ -34,6 +34,7 @@
   "author": "Cleber de Moraes Gonçalves <cleber.engineer@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.1.2",
     "@typescript-eslint/parser": "^1.13.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.5.3",
