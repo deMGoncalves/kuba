@@ -18,7 +18,8 @@ module.exports = {
     "ecmaVersion": 2018,
     "sourceType": "module",
     "project": "./tsconfig.json",
-    "useJSXTextNode": true
+    "useJSXTextNode": true,
+    "warnOnUnsupportedTypeScriptVersion": false
   },
   "plugins": [
   ],
