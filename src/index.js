@@ -1,3 +1,4 @@
+import h from '@h'
 import './registerSW.js'
 import './reset.css'
 
