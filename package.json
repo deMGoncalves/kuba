@@ -9,6 +9,10 @@
     "TypeScript"
   ],
   "homepage": "https://github.com/VishFoiMau/Rex.JS.Mark.II",
+  "bugs": {
+    "email": "cleber.engineer@hotmail.com",
+    "url": "https://github.com/VishFoiMau/Rex.JS.Mark.II/issues"
+  },
   "private": false,
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
