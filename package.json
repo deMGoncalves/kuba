@@ -19,6 +19,7 @@
     "email": "cleber.engineer@gmail.com",
     "url": "https://github.com/VishFoiMau"
   },
+  "browser": "/public/index.html",
   "private": false,
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
