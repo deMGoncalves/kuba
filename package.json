@@ -19,10 +19,17 @@
     "email": "cleber.engineer@gmail.com",
     "url": "https://github.com/VishFoiMau"
   },
-  "browser": "/public/index.html",
   "repository": {
     "type": "git",
     "url": "https://github.com/VishFoiMau/Rex.JS.Mark.II.git"
+  },
+  "browser": "/public/index.html",
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR"
+    ]
   },
   "private": false,
   "scripts": {
