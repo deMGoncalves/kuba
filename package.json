@@ -13,6 +13,7 @@
     "email": "cleber.engineer@hotmail.com",
     "url": "https://github.com/VishFoiMau/Rex.JS.Mark.II/issues"
   },
+  "license": "MIT",
   "private": false,
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
@@ -41,7 +42,6 @@
     }
   },
   "author": "Cleber de Moraes Gonçalves <cleber.engineer@hotmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.1.2",
     "@typescript-eslint/parser": "^1.13.0",
