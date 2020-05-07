@@ -1,3 +1,7 @@
+// webpack.common.js - common webpack config
+const LEGACY_CONFIG = 'legacy';
+const MODERN_CONFIG = 'modern';
+
 // node modules
 const path = require('path');
 const merge = require('webpack-merge');
