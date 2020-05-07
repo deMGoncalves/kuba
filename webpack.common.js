@@ -40,7 +40,14 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader']
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash].[ext]'
+            }
+          }
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -48,22 +55,43 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]'
+              name: '[name].[hash].[ext]'
             }
           }
         ]
       },
       {
         test: /\.(wav)$/,
-        use: ['file-loader']
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash].[ext]'
+            }
+          }
+        ]
       },
       {
         test: /\.(csv|tsv)$/,
-        use: ['csv-loader']
+        use: [
+          {
+            loader: 'csv-loader',
+            options: {
+              name: '[name].[hash].[ext]'
+            }
+          }
+        ]
       },
       {
         test: /\.xml$/,
-        use: ['xml-loader']
+        use: [
+          {
+            loader: 'xml-loader',
+            options: {
+              name: '[name].[hash].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
