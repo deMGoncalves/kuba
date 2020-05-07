@@ -1,10 +1,10 @@
 // webpack.common.js - common webpack config
-const LEGACY_CONFIG = 'legacy';
-const MODERN_CONFIG = 'modern';
+const LEGACY_CONFIG = 'legacy'
+const MODERN_CONFIG = 'modern'
 
 // node modules
-const path = require('path');
-const merge = require('webpack-merge');
+const path = require('path')
+const merge = require('webpack-merge')
 
 // webpack plugins
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
@@ -16,6 +16,20 @@ const WebpackNotifierPlugin = require('webpack-notifier')
 // config files
 const pkg = require('./package.json')
 const settings = require('./webpack.settings.js')
+
+// configure ts loader
+const configureTsLoader = () => (
+  {
+    test: /\.jsx?$/,
+    use: [{
+      loader: 'ts-loader',
+      options: {
+        transpileOnly: true
+      }
+    }],
+    exclude: '/node_modules/'
+  }
+)
 
 module.exports = {
   entry: {
