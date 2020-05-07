@@ -5,8 +5,7 @@
   "keywords": [
     "HTML",
     "CSS",
-    "Javascript",
-    "TypeScript"
+    "Javascript"
   ],
   "homepage": "https://github.com/VishFoiMau/Rex.JS.Mark.II",
   "bugs": {
@@ -28,10 +27,10 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
     "test": "cypress open",
-    "deploy:branch": "git-branch-is master",
-    "deploy:test": "cypress run",
-    "deploy:build": "webpack --config webpack.prod.js",
-    "deploy:deploy": "firebase deploy --token \"$FIREBASE_TOKEN\""
+    "build:git-branch-is": "git-branch-is master",
+    "build:cy": "cypress run",
+    "build:webpack": "webpack --config webpack.prod.js",
+    "build:firebase": "firebase deploy --token \"$FIREBASE_TOKEN\""
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
@@ -46,7 +45,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "run-s deploy:*"
+      "pre-push": "run-s build:*"
     }
   },
   "devDependencies": {
