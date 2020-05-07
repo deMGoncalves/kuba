@@ -28,10 +28,9 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
     "test": "cypress run",
-    "lift": "run-s lift:*",
-    "lift:branch": "git-branch-is master",
-    "lift:build": "webpack --config webpack.prod.js",
-    "lift:deploy": "firebase deploy --token \"$FIREBASE_TOKEN\""
+    "deploy:branch": "git-branch-is master",
+    "deploy:build": "webpack --config webpack.prod.js",
+    "deploy:deploy": "firebase deploy --token \"$FIREBASE_TOKEN\""
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
@@ -46,7 +45,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "run-s test:* lift:*"
+      "pre-push": "run-s deploy:*"
     }
   },
   "devDependencies": {
