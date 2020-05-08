@@ -32,4 +32,4 @@
       loadScript(difference(/runtime|vendors/), chunks)
     })
     .catch((error) => console.log('Erro: Não foi possivel carregar os chunks', error))
-})('http://localhost:9000')
+})('https://rex-js-mark-ii.web.app')
