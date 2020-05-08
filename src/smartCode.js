@@ -3,7 +3,7 @@
     document.createElement('script')
 
   const setUrl = (fileName, nodeElement) => {
-    nodeElement.setAttribute('url', `${host}/${fileName}`)
+    nodeElement.setAttribute('src', `${host}/${fileName}`)
     return nodeElement
   }
 

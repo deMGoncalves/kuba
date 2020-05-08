@@ -6,9 +6,10 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: path.resolve(__dirname, './public'),
+    contentBase: path.join(__dirname, 'public'),
     historyApiFallback: true,
     hot: true,
+    index: './public/index.html',
     port: 9000
   }
 })
