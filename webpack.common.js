@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
-      { from: 'templates', to: 'public' }
+      { from: 'templates', to: '.' }
     ]),
     new StatsWriterPlugin()
   ],
