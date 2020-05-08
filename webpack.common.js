@@ -1,6 +1,8 @@
 const path = require('path')
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { StatsWriterPlugin } = require("webpack-stats-plugin")
+
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -9,6 +11,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new StatsWriterPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html'
     })
@@ -104,12 +107,6 @@ module.exports = {
       '@router': path.resolve(__dirname, 'src/router')
     }
   },
-  output: {
-    filename: '[name].[hash].js',
-    chunkFilename: '[name].[hash].js',
-    path: path.resolve(__dirname, 'public'),
-    publicPath: '/'
-  },
   optimization: {
     moduleIds: 'hashed',
     runtimeChunk: 'single',
@@ -122,5 +119,11 @@ module.exports = {
         }
       }
     }
+  },
+  output: {
+    filename: '[name].[hash].js',
+    chunkFilename: '[name].[hash].js',
+    path: path.resolve(__dirname, 'public'),
+    publicPath: '/'
   }
 }
