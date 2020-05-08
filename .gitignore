@@ -117,3 +117,9 @@ dist
 # Firebase
 .firebase/
 public/
+
+# Pinegrow
+templates/_pgbackup/
+
+# Cypress
+cypress/videos/
