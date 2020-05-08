@@ -1,9 +1,8 @@
 const path = require('path')
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const { StatsWriterPlugin } = require("webpack-stats-plugin")
-
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { StatsWriterPlugin } = require('webpack-stats-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -11,10 +10,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new StatsWriterPlugin(),
-    new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
+    new CopyWebpackPlugin([
+      { from: 'templates', to: 'public' }
+    ]),
+    new StatsWriterPlugin()
   ],
   module: {
     rules: [
