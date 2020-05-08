@@ -8,7 +8,7 @@
   }
 
   const appendScript = (nodeElement) =>
-    document.head.appendChild(nodeElement)
+    document.body.appendChild(nodeElement)
 
   const equals = (regex) =>
     (fileName) => regex.test(fileName)
@@ -19,6 +19,7 @@
   const loadScript = (test, chunks) =>
     chunks
       .filter((fileName) => test(fileName))
+      .reduce((accumulator, fileName) => accumulator.concat(fileName), [])
       .forEach((fileName) => appendScript(setUrl(fileName, createScript())))
 
   fetch(`${host}/stats.json`)
