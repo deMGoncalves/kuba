@@ -46,6 +46,7 @@
       "@/*": ["src/*"],
       "@f/*": ["src/f/*"],
       "@h/*": ["src/h/*"],
+      "@hook/*": ["src/hook/*"],
       "@radio/*": ["src/radio/*"],
       "@router/*": ["src/router/*"]
     },
