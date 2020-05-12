@@ -103,6 +103,7 @@ module.exports = {
       '@': path.resolve(__dirname, 'src'),
       '@f': path.resolve(__dirname, 'src/f'),
       '@h': path.resolve(__dirname, 'src/h'),
+      '@radio': path.resolve(__dirname, 'src/radio'),
       '@router': path.resolve(__dirname, 'src/router')
     }
   },
