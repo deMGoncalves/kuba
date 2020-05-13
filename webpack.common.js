@@ -105,7 +105,8 @@ module.exports = {
       '@h': path.resolve(__dirname, 'src/h'),
       '@hook': path.resolve(__dirname, 'src/hook'),
       '@radio': path.resolve(__dirname, 'src/radio'),
-      '@router': path.resolve(__dirname, 'src/router')
+      '@router': path.resolve(__dirname, 'src/router'),
+      '@sw': path.resolve(__dirname, 'src/sw')
     }
   },
   optimization: {

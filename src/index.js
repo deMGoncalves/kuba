@@ -1,5 +1,5 @@
 import h from '@h'
-import './registerSW.js'
+import '@sw'
 import './reset.css'
 
-document.body.appendChild(<h1>Rex.JS Mark II & Pinegrow :D • bilula</h1>)
+document.body.appendChild(<h1>Rex.JS Mark II</h1>)
