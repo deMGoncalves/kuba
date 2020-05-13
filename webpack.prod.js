@@ -21,6 +21,12 @@ module.exports = merge(common, {
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
+        styles: {
+          test: /\.css$/,
+          name: 'styles',
+          chunks: 'all',
+          enforce: true,
+        },
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
