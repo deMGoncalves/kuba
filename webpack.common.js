@@ -44,10 +44,8 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              esModule: true,
-              hmr: process.env.NODE_ENV === 'development',
-              reloadAll: true
-            },
+              esModule: true
+            }
           },
           {
             loader: 'css-loader',
