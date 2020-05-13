@@ -125,19 +125,6 @@ module.exports = {
       '@sw': path.resolve(__dirname, 'src/sw')
     }
   },
-  optimization: {
-    moduleIds: 'hashed',
-    runtimeChunk: 'single',
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all'
-        }
-      }
-    }
-  },
   output: {
     filename: '[name].[hash].js',
     chunkFilename: '[name].[hash].js',
