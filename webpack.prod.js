@@ -20,8 +20,8 @@ module.exports = merge(common, {
       inline: true,
       minify: true,
       extract: true,
-      width: 375,
-      height: 565,
+      width: 1300,
+      height: 900,
       penthouse: {
         blockJSRequests: false,
       }
