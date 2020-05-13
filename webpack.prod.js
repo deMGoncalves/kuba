@@ -4,7 +4,7 @@ const merge = require('webpack-merge')
 
 const { GenerateSW } = require('workbox-webpack-plugin')
 
-const HtmlCriticalWebpackPlugin = require("webpack-plugin-critical")
+const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin")
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 
