@@ -1,5 +1,7 @@
+const path = require('path')
 const common = require('./webpack.common.js')
 const { GenerateSW } = require('workbox-webpack-plugin')
+const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin")
 const merge = require('webpack-merge')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
@@ -10,6 +12,19 @@ module.exports = merge(common, {
     new GenerateSW({
       clientsClaim: true,
       skipWaiting: true
+    }),
+    new HtmlCriticalWebpackPlugin({
+      base: path.resolve(__dirname, 'public'),
+      src: 'index.html',
+      dest: 'index.html',
+      inline: true,
+      minify: true,
+      extract: true,
+      width: 375,
+      height: 565,
+      penthouse: {
+        blockJSRequests: false,
+      }
     })
   ],
   optimization: {
