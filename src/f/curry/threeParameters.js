@@ -3,7 +3,7 @@ import twoParameters from './twoParameters'
 import { isGap } from '../gap'
 
 /**
- * Função de curry de três argumentos otimizada.
+ * Função de curry otimizado para três argumentos.
  *
  * @private
  * @category Function
