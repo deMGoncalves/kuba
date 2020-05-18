@@ -1,7 +1,7 @@
 import { isGap } from '../gap'
 
 /**
- * Função de curry de um argumento otimizada.
+ * Função de curry otimizado para um argumento.
  *
  * @private
  * @category Function
