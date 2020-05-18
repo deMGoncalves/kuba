@@ -7,20 +7,20 @@
     "CSS",
     "Javascript"
   ],
-  "homepage": "https://github.com/VishFoiMau/Rex.JS.Mark.II",
+  "homepage": "https://github.com/oneOffJS/Rex.JS.Mark.II",
   "bugs": {
     "email": "cleber.engineer@hotmail.com",
-    "url": "https://github.com/VishFoiMau/Rex.JS.Mark.II/issues"
+    "url": "https://github.com/oneOffJS/Rex.JS.Mark.II/issues"
   },
   "license": "MIT",
   "author": {
     "name": "Cleber de Moraes Gonçalves",
     "email": "cleber.engineer@gmail.com",
-    "url": "https://github.com/VishFoiMau"
+    "url": "https://github.com/oneOffJS"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/VishFoiMau/Rex.JS.Mark.II.git"
+    "url": "https://github.com/oneOffJS/Rex.JS.Mark.II.git"
   },
   "browser": "/public/index.html",
   "private": false,
