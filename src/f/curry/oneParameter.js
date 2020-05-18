@@ -1,13 +1,12 @@
 import { isGap } from '../gap'
 
 /**
- * So executara a funcao alvo quando o parametro for valido
+ * Função de curry de um argumento otimizada.
  *
- * @name curryOne
- * @function
- * @access private
- * @param {*} a0 Parametro valido que nao seja um gap
- * @return {*} O valor que a funcao alvo retornar
+ * @private
+ * @category Function
+ * @param {Function} target A função para o curry.
+ * @return {Function} A função curried.
  */
 export default (target) =>
   function (a0) {
