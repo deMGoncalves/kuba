@@ -1,11 +1,11 @@
 <main align="center">
-  <img src="https://raw.githubusercontent.com/oneOffJS/Rex.JS.Mark.II/master/RexJS.png" height="200px">
+  <img src="https://raw.githubusercontent.com/oneOffJS/Rex.JS.Mark.II.Mark.II/master/RexJS.png" height="200px">
   <p>Simples, pequeno e imperfeito. Uma visão além da programação.</p>
 
-  [![GitHub issues](https://img.shields.io/github/issues/oneoffjs/Rex.JS.svg)](https://github.com/oneoffjs/https://img.shields.io/github/issues/oneoffjs/Rex.JS.svg/issues)
-  [![GitHub forks](https://img.shields.io/github/forks/oneoffjs/Rex.JS.svg)](https://github.com/oneoffjs/https://img.shields.io/github/issues/oneoffjs/Rex.JS.svg/network)
-  [![GitHub stars](https://img.shields.io/github/stars/oneoffjs/Rex.JS.svg)](https://github.com/oneoffjs/https://img.shields.io/github/issues/oneoffjs/Rex.JS.svg/stargazers)
-  [![GitHub license](https://img.shields.io/github/license/oneoffjs/Rex.JS.svg)](https://github.com/oneoffjs/https://img.shields.io/github/issues/oneoffjs/Rex.JS.svg/blob/master/LICENSE)
+  [![GitHub issues](https://img.shields.io/github/issues/oneOffJS/Rex.JS.Mark.II.svg)](https://github.com/oneOffJS/https://img.shields.io/github/issues/oneOffJS/Rex.JS.svg/issues)
+  [![GitHub forks](https://img.shields.io/github/forks/oneOffJS/Rex.JS.Mark.II.svg)](https://github.com/oneOffJS/https://img.shields.io/github/issues/oneOffJS/Rex.JS.svg/network)
+  [![GitHub stars](https://img.shields.io/github/stars/oneOffJS/Rex.JS.Mark.II.svg)](https://github.com/oneOffJS/https://img.shields.io/github/issues/oneOffJS/Rex.JS.svg/stargazers)
+  [![GitHub license](https://img.shields.io/github/license/oneOffJS/Rex.JS.Mark.II.svg)](https://github.com/oneOffJS/https://img.shields.io/github/issues/oneOffJS/Rex.JS.svg/blob/master/LICENSE)
   [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
   <br>
