@@ -3,15 +3,12 @@ import twoParameters from './twoParameters'
 import { isGap } from '../gap'
 
 /**
- * So executara a funcao alvo quando os tres parametros forem validos
+ * Função de curry de três argumentos otimizada.
  *
- * @name twoParameters
- * @function
- * @access private
- * @param {*} a0 Parametro valido que nao seja um gap
- * @param {*} a1 Parametro valido que nao seja um gap
- * @param {*} a2 Parametro valido que nao seja um gap
- * @return {*} O valor que a funcao alvo retornar
+ * @private
+ * @category Function
+ * @param {Function} target A função para o curry.
+ * @return {Function} A função curried.
  */
 export default (target) =>
   function (a0, a1, a2) {
