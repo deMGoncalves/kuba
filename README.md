@@ -1,4 +1,4 @@
-<main align="center">
+<div align="center">
   <img src="https://raw.githubusercontent.com/oneOffJS/Rex.JS.Mark.II.Mark.II/master/RexJS.png" height="200px">
   <p>Simples, pequeno e imperfeito. Uma visão além da programação.</p>
 
@@ -15,4 +15,4 @@
   A proposta deste repositório é fornecer uma direção na construção de uma Arquitetura sobre o DDD (Domain Driven Design), mostrando convenções que uso, e o mais importante, porque eu as escolhi.
 
   Para eventuais erros de digitação e/ou tradução, favor enviar um pull-request!
-</main>
+</div>
