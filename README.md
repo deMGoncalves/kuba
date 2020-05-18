@@ -1,6 +1,9 @@
 <div align="center">
-  <img src='https://raw.githubusercontent.com/oneOffJS/Rex.JS.Mark.II/master/RexJS.png' height="200px" />
-  <p>Simples, pequeno e imperfeito. Uma visão além da programação.</p>
+  <img src="https://raw.githubusercontent.com/oneOffJS/Rex.JS.Mark.II/master/RexJS.png" height="200px"/>
+  <hgroup>
+    <h1>Rex.JS Mark II</h1>
+    <h2>Simples, pequeno e imperfeito. Uma visão além da programação.</h2>
+  </hgroup>
 
   [![GitHub issues](https://img.shields.io/github/issues/oneOffJS/Rex.JS.Mark.II.svg)](https://github.com/oneOffJS/https://img.shields.io/github/issues/oneOffJS/Rex.JS.svg/issues)
   [![GitHub forks](https://img.shields.io/github/forks/oneOffJS/Rex.JS.Mark.II.svg)](https://github.com/oneOffJS/https://img.shields.io/github/issues/oneOffJS/Rex.JS.svg/network)
