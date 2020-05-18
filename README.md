@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/oneOffJS/Rex.JS.Mark.II.Mark.II/master/RexJS.png" height="200px">
+  <img src='https://raw.githubusercontent.com/oneOffJS/Rex.JS.Mark.II/master/RexJS.png' height="200px" />
   <p>Simples, pequeno e imperfeito. Uma visão além da programação.</p>
 
   [![GitHub issues](https://img.shields.io/github/issues/oneOffJS/Rex.JS.Mark.II.svg)](https://github.com/oneOffJS/https://img.shields.io/github/issues/oneOffJS/Rex.JS.svg/issues)
