@@ -9,10 +9,10 @@ import { isGap } from '../gap'
  * @return {Function} A função curried.
  */
 export default (target) =>
-  function (a0) {
+  function f1 (a0) {
     if (arguments.length === 0 || isGap(a0)) {
-      return target
+      return f1
     }
 
-    return target(a0)
+    return target.call(this, ...arguments)
   }
