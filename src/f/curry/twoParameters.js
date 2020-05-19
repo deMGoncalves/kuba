@@ -10,21 +10,21 @@ import { isGap } from '../gap'
  * @return {Function} A função curried.
  */
 export default (target) =>
-  function (a0, a1) {
+  function f2 (a0, a1) {
     switch (arguments.length) {
       case 0:
-        return target
+        return f2
       case 1:
         return isGap(a0)
-          ? target
-          : oneParameter((_a1) => target(a0, _a1))
+          ? f2
+          : oneParameter((...args) => target.call(this, a0, ...args))
       default:
         return isGap(a0) && isGap(a1)
-          ? target
+          ? f2
           : isGap(a0)
-            ? oneParameter((_a0) => target(_a0, a1))
+            ? oneParameter((_a0, ...args) => target.call(this, _a0, a1, ...args))
             : isGap(a1)
-              ? oneParameter((_a1) => target(a0, _a1))
-              : target(a0, a1)
+              ? oneParameter((...args) => target.call(this, a0, ...args))
+              : target.call(this, ...arguments)
     }
   }
