@@ -1,3 +1,3 @@
-import ControleDeDespesas from './ControleDeDespesas'
+import component from './component'
 
-export default ControleDeDespesas
+export default component
