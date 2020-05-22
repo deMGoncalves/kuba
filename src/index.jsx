@@ -3,7 +3,7 @@ import router from '@router'
 import '@sw'
 import './reset.css'
 
-router(/\/controle-de-despesas/, async () => {
-  const { default: ControleDeDespesas } = await import(/* webpackChunkName: "controleDeDespesas" */ './controleDeDespesas')
-  document.body.appendChild(<ControleDeDespesas />)
+router(/\/calculadora/, async () => {
+  const { default: Calculadora } = await import(/* webpackChunkName: "calculadora" */ './calculadora')
+  document.body.appendChild(<Calculadora />)
 })
