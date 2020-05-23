@@ -1,3 +1,5 @@
+import h from '@h'
+
 export default () =>
   <footer>
     <nav>
