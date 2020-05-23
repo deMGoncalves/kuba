@@ -1,2 +1,9 @@
+import Footer from '@footer'
+import Header from '@header'
+
 export default () =>
-  <h1>Home</h1>
+  <main>
+    <Header />
+    <section>a pagina vem aqui</section>
+    <Footer />
+  </main>
