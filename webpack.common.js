@@ -118,7 +118,9 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@f': path.resolve(__dirname, 'src/f'),
+      '@footer': path.resolve(__dirname, 'src/footer'),
       '@h': path.resolve(__dirname, 'src/h'),
+      '@header': path.resolve(__dirname, 'src/header'),
       '@hook': path.resolve(__dirname, 'src/hook'),
       '@radio': path.resolve(__dirname, 'src/radio'),
       '@router': path.resolve(__dirname, 'src/router'),

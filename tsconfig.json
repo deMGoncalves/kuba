@@ -45,7 +45,9 @@
     "paths": {                                /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
       "@/*": ["src/*"],
       "@f/*": ["src/f/*"],
+      "@footer/*": ["src/footer/*"],
       "@h/*": ["src/h/*"],
+      "@header/*": ["src/header/*"],
       "@hook/*": ["src/hook/*"],
       "@radio/*": ["src/radio/*"],
       "@router/*": ["src/router/*"],
