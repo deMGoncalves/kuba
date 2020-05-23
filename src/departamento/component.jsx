@@ -6,7 +6,7 @@ export default (attr) =>
   <main>
     <Header />
     <section>
-      <h1>{ attr.path }</h1>
+      <h1>{ attr.router }</h1>
     </section>
     <Footer />
   </main>
