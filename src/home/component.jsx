@@ -5,6 +5,8 @@ import Header from '@header'
 export default () =>
   <main>
     <Header />
-    <section>a pagina vem aqui</section>
+    <section>
+      <h1>Home</h1>
+    </section>
     <Footer />
   </main>

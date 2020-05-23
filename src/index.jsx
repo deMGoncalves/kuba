@@ -8,7 +8,7 @@ router(/^\/$/, async () => {
   document.body.appendChild(<Home />)
 })
 
-router(/^\/(\w+)$/, async (path) => {
+router(/^\/([\w-]+)$/, async (path) => {
   const { default: Departamento } = await import(/* webpackChunkName: "departamento" */ './departamento')
   document.body.appendChild(<Departamento router={path} />)
 })

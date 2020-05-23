@@ -5,6 +5,8 @@ import Footer from '@footer'
 export default (path) =>
   <main>
     <Header />
-    { path }
+    <section>
+      <h1>{ path }</h1>
+    </section>
     <Footer />
   </main>
