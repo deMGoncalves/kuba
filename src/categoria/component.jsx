@@ -6,7 +6,7 @@ export default (attr) =>
   <main>
     <Header />
     <section>
-      <h1>{ attr.departamento }</h1>
+      <h1>{ attr.departamento } / { attr.categoria }</h1>
     </section>
     <Footer />
   </main>

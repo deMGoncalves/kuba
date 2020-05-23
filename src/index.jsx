@@ -8,7 +8,12 @@ router(/^\/$/, async () => {
   document.body.appendChild(<Home />)
 })
 
-router(/^\/([\w-]+)$/, async (path) => {
+router(/^\/([\w-]+)$/, async (departamento) => {
   const { default: Departamento } = await import(/* webpackChunkName: "departamento" */ './departamento')
-  document.body.appendChild(<Departamento router={path} />)
+  document.body.appendChild(<Departamento {...{ departamento }} />)
+})
+
+router(/^\/([\w-]+)\/([\w-]+)$/, async (departamento, categoria) => {
+  const { default: Categoria } = await import(/* webpackChunkName: "categoria" */ './categoria')
+  document.body.appendChild(<Categoria {...{ departamento, categoria }} />)
 })
