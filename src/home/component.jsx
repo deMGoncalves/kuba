@@ -1,12 +1,7 @@
 import h from '@h'
-import Footer from '@footer'
-import Header from '@header'
+import Main from '@main'
 
 export default () =>
-  <main>
-    <Header />
-    <section>
-      <h1>Home</h1>
-    </section>
-    <Footer />
-  </main>
+  <Main>
+    <h1>Home</h1>
+  </Main>

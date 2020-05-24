@@ -1,12 +1,9 @@
 import h from '@h'
-import Header from '@header'
-import Footer from '@footer'
+import Main from '@main'
 
 export default (attr) =>
-  <main>
-    <Header />
+  <Main>
     <section>
       <h1>{ attr.departamento }</h1>
     </section>
-    <Footer />
-  </main>
+  </Main>
