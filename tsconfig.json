@@ -49,7 +49,6 @@
       "@h/*": ["src/h/*"],
       "@header/*": ["src/header/*"],
       "@hook/*": ["src/hook/*"],
-      "@logo/*": ["src/logo/*"],
       "@main/*": ["src/main/*"],
       "@nav/*": ["src/nav/*"],
       "@radio/*": ["src/radio/*"],

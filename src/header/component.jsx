@@ -1,5 +1,5 @@
 import h from '@h'
-import Logo from '@logo'
+import Logo from './logo'
 import Nav from '@nav'
 import style from './style.css'
 
