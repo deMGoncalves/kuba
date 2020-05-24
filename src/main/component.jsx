@@ -1,5 +1,5 @@
 import h from '@h'
-import Header from '@header'
+import Header from './header'
 import Footer from '@footer'
 
 export default (_, chield) =>
