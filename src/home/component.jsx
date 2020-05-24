@@ -1,7 +1,8 @@
 import h from '@h'
+import Jumbotron from './jumbotron'
 import Main from '@main'
 
 export default () =>
   <Main>
-    <h1>Home</h1>
+    <Jumbotron />
   </Main>
