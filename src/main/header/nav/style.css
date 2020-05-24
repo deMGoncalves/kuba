@@ -4,11 +4,12 @@
   justify-content: space-around;
 }
 
-.nav__link {
+.nav__a {
   color: var(--COLOR-MASTER-LIGHTEST);
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 1px;
+  line-height: 1;
   padding: 5px;
   text-decoration: none;
   text-transform: uppercase;
