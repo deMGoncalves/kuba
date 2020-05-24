@@ -1,0 +1,9 @@
+.benefits {
+  background: #fff;
+}
+
+.benefits__container {
+  max-width: 1220px;
+  padding: 0 10px;
+  width: 100%;
+}
