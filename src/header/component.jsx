@@ -1,7 +1,9 @@
 import h from '@h'
+import Logo from '@logo'
 
 export default () =>
   <header>
+    <Logo />
     <nav>
       <ul>
         <li><a href='./efeitos'>Efeitos</a></li>
