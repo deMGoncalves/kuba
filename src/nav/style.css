@@ -1,0 +1,14 @@
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link {
+  color: var(--COLOR-MASTER-LIGHTEST);
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
