@@ -50,7 +50,6 @@
       "@header/*": ["src/header/*"],
       "@hook/*": ["src/hook/*"],
       "@main/*": ["src/main/*"],
-      "@nav/*": ["src/nav/*"],
       "@radio/*": ["src/radio/*"],
       "@router/*": ["src/router/*"],
       "@sw/*": ["src/sw/*"]
