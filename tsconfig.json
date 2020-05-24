@@ -51,6 +51,7 @@
       "@hook/*": ["src/hook/*"],
       "@logo/*": ["src/logo/*"],
       "@main/*": ["src/main/*"],
+      "@nav/*": ["src/nav/*"],
       "@radio/*": ["src/radio/*"],
       "@router/*": ["src/router/*"],
       "@sw/*": ["src/sw/*"]

@@ -124,6 +124,7 @@ module.exports = {
       '@hook': path.resolve(__dirname, 'src/hook'),
       '@logo': path.resolve(__dirname, 'src/logo'),
       '@main': path.resolve(__dirname, 'src/main'),
+      '@nav': path.resolve(__dirname, 'src/nav'),
       '@radio': path.resolve(__dirname, 'src/radio'),
       '@router': path.resolve(__dirname, 'src/router'),
       '@sw': path.resolve(__dirname, 'src/sw')
