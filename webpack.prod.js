@@ -5,12 +5,17 @@ const merge = require('webpack-merge')
 const { GenerateSW } = require('workbox-webpack-plugin')
 
 const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin")
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 
 module.exports = merge(common, {
   mode: 'production',
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].[hash].css',
+      chunkFilename: '[id].[hash].css'
+    }),
     new GenerateSW({
       clientsClaim: true,
       skipWaiting: true
@@ -29,6 +34,28 @@ module.exports = merge(common, {
       }
     })
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              esModule: true
+            }
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
+          },
+          'postcss-loader'
+        ]
+      }
+    ]
+  },
   optimization: {
     moduleIds: 'hashed',
     minimizer: [

@@ -10,6 +10,6 @@ module.exports = merge(common, {
     historyApiFallback: true,
     hot: true,
     index: './public/index.html',
-    port: 9000
+    port: 9001
   }
 })
