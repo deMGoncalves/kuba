@@ -12,10 +12,6 @@ const TerserJSPlugin = require('terser-webpack-plugin')
 module.exports = merge.smart(common, {
   mode: 'production',
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
-      chunkFilename: '[id].[hash].css'
-    }),
     new GenerateSW({
       clientsClaim: true,
       skipWaiting: true
@@ -32,6 +28,10 @@ module.exports = merge.smart(common, {
       penthouse: {
         blockJSRequests: false,
       }
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[hash].css',
+      chunkFilename: '[id].[hash].css'
     })
   ],
   module: {
