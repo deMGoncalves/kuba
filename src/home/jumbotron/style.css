@@ -2,14 +2,6 @@
   background-color: var(--COLOR-MASTER-DARKER);
 }
 
-.jumbotron__container {
-  margin: 0 auto;
-  max-width: 1220px;
-  padding: 0 10px;
-  position: relative;
-  width: 100%;
-}
-
 .jumbotron__picture {
   display: block;
   height: 500px;
