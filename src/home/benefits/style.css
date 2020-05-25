@@ -13,6 +13,7 @@
 .benefits__ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -26,13 +27,13 @@
 
 @media (min-width: 550px) {
   .benefits__li {
-    width: calc(50% - 20px);
+    width: calc(50% - 10px);
   }
 }
 
 @media (min-width: 1099px) {
   .benefits__li {
-    width: calc(25% - 20px);
+    width: calc(25% - 10px);
   }
 }
 
@@ -43,6 +44,7 @@
 }
 
 .benefits__a {
+  color: var(--COLOR-MASTER-DARK);
   text-decoration: none;
   width: calc(100% - 60px);
 }
