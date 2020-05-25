@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: var(--COLOR-MATER-LIGHTEST);
+  background-color: var(--COLOR-MASTER-LIGHTEST);
   color: var(--COLOR-MASTER);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
