@@ -22,6 +22,7 @@ module.exports = {
     "warnOnUnsupportedTypeScriptVersion": false
   },
   "plugins": [
+    "stylelint-selector-bem-pattern"
   ],
   "rules": {
     "no-prototype-builtins": "off",
@@ -32,6 +33,14 @@ module.exports = {
         "argsIgnorePattern": "^_"
       }
     ],
+    "plugin/selector-bem-pattern": {
+      "componentName": "[A-Z]+",
+      "componentSelectors": {
+        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
+        "combined": "^\\.combined-{componentName}-[a-z]+$"
+      },
+      "utilitySelectors": "^\\.util-[a-z]+$"
+    },
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off"
   }
