@@ -11,7 +11,7 @@ export default () =>
         <source srcSet='https://dummyimage.com/1200x500/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
         <img className={style.jumbotron__img} alt='Aqui você encontra timbres e soluções' />
       </picture>
-      <h1 className={style.jumbotron__h1}>Aqui você encontra timbres e soluções</h1>
+      <h1 className={style.jumbotron__h1}>aqui você encontra timbres e soluções</h1>
       <a className={style.jumbotron__a} href='#'>saiba mais</a>
     </s.Container>
   </section>
