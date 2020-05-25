@@ -37,7 +37,8 @@
 }
 
 .benefits__a {
-  color: var(--COLOR-MASTER-DARK);
+  color: var(--COLOR-MASTER);
+  font-size: 12px;
   text-decoration: none;
   width: calc(100% - 60px);
 }
