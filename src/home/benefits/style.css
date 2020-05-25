@@ -3,7 +3,44 @@
 }
 
 .benefits__container {
+  margin: 0 auto;
   max-width: 1220px;
-  padding: 0 10px;
   width: 100%;
+}
+
+.benefits__ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.benefits__li {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (min-width: 550px) {
+  .benefits__li {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1099px) {
+  .benefits__li {
+    width: 25%;
+  }
+}
+
+.benefits__img {
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+.benefits__a {
+  text-decoration: none;
+  width: calc(100% - 60px);
 }
