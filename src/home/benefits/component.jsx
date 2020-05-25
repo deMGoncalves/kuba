@@ -1,9 +1,10 @@
 import h from '@h'
+import * as s from '@share'
 import style from './style.css'
 
 export default () =>
   <section className={style.benefits}>
-    <div className={style.benefits__container}>
+    <s.Container>
       <ul className={style.benefits__ul}>
         <li className={style.benefits__li}>
           <img className={style.benefits__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' alt='benefits' />
@@ -22,5 +23,5 @@ export default () =>
           <a href='#' className={style.benefits__a}>“Não instala” oficialmente modificações de livros Públicos (WAMPLER) ou Internet</a>
         </li>
       </ul>
-    </div>
+    </s.Container>
   </section>

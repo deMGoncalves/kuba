@@ -3,13 +3,6 @@
   padding: 20px 0;
 }
 
-.benefits__container {
-  margin: 0 auto;
-  max-width: 1220px;
-  padding: 0 10px;
-  width: 100%;
-}
-
 .benefits__ul {
   display: flex;
   flex-wrap: wrap;
