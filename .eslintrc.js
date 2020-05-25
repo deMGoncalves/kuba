@@ -8,8 +8,6 @@ module.exports = {
     "standard",
     "standard-react"
   ],
-  "globals": {
-  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -21,9 +19,6 @@ module.exports = {
     "useJSXTextNode": true,
     "warnOnUnsupportedTypeScriptVersion": false
   },
-  "plugins": [
-    "stylelint-selector-bem-pattern"
-  ],
   "rules": {
     "no-prototype-builtins": "off",
     "no-unused-vars": [
@@ -33,14 +28,6 @@ module.exports = {
         "argsIgnorePattern": "^_"
       }
     ],
-    "plugin/selector-bem-pattern": {
-      "componentName": "[A-Z]+",
-      "componentSelectors": {
-        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
-        "combined": "^\\.combined-{componentName}-[a-z]+$"
-      },
-      "utilitySelectors": "^\\.util-[a-z]+$"
-    },
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off"
   }
