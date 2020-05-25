@@ -8,19 +8,19 @@ export default () =>
       <ul className={style.benefits__ul}>
         <li className={style.benefits__li}>
           <img className={style.benefits__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' alt='benefits' />
-          <a href='#' className={style.benefits__a}>Atualizações gratuitas disponíveis para nossas mods “Serie A”</a>
+          <a href='#' className={style.benefits__a}>Atualização e Garantia vitalícia dos pedais da Série A</a>
         </li>
         <li className={style.benefits__li}>
           <img className={style.benefits__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' alt='benefits' />
-          <a href='#' className={style.benefits__a}>Representante Exclusivo Oficial General Guitar Gadgets – America do Sul</a>
+          <a href='#' className={style.benefits__a}>Pedais absolutamente fiéis aos seus propósitos e cumprem 100% de suas propostas</a>
         </li>
         <li className={style.benefits__li}>
           <img className={style.benefits__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' alt='benefits' />
-          <a href='#' className={style.benefits__a}>Representante e Instalador Oficial dos produtos Monte Allums no Brasil</a>
+          <a href='#' className={style.benefits__a}>Parceria com os grandes representantes globais em Modificações/Customizações de pedais</a>
         </li>
         <li className={style.benefits__li}>
           <img className={style.benefits__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' alt='benefits' />
-          <a href='#' className={style.benefits__a}>“Não instala” oficialmente modificações de livros Públicos (WAMPLER) ou Internet</a>
+          <a href='#' className={style.benefits__a}>Produto confeccionado com primor e coração ou paixão ou outra qualidade profunda</a>
         </li>
       </ul>
     </s.Container>
