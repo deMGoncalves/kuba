@@ -20,13 +20,13 @@
 
 @media (min-width: 550px) {
   .benefits__li {
-    width: calc(50% - 10px);
+    width: calc(50% - 5px);
   }
 }
 
 @media (min-width: 1099px) {
   .benefits__li {
-    width: calc(25% - 10px);
+    width: calc(25% - 13.333px);
   }
 }
 
