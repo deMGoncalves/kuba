@@ -44,6 +44,7 @@
 .jumbotron__a {
   align-items: center;
   border: 2px solid var(--COLOR-MASTER-LIGHTEST);
+  border-radius: 20px;
   bottom: 40px;
   color: var(--COLOR-MASTER-LIGHTEST);
   display: flex;
@@ -51,11 +52,11 @@
   font-weight: 500;
   height: 40px;
   justify-content: center;
-  left: calc(50% - 60px);
+  left: calc(50% - 70px);
   letter-spacing: 1px;
   line-height: 1;
   position: absolute;
   text-decoration: none;
   text-transform: uppercase;
-  width: 120px;
+  width: 140px;
 }
