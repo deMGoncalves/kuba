@@ -12,6 +12,6 @@ export default () =>
         <img className={style.jumbotron__img} alt='Aqui você encontra timbres e soluções' />
       </picture>
       <h1 className={style.jumbotron__h1}>aqui você encontra timbres e soluções</h1>
-      <a className={style.jumbotron__a} href='#'>saiba mais</a>
+      <a className={style.jumbotron__a} href='#'>ver mais</a>
     </s.Container>
   </section>
