@@ -20,6 +20,12 @@
   }
 }
 
+@media (min-width: 960px) {
+  .footer__div {
+    width: calc(25% - 7.5px);
+  }
+}
+
 .footer__ul {
   list-style: none;
 }
