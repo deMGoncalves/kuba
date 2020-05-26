@@ -50,6 +50,9 @@
 .footer__a {
   color: var(--COLOR-MASTER-LIGHTER);
   display: inline-block;
+  font-size: 12px;
+  letter-spacing: 1px;
   padding: 5px;
   text-decoration: none;
+  text-transform: lowercase;
 }
