@@ -37,3 +37,10 @@
 .footer__ul {
   list-style: none;
 }
+
+.footer__a {
+  color: var(--COLOR-MASTER-LIGHTER);
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+}
