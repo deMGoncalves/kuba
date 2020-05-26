@@ -7,6 +7,10 @@
   flex-wrap: wrap;
 }
 
+.footer__div {
+  width: 100%;
+}
+
 .footer__ul {
   list-style: none;
 }
