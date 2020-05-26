@@ -5,6 +5,7 @@ import Distortion from './distortion'
 import Jumbotron from './jumbotron'
 import Kits from './kits'
 import Main from '@main'
+import Souvenier from './souvenier'
 
 export default () =>
   <Main>
@@ -13,4 +14,5 @@ export default () =>
     <Custom />
     <Kits />
     <Distortion />
+    <Souvenier />
   </Main>
