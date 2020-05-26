@@ -30,6 +30,7 @@
 
 @media (min-width: 960px) {
   .footer__div {
+    margin-top: 0 !important;
     width: calc(25% - 7.5px);
   }
 }
