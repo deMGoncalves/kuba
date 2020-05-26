@@ -3,11 +3,6 @@
   padding: 40px 0;
 }
 
-.footer__container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .footer__nav {
   width: 100%;
 }
