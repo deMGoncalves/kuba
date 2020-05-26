@@ -6,3 +6,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.footer__ul {
+  list-style: none;
+}
