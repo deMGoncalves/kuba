@@ -4,7 +4,7 @@ import style from './style.css'
 
 export default () =>
   <footer className={style.footer}>
-    <s.Container className={style.footer__container}>
+    <s.Container>
       <nav className={style.footer__nav}>
         <div className={style.footer__div}>
           <h3 className={style.footer__h3}>mundo jrmod</h3>
