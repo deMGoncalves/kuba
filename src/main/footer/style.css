@@ -12,6 +12,12 @@
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .footer__div {
+    width: calc(50% - 5px);
+  }
+}
+
 .footer__ul {
   list-style: none;
 }
