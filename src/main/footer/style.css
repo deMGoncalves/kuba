@@ -1,3 +1,8 @@
 .footer {
   background-color: var(--COLOR-MASTER-DARKER);
 }
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+}
