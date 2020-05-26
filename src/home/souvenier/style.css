@@ -2,6 +2,12 @@
   padding: 40px 0;
 }
 
+.souvenier__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .souvenier__h2 {
   color: var(--COLOR-MASTER-DARKER);
   display: inline-block;
@@ -11,6 +17,13 @@
   line-height: 1;
   margin-bottom: 20px;
   text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .souvenier__h2 {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -28,22 +41,17 @@
   margin-top: 10px;
 }
 
+@media (min-width: 768px) {
+  .souvenier__div {
+    margin-top: 10px;
+    width: calc(50% - 5px);
+  }
+}
+
 .souvenier__picture {
   display: block;
   height: 400px;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .souvenier__picture {
-    height: 300px;
-  }
-}
-
-@media (min-width: 960px) {
-  .souvenier__picture {
-    height: 200px;
-  }
 }
 
 .souvenier__img {
@@ -69,12 +77,4 @@
   text-decoration: none;
   text-transform: uppercase;
   width: 140px;
-}
-
-@media (min-width: 960px) {
-  .souvenier__a {
-    bottom: 80px;
-    left: auto;
-    right: 50px;
-  }
 }
