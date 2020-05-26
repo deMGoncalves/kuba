@@ -1,5 +1,6 @@
 .footer {
   background-color: var(--COLOR-MASTER-DARKER);
+  padding: 40px 0;
 }
 
 .footer__container {
