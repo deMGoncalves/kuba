@@ -1,7 +1,7 @@
 import h from '@h'
 import style from './style.css'
 
-export default (_, child) =>
-  <div className={style.container}>
+export default (attr, child) =>
+  <div className={[style.container, attr.className]}>
     { child }
   </div>
