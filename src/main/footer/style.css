@@ -22,6 +22,10 @@
   .footer__div {
     width: calc(50% - 5px);
   }
+
+  .footer__div:nth-child(2) {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 960px) {
