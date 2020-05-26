@@ -9,8 +9,8 @@ export default () =>
       <div className={style.kits__div}>
         <picture className={style.kits__picture}>
           <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
-          <source srcSet='https://dummyimage.com/959x300/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
-          <source srcSet='https://dummyimage.com/1200x200/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
+          <source srcSet='https://dummyimage.com/959x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
+          <source srcSet='https://dummyimage.com/595x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.kits__img} alt='mod kits' />
         </picture>
         <a className={style.kits__a} href='#'>ver mais</a>
@@ -18,8 +18,8 @@ export default () =>
       <div className={[style.kits__div, style.half]}>
         <picture className={style.kits__picture}>
           <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
-          <source srcSet='https://dummyimage.com/959x300/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
-          <source srcSet='https://dummyimage.com/1200x200/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
+          <source srcSet='https://dummyimage.com/465x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
+          <source srcSet='https://dummyimage.com/294x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.kits__img} alt='overdrive' />
         </picture>
         <a className={style.kits__a} href='#'>overdrive</a>
@@ -27,8 +27,8 @@ export default () =>
       <div className={[style.kits__div, style.half]}>
         <picture className={style.kits__picture}>
           <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
-          <source srcSet='https://dummyimage.com/959x300/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
-          <source srcSet='https://dummyimage.com/1200x200/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
+          <source srcSet='https://dummyimage.com/465x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
+          <source srcSet='https://dummyimage.com/294x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.kits__img} alt='distortion' />
         </picture>
         <a className={style.kits__a} href='#'>distortion</a>
