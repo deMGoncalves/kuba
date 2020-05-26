@@ -38,6 +38,10 @@
   list-style: none;
 }
 
+.footer__li {
+  text-align: center;
+}
+
 .footer__a {
   color: var(--COLOR-MASTER-LIGHTER);
   display: inline-block;
