@@ -12,7 +12,7 @@ export default () =>
     <Jumbotron />
     <Benefits />
     <Custom />
-    <Kits />
     <Distortion />
+    <Kits />
     <Souvenier />
   </Main>
