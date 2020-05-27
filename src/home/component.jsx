@@ -13,6 +13,6 @@ export default () =>
     <Benefits />
     <Custom />
     <Distortion />
-    <Kits />
     <Souvenier />
+    <Kits />
   </Main>
