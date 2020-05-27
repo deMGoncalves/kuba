@@ -4,7 +4,7 @@ const merge = require('webpack-merge')
 const paths = require('./paths')
 
 const { GenerateSW } = require('workbox-webpack-plugin')
-const SitemapPlugin = require('sitemap-webpack-plugin').default
+const SitemapWebpackPlugin = require('sitemap-webpack-plugin').default
 
 module.exports = merge.smart(common, {
   mode: 'production',
@@ -13,7 +13,7 @@ module.exports = merge.smart(common, {
       clientsClaim: true,
       skipWaiting: true
     }),
-    new SitemapPlugin('https://jrmod.net', paths)
+    new SitemapWebpackPlugin('https://jrmod.net', paths)
   ],
   optimization: {
     moduleIds: 'hashed',
