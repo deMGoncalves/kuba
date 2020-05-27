@@ -2,12 +2,6 @@
   padding: 40px 0;
 }
 
-.souvenier__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .souvenier__h2 {
   color: var(--COLOR-MASTER-DARKER);
   display: inline-block;
