@@ -22,13 +22,30 @@
 .custom__picture {
   display: block;
   height: 100%;
+  padding-top: calc((400 / 767) * 100%);
+  position: relative;
   width: 100%;
+}
+
+@media (min-width: 760px) {
+  .custtom__picture {
+    padding-top: calc((300 / 959) * 100%);
+  }
+}
+
+@media (min-width: 960px) {
+  .custom__picture {
+    padding-top: calc((1 / 6) * 100%);
+  }
 }
 
 .custom__img {
   height: 100%;
+  left: 0;
   object-fit: cover;
   object-position: center center;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 
