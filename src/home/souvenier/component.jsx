@@ -10,7 +10,7 @@ export default () =>
         <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
         <source srcSet='https://dummyimage.com/959x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
         <source srcSet='https://dummyimage.com/1200x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
-        <img className={style.souvenier__img} alt='souvenier' />
+        <img className={style.souvenier__img} loading='lazy' alt='souvenier' />
       </picture>
       <a className={style.souvenier__a} href='#'>ver mais</a>
     </s.Container>
