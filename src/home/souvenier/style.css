@@ -16,12 +16,6 @@
 
 @media (min-width: 768px) {
   .souvenier__h2 {
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 768px) {
-  .souvenier__h2 {
     font-size: 24px;
     text-align: left;
   }
