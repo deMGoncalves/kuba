@@ -22,20 +22,20 @@
 .custom__picture {
   display: block;
   height: 100%;
-  padding-top: calc((400 / 767) * 100%);
+  padding-top: calc(400 / 767 * 100%);
   position: relative;
   width: 100%;
 }
 
 @media (min-width: 760px) {
   .custtom__picture {
-    padding-top: calc((300 / 959) * 100%);
+    padding-top: calc(300 / 959 * 100%);
   }
 }
 
 @media (min-width: 960px) {
   .custom__picture {
-    padding-top: calc((1 / 6) * 100%);
+    padding-top: calc(200 / 1200 * 100%);
   }
 }
 
@@ -71,8 +71,9 @@
 
 @media (min-width: 960px) {
   .custom__a {
-    bottom: 80px;
+    bottom: 0;
     left: auto;
+    margin-bottom: calc(200 / 1200 * 100% / 2 - 20px);
     right: 50px;
   }
 }
