@@ -4,7 +4,7 @@ import style from './style.css'
 
 export default () =>
   <section className={style.souvenier}>
-    <s.Container className={style.souvenier__container}>
+    <s.Container>
       <h2 className={style.souvenier__h2}>souvenier</h2>
       <picture className={style.souvenier__picture}>
         <source srcSet='https://dummyimage.com/767x200/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
