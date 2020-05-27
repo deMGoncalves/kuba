@@ -10,7 +10,7 @@ export default () =>
         <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
         <source srcSet='https://dummyimage.com/959x300/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
         <source srcSet='https://dummyimage.com/1200x200/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
-        <img className={style.custom__img} alt='custom' />
+        <img className={style.custom__img} loading='lazy' alt='custom' />
       </picture>
       <a className={style.custom__a} href='#'>ver mais</a>
     </s.Container>
