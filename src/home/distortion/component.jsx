@@ -11,7 +11,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
           <source srcSet='https://dummyimage.com/959x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet='https://dummyimage.com/1200x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
-          <img className={style.distortion__img} alt='distortion' />
+          <img className={style.distortion__img} loading='lazy' alt='distortion' />
         </picture>
         <a className={style.distortion__a} href='#'>ver mais</a>
       </div>
@@ -20,7 +20,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
           <source srcSet='https://dummyimage.com/465x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet='https://dummyimage.com/387x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
-          <img className={style.distortion__img} alt='distortion / overdrive / fuzz' />
+          <img className={style.distortion__img} loading='lazy' alt='distortion / overdrive / fuzz' />
         </picture>
         <a className={style.distortion__a} href='#'>distortion</a>
       </div>
@@ -29,7 +29,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
           <source srcSet='https://dummyimage.com/465x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet='https://dummyimage.com/387x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
-          <img className={style.distortion__img} alt='compressor' />
+          <img className={style.distortion__img} loading='lazy' alt='compressor' />
         </picture>
         <a className={style.distortion__a} href='#'>compressor</a>
       </div>
@@ -38,7 +38,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
           <source srcSet='https://dummyimage.com/465x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet='https://dummyimage.com/387x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
-          <img className={style.distortion__img} alt='equalizer' />
+          <img className={style.distortion__img} loading='lazy' alt='equalizer' />
         </picture>
         <a className={style.distortion__a} href='#'>equalizer</a>
       </div>
@@ -47,7 +47,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
           <source srcSet='https://dummyimage.com/465x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet='https://dummyimage.com/387x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
-          <img className={style.distortion__img} alt='preamp' />
+          <img className={style.distortion__img} loading='lazy' alt='preamp' />
         </picture>
         <a className={style.distortion__a} href='#'>preamp</a>
       </div>
@@ -56,7 +56,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
           <source srcSet='https://dummyimage.com/465x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet='https://dummyimage.com/387x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
-          <img className={style.distortion__img} alt='expression' />
+          <img className={style.distortion__img} loading='lazy' alt='expression' />
         </picture>
         <a className={style.distortion__a} href='#'>expression</a>
       </div>
@@ -65,7 +65,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
           <source srcSet='https://dummyimage.com/465x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet='https://dummyimage.com/387x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
-          <img className={style.distortion__img} alt='modulation' />
+          <img className={style.distortion__img} loading='lazy' alt='modulation' />
         </picture>
         <a className={style.distortion__a} href='#'>modulation</a>
       </div>
