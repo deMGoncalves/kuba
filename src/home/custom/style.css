@@ -21,20 +21,8 @@
 
 .custom__picture {
   display: block;
-  height: 400px;
+  height: 100%;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .custom__picture {
-    height: 300px;
-  }
-}
-
-@media (min-width: 960px) {
-  .custom__picture {
-    height: 200px;
-  }
 }
 
 .custom__img {
