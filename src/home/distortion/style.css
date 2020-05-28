@@ -29,6 +29,7 @@
 
 .distortion__div {
   position: relative;
+  width: 100%;
 }
 
 .distortion__div.half {
