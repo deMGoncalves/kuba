@@ -29,6 +29,7 @@
 
 .kits__div {
   position: relative;
+  width: 100%;
 }
 
 .kits__div.half {
@@ -55,13 +56,38 @@
 .kits__picture {
   display: block;
   height: 100%;
+  padding-top: calc(400 / 747 * 100%);
+  position: relative;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .kits__picture {
+    padding-top: calc(500 / 939 * 100%);
+  }
+
+  .kits__picture.half {
+    padding-top: calc(400 / 464.5 * 100%);
+  }
+}
+
+@media (min-width: 960px) {
+  .kits__picture {
+    padding-top: calc(400 / 1200 * 100%);
+  }
+
+  .kits__picture.half {
+    padding-top: calc(400 / 293.4 * 100%);
+  }
 }
 
 .kits__img {
   height: 100%;
+  left: 0;
   object-fit: cover;
   object-position: center center;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 

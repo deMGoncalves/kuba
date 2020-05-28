@@ -51,14 +51,14 @@
 .distortion__picture {
   display: block;
   height: 100%;
-  padding-top: calc(600 / 747 * 100%);
+  padding-top: calc(500 / 747 * 100%);
   position: relative;
   width: 100%;
 }
 
 @media (min-width: 768px) {
   .distortion__picture {
-    padding-top: calc(500 / 939 * 100%);
+    padding-top: calc(400 / 939 * 100%);
   }
 
   .distortion__picture.half {
