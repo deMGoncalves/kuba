@@ -1,3 +1,8 @@
 .logo {
   cursor: pointer;
 }
+
+.logo__img {
+  object-fit: cover;
+  object-position: center center;
+}
