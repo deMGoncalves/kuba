@@ -23,14 +23,14 @@
   background-color: var(--COLOR-MASTER-DARKER);
   display: block;
   height: 100%;
-  padding-top: calc(500 / 747 * 100%);
+  padding-top: calc(400 / 747 * 100%);
   position: relative;
   width: 100%;
 }
 
 @media (min-width: 760px) {
   .custtom__picture {
-    padding-top: calc(350 / 939 * 100%);
+    padding-top: calc(400 / 939 * 100%);
   }
 }
 
