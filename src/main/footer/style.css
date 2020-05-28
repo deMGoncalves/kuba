@@ -54,7 +54,7 @@
 }
 
 .footer__p {
-  color: var(--COLOR-MASTER);
+  color: var(--COLOR-MASTER-LIGHT);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.7px;
