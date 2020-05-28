@@ -3,6 +3,20 @@
 }
 
 .logo__img {
+  height: 60px;
   object-fit: cover;
   object-position: center center;
+  width: 120px;
+}
+
+@media (min-width: 470px) {
+  .logo__img {
+    width: 60px;
+  }
+}
+
+@media (min-width: 590px) {
+  .logo__img {
+    width: 180px;
+  }
 }
