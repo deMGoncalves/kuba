@@ -5,12 +5,30 @@
 .jumbotron__picture {
   display: block;
   height: 100%;
+  padding-top: calc(600 / 767 * 100%);
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .jumbotron__picture {
+    padding-top: calc(500 / 959 * 100%);
+  }
+}
+
+@media (min-width: 960px) {
+  .jumbotron__picture {
+    padding-top: calc(400 / 1200 * 100%);
+  }
 }
 
 .jumbotron__img {
   height: 100%;
+  left: 0;
   object-fit: cover;
   object-position: center center;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 
