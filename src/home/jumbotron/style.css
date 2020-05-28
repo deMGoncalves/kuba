@@ -5,14 +5,14 @@
 .jumbotron__picture {
   display: block;
   height: 100%;
-  padding-top: calc(600 / 767 * 100%);
+  padding-top: calc(600 / 747 * 100%);
   position: relative;
   width: 100%;
 }
 
 @media (min-width: 768px) {
   .jumbotron__picture {
-    padding-top: calc(500 / 959 * 100%);
+    padding-top: calc(500 / 939 * 100%);
   }
 }
 
