@@ -22,14 +22,14 @@
 .custom__picture {
   display: block;
   height: 100%;
-  padding-top: calc(400 / 767 * 100%);
+  padding-top: calc(400 / 747 * 100%);
   position: relative;
   width: 100%;
 }
 
 @media (min-width: 760px) {
   .custtom__picture {
-    padding-top: calc(300 / 959 * 100%);
+    padding-top: calc(300 / 939 * 100%);
   }
 }
 
