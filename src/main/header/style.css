@@ -6,7 +6,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 110px;
   justify-content: space-around;
   margin: 0 auto;
   max-width: 1220px;
@@ -16,31 +15,6 @@
 @media (min-width: 470px) {
   .header__container {
     flex-direction: row;
-    height: 60px;
     justify-content: space-between;
   }
-}
-
-.header__logo {
-  height: 40px;
-  width: 120px;
-}
-
-@media (min-width: 470px) {
-  .header__logo {
-    height: 60px;
-    width: 60px;
-  }
-}
-
-@media (min-width: 590px) {
-  .header__logo {
-    width: 180px;
-  }
-}
-
-.header__nav {
-  height: 40px;
-  max-width: 380px;
-  width: 100%;
 }

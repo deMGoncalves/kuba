@@ -1,22 +1,25 @@
 .logo {
   cursor: pointer;
-}
-
-.logo__img {
+  display: block;
   height: 60px;
-  object-fit: cover;
-  object-position: center center;
   width: 120px;
 }
 
+.logo__img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+
 @media (min-width: 470px) {
-  .logo__img {
+  .logo {
     width: 60px;
   }
 }
 
 @media (min-width: 590px) {
-  .logo__img {
+  .logo {
     width: 180px;
   }
 }

@@ -1,7 +1,10 @@
 .nav {
   align-items: center;
   display: flex;
+  height: 40px;
   justify-content: space-around;
+  max-width: 380px;
+  width: 100%;
 }
 
 .nav__a {

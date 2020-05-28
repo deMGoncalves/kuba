@@ -1,8 +1,8 @@
 import h from '@h'
 import style from './style.css'
 
-export default (attr) =>
-  <picture className={[style.logo, attr.className]} itemScope itemType='http://schema.org/Organization'>
+export default () =>
+  <picture className={style.logo} itemScope itemType='http://schema.org/Organization'>
     <source srcSet='https://dummyimage.com/120x60/1A1A1A/1A1A1A.png' media='(max-width: 469px)' />
     <source srcSet='https://dummyimage.com/60x60/1A1A1A/1A1A1A.png' media='(min-width: 470px) and (max-width: 589px)' />
     <source srcSet='https://dummyimage.com/180x60/1A1A1A/1A1A1A.png' media='(min-width: 590px)' />
