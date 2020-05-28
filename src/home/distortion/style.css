@@ -50,13 +50,30 @@
 .distortion__picture {
   display: block;
   height: 100%;
+  padding-top: calc(600 / 747 * 100%);
+  position: relative;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .distortion__picture {
+    padding-top: calc(500 / 939 * 100%);
+  }
+}
+
+@media (min-width: 960px) {
+  .distortion__picture {
+    padding-top: calc(400 / 1200 * 100%);
+  }
 }
 
 .distortion__img {
   height: 100%;
+  left: 0;
   object-fit: cover;
   object-position: center center;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 

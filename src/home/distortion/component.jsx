@@ -8,8 +8,8 @@ export default () =>
       <h2 className={style.distortion__h2}>efeitos</h2>
       <div className={style.distortion__div}>
         <picture className={style.distortion__picture}>
-          <source srcSet='https://dummyimage.com/767x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
-          <source srcSet='https://dummyimage.com/959x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
+          <source srcSet='https://dummyimage.com/747x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
+          <source srcSet='https://dummyimage.com/939x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet='https://dummyimage.com/1200x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.distortion__img} loading='lazy' alt='distortion' />
         </picture>
