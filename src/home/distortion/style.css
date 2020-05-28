@@ -59,11 +59,19 @@
   .distortion__picture {
     padding-top: calc(500 / 939 * 100%);
   }
+
+  .distortion__picture.half {
+    padding-top: calc(400 / 464.5 * 100%);
+  }
 }
 
 @media (min-width: 960px) {
   .distortion__picture {
     padding-top: calc(400 / 1200 * 100%);
+  }
+
+  .distortion__picture.half {
+    padding-top: calc(400 / 393.3 * 100%);
   }
 }
 
