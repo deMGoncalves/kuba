@@ -5,7 +5,7 @@ import style from './style.css'
 export default () =>
   <section className={style.souvenier}>
     <s.Container>
-      <h2 className={style.souvenier__h2}>souvenier</h2>
+      <h2 className={style.souvenier__h2}>souveniers com a marca da família JRMod</h2>
       <picture className={style.souvenier__picture}>
         <source srcSet='https://dummyimage.com/747x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
         <source srcSet='https://dummyimage.com/939x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
