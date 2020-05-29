@@ -18,7 +18,7 @@
 
 @media (min-width: 960px) {
   .jumbotron__picture {
-    padding-top: calc(400 / 1200 * 100%);
+    padding-top: calc(500 / 1200 * 100%);
   }
 }
 
