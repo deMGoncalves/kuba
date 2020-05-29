@@ -91,7 +91,5 @@
     "workbox-webpack-plugin": "^4.3.1",
     "xml-loader": "^1.2.1"
   },
-  "dependencies": {
-    "firebase": "^7.14.6"
-  }
+  "dependencies": {}
 }
