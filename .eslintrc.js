@@ -8,6 +8,9 @@ module.exports = {
     "standard",
     "standard-react"
   ],
+  "globals": {
+    "firebase": true
+  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {

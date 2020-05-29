@@ -2,13 +2,9 @@ import h from '@h'
 import config from './config.json'
 
 window.addEventListener('load', async () => {
-  const header = { mode: 'no-cors' }
-  const app = await fetch('https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js', header).then(response => response.text())
-  const analytics = await fetch('https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js', header).then(response => response.text())
+  const url = (file) =>
+    `https://www.gstatic.com/firebasejs/7.14.5/firebase-${file}.js`
 
-  document.body.appendChild(<script>{ app }</script>)
-  document.body.appendChild(<script>{ analytics }</script>)
-
-  window.firebase.initializeApp(config)
-  window.firebase.analytics()
+  document.body.appendChild(<script src={url('app')} onLoad={() => firebase.initializeApp(config)} />)
+  document.body.appendChild(<script src={url('analytics')} onLoad={() => firebase.analytics()} />)
 })
