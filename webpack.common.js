@@ -107,6 +107,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       '@': path.resolve(__dirname, 'src'),
+      '@analytics': path.resolve(__dirname, 'src/analytics'),
       '@f': path.resolve(__dirname, 'src/f'),
       '@h': path.resolve(__dirname, 'src/h'),
       '@hook': path.resolve(__dirname, 'src/hook'),

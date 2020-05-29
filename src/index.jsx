@@ -1,6 +1,7 @@
 import h from '@h'
 import router from '@router'
-// import '@sw'
+import '@sw'
+import '@analytics'
 import './reset.css'
 
 router(/^\/$/, async () => {
