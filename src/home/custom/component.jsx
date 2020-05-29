@@ -5,7 +5,7 @@ import style from './style.css'
 export default () =>
   <section className={style.custom}>
     <s.Container>
-      <h2 className={style.custom__h2}>pedais custom</h2>
+      <h2 className={style.custom__h2}>produto confeccionado com primor e coração</h2>
       <picture className={style.custom__picture}>
         <source srcSet='https://dummyimage.com/747x400/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
         <source srcSet='https://dummyimage.com/939x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
