@@ -9,29 +9,30 @@
   justify-content: space-between;
 }
 
-.footer__div {
+.footer__section {
+  font-style: normal;
   text-align: center;
   width: 100%;
 }
 
-.footer__div:not(:first-of-type) {
+.footer__section:not(:first-of-type) {
   margin-top: 40px;
 }
 
 @media (min-width: 768px) {
-  .footer__div {
+  .footer__section {
     padding-right: 20px;
     text-align: left;
     width: calc(50% - 5px);
   }
 
-  .footer__div:nth-child(2) {
+  .footer__section:nth-child(2) {
     margin-top: 0;
   }
 }
 
 @media (min-width: 960px) {
-  .footer__div {
+  .footer__section {
     margin-top: 0 !important;
     width: calc(25% - 7.5px);
   }
