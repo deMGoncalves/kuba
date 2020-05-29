@@ -1,10 +1,9 @@
 import h from '@h'
+import * as firebase from 'firebase/app'
 import config from './config.json'
+import 'firebase/analytics'
 
-window.addEventListener('load', async () => {
-  const url = (file) =>
-    `https://www.gstatic.com/firebasejs/7.14.5/firebase-${file}.js`
-
-  document.body.appendChild(<script src={url('app')} onLoad={() => firebase.initializeApp(config)} />)
-  document.body.appendChild(<script src={url('analytics')} onLoad={() => firebase.analytics()} />)
-})
+if (process.env.NODE_ENV === 'production') {
+  firebase.initializeApp(config)
+  firebase.analytics()
+}
