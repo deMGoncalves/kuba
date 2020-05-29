@@ -23,13 +23,14 @@ export default () =>
         <p className={style.footer__p}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         <a className={style.footer__a}>saiba mais</a>
       </div>
-      <div className={style.footer__div}>
+      <address className={style.footer__div} itemProp='address' itemScope itemType='http://schema.org/PostalAddress'>
         <img className={style.footer__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' loading='lazy' alt='contato' />
         <h3 className={style.footer__h3}>contato</h3>
-        <p className={style.footer__p}>Rua Ministro Edmundo Lins, 199</p>
-        <p className={style.footer__p}>Bairro Ferreira, SP - Brasil</p>
-        <p className={style.footer__p}>+55 11 3881-9937</p>
-        <p className={style.footer__p}>rossettijrmod@hotmail.com</p>
-      </div>
+        <p className={style.footer__p} itemProp='streetAddress'>Rua Ministro Edmundo Lins, 199</p>
+        <p className={style.footer__p} itemProp='postalCode'>05523-000</p>
+        <p className={style.footer__p}><span itemProp='addressLocality'>Bairro Ferreira</span>, <span itemProp='addressRegion'>SP</span> - <span itemProp='addressCountry'>Brasil</span></p>
+        <p className={style.footer__p} itemProp='telephone'>+55 11 3881-9937</p>
+        <p className={style.footer__p} itemProp='email'>rossettijrmod@hotmail.com</p>
+      </address>
     </s.Container>
   </footer>
