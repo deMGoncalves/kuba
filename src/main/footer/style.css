@@ -10,7 +10,6 @@
 }
 
 .footer__section {
-  font-style: normal;
   text-align: center;
   width: 100%;
 }
@@ -36,6 +35,10 @@
     margin-top: 0 !important;
     width: calc(25% - 7.5px);
   }
+}
+
+.footer__address {
+  font-style: normal;
 }
 
 .footer__img {
