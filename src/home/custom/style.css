@@ -23,7 +23,7 @@
   background-color: var(--COLOR-MASTER-DARKER);
   display: block;
   height: 100%;
-  padding-top: calc(500 / 747 * 100%);
+  padding-top: calc(400 / 747 * 100%);
   position: relative;
   width: 100%;
 }
