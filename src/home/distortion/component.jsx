@@ -5,7 +5,7 @@ import style from './style.css'
 export default () =>
   <section className={style.distortion}>
     <s.Container className={style.distortion__container}>
-      <h2 className={style.distortion__h2}>efeitos</h2>
+      <h2 className={style.distortion__h2}>pedais absolutamente fiéis e cumprindo com 100% de efetividade o seu papel</h2>
       <div className={style.distortion__div}>
         <picture className={style.distortion__picture}>
           <source srcSet='https://dummyimage.com/747x500/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
