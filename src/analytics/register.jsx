@@ -1,3 +1,4 @@
+import h from '@h'
 import config from './config.json'
 
 window.addEventListener('load', async () => {
