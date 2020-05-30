@@ -13,7 +13,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/593.4x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.kits__img} loading='lazy' alt='mod kits' />
         </picture>
-        <a className={style.kits__a} href='#'>ver mais</a>
+        <s.Link className={style.kits__a} href='#'>ver mais</s.Link>
       </div>
       <div className={[style.kits__div, style.half]}>
         <picture className={[style.kits__picture, style.half]}>
@@ -22,7 +22,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/293.4x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.kits__img} loading='lazy' alt='overdrive' />
         </picture>
-        <a className={style.kits__a} href='#'>overdrive</a>
+        <s.Link className={style.kits__a} href='#'>overdrive</s.Link>
       </div>
       <div className={[style.kits__div, style.half]}>
         <picture className={[style.kits__picture, style.half]}>
@@ -31,7 +31,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/293.4x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.kits__img} loading='lazy' alt='distortion' />
         </picture>
-        <a className={style.kits__a} href='#'>distortion</a>
+        <s.Link className={style.kits__a} href='#'>distortion</s.Link>
       </div>
     </s.Container>
   </section>

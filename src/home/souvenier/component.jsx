@@ -12,6 +12,6 @@ export default () =>
         <source srcSet='https://dummyimage.com/1200x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
         <img className={style.souvenier__img} loading='lazy' alt='souvenier' />
       </picture>
-      <a className={style.souvenier__a} href='#'>ver mais</a>
+      <s.Link className={style.souvenier__a} href='#'>ver mais</s.Link>
     </s.Container>
   </section>

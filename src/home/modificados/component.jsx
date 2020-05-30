@@ -13,7 +13,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/1200x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.modificados__img} loading='lazy' alt='modificados' />
         </picture>
-        <a className={style.modificados__a} href='#'>ver mais</a>
+        <s.Link className={style.modificados__a} href='#'>ver mais</s.Link>
       </div>
       <div className={[style.modificados__div, style.half]}>
         <picture className={[style.modificados__picture, style.half]}>
@@ -22,7 +22,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/393.3x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.modificados__img} loading='lazy' alt='distortion / overdrive / fuzz' />
         </picture>
-        <a className={style.modificados__a} href='#'>distortion</a>
+        <s.Link className={style.modificados__a} href='#'>distortion</s.Link>
       </div>
       <div className={[style.modificados__div, style.half]}>
         <picture className={[style.modificados__picture, style.half]}>
@@ -31,7 +31,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/393.3x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.modificados__img} loading='lazy' alt='compressor' />
         </picture>
-        <a className={style.modificados__a} href='#'>compressor</a>
+        <s.Link className={style.modificados__a} href='#'>compressor</s.Link>
       </div>
       <div className={[style.modificados__div, style.half]}>
         <picture className={[style.modificados__picture, style.half]}>
@@ -40,7 +40,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/393.3x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.modificados__img} loading='lazy' alt='equalizer' />
         </picture>
-        <a className={style.modificados__a} href='#'>equalizer</a>
+        <s.Link className={style.modificados__a} href='#'>equalizer</s.Link>
       </div>
       <div className={[style.modificados__div, style.half]}>
         <picture className={[style.modificados__picture, style.half]}>
@@ -49,7 +49,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/393.3x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.modificados__img} loading='lazy' alt='preamp' />
         </picture>
-        <a className={style.modificados__a} href='#'>preamp</a>
+        <s.Link className={style.modificados__a} href='#'>preamp</s.Link>
       </div>
       <div className={[style.modificados__div, style.half]}>
         <picture className={[style.modificados__picture, style.half]}>
@@ -58,7 +58,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/393.3x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.modificados__img} loading='lazy' alt='expression' />
         </picture>
-        <a className={style.modificados__a} href='#'>expression</a>
+        <s.Link className={style.modificados__a} href='#'>expression</s.Link>
       </div>
       <div className={[style.modificados__div, style.half]}>
         <picture className={[style.modificados__picture, style.half]}>
@@ -67,7 +67,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/393.3x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
           <img className={style.modificados__img} loading='lazy' alt='modulation' />
         </picture>
-        <a className={style.modificados__a} href='#'>modulation</a>
+        <s.Link className={style.modificados__a} href='#'>modulation</s.Link>
       </div>
     </s.Container>
   </section>
