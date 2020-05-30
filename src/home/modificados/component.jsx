@@ -10,6 +10,10 @@ import distortionL from './distortion_393x400.jpg'
 import distortionM from './distortion_464x400.jpg'
 import distortionS from './distortion_747x500.jpg'
 
+import compressorL from './compressor_393x400.jpg'
+import compressorM from './compressor_464x400.jpg'
+import compressorS from './compressor_747x500.jpg'
+
 export default () =>
   <section className={style.modificados}>
     <s.Container className={style.modificados__container}>
@@ -34,9 +38,9 @@ export default () =>
       </div>
       <div className={[style.modificados__div, style.half]}>
         <picture className={[style.modificados__picture, style.half]}>
-          <source srcSet='https://dummyimage.com/747x500/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
-          <source srcSet='https://dummyimage.com/464.5x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
-          <source srcSet='https://dummyimage.com/393.3x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
+          <source srcSet={compressorS} media='(max-width: 767px)' />
+          <source srcSet={compressorM} media='(min-width: 768px) and (max-width: 959px)' />
+          <source srcSet={compressorL} media='(min-width: 960px)' />
           <img className={style.modificados__img} loading='lazy' alt='compressor' />
         </picture>
         <s.Link className={style.modificados__a} href='#'>compressor</s.Link>
