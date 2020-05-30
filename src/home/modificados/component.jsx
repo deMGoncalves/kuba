@@ -18,6 +18,10 @@ import equalizerL from './equalizer_393x400.jpg'
 import equalizerM from './equalizer_464x400.jpg'
 import equalizerS from './equalizer_747x500.jpg'
 
+import preampL from './preamp_393x400.jpg'
+import preampM from './preamp_464x400.jpg'
+import preampS from './preamp_747x500.jpg'
+
 export default () =>
   <section className={style.modificados}>
     <s.Container className={style.modificados__container}>
@@ -60,9 +64,9 @@ export default () =>
       </div>
       <div className={[style.modificados__div, style.half]}>
         <picture className={[style.modificados__picture, style.half]}>
-          <source srcSet='https://dummyimage.com/747x500/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
-          <source srcSet='https://dummyimage.com/464.5x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
-          <source srcSet='https://dummyimage.com/393.3x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
+          <source srcSet={preampS} media='(max-width: 767px)' />
+          <source srcSet={preampM} media='(min-width: 768px) and (max-width: 959px)' />
+          <source srcSet={preampL} media='(min-width: 960px)' />
           <img className={style.modificados__img} loading='lazy' alt='preamp' />
         </picture>
         <s.Link className={style.modificados__a} href='#'>preamp</s.Link>
