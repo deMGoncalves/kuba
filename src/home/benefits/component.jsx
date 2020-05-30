@@ -11,7 +11,6 @@ export default () =>
           <a href='#' className={style.benefits__a}>atualização e garantia vitalícia dos pedais da série a</a>
         </li>
         <li className={style.benefits__li}>
-          <img className={style.benefits__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' loading='lazy' alt='benefits' />
           <s.Icon className={style.benefits__icon}>admin_panel_settings</s.Icon>
           <a href='#' className={style.benefits__a}>pedais absolutamente fiéis e cumprindo com 100% de efetividade o seu papel</a>
         </li>
