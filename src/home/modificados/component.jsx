@@ -2,8 +2,8 @@ import h from '@h'
 import * as s from '@share'
 import style from './style.css'
 
-import bannerL from './banner_1200x500.jpg'
-import bannerM from './banner_939x500.jpg'
+import bannerL from './banner_1200x400.jpg'
+import bannerM from './banner_939x400.jpg'
 import bannerS from './banner_747x500.jpg'
 
 export default () =>
