@@ -7,7 +7,7 @@ export default () =>
     <s.Container className={style.footer__container}>
       <section className={style.footer__section}>
         <img className={style.footer__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' loading='lazy' alt='mundo jrmod' />
-        <h3 className={style.footer__h3}>mundo jrmod</h3>
+        <h3 className={style.footer__h3}>mundo JRMod</h3>
         <p className={style.footer__p}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         <a className={style.footer__a}>saiba mais</a>
       </section>
