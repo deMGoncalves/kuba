@@ -8,7 +8,7 @@ export default () =>
       <ul className={style.benefits__ul}>
         <li className={style.benefits__li}>
           <img className={style.benefits__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' loading='lazy' alt='benefits' />
-          <a href='#' className={style.benefits__a}>atualização e garantia vitalícia dos pedais da série A</a>
+          <a href='#' className={style.benefits__a}>atualização e garantia vitalícia dos pedais da série a</a>
         </li>
         <li className={style.benefits__li}>
           <img className={style.benefits__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' loading='lazy' alt='benefits' />
