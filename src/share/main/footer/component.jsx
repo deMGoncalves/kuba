@@ -18,7 +18,7 @@ export default () =>
         <a className={style.footer__a}>saiba mais</a>
       </section>
       <section className={style.footer__section}>
-        <s.Icon className={style.footer__icon}>supervisor_account</s.Icon>
+        <s.Icon className={style.footer__icon}>supervised_user_circle</s.Icon>
         <h3 className={style.footer__h3}>parceiros</h3>
         <p className={style.footer__p}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         <a className={style.footer__a}>saiba mais</a>
