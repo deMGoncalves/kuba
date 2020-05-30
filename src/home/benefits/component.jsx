@@ -11,7 +11,7 @@ export default () =>
           <a href='#' className={style.benefits__a}>atualização e garantia vitalícia dos pedais da série a</a>
         </li>
         <li className={style.benefits__li}>
-          <s.Icon className={style.benefits__icon}>admin_panel_settings</s.Icon>
+          <s.Icon className={style.benefits__icon}>verifed</s.Icon>
           <a href='#' className={style.benefits__a}>pedais absolutamente fiéis e cumprindo com 100% de efetividade o seu papel</a>
         </li>
         <li className={style.benefits__li}>
