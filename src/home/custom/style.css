@@ -30,7 +30,7 @@
 
 @media (min-width: 760px) {
   .custtom__picture {
-    padding-top: calc(400 / 939 * 100%);
+    padding-top: calc(300 / 939 * 100%);
   }
 }
 
