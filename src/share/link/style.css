@@ -1,0 +1,16 @@
+.link {
+  align-items: center;
+  border: 2px solid var(--COLOR-MASTER-LIGHTEST);
+  border-radius: 20px;
+  color: var(--COLOR-MASTER-LIGHTEST);
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  height: 40px;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 140px;
+}

@@ -1,0 +1,95 @@
+{
+	"dir" : "ltr",
+	"lang" : "Portuguese",
+	"name" : "JRMod & Chutando Lata Pedals",
+	"scope" : "/",
+	"display" : "fullscreen",
+	"start_url" : "https://jrmod.net/",
+	"short_name" : "JRMod",
+	"theme_color" : "#1A1A1A",
+	"description" : "JRMod é uma marca/empresa de modificação e aperfeiçoamento de pedais de efeitos do Brasil, considerada uma das melhores do mercado",
+	"orientation" : "portrait",
+	"background_color" : "#1a1a1a",
+	"related_applications" : [],
+	"prefer_related_applications" : false,
+	"icons" : [
+		{
+			"src": "https://dummyimage.com/44x44/1a1a1a/1a1a1a",
+			"sizes": "44x44"
+		},
+		{
+			"src": "https://dummyimage.com/48x48/1a1a1a/1a1a1a",
+			"sizes": "48x48"
+		},
+		{
+			"src": "https://dummyimage.com/1240x600/1a1a1a/1a1a1a",
+			"sizes": "1240x600"
+		},
+		{
+			"src": "https://dummyimage.com/300x300/1a1a1a/1a1a1a",
+			"sizes": "300x300"
+		},
+		{
+			"src": "https://dummyimage.com/150x150/1a1a1a/1a1a1a",
+			"sizes": "150x150"
+		},
+		{
+			"src": "https://dummyimage.com/88x88/1a1a1a/1a1a1a",
+			"sizes": "88x88"
+		},
+		{
+			"src": "https://dummyimage.com/24x24/1a1a1a/1a1a1a",
+			"sizes": "24x24"
+		},
+		{
+			"src": "https://dummyimage.com/50x50/1a1a1a/1a1a1a",
+			"sizes": "50x50"
+		},
+		{
+			"src": "https://dummyimage.com/620x300/1a1a1a/1a1a1a",
+			"sizes": "620x300"
+		},
+		{
+			"src": "https://dummyimage.com/192x192/1a1a1a/1a1a1a",
+			"sizes": "192x192"
+		},
+		{
+			"src": "https://dummyimage.com/144x144/1a1a1a/1a1a1a",
+			"sizes": "144x144"
+		},
+		{
+			"src": "https://dummyimage.com/96x96/1a1a1a/1a1a1a",
+			"sizes": "96x96"
+		},
+		{
+			"src": "https://dummyimage.com/72x72/1a1a1a/1a1a1a",
+			"sizes": "72x72"
+		},
+		{
+			"src": "https://dummyimage.com/36x36/1a1a1a/1a1a1a",
+			"sizes": "36x36"
+		},
+		{
+			"src": "https://dummyimage.com/1024x1024/1a1a1a/1a1a1a",
+			"sizes": "1024x1024"
+		},
+		{
+			"src": "https://dummyimage.com/180x180/1a1a1a/1a1a1a",
+			"sizes": "180x180"
+		},
+		{
+			"src": "https://dummyimage.com/152x152/1a1a1a/1a1a1a",
+			"sizes": "152x152"
+		},
+		{
+			"src": "https://dummyimage.com/120x120/1a1a1a/1a1a1a",
+			"sizes": "120x120"
+		},
+		{
+			"src": "https://dummyimage.com/76x76/1a1a1a/1a1a1a",
+			"sizes": "76x76"
+		}],
+	"url" : "https://jrmod.net",
+	"screenshots" : [],
+	"generated" : "true"
+}
