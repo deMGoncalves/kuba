@@ -41,16 +41,6 @@
   font-style: normal;
 }
 
-.footer__img {
-  background-color: var(--COLOR-MASTER-LIGHTEST);
-  border-radius: 20px;
-  height: 40px;
-  margin-bottom: 10px;
-  object-fit: cover;
-  object-position: center center;
-  width: 40px;
-}
-
 .footer__icon {
   color: var(--COLOR-MASTER-LIGHTEST);
   font-size: 40px;
@@ -87,5 +77,5 @@
   margin-top: 20px;
   padding: 5px 0;
   text-decoration: none;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
