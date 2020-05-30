@@ -5,7 +5,7 @@ import style from './style.css'
 export default () =>
   <section className={style.modificados}>
     <s.Container className={style.modificados__container}>
-      <h2 className={style.modificados__h2}>pedais fiéis e cumprindo 100% de efetividade o seu papel</h2>
+      <h2 className={style.modificados__h2}>pedais fiéis e cumprindo 100% de efetividade</h2>
       <div className={style.modificados__div}>
         <picture className={style.modificados__picture}>
           <source srcSet='https://dummyimage.com/747x500/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
