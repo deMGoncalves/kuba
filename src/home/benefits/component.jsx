@@ -20,7 +20,7 @@ export default () =>
         </li>
         <li className={style.benefits__li}>
           <s.Icon className={style.benefits__icon}>loyalty</s.Icon>
-          <a href='#' className={style.benefits__a}>produto confeccionado com paixão ou qualidade profunda</a>
+          <a href='#' className={style.benefits__a}>produto confeccionado com paixão e qualidade profunda</a>
         </li>
       </ul>
     </s.Container>
