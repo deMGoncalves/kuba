@@ -5,7 +5,7 @@ import style from './style.css'
 export default () =>
   <section className={style.kits}>
     <s.Container className={style.kits__container}>
-      <h2 className={style.kits__h2}>parceria com os grandes representantes globais em modificações e customizações de pedais</h2>
+      <h2 className={style.kits__h2}>parceria com os grandes representantes globais</h2>
       <div className={style.kits__div}>
         <picture className={style.kits__picture}>
           <source srcSet='https://dummyimage.com/747x500/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
