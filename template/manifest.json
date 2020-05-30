@@ -88,7 +88,12 @@
 		{
 			"src": "https://dummyimage.com/76x76/1a1a1a/1a1a1a",
 			"sizes": "76x76"
-		}],
+		},
+    {
+			"src": "https://dummyimage.com/512x512/1a1a1a/1a1a1a",
+			"sizes": "512x512"
+		}
+  ],
 	"url" : "https://jrmod.net",
 	"screenshots" : [],
 	"generated" : "true"
