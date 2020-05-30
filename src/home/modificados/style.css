@@ -1,14 +1,14 @@
-.distortion {
+.modificados {
   padding: 40px 0;
 }
 
-.distortion__container {
+.modificados__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.distortion__h2 {
+.modificados__h2 {
   color: var(--COLOR-MASTER-DARKER);
   display: inline-block;
   font-size: 18px;
@@ -21,34 +21,34 @@
 }
 
 @media (min-width: 768px) {
-  .distortion__h2 {
+  .modificados__h2 {
     font-size: 24px;
     text-align: left;
   }
 }
 
-.distortion__div {
+.modificados__div {
   position: relative;
   width: 100%;
 }
 
-.distortion__div.half {
+.modificados__div.half {
   margin-top: 10px;
 }
 
 @media (min-width: 768px) {
-  .distortion__div.half {
+  .modificados__div.half {
     width: calc(50% - 5px);
   }
 }
 
 @media (min-width: 960px) {
-  .distortion__div.half {
+  .modificados__div.half {
     width: calc(33.333% - 6.666px);
   }
 }
 
-.distortion__picture {
+.modificados__picture {
   background-color: var(--COLOR-MASTER-DARKER);
   display: block;
   height: 100%;
@@ -58,26 +58,26 @@
 }
 
 @media (min-width: 768px) {
-  .distortion__picture {
+  .modificados__picture {
     padding-top: calc(400 / 939 * 100%);
   }
 
-  .distortion__picture.half {
+  .modificados__picture.half {
     padding-top: calc(400 / 464.5 * 100%);
   }
 }
 
 @media (min-width: 960px) {
-  .distortion__picture {
+  .modificados__picture {
     padding-top: calc(400 / 1200 * 100%);
   }
 
-  .distortion__picture.half {
+  .modificados__picture.half {
     padding-top: calc(400 / 393.3 * 100%);
   }
 }
 
-.distortion__img {
+.modificados__img {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -87,7 +87,7 @@
   width: 100%;
 }
 
-.distortion__a {
+.modificados__a {
   align-items: center;
   border: 2px solid var(--COLOR-MASTER-LIGHTEST);
   border-radius: 20px;
