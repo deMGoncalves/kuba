@@ -51,6 +51,12 @@
   width: 40px;
 }
 
+.footer__icon {
+  color: var(--COLOR-MASTER-LIGHTEST);
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
 .footer__h3 {
   color: var(--COLOR-MASTER-LIGHTEST);
   font-size: 18px;

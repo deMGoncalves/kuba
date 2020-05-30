@@ -6,26 +6,26 @@ export default () =>
   <footer className={style.footer}>
     <s.Container className={style.footer__container}>
       <section className={style.footer__section}>
-        <img className={style.footer__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' loading='lazy' alt='mundo jrmod' />
+        <s.Icon className={style.footer__icon}>public</s.Icon>
         <h3 className={style.footer__h3}>mundo JRMod</h3>
         <p className={style.footer__p}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         <a className={style.footer__a}>saiba mais</a>
       </section>
       <section className={style.footer__section}>
-        <img className={style.footer__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' loading='lazy' alt='chutando latas' />
+        <s.Icon className={style.footer__icon}>directions_run</s.Icon>
         <h3 className={style.footer__h3}>chutando latas</h3>
         <p className={style.footer__p}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         <a className={style.footer__a}>saiba mais</a>
       </section>
       <section className={style.footer__section}>
-        <img className={style.footer__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' loading='lazy' alt='parceiros e representantes' />
+        <s.Icon className={style.footer__icon}>supervisor_account</s.Icon>
         <h3 className={style.footer__h3}>parceiros</h3>
         <p className={style.footer__p}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         <a className={style.footer__a}>saiba mais</a>
       </section>
       <section className={style.footer__section}>
         <address className={style.footer__address} itemProp='address' itemScope itemType='http://schema.org/PostalAddress'>
-          <img className={style.footer__img} src='https://dummyimage.com/40x40/1A1A1A/1A1A1A.png' loading='lazy' alt='contato' />
+          <s.Icon className={style.footer__icon}>location_on</s.Icon>
           <h3 className={style.footer__h3}>contato</h3>
           <p className={style.footer__p} itemProp='streetAddress'>Rua Ministro Edmundo Lins, 199</p>
           <p className={style.footer__p} itemProp='postalCode'>05523-000</p>
