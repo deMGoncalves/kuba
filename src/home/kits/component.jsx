@@ -2,9 +2,9 @@ import h from '@h'
 import * as s from '@share'
 import style from './style.css'
 
-import bannerL from './banner_593x500.jpg'
+import bannerL from './banner_593x400.jpg'
 import bannerM from './banner_939x400.jpg'
-import bannerS from './banner_747x400.jpg'
+import bannerS from './banner_747x500.jpg'
 
 import overdriveL from './overdrive_293x400.jpg'
 import overdriveM from './overdrive_464x400.jpg'
