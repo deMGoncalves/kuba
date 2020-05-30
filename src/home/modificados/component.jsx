@@ -11,7 +11,7 @@ export default () =>
           <source srcSet='https://dummyimage.com/747x500/1A1A1A/1A1A1A.png' media='(max-width: 767px)' />
           <source srcSet='https://dummyimage.com/939x400/1A1A1A/1A1A1A.png' media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet='https://dummyimage.com/1200x400/1A1A1A/1A1A1A.png' media='(min-width: 960px)' />
-          <img className={style.modificados__img} loading='lazy' alt='distortion' />
+          <img className={style.modificados__img} loading='lazy' alt='modificados' />
         </picture>
         <a className={style.modificados__a} href='#'>ver mais</a>
       </div>
