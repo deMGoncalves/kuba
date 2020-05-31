@@ -43,7 +43,7 @@
 
 .footer__icon {
   color: var(--COLOR-MASTER-LIGHTEST);
-  font-size: 40px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
@@ -52,12 +52,11 @@
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 10px;
 }
 
 .footer__p {
   color: var(--COLOR-MASTER-LIGHT);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.7px;
   padding: 0 20%;
@@ -73,6 +72,7 @@
   color: var(--COLOR-MASTER-LIGHTEST);
   display: inline-block;
   font-size: 12px;
+  font-weight: 600;
   letter-spacing: 1px;
   margin-top: 20px;
   padding: 5px 0;
