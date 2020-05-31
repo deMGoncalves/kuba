@@ -8,11 +8,11 @@ import Modificados from './modificados'
 import Souvenier from './souvenier'
 
 export default () =>
-  <s.Main>
+  <s.Template>
     <Jumbotron />
     <Benefits />
     <Custom />
     <Modificados />
     <Souvenier />
     <Kits />
-  </s.Main>
+  </s.Template>
