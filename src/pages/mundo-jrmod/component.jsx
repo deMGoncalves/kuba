@@ -1,14 +1,12 @@
 import h from '@h'
 import * as s from '@share'
+import style from './style.css'
 
 export default () =>
   <s.Template>
-    <s.Container>
-      <h1>mundo JRMod</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <h2>o que fazemos</h2>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-      <h2>depoimentos</h2>
-      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    <s.Container className={style.mundoJRMod__container}>
+      <h1 className={style.mundoJRMod__h1}>mundo JRMod</h1>
+      <p className={style.mundoJRMod__p}>Neste site você encontrará as melhores modificações disponíveis para pedais de diversas marcas e modelos, modificações (MODS) estas que vão desde uma simples troca de CHIP as mais elaboradas e rebuscadas em busca do timbre perfeito! Aqui você encontrará todas modificações elaboradas e desenvolvidas por MONTE ALLUMS, JRMOD e também algumas de outras empresas, consulte a disponibilidade!</p>
+      <p>A JRMOD é a única INSTALADORA OFICIAL de MONTE ALLUMS no Brasil e todos os componentes para suas mods são enviados pessoalmente por MONTE ALLUMS, diretamente dos USA. Nas modificações JRMOD são usados componentes de acordo com o padrão selecionado pelo cliente, são estes “SERIE A” ou “Standard”… os padrões se distinguem por suas qualidades e valores (detalhes logo abaixo). Importante salientar que em nossas modificações “SÉRIE A” não entram nem são instalados componentes adquiridos na famosa Sta Ifigênia (componentes estes adquiridos no Brasil, vindos da China). Sou conhecido por ser um músico extremamente detalhista com relação a timbres, por ser nada virtuoso, busco a perfeição em cada nota e em cada efeito! Tudo que você encontrar aqui, são anos e anos de pesquisa e trabalho árduo, para se obter o melhor em cada detalhe!</p>
     </s.Container>
   </s.Template>
