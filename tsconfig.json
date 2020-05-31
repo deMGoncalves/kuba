@@ -47,6 +47,7 @@
       "@f/*": ["src/f/*"],
       "@h/*": ["src/h/*"],
       "@hook/*": ["src/hook/*"],
+      "@pages/*": ["src/pages/*"],
       "@radio/*": ["src/radio/*"],
       "@router/*": ["src/router/*"],
       "@share/*": ["src/share/*"],
