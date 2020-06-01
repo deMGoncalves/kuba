@@ -1,4 +1,5 @@
 import base from './base'
+import canonical from './canonical'
 import charset from './charset'
 import description from './description'
 import icon from './icon'
@@ -12,6 +13,7 @@ export default (Klass) =>
 
     setImmediate(() => {
       base()
+      canonical()
       charset()
       description(page)
       icon()
