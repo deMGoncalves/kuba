@@ -1,3 +1,3 @@
-import component from './component'
+import MundoJRMod from './MundoJRMod'
 
-export default component
+export default MundoJRMod
