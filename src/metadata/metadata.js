@@ -13,7 +13,7 @@ export default (Klass) =>
     const page = new Klass(...arguments)
 
     setImmediate(() => {
-      base()
+      base(page)
       canonical(page)
       charset()
       description(page)
