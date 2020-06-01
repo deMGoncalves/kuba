@@ -19,9 +19,9 @@ export default (Klass) =>
       description(page)
       icon(page)
       manifest(page)
-      viewport()
       themeColor(page)
       title(page)
+      viewport()
     })
 
     return page
