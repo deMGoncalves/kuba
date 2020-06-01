@@ -1,3 +1,4 @@
+import description from './description'
 import title from './title'
 
 export default (Klass) =>
@@ -5,6 +6,7 @@ export default (Klass) =>
     const page = new Klass(...arguments)
 
     setImmediate(() => {
+      description(page)
       title(page)
     })
 
