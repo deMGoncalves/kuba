@@ -67,4 +67,9 @@ export default () =>
         </ul>
       </s.Container>
     </section>
+    <section className={style.mundoJRMod__section}>
+      <s.Container className={style.mundoJRMod__container}>
+        <h2 className={style.mundoJRMod__h2}>dizem por ai...</h2>
+      </s.Container>
+    </section>
   </s.Template>
