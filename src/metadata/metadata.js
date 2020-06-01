@@ -14,7 +14,7 @@ export default (Klass) =>
 
     setImmediate(() => {
       base()
-      canonical()
+      canonical(page)
       charset()
       description(page)
       icon()
