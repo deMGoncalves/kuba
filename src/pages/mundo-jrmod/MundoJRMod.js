@@ -1,5 +1,5 @@
 import { paint } from '@h'
-import metadata, { __description__ } from '@metadata'
+import metadata, { __description__, __title__ } from '@metadata'
 import component from './component'
 
 @paint(component)
@@ -9,8 +9,8 @@ class MundoJRMod {
     return ''
   }
 
-  get title () {
-    return ''
+  get [__title__] () {
+    return 'Mundo JRMod & Chutando lata pedals'
   }
 }
 
