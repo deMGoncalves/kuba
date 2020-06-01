@@ -8,19 +8,19 @@ export default () =>
       <section className={style.footer__section}>
         <s.Icon className={style.footer__icon}>public</s.Icon>
         <h3 className={style.footer__h3}>mundo JRMod</h3>
-        <p className={style.footer__p}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p className={style.footer__p}>bem vindo a família JRMod</p>
         <a className={style.footer__a} href='/mundo-jrmod'>saiba mais</a>
       </section>
       <section className={style.footer__section}>
         <s.Icon className={style.footer__icon}>directions_run</s.Icon>
         <h3 className={style.footer__h3}>chutando latas</h3>
-        <p className={style.footer__p}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p className={style.footer__p}>fique por dentro de tudo</p>
         <a className={style.footer__a}>saiba mais</a>
       </section>
       <section className={style.footer__section}>
-        <s.Icon className={style.footer__icon}>supervised_user_circle</s.Icon>
+        <s.Icon className={style.footer__icon}>people_outline</s.Icon>
         <h3 className={style.footer__h3}>parceiros</h3>
-        <p className={style.footer__p}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p className={style.footer__p}>conheça nossos parceiros</p>
         <a className={style.footer__a}>saiba mais</a>
       </section>
       <section className={style.footer__section}>
