@@ -47,10 +47,10 @@
       "@f/*": ["src/f/*"],
       "@h/*": ["src/h/*"],
       "@hook/*": ["src/hook/*"],
+      "@metadata/*": ["src/metadata/*"],
       "@pages/*": ["src/pages/*"],
       "@radio/*": ["src/radio/*"],
       "@router/*": ["src/router/*"],
-      "@seo/*": ["src/seo/*"],
       "@share/*": ["src/share/*"],
       "@sw/*": ["src/sw/*"]
     },

@@ -110,11 +110,11 @@ module.exports = {
       '@f': path.resolve(__dirname, 'src/f'),
       '@h': path.resolve(__dirname, 'src/h'),
       '@hook': path.resolve(__dirname, 'src/hook'),
+      '@metadata': path.resolve(__dirname, 'src/metadata'),
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@radio': path.resolve(__dirname, 'src/radio'),
       '@router': path.resolve(__dirname, 'src/router'),
       '@share': path.resolve(__dirname, 'src/share'),
-      '@seo': path.resolve(__dirname, 'src/seo'),
       '@sw': path.resolve(__dirname, 'src/sw')
     }
   },

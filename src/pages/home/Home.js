@@ -1,11 +1,13 @@
 import { paint } from '@h'
-import seo from '@seo'
+import metadata from '@metadata'
 import component from './component'
 
 @paint(component)
-@seo
+@metadata
 class Home {
-
+  get title () {
+    return 'JRMod - Chutando Lata'
+  }
 }
 
 export default Home
