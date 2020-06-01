@@ -1,4 +1,11 @@
 import h from '@h'
+import * as f from '@f'
 
-export default () =>
-  document.head.appendChild(<link href='/manifest.json' rel='manifest' />)
+const __manifest__ = Symbol('manifest')
+
+export default (page) =>
+  document.head.appendChild(<link href={f.or(page[__manifest__], '/manifest.json')} rel='manifest' />)
+
+export {
+  __manifest__
+}

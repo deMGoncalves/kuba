@@ -18,9 +18,9 @@ export default (Klass) =>
       charset(page)
       description(page)
       icon(page)
-      manifest()
+      manifest(page)
       viewport()
-      themeColor()
+      themeColor(page)
       title(page)
     })
 
