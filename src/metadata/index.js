@@ -8,6 +8,7 @@ import { __icon__ } from './icon'
 import { __manifest__ } from './manifest'
 import { __themeColor__ } from './themeColor'
 import { __title__ } from './title'
+import { __viewport__ } from './viewport'
 
 export default metadata
 
@@ -19,5 +20,6 @@ export {
   __icon__,
   __manifest__,
   __themeColor__,
-  __title__
+  __title__,
+  __viewport__
 }
