@@ -1,6 +1,12 @@
+import title from './title'
+
 export default (Klass) =>
   function () {
-    const target = new Klass(...arguments)
-    setImmediate(() => console.log(target))
-    return target
+    const page = new Klass(...arguments)
+
+    setImmediate(() => {
+      title(page)
+    })
+
+    return page
   }
