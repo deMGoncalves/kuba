@@ -50,6 +50,7 @@
       "@pages/*": ["src/pages/*"],
       "@radio/*": ["src/radio/*"],
       "@router/*": ["src/router/*"],
+      "@seo/*": ["src/seo/*"],
       "@share/*": ["src/share/*"],
       "@sw/*": ["src/sw/*"]
     },

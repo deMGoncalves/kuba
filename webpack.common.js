@@ -114,6 +114,7 @@ module.exports = {
       '@radio': path.resolve(__dirname, 'src/radio'),
       '@router': path.resolve(__dirname, 'src/router'),
       '@share': path.resolve(__dirname, 'src/share'),
+      '@seo': path.resolve(__dirname, 'src/seo'),
       '@sw': path.resolve(__dirname, 'src/sw')
     }
   },
