@@ -7,20 +7,20 @@ export default () =>
     <s.Container>
       <ul className={style.benefits__ul}>
         <li className={style.benefits__li}>
-          <s.Icon className={style.benefits__icon}>supervised_user_circle</s.Icon>
-          <a href='#' className={style.benefits__a}>parceria com os grandes representantes globais</a>
+          <s.Icon className={style.benefits__icon}>people_outline</s.Icon>
+          <a href='#' className={style.benefits__a}>parceria com representantes globais</a>
         </li>
         <li className={style.benefits__li}>
-          <s.Icon className={style.benefits__icon}>admin_panel_settings</s.Icon>
-          <a href='#' className={style.benefits__a}>atualização e garantia vitalícia dos pedais da série a</a>
+          <s.Icon className={style.benefits__icon}>shopping_bag</s.Icon>
+          <a href='#' className={style.benefits__a}>souvenier da família JRMod</a>
         </li>
         <li className={style.benefits__li}>
           <s.Icon className={style.benefits__icon}>verified</s.Icon>
-          <a href='#' className={style.benefits__a}>pedais fiéis e cumprindo com 100% de efetividade</a>
+          <a href='#' className={style.benefits__a}>pedais refinados para ouvidos exigentes</a>
         </li>
         <li className={style.benefits__li}>
           <s.Icon className={style.benefits__icon}>loyalty</s.Icon>
-          <a href='#' className={style.benefits__a}>produto confeccionado com paixão e qualidade profunda</a>
+          <a href='#' className={style.benefits__a}>produto confeccionado com primazia e paixão</a>
         </li>
       </ul>
     </s.Container>
