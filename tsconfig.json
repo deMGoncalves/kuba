@@ -48,6 +48,7 @@
       "@h/*": ["src/h/*"],
       "@hook/*": ["src/hook/*"],
       "@metadata/*": ["src/metadata/*"],
+      "@opengraph/*": ["src/opengraph/*"],
       "@pages/*": ["src/pages/*"],
       "@radio/*": ["src/radio/*"],
       "@router/*": ["src/router/*"],

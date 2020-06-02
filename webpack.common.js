@@ -111,6 +111,7 @@ module.exports = {
       '@h': path.resolve(__dirname, 'src/h'),
       '@hook': path.resolve(__dirname, 'src/hook'),
       '@metadata': path.resolve(__dirname, 'src/metadata'),
+      '@opengraph': path.resolve(__dirname, 'src/opengraph'),
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@radio': path.resolve(__dirname, 'src/radio'),
       '@router': path.resolve(__dirname, 'src/router'),
