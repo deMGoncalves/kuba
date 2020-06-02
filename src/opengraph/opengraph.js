@@ -1,4 +1,5 @@
 import description from './description'
+import image from './image'
 import siteName from './siteName'
 import title from './title'
 import type from './type'
@@ -10,6 +11,7 @@ export default (Klass) =>
 
     setImmediate(() => {
       description(page)
+      image(page)
       siteName(page)
       title(page)
       type(page)
