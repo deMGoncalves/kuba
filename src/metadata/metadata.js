@@ -21,7 +21,7 @@ export default (Klass) =>
       manifest(page)
       themeColor(page)
       title(page)
-      viewport()
+      viewport(page)
     })
 
     return page

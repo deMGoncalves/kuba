@@ -1,15 +1,15 @@
 import { paint } from '@h'
-import metadata, { __description__, __title__ } from '@metadata'
+import metadata, * as md from '@metadata'
 import component from './component'
 
 @paint(component)
 @metadata
 class MundoJRMod {
-  get [__description__] () {
+  get [md.__description__] () {
     return ''
   }
 
-  get [__title__] () {
+  get [md.__title__] () {
     return 'Mundo JRMod & Chutando lata pedals'
   }
 }
