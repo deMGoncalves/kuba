@@ -1,16 +1,24 @@
 import { paint } from '@h'
 import metadata, * as md from '@metadata'
+import opengraph, * as og from '@opengraph'
 import component from './component'
+
+const __title__ = Symbol('title')
 
 @paint(component)
 @metadata
+@opengraph
 class MundoJRMod {
-  get [md.__description__] () {
-    return ''
+  get [md.__title__] () {
+    return this[__title__]
   }
 
-  get [md.__title__] () {
-    return 'Mundo JRMod & Chutando lata pedals'
+  get [og.__title__] () {
+    return this[__title__]
+  }
+
+  constructor () {
+    this[__title__] = 'Mundo JRMod & Chutando lata pedals'
   }
 }
 
