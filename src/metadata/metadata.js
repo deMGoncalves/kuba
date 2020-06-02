@@ -4,9 +4,10 @@ import charset from './charset'
 import description from './description'
 import icon from './icon'
 import manifest from './manifest'
-import viewport from './viewport'
+import robots from './robots'
 import themeColor from './themeColor'
 import title from './title'
+import viewport from './viewport'
 
 export default (Klass) =>
   function () {
@@ -19,6 +20,7 @@ export default (Klass) =>
       description(page)
       icon(page)
       manifest(page)
+      robots(page)
       themeColor(page)
       title(page)
       viewport(page)
