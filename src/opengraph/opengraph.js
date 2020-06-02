@@ -1,5 +1,6 @@
 import siteName from './siteName'
 import title from './title'
+import url from './url'
 
 export default (Klass) =>
   function () {
@@ -8,6 +9,7 @@ export default (Klass) =>
     setImmediate(() => {
       siteName(page)
       title(page)
+      url(page)
     })
 
     return page
