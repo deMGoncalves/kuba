@@ -1,3 +1,4 @@
+import author from './author'
 import base from './base'
 import canonical from './canonical'
 import charset from './charset'
@@ -14,6 +15,7 @@ export default (Klass) =>
     const page = new Klass(...arguments)
 
     setImmediate(() => {
+      author(page)
       base(page)
       canonical(page)
       charset(page)
