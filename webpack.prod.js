@@ -4,6 +4,7 @@ const merge = require('webpack-merge')
 const paths = require('./paths')
 
 const { GenerateSW } = require('workbox-webpack-plugin')
+const ImageminPlugin = require('imagemin-webpack-plugin').default
 const SitemapWebpackPlugin = require('sitemap-webpack-plugin').default
 
 module.exports = merge.smart(common, {
@@ -13,7 +14,8 @@ module.exports = merge.smart(common, {
       clientsClaim: true,
       skipWaiting: true
     }),
-    new SitemapWebpackPlugin('https://jrmod.net', paths)
+    new SitemapWebpackPlugin('https://jrmod.net', paths),
+    new ImageminPlugin()
   ],
   optimization: {
     moduleIds: 'hashed',
