@@ -1,3 +1,4 @@
+import alternate from './alternate'
 import author from './author'
 import base from './base'
 import canonical from './canonical'
@@ -15,6 +16,7 @@ export default (Klass) =>
     const page = new Klass(...arguments)
 
     setImmediate(() => {
+      alternate(page)
       author(page)
       base(page)
       canonical(page)
