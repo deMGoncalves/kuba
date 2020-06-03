@@ -53,6 +53,7 @@
       "@radio/*": ["src/radio/*"],
       "@router/*": ["src/router/*"],
       "@share/*": ["src/share/*"],
+      "@structureddata/*": ["src/structureddata/*"],
       "@twittercard/*": ["src/twittercard/*"],
       "@sw/*": ["src/sw/*"]
     },
