@@ -27,7 +27,7 @@ const defaultOrganization = {
 }
 
 export default (page) =>
-  document.body.appendChild(<script type='application/ld+json'>{ JSON.stringigy(f.or(page[__organization__], defaultOrganization)) }</script>)
+  document.body.appendChild(<script type='application/ld+json'>{ JSON.stringify(f.or(page[__organization__], defaultOrganization)) }</script>)
 
 export {
   __organization__
