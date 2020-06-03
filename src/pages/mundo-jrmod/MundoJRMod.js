@@ -1,7 +1,7 @@
 import { paint } from '@h'
 import metadata, * as md from '@metadata'
 import opengraph, * as og from '@opengraph'
-import twittercard from '@twittercard'
+import twittercard, * as tc from '@twittercard'
 import component from './component'
 
 const __title__ = Symbol('title')
@@ -16,6 +16,10 @@ class MundoJRMod {
   }
 
   get [og.__title__] () {
+    return this[__title__]
+  }
+
+  get [tc.__title__] () {
     return this[__title__]
   }
 
