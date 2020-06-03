@@ -1,3 +1,4 @@
+import site from './site'
 import summary from './summary'
 
 export default (Klass) =>
@@ -5,6 +6,7 @@ export default (Klass) =>
     const page = new Klass(...arguments)
 
     setImmediate(() => {
+      site(page)
       summary(page)
     })
 
