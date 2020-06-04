@@ -5,7 +5,7 @@ import style from './style.css'
 export default () =>
   <section className={style.navigation}>
     <s.Container className={style.navigation__container}>
-      <h2 className={style.navigation__h2}>navegue por jrmod</h2>
+      <h2 className={style.navigation__h2}>navegue pelo mundo JRMod</h2>
       <ul className={style.navigation__ul}>
         <li className={style.navigation__li}>
           <picture className={style.navigation__picture}>
