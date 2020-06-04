@@ -1,6 +1,6 @@
 import h from '@h'
 import * as s from '@share'
-import Banner from './banner'
+import Banner from './highlight-banner'
 import Benefits from './benefits'
 import Custom from './custom'
 import Kits from './kits'
