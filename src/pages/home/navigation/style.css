@@ -17,4 +17,9 @@
 
 .navigation__ul {
   list-style: none;
+  margin: 0 -5px;
+}
+
+.navigation__li {
+  padding: 5px;
 }
