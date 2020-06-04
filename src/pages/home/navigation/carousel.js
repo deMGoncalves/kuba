@@ -1,12 +1,12 @@
 import Siema from 'siema'
-import media from './media.json'
+import perPage from './media.json'
 import style from './style.css'
 
 export default (component) =>
   (...args) => {
     setImmediate(() =>
       new Siema({
-        perPage: media,
+        perPage,
         selector: `.${style.navigation__nav}`
       })
     )
