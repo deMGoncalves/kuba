@@ -1,15 +1,15 @@
 import h from '@h'
 import * as s from '@share'
+import Banner from './banner'
 import Benefits from './benefits'
 import Custom from './custom'
-import Jumbotron from './jumbotron'
 import Kits from './kits'
 import Modificados from './modificados'
 import Souvenier from './souvenier'
 
 export default () =>
   <s.Template>
-    <Jumbotron />
+    <Banner />
     <Benefits />
     <Custom />
     <Modificados />

@@ -1,8 +1,8 @@
-.jumbotron {
+.banner {
   background-color: #000;
 }
 
-.jumbotron__picture {
+.banner__picture {
   display: block;
   height: 100%;
   padding-top: calc(500 / 529 * 100%);
@@ -11,24 +11,24 @@
 }
 
 @media (min-width: 550px) {
-  .jumbotron__picture {
+  .banner__picture {
     padding-top: calc(500 / 747 * 100%);
   }
 }
 
 @media (min-width: 768px) {
-  .jumbotron__picture {
+  .banner__picture {
     padding-top: calc(500 / 939 * 100%);
   }
 }
 
 @media (min-width: 960px) {
-  .jumbotron__picture {
+  .banner__picture {
     padding-top: calc(500 / 1200 * 100%);
   }
 }
 
-.jumbotron__img {
+.banner__img {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -38,7 +38,7 @@
   width: 100%;
 }
 
-.jumbotron__h1 {
+.banner__h1 {
   bottom: 100px;
   color: var(--COLOR-MASTER-LIGHTEST);
   display: inline-block;
@@ -52,12 +52,12 @@
 }
 
 @media (min-width: 768px) {
-  .jumbotron__h1 {
+  .banner__h1 {
     font-size: 24px;
   }
 }
 
-.jumbotron__a {
+.banner__a {
   bottom: 40px;
   left: calc(50% - 70px);
   position: absolute;
