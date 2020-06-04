@@ -1,8 +1,8 @@
-.custom {
+.banner {
   padding: 40px 0;
 }
 
-.custom__h2 {
+.banner__h2 {
   color: var(--COLOR-MASTER-DARKER);
   font-size: 18px;
   font-weight: 600;
@@ -13,13 +13,13 @@
 }
 
 @media (min-width: 768px) {
-  .custom__h2 {
+  .banner__h2 {
     font-size: 24px;
     text-align: left;
   }
 }
 
-.custom__picture {
+.banner__picture {
   background-color: var(--COLOR-MASTER-DARKER);
   display: block;
   height: 100%;
@@ -35,12 +35,12 @@
 }
 
 @media (min-width: 960px) {
-  .custom__picture {
+  .banner__picture {
     padding-top: calc(200 / 1200 * 100%);
   }
 }
 
-.custom__img {
+.banner__img {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -50,14 +50,14 @@
   width: 100%;
 }
 
-.custom__a {
+.banner__a {
   bottom: 40px;
   left: calc(50% - 70px);
   position: absolute;
 }
 
 @media (min-width: 960px) {
-  .custom__a {
+  .banner__a {
     bottom: 0;
     left: auto;
     margin-bottom: calc(200 / 1200 * 100% / 2 - 20px);
