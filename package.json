@@ -92,5 +92,7 @@
     "workbox-webpack-plugin": "^4.3.1",
     "xml-loader": "^1.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "siema": "^1.5.1"
+  }
 }

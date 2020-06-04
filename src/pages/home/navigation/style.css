@@ -15,11 +15,34 @@
   }
 }
 
-.navigation__ul {
-  list-style: none;
-  margin: 0 -5px;
+.navigation__nav > div {
+  display: flex;
 }
 
-.navigation__li {
-  padding: 5px;
+.navigation__div {
+  padding: 10px;
+}
+
+.navigation__picture {
+  display: block;
+  height: 100%;
+  padding-top: calc(200 / 200 * 100%);
+  position: relative;
+  width: 100%;
+}
+
+.navigation__img {
+  border-radius: 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.navigation__a {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
 }
