@@ -5,6 +5,7 @@ import Benefits from './benefits'
 import HalfBanner from './highlight-half-banner'
 import Kits from './kits'
 import Modificados from './modificados'
+import Navigation from './navigation'
 import Souvenier from './souvenier'
 
 export default () =>
@@ -12,6 +13,7 @@ export default () =>
     <Banner />
     <Benefits />
     <HalfBanner />
+    <Navigation />
     <Modificados />
     <Souvenier />
     <Kits />
