@@ -1,10 +1,9 @@
 import h from '@h'
-import Header from './header'
-import Footer from './footer'
+import * as s from '@pages/share'
 
 export default (_, chield) =>
   <main>
-    <Header />
+    <s.Header />
     { chield }
-    <Footer />
+    <s.Footer />
   </main>

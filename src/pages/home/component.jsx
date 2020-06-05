@@ -9,7 +9,7 @@ import NavigationBubbles from './navigation-bubbles'
 import PromoThreeBanners from './promo-three-banners'
 
 export default () =>
-  <s.Template>
+  <s.Main>
     <HighlightBanner />
     <HighlightBenefits />
     <HighlightHalfBanner />
@@ -17,4 +17,4 @@ export default () =>
     <AspirationThreeBanners />
     <DisplayProducts />
     <PromoThreeBanners />
-  </s.Template>
+  </s.Main>
