@@ -19,6 +19,10 @@
   }
 }
 
+.bubble__nav {
+  margin: 0 -10px;
+}
+
 .bubble__nav > div {
   display: flex;
 }
