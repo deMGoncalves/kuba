@@ -16,16 +16,10 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  width: 100%;
+  width: calc(50% - 5px);
 }
 
-@media (min-width: 550px) {
-  .benefits__li {
-    width: calc(50% - 5px);
-  }
-}
-
-@media (min-width: 1099px) {
+@media (min-width: 960px) {
   .benefits__li {
     width: calc(25% - 13.333px);
   }
@@ -36,9 +30,8 @@
   font-size: 28px;
 }
 
-.benefits__a {
+.benefits__p {
   color: var(--COLOR-MASTER);
   font-size: 12px;
-  text-decoration: none;
   width: calc(100% - 50px);
 }

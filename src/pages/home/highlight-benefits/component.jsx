@@ -8,19 +8,19 @@ export default () =>
       <ul className={style.benefits__ul}>
         <li className={style.benefits__li}>
           <s.Icon className={style.benefits__icon}>people_outline</s.Icon>
-          <a href='#' className={style.benefits__a}>parceria com representantes globais</a>
+          <p className={style.benefits__p}>parceria com representantes globais</p>
         </li>
         <li className={style.benefits__li}>
           <s.Icon className={style.benefits__icon}>shopping_bag</s.Icon>
-          <a href='#' className={style.benefits__a}>souvenier da família JRMod</a>
+          <p className={style.benefits__p}>souvenier da família JRMod</p>
         </li>
         <li className={style.benefits__li}>
           <s.Icon className={style.benefits__icon}>verified</s.Icon>
-          <a href='#' className={style.benefits__a}>pedais refinados para ouvidos exigentes</a>
+          <p className={style.benefits__p}>pedais refinados para ouvidos exigentes</p>
         </li>
         <li className={style.benefits__li}>
           <s.Icon className={style.benefits__icon}>loyalty</s.Icon>
-          <a href='#' className={style.benefits__a}>produto confeccionado com primazia e paixão</a>
+          <p className={style.benefits__p}>produto confeccionado com primazia e paixão</p>
         </li>
       </ul>
     </s.Container>
