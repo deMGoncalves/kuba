@@ -7,7 +7,7 @@ export default (component) =>
     setImmediate(() =>
       new Siema({
         perPage,
-        selector: `.${style.navigation__nav}`
+        selector: `.${style.bubble__nav}`
       })
     )
 
