@@ -1,3 +1,4 @@
+import AspirationThreeBanner from './aspiration-three-banners'
 import Container from './container'
 import Footer from './footer'
 import Header from './header'
@@ -6,6 +7,7 @@ import Link from './link'
 import Main from './main'
 
 export {
+  AspirationThreeBanner,
   Container,
   Footer,
   Header,
