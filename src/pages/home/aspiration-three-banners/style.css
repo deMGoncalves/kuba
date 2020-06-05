@@ -34,12 +34,7 @@
 
 .banner__div.half {
   margin-top: 10px;
-}
-
-@media (min-width: 768px) {
-  .banner__div.half {
-    width: calc(50% - 5px);
-  }
+  width: calc(50% - 5px);
 }
 
 @media (min-width: 960px) {
