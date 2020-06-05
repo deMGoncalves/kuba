@@ -2,10 +2,10 @@ import h from '@h'
 import * as s from '@share'
 import style from './style.css'
 
-import bannerL from './banner_1200x500.jpg'
-import bannerM from './banner_939x500.jpg'
-import bannerS from './banner_747x500.jpg'
-import bannerXS from './banner_529x500.jpg'
+const bannerXS = 'https://dummyimage.com/529x500/1a1a1a/1a1a1a'
+const bannerS = 'https://dummyimage.com/747x500/1a1a1a/1a1a1a'
+const bannerM = 'https://dummyimage.com/939x500/1a1a1a/1a1a1a'
+const bannerL = 'https://dummyimage.com/529x400/1a1a1a/1a1a1a'
 
 export default () =>
   <section className={style.banner}>
