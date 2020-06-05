@@ -5,10 +5,7 @@ import DisplayProducts from './display-products'
 import HighlightBanner from './highlight-banner'
 import HighlightBenefits from './highlight-benefits'
 import HighlightHalfBanner from './highlight-half-banner'
-import Kits from './kits'
-import Modificados from './modificados'
 import NavigationBubbles from './navigation-bubbles'
-import Souvenier from './souvenier'
 
 export default () =>
   <s.Template>
@@ -18,7 +15,4 @@ export default () =>
     <NavigationBubbles />
     <AspirationThreeBanners />
     <DisplayProducts />
-    <Modificados />
-    <Souvenier />
-    <Kits />
   </s.Template>
