@@ -9,7 +9,7 @@ export default () =>
         <s.Icon className={style.footer__icon}>public</s.Icon>
         <h3 className={style.footer__h3}>mundo JRMod</h3>
         <p className={style.footer__p}>bem vindo a família JRMod</p>
-        <a className={style.footer__a} href='/mundo-jrmod'>saiba mais</a>
+        <a className={style.footer__a}>saiba mais</a>
       </section>
       <section className={style.footer__section}>
         <s.Icon className={style.footer__icon}>directions_run</s.Icon>
