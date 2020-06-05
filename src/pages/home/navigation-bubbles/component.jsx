@@ -1,5 +1,5 @@
 import h from '@h'
-import * as s from '@share'
+import * as s from '@pages/share'
 import carousel from './carousel'
 import style from './style.css'
 

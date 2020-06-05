@@ -1,5 +1,5 @@
 import h from '@h'
-import * as s from '@share'
+import * as s from '@pages/share'
 import style from './style.css'
 
 const bannerS = 'https://dummyimage.com/747x500/1a1a1a/1a1a1a'
