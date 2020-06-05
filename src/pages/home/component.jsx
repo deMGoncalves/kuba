@@ -1,6 +1,5 @@
 import h from '@h'
 import * as s from '@pages/share'
-import AspirationThreeBanners from './aspiration-three-banners'
 import DisplayProducts from './display-products'
 import HighlightBanner from './highlight-banner'
 import HighlightBenefits from './highlight-benefits'
@@ -14,7 +13,7 @@ export default () =>
     <HighlightBenefits />
     <HighlightHalfBanner />
     <NavigationBubbles />
-    <AspirationThreeBanners />
+    <s.AspirationThreeBanners />
     <DisplayProducts />
     <PromoThreeBanners />
   </s.Main>
