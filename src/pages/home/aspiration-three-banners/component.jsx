@@ -34,7 +34,6 @@ export default () =>
           <source srcSet={overdriveL} media='(min-width: 960px)' />
           <img className={style.banner__img} loading='lazy' alt='overdrive' />
         </picture>
-        <s.Link className={style.banner__a} href='#'>overdrive</s.Link>
       </div>
       <div className={[style.banner__div, style.half]}>
         <picture className={[style.banner__picture, style.half]}>
@@ -43,7 +42,6 @@ export default () =>
           <source srcSet={distortionL} media='(min-width: 960px)' />
           <img className={style.banner__img} loading='lazy' alt='distortion' />
         </picture>
-        <s.Link className={style.banner__a} href='#'>distortion</s.Link>
       </div>
     </s.Container>
   </section>
