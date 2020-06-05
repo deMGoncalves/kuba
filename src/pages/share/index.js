@@ -9,6 +9,7 @@ import HighlightHalfBanner from './highlight-half-banner'
 import Icon from './icon'
 import Link from './link'
 import Main from './main'
+import NavigationBubbles from './navigation-bubbles'
 
 export {
   AspirationThreeBanners,
@@ -21,5 +22,6 @@ export {
   HighlightHalfBanner,
   Icon,
   Link,
-  Main
+  Main,
+  NavigationBubbles
 }
