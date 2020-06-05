@@ -10,6 +10,7 @@ import Icon from './icon'
 import Link from './link'
 import Main from './main'
 import NavigationBubbles from './navigation-bubbles'
+import PromoThreeBanners from './promo-three-banners'
 
 export {
   AspirationThreeBanners,
@@ -23,5 +24,6 @@ export {
   Icon,
   Link,
   Main,
-  NavigationBubbles
+  NavigationBubbles,
+  PromoThreeBanners
 }
