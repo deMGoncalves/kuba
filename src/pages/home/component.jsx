@@ -6,6 +6,7 @@ import HighlightBanner from './highlight-banner'
 import HighlightBenefits from './highlight-benefits'
 import HighlightHalfBanner from './highlight-half-banner'
 import NavigationBubbles from './navigation-bubbles'
+import PromoThreeBanners from './promo-three-banners'
 
 export default () =>
   <s.Template>
@@ -15,4 +16,5 @@ export default () =>
     <NavigationBubbles />
     <AspirationThreeBanners />
     <DisplayProducts />
+    <PromoThreeBanners />
   </s.Template>
