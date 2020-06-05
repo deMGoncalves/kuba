@@ -3,6 +3,6 @@ import router from '@router'
 import './reset.css'
 
 router(/^\/$/, async () => {
-  const { default: Home } = await import(/* webpackChunkName: "home" */ './home')
+  const { default: Home } = await import(/* webpackChunkName: "home" */ '@pages/home')
   document.body.appendChild(<Home />)
 })
