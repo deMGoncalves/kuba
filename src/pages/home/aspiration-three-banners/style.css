@@ -57,6 +57,10 @@
   width: 100%;
 }
 
+.banner__picture.half {
+  padding-top: calc(500 / 368.5 * 100%);
+}
+
 @media (min-width: 768px) {
   .banner__picture {
     padding-top: calc(400 / 939 * 100%);
@@ -73,7 +77,7 @@
   }
 
   .banner__picture.half {
-    padding-top: calc(400 / 293.4 * 100%);
+    padding-top: calc(400 / 293.3 * 100%);
   }
 }
 
@@ -88,7 +92,7 @@
 }
 
 .banner__a {
-  bottom: 40px;
+  bottom: 20px;
   left: calc(50% - 70px);
   position: absolute;
 }
