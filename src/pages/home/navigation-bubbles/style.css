@@ -1,8 +1,8 @@
-.navigation {
+.bubble {
   padding: 40px 0;
 }
 
-.navigation__h2 {
+.bubble__h2 {
   color: var(--COLOR-MASTER-DARKER);
   font-size: 18px;
   font-weight: 600;
@@ -13,21 +13,21 @@
 }
 
 @media (min-width: 768px) {
-  .navigation__h2 {
+  .bubble__h2 {
     font-size: 24px;
     text-align: left;
   }
 }
 
-.navigation__nav > div {
+.bubble__nav > div {
   display: flex;
 }
 
-.navigation__div {
+.bubble__div {
   padding: 10px;
 }
 
-.navigation__picture {
+.bubble__picture {
   display: block;
   height: 100%;
   padding-top: calc(200 / 200 * 100%);
@@ -35,7 +35,7 @@
   width: 100%;
 }
 
-.navigation__img {
+.bubble__img {
   border-radius: 50%;
   height: 100%;
   left: 0;
@@ -44,7 +44,7 @@
   width: 100%;
 }
 
-.navigation__a {
+.bubble__a {
   display: inline-block;
   margin-top: 10px;
   text-align: center;
