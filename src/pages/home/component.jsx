@@ -1,6 +1,5 @@
 import h from '@h'
 import * as s from '@pages/share'
-import PromoThreeBanners from './promo-three-banners'
 
 export default () =>
   <s.Main>
@@ -10,5 +9,5 @@ export default () =>
     <s.NavigationBubbles />
     <s.AspirationThreeBanners />
     <s.DisplayProducts />
-    <PromoThreeBanners />
+    <s.PromoThreeBanners />
   </s.Main>
