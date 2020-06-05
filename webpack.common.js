@@ -137,7 +137,6 @@ module.exports = {
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@radio': path.resolve(__dirname, 'src/radio'),
       '@router': path.resolve(__dirname, 'src/router'),
-      '@share': path.resolve(__dirname, 'src/share'),
       '@structureddata': path.resolve(__dirname, 'src/structureddata'),
       '@twittercard': path.resolve(__dirname, 'src/twittercard'),
       '@sw': path.resolve(__dirname, 'src/sw')
