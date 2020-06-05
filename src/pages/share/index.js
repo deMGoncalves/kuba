@@ -3,6 +3,7 @@ import Container from './container'
 import DisplayProducts from './display-products'
 import Footer from './footer'
 import Header from './header'
+import HighlightBanner from './highlight-banner'
 import Icon from './icon'
 import Link from './link'
 import Main from './main'
@@ -13,6 +14,7 @@ export {
   DisplayProducts,
   Footer,
   Header,
+  HighlightBanner,
   Icon,
   Link,
   Main
