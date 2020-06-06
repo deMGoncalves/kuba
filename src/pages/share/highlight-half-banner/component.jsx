@@ -9,7 +9,7 @@ const bannerL = 'https://dummyimage.com/1200x200/1a1a1a/1a1a1a'
 export default () =>
   <section className={style.banner}>
     <s.Container>
-      <h2 className={style.banner__h2}>produto confeccionado com primor e coração</h2>
+      <s.Title>produto confeccionado com primor e coração</s.Title>
       <picture className={style.banner__picture}>
         <source srcSet={bannerS} media='(max-width: 767px)' />
         <source srcSet={bannerM} media='(min-width: 768px) and (max-width: 959px)' />
