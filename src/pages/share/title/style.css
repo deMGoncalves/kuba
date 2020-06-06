@@ -1,0 +1,18 @@
+.title {
+  color: var(--COLOR-MASTER-DARKER);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 24px;
+    padding: 0 20px 0 0;
+    text-align: left;
+  }
+}
