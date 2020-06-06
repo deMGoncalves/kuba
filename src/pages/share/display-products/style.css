@@ -8,25 +8,6 @@
   justify-content: space-between;
 }
 
-.product__h2 {
-  color: var(--COLOR-MASTER-DARKER);
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 1;
-  margin-bottom: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .product__h2 {
-    font-size: 24px;
-    text-align: left;
-  }
-}
-
 .product__div {
   display: flex;
   flex-direction: column;
