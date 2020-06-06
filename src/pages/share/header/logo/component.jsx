@@ -1,9 +1,9 @@
 import h from '@h'
 import style from './style.css'
 
-const bannerS = 'https://dummyimage.com/120x60/1a1a1a/1a1a1a'
-const bannerM = 'https://dummyimage.com/60x60/1a1a1a/1a1a1a'
-const bannerL = 'https://dummyimage.com/180x60/1a1a1a/1a1a1a'
+const bannerS = 'https://dummyimage.com/120x60/1a1a1a/fafafa&text=JRMod'
+const bannerM = 'https://dummyimage.com/60x60/1a1a1a/fafafa&text=JRMod'
+const bannerL = 'https://dummyimage.com/180x60/1a1a1a/fafafa&text=JRMod'
 
 export default () =>
   <picture className={style.logo}>
