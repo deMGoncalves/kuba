@@ -4,6 +4,7 @@
 
 @media (min-width: 768px) {
   .banner {
+    background-color: var(--COLOR-MASTER-DARKER);
     padding-bottom: 0;
   }
 }

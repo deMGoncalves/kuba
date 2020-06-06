@@ -1,8 +1,8 @@
 .link {
   align-items: center;
-  border: 2px solid var(--COLOR-MASTER-LIGHTEST);
+  border: 2px solid var(--COLOR-MASTER-DARKER);
   border-radius: 20px;
-  color: var(--COLOR-MASTER-LIGHTEST);
+  color: var(--COLOR-MASTER-DARKER);
   display: flex;
   font-size: 12px;
   font-weight: 600;
@@ -13,4 +13,11 @@
   text-decoration: none;
   text-transform: uppercase;
   width: 140px;
+}
+
+@media (min-width: 768px) {
+  .link {
+    border-color: var(--COLOR-MASTER-LIGHTEST);
+    color: var(--COLOR-MASTER-LIGHTEST);
+  }
 }
