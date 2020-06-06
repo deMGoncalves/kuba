@@ -73,7 +73,9 @@
 }
 
 .banner__a {
+  border-color: var(--COLOR-MASTER-LIGHTEST) !important;
   bottom: 40px;
+  color: var(--COLOR-MASTER-LIGHTEST) !important;
   left: calc(50% - 70px);
   position: absolute;
 }
