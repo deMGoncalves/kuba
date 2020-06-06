@@ -34,9 +34,7 @@
 }
 
 .banner__a {
-  bottom: 40px;
-  left: calc(50% - 70px);
-  position: absolute;
+  margin: 20px auto 0 auto;
 }
 
 @media (min-width: 960px) {
