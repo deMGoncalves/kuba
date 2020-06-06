@@ -13,7 +13,7 @@ const halfBannerL = 'https://dummyimage.com/293x400/1a1a1a/1a1a1a'
 export default () =>
   <section className={style.banner}>
     <s.Container className={style.banner__container}>
-      <h2 className={style.banner__h2}>não deixe de aproveitar nossas ofertas</h2>
+      <s.Title>não deixe de aproveitar nossas ofertas</s.Title>
       <div className={style.banner__div}>
         <picture className={style.banner__picture}>
           <source srcSet={bannerS} media='(max-width: 767px)' />
