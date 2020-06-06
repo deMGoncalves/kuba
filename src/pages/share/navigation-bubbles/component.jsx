@@ -6,7 +6,7 @@ import style from './style.css'
 export default carousel(() =>
   <section className={style.bubble}>
     <s.Container className={style.bubble__container}>
-      <h2 className={style.bubble__h2}>navegue pelo mundo JRMod</h2>
+      <s.Title>navegue pelo mundo JRMod</s.Title>
       <nav className={style.bubble__nav}>
         <div className={style.bubble__div}>
           <picture className={style.bubble__picture}>
