@@ -7,7 +7,7 @@ const banner = 'https://dummyimage.com/293x400/1a1a1a/1a1a1a'
 export default () =>
   <section className={style.product}>
     <s.Container className={style.product__container}>
-      <h2 className={style.product__h2}>recomendamos alguns produtos</h2>
+      <s.Title>recomendamos alguns produtos</s.Title>
       <div className={style.product__div}>
         <picture className={style.product__picture}>
           <img className={style.product__img} src={banner} loading='lazy' alt='product' />
