@@ -1,5 +1,11 @@
 .banner {
-  background-color: var(--COLOR-MASTER-DARKER);
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding-bottom: 0;
+  }
 }
 
 .banner__picture {
@@ -39,26 +45,36 @@
 }
 
 .banner__h1 {
-  bottom: 100px;
-  color: var(--COLOR-MASTER-LIGHTEST);
+  color: var(--COLOR-MASTER-DARKER);
   display: inline-block;
   font-size: 18px;
   font-weight: 600;
-  left: 10px;
   letter-spacing: 1px;
-  position: absolute;
+  padding: 20px;
   text-align: center;
-  width: calc(100% - 20px);
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .banner__h1 {
+    bottom: 100px;
+    color: var(--COLOR-MASTER-LIGHTEST);
     font-size: 24px;
+    left: 10px;
+    padding: 0 20px;
+    position: absolute;
+    width: calc(100% - 20px);
   }
 }
 
 .banner__a {
-  bottom: 40px;
-  left: calc(50% - 70px);
-  position: absolute;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .banner__a {
+    bottom: 40px;
+    left: calc(50% - 70px);
+    position: absolute;
+  }
 }
