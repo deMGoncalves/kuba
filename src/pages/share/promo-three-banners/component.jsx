@@ -11,7 +11,7 @@ const halfBannerM = 'https://dummyimage.com/464x400/1a1a1a/1a1a1a'
 const halfBannerL = 'https://dummyimage.com/293x400/1a1a1a/1a1a1a'
 
 export default () =>
-  <section className={style.banner}>
+  <s.Module>
     <s.Container className={style.banner__container}>
       <s.Title>não deixe de aproveitar nossas ofertas</s.Title>
       <div className={style.banner__div}>
@@ -39,4 +39,4 @@ export default () =>
         <s.Link className={style.banner__link} href='#'>ver mais</s.Link>
       </div>
     </s.Container>
-  </section>
+  </s.Module>
