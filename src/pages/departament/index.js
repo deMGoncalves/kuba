@@ -1,3 +1,3 @@
-import Home from './Home'
+import Departament from './Departament'
 
-export default Home
+export default Departament
