@@ -14,49 +14,49 @@ export default carousel(() =>
           <s.Image className={style.bubble__image}>
             <source srcSet={banner} />
           </s.Image>
-          <a className={style.bubble__a}>navigation</a>
+          <a className={style.bubble__a} href='/custom-shop/distortion-overdrive-fuzz'>navigation</a>
         </div>
         <div className={style.bubble__div}>
           <s.Image className={style.bubble__image}>
             <source srcSet={banner} />
           </s.Image>
-          <a className={style.bubble__a}>navigation</a>
+          <a className={style.bubble__a} href='custom-shop/compressor-limiter'>navigation</a>
         </div>
         <div className={style.bubble__div}>
           <s.Image className={style.bubble__image}>
             <source srcSet={banner} />
           </s.Image>
-          <a className={style.bubble__a}>navigation</a>
+          <a className={style.bubble__a} href='custom-shop/equalizer'>navigation</a>
         </div>
         <div className={style.bubble__div}>
           <s.Image className={style.bubble__image}>
             <source srcSet={banner} />
           </s.Image>
-          <a className={style.bubble__a}>navigation</a>
+          <a className={style.bubble__a} href='custom-shop/preamp'>navigation</a>
         </div>
         <div className={style.bubble__div}>
           <s.Image className={style.bubble__image}>
             <source srcSet={banner} />
           </s.Image>
-          <a className={style.bubble__a}>navigation</a>
+          <a className={style.bubble__a} href='custom-shop/expression-wah'>navigation</a>
         </div>
         <div className={style.bubble__div}>
           <s.Image className={style.bubble__image}>
             <source srcSet={banner} />
           </s.Image>
-          <a className={style.bubble__a}>navigation</a>
+          <a className={style.bubble__a} href='custom-shop/modulacao'>navigation</a>
         </div>
         <div className={style.bubble__div}>
           <s.Image className={style.bubble__image}>
             <source srcSet={banner} />
           </s.Image>
-          <a className={style.bubble__a}>navigation</a>
+          <a className={style.bubble__a} href='kits/overdrive'>navigation</a>
         </div>
         <div className={style.bubble__div}>
           <s.Image className={style.bubble__image}>
             <source srcSet={banner} />
           </s.Image>
-          <a className={style.bubble__a}>navigation</a>
+          <a className={style.bubble__a} href='kits/distortion'>navigation</a>
         </div>
       </nav>
     </s.Container>
