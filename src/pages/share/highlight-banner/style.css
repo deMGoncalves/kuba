@@ -9,40 +9,26 @@
   }
 }
 
-.banner__picture {
-  display: block;
-  height: 100%;
-  padding-top: calc(500 / 529 * 100%);
-  position: relative;
-  width: 100%;
+.banner__image {
+  padding-top: calc(500 / 529 * 100%) !important;
 }
 
 @media (min-width: 550px) {
-  .banner__picture {
-    padding-top: calc(500 / 747 * 100%);
+  .banner__image {
+    padding-top: calc(500 / 747 * 100%) !important;
   }
 }
 
 @media (min-width: 768px) {
-  .banner__picture {
-    padding-top: calc(500 / 939 * 100%);
+  .banner__image {
+    padding-top: calc(500 / 939 * 100%) !important;
   }
 }
 
 @media (min-width: 960px) {
-  .banner__picture {
-    padding-top: calc(500 / 1200 * 100%);
+  .banner__image {
+    padding-top: calc(500 / 1200 * 100%) !important;
   }
-}
-
-.banner__img {
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-  object-position: center center;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 .banner__h1 {
