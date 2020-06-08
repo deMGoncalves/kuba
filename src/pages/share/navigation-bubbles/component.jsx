@@ -8,7 +8,7 @@ const banner = 'https://dummyimage.com/132x132/1a1a1a/1a1a1a'
 export default carousel(() =>
   <s.Module>
     <s.Container className={style.bubble__container}>
-      <s.Title>navegue pelo mundo JRMod</s.Title>
+      <s.ModuleTitle>navegue pelo mundo JRMod</s.ModuleTitle>
       <nav className={style.bubble__nav}>
         <div className={style.bubble__div}>
           <s.Image className={style.bubble__image}>

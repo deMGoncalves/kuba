@@ -7,7 +7,7 @@ const banner = 'https://dummyimage.com/293x400/1a1a1a/1a1a1a'
 export default () =>
   <s.Module>
     <s.Container className={style.product__container}>
-      <s.Title>recomendamos alguns produtos</s.Title>
+      <s.ModuleTitle>recomendamos alguns produtos</s.ModuleTitle>
       <div className={style.product__div}>
         <s.Image className={style.product__image}>
           <source srcSet={banner} />

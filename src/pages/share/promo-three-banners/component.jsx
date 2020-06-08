@@ -13,7 +13,7 @@ const halfBannerL = 'https://dummyimage.com/293x400/1a1a1a/1a1a1a'
 export default () =>
   <s.Module>
     <s.Container className={style.banner__container}>
-      <s.Title>não deixe de aproveitar nossas ofertas</s.Title>
+      <s.ModuleTitle>não deixe de aproveitar nossas ofertas</s.ModuleTitle>
       <div className={style.banner__div}>
         <s.Image className={style.banner__image}>
           <source srcSet={bannerS} media='(max-width: 767px)' />

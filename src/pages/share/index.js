@@ -11,9 +11,9 @@ import Image from './image'
 import Link from './link'
 import Main from './main'
 import Module from './module'
+import ModuleTitle from './moduleTitle'
 import NavigationBubbles from './navigation-bubbles'
 import PromoThreeBanners from './promo-three-banners'
-import Title from './title'
 
 export {
   AspirationThreeBanners,
@@ -29,7 +29,7 @@ export {
   Link,
   Main,
   Module,
+  ModuleTitle,
   NavigationBubbles,
-  PromoThreeBanners,
-  Title
+  PromoThreeBanners
 }
