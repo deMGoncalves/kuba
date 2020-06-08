@@ -5,7 +5,7 @@ import style from './style.css'
 const banner = 'https://dummyimage.com/293x400/1a1a1a/1a1a1a'
 
 export default () =>
-  <section className={style.product}>
+  <s.Module>
     <s.Container className={style.product__container}>
       <s.Title>recomendamos alguns produtos</s.Title>
       <div className={style.product__div}>
@@ -93,4 +93,4 @@ export default () =>
         <data className={style.product__data} value='999.99'>R$ 999,99</data>
       </div>
     </s.Container>
-  </section>
+  </s.Module>
