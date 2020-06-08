@@ -7,7 +7,7 @@ const bannerM = 'https://dummyimage.com/939x300/1a1a1a/1a1a1a'
 const bannerL = 'https://dummyimage.com/1200x200/1a1a1a/1a1a1a'
 
 export default () =>
-  <section className={style.banner}>
+  <s.Module>
     <s.Container>
       <s.Title>produto confeccionado com primor e coração</s.Title>
       <s.Image className={style.banner__image}>
@@ -17,4 +17,4 @@ export default () =>
       </s.Image>
       <s.Link className={style.banner__link}>ver mais</s.Link>
     </s.Container>
-  </section>
+  </s.Module>

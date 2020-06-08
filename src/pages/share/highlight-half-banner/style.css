@@ -1,7 +1,3 @@
-.banner {
-  padding: 40px 0;
-}
-
 .banner__image {
   padding-top: calc(400 / 747 * 100%) !important;
 }
