@@ -15,6 +15,6 @@ export default () =>
         <source srcSet={bannerM} media='(min-width: 768px) and (max-width: 959px)' />
         <source srcSet={bannerL} media='(min-width: 960px)' />
       </s.Image>
-      <s.Link className={style.banner__a}>ver mais</s.Link>
+      <s.Link className={style.banner__link}>ver mais</s.Link>
     </s.Container>
   </section>
