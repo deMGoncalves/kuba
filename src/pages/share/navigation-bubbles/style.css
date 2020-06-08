@@ -14,21 +14,9 @@
   padding: 10px;
 }
 
-.bubble__picture {
-  display: block;
-  height: 100%;
-  padding-top: calc(132.5 / 132.5 * 100%);
-  position: relative;
-  width: 100%;
-}
-
-.bubble__img {
+.bubble__image {
   border-radius: 50%;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  padding-top: calc(132.5 / 132.5 * 100%);
 }
 
 .bubble__a {
