@@ -10,6 +10,7 @@ import Icon from './icon'
 import Image from './image'
 import Link from './link'
 import Main from './main'
+import Module from './module'
 import NavigationBubbles from './navigation-bubbles'
 import PromoThreeBanners from './promo-three-banners'
 import Title from './title'
@@ -27,6 +28,7 @@ export {
   Image,
   Link,
   Main,
+  Module,
   NavigationBubbles,
   PromoThreeBanners,
   Title
