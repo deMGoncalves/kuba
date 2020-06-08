@@ -11,51 +11,51 @@ export default carousel(() =>
       <s.Title>navegue pelo mundo JRMod</s.Title>
       <nav className={style.bubble__nav}>
         <div className={style.bubble__div}>
-          <picture className={style.bubble__picture}>
-            <img className={style.bubble__img} src={banner} loading='lazy' alt='navigation' />
-          </picture>
+          <s.Image className={style.bubble__image}>
+            <source srcSet={banner} />
+          </s.Image>
           <a className={style.bubble__a}>navigation</a>
         </div>
         <div className={style.bubble__div}>
-          <picture className={style.bubble__picture}>
-            <img className={style.bubble__img} src={banner} loading='lazy' alt='navigation' />
-          </picture>
+          <s.Image className={style.bubble__image}>
+            <source srcSet={banner} />
+          </s.Image>
           <a className={style.bubble__a}>navigation</a>
         </div>
         <div className={style.bubble__div}>
-          <picture className={style.bubble__picture}>
-            <img className={style.bubble__img} src={banner} loading='lazy' alt='navigation' />
-          </picture>
+          <s.Image className={style.bubble__image}>
+            <source srcSet={banner} />
+          </s.Image>
           <a className={style.bubble__a}>navigation</a>
         </div>
         <div className={style.bubble__div}>
-          <picture className={style.bubble__picture}>
-            <img className={style.bubble__img} src={banner} loading='lazy' alt='navigation' />
-          </picture>
+          <s.Image className={style.bubble__image}>
+            <source srcSet={banner} />
+          </s.Image>
           <a className={style.bubble__a}>navigation</a>
         </div>
         <div className={style.bubble__div}>
-          <picture className={style.bubble__picture}>
-            <img className={style.bubble__img} src={banner} loading='lazy' alt='navigation' />
-          </picture>
+          <s.Image className={style.bubble__image}>
+            <source srcSet={banner} />
+          </s.Image>
           <a className={style.bubble__a}>navigation</a>
         </div>
         <div className={style.bubble__div}>
-          <picture className={style.bubble__picture}>
-            <img className={style.bubble__img} src={banner} loading='lazy' alt='navigation' />
-          </picture>
+          <s.Image className={style.bubble__image}>
+            <source srcSet={banner} />
+          </s.Image>
           <a className={style.bubble__a}>navigation</a>
         </div>
         <div className={style.bubble__div}>
-          <picture className={style.bubble__picture}>
-            <img className={style.bubble__img} src={banner} loading='lazy' alt='navigation' />
-          </picture>
+          <s.Image className={style.bubble__image}>
+            <source srcSet={banner} />
+          </s.Image>
           <a className={style.bubble__a}>navigation</a>
         </div>
         <div className={style.bubble__div}>
-          <picture className={style.bubble__picture}>
-            <img className={style.bubble__img} src={banner} loading='lazy' alt='navigation' />
-          </picture>
+          <s.Image className={style.bubble__image}>
+            <source srcSet={banner} />
+          </s.Image>
           <a className={style.bubble__a}>navigation</a>
         </div>
       </nav>
