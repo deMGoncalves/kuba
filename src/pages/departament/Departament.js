@@ -11,6 +11,10 @@ import component from './component'
 @structureddata
 @twittercard
 class Home {
+  constructor (attr) {
+    this.title = attr.title
+    return this
+  }
 }
 
 export default Home

@@ -6,6 +6,7 @@ import Header from './header'
 import HighlightBanner from './highlight-banner'
 import HighlightBenefits from './highlight-benefits'
 import HighlightHalfBanner from './highlight-half-banner'
+import HighlightTitle from './highlight-title'
 import Icon from './icon'
 import Image from './image'
 import Link from './link'
@@ -24,6 +25,7 @@ export {
   HighlightBanner,
   HighlightBenefits,
   HighlightHalfBanner,
+  HighlightTitle,
   Icon,
   Image,
   Link,

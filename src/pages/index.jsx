@@ -6,12 +6,12 @@ router(/^\/$/, async () => {
   document.body.appendChild(<Home />)
 })
 
-router(/^\/([\w-]+)$/, async () => {
+router(/^\/([\w-]+)$/, async (departament) => {
   const { default: Departament } = await import(/* webpackChunkName: "departament" */ '@pages/departament')
-  document.body.appendChild(<Departament />)
+  document.body.appendChild(<Departament title={departament} />)
 })
 
-router(/^\/([\w-]+)\/([\w-]+)$/, async () => {
+router(/^\/([\w-]+)\/([\w-]+)$/, async (_, category) => {
   const { default: Category } = await import(/* webpackChunkName: "category" */ '@pages/category')
-  document.body.appendChild(<Category />)
+  document.body.appendChild(<Category title={category} />)
 })
