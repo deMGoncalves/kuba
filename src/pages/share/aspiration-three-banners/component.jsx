@@ -15,7 +15,7 @@ export default () =>
     <s.Container className={style.banner__container}>
       <s.Title>separamos algumas tendências para você</s.Title>
       <div className={style.banner__div}>
-        <s.Image className={style.banner__s.Image}>
+        <s.Image className={style.banner__image}>
           <source srcSet={bannerS} media='(max-width: 767px)' />
           <source srcSet={bannerM} media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet={bannerL} media='(min-width: 960px)' />
@@ -23,7 +23,7 @@ export default () =>
         <s.Link className={style.banner__link} href='#'>ver mais</s.Link>
       </div>
       <div className={[style.banner__div, style.half]}>
-        <s.Image className={[style.banner__s.Image, style.half]}>
+        <s.Image className={[style.banner__image, style.half]}>
           <source srcSet={halfBannerS} media='(max-width: 767px)' />
           <source srcSet={halfBannerM} media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet={halfBannerL} media='(min-width: 960px)' />
