@@ -20,8 +20,10 @@
 }
 
 .bubble__a {
+  color: var(--color-master-dark);
   display: inline-block;
   margin-top: 10px;
   text-align: center;
+  text-decoration: none;
   width: 100%;
 }
