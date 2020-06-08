@@ -20,7 +20,7 @@ export default () =>
           <source srcSet={bannerM} media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet={bannerL} media='(min-width: 960px)' />
         </s.Image>
-        <s.Link className={style.banner__a} href='#'>ver mais</s.Link>
+        <s.Link className={style.banner__link} href='#'>ver mais</s.Link>
       </div>
       <div className={[style.banner__div, style.half]}>
         <s.Image className={[style.banner__image, style.half]}>
@@ -28,7 +28,7 @@ export default () =>
           <source srcSet={halfBannerM} media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet={halfBannerL} media='(min-width: 960px)' />
         </s.Image>
-        <s.Link className={style.banner__a} href='#'>ver mais</s.Link>
+        <s.Link className={style.banner__link} href='#'>ver mais</s.Link>
       </div>
       <div className={[style.banner__div, style.half]}>
         <s.Image className={[style.banner__image, style.half]}>
@@ -36,7 +36,7 @@ export default () =>
           <source srcSet={halfBannerM} media='(min-width: 768px) and (max-width: 959px)' />
           <source srcSet={halfBannerL} media='(min-width: 960px)' />
         </s.Image>
-        <s.Link className={style.banner__a} href='#'>ver mais</s.Link>
+        <s.Link className={style.banner__link} href='#'>ver mais</s.Link>
       </div>
     </s.Container>
   </section>
