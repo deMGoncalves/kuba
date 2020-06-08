@@ -17,6 +17,6 @@ export default () =>
         <source srcSet={bannerL} media='(min-width: 960px)' />
       </s.Image>
       <h1 className={style.banner__h1}>aqui você encontra timbres e soluções</h1>
-      <s.Link className={style.banner__a} href='#'>ver mais</s.Link>
+      <s.Link className={style.banner__link} href='#'>ver mais</s.Link>
     </s.Container>
   </section>
