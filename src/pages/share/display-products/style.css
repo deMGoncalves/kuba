@@ -27,23 +27,8 @@
   }
 }
 
-.product__picture {
-  background-color: var(--COLOR-MASTER-DARKER);
-  display: block;
-  height: 100%;
-  padding-top: calc(400 / 293.3 * 100%);
-  position: relative;
-  width: 100%;
-}
-
-.product__img {
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-  object-position: center center;
-  position: absolute;
-  top: 0;
-  width: 100%;
+.product__image {
+  padding-top: calc(400 / 293.3 * 100%) !important;
 }
 
 .product__p {
