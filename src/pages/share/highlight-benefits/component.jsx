@@ -3,7 +3,7 @@ import * as s from '@pages/share'
 import style from './style.css'
 
 export default () =>
-  <section className={style.benefits}>
+  <s.Module className={style.benefits}>
     <s.Container>
       <ul className={style.benefits__ul}>
         <li className={style.benefits__li}>
@@ -24,4 +24,4 @@ export default () =>
         </li>
       </ul>
     </s.Container>
-  </section>
+  </s.Module>
