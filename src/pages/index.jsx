@@ -10,3 +10,8 @@ router(/^\/([\w-]+)$/, async () => {
   const { default: Departament } = await import(/* webpackChunkName: "departament" */ '@pages/departament')
   document.body.appendChild(<Departament />)
 })
+
+router(/^\/([\w-]+)\/([\w-]+)$/, async () => {
+  const { default: Category } = await import(/* webpackChunkName: "category" */ '@pages/category')
+  document.body.appendChild(<Category />)
+})
