@@ -57,7 +57,7 @@
   }
 }
 
-.banner__a {
+.banner__link {
   border-color: var(--COLOR-MASTER-LIGHTEST) !important;
   bottom: 40px;
   color: var(--COLOR-MASTER-LIGHTEST) !important;
