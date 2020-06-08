@@ -2,35 +2,20 @@
   padding: 40px 0;
 }
 
-.banner__picture {
-  background-color: var(--COLOR-MASTER-DARKER);
-  display: block;
-  height: 100%;
-  padding-top: calc(400 / 747 * 100%);
-  position: relative;
-  width: 100%;
+.banner__image {
+  padding-top: calc(400 / 747 * 100%) !important;
 }
 
 @media (min-width: 760px) {
-  .custtom__picture {
-    padding-top: calc(300 / 939 * 100%);
+  .custtom__image {
+    padding-top: calc(300 / 939 * 100%) !important;
   }
 }
 
 @media (min-width: 960px) {
-  .banner__picture {
-    padding-top: calc(200 / 1200 * 100%);
+  .banner__image {
+    padding-top: calc(200 / 1200 * 100%) !important;
   }
-}
-
-.banner__img {
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-  object-position: center center;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 .banner__a {

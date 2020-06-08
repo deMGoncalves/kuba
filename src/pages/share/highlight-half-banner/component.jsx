@@ -10,12 +10,11 @@ export default () =>
   <section className={style.banner}>
     <s.Container>
       <s.Title>produto confeccionado com primor e coração</s.Title>
-      <picture className={style.banner__picture}>
+      <s.Image className={style.banner__image}>
         <source srcSet={bannerS} media='(max-width: 767px)' />
         <source srcSet={bannerM} media='(min-width: 768px) and (max-width: 959px)' />
         <source srcSet={bannerL} media='(min-width: 960px)' />
-        <img className={style.banner__img} loading='lazy' alt='custom shop' />
-      </picture>
+      </s.Image>
       <s.Link className={style.banner__a}>ver mais</s.Link>
     </s.Container>
   </section>
