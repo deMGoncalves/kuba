@@ -93,6 +93,6 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "siema": "^1.5.1"
+    "siema": "oneOffJS/siema"
   }
 }
