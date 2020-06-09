@@ -6,26 +6,26 @@ export default () =>
   <footer className={style.footer}>
     <s.Container className={style.footer__container}>
       <section className={style.footer__section}>
-        <s.Icon className={style.footer__icon}>public</s.Icon>
+        <s.Icon className={style.footer__icon}>globe</s.Icon>
         <h3 className={style.footer__h3}>mundo JRMod</h3>
         <p className={style.footer__p}>bem vindo a família JRMod</p>
         <a className={style.footer__a}>saiba mais</a>
       </section>
       <section className={style.footer__section}>
-        <s.Icon className={style.footer__icon}>directions_run</s.Icon>
+        <s.Icon className={style.footer__icon}>foot</s.Icon>
         <h3 className={style.footer__h3}>chutando latas</h3>
         <p className={style.footer__p}>fique por dentro de tudo</p>
         <a className={style.footer__a}>saiba mais</a>
       </section>
       <section className={style.footer__section}>
-        <s.Icon className={style.footer__icon}>people_outline</s.Icon>
+        <s.Icon className={style.footer__icon}>users</s.Icon>
         <h3 className={style.footer__h3}>parceiros</h3>
         <p className={style.footer__p}>conheça nossos parceiros</p>
         <a className={style.footer__a}>saiba mais</a>
       </section>
       <section className={style.footer__section}>
         <address className={style.footer__address}>
-          <s.Icon className={style.footer__icon}>location_on</s.Icon>
+          <s.Icon className={style.footer__icon}>map-marker</s.Icon>
           <h3 className={style.footer__h3}>contato</h3>
           <p className={style.footer__p}>Rua Ministro Edmundo Lins, 199</p>
           <p className={style.footer__p}>05523-000</p>
