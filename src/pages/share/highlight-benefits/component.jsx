@@ -4,7 +4,7 @@ import style from './style.css'
 
 export default () =>
   <s.Module className={style.benefits}>
-    <s.Container>
+    <s.Container className={style.banner__container}>
       <ul className={style.benefits__ul}>
         <li className={style.benefits__li}>
           <s.Icon className={style.benefits__icon}>users</s.Icon>

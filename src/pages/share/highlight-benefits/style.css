@@ -4,6 +4,10 @@
   padding: 20px 0;
 }
 
+.benefits__container {
+  padding: 20px 0 !important;
+}
+
 .benefits__ul {
   display: flex;
   flex-wrap: wrap;
