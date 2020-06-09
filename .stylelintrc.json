@@ -4,6 +4,12 @@
     "stylelint-order"
   ],
   "rules": {
+    "font-family-no-missing-generic-family-keyword": [
+      true,
+      {
+        "ignoreFontFamilies": ["jrmod-font"]
+      }
+    ],
     "order/order": [
       "custom-properties",
       "declarations"
