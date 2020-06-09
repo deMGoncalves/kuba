@@ -6,6 +6,7 @@ const defaultOrganization = {
   '@context': 'http://schema.org',
   '@type': 'Organization',
   name: 'JRMod',
+  logo: 'https://dummyimage.com/112x112/1a1a1a/1a1a1a',
   url: 'https://jrmod.net',
   sameAs: [
     'https://www.facebook.com/JRMOD',
