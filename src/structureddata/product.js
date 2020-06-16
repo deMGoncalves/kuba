@@ -7,247 +7,177 @@ export default (page) => ({
     {
       '@type': 'PropertyValue',
       name: 'E-mail (convencional)',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Flash',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'TV Digital',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Redes Sociais',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Rádio FM',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Wifi',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Cor',
-      value: [
-        'Branco'
-      ]
+      value: 'Branco'
     },
     {
       '@type': 'PropertyValue',
       name: 'Marca',
-      value: [
-        'Samsung'
-      ]
+      value: 'Samsung'
     },
     {
       '@type': 'PropertyValue',
       name: 'Resolução Gravação de vídeo',
-      value: [
-        'FHD'
-      ]
+      value: 'FHD'
     },
     {
       '@type': 'PropertyValue',
       name: 'GPS/AGPS',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Resolução',
-      value: [
-        '6,4"'
-      ]
+      value: '6,4"'
     },
     {
       '@type': 'PropertyValue',
       name: 'Resolução Display (Pixels)',
-      value: [
-        '720 x 1560'
-      ]
+      value: '720 x 1560'
     },
     {
       '@type': 'PropertyValue',
       name: 'Banda',
-      value: [
-        'B1,B2,B3,B4,B5,B7,B8,B12,B13,B17,B20,B26,B28,B66'
-      ]
+      value: ['B1, B2, B3, B4, B5, B7, B8, B12, B13, B17, B20, B26, B28, B66']
     },
     {
       '@type': 'PropertyValue',
       name: 'EDGE',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Câmera Frontal',
-      value: [
-        '16MP'
-      ]
+      value: '16MP'
     },
     {
       '@type': 'PropertyValue',
       name: 'Câmera Traseira',
-      value: [
-        '25MP + 5MP + 8MP Ultra Wide 123°'
-      ]
+      value: '25MP + 5MP + 8MP Ultra Wide 123°'
     },
     {
       '@type': 'PropertyValue',
       name: 'Agenda Telefônica (número de contatos)',
-      value: [
-        'De acordo com a memória do aparelho'
-      ]
+      value: 'De acordo com a memória do aparelho'
     },
     {
       '@type': 'PropertyValue',
       name: 'Tecnologia',
-      value: [
-        '4G'
-      ]
+      value: '4G'
     },
     {
       '@type': 'PropertyValue',
       name: 'Suporte a Cartão Micro SD',
-      value: [
-        'Até 512 GB'
-      ]
+      value: 'Até 512 GB'
     },
     {
       '@type': 'PropertyValue',
       name: 'Memória RAM',
-      value: [
-        '4 GB'
-      ]
+      value: '4 GB'
     },
     {
       '@type': 'PropertyValue',
       name: 'Processador',
-      value: [
-        'OctaCore 1.8Ghz'
-      ]
+      value: 'OctaCore 1.8Ghz'
     },
     {
       '@type': 'PropertyValue',
       name: 'LTE (4G)',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Chip',
-      value: [
-        'Nano'
-      ]
+      value: 'Nano'
     },
     {
       '@type': 'PropertyValue',
       name: 'GPRS',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Dual Chip',
-      value: [
-        'dual'
-      ]
+      value: 'dual'
     },
     {
       '@type': 'PropertyValue',
       name: 'SMS',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Bluetooth',
-      value: [
-        'Sim'
-      ]
+      value: 'Sim'
     },
     {
       '@type': 'PropertyValue',
       name: 'Medidas do Aparelho',
-      value: [
-        '15,8 x 7,4 x 0,7'
-      ]
+      value: '15,8 x 7,4 x 0,7'
     },
     {
       '@type': 'PropertyValue',
       name: 'Sistema Operacional',
-      value: [
-        'Android 9.0'
-      ]
+      value: 'Android 9.0'
     },
     {
       '@type': 'PropertyValue',
       name: 'Peso do aparelho (gr)',
-      value: [
-        '169g'
-      ]
+      value: '169g'
     },
     {
       '@type': 'PropertyValue',
       name: 'EAN',
-      value: [
-        '7892509112437, 7892509112147'
-      ]
+      value: ['7892509112437, 7892509112147']
     },
     {
       '@type': 'PropertyValue',
       name: 'NCM',
-      value: [
-        '8517.12.31'
-      ]
+      value: '8517.12.31'
     },
     {
       '@type': 'PropertyValue',
       name: 'Conteúdo da Embalagem',
-      value: [
-        '01 Smartphone, 01 Carregador, 01 Cabo USB, 01 Fone de ouvido, 01 Extrator de Chip, 01 Manual do usuário'
-      ]
+      value: '01 Smartphone, 01 Carregador, 01 Cabo USB, 01 Fone de ouvido, 01 Extrator de Chip, 01 Manual do usuário'
     },
     {
       '@type': 'PropertyValue',
       name: 'Destaque',
-      value: [
-        'Sale'
-      ]
+      value: 'Sale'
     },
     {
       '@type': 'PropertyValue',
       name: 'Tamanho',
-      value: [
-        'Único'
-      ]
+      value: 'Único'
     }
   ],
   aggregateRating: {
