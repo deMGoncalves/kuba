@@ -27,7 +27,7 @@ export default (page) => ({
     url: 'https://www.samsung.com/br'
   },
   color: 'Branco',
-  description: 'Smartphone Samsung A307GT Galaxy A30S 64GB Câmera Tripla Traseira de 25MP+5MP+8MP Ultra Wide de 123° Selfie de 16MP Tela infinita de 6,4" com Leitor Digital na Tela Bateria de 4000mAh com Carregamento Rápido de 15W Memória Interna de 64GB e 4GB RAM TV Digital HD Pasta Segura Dual Messenger WiFi Inteligente Garantia de 12 meses do fabricante EAN 7892509112437, 7892509112147',
+  description: f.or(page.description, ''),
   image: 'https://cea.vteximg.com.br/arquivos/ids/10849279/Smartphone-Samsung-A307GT-Galaxy-A30S-64GB-Branco-9868849-Branco_1.jpg',
   model: 'SM-A307GT/DS',
   mpn: '9868849-Branco',
