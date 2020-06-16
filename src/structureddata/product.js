@@ -34,7 +34,7 @@ export default (page) => ({
   name: f.or(page.title, 'Zuen'),
   offers: {
     '@type': 'AggregateOffer',
-    highPrice: '1399.00',
+    highPrice: '1599.00',
     lowPrice: '1329.05',
     offers: [
       {
@@ -53,7 +53,36 @@ export default (page) => ({
         itemCondition: 'NewCondition',
         priceSpecification: {
           '@type': 'PriceSpecification',
-          price: '1399.00',
+          price: '1599.00',
+          priceCurrency: 'BRL'
+        },
+        priceValidUntil: '2040-06-01',
+        seller: {
+          '@type': 'Organization',
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '4.7',
+            reviewCount: '1840'
+          },
+          logo: 'https://res.cloudinary.com/djzuqd5ir/image/upload/f_auto,q_auto/v1580463533/header/logo_cea_V3_branco_kjzbp1.png',
+          name: 'C&A',
+          url: 'https://www.cea.com.br'
+        },
+        url: 'https://www.cea.com.br/smartphone-samsung-a307gt-galaxy-a30s-64gb-branco-9868849-branco/p'
+      },
+      {
+        '@type': 'Offer',
+        acceptedPaymentMethod: [
+          {
+            '@type': 'PaymentMethod',
+            name: 'Boleto'
+          }
+        ],
+        availability: 'InStock',
+        itemCondition: 'NewCondition',
+        priceSpecification: {
+          '@type': 'PriceSpecification',
+          price: '1329.05',
           priceCurrency: 'BRL'
         },
         priceValidUntil: '2040-06-01',
@@ -70,6 +99,7 @@ export default (page) => ({
         },
         url: 'https://www.cea.com.br/smartphone-samsung-a307gt-galaxy-a30s-64gb-branco-9868849-branco/p'
       }
+
     ],
     offerCount: '2',
     priceCurrency: 'BRL'
