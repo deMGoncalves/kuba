@@ -1,5 +1,6 @@
 import h from '@h'
 import organization from './organization'
+import website from './website'
 
 export default (Klass) =>
   function () {
@@ -9,7 +10,8 @@ export default (Klass) =>
       <script type='application/ld+json'>
         {
           JSON.stringify([
-            organization
+            organization,
+            website
           ])
         }
       </script>
