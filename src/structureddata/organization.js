@@ -1,5 +1,3 @@
-import h from '@h'
-
 export default {
   '@context': 'http://schema.org',
   '@type': 'Organization',
