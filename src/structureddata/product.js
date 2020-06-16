@@ -196,7 +196,7 @@ export default (page) => ({
   },
   color: 'Branco',
   description: f.or(page.description, ''),
-  image: 'https://cea.vteximg.com.br/arquivos/ids/10849279/Smartphone-Samsung-A307GT-Galaxy-A30S-64GB-Branco-9868849-Branco_1.jpg',
+  image: f.or(page.image, ''),
   model: 'SM-A307GT/DS',
   mpn: '9868849-Branco',
   name: f.or(page.title, 'Zuen'),
