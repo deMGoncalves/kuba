@@ -6,13 +6,7 @@ export default {
   name: 'Zuen',
   logo: 'https://dummyimage.com/112x112/1a1a1a/1a1a1a',
   url: 'https://zuen.store',
-  sameAs: [
-    'https://www.facebook.com/JRMOD',
-    'https://www.facebook.com/rossettijr',
-    'https://twitter.com/juniorrossetti',
-    'https://www.instagram.com/jrmod/',
-    'https://www.youtube.com/user/rossettijr'
-  ],
+  sameAs: 'https://github.com/oneOffJS/zuen',
   address: {
     '@type': 'PostalAddress',
     postalCode: '05523-000',
