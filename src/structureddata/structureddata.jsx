@@ -12,7 +12,7 @@ export default (Klass) =>
         {
           JSON.stringify([
             organization,
-            product,
+            product(page),
             website
           ])
         }

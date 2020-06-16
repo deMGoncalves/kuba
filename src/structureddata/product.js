@@ -1,4 +1,6 @@
-export default {
+import * as f from '@f'
+
+export default (page) => ({
   '@context': 'http://schema.org/',
   '@type': 'Product',
   additionalProperty: [
@@ -29,7 +31,7 @@ export default {
   image: 'https://cea.vteximg.com.br/arquivos/ids/10849279/Smartphone-Samsung-A307GT-Galaxy-A30S-64GB-Branco-9868849-Branco_1.jpg',
   model: 'SM-A307GT/DS',
   mpn: '9868849-Branco',
-  name: 'Smartphone Samsung A307GT Galaxy A30S 64GB Branco',
+  name: f.or(page.title, 'Zuen'),
   offers: {
     '@type': 'AggregateOffer',
     highPrice: '1399.00',
@@ -104,4 +106,4 @@ export default {
   sameAs: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZKBZTO',
   sku: '2648093',
   url: 'https://www.cea.com.br/smartphone-samsung-a307gt-galaxy-a30s-64gb-branco-9868849-branco/p'
-}
+})
