@@ -5,5 +5,5 @@ import style from './style.css'
 export default (attr, child) =>
   <picture className={[style.picture, attr.className]}>
     { child }
-    <img className={style.picture__img} loading='lazy' alt={f.or(attr.alt, 'JRMod & Chutando lata pedals')} />
+    <img className={style.picture__img} loading='lazy' alt={f.or(attr.alt, 'Zuen Store | Uma visão além da programação')} />
   </picture>
