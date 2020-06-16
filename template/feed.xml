@@ -18,9 +18,9 @@
 			<g:color>Branco</g:color>
 			<g:gtin>7892509112437</g:gtin>
 			<g:product_type>Smartphone</g:product_type>
-			<g:additional_image_link>https://dummyimage.com/112x112/1a1a1a/1a1a1a</g:image_link>
-			<g:additional_image_link>https://dummyimage.com/112x112/1a1a1a/1a1a1a</g:image_link>
-			<g:additional_image_link>https://dummyimage.com/112x112/1a1a1a/1a1a1a</g:image_link>
+			<g:additional_image_link>https://dummyimage.com/112x112/1a1a1a/1a1a1a</g:additional_image_link>
+			<g:additional_image_link>https://dummyimage.com/112x112/1a1a1a/1a1a1a</g:additional_image_link>
+			<g:additional_image_link>https://dummyimage.com/112x112/1a1a1a/1a1a1a</g:additional_image_link>
 		</item>
 	</channel>
 </rss>
