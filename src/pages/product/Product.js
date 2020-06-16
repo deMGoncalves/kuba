@@ -11,6 +11,9 @@ import component from './component'
 @structureddata
 @twittercard
 class Product {
+  get title () {
+    return 'Samsung Galaxy A30s 64GB Branco'
+  }
 }
 
 export default Product
