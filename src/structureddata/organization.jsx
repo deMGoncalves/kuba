@@ -5,7 +5,7 @@ export default {
   '@type': 'Organization',
   name: 'Zuen',
   logo: 'https://dummyimage.com/112x112/1a1a1a/1a1a1a',
-  url: 'https://jrmod.net',
+  url: 'https://zuen.store',
   sameAs: [
     'https://www.facebook.com/JRMOD',
     'https://www.facebook.com/rossettijr',
