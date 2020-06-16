@@ -182,8 +182,8 @@ export default (page) => ({
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '3.5',
-    reviewCount: '11'
+    ratingValue: '4.5',
+    reviewCount: '1'
   },
   audience: {
     '@type': 'PeopleAudience',
@@ -196,9 +196,9 @@ export default (page) => ({
   },
   color: 'Branco',
   description: f.or(page.description, ''),
+  gtin: '7892509112437',
   image: f.or(page.image, ''),
   model: 'SM-A307GT/DS',
-  mpn: '9868849-Branco',
   name: f.or(page.title, 'Zuen'),
   offers: {
     '@type': 'AggregateOffer',
@@ -272,7 +272,7 @@ export default (page) => ({
     offerCount: '2',
     priceCurrency: 'BRL'
   },
-  productID: '2268118',
+  productID: '1EAVNB1BN',
   review: [
     {
       '@type': 'Review',
@@ -283,7 +283,7 @@ export default (page) => ({
       reviewRating: {
         '@type': 'Rating',
         bestRating: '5',
-        ratingValue: '1',
+        ratingValue: '5',
         worstRating: '1'
       }
     },
@@ -302,6 +302,6 @@ export default (page) => ({
     }
   ],
   sameAs: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZKBZTO',
-  sku: '2648093',
-  url: 'https://www.cea.com.br/smartphone-samsung-a307gt-galaxy-a30s-64gb-branco-9868849-branco/p'
+  sku: '1EAVNDRKA',
+  url: location.href
 })
