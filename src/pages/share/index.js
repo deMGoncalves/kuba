@@ -1,4 +1,3 @@
-import AspirationThreeBanners from './aspiration-three-banners'
 import Container from './container'
 import DisplayProducts from './display-products'
 import Footer from './footer'
@@ -17,7 +16,6 @@ import NavigationBubbles from './navigation-bubbles'
 import PromoThreeBanners from './promo-three-banners'
 
 export {
-  AspirationThreeBanners,
   Container,
   DisplayProducts,
   Footer,
