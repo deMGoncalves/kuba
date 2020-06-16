@@ -15,6 +15,6 @@ export default {
     addressLocality: 'Guarulhos, Jd. Adriana',
     addressCountry: 'BR',
     telephone: '+55 11 94631-4083',
-    email: 'rossettijrmod@hotmail.com'
+    email: 'cleber.engineer@hotmail.com'
   }
 }
