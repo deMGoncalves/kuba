@@ -12,7 +12,7 @@ export default {
     postalCode: '07135-313',
     streetAddress: 'Rua Floro de Oliveira, 361',
     addressRegion: 'SP',
-    addressLocality: 'Bairro Ferreira',
+    addressLocality: 'Guarulhos, Jd. Adriana',
     addressCountry: 'BR',
     telephone: '+55 11 3881-9937',
     email: 'rossettijrmod@hotmail.com'
