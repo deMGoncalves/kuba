@@ -9,7 +9,7 @@ export default {
   sameAs: 'https://github.com/oneOffJS/zuen',
   address: {
     '@type': 'PostalAddress',
-    postalCode: '05523-000',
+    postalCode: '07135-313',
     streetAddress: 'Rua Ministro Edmundo Lins, 199',
     addressRegion: 'SP',
     addressLocality: 'Bairro Ferreira',
