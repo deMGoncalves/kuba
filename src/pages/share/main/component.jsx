@@ -1,4 +1,5 @@
 import h from '@h'
 import './reset.css'
 
-export default (_, chield) => <main>{ chield }</main>
+export default (_, chield) =>
+  <main>{ chield }</main>
