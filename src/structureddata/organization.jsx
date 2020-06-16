@@ -14,7 +14,7 @@ export default {
     addressRegion: 'SP',
     addressLocality: 'Guarulhos, Jd. Adriana',
     addressCountry: 'BR',
-    telephone: '+55 11 3881-9937',
+    telephone: '+55 11 94631-4083',
     email: 'rossettijrmod@hotmail.com'
   }
 }
