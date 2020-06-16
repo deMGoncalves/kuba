@@ -6,7 +6,7 @@ export default (page) =>
     <s.Container>
       <h1>{ page.title }</h1>
       <s.Image alt={page.title}>
-        <source srcSet={page.image} />
+        <source srcSet={page.image[0]} />
       </s.Image>
       <data value='1329.05'>R$ 1.329,05</data>
     </s.Container>

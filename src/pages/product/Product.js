@@ -4,7 +4,12 @@ import opengraph from '@opengraph'
 import structureddata from '@structureddata'
 import twittercard from '@twittercard'
 import component from './component'
-import image from './samsung-galaxy-a30s-64gb-branco.jpg'
+import imagemFrente from './samsung-galaxy-a30s-64gb-branco-frente.jpg'
+import imagemVerso from './samsung-galaxy-a30s-64gb-branco-verso.jpg'
+import imagemDiagonalDireito from './samsung-galaxy-a30s-64gb-branco-diagonal-direito.jpg'
+import imagemDiagonalEsquerdo from './samsung-galaxy-a30s-64gb-branco-diagonal-esquerdo.jpg'
+import imagemLateralDireito from './samsung-galaxy-a30s-64gb-branco-lateral-direito.jpg'
+import imagemLateralEsquerdo from './samsung-galaxy-a30s-64gb-branco-lateral-esquerdo.jpg'
 
 @paint(component)
 @metadata
@@ -13,11 +18,11 @@ import image from './samsung-galaxy-a30s-64gb-branco.jpg'
 @twittercard
 class Product {
   get description () {
-    return 'O Samsung Galaxy A30s é um smartphone Android de bom nível, ótimo para fotos, que pode satisfazer até o mais exigente dos usuários. Tem uma enorme tela Touchscreen de 6.4 polegadas com uma resolução de 1560x720 pixel que não é das mais elevadas. Sobre as características deste Samsung Galaxy A30s na verdade não falta nada. Começando pelo LTE 4G que permite a transferência de dados e excelente navegação na internet, além de conectividade Wi-fi e GPS. Tem também leitor multimídia, rádio, videoconferência, TV e bluetooth. Enfatizamos a boa memória interna de 64 GB com a possibilidade de expansão'
+    return 'Com seu processador octa-core, o Galaxy A30s oferece desempenho potente, memória RAM e armazenamento para melhorar sua experiência gamer móvel, e carregamento rápido para você aproveitar seu dia'
   }
 
   get image () {
-    return image
+    return [imagemFrente, imagemVerso, imagemDiagonalDireito, imagemDiagonalEsquerdo, imagemLateralDireito, imagemLateralEsquerdo]
   }
 
   get title () {
