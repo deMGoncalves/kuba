@@ -1,14 +1,7 @@
 import h from '@h'
 import * as f from '@f'
 
-const __image__ = Symbol('image')
-const defaultUrl = 'https://dummyimage.com/200x200/1a1a1a/1a1a1a.png'
-
 export default (page) =>
   []
-    .concat(page[__image__])
-    .forEach(url => document.head.appendChild(<meta property='og:image' content={f.or(url, defaultUrl)} />))
-
-export {
-  __image__
-}
+    .concat(page.image)
+    .forEach(url => document.head.appendChild(<meta property='og:image' content={f.or(url, '')} />))
