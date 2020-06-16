@@ -1,3 +1,4 @@
+import h from '@h'
 import organization from './organization'
 
 export default (Klass) =>
