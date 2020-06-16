@@ -10,7 +10,7 @@ import component from './component'
 @opengraph
 @structureddata
 @twittercard
-class Home {
+class Product {
 }
 
-export default Home
+export default Product
