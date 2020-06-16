@@ -9,7 +9,7 @@ export default (Klass) =>
       <script type='application/ld+json'>
         {
           JSON.stringify([
-            organization(page)
+            organization
           ])
         }
       </script>
