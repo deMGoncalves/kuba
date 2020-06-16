@@ -1,6 +1,4 @@
 import Container from './container'
-import DisplayProducts from './display-products'
-import Footer from './footer'
 import Header from './header'
 import HighlightBanner from './highlight-banner'
 import HighlightBenefits from './highlight-benefits'
@@ -17,8 +15,6 @@ import PromoThreeBanners from './promo-three-banners'
 
 export {
   Container,
-  DisplayProducts,
-  Footer,
   Header,
   HighlightBanner,
   HighlightBenefits,
