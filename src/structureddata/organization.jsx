@@ -3,7 +3,7 @@ import h from '@h'
 export default {
   '@context': 'http://schema.org',
   '@type': 'Organization',
-  name: 'JRMod',
+  name: 'Zuen',
   logo: 'https://dummyimage.com/112x112/1a1a1a/1a1a1a',
   url: 'https://jrmod.net',
   sameAs: [
