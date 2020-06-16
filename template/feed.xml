@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+	<channel>
+		<title>Zuen</title>
+		<link>https://zuen.store</link>
+		<description>JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!</description>
+		<item>
+			<g:id>SM-A307GZWBZTO</g:id>
+			<g:title>Samsung Galaxy A30s 64GB Branco</g:title>
+			<g:description>O Samsung Galaxy A30s é um smartphone Android de bom nível, ótimo para fotos, que pode satisfazer até o mais exigente dos usuários. Tem uma enorme tela Touchscreen de 6.4 polegadas com uma resolução de 1560x720 pixel que não é das mais elevadas. Sobre as características deste Samsung Galaxy A30s na verdade não falta nada. Começando pelo LTE 4G que permite a transferência de dados e excelente navegação na internet, além de conectividade Wi-fi e GPS. Tem também leitor multimídia, rádio, videoconferência, TV e bluetooth. Enfatizamos a boa memória interna de 64 GB com a possibilidade de expansão</g:description>
+			<g:link>https://zuen.store</g:link>
+			<g:image_link>https://dummyimage.com/112x112/1a1a1a/1a1a1a</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>1599.00 BRL</g:price>
+			<g:sale_price>1329.05 BRL</g:sale_price>
+			<g:brand>Samsung</g:brand>
+			<g:color>Branco</g:color>
+			<g:gtin>7892509112437</g:gtin>
+			<g:product_type>Smartphone</g:product_type>
+			<g:additional_image_link>https://dummyimage.com/112x112/1a1a1a/1a1a1a</g:image_link>
+			<g:additional_image_link>https://dummyimage.com/112x112/1a1a1a/1a1a1a</g:image_link>
+			<g:additional_image_link>https://dummyimage.com/112x112/1a1a1a/1a1a1a</g:image_link>
+		</item>
+	</channel>
+</rss>
