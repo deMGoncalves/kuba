@@ -9,7 +9,10 @@ export default {
     streetAddress: 'Rua Floro de Oliveira, 361',
     addressRegion: 'SP',
     addressLocality: 'Guarulhos, Jd. Adriana',
-    addressCountry: 'BR',
+    addressCountry: {
+      '@type': 'Country',
+      name: 'BR'
+    },
     telephone: '+55 11 94631-4083',
     email: 'cleber.engineer@hotmail.com'
   },
