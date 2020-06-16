@@ -1,5 +1,4 @@
 import Container from './container'
-import HighlightBanner from './highlight-banner'
 import HighlightBenefits from './highlight-benefits'
 import HighlightHalfBanner from './highlight-half-banner'
 import HighlightTitle from './highlight-title'
@@ -14,7 +13,6 @@ import PromoThreeBanners from './promo-three-banners'
 
 export {
   Container,
-  HighlightBanner,
   HighlightBenefits,
   HighlightHalfBanner,
   HighlightTitle,
