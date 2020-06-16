@@ -1,13 +1,13 @@
 {
 	"dir" : "ltr",
 	"lang" : "Portuguese",
-	"name" : "JRMod & Chutando Lata Pedals",
+	"name" : "Zuen",
 	"scope" : "/",
 	"display" : "fullscreen",
-	"start_url" : "https://jrmod.net/",
-	"short_name" : "JRMod",
+	"start_url" : "https://zuen.store",
+	"short_name" : "Zuen",
 	"theme_color" : "#1A1A1A",
-	"description" : "JRMod é uma marca/empresa de modificação e aperfeiçoamento de pedais de efeitos do Brasil, considerada uma das melhores do mercado",
+	"description" : "JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!",
 	"orientation" : "portrait",
 	"background_color" : "#1a1a1a",
 	"related_applications" : [],
@@ -24,7 +24,7 @@
 			"sizes": "512x512"
 		}
   ],
-	"url" : "https://jrmod.net",
+	"url" : "https://zuen.store",
 	"screenshots" : [],
 	"generated" : "true"
 }
