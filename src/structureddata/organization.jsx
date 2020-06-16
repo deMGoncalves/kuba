@@ -10,7 +10,7 @@ export default {
   address: {
     '@type': 'PostalAddress',
     postalCode: '07135-313',
-    streetAddress: 'Rua Ministro Edmundo Lins, 199',
+    streetAddress: 'Rua Floro de Oliveira, 361',
     addressRegion: 'SP',
     addressLocality: 'Bairro Ferreira',
     addressCountry: 'BR',
