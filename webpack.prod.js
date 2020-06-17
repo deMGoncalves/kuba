@@ -2,21 +2,12 @@ const path = require('path')
 const common = require('./webpack.common.js')
 const merge = require('webpack-merge')
 
-const { GenerateSW } = require('workbox-webpack-plugin')
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 
 module.exports = merge.smart(common, {
   mode: 'production',
   plugins: [
-    new GenerateSW({
-      clientsClaim: true,
-      skipWaiting: true,
-      runtimeCaching: [
-        {
-          urlPattern: new RegExp('https://zuen.store'),
-          handler: 'StaleWhileRevalidate'
-        }
-      ]
-    })
+    new WorkboxWebpackPlugin.GenerateSW()
   ],
   optimization: {
     moduleIds: 'hashed',
