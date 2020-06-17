@@ -182,12 +182,5 @@
   font-weight: 400;
   padding: 5px 0;
   text-transform: none;
-}
-
-.details__dt {
-  width: 30%;
-}
-
-.details__dd {
-  width: 70%;
+  width: 50%;
 }
