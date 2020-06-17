@@ -36,3 +36,7 @@
 .icon__star::before {
   content: "\63";
 }
+
+.icon__down::before {
+  content: "\65";
+}
