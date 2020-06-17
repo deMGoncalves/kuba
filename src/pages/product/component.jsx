@@ -20,11 +20,11 @@ export default (page) =>
       <div className={style.product__div}>
         <h1 className={style.product__title}>{ page.title }</h1>
         <ul className={style.rating}>
-          <li className={style.rating}><s.Icon>star--full</s.Icon></li>
-          <li className={style.rating}><s.Icon>star--full</s.Icon></li>
-          <li className={style.rating}><s.Icon>star--full</s.Icon></li>
-          <li className={style.rating}><s.Icon>star--half</s.Icon></li>
-          <li className={style.rating}><s.Icon>star</s.Icon></li>
+          <li className={style.rating__li}><s.Icon>star--full</s.Icon></li>
+          <li className={style.rating__li}><s.Icon>star--full</s.Icon></li>
+          <li className={style.rating__li}><s.Icon>star--full</s.Icon></li>
+          <li className={style.rating__li}><s.Icon>star--half</s.Icon></li>
+          <li className={style.rating__li}><s.Icon>star</s.Icon></li>
         </ul>
         <data className={style.product__price} value='1599.00'>de R$ 1.599,00</data>
         <data className={style.product__salePrice} value='1329.05'>R$ <strong>1.329,05</strong></data>

@@ -116,6 +116,10 @@
   list-style: none;
 }
 
+.rating__li {
+  color: var(--COLOR-WARNING);
+}
+
 .colors {
   display: flex;
   list-style: none;
