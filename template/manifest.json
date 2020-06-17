@@ -4,7 +4,7 @@
 	"name" : "Zuen",
 	"scope" : "/",
 	"display" : "fullscreen",
-	"start_url" : ".",
+	"start_url" : "./",
 	"short_name" : "Zuen",
 	"theme_color" : "#1A1A1A",
 	"description" : "JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!",
@@ -14,12 +14,12 @@
 	"prefer_related_applications" : false,
 	"icons" : [
 		{
-			"src": "https://dummyimage.com/192x192/1a1a1a/1a1a1a",
+			"src": "https://zuen.store/zuen.png",
       "type": "image/png",
 			"sizes": "192x192"
 		},
     {
-			"src": "https://dummyimage.com/512x512/1a1a1a/1a1a1a",
+			"src": "https://zuen.store/zuen.png",
       "type": "image/png",
 			"sizes": "512x512"
 		}
