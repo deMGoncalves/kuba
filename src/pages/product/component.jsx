@@ -4,6 +4,15 @@ import style from './style.css'
 
 export default (page) =>
   <s.Main>
+    <nav className={style.breadcrumb}>
+      <s.Container>
+        <ul className={style.breadcrumb__ul}>
+          <li className={style.breadcrumb__home}><a className={style.breadcrumb__a} href='/'>Home</a></li>
+          <li className={style.breadcrumb__separator}>•</li>
+          <li className={style.breadcrumb__product}>Samsung Galaxy A30s 64GB Branco</li>
+        </ul>
+      </s.Container>
+    </nav>
     <s.Container className={style.product}>
       <s.Image className={style.product__image} alt={page.title}>
         <source srcSet={page.image[0]} />
