@@ -21,6 +21,11 @@ export default (page) =>
         <h1 className={style.product__title}>{ page.title }</h1>
         <data className={style.product__price} value='1599.00'>de R$ 1.599,00</data>
         <data className={style.product__salePrice} value='1329.05'>R$ <strong>1.329,05</strong></data>
+        <p className={style.product__priceConditional}>
+          à vista no boleto ou cartão (5% de desconto)<br />
+          ou em até 10x de R$ 139,90 sem juros no cartão<br />
+          total a prazo de R$ 1.399,00
+        </p>
         <p className={style.product__description}>{ page.description }</p>
         <h2 className={style.product__color}>Cor</h2>
         <ul className={style.colors}>

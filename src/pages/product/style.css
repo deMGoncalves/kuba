@@ -80,6 +80,7 @@
 .product__price {
   font-size: 11px;
   font-weight: 300;
+  margin-top: 10px;
   text-decoration: line-through;
 }
 
@@ -91,6 +92,11 @@
 .product__salePrice strong {
   color: var(--COLOR-MASTER-DARKER);
   font-size: 18px;
+}
+
+.product__priceConditional {
+  font-size: 11px;
+  font-weight: 300;
 }
 
 .product__description {
