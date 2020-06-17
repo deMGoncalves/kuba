@@ -43,7 +43,7 @@ export default (page) =>
           <li className={style.memory__64}>64 GB</li>
         </ul>
         <details className={[style.details, style.product__details]}>
-          <summary className={style.details__summary}>Especificações <s.Icon>down</s.Icon></summary>
+          <summary className={style.details__summary}>Especificações <s.Icon className={style.details__icon}>down</s.Icon></summary>
           <dl className={style.details__dl}>
             <dt className={style.details__dt}>E-mail (convencional)</dt>
             <dd className={style.details__dd}>Sim</dd>

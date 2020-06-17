@@ -154,8 +154,19 @@
   padding: 5px 40px;
 }
 
+.details__summary {
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+
 .details__summary::-webkit-details-marker {
   display: none;
+}
+
+.details__icon {
+  font-size: 18px;
+  margin-left: 10px;
 }
 
 .details__dl {
