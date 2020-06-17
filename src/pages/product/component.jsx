@@ -19,7 +19,8 @@ export default (page) =>
       </s.Image>
       <div className={style.product__div}>
         <h1 className={style.product__title}>{ page.title }</h1>
-        <data className={style.product__price} value='1329.05'>R$ 1.329,05</data>
+        <data className={style.product__price} value='1599.00'>de R$ 1.599,00</data>
+        <data className={style.product__salePrice} value='1329.05'>R$ <strong>1.329,05</strong></data>
         <p className={style.product__description}>{ page.description }</p>
         <h2 className={style.product__color}>Cor</h2>
         <ul className={style.colors}>

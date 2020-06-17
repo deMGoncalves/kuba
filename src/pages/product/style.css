@@ -60,6 +60,8 @@
 }
 
 .product__div {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
 }
 
@@ -76,8 +78,18 @@
 }
 
 .product__price {
-  font-size: 18px;
+  font-size: 11px;
   font-weight: 300;
+  text-decoration: line-through;
+}
+
+.product__salePrice {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.product__salePrice strong {
+  font-size: 18px;
 }
 
 .product__description {
