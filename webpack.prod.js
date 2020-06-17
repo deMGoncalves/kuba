@@ -9,7 +9,13 @@ module.exports = merge.smart(common, {
   plugins: [
     new GenerateSW({
       clientsClaim: true,
-      skipWaiting: true
+      skipWaiting: true,
+      runtimeCaching: [
+        {
+          urlPattern: new RegExp('https://zuen.store'),
+          handler: 'StaleWhileRevalidate'
+        }
+      ]
     })
   ],
   optimization: {
