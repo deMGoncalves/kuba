@@ -12,11 +12,13 @@ export default (page) =>
         <h1 className={style.product__title}>{ page.title }</h1>
         <data className={style.product__price} value='1329.05'>R$ 1.329,05</data>
         <p className={style.product__description}>{ page.description }</p>
-        <h2 className={style.product__color}>Cores</h2>
+        <h2 className={style.product__color}>Cor</h2>
         <ul className={style.colors}>
-          <li className={style.colors__white} />
-          <li className={style.colors__black} />
-          <li className={style.colors__purple} />
+          <li className={style.colors__white}>Branco</li>
+        </ul>
+        <h2 className={style.product__memory}>Memória</h2>
+        <ul className={style.memory}>
+          <li className={style.memory__64}>64 GB</li>
         </ul>
       </div>
     </s.Container>

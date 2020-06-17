@@ -46,7 +46,8 @@
   margin-top: 20px;
 }
 
-.product__color {
+.product__color,
+.product__memory {
   color: var(--COLOR-MASTER-DARKER);
   font-size: 11px;
   margin-top: 20px;
@@ -59,15 +60,24 @@
   margin-top: 10px;
 }
 
-.colors li:not(:first-of-type) {
-  margin-left: 10px;
-}
-
-.colors__white,
-.colors__black,
-.colors__purple {
+.colors__white {
+  background-color: #fff;
   border: 2px solid var(--COLOR-MASTER-DARKER);
   border-radius: 50%;
   height: 40px;
+  overflow: hidden;
+  text-indent: -999px;
   width: 40px;
+}
+
+.memory {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.memory__64 {
+  border: 2px solid var(--COLOR-MASTER-DARKER);
+  color: var(--COLOR-MASTER-DARK);
+  padding: 5px 40px;
 }
