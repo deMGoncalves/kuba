@@ -89,6 +89,7 @@
 }
 
 .product__salePrice strong {
+  color: var(--COLOR-MASTER-DARKER);
   font-size: 18px;
 }
 
