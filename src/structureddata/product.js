@@ -232,11 +232,11 @@ export default (page) => ({
             ratingValue: '4.7',
             reviewCount: '1840'
           },
-          logo: 'https://res.cloudinary.com/djzuqd5ir/image/upload/f_auto,q_auto/v1580463533/header/logo_cea_V3_branco_kjzbp1.png',
-          name: 'C&A',
-          url: 'https://www.cea.com.br'
+          logo: 'https://zuen.store/zuen.png',
+          name: 'Zuen',
+          url: 'https://zuen.store'
         },
-        url: 'https://www.cea.com.br/smartphone-samsung-a307gt-galaxy-a30s-64gb-branco-9868849-branco/p'
+        url: location.href
       },
       {
         '@type': 'Offer',
@@ -258,14 +258,14 @@ export default (page) => ({
           '@type': 'Organization',
           aggregateRating: {
             '@type': 'AggregateRating',
-            ratingValue: '4.7',
-            reviewCount: '1840'
+            ratingValue: '5',
+            reviewCount: '2'
           },
-          logo: 'https://res.cloudinary.com/djzuqd5ir/image/upload/f_auto,q_auto/v1580463533/header/logo_cea_V3_branco_kjzbp1.png',
-          name: 'C&A',
-          url: 'https://www.cea.com.br'
+          logo: 'https://zuen.store/zuen.png',
+          name: 'Zuen',
+          url: 'https://zuen.store'
         },
-        url: 'https://www.cea.com.br/smartphone-samsung-a307gt-galaxy-a30s-64gb-branco-9868849-branco/p'
+        url: location.href
       }
 
     ],
