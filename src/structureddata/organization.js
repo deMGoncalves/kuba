@@ -7,7 +7,7 @@ export default {
   address,
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '5',
+    ratingValue: '4.5',
     reviewCount: '2'
   },
   logo: 'https://zuen.store/zuen.png',
