@@ -7,7 +7,11 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 module.exports = merge.smart(common, {
   mode: 'production',
   plugins: [
-    new WorkboxWebpackPlugin.GenerateSW()
+    new WorkboxWebpackPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true,
+      swDest: 'sw.js',
+    })
   ],
   optimization: {
     moduleIds: 'hashed',
