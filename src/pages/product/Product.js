@@ -4,6 +4,7 @@ import opengraph from '@opengraph'
 import structureddata from '@structureddata'
 import twittercard from '@twittercard'
 import component from './component'
+
 import imagemFrente from './samsung-galaxy-a30s-64gb-branco-frente.jpg'
 import imagemVerso from './samsung-galaxy-a30s-64gb-branco-verso.jpg'
 import imagemDiagonalDireito from './samsung-galaxy-a30s-64gb-branco-diagonal-direito.jpg'
@@ -17,6 +18,10 @@ import imagemLateralEsquerdo from './samsung-galaxy-a30s-64gb-branco-lateral-esq
 @structureddata
 @twittercard
 class Product {
+  get canonical () {
+    return 'https://zuen.store/samsung-galaxy-a30s-64gb-branco'
+  }
+
   get description () {
     return 'Com seu processador octa-core, o Galaxy A30s oferece desempenho potente, memória RAM e armazenamento para melhorar sua experiência gamer móvel, e carregamento rápido para você aproveitar seu dia'
   }

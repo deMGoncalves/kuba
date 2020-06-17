@@ -3,7 +3,13 @@
   <url>
     <changefreq>daily</changefreq>
     <loc>https://zuen.store</loc>
-    <lastmod>2020-05-01T00:00:00.000Z</lastmod>
-    <priority>1.0</priority>
+    <lastmod>2020-06-01T00:00:00.000Z</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <changefreq>daily</changefreq>
+    <loc>https://zuen.store/samsung-galaxy-a30s-64gb-branco</loc>
+    <lastmod>2020-06-01T00:00:00.000Z</lastmod>
+    <priority>1</priority>
   </url>
 </urlset>
