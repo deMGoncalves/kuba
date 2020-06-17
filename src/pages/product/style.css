@@ -80,7 +80,7 @@
 .product__price {
   font-size: 11px;
   font-weight: 300;
-  margin-top: 10px;
+  margin-top: 20px;
   text-decoration: line-through;
 }
 
@@ -109,6 +109,11 @@
   font-size: 11px;
   margin-top: 20px;
   text-transform: uppercase;
+}
+
+.rating {
+  display: flex;
+  list-style: none;
 }
 
 .colors {

@@ -7,7 +7,7 @@
     "font-family-no-missing-generic-family-keyword": [
       true,
       {
-        "ignoreFontFamilies": ["jrmod-font"]
+        "ignoreFontFamilies": ["zuen"]
       }
     ],
     "order/order": [

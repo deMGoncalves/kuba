@@ -2,19 +2,19 @@
 
 @font-face {
   font-display: swap;
-  font-family: "jrmod-font";
+  font-family: "zuen";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/jrmod-font.eot");
+  src: url("fonts/zuen.eot");
   src:
-    url("fonts/jrmod-font.eot?#iefix") format("embedded-opentype"),
-    url("fonts/jrmod-font.woff") format("woff"),
-    url("fonts/jrmod-font.ttf") format("truetype"),
-    url("fonts/jrmod-font.svg#jrmod-font") format("svg");
+    url("fonts/zuen.eot?#iefix") format("embedded-opentype"),
+    url("fonts/zuen.woff") format("woff"),
+    url("fonts/zuen.ttf") format("truetype"),
+    url("fonts/zuen.svg#zuen") format("svg");
 }
 
 .icon {
-  font-family: "jrmod-font" !important;
+  font-family: "zuen" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal !important;
@@ -25,30 +25,14 @@
   text-transform: none !important;
 }
 
-.icon__globe::before {
+.icon__star--full::before {
   content: "\61";
 }
 
-.icon__users::before {
+.icon__star--half::before {
   content: "\62";
 }
 
-.icon__check::before {
-  content: "\64";
-}
-
-.icon__tag::before {
-  content: "\65";
-}
-
-.icon__map-marker::before {
+.icon__star::before {
   content: "\63";
-}
-
-.icon__foot::before {
-  content: "\67";
-}
-
-.icon__heart::before {
-  content: "\68";
 }
