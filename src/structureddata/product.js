@@ -1,4 +1,6 @@
 import * as f from '@f'
+import organization from './organization'
+import review from './review'
 
 export default (page) => ({
   '@context': 'http://schema.org/',
@@ -183,7 +185,7 @@ export default (page) => ({
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.5',
-    reviewCount: '1'
+    reviewCount: '2'
   },
   audience: {
     '@type': 'PeopleAudience',
@@ -225,17 +227,7 @@ export default (page) => ({
           priceCurrency: 'BRL'
         },
         priceValidUntil: '2040-06-01',
-        seller: {
-          '@type': 'Organization',
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: '4.7',
-            reviewCount: '1840'
-          },
-          logo: 'https://zuen.store/zuen.png',
-          name: 'Zuen',
-          url: 'https://zuen.store'
-        },
+        seller: organization,
         url: location.href
       },
       {
@@ -254,17 +246,7 @@ export default (page) => ({
           priceCurrency: 'BRL'
         },
         priceValidUntil: '2040-06-01',
-        seller: {
-          '@type': 'Organization',
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: '5',
-            reviewCount: '2'
-          },
-          logo: 'https://zuen.store/zuen.png',
-          name: 'Zuen',
-          url: 'https://zuen.store'
-        },
+        seller: organization,
         url: location.href
       }
 
@@ -273,34 +255,7 @@ export default (page) => ({
     priceCurrency: 'BRL'
   },
   productID: '1EAVNB1BN',
-  review: [
-    {
-      '@type': 'Review',
-      author: 'Ellie',
-      datePublished: '2011-04-01',
-      description: 'The lamp burned out and now I have to replace it.',
-      name: 'Not a happy camper',
-      reviewRating: {
-        '@type': 'Rating',
-        bestRating: '5',
-        ratingValue: '5',
-        worstRating: '1'
-      }
-    },
-    {
-      '@type': 'Review',
-      author: 'Lucas',
-      datePublished: '2011-03-25',
-      description: 'Great microwave for the price. It is small and fits in my apartment.',
-      name: 'Value purchase',
-      reviewRating: {
-        '@type': 'Rating',
-        bestRating: '5',
-        ratingValue: '4',
-        worstRating: '1'
-      }
-    }
-  ],
+  review,
   sameAs: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZKBZTO',
   sku: '1EAVNDRKA',
   url: location.href
