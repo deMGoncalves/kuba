@@ -196,7 +196,7 @@ export default (page) => ({
   },
   color: 'Branco',
   description: f.or(page.description, ''),
-  gtin: '7892509112437',
+  gtin8: '7892509112437',
   image: f.or(page.image, ''),
   model: 'SM-A307GT/DS',
   name: f.or(page.title, 'Zuen'),
