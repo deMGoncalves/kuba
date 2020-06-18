@@ -252,6 +252,7 @@ export default (page) => ({
 
     ],
     offerCount: '2',
+    price: '1329.05',
     priceCurrency: 'BRL'
   },
   productID: '1EAVNB1BN',
