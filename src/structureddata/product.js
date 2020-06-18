@@ -4,7 +4,7 @@ import review from './review'
 
 export default (page) => ({
   '@context': 'http://schema.org/',
-  '@id': location.href,
+  '@id': `${location.href}#produto`,
   '@type': 'Product',
   additionalProperty: [
     {
