@@ -259,5 +259,9 @@ export default (page) => ({
   review,
   sameAs: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZKBZTO',
   sku: '1EAVNDRKA',
-  url: location.href
+  url: location.href,
+  weight: {
+    '@type': 'QuantitativeValue',
+    value: '109 g'
+  }
 })
