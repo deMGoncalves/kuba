@@ -267,5 +267,9 @@ export default (page) => ({
   weight: {
     '@type': 'QuantitativeValue',
     value: '109 g'
+  },
+  width: {
+    '@type': 'QuantitativeValue',
+    value: '7 cm'
   }
 })
