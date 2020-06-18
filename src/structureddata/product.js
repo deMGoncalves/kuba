@@ -198,6 +198,10 @@ export default (page) => ({
   },
   color: 'Branco',
   description: f.or(page.description, ''),
+  depth: {
+    '@type': 'QuantitativeValue',
+    value: '4 cm'
+  },
   gtin8: '7892509112437',
   height: {
     '@type': 'QuantitativeValue',
