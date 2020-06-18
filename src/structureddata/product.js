@@ -199,6 +199,10 @@ export default (page) => ({
   color: 'Branco',
   description: f.or(page.description, ''),
   gtin8: '7892509112437',
+  height: {
+    '@type': 'QuantitativeValue',
+    value: '16 cm'
+  },
   image: f.or(page.image, ''),
   model: 'SM-A307GT/DS',
   name: f.or(page.title, 'Zuen'),
