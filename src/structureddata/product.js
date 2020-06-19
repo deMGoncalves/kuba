@@ -1,5 +1,5 @@
 import organization from './organization'
-import review from './review'
+// import review from './review'
 import webpage from './webpage'
 
 export default (page) => ({
@@ -183,11 +183,6 @@ export default (page) => ({
       value: 'Único'
     }
   ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.5',
-    reviewCount: '2'
-  },
   audience: {
     '@type': 'PeopleAudience',
     suggestedGender: 'unisex'
@@ -271,7 +266,6 @@ export default (page) => ({
     priceCurrency: 'BRL'
   },
   productID: '1EAVNB1BN',
-  review,
   sameAs: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZKBZTO',
   sku: '1EAVNDRKA',
   url: location.href,
