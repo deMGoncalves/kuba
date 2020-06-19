@@ -3,6 +3,7 @@ import review from './review'
 
 export default {
   '@context': 'http://schema.org',
+  '@id': 'https://zuen.store',
   '@type': 'Organization',
   address,
   aggregateRating: {
@@ -10,6 +11,7 @@ export default {
     ratingValue: '4.5',
     reviewCount: '2'
   },
+  legalName: 'Zuen Store',
   logo: 'https://zuen.store/zuen.png',
   name: 'Zuen',
   review,

@@ -8,6 +8,7 @@ export default {
   description: 'JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!',
   image: 'https://zuen.store/zuen.png',
   name: 'Zuen',
+  publisher: organization,
   sameAs: 'https://github.com/oneOffJS',
   url: location.href
 }
