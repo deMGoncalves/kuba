@@ -12,6 +12,6 @@ export default (page) => ({
   isBasedOn: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZWBZTO',
   isPartOf: website,
   name: page.title,
-  sameAs: 'https://github.com/oneOffJS',
+  sameAs: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZWBZTO',
   url: location.href
 })
