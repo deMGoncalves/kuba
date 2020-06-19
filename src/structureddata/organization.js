@@ -8,7 +8,7 @@ export default {
   address,
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.5',
+    ratingValue: '4.6',
     reviewCount: '2'
   },
   image: {
