@@ -1,6 +1,7 @@
 import * as f from '@f'
 import organization from './organization'
 import review from './review'
+import webpage from './webpage'
 
 export default (page) => ({
   '@context': 'http://schema.org/',
@@ -209,6 +210,7 @@ export default (page) => ({
     value: '16 cm'
   },
   image: f.or(page.image, ''),
+  mainEntityOfPage: webpage(page),
   model: 'SM-A307GT/DS',
   name: f.or(page.title, 'Zuen'),
   offers: {

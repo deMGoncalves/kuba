@@ -1,14 +1,16 @@
 import organization from './organization'
+import website from './website'
 
-export default {
+export default (page) => ({
   '@context': 'http://schema.org',
   '@id': `${location.href}#webpage`,
   '@type': 'Webpage',
   author: organization,
-  description: 'JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!',
+  description: page.description,
   image: 'https://zuen.store/zuen.png',
   isBasedOn: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZWBZTO',
+  isPartOf: website,
   name: 'Zuen',
   sameAs: 'https://github.com/oneOffJS',
   url: location.href
-}
+})
