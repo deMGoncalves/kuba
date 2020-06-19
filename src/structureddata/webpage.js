@@ -2,7 +2,7 @@ import organization from './organization'
 
 export default {
   '@context': 'http://schema.org',
-  '@id': `${location.href}#website`,
+  '@id': 'https://zuen.store#website',
   '@type': 'Website',
   author: organization,
   description: 'JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!',
@@ -10,5 +10,5 @@ export default {
   name: 'Zuen',
   publisher: organization,
   sameAs: 'https://github.com/oneOffJS',
-  url: location.href
+  url: 'https://zuen.store'
 }

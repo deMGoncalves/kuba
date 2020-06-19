@@ -11,6 +11,12 @@ export default {
     ratingValue: '4.5',
     reviewCount: '2'
   },
+  image: {
+    '@type': 'ImageObject',
+    '@id': 'https://zuen.store/zuen.png#image',
+    caption: 'Zuen',
+    url: 'https://zuen.store/zuen.png'
+  },
   legalName: 'Zuen Store',
   logo: {
     '@type': 'ImageObject',
