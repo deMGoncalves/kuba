@@ -7,7 +7,7 @@ export default (page) => ({
   '@type': 'Webpage',
   author: organization,
   description: page.description,
-  image: 'https://zuen.store/zuen.png',
+  image: page.image,
   inLanguage: 'pr-BR',
   isBasedOn: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZWBZTO',
   isPartOf: website,
