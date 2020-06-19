@@ -9,7 +9,12 @@ export default (page) => ({
   author: organization,
   breadcrumb,
   description: page.description,
-  image: page.image.slice(1),
+  image: {
+    '@type': 'ImageObject',
+    '@id': `${page.image[0]}#image`,
+    caption: page.title,
+    url: page.image[0]
+  },
   inLanguage: 'pr-BR',
   isBasedOn: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZWBZTO',
   isPartOf: website,
