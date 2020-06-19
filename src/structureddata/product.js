@@ -1,4 +1,3 @@
-import * as f from '@f'
 import organization from './organization'
 import review from './review'
 import webpage from './webpage'
@@ -199,7 +198,7 @@ export default (page) => ({
     url: 'https://www.samsung.com/br'
   },
   color: 'Branco',
-  description: f.or(page.description, ''),
+  description: page.description,
   depth: {
     '@type': 'QuantitativeValue',
     value: '4 cm'
@@ -217,7 +216,7 @@ export default (page) => ({
   },
   mainEntityOfPage: webpage(page),
   model: 'SM-A307GT/DS',
-  name: f.or(page.title, 'Zuen'),
+  name: page.title,
   offers: {
     '@type': 'AggregateOffer',
     highPrice: '1599.00',
