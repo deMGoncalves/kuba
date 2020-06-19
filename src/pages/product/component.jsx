@@ -42,6 +42,7 @@ export default (page) =>
         <ul className={style.memory}>
           <li className={style.memory__64}>64 GB</li>
         </ul>
+        <button className={style.product__button} onClick={() => location.assign('https://www.cea.com.br/smartphone-samsung-a307gt-galaxy-a30s-64gb-branco-9868849-branco/p')}>ver produto</button>
         <details className={[style.details, style.product__details]}>
           <summary className={style.details__summary}>Especificações <s.Icon className={style.details__icon}>down</s.Icon></summary>
           <dl className={style.details__dl}>

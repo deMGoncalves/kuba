@@ -117,6 +117,17 @@
   margin-top: 20px;
 }
 
+.product__button {
+  background: var(--COLOR-MASTER-DARKER);
+  border: 2px solid var(--COLOR-MASTER-DARKER);
+  color: var(--COLOR-MASTER-LIGHTEST);
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 12px 40px;
+  text-transform: uppercase;
+}
+
 .rating {
   display: flex;
   list-style: none;
@@ -150,6 +161,7 @@
 
 .memory__64 {
   border: 2px solid var(--COLOR-MASTER-DARKER);
+  border-radius: 20px;
   color: var(--COLOR-MASTER-DARK);
   padding: 5px 40px;
 }
