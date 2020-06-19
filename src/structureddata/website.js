@@ -1,3 +1,4 @@
+import breadcrumb from './breadcrumb'
 import organization from './organization'
 import website from './website'
 
@@ -6,6 +7,7 @@ export default (page) => ({
   '@id': `${location.href}#webpage`,
   '@type': 'Webpage',
   author: organization,
+  breadcrumb,
   description: page.description,
   image: page.image.slice(1),
   inLanguage: 'pr-BR',
