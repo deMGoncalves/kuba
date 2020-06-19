@@ -209,7 +209,12 @@ export default (page) => ({
     '@type': 'QuantitativeValue',
     value: '16 cm'
   },
-  image: f.or(page.image, ''),
+  image: {
+    '@type': 'ImageObject',
+    '@id': `${page.image[0]}#image`,
+    caption: page.title,
+    url: page.image[0]
+  },
   mainEntityOfPage: webpage(page),
   model: 'SM-A307GT/DS',
   name: f.or(page.title, 'Zuen'),
