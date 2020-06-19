@@ -7,7 +7,7 @@ export default (page) => ({
   '@id': `${location.href}#webpage`,
   '@type': 'Webpage',
   author: organization,
-  breadcrumb,
+  breadcrumb: breadcrumb(page),
   description: page.description,
   image: {
     '@type': 'ImageObject',
