@@ -3,12 +3,19 @@ import curry from './curry'
 /**
  * Redefine o numero de parametros de uma funcao
  *
- * @name arity
- * @function
- * @access public
- * @param {Number} n Numero de parametros
- * @param {Function} target Funcao que tera seus numero de parametros redefinido
- * @return {*} Retorna o valor que a funcao alvo retornara
+ * @func
+ * @memberOf f
+ * @since v0.1.0
+ * @category Logic
+ * @sig (a, b) -> (*) -> *
+ * @param {Number} n Número de parametros a função alvo
+ * @param {Function} target Função alvo
+ * @return {Any} Retorna o retorna da execução da função alvo
+ * @example
+ *
+ *      const add = (x, ...args) => args.reduce((a, b) => a + b, x)
+ *      const g = f.arity(2, add)
+ *      g(1, 2, 3) //=> 3
  */
 const arity = (n, target) => {
   switch (n) {
