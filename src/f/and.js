@@ -4,20 +4,20 @@ import curry from './curry'
  * Retorna `true` se ambos os argumentos forem `true`; caso contrário, `falso`
  *
  * @func
- * @memberOf R
+ * @memberOf f
  * @since v0.1.0
  * @category Logic
  * @sig a -> b -> a | b
- * @param {Any} a
- * @param {Any} b
- * @return {Any} the first argument if it is falsy, otherwise the second argument.
- * @see R.both, R.or
+ * @param {Any} x
+ * @param {Any} y
+ * @return {Any} O primeiro argumento se for falso, caso contrário, o segundo argumento
+ * @see f.both, f.or
  * @example
  *
- *      R.and(true, true); //=> true
- *      R.and(true, false); //=> false
- *      R.and(false, true); //=> false
- *      R.and(false, false); //=> false
+ *      f.and(true, true); //=> true
+ *      f.and(true, false); //=> false
+ *      f.and(false, true); //=> false
+ *      f.and(false, false); //=> false
  */
 const and = (x, y) =>
   x && y
