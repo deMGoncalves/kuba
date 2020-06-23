@@ -14,8 +14,8 @@ import curry from './curry'
  * @example
  *
  *      const add = (x, ...args) => args.reduce((a, b) => a + b, x)
- *      const g = f.arity(2, add)
- *      g(1, 2, 3) //=> 3
+ *      const g = f.curry(f.arity(2, add))
+ *      g(1, 2) //=> 3
  */
 const arity = (n, target) => {
   switch (n) {
