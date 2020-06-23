@@ -1,11 +1,23 @@
+import curry from './curry'
+
 /**
- * Retorna uma funcao que sempre ao ser executado retornara o valor fornecido anteriormente
+ * Returns a function that always returns the given value. Note that for
+ * non-primitives the value returned is a reference to the original value.
  *
- * @name always
- * @function
- * @access public
- * @param {*} target Valor que sera retornado nas proximas chamadas
- * @return {Function} Retorna uma funcao, quando executado retorna o o valor fornecido
+ * This function is known as `const`, `constant`, or `K` (for K combinator) in
+ * other languages and libraries.
+ *
+ * @func
+ * @memberOf f
+ * @since v0.1.0
+ * @category Function
+ * @sig a -> (* -> a)
+ * @param {*} val The value to wrap in a function
+ * @return {Function} A Function :: * -> val.
+ * @example
+ *
+ *      const t = f.always('Tee');
+ *      t(); //=> 'Tee'
  */
-export default (value) =>
-  () => value
+export default curry((value) =>
+  () => value)
