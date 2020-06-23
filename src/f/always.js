@@ -4,8 +4,8 @@ import curry from './curry'
  * Retorna uma função que sempre retorna o valor fornecido. Observe que para
  * não primitivos, o valor retornado é uma referência ao valor original
  *
- * This function is known as `const`, `constant`, or `K` (for K combinator) in
- * other languages and libraries.
+ * Esta função é conhecida como `const` ou `K` (para K combinator) em
+ * outras línguas e bibliotecas
  *
  * @func
  * @memberOf f
