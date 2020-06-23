@@ -1,8 +1,8 @@
 import curry from './curry'
 
 /**
- * Returns a function that always returns the given value. Note that for
- * non-primitives the value returned is a reference to the original value.
+ * Retorna uma função que sempre retorna o valor fornecido. Observe que para
+ * não primitivos, o valor retornado é uma referência ao valor original
  *
  * This function is known as `const`, `constant`, or `K` (for K combinator) in
  * other languages and libraries.
