@@ -1,14 +1,23 @@
 import curry from './curry'
 
 /**
- * Operador logico and
+ * Retorna `true` se ambos os argumentos forem `true`; caso contrário, `falso`
  *
- * @name adn
- * @function
- * @access public
- * @param {*} x Primeiro valor
- * @param {*} y Segundo valor
- * @return {Boolean} Verdadeio se a condicao for verdadeiro
+ * @func
+ * @memberOf R
+ * @since v0.1.0
+ * @category Logic
+ * @sig a -> b -> a | b
+ * @param {Any} a
+ * @param {Any} b
+ * @return {Any} the first argument if it is falsy, otherwise the second argument.
+ * @see R.both, R.or
+ * @example
+ *
+ *      R.and(true, true); //=> true
+ *      R.and(true, false); //=> false
+ *      R.and(false, true); //=> false
+ *      R.and(false, false); //=> false
  */
 const and = (x, y) =>
   x && y
