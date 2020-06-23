@@ -19,5 +19,7 @@ import curry from './curry'
  *      const t = f.always('Tee');
  *      t(); //=> 'Tee'
  */
-export default curry((value) =>
-  () => value)
+const always = (value) =>
+  () => value
+
+export default curry(always)
