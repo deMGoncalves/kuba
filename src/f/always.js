@@ -12,8 +12,8 @@ import curry from './curry'
  * @since v0.1.0
  * @category Function
  * @sig a -> (* -> a)
- * @param {*} val The value to wrap in a function
- * @return {Function} A Function :: * -> val.
+ * @param {*} value O valor que sera encapsulado na função
+ * @return {Function} Uma função :: * -> value.
  * @example
  *
  *      const t = f.always('Tee');
