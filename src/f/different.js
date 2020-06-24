@@ -1,5 +1,5 @@
+import arity from './arity'
 import curry from './curry'
-import equal from './equal'
 
 /**
  * Retorna `true` se seus argumentos não forem equivalentes, `false` caso contrário.
@@ -26,7 +26,7 @@ import equal from './equal'
  *      const b = {}; b.v = b;
  *      f.different(a, b); //=> true
  */
-const different = (x, y) =>
-  !equal(x, y)
+const different = (x, ...args) =>
+  args.reduce((a, b) => a !== b, x)
 
-export default curry(different)
+export default curry(arity(2, different))
