@@ -1,3 +1,4 @@
+import arity from './arity'
 import curry from './curry'
 
 /**
@@ -19,7 +20,7 @@ import curry from './curry'
  *      f.and(false, true); //=> false
  *      f.and(false, false); //=> false
  */
-const and = (x, y) =>
-  x && y
+const and = (...args) =>
+  args.every(x => !!x)
 
-export default curry(and)
+export default curry(arity(2, and))
