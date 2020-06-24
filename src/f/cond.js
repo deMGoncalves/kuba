@@ -1,28 +1,28 @@
 import T from './T'
 
 /**
- * Returns a function, `fn`, which encapsulates `if/else, if/else, ...` logic.
- * `R.cond` takes a list of [predicate, transformer] pairs. All of the arguments
- * to `fn` are applied to each of the predicates in turn until one returns a
- * "truthy" value, at which point `fn` returns the result of applying its
- * arguments to the corresponding transformer. If none of the predicates
- * matches, `fn` returns undefined.
+ * f.torna uma função, `fn`, que encapsula a lógica `if / else, if / else, ...`.
+ * `f.cond` pega uma lista de pares [predicado, transformador]. Todos os argumentos
+ * a `fn` são aplicados a cada um dos predicados, por sua vez, até que se retorne um valor
+ * "truthy"; nesse ponto, `fn` retorna o resultado da aplicação de seus argumentos
+ * ao transformador correspondente. Se nenhum dos predicados * corresponder, `fn` retornará undefined
  *
  * @func
- * @memberOf R
+ * @memberOf f
  * @since v0.6.0
  * @category Logic
  * @sig [[(*... -> Boolean),(*... -> *)]] -> (*... -> *)
- * @param {Array} pairs A list of [predicate, transformer]
+ * @param {Array} pairs Uma lista de [predicate, transformer]
  * @return {Function}
- * @see R.ifElse, R.unless, R.when
+ * @see f.ifElse, f.unless, f.when
  * @example
  *
- *      const fn = R.cond([
- *        [R.equals(0),   R.always('water freezes at 0°C')],
- *        [R.equals(100), R.always('water boils at 100°C')],
- *        [R.T,           temp => 'nothing special happens at ' + temp + '°C']
+ *      const fn = f.cond([
+ *        [f.equals(0),   f.always('water freezes at 0°C')],
+ *        [f.equals(100), f.always('water boils at 100°C')],
+ *        [f.T,           temp => 'nothing special happens at ' + temp + '°C']
  *      ]);
+ *
  *      fn(0); //=> 'water freezes at 0°C'
  *      fn(50); //=> 'nothing special happens at 50°C'
  *      fn(100); //=> 'water boils at 100°C'
