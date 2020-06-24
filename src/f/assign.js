@@ -1,3 +1,4 @@
+import arity from './arity'
 import curry from './curry'
 
 /**
@@ -21,7 +22,7 @@ import curry from './curry'
  *      const target = { a: 1 };
  *      f.assign(target, { b: 2 }); //=> { a: 1, b: 2 }
  */
-const assign = (target, descriptor) =>
-  Object.assign(target, descriptor)
+const assign = (target, ...descriptor) =>
+  Object.assign(target, ...descriptor)
 
-export default curry(assign)
+export default curry(arity(2, assign))
