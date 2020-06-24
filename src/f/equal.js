@@ -1,3 +1,4 @@
+import arity from './arity'
 import curry from './curry'
 
 /**
@@ -25,7 +26,7 @@ import curry from './curry'
  *      const b = {}; b.v = b;
  *      f.equal(a, b); //=> true
  */
-const equal = (x, y) =>
-  x === y
+const equal = (x, ...args) =>
+  args.reduce((a, b) => a === b, x)
 
-export default curry(equal)
+export default curry(arity(2, equal))
