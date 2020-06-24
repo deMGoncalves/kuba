@@ -18,8 +18,8 @@ import T from './T'
  * @example
  *
  *      const fn = f.cond([
- *        [f.equals(0),   f.always('water freezes at 0°C')],
- *        [f.equals(100), f.always('water boils at 100°C')],
+ *        [f.equal(0),   f.always('water freezes at 0°C')],
+ *        [f.equal(100), f.always('water boils at 100°C')],
  *        [f.T,           temp => 'nothing special happens at ' + temp + '°C']
  *      ]);
  *
