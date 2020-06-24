@@ -1,11 +1,18 @@
 import always from './always'
 
 /**
- * Uma funcao que sempre ira retornar falso
+ * Uma função que sempre retorna `false`. Quaisquer parâmetros passados são ignorados
  *
- * @name F
- * @function
- * @access public
- * @return {Boolean} Verdadeiro
+ * @func
+ * @memberOf f
+ * @since v0.9.0
+ * @category Function
+ * @sig * -> Boolean
+ * @param {*}
+ * @return {Boolean}
+ * @see f.T
+ * @example
+ *
+ *      f.F(); //=> false
  */
 export default always(false)
