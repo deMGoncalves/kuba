@@ -1,9 +1,5 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/oneOffJS/Rex.JS.Mark.II/master/RexJS.png" height="200px"/>
-  <h1>Rex.JS Mark II</h1>
-  <br>
-  <p><strong>O bom e velho amigo do progmador</strong></p>
-  <br>
-  <p>Não sou um Framework, muito menos uma Library, pense em mim como o cinto de utilidades do Batman!. Não serei a solução de todos os seus problemas, devo ser usado como um boilerplate para seu projeto.</p>
-  <p><i>Rex é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio.</i></p>
-</div>
+# Zuen Store
+
+Não sou um Framework, muito menos uma Library, pense em mim como o cinto de utilidades do Batman!. Não serei a solução de todos os seus problemas, devo ser usado como um boilerplate para seu projeto.
+
+Zuen Store é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio.
