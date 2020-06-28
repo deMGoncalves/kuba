@@ -1,4 +1,4 @@
-![zuen](https://user-images.githubusercontent.com/35740192/85936214-b5bc1f00-b8ce-11ea-8217-7678faaeb0cc.png)
+<img src="https://user-images.githubusercontent.com/35740192/85936214-b5bc1f00-b8ce-11ea-8217-7678faaeb0cc.png" width="300" style="margin: 0 auto;"/>
 
 # Zuen
 
