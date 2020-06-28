@@ -15,7 +15,7 @@
   "license": "MIT",
   "author": {
     "name": "Cleber de Moraes Gonçalves",
-    "email": "cleber.engineer@gmail.com",
+    "email": "cleber.engineer@hotmail.com",
     "url": "https://github.com/oneOffJS"
   },
   "repository": {
@@ -47,6 +47,9 @@
       "pre-commit": "lint-staged",
       "pre-push": "run-s build:*"
     }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.4.1",
