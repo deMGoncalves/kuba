@@ -48,9 +48,6 @@
       "pre-push": "run-s build:*"
     }
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.4.1",
     "@typescript-eslint/parser": "^1.13.0",
