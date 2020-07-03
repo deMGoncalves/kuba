@@ -9,8 +9,14 @@ Não sou um Framework, muito menos uma Library, pense em mim como o cinto de uti
 
 ### Instalação
 
-#### Git clone
+#### Clonar o projeto
 
 ```bash
 git clone https://github.com/oneOffJS/zuen.git
+```
+
+#### Instalar as dependências
+
+```bash
+npm install
 ```
