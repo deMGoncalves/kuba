@@ -5,29 +5,40 @@
 
 Não sou um Framework, muito menos uma Library, pense em mim como o cinto de utilidades do Batman!. Mas, não serei a solução de todos os seus problemas, devo ser usado como um boilerplate para seu projeto. Gosto de pensar que sou como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio. Sou 100% open source e estou disponível aqui no Github. Também sou gratuito para uso em projetos pessoais e comerciais.
 
-* [Instalação](#instalação)
+* [Intenção e objetivo](#)
+* [Também conhecido como](#)
+* [Motivação](#)
+* [Aplicabilidade](#)
+* [Estrutura](#)
+* [Participantes](#)
+* [Colaborações](#)
+* [Consequências](#)
+* [Implementação](#implementação)
+* [Exemplo de código](#)
+* [Usos conhecido](#)
+* [Padrões relacionados](#)
 
-### Instalação
+### Implementação
 
-#### Clone o projeto
+Clone o projeto
 
 ```bash
 git clone https://github.com/oneOffJS/zuen.git
 ```
 
-#### Instale as dependências
+Instale as dependências
 
 ```bash
 npm install
 ```
 
-#### Faça o login do Firebase
+Faça o login do Firebase
 
 ```bash
 ./node_modules/.bin/firebase login:ci
 ```
 
-#### Configure o token do Firebase para poder fazer o deploy
+Configure o token do Firebase para fazer o deploy
 
 ```bash
 set FIREBASE_TOKEN [token here]
