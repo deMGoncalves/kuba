@@ -14,8 +14,6 @@ jobs:
     - name: Install
       run: |
         npm install
-        npm install -g cypress
-        npm install -g webpack
         npm install -g firebase-tools
     
     - name: Test
