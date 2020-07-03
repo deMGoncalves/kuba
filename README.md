@@ -3,16 +3,14 @@
 ## Zuen
 **Simples pequeno e imperfeito, uma visão além da programação**
 
-Não sou um Framework, muito menos uma Library, pense em mim como o cinto de utilidades do Batman!. Mas, não serei a solução de todos os seus problemas, devo ser usado como um boilerplate para seu projeto. Gosto de pensar que sou como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio. Sou 100% open source e estou disponível aqui no Github. Também sou gratuito para uso em projetos pessoais e comerciais - "Faça acomtecer que faço valer a pena".
+Não sou um Framework, muito menos uma Library, pense em mim como o cinto de utilidades do Batman!. Mas, não serei a solução de todos os seus problemas, devo ser usado como um boilerplate para seu projeto. Gosto de pensar que sou como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio. Sou 100% open source e estou disponível aqui no Github. Também sou gratuito para uso em projetos pessoais e comerciais.
 
 * [Instalação](#instalação)
 
 ### Instalação
 
-A instalação é trivialmente muito simples
+#### Git clone
 
 ```bash
 git clone https://github.com/oneOffJS/zuen.git
-cd zuen
-npm install
 ```
