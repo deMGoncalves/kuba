@@ -15,12 +15,12 @@ Não sou um Framework, muito menos uma Library, pense em mim como o cinto de uti
 * [Participantes](#)
 * [Colaborações](#)
 * [Consequências](#)
-* [Implementação](#implementação)
+* [Implementação](#)
 * [Exemplo de código](#)
 * [Usos conhecido](#)
 * [Padrões relacionados](#)
 
-### Implementação
+### Começe por aqui
 
 Clone o projeto
 
@@ -32,16 +32,4 @@ Instale as dependências
 
 ```bash
 npm install
-```
-
-Faça o login do Firebase
-
-```bash
-./node_modules/.bin/firebase login:ci
-```
-
-Configure o token do Firebase para fazer o deploy
-
-```bash
-set FIREBASE_TOKEN [token here]
 ```
