@@ -33,3 +33,15 @@ Instale as dependências
 ```bash
 npm install
 ```
+
+Ambiente de desenvolvimento
+
+```bash
+npm start
+```
+
+Ambiente de teste
+
+```bash
+npm test
+```
