@@ -28,6 +28,7 @@
     "start": "webpack-dashboard -- webpack-dev-server --config webpack.dev.js --open",
     "test": "cypress open",
     "build:git-branch-is": "git-branch-is master",
+    "build:git": "pull origin master",
     "build:cy": "cypress run"
   },
   "lint-staged": {
