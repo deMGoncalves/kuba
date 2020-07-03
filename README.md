@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/35740192/85936214-b5bc1f00-b8ce-11ea-8217-7678faaeb0cc.png" width="150"/>
+<img src="https://user-images.githubusercontent.com/35740192/85936214-b5bc1f00-b8ce-11ea-8217-7678faaeb0cc.png" width="200"/>
 
 ## Zuen
 **Simples pequeno e imperfeito, uma visão além da programação**
