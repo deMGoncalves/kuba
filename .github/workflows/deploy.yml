@@ -1,9 +1,7 @@
-name: CI
+name: Deploy
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
     branches: [ master ]
     
 jobs:
@@ -20,4 +18,4 @@ jobs:
       run: webpack --config webpack.prod.js
 
     - name: Deploy
-      run: firebase deploy --token "1//0h6_tG6E2wVpyCgYIARAAGBESNwF-L9IryzWebtIlSH8vIirxEgWXA98QCNh1HFRSOymV2Dp5TUXpdn7rdk3C3P1w6JIo5_x2rgo"
+      run: firebase deploy --token "$FIREBASE_TOKEN"
