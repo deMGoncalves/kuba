@@ -21,8 +21,14 @@ git clone https://github.com/oneOffJS/zuen.git
 npm install
 ```
 
-### Como obter o token de autenticação do firebase?
+#### Como obter o token de autenticação do firebase?
 
-````bash
+```bash
 ./node_modules/.bin/firebase login:ci
-````
+```
+
+#### Configurar o token de autenticação
+
+```bash
+set FIREBASE_TOKEN [token here]
+```
