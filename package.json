@@ -28,9 +28,7 @@
     "start": "webpack-dashboard -- webpack-dev-server --config webpack.dev.js --open",
     "test": "cypress open",
     "build:git-branch-is": "git-branch-is master",
-    "build:cy": "cypress run",
-    "build:webpack": "webpack --config webpack.prod.js",
-    "build:firebase": "firebase deploy --token \"$FIREBASE_TOKEN\""
+    "build:cy": "cypress run"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
