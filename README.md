@@ -9,25 +9,25 @@ Não sou um Framework, muito menos uma Library, pense em mim como o cinto de uti
 
 ### Instalação
 
-#### Clonar o projeto
+#### Clone o projeto
 
 ```bash
 git clone https://github.com/oneOffJS/zuen.git
 ```
 
-#### Instalar as dependências
+#### Instale as dependências
 
 ```bash
 npm install
 ```
 
-#### Como obter o token de autenticação do firebase?
+#### Faça o login do Firebase
 
 ```bash
 ./node_modules/.bin/firebase login:ci
 ```
 
-#### Configurar o token de autenticação
+#### Configure o token do Firebase para poder fazer o deploy
 
 ```bash
 set FIREBASE_TOKEN [token here]
