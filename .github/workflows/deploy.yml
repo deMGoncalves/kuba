@@ -13,9 +13,12 @@ jobs:
     
     - name: Install
       run: npm install
+    
+    - name: Test
+      run: ./node_modules/.bin/cypress run
 
     - name: Build
-      run: webpack --config webpack.prod.js
+      run: ./node_modules/.bin/webpack --config webpack.prod.js
 
     - name: Deploy
-      run: firebase deploy --token "$FIREBASE_TOKEN"
+      run: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
