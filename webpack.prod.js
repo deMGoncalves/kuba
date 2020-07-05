@@ -5,6 +5,10 @@ const merge = require('webpack-merge')
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 
 module.exports = merge.smart(common, {
+  entry: {
+    app: './src/index.js',
+    sw: './src/sw/index.js'
+  },
   mode: 'production',
   plugins: [
     new WorkboxWebpackPlugin.GenerateSW({
