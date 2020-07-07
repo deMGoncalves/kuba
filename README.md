@@ -23,25 +23,25 @@ Não sou um Framework, muito menos uma Library, pense em mim como o cinto de uti
 
 ### Começe por aqui
 
-Sou 100% Open Source e estou disponível aqui no Github, também sou gratuito para uso em projeto pessoais e comerciais.
+Sou 100% Open Source e estou disponível aqui no Github, também sou gratuito para uso em projeto pessoais e comerciais. Comece clonando o repositório.
 
 ```bash
 git clone https://github.com/oneOffJS/zuen.git
 ```
 
-Instale as dependências
+Depois instale as dependências, basta executar o comando abaixo.
 
 ```bash
 npm install
 ```
 
-Ambiente de desenvolvimento
+Para executar seu ambiente de desenvolvimento é bem simples.
 
 ```bash
 npm start
 ```
 
-Ambiente de teste
+Se você curte um desenvolvimento orientado a teste, é bem simples.
 
 ```bash
 npm test
