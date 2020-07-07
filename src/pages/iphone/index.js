@@ -1,3 +1,3 @@
-import Product from './Product'
+import iPhone from './iPhone'
 
-export default Product
+export default iPhone
