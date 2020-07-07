@@ -1,2 +1,2 @@
 import '@pages'
-import './fonts.css'
+import './fonts/style.css'
