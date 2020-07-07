@@ -35,6 +35,14 @@ Calma! Antes de começar a codar, precisamos intalar as dependências do projeto
 npm install
 ```
 
+Tem um macOS ae? ops, poderá ocorrer um problema com a libpng, faça o seguinte, vamos remover o image-webpack-loader e file-loader, instalar o libpng via homebrew e reinstalar as dependencias.
+
+```bash
+npm uninstall -D file-loader image-webpack-loader
+brew install libpng
+npm install -D file-loader image-webpack-loader
+```
+
 Bora codar? Inicie seu ambiente executando o comando abaixo, assim que executar o comando, será aberto seu browser favorito. Este será seu ambiente de desenvolvimento e teste.
 
 ```bash
