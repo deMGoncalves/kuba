@@ -29,20 +29,22 @@ Sou 100% Open Source e estou disponível aqui no Github, também sou gratuito pa
 git clone https://github.com/oneOffJS/zuen.git
 ```
 
-Calma! Antes de começar a codar precisamos intalar as dependências do projeto.
+Calma! Antes de começar a codar precisamos intalar as dependências do projeto. Aproveite para buscar um café...
 
 ```bash
 npm install
 ```
 
-Bora codar? Inicie seu ambiente executando o comando abaixo, assim que executar o comando será aberto seu browser favorito no domínio localhost, seu ambiente de desenvolvimento e teste.
+Bora codar? Inicie seu ambiente executando o comando abaixo, assim que executar o comando será aberto seu browser favorito no domínio localhost, este será seu ambiente de desenvolvimento e teste.
 
 ```bash
 npm start
 ```
 
-Se você curte um desenvolvimento orientado a teste! Abra outro bash e inicie o Cypress.
+Se você curte um desenvolvimento orientado a teste! Abra outro bash e inicie o Cypress. Não se esqueça que para executar os teste seu ambiente de desenvolvimento precisar eatar de pé!
 
 ```bash
 npm test
 ```
+
+Agora vá se divertir :D
