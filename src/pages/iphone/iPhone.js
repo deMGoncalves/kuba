@@ -4,7 +4,7 @@ import markut from '@markup'
 
 @paint(component)
 @markut
-class Product {
+class iPhone {
   get description () {
     return 'Descubra mais sobre o iPhone, o aparelho pessoal mais poderoso do mundo. Confira os novos iPhone 11, iPhone 11 Pro e iPhone 11 Pro Max.'
   }
@@ -18,4 +18,4 @@ class Product {
   }
 }
 
-export default Product
+export default iPhone

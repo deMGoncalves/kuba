@@ -2,6 +2,6 @@ import h from '@h'
 import router from '@router'
 
 router(/^\/$/, async () => {
-  const { default: Product } = await import(/* webpackChunkName: "product" */ '@pages/product')
-  document.body.append(<Product />)
+  const { default: iPhone } = await import(/* webpackChunkName: "product" */ '@pages/iphone')
+  document.body.append(<iPhone />)
 })
