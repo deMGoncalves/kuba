@@ -1,5 +1,54 @@
 .header {
   background-color: #0a0a0a;
   display: flex;
-  height: 44px;
+  height: 48px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu,
+.header__apple,
+.header__bag {
+  height: inherit;
+  opacity: 0.8;
+  text-indent: -9999px;
+  width: 48px;
+}
+
+.header__apple {
+  background: url(https://www.apple.com/ac/globalnav/6/pt_BR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_small.svg) no-repeat;
+  background-position: center center;
+  background-size: 16px 44px;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__bag {
+  background: url(https://www.apple.com/ac/globalnav/6/pt_BR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_large.svg) no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 44px;
+  }
+
+  .header__menu,
+  .header__apple,
+  .header__bag {
+    width: 44px;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__nav {
+    display: block;
+  }
 }
