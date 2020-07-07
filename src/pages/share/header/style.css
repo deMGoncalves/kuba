@@ -48,6 +48,13 @@
     display: none;
   }
 
+  .header__menu:hover,
+  .header__apple:hover,
+  .header__bag:hover {
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
   .header__nav {
     display: block;
   }
