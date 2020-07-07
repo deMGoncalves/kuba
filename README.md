@@ -23,25 +23,25 @@ Não sou um Framework, muito menos uma Library, pense em mim como o cinto de uti
 
 ### Começe por aqui
 
-Sou 100% Open Source e estou disponível aqui no Github, também sou gratuito para uso em projeto pessoais e comerciais. Comece clonando o repositório.
+Sou 100% Open Source e estou disponível aqui no Github, também sou gratuito para uso em projeto pessoais e comerciais. Bora clonar o repositório!
 
 ```bash
 git clone https://github.com/oneOffJS/zuen.git
 ```
 
-Depois instale as dependências, basta executar o comando abaixo.
+Calma! Antes de começar a codar precisamos intalar as dependências do projeto.
 
 ```bash
 npm install
 ```
 
-Para executar seu ambiente de desenvolvimento é bem simples.
+Bora codar? Inicie seu ambiente executando o comando abaixo, assim que executar o comando será aberto seu browser favorito no domínio localhost, seu ambiente de desenvolvimento e teste.
 
 ```bash
 npm start
 ```
 
-Se você curte um desenvolvimento orientado a teste, é bem simples.
+Se você curte um desenvolvimento orientado a teste! Abra outro bash e inicie o Cypress.
 
 ```bash
 npm test
