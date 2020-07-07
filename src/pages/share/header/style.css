@@ -11,6 +11,7 @@
 
 .header__menu,
 .header__apple,
+.header__search,
 .header__bag {
   height: inherit;
   opacity: 0.8;
@@ -29,6 +30,12 @@
   display: none;
 }
 
+.header__search {
+  background: url(https://www.apple.com/ac/globalnav/6/pt_BR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_large.svg) no-repeat;
+  background-position: 14px 0;
+  background-size: 18px 88px;
+}
+
 .header__bag {
   background: url(https://www.apple.com/ac/globalnav/6/pt_BR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_large.svg) no-repeat;
   background-position: center center;
@@ -41,6 +48,7 @@
 
   .header__menu,
   .header__apple,
+  .header__search,
   .header__bag {
     cursor: pointer;
     width: 44px;
@@ -52,12 +60,13 @@
 
   .header__menu:hover,
   .header__apple:hover,
+  .header__search:hover,
   .header__bag:hover {
     opacity: 1;
     transition: opacity 0.5s;
   }
 
   .header__nav {
-    display: block;
+    display: flex;
   }
 }

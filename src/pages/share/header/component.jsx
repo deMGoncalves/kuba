@@ -7,7 +7,9 @@ export default () =>
     <s.Container className={style.header__container}>
       <a className={style.header__menu}>Menu</a>
       <a className={style.header__apple}>Apple</a>
-      <nav className={style.header__nav} />
+      <nav className={style.header__nav}>
+        <a className={style.header__search}>Search</a>
+      </nav>
       <a className={style.header__bag}>Bag</a>
     </s.Container>
   </header>
