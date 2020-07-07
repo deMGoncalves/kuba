@@ -23,7 +23,7 @@ Não sou um Framework, muito menos uma Library, pense em mim como o cinto de uti
 
 ### Começe por aqui
 
-Sou 100% Open Source e estou disponível aqui no Github, também sou gratuito para uso em projeto pessoais e comerciais. Esta esperando o que ? Rapido, clone o repositório!
+Sou 100% Open Source e estou disponível aqui no Github, também sou gratuito para uso em projeto pessoais e comerciais. Está esperando o quê? Rapido, clone o repositório!
 
 ```bash
 git clone https://github.com/oneOffJS/zuen.git
