@@ -47,13 +47,10 @@
       "@f/*": ["src/f/*"],
       "@h/*": ["src/h/*"],
       "@hook/*": ["src/hook/*"],
-      "@metadata/*": ["src/metadata/*"],
-      "@opengraph/*": ["src/opengraph/*"],
+      "@markup/*": ["src/markup/*"],
       "@pages/*": ["src/pages/*"],
       "@radio/*": ["src/radio/*"],
       "@router/*": ["src/router/*"],
-      "@structureddata/*": ["src/structureddata/*"],
-      "@twittercard/*": ["src/twittercard/*"],
       "@sw/*": ["src/sw/*"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */

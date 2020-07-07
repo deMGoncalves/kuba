@@ -11,24 +11,18 @@ import themeColor from './themeColor'
 import title from './title'
 import viewport from './viewport'
 
-export default (Klass) =>
-  function () {
-    const page = new Klass(...arguments)
-
-    setImmediate(() => {
-      alternate(page)
-      author(page)
-      base(page)
-      canonical(page)
-      charset(page)
-      description(page)
-      icon(page)
-      manifest(page)
-      robots(page)
-      themeColor(page)
-      title(page)
-      viewport(page)
-    })
-
-    return page
-  }
+export default (page) =>
+  [
+    alternate,
+    author,
+    base,
+    canonical,
+    charset,
+    description,
+    icon,
+    manifest,
+    robots,
+    themeColor,
+    title,
+    viewport
+  ].forEach(m => m(page))

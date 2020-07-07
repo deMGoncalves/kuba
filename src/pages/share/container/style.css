@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
-  max-width: 1220px;
-  padding: 0 10px;
+  max-width: 1024px;
+  padding: 0 20px;
   position: relative;
   width: 100%;
 }

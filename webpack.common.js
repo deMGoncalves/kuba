@@ -130,13 +130,10 @@ module.exports = {
       '@f': path.resolve(__dirname, 'src/f'),
       '@h': path.resolve(__dirname, 'src/h'),
       '@hook': path.resolve(__dirname, 'src/hook'),
-      '@metadata': path.resolve(__dirname, 'src/metadata'),
-      '@opengraph': path.resolve(__dirname, 'src/opengraph'),
+      '@markup': path.resolve(__dirname, 'src/markup'),
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@radio': path.resolve(__dirname, 'src/radio'),
       '@router': path.resolve(__dirname, 'src/router'),
-      '@structureddata': path.resolve(__dirname, 'src/structureddata'),
-      '@twittercard': path.resolve(__dirname, 'src/twittercard'),
       '@sw': path.resolve(__dirname, 'src/sw')
     }
   },
