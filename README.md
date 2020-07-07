@@ -29,13 +29,13 @@ Sou 100% Open Source e estou disponível aqui no Github, também sou gratuito pa
 git clone https://github.com/oneOffJS/zuen.git
 ```
 
-Calma! Antes de começar a codar precisamos intalar as dependências do projeto. Aproveite para buscar um café...
+Calma! Antes de começar a codar, precisamos intalar as dependências do projeto. Aproveite para buscar um café...
 
 ```bash
 npm install
 ```
 
-Bora codar? Inicie seu ambiente executando o comando abaixo, assim que executar o comando será aberto seu browser favorito no domínio localhost. Este será seu ambiente de desenvolvimento e teste.
+Bora codar? Inicie seu ambiente executando o comando abaixo, assim que executar o comando, será aberto seu browser favorito. Este será seu ambiente de desenvolvimento e teste.
 
 ```bash
 npm start
