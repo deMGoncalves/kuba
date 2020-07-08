@@ -8,13 +8,10 @@ export default () =>
       <a className={style.header__menu}>Menu</a>
       <a className={style.header__apple}>Apple</a>
       <nav className={style.header__nav}>
-        <a className={style.header__link}>Mac</a>
-        <a className={style.header__link}>iPad</a>
-        <a className={style.header__link}>iPhone</a>
-        <a className={style.header__link}>Watch</a>
-        <a className={style.header__link}>TV</a>
-        <a className={style.header__link}>Music</a>
-        <a className={style.header__link}>Suporte</a>
+        {
+          ['Mac', 'iPad', 'Watch', 'TV', 'Music', 'Suporte'].map(text =>
+            <a className={style.header__link}>{ text }</a>)
+        }
         <a className={style.header__search}>Search</a>
       </nav>
       <a className={style.header__bag}>Bag</a>
