@@ -15,15 +15,13 @@
 .iPhone__name {
   color: #111;
   font-family: 'SF Pro Display', sans-serif;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
-  padding: 0 12px;
 }
 
 .iPhone__price {
   color: #111;
   font-family: 'SF Pro Text', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
-  padding: 0 12px;
 }
