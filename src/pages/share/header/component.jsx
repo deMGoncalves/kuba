@@ -9,7 +9,7 @@ export default () =>
       <a className={style.header__apple}>Apple</a>
       <nav className={style.header__nav}>
         {
-          ['Mac', 'iPad', 'Watch', 'TV', 'Music', 'Suporte'].map(text =>
+          ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music', 'Suporte'].map(text =>
             <a className={style.header__link}>{ text }</a>)
         }
         <a className={style.header__search}>Search</a>
