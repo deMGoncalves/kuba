@@ -1,4 +1,5 @@
 .nav {
+  background: #fff;
   border-bottom: 1px solid hsla(0, 0%, 53.3%, 0.4);
   height: 48px;
   position: sticky;
