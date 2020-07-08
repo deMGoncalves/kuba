@@ -6,7 +6,7 @@ import markut from '@markup'
 @markut
 class iPhone {
   get description () {
-    return 'Descubra mais sobre o iPhone, o aparelho pessoal mais poderoso do mundo. Confira os novos iPhone 11, iPhone 11 Pro e iPhone 11 Pro Max.'
+    return 'Compre o iPhone XR em seis lindas cores, com Face ID avançado, chip A12 Bionic e tela Liquid Retina. Compre agora com frete grátis.'
   }
 
   get title () {
