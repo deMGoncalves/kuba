@@ -95,7 +95,7 @@
     align-items: center;
     display: flex;
     justify-content: space-around;
-    width: calc(100% - 130px);
+    width: 85%;
   }
 
   .header__link {
