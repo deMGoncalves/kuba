@@ -41,19 +41,19 @@
 }
 
 .header__apple {
-  background: url(https://www.apple.com/ac/globalnav/6/pt_BR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_small.svg) no-repeat;
+  background: url(./apple.svg) no-repeat;
   background-position: center center;
   background-size: 16px 44px;
 }
 
 .header__search {
-  background: url(https://www.apple.com/ac/globalnav/6/pt_BR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_large.svg) no-repeat;
+  background: url(./search.svg) no-repeat;
   background-position: 14px 0;
   background-size: 18px 88px;
 }
 
 .header__bag {
-  background: url(https://www.apple.com/ac/globalnav/6/pt_BR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_large.svg) no-repeat;
+  background: url(./bag.svg) no-repeat;
   background-position: center center;
 }
 
