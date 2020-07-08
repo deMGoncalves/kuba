@@ -10,7 +10,7 @@ class iPhone {
   }
 
   get title () {
-    return 'iPhone - Apple (BR)'
+    return 'Comprar iPhone XR - Apple (BR)'
   }
 }
 
