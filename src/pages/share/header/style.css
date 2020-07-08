@@ -7,6 +7,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .header__menu,
@@ -18,7 +19,7 @@
   position: relative;
   text-indent: -9999px;
   transition: opacity 0.5s;
-  width: 48px;
+  width: 38px;
 }
 
 .header__menu::before,
@@ -27,7 +28,7 @@
   content: '';
   display: block;
   height: 1px;
-  left: 15px;
+  left: 10px;
   position: absolute;
   width: 18px;
 }
@@ -71,7 +72,7 @@
   .header__search,
   .header__bag {
     cursor: pointer;
-    width: 44px;
+    width: 38px;
   }
 
   .header__menu {
