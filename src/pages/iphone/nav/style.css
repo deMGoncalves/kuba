@@ -1,0 +1,27 @@
+.nav {
+  border-bottom: 1px solid hsla(0, 0%, 53.3%, 0.4);
+  height: 48px;
+  position: sticky;
+  top: 0;
+}
+
+.nav__container {
+  align-items: center;
+  display: flex;
+  height: inherit;
+  justify-content: space-between;
+}
+
+.nav__name {
+  color: #111;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.nav__price {
+  color: #111;
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
