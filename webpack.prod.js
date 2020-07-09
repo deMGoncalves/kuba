@@ -36,7 +36,11 @@ module.exports = merge.smart(common, {
   optimization: {
     moduleIds: 'hashed',
     minimizer: [
-      new TerserJSPlugin({}),
+      new TerserJSPlugin({
+        tarserOptions: {
+          safari10: true
+        }
+      }),
       new OptimizeCSSAssetsPlugin({})
     ],
     runtimeChunk: 'single',
