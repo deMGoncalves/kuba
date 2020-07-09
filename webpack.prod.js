@@ -37,7 +37,7 @@ module.exports = merge.smart(common, {
     moduleIds: 'hashed',
     minimizer: [
       new TerserJSPlugin({
-        tarserOptions: {
+        terserOptions: {
           safari10: true
         }
       }),
