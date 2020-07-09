@@ -10,4 +10,4 @@ import * as f from '@f'
  * @return {Boolean} Verdadeiro se o elemento eh um component
  */
 export default (target) =>
-  f.test(/Function/g, ({}).toString.call(target))
+  f.test(/function/, typeof target)
