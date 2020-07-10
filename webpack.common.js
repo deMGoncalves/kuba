@@ -148,8 +148,8 @@ module.exports = {
     }
   },
   output: {
-    filename: '[name].[hash].js',
     chunkFilename: '[name].[hash].js',
+    filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'public'),
     publicPath: '/'
   }
