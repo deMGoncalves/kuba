@@ -1,0 +1,15 @@
+.promo {
+  background: #f2f2f2;
+}
+
+.promo__container {
+  padding: 10px;
+}
+
+.promo__p {
+  color: #333;
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
