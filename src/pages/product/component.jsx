@@ -7,7 +7,7 @@ import style from './style.css'
 export default () =>
   <s.Main>
     <s.Header />
-    <section className={style.iPhone}>
+    <section className={style.product}>
       <Nav />
       <Promo />
     </section>

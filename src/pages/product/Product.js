@@ -6,7 +6,7 @@ import iPhoneXRSelect2019Family from './iphone-xr-select-2019-family.jpeg'
 
 @paint(component)
 @markut
-class iPhone {
+class Product {
   get description () {
     return 'Compre o iPhone XR em seis lindas cores, com Face ID avançado, chip A12 Bionic e tela Liquid Retina. Compre agora com frete grátis.'
   }
@@ -20,4 +20,4 @@ class iPhone {
   }
 }
 
-export default iPhone
+export default Product
