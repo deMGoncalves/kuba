@@ -10,4 +10,4 @@ import * as f from '@f'
  * @return {Boolean} Verdadeiro se o elemento eh um component
  */
 export default (target) =>
-  f.test(/function/, typeof target)
+  f.or(f.is(Function, target), f.test(/function/, typeof target))
