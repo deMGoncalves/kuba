@@ -2,8 +2,6 @@ import { paint } from '@h'
 import component from './component'
 import markut from '@markup'
 
-import iPhoneXRSelect2019Family from './iphone-xr-select-2019-family.jpeg'
-
 const oneOff = Symbol('oneOff')
 
 @paint(component)
@@ -14,7 +12,7 @@ class Product {
   }
 
   get image () {
-    return [iPhoneXRSelect2019Family]
+    return this[oneOff].image
   }
 
   get title () {
