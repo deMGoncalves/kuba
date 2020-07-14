@@ -18,7 +18,7 @@ class Product {
   }
 
   get title () {
-    return 'Comprar iPhone XR - Apple (BR)'
+    return `Comprar ${this[oneOff].name} - Zeen (BR)`
   }
 
   constructor (attr) {
