@@ -1,9 +1,7 @@
 import { paint } from '@h'
-import component from './component'
+import component, { oneOff } from './component'
 import markut from '@markup'
 import Nav from './nav'
-
-const oneOff = Symbol('oneOff')
 
 @paint(component)
 @markut
