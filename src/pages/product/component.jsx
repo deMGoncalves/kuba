@@ -3,17 +3,17 @@ import * as s from '@pages/share'
 import Promo from './promo'
 import style from './style.css'
 
-const oneOff = Symbol('oneOff')
+const nav = Symbol('nav')
 
 export default (product) =>
   <s.Main>
     <s.Header />
     <section className={style.product}>
-      { product[oneOff].nav }
+      { product[nav] }
       <Promo />
     </section>
   </s.Main>
 
 export {
-  oneOff
+  nav
 }
