@@ -1,3 +1,3 @@
-import component from './component'
+import Promo from './promo'
 
-export default component
+export default Promo
