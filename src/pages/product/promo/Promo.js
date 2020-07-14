@@ -9,7 +9,7 @@ class Promo {
     return this[oneOff].product.promo
   }
 
-  contructor (product) {
+  constructor (product) {
     this[oneOff] = { product }
     return this
   }
