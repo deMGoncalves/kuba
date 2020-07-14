@@ -1,7 +1,8 @@
 import { paint } from '@h'
-import component, { nav } from './component'
+import component, { nav, promo } from './component'
 import markut from '@markup'
 import Nav from './nav'
+import Promo from './promo'
 
 const oneOff = Symbol('oneOff')
 
@@ -27,6 +28,7 @@ class Product {
   constructor (attr) {
     this[oneOff] = attr
     this[nav] = new Nav(this)
+    this[promo] = new Promo(this)
     return this
   }
 }

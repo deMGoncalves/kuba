@@ -1,19 +1,20 @@
 import h from '@h'
 import * as s from '@pages/share'
-import Promo from './promo'
 import style from './style.css'
 
 const nav = Symbol('nav')
+const promo = Symbol('promo')
 
 export default (product) =>
   <s.Main>
     <s.Header />
     <section className={style.product}>
       { product[nav] }
-      <Promo />
+      { product[promo] }
     </section>
   </s.Main>
 
 export {
-  nav
+  nav,
+  promo
 }
