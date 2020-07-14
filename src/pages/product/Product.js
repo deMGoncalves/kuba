@@ -21,6 +21,10 @@ class Product {
     return this[oneOff].name
   }
 
+  get promo () {
+    return this[oneOff].promo
+  }
+
   get title () {
     return `Comprar ${this.name} - Zeen (BR)`
   }
