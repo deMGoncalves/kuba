@@ -15,8 +15,12 @@ class Product {
     return this[oneOff].image
   }
 
+  get name () {
+    return this[oneOff].name
+  }
+
   get title () {
-    return `Comprar ${this[oneOff].name} - Zeen (BR)`
+    return `Comprar ${this.name} - Zeen (BR)`
   }
 
   constructor (attr) {
