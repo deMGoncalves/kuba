@@ -8,7 +8,7 @@ const oneOff = Symbol('oneOff')
 @markut
 class Product {
   get description () {
-    return 'Compre o iPhone XR em seis lindas cores, com Face ID avançado, chip A12 Bionic e tela Liquid Retina. Compre agora com frete grátis.'
+    return this[oneOff].description
   }
 
   get image () {
