@@ -9,6 +9,10 @@ class Nav {
     return this[oneOff].product.name
   }
 
+  get price () {
+    return this[oneOff].product.price
+  }
+
   constructor (product) {
     this[oneOff] = { product }
     return this
