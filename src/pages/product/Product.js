@@ -4,6 +4,8 @@ import markut from '@markup'
 
 import iPhoneXRSelect2019Family from './iphone-xr-select-2019-family.jpeg'
 
+const oneOff = Symbol('oneOff')
+
 @paint(component)
 @markut
 class Product {
@@ -17,6 +19,11 @@ class Product {
 
   get title () {
     return 'Comprar iPhone XR - Apple (BR)'
+  }
+
+  constructor (attr) {
+    this[oneOff] = attr
+    return this
   }
 }
 
