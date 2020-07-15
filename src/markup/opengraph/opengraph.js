@@ -1,3 +1,4 @@
+import * as f from '@f'
 import description from './description'
 import image from './image'
 import locale from './locale'
@@ -7,12 +8,7 @@ import type from './type'
 import url from './url'
 
 export default (page) =>
-  [
-    description,
-    image,
-    locale,
-    siteName,
-    title,
-    type,
-    url
-  ].forEach(o => o(page))
+  f.forEach(
+    [description, image, locale, siteName, title, type, url],
+    o => o(page)
+  )
