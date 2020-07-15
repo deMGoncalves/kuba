@@ -210,9 +210,9 @@ export default (page) => ({
   },
   image: {
     '@type': 'ImageObject',
-    '@id': `${page.image[0]}#image`,
-    caption: page.title,
-    url: page.image[0]
+    '@id': `${page.image}#image`,
+    caption: page.name,
+    url: page.image
   },
   mainEntityOfPage: webpage(page),
   model: 'SM-A307GT/DS',
