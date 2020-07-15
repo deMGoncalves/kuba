@@ -2,6 +2,13 @@
   "description": "Compre o iPhone XR em seis lindas cores, com Face ID avançado, chip A12 Bionic e tela Liquid Retina. Compre agora com frete grátis",
   "especification": [
     {
+      "name": "Capacidade",
+      "value": [
+        "64 GB",
+        "128 GB"
+      ]
+    },
+    {
       "name": "Tela",
       "value": [
         "Liquid Retina HD",
