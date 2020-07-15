@@ -1,3 +1,4 @@
+import * as f from '@f'
 import alternate from './alternate'
 import author from './author'
 import base from './base'
@@ -12,17 +13,7 @@ import title from './title'
 import viewport from './viewport'
 
 export default (page) =>
-  [
-    alternate,
-    author,
-    base,
-    canonical,
-    charset,
-    description,
-    icon,
-    manifest,
-    robots,
-    themeColor,
-    title,
-    viewport
-  ].forEach(m => m(page))
+  f.forEach(
+    [alternate, author, base, canonical, charset, description, icon, manifest, robots, themeColor, title, viewport],
+    m => m(page)
+  )
