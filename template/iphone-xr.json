@@ -1,5 +1,22 @@
 {
   "description": "Compre o iPhone XR em seis lindas cores, com Face ID avançado, chip A12 Bionic e tela Liquid Retina. Compre agora com frete grátis",
+  "especification": [
+    {
+      "name": "Tela",
+      "value": [
+        "Liquid Retina HD",
+        "LCD sem bordas Multi-Touch com tecnologia IPS de 6,1 polegadas (na diagonal",
+        "Resolução de 1792 x 828 pixels a 326 ppp",
+        "Proporção de contraste: 1400:1 (típica)",
+        "True Tone",
+        "Ampla tonalidade de cores (P3)",
+        "Resposta tátil",
+        "Brilho máx. de 625 nits (típico)",
+        "Revestimento resistente a impressões digitais e oleosidade",
+        "Suporte à exibição simultânea de vários idiomas e caracteres"
+      ]
+    }
+  ],
   "image": "https://firebasestorage.googleapis.com/v0/b/zuen-store-4605f.appspot.com/o/iphone-xr-select-2019-family.jpeg?alt=media&token=c50bcf31-7477-4f18-b438-9e8baa15afab",
   "name": "iPhone X🅁",
   "promo": "Frete grátis para todos os iPhones. Em São Paulo, os pedidos qualificados têm envio gratuito no dia seguinte"
