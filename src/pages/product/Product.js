@@ -13,6 +13,10 @@ class Product {
     return this[oneOff].description
   }
 
+  get height () {
+    return this[oneOff].height
+  }
+
   get image () {
     return this[oneOff].image
   }
