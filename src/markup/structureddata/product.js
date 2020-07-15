@@ -31,7 +31,7 @@ export default (page) => ({
   gtin8: '7892509112437',
   height: {
     '@type': 'QuantitativeValue',
-    value: '16 cm'
+    value: page.height
   },
   image: {
     '@type': 'ImageObject',
