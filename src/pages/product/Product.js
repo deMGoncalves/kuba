@@ -13,6 +13,10 @@ class Product {
     return this[oneOff].description
   }
 
+  get depth () {
+    return this[oneOff].depth
+  }
+
   get height () {
     return this[oneOff].height
   }
