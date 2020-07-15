@@ -1,3 +1,4 @@
+import * as f from '@f'
 import metadata from './metadata'
 import opengraph from './opengraph'
 import structureddata from './structureddata'
@@ -8,12 +9,11 @@ export default (Klass) =>
     const page = new Klass(...arguments)
 
     setImmediate(() =>
-      [
-        metadata,
-        opengraph,
-        structureddata,
-        twittercard
-      ].forEach(m => m(page)))
+      f.forEach(
+        [metadata, opengraph, structureddata, twittercard],
+        m => m(page)
+      )
+    )
 
     return page
   }
