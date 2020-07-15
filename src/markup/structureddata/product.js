@@ -26,7 +26,7 @@ export default (page) => ({
   description: page.description,
   depth: {
     '@type': 'QuantitativeValue',
-    value: '4 cm'
+    value: page.depth
   },
   gtin8: '7892509112437',
   height: {
