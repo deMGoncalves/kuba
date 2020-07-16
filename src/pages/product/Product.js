@@ -37,6 +37,10 @@ class Product {
     return `Comprar ${this.name} - Zeen (BR)`
   }
 
+  get width () {
+    return this[oneOff].width
+  }
+
   constructor (attr) {
     this[oneOff] = attr
     this[nav] = new Nav(this)
