@@ -37,6 +37,10 @@ class Product {
     return `Comprar ${this.name} - Zeen (BR)`
   }
 
+  get weight () {
+    return this[oneOff].weight
+  }
+
   get width () {
     return this[oneOff].width
   }
