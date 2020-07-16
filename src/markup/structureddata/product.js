@@ -102,7 +102,7 @@ export default (page) => ({
   url: location.href,
   weight: {
     '@type': 'QuantitativeValue',
-    value: '109 g'
+    value: page.width
   },
   width: {
     '@type': 'QuantitativeValue',
