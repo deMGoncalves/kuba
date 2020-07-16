@@ -35,7 +35,7 @@ Calma! Antes de começar a codar, precisamos intalar as dependências do projeto
 npm install
 ```
 
-Tem um macOS ae? ops, poderá ocorrer um problema com a libpng, faça o seguinte, vamos remover o image-webpack-loader e file-loader, instalar o libpng via homebrew e reinstalar as dependencias.
+Tem um macOS? Ops, poderá ocorrer um problema com a libpng. Faça o seguintes passos:
 
 ```bash
 npm uninstall -D file-loader image-webpack-loader
