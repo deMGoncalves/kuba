@@ -10,6 +10,17 @@
       ]
     },
     {
+      "name": "Cor",
+      "value": [
+        "Amarelo",
+        "Azul",
+        "Branco",
+        "Coral",
+        "Preto",
+        "(PRODUCT) RED"
+      ]
+    },
+    {
       "name": "Tela",
       "value": [
         "Liquid Retina HD",
