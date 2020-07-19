@@ -97,7 +97,7 @@ export default (page) => ({
   },
   productID: '1EAVNB1BN',
   review,
-  sameAs: 'https://www.samsung.com/br/smartphones/galaxy-a30s-a307/SM-A307GZKBZTO',
+  sameAs: 'https://www.apple.com/br/shop/buy-iphone/iphone-xr',
   sku: '000000',
   url: location.href,
   weight: {
