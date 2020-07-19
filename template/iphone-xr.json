@@ -76,6 +76,54 @@
         "Capacidade": "64 GB",
         "Cor": "(PRODUCT) RED"
       }
+    },
+    {
+      "amount": 5,
+      "sku": "000007",
+      "variation": {
+        "Capacidade": "128 GB",
+        "Cor": "Branco"
+      }
+    },
+    {
+      "amount": 5,
+      "sku": "000008",
+      "variation": {
+        "Capacidade": "128 GB",
+        "Cor": "Preto"
+      }
+    },
+    {
+      "amount": 5,
+      "sku": "000009",
+      "variation": {
+        "Capacidade": "128 GB",
+        "Cor": "Azul"
+      }
+    },
+    {
+      "amount": 5,
+      "sku": "000010",
+      "variation": {
+        "Capacidade": "128 GB",
+        "Cor": "Amarelo"
+      }
+    },
+    {
+      "amount": 5,
+      "sku": "000011",
+      "variation": {
+        "Capacidade": "128 GB",
+        "Cor": "Coral"
+      }
+    },
+    {
+      "amount": 5,
+      "sku": "000012",
+      "variation": {
+        "Capacidade": "128 GB",
+        "Cor": "(PRODUCT) RED"
+      }
     }
   ],
   "weight": "194 gramas",
