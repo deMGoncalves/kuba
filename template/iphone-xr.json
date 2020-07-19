@@ -30,7 +30,8 @@
   "promo": "Frete grátis para todos os iPhones. Em São Paulo, os pedidos qualificados têm envio gratuito no dia seguinte",
   "variation": [
     {
-      "sku": "000001"
+      "sku": "000001",
+      "Capacidade": "64 GB"
     }
   ],
   "weight": "194 gramas",
