@@ -28,11 +28,14 @@
   "image": "https://firebasestorage.googleapis.com/v0/b/zuen-store-4605f.appspot.com/o/iphone-xr-select-2019-family.jpeg?alt=media&token=c50bcf31-7477-4f18-b438-9e8baa15afab",
   "name": "iPhone X🅁",
   "promo": "Frete grátis para todos os iPhones. Em São Paulo, os pedidos qualificados têm envio gratuito no dia seguinte",
-  "variation": [
+  "skus": [
     {
+      "amount": 5,
       "sku": "000001",
-      "Capacidade": "64 GB",
-      "Cor": "Branco"
+      "variation": {
+        "Capacidade": "64 GB",
+        "Cor": "Branco"
+      }
     }
   ],
   "weight": "194 gramas",
