@@ -41,6 +41,10 @@ class Product {
     return this[oneOff].promo
   }
 
+  get variation () {
+    return [...this[oneOff].skus]
+  }
+
   get title () {
     return `Comprar ${this.name} - Zeen (BR)`
   }

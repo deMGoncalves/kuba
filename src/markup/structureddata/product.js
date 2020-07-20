@@ -21,7 +21,7 @@ export default (sku, page) => ({
     '@type': 'Brand',
     name: page.brand
   },
-  color: '',
+  color: sku.color,
   description: page.description,
   depth: {
     '@type': 'QuantitativeValue',
