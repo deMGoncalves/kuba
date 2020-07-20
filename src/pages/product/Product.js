@@ -42,7 +42,7 @@ class Product {
   }
 
   get specification () {
-    return [...this[oneOff].specification]
+    return [...this[oneOff].especification]
   }
 
   get variation () {
