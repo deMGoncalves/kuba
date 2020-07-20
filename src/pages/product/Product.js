@@ -41,6 +41,10 @@ class Product {
     return this[oneOff].promo
   }
 
+  get review () {
+    return { ...this[oneOff].review }
+  }
+
   get specification () {
     return [...this[oneOff].especification]
   }
