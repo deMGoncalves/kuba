@@ -1,4 +1,3 @@
-import additionalProperty from './additionalProperty'
 import organization from './organization'
 import review from './review'
 import webpage from './webpage'
@@ -7,7 +6,7 @@ export default (sku, page) => ({
   '@context': 'http://schema.org/',
   '@id': `${location.href}#produto`,
   '@type': 'Product',
-  additionalProperty: additionalProperty(page),
+  additionalProperty: page.specification.map(s => ({ '@type': 'PropertyValue', ...s })),
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.5',
