@@ -25,6 +25,10 @@ class Product {
     return this[oneOff].image
   }
 
+  get id () {
+    return this[oneOff].id
+  }
+
   get name () {
     return this[oneOff].name
   }
