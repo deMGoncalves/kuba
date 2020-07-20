@@ -40,7 +40,7 @@
       "sku": "000001",
       "variation": {
         "Capacidade": "64 GB",
-        "Cor": "Branco"
+        "color": "Branco"
       }
     },
     {
@@ -48,7 +48,7 @@
       "sku": "000002",
       "variation": {
         "Capacidade": "64 GB",
-        "Cor": "Preto"
+        "color": "Preto"
       }
     },
     {
@@ -56,7 +56,7 @@
       "sku": "000003",
       "variation": {
         "Capacidade": "64 GB",
-        "Cor": "Azul"
+        "color": "Azul"
       }
     },
     {
@@ -64,7 +64,7 @@
       "sku": "000004",
       "variation": {
         "Capacidade": "64 GB",
-        "Cor": "Amarelo"
+        "color": "Amarelo"
       }
     },
     {
@@ -72,7 +72,7 @@
       "sku": "000005",
       "variation": {
         "Capacidade": "64 GB",
-        "Cor": "Coral"
+        "color": "Coral"
       }
     },
     {
@@ -80,7 +80,7 @@
       "sku": "000006",
       "variation": {
         "Capacidade": "64 GB",
-        "Cor": "(PRODUCT) RED"
+        "color": "(PRODUCT) RED"
       }
     },
     {
@@ -88,7 +88,7 @@
       "sku": "000007",
       "variation": {
         "Capacidade": "128 GB",
-        "Cor": "Branco"
+        "color": "Branco"
       }
     },
     {
@@ -96,7 +96,7 @@
       "sku": "000008",
       "variation": {
         "Capacidade": "128 GB",
-        "Cor": "Preto"
+        "color": "Preto"
       }
     },
     {
@@ -104,7 +104,7 @@
       "sku": "000009",
       "variation": {
         "Capacidade": "128 GB",
-        "Cor": "Azul"
+        "color": "Azul"
       }
     },
     {
@@ -112,7 +112,7 @@
       "sku": "000010",
       "variation": {
         "Capacidade": "128 GB",
-        "Cor": "Amarelo"
+        "color": "Amarelo"
       }
     },
     {
@@ -120,7 +120,7 @@
       "sku": "000011",
       "variation": {
         "Capacidade": "128 GB",
-        "Cor": "Coral"
+        "color": "Coral"
       }
     },
     {
@@ -128,7 +128,7 @@
       "sku": "000012",
       "variation": {
         "Capacidade": "128 GB",
-        "Cor": "(PRODUCT) RED"
+        "color": "(PRODUCT) RED"
       }
     }
   ],
