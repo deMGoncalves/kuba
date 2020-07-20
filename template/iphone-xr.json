@@ -39,7 +39,7 @@
       "amount": 5,
       "sku": "000001",
       "variation": {
-        "Capacidade": "64 GB",
+        "capacity": "64 GB",
         "color": "Branco"
       }
     },
@@ -47,7 +47,7 @@
       "amount": 5,
       "sku": "000002",
       "variation": {
-        "Capacidade": "64 GB",
+        "capacity": "64 GB",
         "color": "Preto"
       }
     },
@@ -55,7 +55,7 @@
       "amount": 5,
       "sku": "000003",
       "variation": {
-        "Capacidade": "64 GB",
+        "capacity": "64 GB",
         "color": "Azul"
       }
     },
@@ -63,7 +63,7 @@
       "amount": 5,
       "sku": "000004",
       "variation": {
-        "Capacidade": "64 GB",
+        "capacity": "64 GB",
         "color": "Amarelo"
       }
     },
@@ -71,7 +71,7 @@
       "amount": 5,
       "sku": "000005",
       "variation": {
-        "Capacidade": "64 GB",
+        "capacity": "64 GB",
         "color": "Coral"
       }
     },
@@ -79,7 +79,7 @@
       "amount": 5,
       "sku": "000006",
       "variation": {
-        "Capacidade": "64 GB",
+        "capacity": "64 GB",
         "color": "(PRODUCT) RED"
       }
     },
@@ -87,7 +87,7 @@
       "amount": 5,
       "sku": "000007",
       "variation": {
-        "Capacidade": "128 GB",
+        "capacity": "128 GB",
         "color": "Branco"
       }
     },
@@ -95,7 +95,7 @@
       "amount": 5,
       "sku": "000008",
       "variation": {
-        "Capacidade": "128 GB",
+        "capacity": "128 GB",
         "color": "Preto"
       }
     },
@@ -103,7 +103,7 @@
       "amount": 5,
       "sku": "000009",
       "variation": {
-        "Capacidade": "128 GB",
+        "capacity": "128 GB",
         "color": "Azul"
       }
     },
@@ -111,7 +111,7 @@
       "amount": 5,
       "sku": "000010",
       "variation": {
-        "Capacidade": "128 GB",
+        "capacity": "128 GB",
         "color": "Amarelo"
       }
     },
@@ -119,7 +119,7 @@
       "amount": 5,
       "sku": "000011",
       "variation": {
-        "Capacidade": "128 GB",
+        "capacity": "128 GB",
         "color": "Coral"
       }
     },
@@ -127,7 +127,7 @@
       "amount": 5,
       "sku": "000012",
       "variation": {
-        "Capacidade": "128 GB",
+        "capacity": "128 GB",
         "color": "(PRODUCT) RED"
       }
     }
