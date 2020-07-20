@@ -3,7 +3,7 @@ import organization from './organization'
 import review from './review'
 import webpage from './webpage'
 
-export default (page) => ({
+export default (sku, page) => ({
   '@context': 'http://schema.org/',
   '@id': `${location.href}#produto`,
   '@type': 'Product',
