@@ -9,8 +9,8 @@ export default (sku, page) => ({
   additionalProperty: page.specification.map(s => ({ '@type': 'PropertyValue', ...s })),
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.5',
-    reviewCount: '2'
+    ratingValue: page.rating.value,
+    reviewCount: page.rating.count
   },
   audience: {
     '@type': 'PeopleAudience',
