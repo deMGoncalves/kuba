@@ -41,6 +41,10 @@ class Product {
     return this[oneOff].promo
   }
 
+  get specification () {
+    return [...this[oneOff].specification]
+  }
+
   get variation () {
     return [...this[oneOff].skus]
   }
