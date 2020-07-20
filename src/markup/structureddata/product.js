@@ -21,7 +21,7 @@ export default (page) => ({
     '@type': 'Brand',
     name: page.brand
   },
-  color: 'Branco',
+  color: '',
   description: page.description,
   depth: {
     '@type': 'QuantitativeValue',
