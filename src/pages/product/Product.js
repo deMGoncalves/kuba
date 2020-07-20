@@ -9,6 +9,10 @@ const oneOff = Symbol('oneOff')
 @paint(component)
 @markut
 class Product {
+  get brand () {
+    return this[oneOff].brand
+  }
+
   get description () {
     return this[oneOff].description
   }
