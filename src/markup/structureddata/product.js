@@ -19,8 +19,7 @@ export default (page) => ({
   },
   brand: {
     '@type': 'Brand',
-    name: 'Samsung',
-    url: 'https://www.samsung.com/br'
+    name: page.brand
   },
   color: 'Branco',
   description: page.description,
