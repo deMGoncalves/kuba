@@ -14,7 +14,7 @@ export default (sku, page) => ({
   },
   audience: {
     '@type': 'PeopleAudience',
-    suggestedGender: 'unisex'
+    suggestedGender: page.audience
   },
   brand: {
     '@type': 'Brand',
