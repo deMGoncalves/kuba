@@ -1,4 +1,4 @@
 export default (page) =>
   page
-    .spacification
+    .specification
     .map(s => ({ '@type': 'PropertyValue', ...s }))
