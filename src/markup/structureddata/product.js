@@ -95,7 +95,7 @@ export default (page) => ({
     price: '1329.05',
     priceCurrency: 'BRL'
   },
-  productID: '1EAVNB1BN',
+  productID: page.id,
   review,
   sameAs: 'https://www.apple.com/br/shop/buy-iphone/iphone-xr',
   sku: '000000',
