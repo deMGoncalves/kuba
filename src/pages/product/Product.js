@@ -25,6 +25,10 @@ class Product {
     return this[oneOff].depth
   }
 
+  get gtni8 () {
+    return this[oneOff].gtin8
+  }
+
   get height () {
     return this[oneOff].height
   }
