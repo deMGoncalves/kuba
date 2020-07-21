@@ -26,7 +26,7 @@ export default (sku, page) => ({
     '@type': 'QuantitativeValue',
     value: page.depth
   },
-  gtin8: '7892509112437',
+  gtin8: page.gtin8,
   height: {
     '@type': 'QuantitativeValue',
     value: page.height
