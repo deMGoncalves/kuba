@@ -140,6 +140,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
+      '@markup': path.resolve(__dirname, 'src/markup'),
       '@pages': path.resolve(__dirname, 'src/pages')
     }
   },

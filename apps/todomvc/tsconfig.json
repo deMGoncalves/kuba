@@ -2,7 +2,8 @@
   "baseUrl": "./",
   "compilerOptions": {
     "paths": {
-      "@pages/*": ["src/pages/*"]  
+      "@markup/*": ["src/markup/*"],
+      "@pages/*": ["src/pages/*"]
     }
   },
   "extends": "../../tsconfig.json"
