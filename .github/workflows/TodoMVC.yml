@@ -1,4 +1,4 @@
-name: Rex Community TodoMVC
+name: TodoMVC
 
 on:
   push:
