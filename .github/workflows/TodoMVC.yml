@@ -1,11 +1,11 @@
-name: Magazine do Ima
+name: Rex Community TodoMVC
 
 on:
   push:
     branches: [ master ]
 
     paths:
-      - 'apps/magazinedoima/**'
+      - 'apps/todomvc/**'
       - 'shared/f/**'
       - 'shared/h/**'
       - 'shared/hook/**'
@@ -30,12 +30,12 @@ jobs:
         yarn workspace @rex/hook test
         yarn workspace @rex/radio test
         yarn workspace @rex/router test
-        yarn workspace @rex/magazinedoima test
+        yarn workspace @rex/todomvc test
     
     - name: build
-      run: yarn workspace @rex/magazinedoima build
+      run: yarn workspace @rex/todomvc build
     
     - name: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: yarn workspace @rex/magazinedoima deploy
+      run: yarn workspace @rex/todomvc deploy
