@@ -1,0 +1,41 @@
+name: Magazine do Ima
+
+on:
+  push:
+    branches: [ master ]
+
+    paths:
+      - 'apps/magazinedoima/**'
+      - 'shared/f/**'
+      - 'shared/h/**'
+      - 'shared/hook/**'
+      - 'shared/radio/**'
+      - 'shared/reset/**'
+      - 'shared/router/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: install
+      run: yarn install
+
+    - name: test
+      run: |
+        yarn workspace @rex/f test
+        yarn workspace @rex/h test
+        yarn workspace @rex/hook test
+        yarn workspace @rex/radio test
+        yarn workspace @rex/router test
+        yarn workspace @rex/magazinedoima test
+    
+    - name: build
+      run: yarn workspace @rex/magazinedoima build
+    
+    - name: deploy
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      run: yarn workspace @rex/magazinedoima deploy

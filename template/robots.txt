@@ -1,4 +1,0 @@
-user-agent: *
-allow: /
-
-Sitemap: https://zuen.store/sitemap.xml

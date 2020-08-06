@@ -1,94 +1,31 @@
 {
-  "name": "zuen",
-  "version": "1.0.0",
-  "description": "Simples, pequeno e imperfeito. Uma visão além da programação",
-  "keywords": [
-    "HTML",
-    "CSS",
-    "Javascript"
-  ],
-  "homepage": "https://github.com/oneOffJS/zuen",
-  "bugs": {
-    "email": "cleber.engineer@hotmail.com",
-    "url": "https://github.com/oneOffJS/zuen/issues"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Cleber de Moraes Gonçalves",
-    "email": "cleber.engineer@hotmail.com",
-    "url": "https://github.com/oneOffJS"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/oneOffJS/zuen.git"
-  },
-  "browser": "/public/index.html",
-  "private": false,
-  "scripts": {
-    "start": "webpack-dashboard -- webpack-dev-server --config webpack.dev.js --open",
-    "test": "cypress open",
-    "build:git-branch-is": "git-branch-is master",
-    "build:git": "git pull origin master",
-    "build:cy": "cypress run"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint --fix",
-      "git add"
-    ],
-    "src/**/*.css": [
-      "stylelint --fix",
-      "git add"
-    ]
+  "author": "Cleber de Moraes Gonçalves <cleber.engineer@gmail.com>",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "run-s build:*"
+      "pre-commit": "lint-staged --allow-empty"
     }
   },
-  "devDependencies": {
-    "@cypress/webpack-preprocessor": "^5.4.1",
-    "@typescript-eslint/parser": "^1.13.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.1.1",
-    "css-loader": "^3.5.3",
-    "csv-loader": "^3.0.3",
-    "cypress": "^4.6.0",
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^13.0.1",
-    "eslint-config-standard-react": "^8.0.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^9.2.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "file-loader": "^4.3.0",
-    "firebase-tools": "^7.16.2",
-    "git-branch-is": "^3.1.0",
-    "html-critical-webpack-plugin": "^2.1.0",
-    "html-webpack-plugin": "^4.3.0",
-    "husky": "^3.1.0",
-    "image-webpack-loader": "^6.0.0",
-    "lint-staged": "^9.5.0",
-    "mini-css-extract-plugin": "^0.9.0",
-    "npm-run-all": "^4.1.5",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "postcss-loader": "^3.0.0",
-    "style-loader": "^1.2.1",
-    "stylelint": "^13.5.0",
-    "stylelint-config-standard": "^18.3.0",
-    "stylelint-order": "^4.0.0",
-    "terser-webpack-plugin": "^3.0.6",
-    "ts-loader": "^6.2.2",
-    "typescript": "^3.9.3",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dashboard": "^3.2.0",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^4.2.2",
-    "workbox-webpack-plugin": "^4.3.1",
-    "xml-loader": "^1.2.1"
+  "lint-staged": {
+    "apps/todomvc/**/*.{css,js,jsx}": "yarn workspace @rex/todomvc lint-staged --allow-empty",
+    "shared/f/**/*.{js,jsx}": "yarn workspace @rex/f lint-staged --allow-empty",
+    "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",
+    "shared/hook/**/*.{js,jsx}": "yarn workspace @rex/hook lint-staged --allow-empty",
+    "shared/radio/**/*.{js,jsx}": "yarn workspace @rex/radio lint-staged --allow-empty",
+    "shared/reset/**/*.css": "yarn workspace @rex/reset lint-staged --allow-empty",
+    "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty"
   },
-  "dependencies": {}
+  "name": "rex",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "shared/*"
+    ]
+  }
 }
