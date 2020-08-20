@@ -25,8 +25,11 @@ module.exports = {
       tsConfig: 'tsconfig.json'
     }
   },
+  moduleNameMapper: {
+    '@f': '<rootDir>/index.js'
+  },
   testMatch: [
-    "**/?(*.)+(spec).js?(x)"
+    '**/?(*.)+(spec).js?(x)'
   ],
   transform: {
     '^.+\\.(js|jsx)$': 'ts-jest'
