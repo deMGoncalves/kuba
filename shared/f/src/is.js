@@ -17,7 +17,7 @@ import or from './or'
  */
 const is = (Klass, target) => {
   if (isNil(target)) return F()
-  if (has('__is__', target)) return target.__is__(Klass)
+  if (has('f/is', target)) return target['f/is'](Klass)
 
   return or(equal(target.constructor, Klass), target instanceof Klass)
 }
