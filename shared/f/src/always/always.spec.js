@@ -1,7 +1,7 @@
 import * as f from '@f'
 
 describe('f.always', function () {
-  test('retorna o primeiro valor primitivo', function () {
+  test('sempre retorna o primeiro valor primitivo', function () {
     expect(f.always()()).toBeUndefined()
     expect(f.always()(null)).toBeUndefined()
 
@@ -18,7 +18,7 @@ describe('f.always', function () {
     expect(f.always(NaN)(1)).toBe(NaN)
   })
 
-  test('retorna a referencia do primeiro valor', function () {
+  test('sempre retorna a referencia do primeiro valor', function () {
     const x = {}
     expect(f.always(x)()).toEqual(x)
     expect(f.always(x)({})).toEqual(x)
