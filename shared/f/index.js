@@ -1,64 +1,30 @@
-import always from './src/always'
-import and from './src/and'
-import aperture from './src/aperture'
-import arity from './src/arity'
-import assign from './src/assign'
-import concat from './src/concat'
-import cond from './src/cond'
-import curry from './src/curry'
-import different from './src/different'
-import equal from './src/equal'
-import F from './src/F'
-import flatten from './src/flatten'
-import forEach from './src/forEach'
-import __ from './src/gap'
-import has from './src/has'
-import is, { __is__ } from './src/is'
-import isEmpty from './src/isEmpty'
-import isNil from './src/isNil'
-import join from './src/join'
-import lte from './src/lte'
-import map from './src/map'
-import not from './src/not'
-import or from './src/or'
-import prop from './src/prop'
-import repeat from './src/repeat'
-import slice from './src/slice'
-import T from './src/T'
-import test from './src/test'
-import toLower from './src/toLower'
-import toPairs from './src/toPairs'
-
-export {
-  always,
-  and,
-  aperture,
-  arity,
-  assign,
-  concat,
-  cond,
-  curry,
-  equal,
-  different,
-  F,
-  flatten,
-  forEach,
-  __,
-  has,
-  is,
-  __is__,
-  isEmpty,
-  isNil,
-  join,
-  lte,
-  map,
-  not,
-  or,
-  prop,
-  repeat,
-  slice,
-  T,
-  test,
-  toLower,
-  toPairs
-}
+export { default as always } from './src/always'
+export { default as and } from './src/and'
+export { default as aperture } from './src/aperture'
+export { default as arity } from './src/arity'
+export { default as assign } from './src/assign'
+export { default as concat } from './src/concat'
+export { default as cond } from './src/cond'
+export { default as curry } from './src/curry'
+export { default as different } from './src/different'
+export { default as equal } from './src/equal'
+export { default as F } from './src/F'
+export { default as flatten } from './src/flatten'
+export { default as forEach } from './src/forEach'
+export { default as __ } from './src/gap'
+export { default as has } from './src/has'
+export { default as is } from './src/is'
+export { default as isEmpty } from './src/isEmpty'
+export { default as isNil } from './src/isNil'
+export { default as join } from './src/join'
+export { default as lte } from './src/lte'
+export { default as map } from './src/map'
+export { default as not } from './src/not'
+export { default as or } from './src/or'
+export { default as prop } from './src/prop'
+export { default as repeat } from './src/repeat'
+export { default as slice } from './src/slice'
+export { default as T } from './src/T'
+export { default as test } from './src/test'
+export { default as toLower } from './src/toLower'
+export { default as toPairs } from './src/toPairs'
