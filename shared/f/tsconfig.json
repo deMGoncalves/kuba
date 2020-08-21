@@ -1,9 +1,9 @@
 {
+  "baseUrl": "./",
   "compilerOptions": {
-    "allowJs": true,
-    "esModuleInterop": true,
-    "module": "commonjs",
-    "strict": true,
-    "target": "es2015"
-  }
+    "paths": {
+      "@f/*": ["./*"]
+    }
+  },
+  "extends": "../../tsconfig.json"
 }
