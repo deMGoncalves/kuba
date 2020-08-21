@@ -1,4 +1,5 @@
 import curry from './curry'
+import or from './or'
 
 /**
  * Executar uma funcao callback para cada elemento da matrix e devolve o retorno no lugar do elemento
@@ -11,6 +12,6 @@ import curry from './curry'
  * @return {Array} Uma nova matrix com os retornos mapeado
  */
 const map = (target, callback) =>
-  target.map(callback)
+  or(target['f/map'], target).map(callback)
 
 export default curry(map)
