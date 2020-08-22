@@ -26,13 +26,13 @@ module.exports = {
     }
   },
   moduleNameMapper: {
-    '@f': '@rex/f',
+    '@h': '<rootDir>/index.js'
   },
   setupFiles: [
     '<rootDir>/jsdom.setup.js'
   ],
   testMatch: [
-    "**/?(*.)+(spec).js?(x)"
+    '**/?(*.)+(spec).js?(x)'
   ],
   transform: {
     '^.+\\.(js|jsx)$': 'ts-jest'
