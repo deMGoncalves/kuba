@@ -1,11 +1,9 @@
 {
+  "baseUrl": "./",
   "compilerOptions": {
-    "allowJs": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "jsxFactory": "h",
-    "module": "commonjs",
-    "strict": true,
-    "target": "es2015"
-  }
+    "paths": {
+      "@h/*": ["./*"]
+    }
+  },
+  "extends": "../../tsconfig.json"
 }

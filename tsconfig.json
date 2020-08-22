@@ -6,9 +6,6 @@
     "jsx": "react",
     "jsxFactory": "h",
     "strict": true,
-    "baseUrl": "./",
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true
+    "experimentalDecorators": true
   }
 }
