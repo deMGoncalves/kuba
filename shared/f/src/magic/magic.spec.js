@@ -1,4 +1,4 @@
-import * as f from '@f'
+import * as f from '@rex/f'
 
 describe('f.magic', function () {
   test('a mesma key devolve o mesmo simbolo', function () {

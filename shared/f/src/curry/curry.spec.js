@@ -1,4 +1,4 @@
-import * as f from '@f'
+import * as f from '@rex/f'
 
 describe('f.curry', function () {
   test('execucao unica', function () {

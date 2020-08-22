@@ -25,9 +25,6 @@ module.exports = {
       tsConfig: 'tsconfig.json'
     }
   },
-  moduleNameMapper: {
-    '@f': '<rootDir>/index.js'
-  },
   testMatch: [
     '**/?(*.)+(spec).js?(x)'
   ],
