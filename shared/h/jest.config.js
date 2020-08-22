@@ -25,9 +25,6 @@ module.exports = {
       tsConfig: 'tsconfig.json'
     }
   },
-  moduleNameMapper: {
-    '@h': '<rootDir>/index.js'
-  },
   setupFiles: [
     '<rootDir>/jsdom.setup.js'
   ],
