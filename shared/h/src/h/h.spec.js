@@ -23,4 +23,17 @@ describe('h', function () {
 
     expect(<Component />).toEqual(div)
   })
+
+  test('seta o atributo for', function () {
+    function Component () {
+      return (
+        <label htmlFor='rex' />
+      )
+    }
+
+    const label = document.createElement('label')
+    label.setAttribute('for', 'rex')
+
+    expect(<Component />).toEqual(label)
+  })
 })
