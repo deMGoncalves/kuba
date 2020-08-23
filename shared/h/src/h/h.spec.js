@@ -1,13 +1,16 @@
-import h, { Fragment } from '@rex/h'
+import h from '@rex/h'
 
 describe('h', function () {
-  test('cria um fragmento para retorna mais de um elemento root', function () {
-    const Faq = () =>
-      <>
-        <h1>Pergunta</h1>
-        <p>respost</p>
-      </>
+  test('cria um elemento', function () {
+    function Component () {
+      return (
+        <div>Rex</div>
+      )
+    }
 
-    expect(<Faq />).toEqual()
+    const el = document.createElement('div')
+    el.innerHTML = 'Rex'
+
+    expect(<Component />).toEqual(el)
   })
 })
