@@ -11,7 +11,7 @@ describe('h', function () {
     expect(<Component />).toEqual(document.createElement('div'))
   })
 
-  test('seta o atributo id', function () {
+  test('define o id do elemento', function () {
     function Component () {
       return (
         <div id='rex' />
@@ -24,7 +24,7 @@ describe('h', function () {
     expect(<Component />).toEqual(div)
   })
 
-  test('set o atributo class', function () {
+  test('define do class name', function () {
     function Component () {
       return (
         <div className='rex' />
@@ -37,7 +37,7 @@ describe('h', function () {
     expect(<Component />).toEqual(div)
   })
 
-  test('seta o atributo for', function () {
+  test('define o atributo for', function () {
     function Component () {
       return (
         <label htmlFor='rex' />
@@ -50,7 +50,7 @@ describe('h', function () {
     expect(<Component />).toEqual(label)
   })
 
-  test('seta o dataset', function () {
+  test('seta um data set', function () {
     function Component () {
       return (
         <div data-framework='rex' />
