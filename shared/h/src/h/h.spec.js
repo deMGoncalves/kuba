@@ -36,4 +36,17 @@ describe('h', function () {
 
     expect(<Component />).toEqual(label)
   })
+
+  test('seta o dataset', function () {
+    function Component () {
+      return (
+        <div data-framework='rex' />
+      )
+    }
+
+    const div = document.createElement('div')
+    div.setAttribute('data-framework', 'rex')
+
+    expect(<Component />).toEqual(div)
+  })
 })
