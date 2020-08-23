@@ -50,7 +50,7 @@ describe('h', function () {
     expect(<Component />).toEqual(label)
   })
 
-  test('seta um data set', function () {
+  test('define um dataset', function () {
     function Component () {
       return (
         <div data-framework='rex' />
@@ -59,6 +59,21 @@ describe('h', function () {
 
     const div = document.createElement('div')
     div.setAttribute('data-framework', 'rex')
+
+    expect(<Component />).toEqual(div)
+  })
+
+  test('define mais de um dataset', function () {
+    function Component () {
+      return (
+        <div data-framework='rex' data-language='javascript' />
+      )
+    }
+
+    const div = document.createElement('div')
+
+    div.setAttribute('data-framework', 'rex')
+    div.setAttribute('data-language', 'javascript')
 
     expect(<Component />).toEqual(div)
   })
