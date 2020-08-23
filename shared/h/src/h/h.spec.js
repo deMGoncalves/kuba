@@ -1,7 +1,7 @@
 import h from '@rex/h'
 
 describe('h', function () {
-  test('cria um elemento', function () {
+  test('cria um elemento simples', function () {
     function Component () {
       return (
         <div />
@@ -76,5 +76,23 @@ describe('h', function () {
     div.setAttribute('data-language', 'javascript')
 
     expect(<Component />).toEqual(div)
+  })
+
+  test('cria um elemento com um filho', function () {
+    function Component () {
+      return (
+        <ul>
+          <li>Rex</li>
+        </ul>
+      )
+    }
+
+    const ul = document.createElement('ul')
+    const li = document.createElement('li')
+
+    li.innerHTML = 'Rex'
+    ul.appendChild(li)
+
+    expect(<Component />).toEqual(ul)
   })
 })
