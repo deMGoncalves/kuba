@@ -1,3 +1,1 @@
-import h from './h'
-
-export default h
+export { default } from './h'
