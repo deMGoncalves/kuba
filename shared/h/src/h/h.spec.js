@@ -24,6 +24,19 @@ describe('h', function () {
     expect(<Component />).toEqual(div)
   })
 
+  test('set o atributo class', function () {
+    function Component () {
+      return (
+        <div className='rex' />
+      )
+    }
+
+    const div = document.createElement('div')
+    div.className = 'rex'
+
+    expect(<Component />).toEqual(div)
+  })
+
   test('seta o atributo for', function () {
     function Component () {
       return (
