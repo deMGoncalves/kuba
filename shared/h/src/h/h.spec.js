@@ -108,4 +108,17 @@ describe('h', function () {
 
     expect(<Component id='rex' />).toEqual(div)
   })
+
+  test('definindo mais de um className', function () {
+    function Component (props) {
+      return (
+        <div className={['rex', props.className]} />
+      )
+    }
+
+    const div = document.createElement('div')
+    div.className = 'rex js'
+
+    expect(<Component className='js' />).toEqual(div)
+  })
 })
