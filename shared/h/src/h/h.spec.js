@@ -78,7 +78,7 @@ describe('h', function () {
     expect(<Component />).toEqual(div)
   })
 
-  test('cria um elemento com um filho', function () {
+  test('cria um elemento com filhos', function () {
     function Component () {
       return (
         <ul>
@@ -94,5 +94,18 @@ describe('h', function () {
     ul.appendChild(li)
 
     expect(<Component />).toEqual(ul)
+  })
+
+  test('passando atributos para o component', function () {
+    function Component (props) {
+      return (
+        <div { ...props } />
+      )
+    }
+
+    const div = document.createElement('div')
+    div.setAttribute('id', 'rex')
+
+    expect(<Component id='rex' />).toEqual(div)
   })
 })
