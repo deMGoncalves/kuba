@@ -27,5 +27,8 @@
       "apps/*",
       "shared/*"
     ]
+  },
+  "dependencies": {
+    "typescript": "4.0.2"
   }
 }

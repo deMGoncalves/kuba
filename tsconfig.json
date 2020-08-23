@@ -5,6 +5,7 @@
     "allowJs": true,
     "jsx": "react",
     "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
     "strict": true,
     "experimentalDecorators": true
   }
