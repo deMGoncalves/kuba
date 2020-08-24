@@ -1,6 +1,6 @@
 {
-  "baseUrl": "./",
   "compilerOptions": {
+    "baseUrl": "./",
     "paths": {
       "@markup/*": ["src/markup/*"],
       "@pages/*": ["src/pages/*"]
