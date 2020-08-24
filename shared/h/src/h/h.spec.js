@@ -121,4 +121,13 @@ describe('h', function () {
 
     expect(<Component className='js' />).toEqual(div)
   })
+
+  test('adiciona um evento', function () {
+    const listener = jest.fn()
+    const element = <div onClick={() => listener()} />
+
+    element.dispatchEvent(new Event('click'))
+
+    expect(listener).toHaveBeenCalled()
+  })
 })
