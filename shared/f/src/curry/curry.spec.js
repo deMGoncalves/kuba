@@ -3,11 +3,13 @@ import zeroParameter from './zeroParameter'
 import oneParameter from './oneParameter'
 import twoParameters from './twoParameters'
 import threeParameters from './threeParameters'
+import throwParameters from './throwParameters'
 
 jest.mock('./zeroParameter')
 jest.mock('./oneParameter')
 jest.mock('./twoParameters')
 jest.mock('./threeParameters')
+jest.mock('./throwParameters')
 
 describe('f.curry', function () {
   beforeEach(function () {
@@ -28,6 +30,7 @@ describe('f.curry', function () {
     expect(oneParameter).not.toHaveBeenCalled()
     expect(twoParameters).not.toHaveBeenCalled()
     expect(threeParameters).not.toHaveBeenCalled()
+    expect(throwParameters).not.toHaveBeenCalled()
   })
 
   test('executa o oneParameter quando a funcao alvo tiver um parametro', function () {
@@ -43,6 +46,7 @@ describe('f.curry', function () {
 
     expect(twoParameters).not.toHaveBeenCalled()
     expect(threeParameters).not.toHaveBeenCalled()
+    expect(throwParameters).not.toHaveBeenCalled()
   })
 
   test('executa o twoParameters quando a funcao alvo tiver dois parametros', function () {
@@ -58,6 +62,7 @@ describe('f.curry', function () {
 
     expect(oneParameter).not.toHaveBeenCalled()
     expect(threeParameters).not.toHaveBeenCalled()
+    expect(throwParameters).not.toHaveBeenCalled()
   })
 
   test('executa o threeParameters quando a funcao alvo tiver tres parametros', function () {
@@ -73,5 +78,23 @@ describe('f.curry', function () {
 
     expect(oneParameter).not.toHaveBeenCalled()
     expect(twoParameters).not.toHaveBeenCalled()
+    expect(throwParameters).not.toHaveBeenCalled()
+  })
+
+  test('executa o throwParameters quando a funcao alvo tiver mais de tres parametros', function () {
+    throwParameters.mockImplementation(() => {
+      throw new Error('A quantidade de argumentos deve ser um número inteiro não negativo e não superior a três')
+    })
+
+    const x = (_a, _b, _c, _d) => undefined
+
+    expect(() => curry(x)).toThrow()
+    expect(throwParameters).toHaveBeenCalled()
+    expect(throwParameters).toHaveBeenCalledTimes(1)
+    expect(throwParameters).toHaveBeenCalledWith(x)
+
+    expect(oneParameter).not.toHaveBeenCalled()
+    expect(twoParameters).not.toHaveBeenCalled()
+    expect(threeParameters).not.toHaveBeenCalled()
   })
 })
