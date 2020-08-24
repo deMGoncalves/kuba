@@ -9,6 +9,5 @@ export default (tagNameOrComponent, descriptor, ...children) =>
   f.cond(
     [isTagName, createElement],
     [isComponent, executeComponent],
-    [(...args) => { console.log(...args); return false }, () => {}],
     [f.T, createComment]
   )(tagNameOrComponent, { ...descriptor }, f.flatten(children))
