@@ -1,9 +1,11 @@
 import curry from './curry'
 import oneParameter from './oneParameter'
 import twoParameters from './twoParameters'
+import threeParameters from './threeParameters'
 
 jest.mock('./oneParameter')
 jest.mock('./twoParameters')
+jest.mock('./threeParameters')
 
 describe('f.curry', function () {
   beforeEach(function () {
@@ -22,6 +24,7 @@ describe('f.curry', function () {
     expect(oneParameter).toHaveBeenCalledWith(x)
 
     expect(twoParameters).not.toHaveBeenCalled()
+    expect(threeParameters).not.toHaveBeenCalled()
   })
 
   test('executa o twoParameters quando a funcao alvo tiver dois parametros', function () {
@@ -36,5 +39,21 @@ describe('f.curry', function () {
     expect(twoParameters).toHaveBeenCalledWith(x)
 
     expect(oneParameter).not.toHaveBeenCalled()
+    expect(threeParameters).not.toHaveBeenCalled()
+  })
+
+  test('executa o threeParameters quando a funcao alvo tiver tres parametros', function () {
+    threeParameters.mockImplementation((target) => function (_a, _b, _c) { return target(...arguments) })
+
+    const x = (a, b, c) => a + b + c
+    const y = curry(x)
+
+    expect(y('rex', '.', 'js')).toBe('rex.js')
+    expect(threeParameters).toHaveBeenCalled()
+    expect(threeParameters).toHaveBeenCalledTimes(1)
+    expect(threeParameters).toHaveBeenCalledWith(x)
+
+    expect(oneParameter).not.toHaveBeenCalled()
+    expect(twoParameters).not.toHaveBeenCalled()
   })
 })
