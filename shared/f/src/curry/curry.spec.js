@@ -1,7 +1,7 @@
 import * as f from '@rex/f'
-import oneParameter from '@rex/f/src/curry/oneParameter'
+import oneParameter from './oneParameter'
 
-jest.mock('@rex/f/src/curry/oneParameter')
+jest.mock('./oneParameter')
 
 describe('f.curry', function () {
   beforeEach(function () {
