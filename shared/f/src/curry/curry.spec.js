@@ -44,6 +44,7 @@ describe('f.curry', function () {
     expect(oneParameter).toHaveBeenCalledTimes(1)
     expect(oneParameter).toHaveBeenCalledWith(x)
 
+    expect(zeroParameter).not.toHaveBeenCalled()
     expect(twoParameters).not.toHaveBeenCalled()
     expect(threeParameters).not.toHaveBeenCalled()
     expect(throwParameters).not.toHaveBeenCalled()
@@ -60,6 +61,7 @@ describe('f.curry', function () {
     expect(twoParameters).toHaveBeenCalledTimes(1)
     expect(twoParameters).toHaveBeenCalledWith(x)
 
+    expect(zeroParameter).not.toHaveBeenCalled()
     expect(oneParameter).not.toHaveBeenCalled()
     expect(threeParameters).not.toHaveBeenCalled()
     expect(throwParameters).not.toHaveBeenCalled()
@@ -76,6 +78,7 @@ describe('f.curry', function () {
     expect(threeParameters).toHaveBeenCalledTimes(1)
     expect(threeParameters).toHaveBeenCalledWith(x)
 
+    expect(zeroParameter).not.toHaveBeenCalled()
     expect(oneParameter).not.toHaveBeenCalled()
     expect(twoParameters).not.toHaveBeenCalled()
     expect(throwParameters).not.toHaveBeenCalled()
@@ -93,6 +96,7 @@ describe('f.curry', function () {
     expect(throwParameters).toHaveBeenCalledTimes(1)
     expect(throwParameters).toHaveBeenCalledWith(x)
 
+    expect(zeroParameter).not.toHaveBeenCalled()
     expect(oneParameter).not.toHaveBeenCalled()
     expect(twoParameters).not.toHaveBeenCalled()
     expect(threeParameters).not.toHaveBeenCalled()
