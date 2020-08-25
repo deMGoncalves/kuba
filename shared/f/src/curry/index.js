@@ -1,3 +1,1 @@
-import curry from './curry'
-
-export default curry
+export { default } from './curry'
