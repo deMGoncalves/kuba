@@ -1,5 +1,5 @@
-import oneParameter from './oneParameter'
-import { isGap } from '../gap'
+import oneParameter from '@rex/f/src/curry/oneParameter'
+import { isGap } from '@rex/f/src/gap'
 
 /**
  * Função de curry otimizado para dois argumentos.
