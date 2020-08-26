@@ -6,5 +6,5 @@ export default (target) =>
       return callback
     }
 
-    return target.call(this, ...arguments)
+    return target(...arguments)
   }
