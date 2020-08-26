@@ -27,4 +27,17 @@ describe('f.curry.oneParameter', function () {
     expect(isGap).toHaveBeenCalledTimes(1)
     expect(isGap).toHaveBeenCalledWith(__)
   })
+
+  test('retorna a saida da execucao da funcao alvo quando o parametro for diferente do __', function () {
+    isGap.mockReturnValue(false)
+
+    const x = (a) => a
+    const y = oneParameter(x)
+
+    expect(y('rex')).toBe('rex')
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(1)
+    expect(isGap).toHaveBeenCalledWith('rex')
+  })
 })
