@@ -1,14 +1,6 @@
 import oneParameter from '@rex/f/src/curry/oneParameter'
 import { isGap } from '@rex/f/src/gap'
 
-/**
- * Função de curry otimizado para dois argumentos.
- *
- * @private
- * @category Function
- * @param {Function} target A função para o curry.
- * @return {Function} A função curried.
- */
 export default (target) =>
   function f2 (a0, a1) {
     switch (arguments.length) {
