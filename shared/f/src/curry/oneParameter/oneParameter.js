@@ -1,4 +1,4 @@
-import { isGap } from '../gap'
+import { isGap } from '@rex/f/src/gap'
 
 export default (target) =>
   function f1 (a0) {
