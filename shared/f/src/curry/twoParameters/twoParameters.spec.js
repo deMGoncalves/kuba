@@ -14,7 +14,7 @@ describe('f.curry.twoParameters', function () {
     const x = () => null
     const y = twoParameters(x)
 
-    expect(y).toBeInstanceOf(Function)
+    expect(y()).toBeInstanceOf(Function)
 
     expect(oneParameter).not.toHaveBeenCalled()
     expect(isGap).not.toHaveBeenCalled()
