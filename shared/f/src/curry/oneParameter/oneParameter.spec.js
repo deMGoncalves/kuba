@@ -40,4 +40,17 @@ describe('f.curry.oneParameter', function () {
     expect(isGap).toHaveBeenCalledTimes(1)
     expect(isGap).toHaveBeenCalledWith('rex')
   })
+
+  test('executa a funcao alvo com todos os parametros que for passado para a funcao callback', function () {
+    isGap.mockReturnValue(false)
+
+    const x = (a, b) => a + b
+    const y = oneParameter(x)
+
+    expect(y('rex', '.js')).toBe('rex.js')
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(1)
+    expect(isGap).toHaveBeenCalledWith('rex')
+  })
 })
