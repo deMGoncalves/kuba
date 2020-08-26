@@ -13,6 +13,7 @@ describe('f.curry.oneParameter', function () {
     const y = oneParameter(x)
 
     expect(y()).toBeInstanceOf(Function)
+    expect(isGap).not.toHaveBeenCalled()
   })
 
   test('retorna uma funcao callback quando o parametro for um __', function () {
@@ -48,8 +49,8 @@ describe('f.curry.oneParameter', function () {
     const y = oneParameter(x)
 
     expect(y('rex', '.js')).toBe('rex.js')
-
     expect(isGap).toHaveBeenCalled()
+
     expect(isGap).toHaveBeenCalledTimes(1)
     expect(isGap).toHaveBeenCalledWith('rex')
   })
