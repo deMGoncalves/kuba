@@ -51,4 +51,22 @@ describe('f.curry.twoParameters', function () {
     expect(oneParameter).toHaveBeenCalled()
     expect(oneParameter).toHaveBeenCalledTimes(1)
   })
+
+  test('devolve uma funcao callback quando os dois parametros forem __', function () {
+    isGap
+      .mockReturnValueOnce(true)
+      .mockReturnValueOnce(true)
+
+    const x = (a, b) => a + b
+    const y = twoParameters(x)
+
+    expect(y(__, __)).toBeInstanceOf(Function)
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(2)
+    expect(isGap).toHaveBeenCalledWith(__)
+    expect(isGap).toHaveBeenLastCalledWith(__)
+
+    expect(oneParameter).not.toHaveBeenCalled()
+  })
 })
