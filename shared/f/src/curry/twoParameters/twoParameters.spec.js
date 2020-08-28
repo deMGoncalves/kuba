@@ -20,7 +20,7 @@ describe('f.curry.twoParameters', function () {
     expect(isGap).not.toHaveBeenCalled()
   })
 
-  test('devolve uma funcao callback quando passar apenas um parametro e sendo um __', function () {
+  test('devolve uma funcao callback quando o primeiro parametro for um __', function () {
     isGap.mockReturnValue(true)
 
     const x = (a, b) => a + b
@@ -33,5 +33,22 @@ describe('f.curry.twoParameters', function () {
     expect(isGap).toHaveBeenCalledWith(__)
 
     expect(oneParameter).not.toHaveBeenCalled()
+  })
+
+  test('devolve oneParameter quando passado apenas o primeiro parametro', function () {
+    isGap.mockReturnValue(false)
+    oneParameter.mockReturnValue(() => () => null)
+
+    const x = (a, b) => a + b
+    const y = twoParameters(x)
+
+    expect(y(__)).toBeInstanceOf(Function)
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(1)
+    expect(isGap).toHaveBeenCalledWith(__)
+
+    expect(oneParameter).toHaveBeenCalled()
+    expect(oneParameter).toHaveBeenCalledTimes(1)
   })
 })
