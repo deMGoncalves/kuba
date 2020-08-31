@@ -86,4 +86,22 @@ describe('f.curry.twoParameters', function () {
     expect(isGap).toHaveBeenCalledWith(__)
     expect(isGap).toHaveBeenLastCalledWith(__)
   })
+
+  test('devolve oneParameter quando o segundo parametro for um __', function () {
+    isGap
+      .mockReturnValueOnce(true)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(true)
+
+    const x = (a, b) => a + b
+    const y = twoParameters(x)
+
+    expect(y(__, '.js')).toBeInstanceOf(Function)
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(4)
+    expect(isGap).toHaveBeenCalledWith(__)
+    expect(isGap).toHaveBeenLastCalledWith('.js')
+  })
 })
