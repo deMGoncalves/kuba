@@ -134,4 +134,23 @@ describe('f.curry.twoParameters', function () {
 
     expect(oneParameter).not.toHaveBeenCalled()
   })
+
+  test('executa a funcao alvo quando todos os parametros forem passado, mais os adicionais', function () {
+    isGap
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+
+    const x = function (_a, _b) { return [].join.call(arguments, '') }
+    const y = twoParameters(x)
+
+    expect(y('rex', '.', 'js')).toBe('rex.js')
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(3)
+    expect(isGap).toHaveBeenCalledWith('rex')
+    expect(isGap).toHaveBeenLastCalledWith('.')
+
+    expect(oneParameter).not.toHaveBeenCalled()
+  })
 })
