@@ -76,6 +76,8 @@ describe('f.curry.twoParameters', function () {
       .mockReturnValueOnce(false)
       .mockReturnValueOnce(true)
 
+    oneParameter.mockReturnValue(() => () => null)
+
     const x = (a, b) => a + b
     const y = twoParameters(x)
 
@@ -89,19 +91,41 @@ describe('f.curry.twoParameters', function () {
 
   test('devolve oneParameter quando o segundo parametro for um __', function () {
     isGap
-      .mockReturnValueOnce(true)
-      .mockReturnValueOnce(false)
       .mockReturnValueOnce(false)
       .mockReturnValueOnce(true)
+      .mockReturnValueOnce(true)
+      .mockReturnValueOnce(false)
+
+    oneParameter.mockReturnValue(() => () => null)
 
     const x = (a, b) => a + b
     const y = twoParameters(x)
 
-    expect(y(__, '.js')).toBeInstanceOf(Function)
+    expect(y('rex', __)).toBeInstanceOf(Function)
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(2)
+    expect(isGap).toHaveBeenCalledWith('rex')
+    expect(isGap).toHaveBeenLastCalledWith('rex')
+  })
+
+  test('executa a funcao alvo quando todos os parametros forem passado', function () {
+    isGap
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+
+    const x = (a, b) => a + b
+    const y = twoParameters(x)
+
+    expect(y('rex', '.js')).toBe('rex.js')
 
     expect(isGap).toHaveBeenCalled()
     expect(isGap).toHaveBeenCalledTimes(4)
-    expect(isGap).toHaveBeenCalledWith(__)
+    expect(isGap).toHaveBeenCalledWith('rex')
     expect(isGap).toHaveBeenLastCalledWith('.js')
+
+    expect(oneParameter).not.toHaveBeenCalled()
   })
 })
