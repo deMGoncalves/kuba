@@ -87,6 +87,9 @@ describe('f.curry.twoParameters', function () {
     expect(isGap).toHaveBeenCalledTimes(3)
     expect(isGap).toHaveBeenCalledWith(__)
     expect(isGap).toHaveBeenLastCalledWith(__)
+
+    expect(oneParameter).toHaveBeenCalled()
+    expect(oneParameter).toHaveBeenCalledTimes(1)
   })
 
   test('devolve oneParameter quando o segundo parametro for um __', function () {
@@ -107,6 +110,9 @@ describe('f.curry.twoParameters', function () {
     expect(isGap).toHaveBeenCalledTimes(2)
     expect(isGap).toHaveBeenCalledWith('rex')
     expect(isGap).toHaveBeenLastCalledWith('rex')
+
+    expect(oneParameter).toHaveBeenCalled()
+    expect(oneParameter).toHaveBeenCalledTimes(1)
   })
 
   test('executa a funcao alvo quando todos os parametros forem passado', function () {
