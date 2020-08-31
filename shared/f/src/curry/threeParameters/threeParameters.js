@@ -3,17 +3,17 @@ import twoParameters from '@rex/f/src/curry/twoParameters'
 import { isGap } from '@rex/f/src/gap'
 
 export default (target) =>
-  function f3 (a0, a1, a2) {
+  function callback (a0, a1, a2) {
     switch (arguments.length) {
       case 0:
-        return f3
+        return callback
       case 1:
         return isGap(a0)
-          ? f3
+          ? callback
           : twoParameters((...args) => target.call(this, a0, ...args))
       case 2:
         return isGap(a0) && isGap(a1)
-          ? f3
+          ? callback
           : isGap(a0)
             ? twoParameters((_a0, ...args) => target.call(this, _a0, a1, ...args))
             : isGap(a1)
@@ -21,7 +21,7 @@ export default (target) =>
               : oneParameter((...args) => target.call(this, a0, a1, ...args))
       default:
         return isGap(a0) && isGap(a1) && isGap(a2)
-          ? f3
+          ? callback
           : isGap(a0) && isGap(a1)
             ? twoParameters((_a0, _a1, ...args) => target.call(this, _a0, _a1, a2, ...args))
             : isGap(a0) && isGap(a2)
