@@ -99,4 +99,28 @@ describe('f.curry.threeParameters', function () {
 
     expect(oneParameter).not.toHaveBeenCalled()
   })
+
+  test('devolve a funcao twoParameters quando o segundo parametro for __ e o primeiro nao', function () {
+    isGap
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(true)
+
+    twoParameters.mockImplementation(() => null)
+
+    const x = (a, b, c) => a + b + c
+    const y = threeParameters(x)
+
+    expect(y('rex', __))
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(3)
+    expect(isGap).toHaveBeenCalledWith('rex')
+    expect(isGap).toHaveBeenLastCalledWith(__)
+
+    expect(twoParameters).toHaveBeenCalled()
+    expect(twoParameters).toHaveBeenCalledTimes(1)
+
+    expect(oneParameter).not.toHaveBeenCalled()
+  })
 })
