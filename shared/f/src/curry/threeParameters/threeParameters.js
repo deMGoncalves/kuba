@@ -1,6 +1,6 @@
-import oneParameter from './oneParameter'
-import twoParameters from './twoParameters'
-import { isGap } from '../gap'
+import oneParameter from '@rex/f/src/curry/oneParameter'
+import twoParameters from '@rex/f/src/curry/twoParameters'
+import { isGap } from '@rex/f/src/gap'
 
 /**
  * Função de curry otimizado para três argumentos.
