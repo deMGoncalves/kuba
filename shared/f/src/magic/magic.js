@@ -1,6 +1,7 @@
-import * as f from '@rex/f'
+import curry from '@rex/f/src/curry'
+import or from '@rex/f/src/or'
 
 const magic = (key) =>
-  (magic[key] = f.or(magic[key], Symbol(key)))
+  (magic[key] = or(magic[key], Symbol(key)))
 
-export default f.curry(magic)
+export default curry(magic)
