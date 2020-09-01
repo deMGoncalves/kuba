@@ -27,4 +27,28 @@ describe('f.always', function () {
     expect(or).toHaveBeenCalledTimes(1)
     expect(or).toHaveBeenCalledWith(undefined, 'rex')
   })
+
+  test('retorna uma funcao callback que sempre retorna o valor/referencia do magic getter', function () {
+    magic.mockReturnValue('f/always')
+    or.mockImplementation((a, b) => a || b)
+
+    const x = {
+      get 'f/always' () {
+        return 'rex'
+      }
+    }
+
+    const y = always(x)
+
+    expect(y).toBeInstanceOf(Function)
+    expect(y()).toBe('rex')
+
+    expect(magic).toHaveBeenCalled()
+    expect(magic).toHaveBeenCalledTimes(1)
+    expect(magic).toHaveBeenCalledWith('f/always')
+
+    expect(or).toHaveBeenCalled()
+    expect(or).toHaveBeenCalledTimes(1)
+    expect(or).toHaveBeenCalledWith('rex', x)
+  })
 })
