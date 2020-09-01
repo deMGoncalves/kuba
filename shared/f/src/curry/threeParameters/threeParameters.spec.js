@@ -246,4 +246,34 @@ describe('f.curry.threeParameters', function () {
 
     expect(oneParameter).not.toHaveBeenCalled()
   })
+
+  test('devolve oneParameter quando apenas o primeiro parametro for __', function () {
+    isGap
+      .mockReturnValueOnce(true)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(true)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(true)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(true)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(true)
+
+    oneParameter.mockImplementation(() => () => null)
+
+    const x = (a, b, c) => a + b + c
+    const y = threeParameters(x)
+
+    expect(y(__, '.', 'js')).toBeInstanceOf(Function)
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(9)
+    expect(isGap).toHaveBeenCalledWith(__)
+    expect(isGap).toHaveBeenLastCalledWith(__)
+
+    expect(oneParameter).toHaveBeenCalled()
+    expect(oneParameter).toHaveBeenCalledTimes(1)
+
+    expect(twoParameters).not.toHaveBeenCalled()
+  })
 })
