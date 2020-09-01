@@ -147,4 +147,24 @@ describe('f.curry.threeParameters', function () {
 
     expect(twoParameters).not.toHaveBeenCalled()
   })
+
+  test('devolve uma funcao callback quando os tres parametros forem __', function () {
+    isGap
+      .mockReturnValueOnce(true)
+      .mockReturnValueOnce(true)
+      .mockReturnValueOnce(true)
+
+    const x = (a, b, c) => a + b + c
+    const y = threeParameters(x)
+
+    expect(y(__, __, __)).toBeInstanceOf(Function)
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(3)
+    expect(isGap).toHaveBeenCalledWith(__)
+    expect(isGap).toHaveBeenLastCalledWith(__)
+
+    expect(oneParameter).not.toHaveBeenCalled()
+    expect(twoParameters).not.toHaveBeenCalled()
+  })
 })
