@@ -2,8 +2,8 @@ import * as f from '@rex/f'
 
 describe('f.always', function () {
   test('sempre retorna o valor primitivo passado', function () {
-    expect(f.always()()).toBeUndefined()
-    expect(f.always()(null)).toBeUndefined()
+    expect(f.always(undefined)()).toBeUndefined()
+    expect(f.always(undefined)(null)).toBeUndefined()
 
     expect(f.always(null)()).toBe(null)
     expect(f.always(null)(undefined)).toBeNull()
