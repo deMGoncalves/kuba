@@ -16,6 +16,9 @@ describe('f.always', function () {
 
     expect(f.always(NaN)()).toBe(NaN)
     expect(f.always(NaN)(1)).toBe(NaN)
+
+    expect(f.always(true)()).toBeTruthy()
+    expect(f.always(true)(false)).toBeTruthy()
   })
 
   test('sempre retorna a referencia do valor passado', function () {
