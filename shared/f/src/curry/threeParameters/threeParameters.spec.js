@@ -358,4 +358,30 @@ describe('f.curry.threeParameters', function () {
     expect(oneParameter).not.toHaveBeenCalled()
     expect(twoParameters).not.toHaveBeenCalled()
   })
+
+  test('passa todos os parametros para a funcao alvo, mais os adicionais', function () {
+    isGap
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(false)
+
+    oneParameter.mockImplementation(() => () => null)
+
+    const x = function (_a, _b, _c) { return [].join.call(arguments, '') }
+    const y = threeParameters(x)
+
+    expect(y('rex', '.', 'js', ' :D')).toBe('rex.js :D')
+
+    expect(isGap).toHaveBeenCalled()
+    expect(isGap).toHaveBeenCalledTimes(7)
+    expect(isGap).toHaveBeenCalledWith('rex')
+    expect(isGap).toHaveBeenLastCalledWith('js')
+
+    expect(oneParameter).not.toHaveBeenCalled()
+    expect(twoParameters).not.toHaveBeenCalled()
+  })
 })
