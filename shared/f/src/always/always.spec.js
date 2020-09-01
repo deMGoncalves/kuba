@@ -19,6 +19,9 @@ describe('f.always', function () {
 
     expect(f.always(true)()).toBeTruthy()
     expect(f.always(true)(false)).toBeTruthy()
+
+    expect(f.always(false)()).toBeFalsy()
+    expect(f.always(false)(true)).toBeFalsy()
   })
 
   test('sempre retorna a referencia do valor passado', function () {
