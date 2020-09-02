@@ -1,11 +1,29 @@
-import * as f from '@rex/f'
+import magic from './magic'
+import or from '@rex/f/src/or'
+import symbol from './symbol'
+
+jest.mock('@rex/f/src/or')
+jest.mock('./symbol')
 
 describe('f.magic', function () {
-  test('a mesma key devolve o mesmo simbolo', function () {
-    expect(f.magic('and')).toEqual(f.magic('and'))
+  beforeEach(function () {
+    jest.clearAllMocks()
   })
 
-  test('keys diferent devolve simbolos diferentes', function () {
-    expect(f.magic('and')).not.toEqual(f.magic('map'))
+  test('retorna um simbolo para a key fornecido', function () {
+    const rex = Symbol('f/rex')
+
+    or.mockReturnValue(rex)
+    symbol.mockReturnValue(rex)
+
+    expect(magic('f/rex')).toEqual(rex)
+
+    expect(or).toHaveBeenCalled()
+    expect(or).toHaveBeenCalledTimes(1)
+    expect(or).toHaveBeenCalledWith(undefined, rex)
+
+    expect(symbol).toHaveBeenCalled()
+    expect(symbol).toHaveBeenCalledTimes(1)
+    expect(symbol).toHaveBeenCalledWith('f/rex')
   })
 })
