@@ -12,8 +12,4 @@ import themeColor from './themeColor'
 import title from './title'
 import viewport from './viewport'
 
-export default (page) =>
-  f.forEach(
-    [alternate, author, base, canonical, charset, description, icon, manifest, robots, themeColor, title, viewport],
-    m => m(page)
-  )
+export default f.chain(alternate, author, base, canonical, charset, description, icon, manifest, robots, themeColor, title, viewport)
