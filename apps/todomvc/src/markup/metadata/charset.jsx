@@ -1,5 +1,5 @@
-import h from '@rex/h'
+import h, { render } from '@rex/h'
 import * as f from '@rex/f'
 
 export default (page) =>
-  document.head.append(<meta charset={f.or(page.charset, 'utf-8')} />)
+  render(document.head, <meta charset={f.or(page.charset, 'utf-8')} />)
