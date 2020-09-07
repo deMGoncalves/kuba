@@ -5,8 +5,4 @@ import site from './site'
 import summary from './summary'
 import title from './title'
 
-export default (page) =>
-  f.forEach(
-    [description, image, site, summary, title],
-    t => t(page)
-  )
+export default f.chain(description, image, site, summary, title)
