@@ -1,3 +1,1 @@
-import oprngraph from './opengraph'
-
-export default oprngraph
+export { default } from './opengraph'
