@@ -1,4 +1,4 @@
-import h from '@rex/h'
+import h, { render } from '@rex/h'
 
 export default () =>
-  document.head.append(<meta property='og:site_name' content='TodoMVC - Helping you select an MV* framework' />)
+  render(document.head, <meta property='og:site_name' content='TodoMVC - Helping you select an MV* framework' />)
