@@ -1,3 +1,1 @@
-import twittercard from './twittercard'
-
-export default twittercard
+export { default } from './twittercard'
