@@ -1,4 +1,4 @@
-import h from '@rex/h'
+import h, { render } from '@rex/h'
 
 export default () =>
-  document.head.append(<meta name='twitter:card' content='summary_large_image' />)
+  render(document.head, <meta name='twitter:card' content='summary_large_image' />)
