@@ -7,8 +7,4 @@ import title from './title'
 import type from './type'
 import url from './url'
 
-export default (page) =>
-  f.forEach(
-    [description, image, locale, siteName, title, type, url],
-    o => o(page)
-  )
+export default f.chain(description, image, locale, siteName, title, type, url)
