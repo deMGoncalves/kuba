@@ -1,4 +1,4 @@
-import h from '@rex/h'
+import h, { render } from '@rex/h'
 
 export default () =>
-  document.head.append(<meta property='og:url' content={location.href} />)
+  render(document.head, <meta property='og:url' content={location.href} />)
