@@ -1,6 +1,5 @@
 const path = require('path')
 const common = require('./webpack.common.js')
-const CompressionPlugin = require('compression-webpack-plugin')
 const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin')
 const merge = require('webpack-merge')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
@@ -57,7 +56,6 @@ module.exports = merge.smart(common, {
       penthouse: {
         blockJSRequests: false
       }
-    }),
-    new CompressionPlugin()
+    })
   ]
 })
