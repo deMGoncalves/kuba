@@ -20,6 +20,9 @@
   },
   "name": "rex",
   "private": true,
+  "scripts": {
+    "setup": "yarn install && yarn add husky -D -W"
+  },
   "version": "1.0.0",
   "workspaces": {
     "packages": [
