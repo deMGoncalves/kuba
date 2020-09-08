@@ -1,9 +1,10 @@
 import { paint } from '@rex/h'
+import pageConfig from '@pages/pageConfig'
 import component from './component'
-import markut from '@markup'
+import markup from '@markup'
 
 @paint(component)
-@markut
+@markup(pageConfig)
 class Home {
 
 }

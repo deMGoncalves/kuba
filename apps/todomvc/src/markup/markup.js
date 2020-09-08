@@ -4,4 +4,6 @@ import metadata from './metadata'
 import opengraph from './opengraph'
 import twittercard from './twittercard'
 
-export default hook(f.chain(metadata, opengraph, twittercard))
+export default (config) =>
+  hook((page) =>
+    f.chain(metadata, opengraph, twittercard)(page, config))
