@@ -1,5 +1,6 @@
 const path = require('path')
 const common = require('./webpack.common.js')
+const CompressionPlugin = require('compression-webpack-plugin')
 const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin')
 const merge = require('webpack-merge')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
@@ -25,7 +26,7 @@ module.exports = merge.smart(common, {
           test: /\.css$/,
           name: 'styles',
           chunks: 'all',
-          enforce: true,
+          enforce: true
         },
         vendor: {
           test: /[\\/]node_modules[\\/]/,
@@ -42,7 +43,7 @@ module.exports = merge.smart(common, {
     new WorkboxWebpackPlugin.GenerateSW({
       clientsClaim: true,
       skipWaiting: true,
-      swDest: 'sw.js',
+      swDest: 'sw.js'
     }),
     new HtmlCriticalWebpackPlugin({
       base: path.resolve(__dirname, 'public'),
@@ -54,8 +55,9 @@ module.exports = merge.smart(common, {
       width: 1300,
       height: 900,
       penthouse: {
-        blockJSRequests: false,
+        blockJSRequests: false
       }
-    })
+    }),
+    new CompressionPlugin()
   ]
 })
