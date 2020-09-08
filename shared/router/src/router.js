@@ -1,5 +1,9 @@
 import * as f from '@rex/f'
+import loaded from './loaded'
+import pathname from './pathname'
 
-export default (path, listener) =>
-  window.addEventListener('DOMContentLoaded', () =>
-    (f.test(path, location.pathname) && listener(...path.exec(location.pathname).slice(1))))
+const router = (path, listener) =>
+  loaded(() =>
+    f.test(path, pathname) && listener(...f.slice(f.exec(path, pathname), 1)))
+
+export default f.curry(router)
