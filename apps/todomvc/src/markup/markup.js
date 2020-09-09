@@ -1,4 +1,6 @@
 import markup from '@rex/markup'
-import pageConfig from './pageConfig'
+import schema from './schema.json'
 
-export default markup(pageConfig)
+console.log(schema)
+
+export default markup(schema)

@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "module": "commonjs",
     "allowJs": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
     "jsx": "react",
     "jsxFactory": "h",
     "jsxFragmentFactory": "Fragment",
+    "module": "commonjs",
+    "resolveJsonModule": true,
     "strict": true,
-    "experimentalDecorators": true
+    "target": "es2015"
   }
 }
