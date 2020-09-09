@@ -3,14 +3,10 @@ import style from './style.css'
 
 export default () =>
   <nav className={style.navigation}>
-    <ul className={style.navigationList}>
+    <ul className={style.navigation__list}>
       <li>
-        <a className={style.navigationLink} href='#' title='link'>
-          Menu Rex 1
-        </a>
+        <a className={style.navigation__link} href='#' title='link'>Menu Rex 1</a>
       </li>
-      <li><a className={style.navigationLink} href='#' title='link'>Menu Rex 2</a></li>
-      <li><a className={[style.navigationLink, style.active]} href='#' title='link'>Menu Rex 3</a></li>
-      <li><a className={style.navigationLink} href='#' title='link'>Menu Rex 4</a></li>
     </ul>
+    <span className={style.navigation__logo}>Logotipo</span>
   </nav>
