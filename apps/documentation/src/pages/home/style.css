@@ -1,0 +1,11 @@
+.home {
+  background-color: #F2F3F6;
+  display: flex;
+  font-family: var(--font-decoration);
+  height: 100vh;
+  width: 100%;
+}
+
+.home__content {
+  flex-grow: 2;
+}
