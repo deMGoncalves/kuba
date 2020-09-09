@@ -2,7 +2,10 @@
   "dependencies": {
     "@rex/f": "1.0.0",
     "@rex/h": "1.0.0",
-    "@rex/reset": "1.0.0"
+    "@rex/hook": "1.0.0",
+    "@rex/markup": "1.0.0",
+    "@rex/reset": "1.0.0",
+    "@rex/router": "1.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.1",
