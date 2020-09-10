@@ -1,14 +1,15 @@
-name: TodoMVC
+name: Photosnap
 
 on:
   push:
     branches: [ master ]
 
     paths:
-      - 'apps/todomvc/**'
+      - 'apps/photosnap/**'
       - 'shared/f/**'
       - 'shared/h/**'
       - 'shared/hook/**'
+      - 'shared/markup/**'
       - 'shared/radio/**'
       - 'shared/reset/**'
       - 'shared/router/**'
@@ -28,14 +29,15 @@ jobs:
         yarn workspace @rex/f test
         yarn workspace @rex/h test
         yarn workspace @rex/hook test
+        yarn workspace @rex/markup test
         yarn workspace @rex/radio test
         yarn workspace @rex/router test
         yarn workspace @rex/todomvc test
     
     - name: build
-      run: yarn workspace @rex/todomvc build
+      run: yarn workspace @rex/photosnap build
     
     - name: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: yarn workspace @rex/todomvc deploy
+        run: yarn workspace @rex/photosnap deploy
