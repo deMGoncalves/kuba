@@ -59,7 +59,7 @@
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "test": "concurrently 'yarn run test:*'",
     "test:git-branch-is": "git-branch-is master",
-    "test:cypress": "echo \"Warning: no test specified\" && exit 0"
+    "test:jest": "jest --passWithNoTests"
   },
   "version": "1.0.0"
 }
