@@ -6,10 +6,10 @@
 	"display" : "fullscreen",
 	"start_url" : "/",
 	"short_name" : "Photosnap",
-	"theme_color" : "#1a1a1a",
+	"theme_color" : "#000000",
   "description": "Javascript é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio.",
   "orientation" : "portrait",
-	"background_color" : "#1a1a1a",
+	"background_color" : "#000000",
 	"related_applications" : [],
 	"prefer_related_applications" : false,
 	"icons" : [
