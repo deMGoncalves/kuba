@@ -42,6 +42,7 @@
   --color-warning: #f8d053;
   --color-warning-light: #f9d975;
   --color-warning-lighter: #fef6dd;
+  --radius-base: 3px;
 }
 
 * {
