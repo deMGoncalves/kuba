@@ -7,10 +7,10 @@
   "image": "/photosnap.png",
   "locale": "pt_BR",
   "manifest": "/manifest.json",
-  "name": "Rex",
+  "name": "Photosnap",
   "robots": "index, follow",
   "themeColor": "#1a1a1a",
-  "title": "Rex • Simples, pequeno e imperfeito - uma visão além da programação",
+  "title": "Photosnap • Simples, pequeno e imperfeito - uma visão além da programação",
   "type": "website",
   "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no"
 }
