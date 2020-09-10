@@ -1,4 +1,4 @@
-name: TodoMVC
+name: Photosnap
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
       - 'shared/f/**'
       - 'shared/h/**'
       - 'shared/hook/**'
+      - 'shared/markup/**'
       - 'shared/radio/**'
       - 'shared/reset/**'
       - 'shared/router/**'
@@ -28,6 +29,7 @@ jobs:
         yarn workspace @rex/f test
         yarn workspace @rex/h test
         yarn workspace @rex/hook test
+        yarn workspace @rex/markup test
         yarn workspace @rex/radio test
         yarn workspace @rex/router test
         yarn workspace @rex/photosnap test
