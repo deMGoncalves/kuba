@@ -1,18 +1,4 @@
-import * as f from '@rex/f'
-import metadata from './metadata'
-import opengraph from './opengraph'
-import twittercard from './twittercard'
+import markup from '@rex/markup'
+import schema from './schema.json'
 
-export default (Klass) =>
-  function () {
-    const page = new Klass(...arguments)
-
-    setImmediate(() =>
-      f.forEach(
-        [metadata, opengraph, twittercard],
-        m => m(page)
-      )
-    )
-
-    return page
-  }
+export default markup(schema)

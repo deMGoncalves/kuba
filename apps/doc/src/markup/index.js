@@ -1,3 +1,1 @@
-import markup from './markup'
-
-export default markup
+export { default } from './markup'
