@@ -56,7 +56,7 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "main": "src/index.js",
-  "name": "@rex/todomvc",
+  "name": "@rex/photosnap",
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",
