@@ -3,6 +3,16 @@ name: Photosnap
 on:
   push:
     branches: [ master ]
+    
+    paths:
+      - 'apps/photosnap/**'
+      - 'shared/f/**'
+      - 'shared/h/**'
+      - 'shared/hook/**'
+      - 'shared/markup/**'
+      - 'shared/radio/**'
+      - 'shared/reset/**'
+      - 'shared/router/**'
 
 jobs:
   deploy:
