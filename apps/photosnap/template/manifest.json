@@ -14,19 +14,19 @@
 	"prefer_related_applications" : false,
 	"icons" : [
 		{
-			"src": "https://rex-todomvc.web.app/rex.png",
+			"src": "https://photosnap-rex.web.app/photosnap.png",
       "type": "image/png",
 			"sizes": "192x192",
       "purpose": "any maskable"
 		},
     {
-			"src": "https://rex-todomvc.web.app/rex.png",
+			"src": "https://photosnap-rex.web.app/photosnap.png",
       "type": "image/png",
 			"sizes": "512x512",
       "purpose": "any maskable"
 		}
   ],
-	"url" : "https://rex-todomvc.web.app",
+	"url" : "https://photosnap-rex.web.app",
 	"screenshots" : [],
 	"generated" : "true"
 }
