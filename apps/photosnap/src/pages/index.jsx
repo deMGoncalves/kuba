@@ -6,3 +6,8 @@ router(/^\/$/, async () => {
   const { default: Home } = await import(/* webpackChunkName: "home" */ '@pages/home')
   render(document.body, <Home />)
 })
+
+router(/^\/stories$/, async () => {
+  const { default: Stories } = await import(/* webpackChunkName: "stories" */ '@pages/stories')
+  render(document.body, <Stories />)
+})
