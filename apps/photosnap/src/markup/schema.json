@@ -9,7 +9,7 @@
   "manifest": "/manifest.json",
   "name": "Photosnap",
   "robots": "index, follow",
-  "themeColor": "#1a1a1a",
+  "themeColor": "#000000",
   "title": "Photosnap • Simples, pequeno e imperfeito - uma visão além da programação",
   "type": "website",
   "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no"
