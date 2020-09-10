@@ -10,7 +10,7 @@
     }
   },
   "lint-staged": {
-    "apps/todomvc/**/*.{css,js,jsx}": "yarn workspace @rex/todomvc lint-staged --allow-empty",
+    "apps/photosnap/**/*.{css,js,jsx}": "yarn workspace @rex/photosnap lint-staged --allow-empty",
     "shared/f/**/*.{js,jsx}": "yarn workspace @rex/f lint-staged --allow-empty",
     "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",
     "shared/markup/**/*.{js,jsx}": "yarn workspace @rex/markup lint-staged --allow-empty",
