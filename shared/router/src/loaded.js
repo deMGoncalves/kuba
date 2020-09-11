@@ -1,2 +1,2 @@
 export default (listener) =>
-  window.addEventListener('DOMContentLoaded', listener)
+  window.addEventListener('load', listener)
