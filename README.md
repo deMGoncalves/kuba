@@ -38,4 +38,4 @@ O projeto é composto de projetos onde **apps** contém os arquivos de cada proj
 Na raíz ficará os arquivos do monorepo.
 Cada um terá suas dependências, configurações e etc de maneira individual.
 
-![alt Diagrama](diagrama.jpg, "Diagrama")
+![alt Diagrama](diagrama.jpg "Diagrama")
