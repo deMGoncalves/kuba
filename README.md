@@ -2,7 +2,7 @@ REX
 ======
 :star2: `JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!` :star2:
 
-<img src="rex.png" alt="Rex Logotipo" width="100" height="100" />
+<img src="rex.png" alt="Rex Logotipo" width="300" height="300" />
 
 Bem vindo ao **Rex Community**
 
