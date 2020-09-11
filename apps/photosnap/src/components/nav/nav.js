@@ -20,7 +20,6 @@ class Nav {
   @repaint
   toggle () {
     this[oneOff].status = f.not(this[oneOff].status)
-    console.log('nav.toggle', this.status)
     return this
   }
 }
