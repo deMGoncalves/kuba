@@ -13,3 +13,8 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.button:hover {
+  background-color: var(--color-light-gray);
+  color: var(--color-pure-black);
+}

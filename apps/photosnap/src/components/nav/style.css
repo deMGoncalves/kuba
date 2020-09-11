@@ -2,6 +2,7 @@
   background: url('./closed.png') no-repeat center;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   height: 20px;
   text-indent: -9999px;
   width: 20px;
@@ -69,4 +70,9 @@
     top: 280px;
     width: calc(100% - 60px);
   }
+}
+
+.nav__link:hover {
+  color: var(--color-light-gray);
+  text-decoration: none;
 }
