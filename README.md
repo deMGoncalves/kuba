@@ -13,13 +13,13 @@ Dsponibilizando tudo de maneira clara e objetiva, para que você possa utilizar 
 ### Arquitetura
   Baseada em um sistema de **Monorepo** uma estratégia de desenvolvimento de software onde multiplos projetos são armazenados em um único repositório.
 
-### Vantagens
+#### Vantagens
   - **Reutilização de código:** Funcionalidades semelhantes ou comunicações, podem ser compartilhadas entre os projetos, sem a necessidade de muitas dependências.
   - **Gerenciamento de dependências:** A construção pode ser facilmente optimizada, havendo um grande reuzo de dependências na mesma base de código.
   - **Refatoração de códigos:** Tendo acesso a toda a base de código os desenvolvedores, podem garantir que todo ecossistema estará funcionando à cada rafatoração.
   - **Colaboração entre equipes:** As dependências são compartilhadas à partir da fonte, as equipes podem ter visão e reutilização de códigos escritos por outras equipes.
 
-### Desvantagens
+#### Desvantagens
   - **Versionamento:** Como cada projeto do repositório tem suas versões, acaba gerando uma complexidade alta para a gerência de versões.
   - **Segurança:** Acesso de leitura a todo o projeto, possivelmente apresentando novas questões de segurança.
 
