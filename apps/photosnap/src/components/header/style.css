@@ -1,6 +1,8 @@
 .header {
   background-color: var(--color-pure-white);
   height: 72px;
+  position: relative;
+  z-index: 1;
 }
 
 .header__container {
