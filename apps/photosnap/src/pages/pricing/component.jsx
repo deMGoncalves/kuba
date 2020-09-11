@@ -1,8 +1,8 @@
 import h, { Fragment } from '@rex/h'
+import * as c from '@components'
 import style from './style.css'
 
 export default () =>
-  <>
-    <h1 className={style.pricing__h1}>Photosnap • Rex</h1>
-    <p>Pricing</p>
-  </>
+  <main className={style.pricing}>
+    <c.Header className={style.pricing__header} />
+  </main>
