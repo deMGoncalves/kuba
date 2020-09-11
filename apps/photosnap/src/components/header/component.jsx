@@ -6,5 +6,6 @@ export default () =>
   <header className={style.header}>
     <div className={style.header__container}>
       <c.Logo className={style.header__logo} />
+      <c.Nav className={style.header__nav} />
     </div>
   </header>

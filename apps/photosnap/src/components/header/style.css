@@ -1,5 +1,5 @@
 .header {
-  background-color: #fff;
+  background-color: var(--color-pure-white);
   height: 72px;
 }
 
