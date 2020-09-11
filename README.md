@@ -37,3 +37,5 @@ Dsponibilizando tudo de maneira clara e objetiva, para que você possa utilizar 
 O projeto é composto de projetos onde **apps** contém os arquivos de cada projeto individual `(Ex. photosnap, todomvc, etc)`, **shared** contém projetos que serão compartilhados `bibliotecas (f, h)`.
 Na raíz ficará os arquivos do monorepo.
 Cada um terá suas dependências, configurações e etc de maneira individual.
+
+![alt Diagrama](diagrama.jpg, "Diagrama")
