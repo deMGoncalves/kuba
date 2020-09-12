@@ -1,5 +1,6 @@
 REX
 ======
+![GitHub repo size](https://img.shields.io/github/repo-size/oneOffJS/rex.community)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/oneOffJS/rex.community)
 ![GitHub top language](https://img.shields.io/github/languages/top/oneOffJS/rex.community)
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/oneOffJS/rex.community/master)
