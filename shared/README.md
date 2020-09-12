@@ -13,6 +13,7 @@ Aqui ficarão as `bibliotecas` de apoio compartilhadas com todo o monorepo.
   - [f](./f/README.md)
   - [h](./h/README.md)
   - [hook](./hook/README.md)
+  - [markup](./markup/README.md)
   - [radio](./radio/README.md)
   - [reset](./reset/README.md)
   - [router](./router/README.md)
