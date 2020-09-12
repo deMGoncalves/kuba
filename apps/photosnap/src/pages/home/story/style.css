@@ -10,6 +10,10 @@
 }
 
 @media (min-width: 768px) {
+  .story {
+    flex-direction: row;
+  }
+
   .story.reverse {
     flex-direction: row-reverse;
   }
