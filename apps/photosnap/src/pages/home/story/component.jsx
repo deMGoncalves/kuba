@@ -10,6 +10,6 @@ export default (props, children) =>
     <figcaption className={style.story__figcaption}>
       <h1 className={[style.story__h1, style[props.color]]}>{props.title}</h1>
       <p className={[style.story__p, style[props.color]]}>{props.description}</p>
-      <c.LinkButton className={style.story__linkButton} color={props.color} href={props.url}>Get in invite</c.LinkButton>
+      <c.LinkButton className={style.story__linkButton} color={props.color} href={props.url}>Read story</c.LinkButton>
     </figcaption>
   </figure>
