@@ -3,6 +3,7 @@ REX
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/oneOffJS/rex.community)
 ![GitHub top language](https://img.shields.io/github/languages/top/oneOffJS/rex.community)
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/oneOffJS/rex.community/master)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/oneOffJS/rex.community/Photosnap)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/oneOffJS/rex.community/master)
 
 :star2: `JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!` :star2:
