@@ -7,8 +7,10 @@ export default () =>
   <main className={style.home}>
     <c.Header className={style.home__header} />
     <Story
-      title='Create and share your photo stories'
+      color='inverse'
       description='Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.'
+      direction='reverse'
+      title='Create and share your photo stories'
       url='/'
     >
       <source srcSet='/assets/create-and-share.mobile.jpg' media='(max-width: 767px)' />

@@ -1,12 +1,16 @@
 .story {
   align-items: center;
-  background-color: var(--color-pure-black);
+  background-color: var(--color-pure-white);
   display: flex;
   flex-direction: column;
 }
 
+.story.inverse {
+  background-color: var(--color-pure-black);
+}
+
 @media (min-width: 768px) {
-  .story {
+  .story.reverse {
     flex-direction: row-reverse;
   }
 }
@@ -50,8 +54,12 @@
 }
 
 .story__h1 {
-  color: var(--color-pure-white);
+  color: var(--color-pure-black);
   text-transform: uppercase;
+}
+
+.story__h1.inverse {
+  color: var(--color-pure-white);
 }
 
 .story__p {
