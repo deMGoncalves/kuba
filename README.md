@@ -1,5 +1,9 @@
 REX
 ======
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/oneOffJS/rex.community)
+![GitHub top language](https://img.shields.io/github/languages/top/oneOffJS/rex.community)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/oneOffJS/rex.community/master)
+
 :star2: `JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!` :star2:
 
 <img src="https://github.com/oneOffJS/rex.community/raw/master/rex.png" alt="Rex Logotipo" width="300" height="300" />
