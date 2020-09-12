@@ -54,11 +54,11 @@ Cada um terá suas dependências, configurações e etc de maneira individual.
 
 ## 3. Comandos
   #### Setup
-    ```bash
-      # Montagem do setup do projeto
-      $ yarn install
-      $ yarn setup
-    ```
+  ```bash
+    # Montagem do setup do projeto
+    $ yarn install
+    $ yarn setup
+  ```
 
 ## 4. Como Contribuir?
   Adoraríamos ter sua ajuda em nosso projeto! Clique [aqui](./CONTRIBUTING.md) para obter mais informações sobre o que estamos procurando e como começar.
