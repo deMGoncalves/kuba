@@ -33,6 +33,7 @@ Dsponibilizando tudo de maneira clara e objetiva, para que você possa utilizar 
   2. [Estrututura do projeto](#2-estrututura-do-projeto)
   3. [Comandos](#3-comandos)
   4. [Como Contribuir?](#4-como-contribuir?)
+  5. [Licença](#4-licenca)
 
 ## 1. Dependências
   - [Node.js](https://nodejs.org) - `versão 12.18.0 ou superior`
