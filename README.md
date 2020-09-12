@@ -26,6 +26,7 @@ Dsponibilizando tudo de maneira clara e objetiva, para que você possa utilizar 
 ## Sumário
   1. [Dependências](#1-dependências)
   2. [Estrututura do projeto](#2-estrututura-do-projeto)
+  3. [Comandos](#3-comandos)
 
 ## 1. Dependências
   - [Node.js](https://nodejs.org) - `versão 12.18.0 ou superior`
@@ -40,3 +41,14 @@ Cada um terá suas dependências, configurações e etc de maneira individual.
 
 ![alt Diagrama](new-diagrama.jpg "Diagrama")
 
+**Projetos**
+  - [apps](./apps/README.md)
+  - [shared](./shared/README.md)
+
+## 3. Comandos
+  #### Setup
+    ``` bash
+      # Montagem do setup do projeto
+      $ yarn install
+      $ yarn setup
+    ```
