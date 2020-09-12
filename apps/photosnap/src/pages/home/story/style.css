@@ -37,13 +37,13 @@
 
 .story__figcaption {
   max-width: 450px;
-  padding: 60px 15px;
+  padding: 75px 15px;
 }
 
 @media (min-width: 768px) {
   .story__figcaption {
     max-width: 500px;
-    padding: 60px;
+    padding: 0 60px;
   }
 }
 
