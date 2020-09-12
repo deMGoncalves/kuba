@@ -61,3 +61,6 @@ Cada um terá suas dependências, configurações e etc de maneira individual.
 
 ## 4. Como Contribuir?
   Adoraríamos ter sua ajuda em nosso projeto! Clique [aqui](./CONTRIBUTING.md) para obter mais informações sobre o que estamos procurando e como começar.
+
+## 5. Licença
+  [MIT License](./LICENSE.md)
