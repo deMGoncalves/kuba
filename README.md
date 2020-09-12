@@ -27,6 +27,7 @@ Dsponibilizando tudo de maneira clara e objetiva, para que você possa utilizar 
   1. [Dependências](#1-dependências)
   2. [Estrututura do projeto](#2-estrututura-do-projeto)
   3. [Comandos](#3-comandos)
+  4. [Como Contribuir?](#4-como-contribuir?)
 
 ## 1. Dependências
   - [Node.js](https://nodejs.org) - `versão 12.18.0 ou superior`
@@ -52,3 +53,6 @@ Cada um terá suas dependências, configurações e etc de maneira individual.
       $ yarn install
       $ yarn setup
     ```
+
+## 4. Como Contribuir?
+  Adoraríamos ter sua ajuda em nosso projeto! Clique [aqui](./CONTRIBUTING.md) para obter mais informações sobre o que estamos procurando e como começar.
