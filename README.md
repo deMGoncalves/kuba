@@ -54,7 +54,7 @@ Cada um terá suas dependências, configurações e etc de maneira individual.
 
 ## 3. Comandos
   #### Setup
-    ``` bash
+    ```bash
       # Montagem do setup do projeto
       $ yarn install
       $ yarn setup
