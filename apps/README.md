@@ -11,4 +11,3 @@ Aqui ficarão os repositorios dos projetos e suas respectivas dependências.
 
 # Projetos
   1. [Photosnap](./photosnap/README.md)
-  2. [Todomvc](./todomvc/README.md)
