@@ -41,17 +41,17 @@ Estruturas de drawing. Funções especializadas em desenhar tela e manipular DOM
   ``` -->
 
 
-## appendChildren
+<!-- ## appendChildren
   Adiciona nós filhos em elementos HTML
   ```bash
     # 1 parâmetro: Lista de elementos filhos.
     # 2 parâmetro: Element que receberá os filhos.
-  ```
+  ``` -->
 
-## createComment
+<!-- ## createComment
   cria comentários vazios
   ```bash
-  ```
+  ``` -->
 
 <!-- ## createElement
   ```bash
