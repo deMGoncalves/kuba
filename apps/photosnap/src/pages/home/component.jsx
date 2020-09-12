@@ -26,4 +26,15 @@ export default () =>
       <source srcSet='/assets/beautiful-stories.tablet.jpg' media='(min-width: 768px) and (max-width: 959px)' />
       <source srcSet='/assets/beautiful-stories.desktop.jpg' media='(min-width: 960px)' />
     </Story>
+    <Story
+      description='Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it'
+      direction='reverse'
+      title='Designed for everyone'
+      url='/'
+    >
+      <source srcSet='/assets/designed-for-everyone.mobile.jpg' media='(max-width: 767px)' />
+      <source srcSet='/assets/designed-for-everyone.tablet.jpg' media='(min-width: 768px) and (max-width: 959px)' />
+      <source srcSet='/assets/designed-for-everyone.desktop.jpg' media='(min-width: 960px)' />
+    </Story>
+
   </main>
