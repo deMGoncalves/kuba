@@ -67,5 +67,9 @@
 }
 
 .story__p {
+  color: var(--color-pure-black);
+}
+
+.story__p.inverse {
   color: var(--color-light-gray);
 }
