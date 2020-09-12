@@ -1,8 +1,12 @@
 REX
 ======
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/oneOffJS/rex.community)
+![GitHub top language](https://img.shields.io/github/languages/top/oneOffJS/rex.community)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/oneOffJS/rex.community/master)
+
 :star2: `JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!` :star2:
 
-<img src="rex.png" alt="Rex Logotipo" width="300" height="300" />
+<img src="https://github.com/oneOffJS/rex.community/raw/master/rex.png" alt="Rex Logotipo" width="300" height="300" />
 
 Bem vindo ao **Rex Community**
 
@@ -26,6 +30,8 @@ Dsponibilizando tudo de maneira clara e objetiva, para que você possa utilizar 
 ## Sumário
   1. [Dependências](#1-dependências)
   2. [Estrututura do projeto](#2-estrututura-do-projeto)
+  3. [Comandos](#3-comandos)
+  4. [Como Contribuir?](#4-como-contribuir?)
 
 ## 1. Dependências
   - [Node.js](https://nodejs.org) - `versão 12.18.0 ou superior`
@@ -40,3 +46,17 @@ Cada um terá suas dependências, configurações e etc de maneira individual.
 
 ![alt Diagrama](new-diagrama.jpg "Diagrama")
 
+**Projetos**
+  - [apps](./apps/README.md)
+  - [shared](./shared/README.md)
+
+## 3. Comandos
+  #### Setup
+    ``` bash
+      # Montagem do setup do projeto
+      $ yarn install
+      $ yarn setup
+    ```
+
+## 4. Como Contribuir?
+  Adoraríamos ter sua ajuda em nosso projeto! Clique [aqui](./CONTRIBUTING.md) para obter mais informações sobre o que estamos procurando e como começar.
