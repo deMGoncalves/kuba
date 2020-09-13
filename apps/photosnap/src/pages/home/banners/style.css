@@ -37,7 +37,7 @@
 
 .banner__figcaption {
   max-width: 450px;
-  padding: 75px 15px;
+  padding: 45px 15px;
 }
 
 @media (min-width: 768px) {
