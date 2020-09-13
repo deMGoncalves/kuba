@@ -6,7 +6,7 @@ import style from './style.css'
 
 export default () =>
   <main className={style.home}>
-    <c.Header className={style.home__header} />
+    <c.Header />
     {banners}
     {cards}
   </main>
