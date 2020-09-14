@@ -3,7 +3,7 @@
 	"lang" : "Portuguese",
   "name": "Photosnap • Create and share your photo stories",
 	"scope" : "/",
-	"display" : "fullscreen",
+	"display" : "standalone",
 	"start_url" : "/",
 	"short_name" : "Photosnap",
 	"theme_color" : "#000000",
