@@ -42,7 +42,14 @@
 
 @media (min-width: 768px) {
   .banner__figcaption {
+    max-width: 500px;
     padding: 0 60px;
+  }
+}
+
+@media (min-width: 960px) {
+  .banner__figcaption {
+    max-width: 600px;
   }
 }
 
