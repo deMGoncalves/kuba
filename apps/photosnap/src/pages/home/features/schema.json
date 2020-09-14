@@ -1,17 +1,17 @@
 [
   {
     "description": "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen",
-    "icone": "/assets/responsive.png",
+    "icon": "/assets/responsive.png",
     "title": "100% Responsive"
   },
   {
     "description": "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go",
-    "icone": "/assets/forever.png",
+    "icon": "/assets/forever.png",
     "title": "No Photo Upload Limit"
   },
   {
     "description": "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more",
-    "icone": "/assets/bullhorn.png",
+    "icon": "/assets/bullhorn.png",
     "title": "Available to Embed"
   }
 ]
