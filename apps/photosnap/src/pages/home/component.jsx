@@ -11,4 +11,5 @@ export default () =>
     {banners}
     {cards}
     {features}
+    <c.Footer />
   </main>
