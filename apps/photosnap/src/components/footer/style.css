@@ -57,8 +57,6 @@
 
 .footer__p {
   color: var(--color-light-gray);
-  font-size: 12px;
-  line-height: 16px;
   margin: 15px 0;
 }
 
