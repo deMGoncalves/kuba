@@ -13,7 +13,16 @@
       "logo invite"
       "nav nav"
       "social copyright";
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .footer {
+    grid-template-areas:
+      "logo nav nav invite"
+      "social nav nav copyright";
+    grid-template-columns: 25%;
   }
 }
 

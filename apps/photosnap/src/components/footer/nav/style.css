@@ -10,6 +10,15 @@
   }
 }
 
+@media (min-width: 960px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100;
+    margin: 7.5px;
+  }
+}
+
 .nav__link {
   color: var(--color-pure-white) !important;
   margin: 7.5px;
@@ -22,5 +31,11 @@
 
   .nav__link:not(:first-of-type) {
     margin-left: 15px;
+  }
+}
+
+@media (min-width: 960px) {
+  .nav__link {
+    margin: 7.5px !important;
   }
 }
