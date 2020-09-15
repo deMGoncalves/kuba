@@ -2,10 +2,25 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 37.5px 0;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+  }
 }
 
 .nav__link {
   color: var(--color-pure-white) !important;
-  margin: 7.5px 0;
+  margin: 7.5px;
+}
+
+@media (min-width: 768px) {
+  .nav__link {
+    margin: 0;
+  }
+
+  .nav__link:not(:first-of-type) {
+    margin-left: 15px;
+  }
 }
