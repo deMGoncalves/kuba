@@ -5,7 +5,7 @@ import schema from './schema.json'
 import style from './style.css'
 
 export default () =>
-  <nav className={style.social}>
+  <div className={style.social}>
     {
       f.map(schema, (url) =>
         <c.Picture className={style.social__picture}>
@@ -13,4 +13,4 @@ export default () =>
         </c.Picture>
       )
     }
-  </nav>
+  </div>
