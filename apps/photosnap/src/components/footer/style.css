@@ -10,3 +10,12 @@
 .footer__social {
   margin: 15px 0;
 }
+
+.footer__linkButton {
+  margin: 15px 0;
+}
+
+.footer__p {
+  color: var(--color-light-gray);
+  margin: 15px 0;
+}
