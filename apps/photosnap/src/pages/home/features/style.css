@@ -22,6 +22,13 @@
   text-align: center;
 }
 
+@media (min-width: 960px) {
+  .features__li {
+    max-width: max-content;
+    width: 33.33%;
+  }
+}
+
 .features__picture {
   margin: 45px 0;
   width: 72px;
