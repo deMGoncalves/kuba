@@ -36,6 +36,6 @@
 
 @media (min-width: 960px) {
   .nav__link {
-    margin: 7.5px !important;
+    margin: 7.5px 15px !important;
   }
 }
