@@ -8,4 +8,5 @@ export default () =>
     <c.Picture className={style.footer__picture}>
       <source srcSet={photosnap} />
     </c.Picture>
+    <c.Social className={style.footer__social} />
   </footer>
