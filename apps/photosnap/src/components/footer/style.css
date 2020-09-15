@@ -1,9 +1,12 @@
 .footer {
+  align-items: center;
   background-color: var(--color-pure-black);
-  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 30px;
 }
 
-.footer__picture {
-  padding-top: 16px !important;
-  width: 176px !important;
+.footer__logo,
+.footer__social {
+  margin: 15px 0;
 }
