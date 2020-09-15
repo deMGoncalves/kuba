@@ -1,0 +1,11 @@
+.nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 37.5px 0;
+}
+
+.nav__link {
+  color: var(--color-pure-white) !important;
+  margin: 7.5px 0;
+}
