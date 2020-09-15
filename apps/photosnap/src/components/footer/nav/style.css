@@ -14,8 +14,8 @@
   .nav {
     align-items: flex-start;
     flex-direction: column;
-    height: 100;
-    margin: 7.5px;
+    height: 100%;
+    margin: 7.5px !important;
   }
 }
 

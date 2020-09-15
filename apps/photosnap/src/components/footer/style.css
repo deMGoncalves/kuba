@@ -38,7 +38,7 @@
 @media (min-width: 768px) {
   .footer__social {
     grid-area: social;
-    margin-top: 75px;
+    margin-top: 75px !important;
   }
 }
 
@@ -60,7 +60,7 @@
 @media (min-width: 768px) {
   .footer__linkButton {
     grid-area: invite;
-    justify-content: end !important;
+    justify-content: flex-end !important;
   }
 }
 
@@ -72,7 +72,7 @@
 @media (min-width: 768px) {
   .footer__p {
     grid-area: copyright;
-    margin-top: 75px;
+    margin-top: 75px !important;
     text-align: right;
   }
 }
