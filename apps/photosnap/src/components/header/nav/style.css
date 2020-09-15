@@ -74,6 +74,6 @@
 }
 
 .nav__link:hover {
-  color: var(--color-light-gray);
-  text-decoration: none;
+  color: var(--color-light-gray) !important;
+  text-decoration: none !important;
 }
