@@ -1,13 +1,9 @@
-import paths from './paths'
+import * as f from '@rex/f'
+import loaded from './loaded'
+import pathname from './pathname'
 
-/**
- * Inclua um novo mapa de rota junto com os outros paths
- *
- * @name router
- * @function
- * @access public
- * @param {Array} ...args Mapa de uma nova rota
- * @return {undefined} Nao retorna nada
- */
-export default (...args) =>
-  paths.push(args)
+const router = (path, listener) =>
+  loaded(() =>
+    f.test(path, pathname) && listener(...f.slice(f.exec(path, pathname), 1)))
+
+export default f.curry(router)
