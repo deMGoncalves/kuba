@@ -1,15 +1,16 @@
-import h, { Fragment } from '@rex/h'
+import h, { render } from '@rex/h'
 
 customElements.define('pixel-gtm', class extends HTMLElement {
   connectedCallback () {
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    })
+
     window.requestAnimationFrame(() =>
-      this.append(
-        <>
-          <h1>Rex • Pixel APP</h1>
-          <strong>Simples, pequeno e imperfeito - "Uma visão além da programação"</strong>
-        </>
-      )
-    )
+      render(this, <script src={`https://www.googletagmanager.com/gtm.js?id=${this.dataset.id}`} async />))
+
     return this
   }
 })
