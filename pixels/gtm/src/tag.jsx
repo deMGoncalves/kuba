@@ -8,8 +8,7 @@ customElements.define('pixel-gtm', class extends HTMLElement {
       event: 'gtm.js'
     })
 
-    window.requestAnimationFrame(() =>
-      render(this, <script src={`https://www.googletagmanager.com/gtm.js?id=${this.dataset.id}`} async />))
+    render(this, <script src={`https://www.googletagmanager.com/gtm.js?id=${this.dataset.id}`} async />)
 
     return this
   }
