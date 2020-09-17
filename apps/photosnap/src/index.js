@@ -1,3 +1,4 @@
+import '@rex/smartcode'
 import '@pages'
 
 if (process.env.NODE_ENV === 'production') {
