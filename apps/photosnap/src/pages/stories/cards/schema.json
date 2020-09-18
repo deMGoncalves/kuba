@@ -1,6 +1,7 @@
 [
   {
     "author": "John Appleseed",
+    "date": "April 16th 2020",
     "sources": [
       "/assets/mountains.mobile.jpg",
       "/assets/mountains.tablet.jpg",
@@ -11,6 +12,7 @@
   },
   {
     "author": "Benjamin Cruz",
+    "date": "April 14th 2020",
     "sources": [
       "/assets/cityscapes.mobile.jpg",
       "/assets/cityscapes.tablet.jpg",
@@ -21,6 +23,7 @@
   },
   {
     "author": "Alexei Borodin",
+    "date": "April 11th 2020",
     "sources": [
       "/assets/18-days-voyage.mobile.jpg",
       "/assets/18-days-voyage.tablet.jpg",
@@ -31,6 +34,7 @@
   },
   {
     "author": "Samantha Brooke",
+    "date": "April 9th 2020",
     "sources": [
       "/assets/architecturals.mobile.jpg",
       "/assets/architecturals.tablet.jpg",

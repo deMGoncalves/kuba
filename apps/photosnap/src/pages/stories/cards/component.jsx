@@ -11,6 +11,7 @@ export default (props) =>
       <source srcSet={f.prop('[2]', props.sources)} media='(min-width: 960px)' />
     </c.Picture>
     <figcaption className={style.card__figcaption}>
+      <data className={style.card__data} value={props.date}>{props.date}</data>
       <h2 className={style.card__h2}>{props.title}</h2>
       <p className={style.card__p}>by {props.author}</p>
       <c.LinkButton className={style.card__linkButton} color='inverse' href={props.url}>Read story</c.LinkButton>

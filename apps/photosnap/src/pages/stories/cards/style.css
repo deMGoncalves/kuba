@@ -45,6 +45,11 @@
   width: 100%;
 }
 
+.card__data {
+  color: var(--color-pure-white);
+  margin-bottom: 15px;
+}
+
 .card__h2 {
   color: var(--color-pure-white);
 }
