@@ -64,5 +64,17 @@
     ],
     "title": "Unforeseen Corners",
     "url": "/"
+  },
+  {
+    "author": "Tim Hillenburg",
+    "date": "March 29th 2020",
+    "sources": [
+      "/assets/king-on-africa.mobile.jpg",
+      "/assets/king-on-africa.tablet.jpg",
+      "/assets/king-on-africa.desktop.jpg"
+    ],
+    "title": "King on Africa: Part II",
+    "url": "/"
   }
+
 ]
