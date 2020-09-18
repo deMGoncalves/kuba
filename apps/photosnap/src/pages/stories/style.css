@@ -1,3 +1,4 @@
-.stories__h1 {
-  color: var(--color-master-darkest);
+.stories {
+  margin: 0 auto;
+  max-width: 1440px;
 }

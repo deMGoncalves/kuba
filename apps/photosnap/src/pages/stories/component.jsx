@@ -7,4 +7,5 @@ export default () =>
   <main className={style.stories}>
     <c.Header className={style.stories__header} />
     {banner}
+    <c.Footer className={style.stories__footer} />
   </main>
