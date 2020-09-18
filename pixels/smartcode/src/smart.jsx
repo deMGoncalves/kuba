@@ -2,7 +2,7 @@ import h, { render } from '@rex/h'
 import * as f from '@rex/f'
 import schema from './schema.json'
 
-window.addEventListener('DOMContentLoaded', () =>
+window.addEventListener('load', () =>
   f.forEach(schema, (host) =>
     fetch(`${host}/stats.json`)
       .then(response => response.json())
