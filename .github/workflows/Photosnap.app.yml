@@ -1,4 +1,4 @@
-name: Photosnap
+name: [App] Photosnap
 
 on:
   push:
