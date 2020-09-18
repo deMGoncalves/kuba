@@ -8,6 +8,7 @@
 
 @media (min-width: 768px) {
   .footer {
+    clear: left;
     display: grid;
     grid-template-areas:
       "logo invite"

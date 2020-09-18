@@ -42,6 +42,17 @@
     ],
     "title": "Architecturals",
     "url": "/"
+  },
+  {
+    "author": "Timothy Wagner",
+    "date": "April 7th 2020",
+    "sources": [
+      "/assets/world-tour.mobile.jpg",
+      "/assets/world-tour.tablet.jpg",
+      "/assets/world-tour.desktop.jpg"
+    ],
+    "title": "World Tour 2019",
+    "url": "/"
   }
 
 ]
