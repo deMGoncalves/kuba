@@ -6,6 +6,7 @@ on:
 
     paths:
       - 'pixels/gtm/**'
+      - 'pixels/smartcode/**'
       - 'shared/f/**'
       - 'shared/h/**'
       - 'shared/hook/**'
@@ -32,6 +33,7 @@ jobs:
         yarn workspace @rex/markup test
         yarn workspace @rex/radio test
         yarn workspace @rex/router test
+        yarn workspace @rex/smartcode test
         yarn workspace @rex/gtm test
     
     - name: build
