@@ -86,5 +86,49 @@
     ],
     "title": "The Trip to Nowhere",
     "url": "/"
+  },
+  {
+    "author": "Mohammed Abdul",
+    "date": "March 19th 2020",
+    "sources": [
+      "/assets/rage-of-the-sea.mobile.jpg",
+      "/assets/rage-of-the-sea.tablet.jpg",
+      "/assets/rage-of-the-sea.desktop.jpg"
+    ],
+    "title": "Rage of The Sea",
+    "url": "/"
+  },
+  {
+    "author": "Michelle",
+    "date": "March 16th 2020",
+    "sources": [
+      "/assets/running-free.mobile.jpg",
+      "/assets/running-free.tablet.jpg",
+      "/assets/running-free.desktop.jpg"
+    ],
+    "title": "Running Free",
+    "url": "/"
+  },
+  {
+    "author": "Lamarr Wilson",
+    "date": "March 11th 2020",
+    "sources": [
+      "/assets/behind-the-waves.mobile.jpg",
+      "/assets/behind-the-waves.tablet.jpg",
+      "/assets/behind-the-waves.desktop.jpg"
+    ],
+    "title": "Behind the Waves",
+    "url": "/"
+  },
+  {
+    "author": "Samantha Brooke",
+    "date": "March 9th 2020",
+    "sources": [
+      "/assets/calm-waters.mobile.jpg",
+      "/assets/calm-waters.tablet.jpg",
+      "/assets/calm-waters.desktop.jpg"
+    ],
+    "title": "Calm Waters",
+    "url": "/"
   }
 ]
