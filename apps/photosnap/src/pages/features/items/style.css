@@ -38,11 +38,8 @@
 
 .items__picture {
   margin: 45px 0;
-  width: 72px;
-}
-
-.items__picture.p0 {
   padding-top: 72px !important;
+  width: 72px;
 }
 
 .items__picture.p1 {
@@ -53,6 +50,14 @@
 .items__picture.p2 {
   margin: 45px 0 44px 0;
   padding-top: 73px !important;
+}
+
+.items__picture.p3 {
+  width: 81px;
+}
+
+.items__picture.p5 {
+  width: 91px;
 }
 
 .items__h3 {
