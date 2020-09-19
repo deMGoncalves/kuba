@@ -130,5 +130,49 @@
     ],
     "title": "Calm Waters",
     "url": "/"
+  },
+  {
+    "author": "Benjamin Cruz",
+    "date": "March 5th 2020",
+    "sources": [
+      "/assets/milky-way.mobile.jpg",
+      "/assets/milky-way.tablet.jpg",
+      "/assets/milky-way.desktop.jpg"
+    ],
+    "title": "The Milky Way",
+    "url": "/"
+  },
+  {
+    "author": "Mohammed Abdul",
+    "date": "March 4th 2020",
+    "sources": [
+      "/assets/dark-forest.mobile.jpg",
+      "/assets/dark-forest.tablet.jpg",
+      "/assets/dark-forest.desktop.jpg"
+    ],
+    "title": "Night at The Dark Forest",
+    "url": "/"
+  },
+  {
+    "author": "Michelle",
+    "date": "March 1th 2020",
+    "sources": [
+      "/assets/somwarpet.mobile.jpg",
+      "/assets/somwarpet.tablet.jpg",
+      "/assets/somwarpet.desktop.jpg"
+    ],
+    "title": "Somwarpet’s Beauty",
+    "url": "/"
+  },
+  {
+    "author": "William Malcolm",
+    "date": "February 25th 2020",
+    "sources": [
+      "/assets/land-of-dreams.mobile.jpg",
+      "/assets/land-of-dreams.tablet.jpg",
+      "/assets/land-of-dreams.desktop.jpg"
+    ],
+    "title": "Land of Dreams",
+    "url": "/"
   }
 ]
