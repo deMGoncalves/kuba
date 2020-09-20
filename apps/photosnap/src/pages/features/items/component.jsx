@@ -12,7 +12,7 @@ export default () =>
           <c.Picture className={[style.items__picture, style[`p${i}`]]}>
             <source srcSet={dto.icon} />
           </c.Picture>
-          <h3 className={style.items__h3}>{dto.title}</h3>
+          <h2 className={style.items__h2}>{dto.title}</h2>
           <p className={style.items__p}>{dto.description}</p>
         </li>
       )

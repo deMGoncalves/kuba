@@ -60,7 +60,10 @@
   width: 91px;
 }
 
-.items__h3 {
+.items__h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
   padding: 7.5px 0;
 }
 

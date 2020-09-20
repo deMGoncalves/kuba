@@ -7,5 +7,6 @@ export default () =>
   <main className={style.pricing}>
     <c.Header className={style.pricing__header} />
     {banner}
+    <c.Tarja className={style.pricing__tarja} />
     <c.Footer className={style.pricing__footer} />
   </main>

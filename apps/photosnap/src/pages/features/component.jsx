@@ -9,5 +9,6 @@ export default () =>
     <c.Header className={style.features__header} />
     {banner}
     {items}
+    <c.Tarja className={style.features__tarja} />
     <c.Footer className={style.features__footer} />
   </main>
