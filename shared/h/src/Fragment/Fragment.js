@@ -1,4 +1,5 @@
 import appendChildren from '@rex/h/src/appendChildren'
+import extendAttributes from './extendAttributes'
 
-export default (_, children) =>
-  appendChildren(children, document.createDocumentFragment())
+export default (props, children) =>
+  appendChildren(children, extendAttributes(props, document.createDocumentFragment()))

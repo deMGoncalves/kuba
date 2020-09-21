@@ -1,1 +1,1 @@
-export { default } from 'hide'
+export { default } from './hide'
