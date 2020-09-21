@@ -1,4 +1,4 @@
-import h from '@rex/h'
+import h, { Fragment } from '@rex/h'
 import * as c from '@components'
 import banners from './banners'
 import cards from './cards'
