@@ -1,4 +1,4 @@
-name: Analytics
+name: Google Analytics
 
 on:
   push:
