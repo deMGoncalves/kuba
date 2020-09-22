@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "hotjar-rex",
+    "site": "hj-rex",
     "public": "public",
     "ignore": [
       "firebase.json",
