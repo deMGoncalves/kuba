@@ -14,6 +14,7 @@
     "pixels/ga/**/*.{css,js,jsx}": "yarn workspace @rex/ga lint-staged --allow-empty",
     "pixels/gtag/**/*.{css,js,jsx}": "yarn workspace @rex/gtag lint-staged --allow-empty",
     "pixels/gtm/**/*.{css,js,jsx}": "yarn workspace @rex/gtm lint-staged --allow-empty",
+    "pixels/hotjar/**/*.{css,js,jsx}": "yarn workspace @rex/hotjar lint-staged --allow-empty",
     "pixels/smartcode/**/*.{css,js,jsx}": "yarn workspace @rex/smartcode lint-staged --allow-empty",
     "shared/f/**/*.{js,jsx}": "yarn workspace @rex/f lint-staged --allow-empty",
     "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",

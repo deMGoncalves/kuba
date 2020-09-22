@@ -16,9 +16,9 @@ module.exports = merge.smart(common, {
     ]
   },
   output: {
-    filename: 'GTM.[hash].js',
+    filename: 'HOTJAR.[hash].js',
     globalObject: 'this',
-    library: 'GTM',
+    library: 'HOTJAR',
     libraryTarget: 'umd',
     path: path.resolve(__dirname, 'public'),
     publicPath: '/',
