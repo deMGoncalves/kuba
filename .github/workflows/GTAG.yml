@@ -1,11 +1,11 @@
-name: Analytics
+name: Google Analytics
 
 on:
   push:
     branches: [ master ]
 
     paths:
-      - 'pixels/analytics/**'
+      - 'pixels/gtag/**'
       - 'pixels/smartcode/**'
       - 'shared/f/**'
       - 'shared/h/**'
@@ -34,12 +34,12 @@ jobs:
         yarn workspace @rex/radio test
         yarn workspace @rex/router test
         yarn workspace @rex/smartcode test
-        yarn workspace @rex/analytics test
+        yarn workspace @rex/gtag test
     
     - name: build
-      run: yarn workspace @rex/analytics build
+      run: yarn workspace @rex/gtag build
     
     - name: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: yarn workspace @rex/analytics deploy
+      run: yarn workspace @rex/gtag deploy

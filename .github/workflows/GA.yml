@@ -1,0 +1,45 @@
+name: Google Analytics Object
+
+on:
+  push:
+    branches: [ master ]
+
+    paths:
+      - 'pixels/ga/**'
+      - 'pixels/smartcode/**'
+      - 'shared/f/**'
+      - 'shared/h/**'
+      - 'shared/hook/**'
+      - 'shared/markup/**'
+      - 'shared/radio/**'
+      - 'shared/reset/**'
+      - 'shared/router/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: install
+      run: yarn install
+
+    - name: test
+      run: |
+        yarn workspace @rex/f test
+        yarn workspace @rex/h test
+        yarn workspace @rex/hook test
+        yarn workspace @rex/markup test
+        yarn workspace @rex/radio test
+        yarn workspace @rex/router test
+        yarn workspace @rex/smartcode test
+        yarn workspace @rex/ga test
+    
+    - name: build
+      run: yarn workspace @rex/ga build
+    
+    - name: deploy
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      run: yarn workspace @rex/ga deploy
