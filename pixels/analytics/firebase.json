@@ -1,0 +1,46 @@
+{
+  "hosting": {
+    "site": "analytics-rex",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(html|json)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0, no-cache"
+          },
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+
+        ]
+      },
+      {
+        "source": "**/*.@(eot|css|gif|jpeg|jpg|js|otf|png|svg|ttf|txt|woff|woff2|xml)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
+          },
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ]
+  }
+}

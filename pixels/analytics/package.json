@@ -48,7 +48,7 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "main": "src/index.js",
-  "name": "@rex/gtm",
+  "name": "@rex/analytics",
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",
