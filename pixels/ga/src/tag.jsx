@@ -21,7 +21,7 @@ customElements.define('pixel-ga', class extends HTMLElement {
   }
 
   get [src] () {
-    return 'www.google-analytics.com/analytics.js'
+    return 'https://www.google-analytics.com/analytics.js'
   }
 
   constructor () {
