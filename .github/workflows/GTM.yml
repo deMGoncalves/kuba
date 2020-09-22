@@ -1,4 +1,4 @@
-name: GTM
+name: Google Tag Manager
 
 on:
   push:
