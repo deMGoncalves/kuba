@@ -19,7 +19,7 @@ customElements.define('pixel-analytics', class extends HTMLElement {
     window.dataLayer = window.dataLayer || []
     window.dataLayer.push(...this[event])
 
-    render(document.head, <script src={this[src]} async />)
+    render(this, <script src={this[src]} async />)
     return this
   }
 })
