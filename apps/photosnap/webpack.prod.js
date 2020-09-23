@@ -20,7 +20,7 @@ module.exports = merge.smart(common, {
       }),
       new OptimizeCSSAssetsPlugin({})
     ],
-    runtimeChunk: 'single',
+    runtimeChunk: 'multiple',
     splitChunks: {
       cacheGroups: {
         styles: {
