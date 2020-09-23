@@ -1,6 +1,5 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
 module.exports = {
@@ -23,12 +22,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              esModule: true
-            }
-          },
+          'style-loader',
           {
             loader: 'css-loader',
             options: {
@@ -104,11 +98,7 @@ module.exports = {
         from: path.resolve(__dirname, 'template'),
         to: '.'
       }
-    ]),
-    new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
-      chunkFilename: '[id].[hash].css'
-    })
+    ])
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
