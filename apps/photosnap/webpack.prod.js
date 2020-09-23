@@ -9,30 +9,13 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 module.exports = merge.smart(common, {
   mode: 'production',
   optimization: {
-    moduleIds: 'hashed',
     minimizer: [
       new TerserJSPlugin({
         terserOptions: {
           safari10: true
         }
       })
-    ],
-    runtimeChunk: 'multiple',
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          test: /\.css$/,
-          name: 'styles',
-          chunks: 'all',
-          enforce: true
-        },
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all'
-        }
-      }
-    }
+    ]
   },
   output: {
     path: path.resolve(__dirname, 'public')
