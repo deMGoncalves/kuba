@@ -1,6 +1,5 @@
 const path = require('path')
 const common = require('./webpack.common.js')
-const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPreconnectPlugin = require('html-webpack-preconnect-plugin')
 const merge = require('webpack-merge')
@@ -60,19 +59,6 @@ module.exports = merge.smart(common, {
       clientsClaim: true,
       skipWaiting: true,
       swDest: 'sw.js'
-    }),
-    new HtmlCriticalWebpackPlugin({
-      base: path.resolve(__dirname, 'public'),
-      src: 'index.html',
-      dest: 'index.html',
-      inline: true,
-      minify: true,
-      extract: true,
-      width: 1440,
-      height: 1080,
-      penthouse: {
-        blockJSRequests: false
-      }
     })
   ]
 })
