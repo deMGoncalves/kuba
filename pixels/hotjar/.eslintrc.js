@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
+    'jest/globals': true,
     node: true
   },
   extends: [
@@ -24,14 +25,15 @@ module.exports = {
     useJSXTextNode: true
   },
   plugins: [
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'jest'
   ],
   rules: {
     'no-prototype-builtins': 'off',
     'no-unused-vars': [
       'error',
       {
-        varsIgnorePattern: '^(h|Fragment)$',
+        varsIgnorePattern: '^[h]$',
         argsIgnorePattern: '^_'
       }
     ],
