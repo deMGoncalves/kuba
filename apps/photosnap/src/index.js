@@ -1,5 +1,10 @@
-import '@rex/smartcode'
 import '@pages'
+import '@rex/reset'
+import '@rex/gtag'
+import '@rex/ga'
+import '@rex/gtm'
+import '@rex/hotjar'
+import '@rex/trackjs'
 
 if (process.env.NODE_ENV === 'production') {
   if ('serviceWorker' in navigator) {

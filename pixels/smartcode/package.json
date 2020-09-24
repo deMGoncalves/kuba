@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@rex/f": "1.0.0",
     "@rex/h": "1.0.0"
   },
   "devDependencies": {
@@ -28,7 +27,7 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "main": "index.js",
-  "name": "@rex/smartcode",
+  "name": "@rex/ga",
   "private": true,
   "scripts": {
     "start": "jest --watchAll",

@@ -1,1 +1,1 @@
-export { default } from './src/smart'
+export { default } from './src/pixel'
