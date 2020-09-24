@@ -6,7 +6,11 @@ on:
 
     paths:
       - 'apps/photosnap/**'
-      - 'pixels/smartcode/**'
+      - 'pixels/smartcode/ga/**'
+      - 'pixels/smartcode/gtag/**'
+      - 'pixels/smartcode/gtm/**'
+      - 'pixels/smartcode/hotjar/**'
+      - 'pixels/smartcode/trackjs/**'
       - 'shared/f/**'
       - 'shared/h/**'
       - 'shared/hook/**'
@@ -33,7 +37,11 @@ jobs:
         yarn workspace @rex/markup test
         yarn workspace @rex/radio test
         yarn workspace @rex/router test
-        yarn workspace @rex/smartcode test
+        yarn workspace @rex/ga test
+        yarn workspace @rex/gtag test
+        yarn workspace @rex/gtm test
+        yarn workspace @rex/hotjar test
+        yarn workspace @rex/trackjs test
         yarn workspace @rex/photosnap test
     
     - name: build
