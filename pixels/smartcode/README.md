@@ -1,4 +1,4 @@
 [voltar](../README.md)
 
-Google Analytics
+Google Tag Manager
 ======
