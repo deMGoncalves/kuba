@@ -6,11 +6,11 @@ on:
 
     paths:
       - 'apps/photosnap/**'
-      - 'pixels/smartcode/ga/**'
-      - 'pixels/smartcode/gtag/**'
-      - 'pixels/smartcode/gtm/**'
-      - 'pixels/smartcode/hotjar/**'
-      - 'pixels/smartcode/trackjs/**'
+      - 'pixels/ga/**'
+      - 'pixels/gtag/**'
+      - 'pixels/gtm/**'
+      - 'pixels/hotjar/**'
+      - 'pixels/trackjs/**'
       - 'shared/f/**'
       - 'shared/h/**'
       - 'shared/hook/**'
