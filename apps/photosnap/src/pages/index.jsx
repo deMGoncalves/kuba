@@ -6,7 +6,7 @@ router(/^\/$/, async () => {
   render(document.body, <Home />)
 })
 
-router(/^\/features/, async () => {
+router(/^\/features$/, async () => {
   const { default: Features } = await import(/* webpackPrefetch: true, webpackPreload: true, webpackChunkName: "features" */ '@pages/features')
   render(document.body, <Features />)
 })
