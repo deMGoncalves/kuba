@@ -27,7 +27,6 @@ module.exports = {
   },
   moduleNameMapper: {
     '@components': '<rootDir>/src/components',
-    '@markup': '<rootDir>/src/markup',
     '@pages': '<rootDir>/src/pages'
   },
   setupFiles: [

@@ -104,7 +104,6 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       '@components': path.resolve(__dirname, 'src/components'),
-      '@markup': path.resolve(__dirname, 'src/markup'),
       '@pages': path.resolve(__dirname, 'src/pages')
     }
   },

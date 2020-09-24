@@ -1,6 +1,6 @@
 import { paint } from '@rex/h'
+import markup from '@rex/markup'
 import component from './component'
-import markup from '@markup'
 
 @paint(component)
 @markup
