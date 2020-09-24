@@ -7,4 +7,5 @@ dataLayer.push({
   'event': 'gtm.js'
 })
 
-render(document.head, <script src={`https://www.googletagmanager.com/gtm.js?id=${schema.id}`} async />)
+window.addEventListener('DOMContentLoaded', () =>
+  render(document.head, <script src={`https://www.googletagmanager.com/gtm.js?id=${schema.id}`} async />))

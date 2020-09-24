@@ -7,4 +7,5 @@ window._hjSettings = {
   hjsv: schema.sv
 }
 
-render(document.head, <script src={`https://static.hotjar.com/c/hotjar-${schema.id}.js?sv=${schema.sv}`} async />)
+window.addEventListener('DOMContentLoaded', () =>
+  render(document.head, <script src={`https://static.hotjar.com/c/hotjar-${schema.id}.js?sv=${schema.sv}`} async />))
