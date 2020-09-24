@@ -7,3 +7,5 @@ gtag('config', schema.id)
 
 window.addEventListener('DOMContentLoaded', () =>
   render(document.head, <script src={`https://www.googletagmanager.com/gtag/js?id=${schema.id}`} async />))
+
+export default gtag
