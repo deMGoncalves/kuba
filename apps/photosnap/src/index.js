@@ -1,7 +1,7 @@
 import '@pages'
 import '@rex/reset'
-import '@rex/gtag'
 import '@rex/ga'
+import '@rex/gtag'
 import '@rex/gtm'
 import '@rex/hotjar'
 import '@rex/trackjs'
