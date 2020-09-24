@@ -1,3 +1,4 @@
+import '@rex/reset'
 import '@pages'
 import '@rex/ga'
 import '@rex/gtag'
