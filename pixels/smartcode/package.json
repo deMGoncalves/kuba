@@ -27,7 +27,7 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "main": "index.js",
-  "name": "@rex/ga",
+  "name": "@rex/gtag",
   "private": true,
   "scripts": {
     "start": "jest --watchAll",

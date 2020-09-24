@@ -1,8 +1,8 @@
 import h, { render } from '@rex/h'
-import ga from './ga'
+import gtag from './gtag'
 import schema from './schema.json'
 
-ga('create', schema.id, 'auto')
-ga('send', 'pageview')
+gtag('js', new Date())
+gtag('config', schema.id)
 
-render(document.head, <script src='https://www.google-analytics.com/analytics.js' async />)
+render(document.head, <script src={`https://www.googletagmanager.com/gtag/js?id=${schema.id}`} async />)
