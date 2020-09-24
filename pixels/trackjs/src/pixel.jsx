@@ -1,6 +1,6 @@
 import h, { render } from '@rex/h'
 import schema from './schema.json'
-import trackJs from './trackJs'
+import trackJs from './trackjs'
 
 trackJs(schema.token)
 
