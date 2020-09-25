@@ -1,5 +1,6 @@
 import h, { Fragment } from '@rex/h'
-import * as c from '@components'
+import Header from '@rex/header'
+import Footer from '@rex/footer'
 import banners from './banners'
 import cards from './cards'
 import features from './features'
@@ -7,9 +8,9 @@ import style from './style.css'
 
 export default () =>
   <main className={style.home}>
-    <c.Header className={style.home__header} />
+    <Header className={style.home__header} />
     {banners}
     {cards}
     {features}
-    <c.Footer className={style.home__footer} />
+    <Footer className={style.home__footer} />
   </main>
