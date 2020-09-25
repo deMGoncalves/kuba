@@ -1,12 +1,14 @@
 import h, { Fragment } from '@rex/h'
-import * as c from '@components'
+import * as ui from '@rex/kit'
+import Header from '@rex/header'
+import Footer from '@rex/footer'
 import banner from './banner'
 import style from './style.css'
 
 export default () =>
   <main className={style.pricing}>
-    <c.Header className={style.pricing__header} />
+    <Header className={style.pricing__header} />
     {banner}
-    <c.Tarja className={style.pricing__tarja} />
-    <c.Footer className={style.pricing__footer} />
+    <ui.Tarja className={style.pricing__tarja} />
+    <Footer className={style.pricing__footer} />
   </main>
