@@ -34,7 +34,8 @@
     "packages": [
       "apps/*",
       "pixels/*",
-      "shared/*"
+      "shared/*",
+      "ui/*"
     ]
   }
 }
