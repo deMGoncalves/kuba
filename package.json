@@ -22,7 +22,10 @@
     "shared/hook/**/*.{js,jsx}": "yarn workspace @rex/hook lint-staged --allow-empty",
     "shared/radio/**/*.{js,jsx}": "yarn workspace @rex/radio lint-staged --allow-empty",
     "shared/reset/**/*.css": "yarn workspace @rex/reset lint-staged --allow-empty",
-    "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty"
+    "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty",
+    "ui/footer/**/*.{js,jsx}": "yarn workspace @rex/footer lint-staged --allow-empty",
+    "ui/heder/**/*.{js,jsx}": "yarn workspace @rex/header lint-staged --allow-empty",
+    "ui/kit/**/*.{js,jsx}": "yarn workspace @rex/kit lint-staged --allow-empty"
   },
   "name": "rex",
   "private": true,

@@ -28,7 +28,7 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "main": "index.js",
-  "name": "@rex/header",
+  "name": "@rex/kit",
   "private": true,
   "scripts": {
     "start": "jest --watchAll",
