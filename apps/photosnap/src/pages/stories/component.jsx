@@ -1,13 +1,14 @@
 import h, { Fragment } from '@rex/h'
-import * as c from '@components'
+import Header from '@rex/header'
+import Footer from '@rex/footer'
 import banner from './banner'
 import cards from './cards'
 import style from './style.css'
 
 export default () =>
   <main className={style.stories}>
-    <c.Header className={style.stories__header} />
+    <Header className={style.stories__header} />
     {banner}
     {cards}
-    <c.Footer className={style.stories__footer} />
+    <Footer className={style.stories__footer} />
   </main>
