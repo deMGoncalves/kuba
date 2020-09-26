@@ -6,4 +6,5 @@ import schema from './schema.json'
 import twittercard from './twittercard'
 
 export default hook((page) =>
-  f.chain(metadata, opengraph, twittercard)(page, schema))
+  window.requestIdleCallback(() =>
+    f.chain(metadata, opengraph, twittercard)(page, schema)))

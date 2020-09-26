@@ -7,7 +7,7 @@ import '@rex/trackjs'
 
 if (process.env.NODE_ENV === 'production') {
   if ('serviceWorker' in navigator) {
-    window.addEventListener('DOMContentLoaded', () =>
+    window.requestIdleCallback(() =>
       navigator
         .serviceWorker
         .register('/sw.js')
