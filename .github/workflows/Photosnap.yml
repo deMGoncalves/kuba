@@ -6,18 +6,9 @@ on:
 
     paths:
       - 'apps/photosnap/**'
-      - 'pixels/ga/**'
-      - 'pixels/gtag/**'
-      - 'pixels/gtm/**'
-      - 'pixels/hotjar/**'
-      - 'pixels/trackjs/**'
-      - 'shared/f/**'
-      - 'shared/h/**'
-      - 'shared/hook/**'
-      - 'shared/markup/**'
-      - 'shared/radio/**'
-      - 'shared/reset/**'
-      - 'shared/router/**'
+      - 'pixels/**'
+      - 'shared/**'
+      - 'ui/**'
 
 jobs:
   deploy:
@@ -38,15 +29,14 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-yarn-
 
-    - name: install
-      run: yarn install
+    - name: Run yarn setup
+      run: yarn setup
 
-    - name: test
+    - name: Run yarn test
       run: |
         yarn workspace @rex/f test
         yarn workspace @rex/h test
         yarn workspace @rex/hook test
-        yarn workspace @rex/markup test
         yarn workspace @rex/radio test
         yarn workspace @rex/router test
         yarn workspace @rex/ga test
@@ -54,12 +44,17 @@ jobs:
         yarn workspace @rex/gtm test
         yarn workspace @rex/hotjar test
         yarn workspace @rex/trackjs test
+        yarn workspace @rex/footer test
+        yarn workspace @rex/header test
+        yarn workspace @rex/kit test
+        yarn workspace @rex/markup test
+        yarn workspace @rex/reset test
         yarn workspace @rex/photosnap test
     
-    - name: build
+    - name: Run Photosnap build
       run: yarn workspace @rex/photosnap build
     
-    - name: deploy
+    - name: Run Firebase deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       run: yarn workspace @rex/photosnap deploy
