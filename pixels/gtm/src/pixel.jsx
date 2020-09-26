@@ -7,7 +7,7 @@ dataLayer.push({
   'event': 'gtm.js'
 })
 
-window.addEventListener('DOMContentLoaded', () =>
+window.requestIdleCallback(() =>
   render(document.head, <script src={`https://www.googletagmanager.com/gtm.js?id=${schema.id}`} async />))
 
 export default dataLayer
