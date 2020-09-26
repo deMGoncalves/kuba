@@ -4,7 +4,7 @@ import trackJs from './track'
 
 trackJs(schema.token)
 
-window.addEventListener('DOMContentLoaded', () =>
+window.requestIdleCallback(() =>
   render(document.head, <script src='https://cdn.trackjs.com/releases/current/tracker.js' async />))
 
 export default trackJs
