@@ -48,7 +48,6 @@ jobs:
         yarn workspace @rex/header test
         yarn workspace @rex/kit test
         yarn workspace @rex/markup test
-        yarn workspace @rex/reset test
         yarn workspace @rex/photosnap test
     
     - name: Run Photosnap build
