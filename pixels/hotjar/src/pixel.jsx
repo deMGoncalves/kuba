@@ -7,7 +7,7 @@ window._hjSettings = {
   hjsv: schema.sv
 }
 
-window.requestIdleCallback(() =>
+window.addEventListener('DOMContentLoaded', () =>
   render(document.head, <script src={`https://static.hotjar.com/c/hotjar-${schema.id}.js?sv=${schema.sv}`} async />))
 
 export default hj
