@@ -18,14 +18,14 @@
     "pixels/trackjs/**/*.{css,js,jsx}": "yarn workspace @rex/trackjs lint-staged --allow-empty",
     "shared/f/**/*.{js,jsx}": "yarn workspace @rex/f lint-staged --allow-empty",
     "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",
-    "shared/markup/**/*.{js,jsx}": "yarn workspace @rex/markup lint-staged --allow-empty",
     "shared/hook/**/*.{js,jsx}": "yarn workspace @rex/hook lint-staged --allow-empty",
     "shared/radio/**/*.{js,jsx}": "yarn workspace @rex/radio lint-staged --allow-empty",
-    "shared/reset/**/*.css": "yarn workspace @rex/reset lint-staged --allow-empty",
     "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty",
     "ui/footer/**/*.{js,jsx}": "yarn workspace @rex/footer lint-staged --allow-empty",
     "ui/heder/**/*.{js,jsx}": "yarn workspace @rex/header lint-staged --allow-empty",
-    "ui/kit/**/*.{js,jsx}": "yarn workspace @rex/kit lint-staged --allow-empty"
+    "ui/kit/**/*.{js,jsx}": "yarn workspace @rex/kit lint-staged --allow-empty",
+    "ui/markup/**/*.{js,jsx}": "yarn workspace @rex/markup lint-staged --allow-empty",
+    "ui/reset/**/*.css": "yarn workspace @rex/reset lint-staged --allow-empty"
   },
   "name": "rex",
   "private": true,
