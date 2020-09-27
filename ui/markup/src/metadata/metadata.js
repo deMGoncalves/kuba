@@ -9,6 +9,5 @@ import icon from './icon'
 import robots from './robots'
 import themeColor from './themeColor'
 import title from './title'
-import viewport from './viewport'
 
-export default f.chain(alternate, author, base, canonical, charset, description, icon, robots, themeColor, title, viewport)
+export default f.chain(alternate, author, base, canonical, charset, description, icon, robots, themeColor, title)
