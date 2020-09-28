@@ -11,7 +11,7 @@ REX
 
 <img src="https://github.com/oneOffJS/rex/raw/master/rex.png" alt="Rex Logotipo" width="300" height="300" />
 
-Bem vindo ao **Rex Community**
+Bem vindo ao **Rex**
 
 Diferente das propostas de mercado aqui não trazemos um framework e sim uma visão de **arquitetura**, <br />
 onde implementamos patterns e boas praticas de mercado, visando o ecossistema do DDD e tirando proveito dos recursos do Javascript moderno. <br /> 
