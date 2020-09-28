@@ -1,4 +1,4 @@
-import * as f from '@rex/f'
-import fallback from './fallback'
-
-export default window.requestIdleCallback = f.or(window.requestIdleCallback, fallback)
+export default (handler) =>
+  'requestIdleCallback' in window
+    ? window.requestIdleCallback(handler)
+    : window.setTimeout(handler, 0)
