@@ -1,4 +1,5 @@
-import h, { idle, render } from '@rex/h'
+import h, { render } from '@rex/h'
+import * as f from '@rex/f'
 import hj from './hj'
 import schema from './schema.json'
 
@@ -7,7 +8,7 @@ window._hjSettings = {
   hjsv: schema.sv
 }
 
-idle(() =>
+f.idle(() =>
   render(document.head, <script src={`https://static.hotjar.com/c/hotjar-${schema.id}.js?sv=${schema.sv}`} async />))
 
 export default hj
