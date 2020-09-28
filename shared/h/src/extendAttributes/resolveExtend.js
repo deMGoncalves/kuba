@@ -13,15 +13,6 @@ import setAttribute from './setAttribute'
 import setClassName from './setClassName'
 import setHtmlFor from './setHtmlFor'
 
-/**
- * Extende a propriedade, classe ou evento ao elemento html alvo
- *
- * @name resolveExtend
- * @function
- * @access private
- * @param {HTMLElement} element Elemento html
- * @return {Function} Funcao que fara a escolha de qual atribuicao sera feito no elemento
- */
 export default (element) =>
   (keyAndValue) =>
     f.cond(
