@@ -1,4 +1,4 @@
-import h, { render } from '@rex/h'
+import h, { idle, render } from '@rex/h'
 import dataLayer from './dataLayer'
 import schema from './schema.json'
 
@@ -7,7 +7,7 @@ dataLayer.push({
   'event': 'gtm.js'
 })
 
-window.requestIdleCallback(() =>
+idle(() =>
   render(document.head, <script src={`https://www.googletagmanager.com/gtm.js?id=${schema.id}`} async />))
 
 export default dataLayer
