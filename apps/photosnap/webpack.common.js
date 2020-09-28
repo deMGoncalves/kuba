@@ -103,8 +103,10 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@components': path.resolve(__dirname, 'src/components'),
-      '@pages': path.resolve(__dirname, 'src/pages')
+      '@features': path.resolve(__dirname, 'src/features'),
+      '@home': path.resolve(__dirname, 'src/home'),
+      '@pricing': path.resolve(__dirname, 'src/pricing'),
+      '@stories': path.resolve(__dirname, 'src/stories')
     }
   },
   output: {

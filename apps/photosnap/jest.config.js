@@ -26,8 +26,10 @@ module.exports = {
     }
   },
   moduleNameMapper: {
-    '@components': '<rootDir>/src/components',
-    '@pages': '<rootDir>/src/pages'
+    '@features': '<rootDir>/src/features',
+    '@home': '<rootDir>/src/home',
+    '@pricing': '<rootDir>/src/pricing',
+    '@stories': '<rootDir>/src/stories'
   },
   setupFiles: [
     '<rootDir>/jsdom.setup.js'

@@ -1,12 +1,15 @@
 {
   "dependencies": {
     "@rex/f": "1.0.0",
+    "@rex/footer": "1.0.0",
     "@rex/ga": "1.0.0",
     "@rex/gtag": "1.0.0",
     "@rex/gtm": "1.0.0",
     "@rex/h": "1.0.0",
+    "@rex/header": "1.0.0",
     "@rex/hook": "1.0.0",
     "@rex/hotjar": "1.0.0",
+    "@rex/kit": "1.0.0",
     "@rex/markup": "1.0.0",
     "@rex/radio": "1.0.0",
     "@rex/reset": "1.0.0",
