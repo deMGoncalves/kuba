@@ -23,4 +23,4 @@ router(/^\/stories$/, async () => {
 })
 
 /* TODO: Esta rota é usado para identificar os users agents */
-router(/^\/user-agent$/, () => render(document.body, <dfn>{navigator.userAgent}</dfn>))
+router(/^\/user-agent$/, () => render(document.body, <dfn style='font-size: 24px; line-height: 1.5;'>{navigator.userAgent}</dfn>))
