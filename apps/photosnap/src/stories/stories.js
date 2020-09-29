@@ -5,7 +5,9 @@ import component from './component'
 @paint(component)
 @markup
 class Stories {
-
+  get title () {
+    return 'Stories • Create and share your photo stories'
+  }
 }
 
 export default Stories
