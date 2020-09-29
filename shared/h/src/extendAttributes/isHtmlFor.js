@@ -1,3 +1,3 @@
 import * as f from '@rex/f'
 
-export default f.test(/^htmlFor/, f.__)
+export default f.test(/^htmlFor/)

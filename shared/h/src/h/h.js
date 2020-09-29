@@ -6,9 +6,9 @@ import isComponent from '@rex/h/src/isComponent'
 import isTagName from '@rex/h/src/isTagName'
 import slot from '@rex/h/src/slot'
 
-export default (tagNameOrComponent, descriptor, ...children) =>
+export default (tagNameOrComponent, attributes, ...children) =>
   f.cond(
     [isTagName, createElement],
     [isComponent, executeComponent],
     [f.T, createComment]
-  )(tagNameOrComponent, { ...descriptor }, slot(f.flatten(children)))
+  )(tagNameOrComponent, { ...attributes }, slot(f.flatten(children)))

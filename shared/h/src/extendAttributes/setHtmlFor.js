@@ -1,5 +1,6 @@
 import frame from '@rex/h/src/frame'
+import setAttribute from './setAttribute'
 
 export default (element) =>
   (_, id) =>
-    frame(() => element.setAttribute('for', id))
+    setAttribute(element)('for', id)

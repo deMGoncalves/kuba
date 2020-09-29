@@ -1,3 +1,3 @@
 import * as f from '@rex/f'
 
-export default f.is(String, f.__)
+export default f.is(String)
