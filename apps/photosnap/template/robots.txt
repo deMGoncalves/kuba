@@ -1,2 +1,3 @@
-user-agent: *
-allow: /
+User-agent: *
+Allow: /
+Sitemap: https://photosnap-rex.web.app/sitemap.xml
