@@ -1,4 +1,3 @@
-import frame from '@rex/h/src/frame'
 import setAttribute from './setAttribute'
 
 export default (element) =>
