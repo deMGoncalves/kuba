@@ -1,4 +1,6 @@
 import frame from '@rex/h/src/frame'
 
-export default (element) =>
-  frame(() => element.remove())
+const remove = (element) =>
+  element.remove()
+
+export default frame(remove)

@@ -1,4 +1,6 @@
-import render from '@rex/h/src/render'
+import frame from '@rex/h/src/frame'
 
-export default (_, vElement, parent) =>
-  render(parent, vElement)
+const appendChild = (_, vElement, parent) =>
+  parent.appendChild(vElement)
+
+export default frame(appendChild)
