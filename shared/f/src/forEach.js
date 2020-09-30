@@ -1,7 +1,6 @@
 import curry from './curry'
-import idle from './idle'
 
 const forEach = (target, callback) =>
-  target.forEach((...args) => idle(callback.bind(null, ...args)))
+  target.forEach(callback)
 
 export default curry(forEach)
