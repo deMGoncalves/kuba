@@ -1,13 +1,4 @@
-/**
- * Troca o elemento do vElemento pelo elmento que esta no DOM
- *
- * @name replaceComponent
- * @function
- * @access private
- * @param {HTMLElement} element Elemento no DOM que sera subistituido
- * @param {HTMLElement} vElemento O novo elemento que sera colocado no DOM
- * @param {HTMLElement} parent Elemento pai que esta no DOM
- * @return {HTMLElement} Novo elemento que fora colocado no DOM
- */
+import frame from '@rex/h/src/frame'
+
 export default (element, vElement, parent) =>
-  parent.replaceChild(vElement.__target__.__element__, element)
+  frame(() => parent.replaceChild(vElement.__target__.__element__, element))

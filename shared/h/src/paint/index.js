@@ -1,3 +1,1 @@
-import paint from './paint'
-
-export default paint
+export { default } from './paint'

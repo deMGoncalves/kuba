@@ -1,3 +1,1 @@
-import extendAttributes from './extendAttributes'
-
-export default extendAttributes
+export { default } from './extendAttributes'

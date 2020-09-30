@@ -1,3 +1,1 @@
-import reflow from './reflow'
-
-export default reflow
+export { default } from './reflow'

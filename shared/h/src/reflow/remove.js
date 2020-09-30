@@ -1,11 +1,4 @@
-/**
- * Remove o elemento do DOM
- *
- * @name remove
- * @function
- * @access private
- * @param {HTMLElement} element Elemento que sera removido do DOM
- * @return {undefined} Nao retorna nada
- */
+import frame from '@rex/h/src/frame'
+
 export default (element) =>
-  element.remove()
+  frame(() => element.remove())

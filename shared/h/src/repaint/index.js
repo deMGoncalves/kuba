@@ -1,3 +1,1 @@
-import repaint from './repaint'
-
-export default repaint
+export { default } from './repaint'
