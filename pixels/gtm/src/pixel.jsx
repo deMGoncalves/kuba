@@ -9,8 +9,6 @@ dataLayer.push({
   'event': 'gtm.js'
 })
 
-if (f.not(bot))
-  f.idle(() =>
-    render(document.head, <script src={`https://www.googletagmanager.com/gtm.js?id=${schema.id}`} async />))
+f.not(bot) && render(document.head, <script src={`https://www.googletagmanager.com/gtm.js?id=${schema.id}`} async />)
 
 export default dataLayer

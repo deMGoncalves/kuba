@@ -12,7 +12,6 @@ export default (component) =>
       },
       {
         get: (_, key) => Klass[key],
-
         set: (_, key, value) => f.T(Klass[key] = value)
       }
     )

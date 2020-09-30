@@ -1,3 +1,5 @@
+import * as f from '@rex/f'
+
 window.GoogleAnalyticsObject = 'ga'
 
 window.ga = (...args) =>
@@ -5,4 +7,4 @@ window.ga = (...args) =>
 
 window.ga.l = 1 * new Date()
 
-export default window.ga
+export default f.background(window.ga)

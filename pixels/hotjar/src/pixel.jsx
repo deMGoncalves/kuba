@@ -9,8 +9,6 @@ window._hjSettings = {
   hjsv: schema.sv
 }
 
-if (f.not(bot))
-  f.idle(() =>
-    render(document.head, <script src={`https://static.hotjar.com/c/hotjar-${schema.id}.js?sv=${schema.sv}`} async />))
+f.not(bot) && render(document.head, <script src={`https://static.hotjar.com/c/hotjar-${schema.id}.js?sv=${schema.sv}`} async />)
 
 export default hj

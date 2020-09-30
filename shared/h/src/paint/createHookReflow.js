@@ -4,8 +4,9 @@ import reflow from '../reflow'
 export default (target, component, children) => {
   f.assign(target, {
     __element__: component(target, children),
+
     __reflow__ () {
-      f.idle(() => reflow(this.__element__, component(this, children)))
+      reflow(this.__element__, component(this, children))
     }
   })
 

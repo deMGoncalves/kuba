@@ -7,8 +7,6 @@ import schema from './schema.json'
 ga('create', schema.id, 'auto')
 ga('send', 'pageview')
 
-if (f.not(bot))
-  f.idle(() =>
-    render(document.head, <script src='https://www.google-analytics.com/analytics.js' async />))
+f.not(bot) && render(document.head, <script src='https://www.google-analytics.com/analytics.js' async />)
 
 export default ga
