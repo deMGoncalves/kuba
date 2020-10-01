@@ -1,4 +1,0 @@
-[voltar](../README.md)
-
-Footer
-======
