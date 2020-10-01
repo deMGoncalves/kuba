@@ -21,6 +21,3 @@ router(/^\/stories$/, async () => {
   const { default: Stories } = await import('@stories' /* webpackPrefetch: true, webpackPreload: 4, webpackChunkName: "stories" */)
   render(document.body, <Stories />)
 })
-
-/* TODO: Esta rota é usado para identificar os users agents */
-router(/^\/user-agent$/, () => render(document.body, <dfn style='font-size: 24px; line-height: 1.5;'>{navigator.userAgent}</dfn>))
