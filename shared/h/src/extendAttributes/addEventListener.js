@@ -1,5 +1,4 @@
 import * as f from '@rex/f'
-import frame from '@rex/h/src/frame'
 
 const addEventListener = (element, name, handler) =>
   f.assign(element, {
@@ -7,4 +6,4 @@ const addEventListener = (element, name, handler) =>
     [f.toLower(name)]: handler
   })
 
-export default f.curry(f.arity(3, frame(addEventListener)))
+export default f.curry(f.arity(3, addEventListener))
