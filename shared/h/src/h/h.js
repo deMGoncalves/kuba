@@ -1,10 +1,10 @@
 import * as f from '@rex/f'
-import createComment from '@rex/h/src/createComment'
-import createElement from '@rex/h/src/createElement'
-import executeComponent from '@rex/h/src/executeComponent'
-import isComponent from '@rex/h/src/isComponent'
-import isTagName from '@rex/h/src/isTagName'
 import slot from '@rex/h/src/slot'
+import createComment from './createComment'
+import createElement from './createElement'
+import executeComponent from './executeComponent'
+import isComponent from './isComponent'
+import isTagName from './isTagName'
 
 export default (tagNameOrComponent, attributes, ...children) =>
   f.cond(
