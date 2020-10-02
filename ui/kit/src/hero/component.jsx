@@ -1,4 +1,4 @@
-import h from '@rex/h'
+import h, { Show } from '@rex/h'
 import Picture from '@rex/kit/src/picture'
 import style from './style.css'
 
@@ -8,8 +8,8 @@ export default (props, children) =>
       {children.source}
     </Picture>
     <figcaption className={style.banner__figcaption}>
-      {children.title}
-      {children.description}
-      {children.link}
+      <Show if={children.title}>{children.title}</Show>
+      <Show if={children.description}>{children.description}</Show>
+      <Show if={children.link}>{children.link}</Show>
     </figcaption>
   </figure>
