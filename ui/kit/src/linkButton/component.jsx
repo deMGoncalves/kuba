@@ -3,4 +3,4 @@ import * as f from '@rex/f'
 import style from './style.css'
 
 export default (props, children) =>
-  <a className={[style.linkButton, props.className, style[props.color]]} href={f.or(props.href, '#')}>{children}</a>
+  <a slot={props.slot} className={[style.linkButton, props.className, style[props.color]]} href={f.or(props.href, '#')}>{children}</a>
