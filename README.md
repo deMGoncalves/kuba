@@ -1,7 +1,5 @@
 REX
 ======
-![GitHub repo size](https://img.shields.io/github/repo-size/oneOffJS/rex.community)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/oneOffJS/rex.community)
 ![GitHub top language](https://img.shields.io/github/languages/top/oneOffJS/rex.community)
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/oneOffJS/rex.community/master)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/oneOffJS/rex.community/Photosnap)
@@ -46,7 +44,8 @@ Disponibilizando tudo de maneira clara e objetiva, para que você possa utilizar
 ## 2. Estrututura do projeto
 O Core do sistema possui os arquivos base do monorepo, **apps** contém as aplicações específicas `(Ex. photosnap, todomvc, etc)` e **shared** contém os módulos que serão compartilhados entre as aplicações `bibliotecas (f, h)`.
 
-![alt Diagrama](new-diagrama.jpg "Diagrama")
+![alt Diagrama](diagrama.jpg "Diagrama")
+[![]()]
 
 **Módulos**
   - [apps](./apps/README.md)
@@ -54,10 +53,10 @@ O Core do sistema possui os arquivos base do monorepo, **apps** contém as aplic
 
 ## 3. Comandos
   #### Setup
-  ```bash
-    # Montagem do setup do projeto
-    $ yarn install
-    $ yarn setup
+  ```javascript
+    // Montagem do setup do projeto
+    yarn install
+    yarn setup
   ```
 
 ## 4. Como Contribuir?
