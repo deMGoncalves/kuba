@@ -45,7 +45,6 @@ Disponibilizando tudo de maneira clara e objetiva, para que você possa utilizar
 O Core do sistema possui os arquivos base do monorepo, **apps** contém as aplicações específicas `(Ex. photosnap, todomvc, etc)` e **shared** contém os módulos que serão compartilhados entre as aplicações `bibliotecas (f, h)`.
 
 ![alt Diagrama](diagrama.jpg "Diagrama")
-[![]()]
 
 **Módulos**
   - [apps](./apps/README.md)
