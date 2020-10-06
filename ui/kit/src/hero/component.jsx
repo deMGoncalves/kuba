@@ -9,6 +9,7 @@ export default (props, children) =>
     </Picture>
     <figcaption className={style.banner__figcaption}>
       <Show if={children.title}>{children.title}</Show>
+      <Show if={children.author}>{children.author}</Show>
       <Show if={children.description}>{children.description}</Show>
       <Show if={children.link}>{children.link}</Show>
     </figcaption>
