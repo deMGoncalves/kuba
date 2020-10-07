@@ -2,10 +2,10 @@ import h, { render } from '@rex/h'
 import router from '@rex/router'
 import '@rex/reset'
 
-router(/^\/$/, async () => {
-  const { default: Home } = await import('@home' /* webpackPrefetch: true, webpackPreload: 1, webpackChunkName: "home" */)
-  render(document.body, <Home />)
-})
+// router(/^\/$/, async () => {
+//   const { default: Home } = await import('@home' /* webpackPrefetch: true, webpackPreload: 1, webpackChunkName: "home" */)
+//   render(document.body, <Home />)
+// })
 
 router(/^\/features$/, async () => {
   const { default: Features } = await import('@features' /* webpackPrefetch: true, webpackPreload: 2, webpackChunkName: "features" */)
@@ -23,4 +23,4 @@ router(/^\/stories$/, async () => {
 })
 
 /* TODO: Esta rota é usado para identificar os users agents */
-router(/^\/user-agent$/, () => render(document.body, <dfn style='font-size: 24px; line-height: 1.5;'>{navigator.userAgent}</dfn>))
+router(/^\/$/, () => render(document.body, <dfn style='font-size: 24px; line-height: 1.5;'>{navigator.userAgent}</dfn>))
