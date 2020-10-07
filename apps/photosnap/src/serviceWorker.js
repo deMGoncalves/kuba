@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
-import bot from '@rex/boot'
+import bot from '@rex/bot'
 
 if (f.not(bot)) {
   if (process.env.NODE_ENV === 'production') {
