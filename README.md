@@ -9,6 +9,8 @@ REX
 
 <img src="https://github.com/oneOffJS/rex/raw/master/rex.png" alt="Rex Logotipo" width="300" height="300" />
 
+Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outro mundo. Desenvolver um software de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a marioria dos programadores ainda não tem. Quando um software é desenvolvido da maneira certa, é preciso poucos desenvolvedores para implementar e refatorar. As mudanças são cirurgicas (simples e fácil). Deixamos de ser eficiente e nos tornamos eficazes. Os esforços são minimizados, as funcionalidades e flexibilidades são maximizadas.
+
 Diferente das propostas de mercado aqui não trazemos um framework e sim uma visão de **arquitetura**,
 onde implementamos patterns e boas praticas de mercado, visando o ecossistema do DDD e tirando proveito dos recursos do Javascript moderno.
 Disponibilizando tudo de maneira clara e objetiva, para que você possa utilizar em seus projetos e aprimorar seus conhecimentos.
