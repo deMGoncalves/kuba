@@ -5,8 +5,6 @@ REX
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/oneOffJS/rex.community/Photosnap)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/oneOffJS/rex.community/master)
 
-:star2: `JavaScript é como uma folha em branco – A liberdade de programar do jeito que faça sentido para o negócio!` :star2:
-
 <img src="https://github.com/oneOffJS/rex/raw/master/rex.png" alt="Rex Logotipo" width="300" height="300" />
 
 Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outro mundo. Desenvolver um software de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a marioria dos programadores ainda não tem. Quando um software é desenvolvido da maneira certa, é preciso poucos desenvolvedores para implementar e refatorar. As mudanças são cirurgicas (simples e fácil). Deixamos de ser eficiente e nos tornamos eficazes. Os esforços são minimizados, as funcionalidades e flexibilidades são maximizadas.
