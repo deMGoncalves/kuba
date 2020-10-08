@@ -1,5 +1,3 @@
-REX
-======
 ![GitHub top language](https://img.shields.io/github/languages/top/oneOffJS/rex.community)
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/oneOffJS/rex.community/master)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/oneOffJS/rex.community/Photosnap)
@@ -9,13 +7,13 @@ REX
 
 Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outro mundo. Desenvolver um software de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a marioria dos programadores ainda não tem. Quando um software é desenvolvido da maneira certa, é preciso poucos desenvolvedores para construir e manter um software. As mudanças são cirurgicas (simples e fácil). Deixamos de ser eficiente e nos tornamos eficazes. Os esforços são minimizados, as funcionalidades e flexibilidades são maximizadas.
 
-### Nosso objetivo
+### Meu objetivo
 
-É minimizar a quantidade de senvolvedores necessários para construir e manter um determinado sistema.
+É minimizar a quantidade de denvolvedores necessários para construir e manter um determinado sistema.
 
-Diferente das propostas de mercado aqui não trazemos um framework e sim uma visão de **arquitetura**,
-onde implementamos patterns e boas praticas de mercado, visando o ecossistema do DDD e tirando proveito dos recursos do Javascript moderno.
-Disponibilizando tudo de maneira clara e objetiva, para que você possa utilizar em seus projetos e aprimorar seus conhecimentos.
+### Não sou um Framework
+
+Muito menos uma Library, pense em mim como o cinto de utilidades do Batman!. Mas, não serei a solução de todos os seus problemas, devo ser usado como um boilerplate para seu projeto.
 
 ### Arquitetura
   Baseada em um sistema de **Monorepo** uma estratégia de desenvolvimento de software onde multiplas aplicações são armazenados em um único repositório.
