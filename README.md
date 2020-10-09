@@ -15,9 +15,11 @@ Ninguém precisa ter muitas habilidades para desenvolver um software que funcion
 
 Quando um software é desenvolvido da maneira certa, precisamos de poucos desenvolvedores para construir e manter. As mudanças são cirurgicas (simples e fácil). Deixamos de ser eficiente e nos tornamos eficazes (Faça a coisa certa da forma errada, mas não faça a coisa errada da forma certa). Os esforços são minimizados, as funcionalidades e flexibilidades são maximizadas.
 
-### Não sou um Framework
+### Embora muitos tentem ser
 
-Muito menos uma Library, pense em mim como o cinto de utilidades do Batman!. Mas, não serei a solução de todos os seus problemas, devo ser usado como um boilerplate para seu projeto.
+Não sou um Framework, muito menos uma Library, diferentes deles sou uma Arquitetura inspiracional. Autores de Frameworks conhecem seus próprios problemas e escreve códigos para resolver esses problemas - não os seus. Seus problemas provavelmente coincidirão um pouco com os problemas deles. Se não fosse o caso, Frameworks não seria tão populares.
+
+Autores de Frameworks querem retribuir à comunidades (Isso é louvável). Pense nisso com cuidado quando usar um Framework. O relacionamento entre você e o autor do Framework é extraordinariamente assimétrico. Você se compromete muito com o Framework, mas o autor do Frmework não estabelece nenhum compromisso com você.
 
 ### Arquitetura
   Baseada em um sistema de **Monorepo** uma estratégia de desenvolvimento de software onde multiplas aplicações são armazenados em um único repositório.
