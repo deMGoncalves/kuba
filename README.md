@@ -5,13 +5,15 @@
 
 <img src="https://github.com/oneOffJS/rex/raw/master/rex.png" alt="Rex Logotipo" width="300" height="300" />
 
+## Simples, pequeno e imperfeito - "Uma visão além da programação"
+
 Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outra história. Desenvolver um software de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a marioria dos programadores ainda não tem.
 
 ### Meu objetivo
 
 É minimizar a quantidade de denvolvedores necessários para construir e manter um determinado sistema.
 
-Quando um software é desenvolvido da maneira certa, precisamos de poucos desenvolvedores para construir e manter. As mudanças são cirurgicas (simples e fácil). Deixamos de ser eficiente e nos tornamos eficazes (Faça a coisa certa da forma errado, mas não faça a coisa errada da forma certa). Os esforços são minimizados, as funcionalidades e flexibilidades são maximizadas.
+Quando um software é desenvolvido da maneira certa, precisamos de poucos desenvolvedores para construir e manter. As mudanças são cirurgicas (simples e fácil). Deixamos de ser eficiente e nos tornamos eficazes (Faça a coisa certa da forma errada, mas não faça a coisa errada da forma certa). Os esforços são minimizados, as funcionalidades e flexibilidades são maximizadas.
 
 ### Não sou um Framework
 
