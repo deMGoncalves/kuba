@@ -1,6 +1,5 @@
 import h from '@rex/h'
 import * as f from '@rex/f'
-import tag from './tag'
 import style from './style.css'
 
 export default (props, children) =>
