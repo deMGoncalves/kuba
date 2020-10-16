@@ -1,0 +1,7 @@
+.p {
+  color: var(--color-pure-black);
+}
+
+.p.inverse {
+  color: var(--color-pure-white);
+}
