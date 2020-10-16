@@ -1,16 +1,10 @@
 .hero__heading {
-  color: var(--color-pure-black);
   padding: 15px;
   text-transform: uppercase;
 }
 
 .hero__p {
-  color: var(--color-pure-black);
   padding: 15px;
-}
-
-.hero__p.inverse {
-  color: var(--color-light-gray);
 }
 
 .hero__linkButton {
