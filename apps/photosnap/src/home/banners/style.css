@@ -1,22 +1,18 @@
-.banner__h1 {
+.hero__heading {
   color: var(--color-pure-black);
   padding: 15px;
   text-transform: uppercase;
 }
 
-.banner__h1.inverse {
-  color: var(--color-pure-white);
-}
-
-.banner__p {
+.hero__p {
   color: var(--color-pure-black);
   padding: 15px;
 }
 
-.banner__p.inverse {
+.hero__p.inverse {
   color: var(--color-light-gray);
 }
 
-.banner__linkButton {
+.hero__linkButton {
   padding: 15px;
 }

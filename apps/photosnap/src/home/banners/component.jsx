@@ -11,8 +11,8 @@ export default (props) =>
       <source srcSet={f.prop('[2]', props.sources)} media='(min-width: 960px)' />
     </Fragment>
     <Fragment slot='caption'>
-      <h1 className={[style.banner__h1, style[props.color]]}>{props.title}</h1>
-      <p className={[style.banner__p, style[props.color]]}>{props.description}</p>
-      <ui.LinkButton slot='link' className={style.banner__linkButton} color={props.color} href={props.url}>Read story</ui.LinkButton>
+      <ui.Heading className={style.hero__heading} color={props.color}>{props.title}</ui.Heading>
+      <p className={[style.hero__p, style[props.color]]}>{props.description}</p>
+      <ui.LinkButton slot='link' className={style.hero__linkButton} color={props.color} href={props.url}>Read story</ui.LinkButton>
     </Fragment>
   </ui.Hero>

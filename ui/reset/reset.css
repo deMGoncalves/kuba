@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 :root {
-  --color-pure-black: #000;
   --color-light-gray: #dfdfdf;
+
+  --color-pure-black: #000;
   --color-pure-white: #fff;
+
+  --font-size-scale: 1.333;
+  --font-size-largest: calc(var(--font-size-larger) * var(--font-size-scale));
+  --font-size-larger: calc(var(--font-size-large) * var(--font-size-scale));
+  --font-size-large: calc(var(--font-size) * var(--font-size-scale));
+  --font-size: 14px;
+  --font-size-small: calc(var(--font-size) / var(--font-size-scale));
+  --font-size-smaller: calc(var(--font-size-small) / var(--font-size-scale));
+  --font-size-smallest: calc(var(--font-size-smaller) / var(--font-size-scale));
 }
 
 * {
@@ -16,9 +26,9 @@
 body {
   color: var(--color-pure-black);
   font-family: 'DM Sans', sans-serif;
-  font-size: 15px;
+  font-size: var(--font-size);
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.45;
 }
 
 h1 {
