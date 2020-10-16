@@ -12,7 +12,7 @@ export default () =>
           <ui.Picture className={[style.features__picture, style[`p${i}`]]}>
             <source srcSet={dto.icon} />
           </ui.Picture>
-          <h3 className={style.features__h3}>{dto.title}</h3>
+          <ui.Heading level='3'>{dto.title}</ui.Heading>
           <p className={style.features__p}>{dto.description}</p>
         </li>
       )
