@@ -11,7 +11,7 @@ export default (props) =>
       <source srcSet={f.prop('[2]', props.sources)} media='(min-width: 960px)' />
     </ui.Picture>
     <figcaption className={style.card__figcaption}>
-      <h2 className={style.card__h2}>{props.title}</h2>
+      <ui.Heading level='2' color='inverse'>{props.title}</ui.Heading>
       <p className={style.card__p}>by {props.author}</p>
       <ui.LinkButton className={style.card__linkButton} color='inverse' href={props.url}>Read story</ui.LinkButton>
     </figcaption>

@@ -45,10 +45,6 @@
   width: 100%;
 }
 
-.card__h2 {
-  color: var(--color-pure-white);
-}
-
 .card__p {
   color: var(--color-pure-white);
 }
