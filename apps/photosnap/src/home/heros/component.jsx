@@ -13,6 +13,6 @@ export default (props) =>
     <Fragment slot='caption'>
       <ui.Heading className={style.hero__heading} {...props}>{props.title}</ui.Heading>
       <ui.P className={style.hero__p} {...props}>{props.description}</ui.P>
-      <ui.LinkButton slot='link' className={style.hero__linkButton} color={props.color} href={props.url}>Read story</ui.LinkButton>
+      <ui.Link className={style.hero__link} icon='arrow' {...props}>Read story</ui.Link>
     </Fragment>
   </ui.Hero>

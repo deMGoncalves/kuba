@@ -1,15 +1,37 @@
 .link,
 .link:active,
 .link:visited {
+  align-items: center;
+  border: none;
   color: var(--color-pure-black);
+  display: inline-flex;
   font-size: 14px;
   font-weight: 700;
+  justify-content: center;
   letter-spacing: 2px;
-  line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .link:hover {
   text-decoration: underline;
+}
+
+.link.inverse {
+  color: var(--color-pure-white);
+}
+
+.link.arrow::after {
+  background: url('./arrow.png') no-repeat center;
+  background-size: 42px;
+  content: '';
+  display: block;
+  height: 20px;
+  margin-left: 20px;
+  width: 42px;
+}
+
+.link.arrow.inverse::after {
+  background: url('./arrow--inverse.png') no-repeat center;
+  background-size: 42px;
 }

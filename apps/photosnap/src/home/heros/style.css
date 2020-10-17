@@ -1,12 +1,9 @@
 .hero__heading {
-  padding: 15px;
   text-transform: uppercase;
 }
 
-.hero__p {
-  padding: 15px;
-}
-
-.hero__linkButton {
+.hero__heading,
+.hero__p,
+.hero__link {
   padding: 15px;
 }
