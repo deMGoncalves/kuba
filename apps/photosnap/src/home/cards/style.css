@@ -49,6 +49,6 @@
   color: var(--color-pure-white);
 }
 
-.card__linkButton {
+.card__link {
   margin-top: 30px;
 }

@@ -13,6 +13,6 @@ export default (props) =>
     <figcaption className={style.card__figcaption}>
       <ui.Heading level='2' color='inverse'>{props.title}</ui.Heading>
       <p className={style.card__p}>by {props.author}</p>
-      <ui.LinkButton className={style.card__linkButton} color='inverse' href={props.url}>Read story</ui.LinkButton>
+      <ui.Link className={style.card__link} icon='arrow' {...props}>Read story</ui.Link>
     </figcaption>
   </figure>

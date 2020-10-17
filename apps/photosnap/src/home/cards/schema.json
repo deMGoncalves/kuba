@@ -1,6 +1,7 @@
 [
   {
     "author": "John Appleseed",
+    "color": "inverse",
     "sources": [
       "/assets/mountains.mobile.jpg",
       "/assets/mountains.tablet.jpg",
@@ -11,6 +12,7 @@
   },
   {
     "author": "Benjamin Cruz",
+    "color": "inverse",
     "sources": [
       "/assets/cityscapes.mobile.jpg",
       "/assets/cityscapes.tablet.jpg",
@@ -21,6 +23,7 @@
   },
   {
     "author": "Alexei Borodin",
+    "color": "inverse",
     "sources": [
       "/assets/18-days-voyage.mobile.jpg",
       "/assets/18-days-voyage.tablet.jpg",
@@ -31,6 +34,7 @@
   },
   {
     "author": "Samantha Brooke",
+    "color": "inverse",
     "sources": [
       "/assets/architecturals.mobile.jpg",
       "/assets/architecturals.tablet.jpg",
