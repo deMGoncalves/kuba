@@ -5,11 +5,7 @@ import style from './style.css'
 
 export default (props) =>
   <ui.Hero color='inverse' direction='reverse'>
-    <Fragment slot='source'>
-      <source srcSet={f.prop('[0]', props.sources)} media='(max-width: 767px)' />
-      <source srcSet={f.prop('[1]', props.sources)} media='(min-width: 768px) and (max-width: 959px)' />
-      <source srcSet={f.prop('[2]', props.sources)} media='(min-width: 960px)' />
-    </Fragment>
+    <ui.Sources slot='figure' iterator={props.sources} />
     <Fragment slot='caption'>
       <hgroup>
         <h2 className={style.banner__h2}>{props.subtitle}</h2>

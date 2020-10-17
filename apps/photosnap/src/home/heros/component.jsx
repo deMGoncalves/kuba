@@ -5,14 +5,10 @@ import style from './style.css'
 
 export default (props) =>
   <ui.Hero {...props}>
-    <Fragment slot='source'>
-      <source srcSet={f.prop('[0]', props.sources)} media='(max-width: 767px)' />
-      <source srcSet={f.prop('[1]', props.sources)} media='(min-width: 768px) and (max-width: 959px)' />
-      <source srcSet={f.prop('[2]', props.sources)} media='(min-width: 960px)' />
-    </Fragment>
+    <ui.Sources slot='figure' iterator={props.sources} />
     <Fragment slot='caption'>
       <ui.Heading className={style.hero__heading} {...props}>{props.title}</ui.Heading>
       <ui.P className={style.hero__p} {...props}>{props.description}</ui.P>
-      <ui.Link className={style.hero__link} icon='arrow' {...props}>Read story</ui.Link>
+      <ui.Link className={style.hero__link} icon='arrow' {...props}>{props.link}</ui.Link>
     </Fragment>
   </ui.Hero>
