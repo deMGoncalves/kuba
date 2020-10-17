@@ -1,6 +1,6 @@
 {
   "description": "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories",
-  "sources": [
+  "thumbnails": [
     "/assets/features.mobile.jpg",
     "/assets/features.tablet.jpg",
     "/assets/features.desktop.jpg"

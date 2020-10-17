@@ -5,7 +5,7 @@ import style from './style.css'
 
 export default (props) =>
   <ui.Hero color='inverse' direction='reverse'>
-    <ui.Sources slot='figure' iterator={props.sources} />
+    <ui.Sources slot='figure' {...props} />
     <Fragment slot='caption'>
       <hgroup>
         <h2 className={style.banner__h2}>{props.subtitle}</h2>
