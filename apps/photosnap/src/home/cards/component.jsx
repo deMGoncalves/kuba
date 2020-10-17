@@ -12,7 +12,7 @@ export default (props) =>
     </ui.Picture>
     <figcaption className={style.card__figcaption}>
       <ui.Heading level='2' color='inverse'>{props.title}</ui.Heading>
-      <p className={style.card__p}>by {props.author}</p>
+      <ui.P className={style.card__p} {...props}>by {props.author}</ui.P>
       <ui.Link className={style.card__link} icon='arrow' {...props}>Read story</ui.Link>
     </figcaption>
   </figure>

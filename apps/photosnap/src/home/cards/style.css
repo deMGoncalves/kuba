@@ -45,10 +45,6 @@
   width: 100%;
 }
 
-.card__p {
-  color: var(--color-pure-white);
-}
-
 .card__link {
   margin-top: 30px;
 }
