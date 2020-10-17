@@ -7,7 +7,7 @@
       "/assets/mountains.desktop.jpg"
     ],
     "title": "The Mountains",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Benjamin Cruz",
@@ -17,7 +17,7 @@
       "/assets/cityscapes.desktop.jpg"
     ],
     "title": "Sunset Cityscapes",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Alexei Borodin",
@@ -27,7 +27,7 @@
       "/assets/18-days-voyage.desktop.jpg"
     ],
     "title": "18 Days Voyage",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Samantha Brooke",
@@ -37,7 +37,7 @@
       "/assets/architecturals.desktop.jpg"
     ],
     "title": "Architecturals",
-    "url": "/"
+    "href": "/"
   }
 
 ]
