@@ -2,7 +2,7 @@
   {
     "author": "John Appleseed",
     "date": "April 16th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/mountains.mobile.jpg",
       "/assets/mountains.tablet.jpg",
       "/assets/mountains.desktop.jpg"
@@ -13,7 +13,7 @@
   {
     "author": "Benjamin Cruz",
     "date": "April 14th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/cityscapes.mobile.jpg",
       "/assets/cityscapes.tablet.jpg",
       "/assets/cityscapes.desktop.jpg"
@@ -24,7 +24,7 @@
   {
     "author": "Alexei Borodin",
     "date": "April 11th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/18-days-voyage.mobile.jpg",
       "/assets/18-days-voyage.tablet.jpg",
       "/assets/18-days-voyage.desktop.jpg"
@@ -35,7 +35,7 @@
   {
     "author": "Samantha Brooke",
     "date": "April 9th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/architecturals.mobile.jpg",
       "/assets/architecturals.tablet.jpg",
       "/assets/architecturals.desktop.jpg"
@@ -46,7 +46,7 @@
   {
     "author": "Timothy Wagner",
     "date": "April 7th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/world-tour.mobile.jpg",
       "/assets/world-tour.tablet.jpg",
       "/assets/world-tour.desktop.jpg"
@@ -57,7 +57,7 @@
   {
     "author": "William Malcolm",
     "date": "April 6th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/unforeseen-corners.mobile.jpg",
       "/assets/unforeseen-corners.tablet.jpg",
       "/assets/unforeseen-corners.desktop.jpg"
@@ -68,7 +68,7 @@
   {
     "author": "Tim Hillenburg",
     "date": "March 29th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/king-on-africa.mobile.jpg",
       "/assets/king-on-africa.tablet.jpg",
       "/assets/king-on-africa.desktop.jpg"
@@ -79,7 +79,7 @@
   {
     "author": "Felicia Rourke",
     "date": "March 21th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/trip-to-nowhere.mobile.jpg",
       "/assets/trip-to-nowhere.tablet.jpg",
       "/assets/trip-to-nowhere.desktop.jpg"
@@ -90,7 +90,7 @@
   {
     "author": "Mohammed Abdul",
     "date": "March 19th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/rage-of-the-sea.mobile.jpg",
       "/assets/rage-of-the-sea.tablet.jpg",
       "/assets/rage-of-the-sea.desktop.jpg"
@@ -101,7 +101,7 @@
   {
     "author": "Michelle",
     "date": "March 16th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/running-free.mobile.jpg",
       "/assets/running-free.tablet.jpg",
       "/assets/running-free.desktop.jpg"
@@ -112,7 +112,7 @@
   {
     "author": "Lamarr Wilson",
     "date": "March 11th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/behind-the-waves.mobile.jpg",
       "/assets/behind-the-waves.tablet.jpg",
       "/assets/behind-the-waves.desktop.jpg"
@@ -123,7 +123,7 @@
   {
     "author": "Samantha Brooke",
     "date": "March 9th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/calm-waters.mobile.jpg",
       "/assets/calm-waters.tablet.jpg",
       "/assets/calm-waters.desktop.jpg"
@@ -134,7 +134,7 @@
   {
     "author": "Benjamin Cruz",
     "date": "March 5th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/milky-way.mobile.jpg",
       "/assets/milky-way.tablet.jpg",
       "/assets/milky-way.desktop.jpg"
@@ -145,7 +145,7 @@
   {
     "author": "Mohammed Abdul",
     "date": "March 4th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/dark-forest.mobile.jpg",
       "/assets/dark-forest.tablet.jpg",
       "/assets/dark-forest.desktop.jpg"
@@ -156,7 +156,7 @@
   {
     "author": "Michelle",
     "date": "March 1th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/somwarpet.mobile.jpg",
       "/assets/somwarpet.tablet.jpg",
       "/assets/somwarpet.desktop.jpg"
@@ -167,7 +167,7 @@
   {
     "author": "William Malcolm",
     "date": "February 25th 2020",
-    "sources": [
+    "thumbnails": [
       "/assets/land-of-dreams.mobile.jpg",
       "/assets/land-of-dreams.tablet.jpg",
       "/assets/land-of-dreams.desktop.jpg"
