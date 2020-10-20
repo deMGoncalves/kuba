@@ -1,32 +1,32 @@
 [
   {
     "description": "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen",
-    "icon": "/assets/responsive.png",
+    "thumbnails": ["/assets/responsive.png"],
     "title": "100% Responsive"
   },
   {
     "description": "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go",
-    "icon": "/assets/forever.png",
+    "thumbnails": ["/assets/forever.png"],
     "title": "No Photo Upload Limit"
   },
   {
     "description": "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more",
-    "icon": "/assets/bullhorn.png",
+    "thumbnails": ["/assets/bullhorn.png"],
     "title": "Available to Embed"
   },
   {
     "description": "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!",
-    "icon": "/assets/domain.png",
+    "thumbnails": ["/assets/domain.png"],
     "title": "Custom Domain"
   },
   {
     "description": "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list",
-    "icon": "/assets/exposure.png",
+    "thumbnails": ["/assets/exposure.png"],
     "title": "Boost Your Exposure"
   },
   {
     "description": "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories",
-    "icon": "/assets/image.png",
+    "thumbnails": ["/assets/image.png"],
     "title": "Drag & Drop Image"
   }
 ]

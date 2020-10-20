@@ -5,7 +5,7 @@ import style from './style.css'
 export default (props, i) =>
   <li className={style.feature}>
     <ui.Picture className={[style.feature__picture, style[`p${i}`]]}>
-      <source srcSet={props.icon} />
+      <ui.Sources {...props} />
     </ui.Picture>
     <h2 className={style.feature__h2}>{props.title}</h2>
     <p className={style.feature__p}>{props.description}</p>
