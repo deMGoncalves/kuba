@@ -3,13 +3,13 @@ import h, { Fragment } from '@rex/h'
 import style from './style.css'
 
 export default ({ features }) =>
-  <table className={style.pricing__table}>
-    <thead className={style.pricing__tableHead}>
+  <table className={style.table}>
+    <thead className={style.table__head}>
       <tr>
         <th colSpan='3'>The Features</th>
       </tr>
     </thead>
-    <tbody className={style.pricing__tableBody}>
+    <tbody className={style.table__body}>
       {
         features.map((item) =>
           <Fragment>
@@ -21,7 +21,7 @@ export default ({ features }) =>
                 item.plan.map((plan) =>
                   <td>
                     {plan.name}
-                    <span className={[style.pricing__checked, style[plan.status]]}>checked</span>
+                    <span className={[style.checked, style[plan.status]]}>checked</span>
                   </td>
                 )
               }
