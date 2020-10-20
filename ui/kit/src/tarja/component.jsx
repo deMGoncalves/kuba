@@ -11,6 +11,6 @@ export default () =>
     </ui.Picture>
     <figcaption className={style.tarja__figcaption}>
       <h3 className={style.tarja__h3}>We’re in beta. Get your invite today!</h3>
-      <ui.LinkButton className={style.tarja__linkButton} color='inverse' href='/'>Get an invite</ui.LinkButton>
+      <ui.Link className={style.tarja__linkButton} color='inverse' href='/' icon='arrow'>Get an invite</ui.Link>
     </figcaption>
   </figure>
