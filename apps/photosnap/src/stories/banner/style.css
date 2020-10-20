@@ -1,14 +1,14 @@
-.banner__h1,
-.banner__h2 {
+.hero__h1,
+.hero__h2 {
   padding: 15px;
   text-transform: uppercase;
 }
 
-.banner__p {
+.hero__p {
   padding: 15px;
 }
 
-.banner__linkButton {
+.hero__linkButton {
   justify-content: flex-start;
   padding: 15px;
 }
