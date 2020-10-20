@@ -5,6 +5,7 @@ import style from './style.css'
 import banner from './banner'
 import Card from './card'
 import Table from './table'
+import Switch from './switch'
 
 import features from './schema'
 
@@ -14,6 +15,8 @@ export default () =>
     {banner}
 
     <section>
+      <Switch />
+
       <Card title='Basic' price='19.00'>
         Includes basic usage of our platform. Recommended for new and aspiring photographers.
       </Card>

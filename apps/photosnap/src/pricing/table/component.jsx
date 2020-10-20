@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import h, { Fragment } from '@rex/h'
 import style from './style.css'
 

@@ -35,6 +35,8 @@ module.exports = {
         argsIgnorePattern: '^_'
       }
     ],
+    'react/jsx-key': 'off',
+    'react/jsx-handler-names': 'off',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off'
   },
