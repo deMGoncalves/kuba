@@ -9,6 +9,6 @@ export default (props) =>
       <data className={style.card__data} value={props.date}>{props.date}</data>
       <h2 className={style.card__h2}>{props.title}</h2>
       <p className={style.card__p}>by {props.author}</p>
-      <ui.LinkButton className={style.card__linkButton} color='inverse' href={props.url}>Read story</ui.LinkButton>
+      <ui.Link className={style.card__link} {...props}>{props.link}</ui.Link>
     </Fragment>
   </ui.Story>

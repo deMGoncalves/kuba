@@ -1,178 +1,226 @@
 [
   {
     "author": "John Appleseed",
+    "color": "inverse",
     "date": "April 16th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/mountains.mobile.jpg",
       "/assets/mountains.tablet.jpg",
       "/assets/mountains.desktop.jpg"
     ],
     "title": "The Mountains",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Benjamin Cruz",
+    "color": "inverse",
     "date": "April 14th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/cityscapes.mobile.jpg",
       "/assets/cityscapes.tablet.jpg",
       "/assets/cityscapes.desktop.jpg"
     ],
     "title": "Sunset Cityscapes",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Alexei Borodin",
+    "color": "inverse",
     "date": "April 11th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/18-days-voyage.mobile.jpg",
       "/assets/18-days-voyage.tablet.jpg",
       "/assets/18-days-voyage.desktop.jpg"
     ],
     "title": "18 Days Voyage",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Samantha Brooke",
+    "color": "inverse",
     "date": "April 9th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/architecturals.mobile.jpg",
       "/assets/architecturals.tablet.jpg",
       "/assets/architecturals.desktop.jpg"
     ],
     "title": "Architecturals",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Timothy Wagner",
+    "color": "inverse",
     "date": "April 7th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/world-tour.mobile.jpg",
       "/assets/world-tour.tablet.jpg",
       "/assets/world-tour.desktop.jpg"
     ],
     "title": "World Tour 2019",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "William Malcolm",
+    "color": "inverse",
     "date": "April 6th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/unforeseen-corners.mobile.jpg",
       "/assets/unforeseen-corners.tablet.jpg",
       "/assets/unforeseen-corners.desktop.jpg"
     ],
     "title": "Unforeseen Corners",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Tim Hillenburg",
+    "color": "inverse",
     "date": "March 29th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/king-on-africa.mobile.jpg",
       "/assets/king-on-africa.tablet.jpg",
       "/assets/king-on-africa.desktop.jpg"
     ],
     "title": "King on Africa: Part II",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Felicia Rourke",
+    "color": "inverse",
     "date": "March 21th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/trip-to-nowhere.mobile.jpg",
       "/assets/trip-to-nowhere.tablet.jpg",
       "/assets/trip-to-nowhere.desktop.jpg"
     ],
     "title": "The Trip to Nowhere",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Mohammed Abdul",
+    "color": "inverse",
     "date": "March 19th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/rage-of-the-sea.mobile.jpg",
       "/assets/rage-of-the-sea.tablet.jpg",
       "/assets/rage-of-the-sea.desktop.jpg"
     ],
     "title": "Rage of The Sea",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Michelle",
+    "color": "inverse",
     "date": "March 16th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/running-free.mobile.jpg",
       "/assets/running-free.tablet.jpg",
       "/assets/running-free.desktop.jpg"
     ],
     "title": "Running Free",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Lamarr Wilson",
+    "color": "inverse",
     "date": "March 11th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/behind-the-waves.mobile.jpg",
       "/assets/behind-the-waves.tablet.jpg",
       "/assets/behind-the-waves.desktop.jpg"
     ],
     "title": "Behind the Waves",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Samantha Brooke",
+    "color": "inverse",
     "date": "March 9th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/calm-waters.mobile.jpg",
       "/assets/calm-waters.tablet.jpg",
       "/assets/calm-waters.desktop.jpg"
     ],
     "title": "Calm Waters",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Benjamin Cruz",
+    "color": "inverse",
     "date": "March 5th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/milky-way.mobile.jpg",
       "/assets/milky-way.tablet.jpg",
       "/assets/milky-way.desktop.jpg"
     ],
     "title": "The Milky Way",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Mohammed Abdul",
+    "color": "inverse",
     "date": "March 4th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/dark-forest.mobile.jpg",
       "/assets/dark-forest.tablet.jpg",
       "/assets/dark-forest.desktop.jpg"
     ],
     "title": "Night at The Dark Forest",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "Michelle",
+    "color": "inverse",
     "date": "March 1th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/somwarpet.mobile.jpg",
       "/assets/somwarpet.tablet.jpg",
       "/assets/somwarpet.desktop.jpg"
     ],
     "title": "Somwarpet’s Beauty",
-    "url": "/"
+    "href": "/"
   },
   {
     "author": "William Malcolm",
+    "color": "inverse",
     "date": "February 25th 2020",
+    "icon": "arrow",
+    "link": "Read story",
     "thumbnails": [
       "/assets/land-of-dreams.mobile.jpg",
       "/assets/land-of-dreams.tablet.jpg",
       "/assets/land-of-dreams.desktop.jpg"
     ],
     "title": "Land of Dreams",
-    "url": "/"
+    "href": "/"
   }
 ]
