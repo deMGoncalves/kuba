@@ -1,0 +1,71 @@
+.pricing__table {
+  border-collapse: collapse;
+  margin: 0 20px;
+  text-align: left;
+  text-transform: uppercase;
+  width: calc(100% - 40px);
+}
+
+.pricing__table tr {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.pricing__tableHead tr {
+  border-bottom-color: #000;
+}
+
+.pricing__tableBody tr {
+  border-bottom-color: #dfdfdf;
+}
+
+.pricing__tableBody td {
+  padding: 16px 0 24px 0;
+  width: 33.33%;
+}
+
+.pricing__table th {
+  font-size: 12px;
+  padding: 23px 0 16px 0;
+}
+
+.pricing__table td {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+}
+
+.pricing__checked {
+  display: block;
+  height: 12px;
+  margin: 8px 0 0 5px;
+  position: relative;
+  text-indent: -9000em;
+  visibility: hidden;
+  width: 16px;
+}
+
+.pricing__checked.active {
+  visibility: visible;
+}
+
+.pricing__checked::after,
+.pricing__checked::before {
+  background-color: #000;
+  content: '';
+  height: 2px;
+  position: absolute;
+}
+
+.pricing__checked::before {
+  right: -5px;
+  top: 5px;
+  transform: rotate(-31deg);
+  width: 20px;
+}
+
+.pricing__checked::after {
+  left: -5px;
+  top: 6px;
+  transform: rotate(50deg);
+  width: 10px;
+}

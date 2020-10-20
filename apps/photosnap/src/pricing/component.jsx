@@ -2,6 +2,7 @@ import h, { Fragment } from '@rex/h'
 import * as ui from '@rex/kit'
 import banner from './banner'
 import Card from './card'
+import Table from './table'
 import style from './style.css'
 
 export default () =>
@@ -22,25 +23,7 @@ export default () =>
         Additional features available such as more detailed metrics. Recommended for business owners.
       </Card>
 
-      {/*
-        <table className={style.pricing__table}>
-        <thead>
-          <tr>
-            <th colSpan='3'>The Features</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th colSpan='3'>Unlimited Story Posting</th>
-          </tr>
-          <tr>
-            <td>Basic</td>
-            <td>Pro</td>
-            <td>Business</td>
-          </tr>
-        </tbody>
-      </table>
-      */}
+      <Table />
     </section>
 
     <ui.Tarja className={style.pricing__tarja} />
