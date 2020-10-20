@@ -20,18 +20,18 @@
 }
 
 .hero__picture {
-  padding-top: calc(650 / 767 * 100%) !important;
+  padding-top: calc(600 / 767 * 100%) !important;
 }
 
 @media (min-width: 768px) {
   .hero__picture {
-    padding-top: calc(650 / 959 * 100%) !important;
+    padding-top: calc(600 / 959 * 100%) !important;
   }
 }
 
 @media (min-width: 960px) {
   .hero__picture {
-    padding-top: calc(650 / 1440 * 100%) !important;
+    padding-top: calc(600 / 1440 * 100%) !important;
   }
 }
 
