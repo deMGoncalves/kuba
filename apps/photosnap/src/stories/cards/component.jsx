@@ -7,7 +7,7 @@ export default (props) =>
     <ui.Sources slot='picture' {...props} />
     <Fragment slot='caption'>
       <data className={style.card__data} value={props.date}>{props.date}</data>
-      <h2 className={style.card__h2}>{props.title}</h2>
+      <ui.Heading level='2' {...props}>{props.title}</ui.Heading>
       <ui.P {...props}>by {props.author}</ui.P>
       <ui.Link className={style.card__link} {...props}>{props.link}</ui.Link>
     </Fragment>
