@@ -2,3 +2,19 @@
   margin: 0 auto;
   max-width: 1440px;
 }
+
+.features__ul {
+  align-items: center;
+  clear: left;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 45px 15px 75px 15px;
+}
+
+@media (min-width: 768px) {
+  .features__ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
