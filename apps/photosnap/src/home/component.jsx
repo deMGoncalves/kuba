@@ -7,9 +7,9 @@ import style from './style.css'
 
 export default () =>
   <main className={style.home}>
-    <ui.Header className={style.home__header} />
+    <ui.Header />
     <Heros />
     <Stories />
     <Features />
-    <ui.Footer className={style.home__footer} />
+    <ui.Footer />
   </main>
