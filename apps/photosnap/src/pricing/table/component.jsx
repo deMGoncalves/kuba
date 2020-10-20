@@ -1,9 +1,8 @@
 /* eslint-disable react/jsx-key */
 import h, { Fragment } from '@rex/h'
 import style from './style.css'
-import features from './schema'
 
-export default () =>
+export default ({ features }) =>
   <table className={style.pricing__table}>
     <thead className={style.pricing__tableHead}>
       <tr>

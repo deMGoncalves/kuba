@@ -1,9 +1,12 @@
 import h, { Fragment } from '@rex/h'
 import * as ui from '@rex/kit'
+import style from './style.css'
+
 import banner from './banner'
 import Card from './card'
 import Table from './table'
-import style from './style.css'
+
+import features from './schema'
 
 export default () =>
   <main className={style.pricing}>
@@ -23,7 +26,7 @@ export default () =>
         Additional features available such as more detailed metrics. Recommended for business owners.
       </Card>
 
-      <Table />
+      <Table features={features} />
     </section>
 
     <ui.Tarja className={style.pricing__tarja} />
