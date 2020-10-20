@@ -13,6 +13,10 @@ h2.heading {
   font-size: var(--font-size-larger);
 }
 
+h2.heading.large {
+  font-size: var(--font-size-large);
+}
+
 h2.heading.small {
   font-size: var(--font-size);
 }

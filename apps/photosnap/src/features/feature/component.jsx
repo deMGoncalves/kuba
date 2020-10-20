@@ -7,6 +7,6 @@ export default (props, i) =>
     <ui.Picture className={[style.feature__picture, style[`p${i}`]]}>
       <ui.Sources {...props} />
     </ui.Picture>
-    <h2 className={style.feature__h2}>{props.title}</h2>
-    <p className={style.feature__p}>{props.description}</p>
+    <ui.Heading level='2' size='large' className={style.feature__heading}>{props.title}</ui.Heading>
+    <ui.P className={style.feature__p}>{props.description}</ui.P>
   </li>
