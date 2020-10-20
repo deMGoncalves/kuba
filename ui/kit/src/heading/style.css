@@ -1,6 +1,7 @@
 .heading {
   color: var(--color-pure-black);
   font-weight: 700;
+  letter-spacing: 2px;
   line-height: 1.2;
 }
 
