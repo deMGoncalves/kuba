@@ -16,7 +16,17 @@ module.exports = merge.smart(common, {
           safari10: true
         }
       })
-    ]
+    ],
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true
+        }
+      }
+    }
   },
   output: {
     path: path.resolve(__dirname, 'public')

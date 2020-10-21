@@ -100,7 +100,9 @@ module.exports = {
         to: '.'
       }
     ]),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin({
+      filename: '[name].[hash].css'
+    })
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
