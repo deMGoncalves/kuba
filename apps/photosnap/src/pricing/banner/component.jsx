@@ -6,7 +6,7 @@ export default (props) =>
   <ui.Hero {...props}>
     <ui.Sources slot='figure' {...props} />
     <Fragment slot='caption'>
-      <ui.Heading className={style.banner__heading} {...props}>{props.title}</ui.Heading>
-      <ui.P className={style.banner__p} {...props}>{props.description}</ui.P>
+      <ui.Heading className={style.hero__heading} {...props}>{props.title}</ui.Heading>
+      <ui.P className={style.hero__p} {...props}>{props.description}</ui.P>
     </Fragment>
   </ui.Hero>
