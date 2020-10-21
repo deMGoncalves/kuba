@@ -1,18 +1,17 @@
 import h, { Fragment } from '@rex/h'
 import * as ui from '@rex/kit'
-import style from './style.css'
-
-import banner from './banner'
+import Hero from './hero'
 import Card from './card'
 import Table from './table'
 import Switch from './switch'
+import style from './style.css'
 
 import features from './schema'
 
 export default () =>
   <main className={style.pricing}>
-    <ui.Header className={style.pricing__header} />
-    {banner}
+    <ui.Header />
+    <Hero />
 
     <section>
       <Switch />
@@ -32,6 +31,6 @@ export default () =>
       <Table features={features} />
     </section>
 
-    <ui.Tarja className={style.pricing__tarja} />
-    <ui.Footer className={style.pricing__footer} />
+    <ui.Tarja />
+    <ui.Footer />
   </main>
