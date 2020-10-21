@@ -1,5 +1,6 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
 module.exports = {
@@ -22,7 +23,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -98,7 +99,8 @@ module.exports = {
         from: path.resolve(__dirname, 'template'),
         to: '.'
       }
-    ])
+    ]),
+    new MiniCssExtractPlugin()
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
