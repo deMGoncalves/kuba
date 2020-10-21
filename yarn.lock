@@ -5324,6 +5324,11 @@ html-tags@^3.1.0:
   resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-3.1.0.tgz#7b5e6f7e665e9fb41f30007ed9e0d41e97fb2140"
   integrity sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg==
 
+html-webpack-critical-plugin@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/html-webpack-critical-plugin/-/html-webpack-critical-plugin-1.0.3.tgz#fec67aae9675749e4b7fc9278fc41fce9436b7a4"
+  integrity sha512-hbJUAcm/Gk97jnJ1qDPG3zlvY5/Dc3n9aj5pB6RK5xY4A2x+S47s/f0eFCF5lL2G9lBD0+lKHqJSFEWlpDTckg==
+
 html-webpack-plugin@^4.3.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-4.5.0.tgz#625097650886b97ea5dae331c320e3238f6c121c"

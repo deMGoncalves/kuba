@@ -1,5 +1,6 @@
 const path = require('path')
 const common = require('./webpack.common.js')
+const HtmlWebpackCriticalPlugin = require('html-webpack-critical-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPreconnectPlugin = require('html-webpack-preconnect-plugin')
 const merge = require('webpack-merge')
@@ -21,6 +22,11 @@ module.exports = merge.smart(common, {
     path: path.resolve(__dirname, 'public')
   },
   plugins: [
+    new HtmlWebpackCriticalPlugin({
+      critical: {
+        inline: true
+      }
+    }),
     new HtmlWebpackPlugin({
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
