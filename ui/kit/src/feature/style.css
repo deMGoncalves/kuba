@@ -23,5 +23,5 @@
 .feature__picture {
   margin: 45px 0;
   padding-top: 72px !important;
-  width: 72px;
+  width: 72px !important;
 }
