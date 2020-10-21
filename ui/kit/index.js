@@ -1,4 +1,5 @@
 export { default as Button } from './src/button'
+export { default as Feature } from './src/feature'
 export { default as Footer } from './src/footer'
 export { default as Header } from './src/header'
 export { default as Heading } from './src/heading'
