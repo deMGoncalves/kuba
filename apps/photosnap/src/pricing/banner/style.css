@@ -1,5 +1,4 @@
-.banner__h1 {
-  color: var(--color-pure-white);
+.banner__heading {
   padding: 15px;
   text-transform: uppercase;
 }
