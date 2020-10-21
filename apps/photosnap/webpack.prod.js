@@ -1,16 +1,19 @@
-const path = require('path')
 const common = require('./webpack.common.js')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackCriticalPlugin = require('html-webpack-critical-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPreconnectPlugin = require('html-webpack-preconnect-plugin')
 const merge = require('webpack-merge')
+const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 
 module.exports = merge.smart(common, {
   mode: 'production',
   optimization: {
+    minimize: true,
     minimizer: [
+      new CssMinimizerPlugin(),
       new TerserJSPlugin({
         terserOptions: {
           safari10: true
