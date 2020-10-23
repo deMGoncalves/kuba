@@ -2,7 +2,6 @@ const common = require('./webpack.common.js')
 const HtmlWebpackCriticalPlugin = require('html-webpack-critical-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPreconnectPlugin = require('html-webpack-preconnect-plugin')
-const HtmlInlineScriptPlugin = require('html-inline-script-webpack-plugin')
 const merge = require('webpack-merge')
 const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
@@ -42,7 +41,6 @@ module.exports = merge.smart(common, {
       clientsClaim: true,
       skipWaiting: true,
       swDest: 'sw.js'
-    }),
-    new HtmlInlineScriptPlugin()
+    })
   ]
 })
