@@ -1,8 +1,8 @@
 const common = require('./webpack.common.js')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackCriticalPlugin = require('html-webpack-critical-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPreconnectPlugin = require('html-webpack-preconnect-plugin')
+const HtmlInlineScriptPlugin = require('html-inline-script-webpack-plugin')
 const merge = require('webpack-merge')
 const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
@@ -11,25 +11,13 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 module.exports = merge.smart(common, {
   mode: 'production',
   optimization: {
-    minimize: true,
     minimizer: [
-      new CssMinimizerPlugin(),
       new TerserJSPlugin({
         terserOptions: {
           safari10: true
         }
       })
-    ],
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: 'styles',
-          test: /\.css$/,
-          chunks: 'all',
-          enforce: true
-        }
-      }
-    }
+    ]
   },
   output: {
     path: path.resolve(__dirname, 'public')
@@ -50,11 +38,11 @@ module.exports = merge.smart(common, {
       template: path.resolve(__dirname, 'template/index.html')
     }),
     new HtmlWebpackPreconnectPlugin(),
-    new HtmlWebpackCriticalPlugin(),
     new WorkboxWebpackPlugin.GenerateSW({
       clientsClaim: true,
       skipWaiting: true,
       swDest: 'sw.js'
-    })
+    }),
+    new HtmlInlineScriptPlugin()
   ]
 })
