@@ -35,11 +35,6 @@ module.exports = merge.smart(common, {
     path: path.resolve(__dirname, 'public')
   },
   plugins: [
-    new HtmlWebpackCriticalPlugin({
-      critical: {
-        inline: true
-      }
-    }),
     new HtmlWebpackPlugin({
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
@@ -55,6 +50,7 @@ module.exports = merge.smart(common, {
       template: path.resolve(__dirname, 'template/index.html')
     }),
     new HtmlWebpackPreconnectPlugin(),
+    new HtmlWebpackCriticalPlugin(),
     new WorkboxWebpackPlugin.GenerateSW({
       clientsClaim: true,
       skipWaiting: true,
