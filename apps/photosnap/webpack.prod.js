@@ -1,5 +1,4 @@
 const common = require('./webpack.common.js')
-const HtmlWebpackCriticalPlugin = require('html-webpack-critical-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPreconnectPlugin = require('html-webpack-preconnect-plugin')
 const merge = require('webpack-merge')
