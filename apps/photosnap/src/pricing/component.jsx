@@ -28,7 +28,8 @@ export default () =>
         Additional features available such as more detailed metrics. Recommended for business owners.
       </Card>
 
-      <Table features={features} />
+      <p className={style.pricing__heading}>Compare</p>
+      <Table className={style.pricing__table} features={features} />
     </section>
 
     <ui.Tarja />
