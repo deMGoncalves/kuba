@@ -117,3 +117,7 @@ dist
 
 # asdf
 .tool-versions
+
+# outhers
+_layout
+.DS_Store
