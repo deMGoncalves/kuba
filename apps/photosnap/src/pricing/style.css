@@ -1,3 +1,40 @@
 .pricing__h1 {
   color: var(--color-master-darkest);
 }
+
+.pricing__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1109px) {
+  .pricing__content {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1110px) {
+  .pricing__content {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+.pricing__switch {
+  margin: 64px 0 16px 0;
+  width: 100%;
+}
+
+@media (min-width: 1110px) {
+  .pricing__switch {
+    margin-bottom: 40px;
+  }
+}
+
+.pricing__card {
+  margin-top: 24px;
+}

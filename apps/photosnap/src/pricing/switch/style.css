@@ -5,7 +5,10 @@
   font-size: 18px;
   font-weight: bold;
   justify-content: center;
-  padding: 64px 0 40px 0;
+}
+
+.switch__monthly {
+  color: #000;
 }
 
 .switch__label {
@@ -24,7 +27,9 @@
 }
 
 .switch__slider,
-.switch__slider::before {
+.switch__slider::before,
+.switch__monthly,
+.switch__yearly {
   transition: 0.4s;
 }
 
@@ -58,6 +63,11 @@
   transform: translateX(30px);
 }
 
-.switch__text.activated {
+/* activeted */
+[data-pricing=year] .switch__yearly {
   color: #000;
+}
+
+[data-pricing=year] .switch__monthly {
+  color: #dfdfdf;
 }

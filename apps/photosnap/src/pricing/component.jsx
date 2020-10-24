@@ -13,18 +13,18 @@ export default () =>
     <ui.Header />
     <Hero />
 
-    <section>
-      <Switch />
+    <section className={style.pricing__content} data-pricing='month'>
+      <Switch className={style.pricing__switch} />
 
-      <Card title='Basic' price='19.00'>
+      <Card className={style.pricing__card} title='Basic' priceMonth='19.00' priceYear='190.00'>
         Includes basic usage of our platform. Recommended for new and aspiring photographers.
       </Card>
 
-      <Card title='Pro' price='39.00' type='negative'>
+      <Card className={style.pricing__card} title='Pro' priceMonth='39.00' priceYear='390.00' type='negative'>
         More advanced features available. Recommended for photography veterans and professionals.
       </Card>
 
-      <Card title='Business' price='99.00'>
+      <Card className={style.pricing__card} title='Business' priceMonth='99.00' priceYear='990.00'>
         Additional features available such as more detailed metrics. Recommended for business owners.
       </Card>
 
