@@ -8,13 +8,13 @@
   padding: 0 20px;
 }
 
-@media (min-width: 768px) and (max-width: 1109px) {
+@media (min-width: 769px) and (max-width: 1110px) {
   .pricing__content {
     padding: 0 40px;
   }
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1111px) {
   .pricing__content {
     align-items: center;
     flex-direction: row;
@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1111px) {
   .pricing__switch {
     margin-bottom: 40px;
   }

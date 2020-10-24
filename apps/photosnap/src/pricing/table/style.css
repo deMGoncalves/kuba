@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1111px) {
   .table {
     max-width: 731px;
   }
