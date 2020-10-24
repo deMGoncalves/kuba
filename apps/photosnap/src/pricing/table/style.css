@@ -26,11 +26,13 @@
 
 .table__heading {
   font-size: 14px;
+  width: 20%;
 }
 
 .table__heading:first-child {
   padding-left: 24px;
   text-align: left;
+  width: 40%;
 }
 
 .table__content {
@@ -61,6 +63,7 @@
 
   .table__heading:first-child {
     padding-left: 0;
+    width: 100%;
   }
 
   .table__heading.body {
