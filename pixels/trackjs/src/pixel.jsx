@@ -1,11 +1,11 @@
 import h, { render } from '@rex/h'
-import * as f from '@rex/f'
-import bot from '@rex/bot'
+import agent from '@rex/agent'
 import schema from './schema.json'
 import trackJs from './track'
 
-trackJs(schema.token)
-
-f.not(bot) && render(document.head, <script src='https://cdn.trackjs.com/releases/current/tracker.js' async />)
+agent.isUser && (
+  trackJs(schema.token),
+  render(document.head, <script src='https://cdn.trackjs.com/releases/current/tracker.js' async />)
+)
 
 export default trackJs

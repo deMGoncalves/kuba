@@ -1,7 +1,7 @@
 import * as f from '@rex/f'
-import bot from '@rex/bot'
+import agent from '@rex/agent'
 
-if (f.not(bot)) {
+if (agent.isUser) {
   if (process.env.NODE_ENV === 'production') {
     if ('serviceWorker' in navigator) {
       navigator
