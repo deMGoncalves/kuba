@@ -4,4 +4,4 @@ import metadata from './metadata'
 import opengraph from './opengraph'
 import twittercard from './twittercard'
 
-export default hook(f.background(f.chain(metadata, opengraph, twittercard)))
+export default hook(f.idle(f.chain(metadata, opengraph, twittercard)))

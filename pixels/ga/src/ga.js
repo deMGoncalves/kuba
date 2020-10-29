@@ -7,4 +7,4 @@ window.ga = (...args) =>
 
 window.ga.l = 1 * new Date()
 
-export default f.background(window.ga)
+export default f.idle(window.ga)
