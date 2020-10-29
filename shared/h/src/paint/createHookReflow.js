@@ -5,9 +5,9 @@ export default (target, component, children) => {
   f.assign(target, {
     __element__: component(target, children),
 
-    __reflow__ () {
+    __reflow__: f.idle(function () {
       reflow(this.__element__, component(this, children))
-    }
+    })
   })
 
   f.assign(target.__element__, {
