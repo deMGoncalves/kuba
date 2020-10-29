@@ -5,4 +5,4 @@ import preventDefault from './preventDefault'
 
 export default (element) =>
   (eventName, handler) =>
-    addEventListener(element, f.slice(eventName, 0, -13), stopPropagation(preventDefault(handler)))
+    addEventListener(element, f.slice(eventName, 0, -13), stopPropagation(preventDefault(f.idle(handler))))

@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
-import addEventListener from './addEventListener'
+import addEventListenerPure from './addEventListenerPure'
 import addEventListenerWithPrevent from './addEventListenerWithPrevent'
 import addEventListenerWithStop from './addEventListenerWithStop'
 import isClassName from './isClassName'
@@ -16,7 +16,7 @@ import setHtmlFor from './setHtmlFor'
 export default (element) =>
   (keyAndValue) =>
     f.cond(
-      [isEvent, addEventListener(element)],
+      [isEvent, addEventListenerPure(element)],
       [isEventWithStop, addEventListenerWithStop(element)],
       [isEventWithPrevent, addEventListenerWithPrevent(element)],
       [isEventWithStopAndPrevent, addEventListenerWithStopAndPrevent(element)],
