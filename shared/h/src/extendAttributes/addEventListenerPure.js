@@ -3,4 +3,4 @@ import addEventListener from './addEventListener'
 
 export default (element) =>
   (eventName, handler) =>
-    addEventListener(element, f.slice(eventName, 0, -8), f.idle(handler))
+    addEventListener(element, eventName, f.idle(handler))
