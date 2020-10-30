@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
     paths:
-      - 'apps/photosnap/**'
+      - 'buckets/photosnap/**'
       - 'pixels/**'
       - 'shared/**'
       - 'ui/**'
