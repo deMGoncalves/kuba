@@ -4,7 +4,6 @@ const HtmlWebpackPreconnectPlugin = require('html-webpack-preconnect-plugin')
 const merge = require('webpack-merge')
 const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
-const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 
 module.exports = merge.smart(common, {
   mode: 'production',
@@ -35,11 +34,6 @@ module.exports = merge.smart(common, {
       ],
       template: path.resolve(__dirname, 'template/index.html')
     }),
-    new HtmlWebpackPreconnectPlugin(),
-    new WorkboxWebpackPlugin.GenerateSW({
-      clientsClaim: true,
-      skipWaiting: true,
-      swDest: 'sw.js'
-    })
+    new HtmlWebpackPreconnectPlugin()
   ]
 })

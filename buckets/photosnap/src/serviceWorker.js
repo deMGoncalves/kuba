@@ -1,4 +1,3 @@
-import * as f from '@rex/f'
 import agent from '@rex/agent'
 
 if (agent.isUser) {
@@ -6,7 +5,7 @@ if (agent.isUser) {
     if ('serviceWorker' in navigator) {
       navigator
         .serviceWorker
-        .register('/sw.js')
+        .register('/service_worker.js')
         .then(registration => console.log('SW registered: ', registration))
         .catch(registrationError => console.log('SW registration failed: ', registrationError))
     }
