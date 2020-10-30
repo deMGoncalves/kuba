@@ -90,5 +90,19 @@
       "type": "image/png"
     }
   ],
+  "shortcuts": [
+    {
+      "name": "Stories",
+      "url": "/stories"
+    },
+    {
+      "name": "Features",
+      "url": "/features"
+    },
+    {
+      "name": "Pricing",
+      "url": "/pricing"
+    }
+  ],
 	"generated" : "true"
 }
