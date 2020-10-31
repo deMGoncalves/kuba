@@ -1,4 +1,4 @@
-import h, { Fragment, Repeat } from '@rex/h'
+import h, { Fragment, Repeat, Zone } from '@rex/h'
 import * as ui from '@rex/kit'
 import Hero from './hero'
 import Feature from './feature'
@@ -9,9 +9,11 @@ export default () =>
   <main className={style.features}>
     <ui.Header />
     <Hero />
-    <ul className={style.features__ul}>
-      <Repeat iterator={schema} component={Feature} />
-    </ul>
+    <Zone>
+      <ul className={style.features__ul}>
+        <Repeat iterator={schema} component={Feature} />
+      </ul>
+    <Zone>
     <ui.Tarja />
     <ui.Footer />
   </main>

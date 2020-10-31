@@ -1,4 +1,4 @@
-import h, { Fragment } from '@rex/h'
+import h, { Fragment, Zone } from '@rex/h'
 import * as ui from '@rex/kit'
 import Heros from './heros'
 import Stories from './stories'

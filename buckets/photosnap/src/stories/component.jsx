@@ -1,4 +1,4 @@
-import h, { Repeat } from '@rex/h'
+import h, { Repeat, Zone } from '@rex/h'
 import * as ui from '@rex/kit'
 import Hero from './hero'
 import schema from './schema.json'
@@ -9,6 +9,8 @@ export default () =>
   <main className={style.stories}>
     <ui.Header />
     <Hero />
-    <Repeat iterator={schema} component={Story} />
+    <Zone>
+      <Repeat iterator={schema} component={Story} />
+    </Zone>
     <ui.Footer />
   </main>
