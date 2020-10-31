@@ -13,7 +13,7 @@ export default () =>
       <ul className={style.features__ul}>
         <Repeat iterator={schema} component={Feature} />
       </ul>
-    <Zone>
+    </Zone>
     <ui.Tarja />
     <ui.Footer />
   </main>
