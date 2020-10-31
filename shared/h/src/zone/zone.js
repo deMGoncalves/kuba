@@ -1,7 +1,7 @@
 import * as f from '@rex/f'
 import paint from '@rex/h/src/paint'
 import repaint from '@rex/h/src/repaint'
-import offScreen, { render } from './offscreen'
+import offScreen, { render } from './offScreen'
 import component from './component'
 
 const oneOff = f.magic('oneOff')
