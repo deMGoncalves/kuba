@@ -1,5 +1,6 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -98,7 +99,10 @@ module.exports = {
         from: path.resolve(__dirname, 'template'),
         to: '.'
       }
-    ])
+    ]),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'template/index.html')
+    })
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
