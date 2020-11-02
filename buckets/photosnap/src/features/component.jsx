@@ -1,5 +1,5 @@
 import h, { Repeat, Zone } from '@rex/h'
-import * as ui from '@rex/kit'
+import * as ui from '@ui'
 import Hero from './hero'
 import Feature from './feature'
 import Template from '@template'

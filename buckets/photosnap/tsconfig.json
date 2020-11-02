@@ -8,7 +8,8 @@
       "@home/*": ["src/home/*"],
       "@pricing/*": ["src/pricing/*"],
       "@stories/*": ["src/stories/*"],
-      "@template/*": ["src/template/*"]
+      "@template/*": ["src/template/*"],
+      "@ui/*": ["src/ui/*"]
     }
   },
   "extends": "../../tsconfig.json"

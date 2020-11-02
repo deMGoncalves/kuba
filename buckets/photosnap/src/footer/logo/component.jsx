@@ -1,5 +1,5 @@
 import h from '@rex/h'
-import * as ui from '@rex/kit'
+import * as ui from '@ui'
 import photosnap from './photosnap.png'
 import style from './style.css'
 
