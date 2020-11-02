@@ -20,7 +20,6 @@
     "shared/f/**/*.{js,jsx}": "yarn workspace @rex/f lint-staged --allow-empty",
     "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",
     "shared/hook/**/*.{js,jsx}": "yarn workspace @rex/hook lint-staged --allow-empty",
-    "shared/kit/**/*.{js,jsx}": "yarn workspace @rex/kit lint-staged --allow-empty",
     "shared/markup/**/*.{js,jsx}": "yarn workspace @rex/markup lint-staged --allow-empty",
     "shared/radio/**/*.{js,jsx}": "yarn workspace @rex/radio lint-staged --allow-empty",
     "shared/reset/**/*.css": "yarn workspace @rex/reset lint-staged --allow-empty",

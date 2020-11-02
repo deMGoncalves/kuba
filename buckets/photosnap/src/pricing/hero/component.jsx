@@ -1,5 +1,5 @@
 import h, { Fragment } from '@rex/h'
-import * as ui from '@rex/kit'
+import * as ui from '@ui'
 import schema from './schema.json'
 import style from './style.css'
 
