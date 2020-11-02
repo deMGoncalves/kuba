@@ -110,7 +110,8 @@ module.exports = {
       '@features': path.resolve(__dirname, 'src/features'),
       '@home': path.resolve(__dirname, 'src/home'),
       '@pricing': path.resolve(__dirname, 'src/pricing'),
-      '@stories': path.resolve(__dirname, 'src/stories')
+      '@stories': path.resolve(__dirname, 'src/stories'),
+      '@template': path.resolve(__dirname, 'src/template')
     }
   },
   output: {

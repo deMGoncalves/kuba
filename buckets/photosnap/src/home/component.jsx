@@ -1,15 +1,12 @@
-import h, { Fragment, Zone } from '@rex/h'
-import * as ui from '@rex/kit'
+import h from '@rex/h'
+import Features from './features'
 import Heros from './heros'
 import Stories from './stories'
-import Features from './features'
-import style from './style.css'
+import Template from '@template'
 
 export default () =>
-  <main className={style.home}>
-    <ui.Header />
+  <Template>
     <Heros />
     <Stories />
     <Features />
-    <ui.Footer />
-  </main>
+  </Template>

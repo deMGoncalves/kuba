@@ -5,7 +5,8 @@
       "@feature/*": ["src/feature/*"],
       "@home/*": ["src/home/*"],
       "@pricing/*": ["src/pricing/*"],
-      "@stories/*": ["src/stories/*"]
+      "@stories/*": ["src/stories/*"],
+      "@template/*": ["src/template/*"]
     }
   },
   "extends": "../../tsconfig.json"
