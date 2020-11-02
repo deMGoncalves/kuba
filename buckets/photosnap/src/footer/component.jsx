@@ -12,6 +12,6 @@ export default () =>
       <Social className={style.footer__social} />
       <Nav className={style.footer__nav} />
       <ui.Link className={style.footer__linkButton} color='inverse' href='/' icon='arrow'> Get an invite</ui.Link>
-      <p className={style.footer__p}>Copyright {(new Date()).getFullYear()}. All Rights Reserved</p>
+      <ui.P className={style.footer__p} color='inverse'>Copyright {(new Date()).getFullYear()}. All Rights Reserved</ui.P>
     </footer>
   </Zone>
