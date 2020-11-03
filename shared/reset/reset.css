@@ -6,7 +6,7 @@
   --font-size-largest: calc(var(--font-size-larger) * var(--font-size-scale));
   --font-size-larger: calc(var(--font-size-large) * var(--font-size-scale));
   --font-size-large: calc(var(--font-size-base) * var(--font-size-scale));
-  --font-size-base: 14px;
+  --font-size-base: 15px;
   --font-size-small: calc(var(--font-size-base) / var(--font-size-scale));
   --font-size-smaller: calc(var(--font-size-small) / var(--font-size-scale));
   --font-size-smallest: calc(var(--font-size-smaller) / var(--font-size-scale));
