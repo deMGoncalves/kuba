@@ -10,7 +10,7 @@ module.exports = merge(common, {
     historyApiFallback: true,
     hot: true,
     index: './.temp/index.html',
-    port: portFinderSync.getPort(5001)
+    port: portFinderSync.getPort(5000)
   },
   output: {
     path: path.resolve(__dirname, '.temp')
