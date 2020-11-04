@@ -23,9 +23,3 @@ Este projeto é uma maneira de conseguir o leite sem comprar a vaca.
   yarn setup
   yarn workspace @rex/photosnap start
 ```
-
-### Como Contribuir?
-  Adoraríamos ter sua ajuda em nosso projeto. Aguardamos seu Pull Request!
-
-### Licença
-  [MIT License](./LICENSE.md)
