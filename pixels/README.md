@@ -1,5 +1,0 @@
-[voltar](../README.md)
-
-# Pixels
-========
-
