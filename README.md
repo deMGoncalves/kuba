@@ -18,12 +18,8 @@ Este projeto é uma maneira de conseguir o leite sem comprar a vaca.
 
 ### Instalação
 ```bash
+  git clone https://github.com/oneOffJS/rex.git
+  cd rex
   yarn setup
   yarn workspace @rex/photosnap start
 ```
-
-### Como Contribuir?
-  Adoraríamos ter sua ajuda em nosso projeto! Clique [aqui](./CONTRIBUTING.md) para obter mais informações sobre o que estamos procurando e como começar.
-
-### Licença
-  [MIT License](./LICENSE.md)
