@@ -1,6 +1,7 @@
 const common = require('./webpack.common.js')
 const merge = require('webpack-merge')
 const path = require('path')
+const portFinderSync = require('portfinder-sync')
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
@@ -9,7 +10,7 @@ module.exports = merge(common, {
     historyApiFallback: true,
     hot: true,
     index: './.temp/index.html',
-    port: 5001
+    port: portFinderSync.getPort(5001)
   },
   output: {
     path: path.resolve(__dirname, '.temp')
