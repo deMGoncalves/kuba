@@ -98,6 +98,10 @@ module.exports = {
       {
         from: path.resolve(__dirname, 'template'),
         to: '.'
+      },
+      {
+        from: path.resolve(__dirname, '../../pixels/sw/src/sw.js'),
+        to: '.'
       }
     ]),
     new HtmlWebpackPlugin({
