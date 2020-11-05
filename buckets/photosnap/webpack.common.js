@@ -56,39 +56,6 @@ module.exports = {
             }
           }
         ]
-      },
-      {
-        test: /\.(wav)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[hash].[ext]'
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(csv|tsv)$/,
-        use: [
-          {
-            loader: 'csv-loader',
-            options: {
-              name: '[name].[hash].[ext]'
-            }
-          }
-        ]
-      },
-      {
-        test: /\.xml$/,
-        use: [
-          {
-            loader: 'xml-loader',
-            options: {
-              name: '[name].[hash].[ext]'
-            }
-          }
-        ]
       }
     ]
   },
