@@ -1,4 +1,5 @@
 .logo {
+  cursor: pointer;
   display: flex;
   place-items: center;
 }
