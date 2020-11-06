@@ -46,7 +46,7 @@ jobs:
         yarn workspace @rex/trackjs test
         yarn workspace @rex/sw test
         yarn workspace @rex/markup test
-        yarn workspace @rex/photosnap test
+        yarn workspace @rex/rexsnap test
     
     - name: Run Photosnap build
       run: yarn workspace @rex/rexsnap build
