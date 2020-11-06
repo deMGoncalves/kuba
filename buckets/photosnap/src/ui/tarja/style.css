@@ -30,11 +30,8 @@
   }
 }
 
-.tarja__h3 {
-  color: var(--color-pure-white);
+.tarja__heading {
   display: inline-block;
-  font-size: 40px;
-  font-weight: 700;
   letter-spacing: 4.17px;
   line-height: 48px;
   max-width: 420px;

@@ -1,5 +1,5 @@
 .heading {
-  color: var(--color-pure-black);
+  color: var(--color-master-darkest);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -12,20 +12,12 @@ h2.heading {
   font-size: var(--font-size-larger);
 }
 
-h2.heading.large {
-  font-size: var(--font-size-large);
-}
-
-h2.heading.small {
-  font-size: var(--font-size);
-}
-
 h3.heading {
   font-size: var(--font-size-large);
 }
 
 h4.heading {
-  font-size: var(--font-size);
+  font-size: var(--font-size-base);
 }
 
 h5.heading {
@@ -36,6 +28,34 @@ h6.heading {
   font-size: var(--font-size-smaller);
 }
 
+.heading.largest {
+  font-size: var(--font-size-largest);
+}
+
+.heading.larger {
+  font-size: var(--font-size-larger);
+}
+
+.heading.large {
+  font-size: var(--font-size-large);
+}
+
+.heading.base {
+  font-size: var(--font-size-base);
+}
+
+.heading.small {
+  font-size: var(--font-size-small);
+}
+
+.heading.smaller {
+  font-size: var(--font-size-smaller);
+}
+
+.heading.smallest {
+  font-size: var(--font-size-smallest);
+}
+
 .heading.inverse {
-  color: var(--color-pure-white);
+  color: var(--color-master-lightest);
 }

@@ -20,7 +20,7 @@
 }
 
 .nav__link {
-  color: var(--color-pure-white) !important;
+  color: var(--color-master-lightest) !important;
   margin: 7.5px;
 }
 

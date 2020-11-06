@@ -1,12 +1,12 @@
 .hero {
   align-items: center;
-  background-color: var(--color-pure-white);
+  background-color: var(--color-master-lightest);
   display: flex;
   flex-direction: column;
 }
 
 .hero.inverse {
-  background-color: var(--color-pure-black);
+  background-color: var(--color-master-darkest);
 }
 
 @media (min-width: 768px) {

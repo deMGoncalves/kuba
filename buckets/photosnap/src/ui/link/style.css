@@ -3,7 +3,7 @@
 .link:visited {
   align-items: center;
   border: none;
-  color: var(--color-pure-black);
+  color: var(--color-master-darkest);
   display: inline-flex;
   font-size: 14px;
   font-weight: 700;
@@ -18,7 +18,7 @@
 }
 
 .link.inverse {
-  color: var(--color-pure-white);
+  color: var(--color-master-lightest);
 }
 
 .link.arrow::after {

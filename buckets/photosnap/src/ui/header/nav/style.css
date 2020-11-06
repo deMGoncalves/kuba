@@ -21,8 +21,8 @@
 @media (max-width: 767px) {
   .nav {
     align-items: center;
-    background-color: var(--color-pure-white);
-    border-top: 1px solid var(--color-light-gray);
+    background-color: var(--color-master-lightest);
+    border-top: 1px solid var(--color-master-lighter);
     display: none;
     flex-direction: column;
     height: 280px;
@@ -40,7 +40,7 @@
   }
 
   .nav::after {
-    border-top: 1px solid var(--color-light-gray);
+    border-top: 1px solid var(--color-master-lighter);
     bottom: 100px;
     content: '';
     display: block;
@@ -74,6 +74,6 @@
 }
 
 .nav__link:hover {
-  color: var(--color-light-gray) !important;
+  color: var(--color-master-light) !important;
   text-decoration: none !important;
 }

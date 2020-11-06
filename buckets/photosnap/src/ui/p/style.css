@@ -1,7 +1,7 @@
 .p {
-  color: var(--color-pure-black);
+  color: var(--color-master-darkest);
 }
 
 .p.inverse {
-  color: var(--color-light-gray);
+  color: var(--color-master-lightest);
 }

@@ -1,6 +1,6 @@
 .footer {
   align-items: center;
-  background-color: var(--color-pure-black);
+  background-color: var(--color-master-darkest);
   display: flex;
   flex-direction: column;
   padding: 45px 30px;
