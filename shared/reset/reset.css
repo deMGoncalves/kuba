@@ -2,14 +2,13 @@
   --color-light-gray: #dfdfdf;
   --color-pure-black: #000;
   --color-pure-white: #fff;
-  --font-size-scale: 1.333;
-  --font-size-largest: calc(var(--font-size-larger) * var(--font-size-scale));
-  --font-size-larger: calc(var(--font-size-large) * var(--font-size-scale));
-  --font-size-large: calc(var(--font-size-base) * var(--font-size-scale));
-  --font-size-base: 15px;
-  --font-size-small: calc(var(--font-size-base) / var(--font-size-scale));
-  --font-size-smaller: calc(var(--font-size-small) / var(--font-size-scale));
-  --font-size-smallest: calc(var(--font-size-smaller) / var(--font-size-scale));
+  --font-size-largest: 36px;
+  --font-size-larger: 24px;
+  --font-size-large: 18px;
+  --font-size-base: 14px;
+  --font-size-small: 12px;
+  --font-size-smaller: 10px;
+  --font-size-smallest: 8px;
 }
 
 * {
