@@ -1,6 +1,6 @@
 <img src="https://github.com/oneOffJS/rex/raw/master/rex.png" alt="Rex Logotipo" width="300" height="300" />
 
-## Simples, pequeno e imperfeito - "Uma visão além da programação"
+## Simples, pequeno e imperfeito. Uma visão além da programação.
 
 Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outra história. Desenvolver um software de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a marioria dos programadores ainda não tem.
 
@@ -21,5 +21,9 @@ Este projeto é uma maneira de conseguir o leite sem comprar a vaca.
   git clone https://github.com/oneOffJS/rex.git
   cd rex
   yarn setup
+```
+
+### [Demo] Photosnap
+```bash
   yarn workspace @rex/photosnap start
 ```
