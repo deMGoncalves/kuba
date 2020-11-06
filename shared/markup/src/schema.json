@@ -9,7 +9,7 @@
   "manifest": "/manifest.json",
   "name": "Photosnap",
   "robots": "index, follow",
-  "themeColor": "#000000",
+  "themeColor": "#fafafa",
   "title": "Photosnap • Create and share your photo stories",
   "type": "website",
   "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no"

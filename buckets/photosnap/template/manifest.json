@@ -7,10 +7,10 @@
 	"display" : "standalone",
 	"start_url" : "/",
 	"short_name" : "Photosnap",
-	"theme_color" : "#000000",
+	"theme_color" : "#fafafa",
   "description": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others",
   "orientation" : "portrait",
-	"background_color" : "#000000",
+	"background_color" : "#fafafa",
 	"related_applications" : [],
 	"prefer_related_applications" : false,
 	"icons" : [
