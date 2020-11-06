@@ -1,12 +1,12 @@
 import h from '@rex/h'
+import * as ui from '@ui'
 import Features from './features'
 import Heros from './heros'
 import Stories from './stories'
-import Template from '@template'
 
 export default () =>
-  <Template>
+  <ui.Template>
     <Heros />
     <Stories />
     <Features />
-  </Template>
+  </ui.Template>

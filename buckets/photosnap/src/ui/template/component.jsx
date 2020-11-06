@@ -1,11 +1,10 @@
 import h from '@rex/h'
-import Footer from '@footer'
-import Header from '@header'
+import * as ui from '@ui'
 import style from './style.css'
 
 export default (props, children) =>
   <main className={[style.template, props.className]}>
-    <Header />
+    <ui.Header />
     {children}
-    <Footer />
+    <ui.Footer />
   </main>

@@ -4,12 +4,11 @@ import Card from './card'
 import Hero from './hero'
 import Switch from './switch'
 import Table from './table'
-import Template from '@template'
 import style from './style.css'
 import features from './schema'
 
 export default () =>
-  <Template>
+  <ui.Template>
     <Hero />
     <section className={style.pricing__content} data-pricing='month'>
       <Switch className={style.pricing__switch} />
@@ -31,4 +30,4 @@ export default () =>
     </section>
 
     <ui.Tarja />
-  </Template>
+  </ui.Template>
