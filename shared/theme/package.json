@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "lint-staged": "^10.2.11",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0"
+  },
+  "lint-staged": {
+    "*.css": "stylelint --fix"
+  },
+  "main": "default.css",
+  "name": "@rex/theme",
+  "private": true,
+  "version": "1.0.0"
+}

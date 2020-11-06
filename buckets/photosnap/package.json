@@ -11,7 +11,9 @@
     "@rex/radio": "1.0.0",
     "@rex/reset": "1.0.0",
     "@rex/router": "1.0.0",
-    "@rex/trackjs": "1.0.0"
+    "@res/sw": "1.0.0",
+    "@rex/trackjs": "1.0.0",
+    "@rex/theme": "1.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.1",

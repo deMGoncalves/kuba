@@ -2,17 +2,17 @@ import { paint } from '@rex/h'
 import hook from '@rex/hook'
 import component from './component'
 import jsonLD from './jsonLD'
-import photosnap from './photosnap.png'
+import rexsnap from './rexsnap.png'
 
 @paint(component)
 @hook(jsonLD)
 class Logo {
   get name () {
-    return 'Photosnap'
+    return 'Rexsnap'
   }
 
   get src () {
-    return photosnap
+    return rexsnap
   }
 
   get url () {
