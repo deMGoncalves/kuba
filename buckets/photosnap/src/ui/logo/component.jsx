@@ -7,5 +7,5 @@ export default (logo) =>
     <ui.Picture className={style.logo__picture} onClick={() => logo.redirect()}>
       <source srcSet={logo.src} />
     </ui.Picture>
-    <ui.Heading className={style.logo__heading} size='large'>{logo.name}</ui.Heading>
+    <ui.Heading className={style.logo__heading} size='large' color={logo.color}>{logo.name}</ui.Heading>
   </div>

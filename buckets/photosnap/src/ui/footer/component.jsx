@@ -1,6 +1,5 @@
 import h, { Zone } from '@rex/h'
 import * as ui from '@ui'
-import Logo from './logo'
 import Nav from './nav'
 import Social from './social'
 import style from './style.css'
@@ -8,7 +7,7 @@ import style from './style.css'
 export default () =>
   <Zone>
     <footer className={style.footer}>
-      <Logo className={style.footer__logo} />
+      <ui.Logo className={style.footer__logo} color='inverse' />
       <Social className={style.footer__social} />
       <Nav className={style.footer__nav} />
       <ui.Link className={style.footer__linkButton} color='inverse' href='/' icon='arrow'> Get an invite</ui.Link>
