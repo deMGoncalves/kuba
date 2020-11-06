@@ -16,7 +16,8 @@
 }
 
 body {
-  color: var(--color-pure-black);
+  background-color: var(--color-master-lightest);
+  color: var(--color-master-base);
   font-family: Helvetica, sans-serif;
   font-size: var(--font-size-base);
   font-weight: 400;
