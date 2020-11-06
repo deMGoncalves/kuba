@@ -1,11 +1,11 @@
-name: Photosnap
+name: Rexsnap
 
 on:
   push:
     branches: [ master ]
 
     paths:
-      - 'buckets/photosnap/**'
+      - 'buckets/rexsnap/**'
       - 'pixels/**'
       - 'shared/**'
       - 'ui/**'
@@ -44,13 +44,14 @@ jobs:
         yarn workspace @rex/gtm test
         yarn workspace @rex/hotjar test
         yarn workspace @rex/trackjs test
+        yarn workspace @rex/sw test
         yarn workspace @rex/markup test
         yarn workspace @rex/photosnap test
     
     - name: Run Photosnap build
-      run: yarn workspace @rex/photosnap build
+      run: yarn workspace @rex/rexsnap build
     
     - name: Run Firebase deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: yarn workspace @rex/photosnap deploy
+      run: yarn workspace @rex/rexsnap deploy
