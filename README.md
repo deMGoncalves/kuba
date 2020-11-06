@@ -23,7 +23,7 @@ Este projeto é uma maneira de conseguir o leite sem comprar a vaca.
   yarn setup
 ```
 
-### [Demo] Photosnap
+### Demo
 ```bash
   yarn workspace @rex/photosnap start
 ```
