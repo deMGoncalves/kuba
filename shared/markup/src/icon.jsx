@@ -5,5 +5,5 @@ import render from './render'
 export default (page) =>
   f.forEach(
     ['icon', 'shortcut', 'apple-touch-icon'],
-    rel => render(<link href={f.or(page.icon, '/favicon.png')} rel={rel} type='image/png' />)
+    rel => render(<link href={f.or(page.icon, '/favicon.ico')} rel={rel} type='image/png' />)
   )
