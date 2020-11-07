@@ -5,6 +5,7 @@
       "@feature/*": ["src/feature/*"],
       "@home/*": ["src/home/*"],
       "@pricing/*": ["src/pricing/*"],
+      "@site/*": ["src/site/*"],
       "@stories/*": ["src/stories/*"],
       "@ui/*": ["src/ui/*"]
     }

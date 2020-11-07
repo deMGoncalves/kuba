@@ -1,13 +1,13 @@
 import h, { Repeat, Zone } from '@rex/h'
-import * as ui from '@ui'
+import Site from '@site'
 import Hero from './hero'
 import Story from './story'
 import schema from './schema.json'
 
 export default () =>
-  <ui.Template>
+  <Site>
     <Hero />
     <Zone>
       <Repeat iterator={schema} component={Story} />
     </Zone>
-  </ui.Template>
+  </Site>

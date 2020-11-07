@@ -2,7 +2,7 @@ import * as f from '@rex/f'
 
 export default f.once((logo) =>
   ({
-    '@id': `${logo.url}#logo`,
+    '@id': '#organization',
     '@type': 'Organization',
     logo: logo.src,
     name: logo.name,
