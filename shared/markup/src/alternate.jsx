@@ -1,4 +1,5 @@
-import h, { render } from '@rex/h'
+import h from '@rex/h'
+import render from './render'
 
 export default () =>
-  render(document.head, <link rel='alternate' href={location.href} hrefLang='x-default' />)
+  render(<link rel='alternate' href={location.href} hrefLang='x-default' />)
