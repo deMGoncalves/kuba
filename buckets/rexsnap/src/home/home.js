@@ -1,8 +1,11 @@
 import { paint } from '@rex/h'
+import jsonld from '@rex/jsonld'
 import markup from '@rex/markup'
 import component from './component'
+import webpage from './webpage'
 
 @paint(component)
+@jsonld(webpage)
 @markup
 class Home {
   get description () {
@@ -11,6 +14,10 @@ class Home {
 
   get title () {
     return 'Rexsnap'
+  }
+
+  get url () {
+    return location.href
   }
 }
 
