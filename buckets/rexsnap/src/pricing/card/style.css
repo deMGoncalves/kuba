@@ -5,18 +5,10 @@
   display: flex;
   flex-direction: column;
   font-size: 15px;
+  margin-top: 24px;
   padding: 56px 20px 40px 20px;
   position: relative;
   text-align: center;
-}
-
-.card::before {
-  background: linear-gradient(26.57deg, #ffc593 0%, #bc7198 43.29%, #5a77ff 83.33%);
-  height: 6px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 @media (min-width: 769px) and (max-width: 1110px) {
@@ -25,16 +17,23 @@
     flex-wrap: wrap;
     padding: 40px;
   }
-
-  .card::before {
-    height: 100%;
-    width: 6px;
-  }
 }
 
 @media (min-width: 1111px) {
-  .card {
-    max-width: 350px;
+  .card { max-width: 350px; }
+}
+
+.card__gradient {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@media (min-width: 769px) and (max-width: 1110px) {
+  .card__gradient {
+    height: 100%;
+    width: initial;
   }
 }
 
@@ -45,31 +44,35 @@
   }
 }
 
-.card__month,
-.card__year,
-.card__title {
+/* .card__month, .card__year, .card__title {
   color: #000;
   font-weight: bold;
-}
+} */
 
-.card__title {
+.card__name {
+  color: var(--color-master-darkest);
   font-size: 24px;
   font-style: normal;
+  font-weight: bold;
   margin-bottom: 18px;
 }
 
-.card__text {
-  line-height: 25px;
-}
+.card__description { line-height: 25px; }
 
 @media (min-width: 769px) and (max-width: 1110px) {
-  .card__text {
-    margin: 18px 0 32px 0;
-  }
+  .card__description { margin: 18px 0 32px 0; }
 }
 
 .card__price {
+  font-style: normal;
   margin: 40px 0;
+}
+
+.card__label {
+  display: block;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
 }
 
 @media (min-width: 769px) and (max-width: 1110px) {
@@ -80,72 +83,24 @@
   }
 }
 
-.card__month,
-.card__year {
-  display: block;
-  font-size: 40px;
-  font-style: normal;
-}
-
-.card__dataMonth {
-  display: block;
-}
-
-.card__dataYear {
-  display: none;
-}
-
-.card__button {
-  background-color: #000;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 12px;
-  line-height: 40px;
-  text-transform: uppercase;
-  width: calc(100% - 80px);
-}
+.card__button { width: calc(100% - 80px); }
 
 @media (min-width: 769px) and (max-width: 1110px) {
-  .card__button {
-    width: 50%;
-  }
+  .card__button { width: 50%; }
 }
 
-/* Negative */
-.card.negative {
-  background-color: #000;
+/* TODO: Inverse */
+.card.inverse {
+  background-color: var(--color-master-darkest);
   color: rgba(256, 256, 256, 0.6);
 }
 
-.card.negative::before {
-  content: '';
-}
-
 @media (min-width: 1111px) {
-  .card.negative {
+  .card.inverse {
     margin: 0 30px;
     padding: 85px 20px 70px 20px;
   }
 }
 
-.card.negative .card__month,
-.card.negative .card__year,
-.card.negative .card__title {
-  color: #fff;
-}
-
-.card.negative .card__button {
-  background-color: #fff;
-  color: #000;
-  font-weight: bold;
-}
-
-/* activeted */
-[data-pricing=year] .card__dataYear {
-  display: block;
-}
-
-[data-pricing=year] .card__dataMonth {
-  display: none;
-}
+.card.inverse .card__name,
+.card.inverse .card__label { color: var(--color-master-lightest); }

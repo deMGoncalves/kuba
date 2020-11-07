@@ -1,6 +1,7 @@
 export { default as Button } from './button'
 export { default as Feature } from './feature'
 export { default as Footer } from './footer'
+export { default as Gradient } from './gradient'
 export { default as Header } from './header'
 export { default as Heading } from './heading'
 export { default as Hero } from './hero'

@@ -18,3 +18,13 @@
   background-color: var(--color-master-light);
   color: var(--color-master-darkest);
 }
+
+.button.inverse {
+  background-color: var(--color-master-light);
+  color: var(--color-master-darkest);
+}
+
+.button.inverse:hover {
+  background-color: var(--color-master-base);
+  color: var(--color-master-light);
+}
