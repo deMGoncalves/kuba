@@ -1,6 +1,6 @@
-import frame from '@rex/h/src/frame'
+import * as f from '@rex/f'
 
 const remove = (element) =>
   element.remove()
 
-export default frame(remove)
+export default f.frame(remove)

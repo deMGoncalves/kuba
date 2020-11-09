@@ -1,6 +1,6 @@
-import frame from '@rex/h/src/frame'
+import * as f from '@rex/f'
 
 const replaceChild = (element, vElement, parent) =>
   parent.replaceChild(vElement, element)
 
-export default frame(replaceChild)
+export default f.frame(replaceChild)

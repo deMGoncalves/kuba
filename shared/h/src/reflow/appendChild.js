@@ -1,6 +1,6 @@
-import frame from '@rex/h/src/frame'
+import * as f from '@rex/f'
 
 const appendChild = (_, vElement, parent) =>
   parent.appendChild(vElement)
 
-export default frame(appendChild)
+export default f.frame(appendChild)
