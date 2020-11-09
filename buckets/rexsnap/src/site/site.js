@@ -4,13 +4,13 @@ import jsonld from '@rex/jsonld'
 import * as structured from '@structured'
 import component from './component'
 
-const oneOff = f.magic('oneOff')
+const $private = f.magic('private')
 
 @paint(component)
 @jsonld(structured.website)
 class Site {
   get className () {
-    return this[oneOff].className
+    return this[$private].className
   }
 
   get name () {
@@ -22,7 +22,7 @@ class Site {
   }
 
   constructor (props) {
-    this[oneOff] = { ...props }
+    this[$private] = { ...props }
     return this
   }
 }

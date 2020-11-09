@@ -4,31 +4,31 @@ import repaint from '@rex/h/src/repaint'
 import offScreen, { render } from './offScreen'
 import component from './component'
 
-const oneOff = f.magic('oneOff')
+const $private = f.magic('private')
 
 @paint(component)
 class Zone {
   get className () {
-    return this[oneOff].className
+    return this[$private].className
   }
 
   get offScreen () {
-    return !!this[oneOff].offScreen
+    return !!this[$private].offScreen
   }
 
   get slot () {
-    return this[oneOff].slot
+    return this[$private].slot
   }
 
   constructor (props) {
-    this[oneOff] = { ...props, offScreen: f.T() }
+    this[$private] = { ...props, offScreen: f.T() }
     offScreen(this)
     return this
   }
 
   @repaint
   [render] () {
-    this[oneOff].offScreen = f.F()
+    this[$private].offScreen = f.F()
     return this
   }
 }

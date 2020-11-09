@@ -5,13 +5,13 @@ import * as structured from '@structured'
 import component from './component'
 import rexsnap from './rexsnap.png'
 
-const oneOff = f.magic('oneOff')
+const $private = f.magic('private')
 
 @paint(component)
 @jsonld(structured.organization)
 class Logo {
   get color () {
-    return this[oneOff].color
+    return this[$private].color
   }
 
   get name () {
@@ -27,7 +27,7 @@ class Logo {
   }
 
   constructor (props) {
-    this[oneOff] = { ...props }
+    this[$private] = { ...props }
     return this
   }
 
