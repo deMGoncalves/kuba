@@ -1,13 +1,8 @@
 import * as f from '@rex/f'
-import off from './off'
 import on from './on'
+import render from './render'
 
-const lazyRender = (zone) => {
-  const handler = f.debounce(() =>
-    f.onScreen(zone) && (off(handler), zone[f.magic('zone/render')]()))
-
-  on(handler)
-  handler()
-}
+const lazyRender = (zone) =>
+  on(zone, () => f.onScreen(zone) && render(zone))
 
 export default f.idle(lazyRender)

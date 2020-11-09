@@ -30,6 +30,7 @@ module.exports = {
   ],
   rules: {
     'no-prototype-builtins': 'off',
+    'no-sequences': 'off',
     'no-unused-vars': [
       'error',
       {
