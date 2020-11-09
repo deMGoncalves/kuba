@@ -1,7 +1,10 @@
 import h from '@rex/h'
 import * as ui from '@ui'
+import style from './style.css'
 
 export default (site, children) =>
-  <ui.Template className={site.className}>
+  <main className={[style.template, site.className]}>
+    <ui.Header />
     {children}
-  </ui.Template>
+    <ui.Footer />
+  </main>
