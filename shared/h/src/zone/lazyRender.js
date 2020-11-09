@@ -1,10 +1,10 @@
 import * as f from '@rex/f'
 
-const offScreen = (zone) => {
+const lazyRender = (zone) => {
   const handler = f.debounce(() =>
     f.not(f.offScreen(zone[f.magic('h/element')])) && (
       window.removeEventListener('scroll', handler),
-      zone[f.magic('render')]()
+      zone[f.magic('zone/render')]()
     )
   )
 
@@ -12,4 +12,4 @@ const offScreen = (zone) => {
   handler()
 }
 
-export default f.idle(offScreen)
+export default f.idle(lazyRender)

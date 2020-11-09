@@ -2,14 +2,13 @@ import * as f from '@rex/f'
 import hook from '@rex/hook'
 import paint from '@rex/h/src/paint'
 import repaint from '@rex/h/src/repaint'
-import offScreen from './offScreen'
+import lazyRender from './lazyRender'
 import component from './component'
 
 const $private = f.magic('private')
-const render = f.magic('render')
 
 @paint(component)
-@hook(offScreen)
+@hook(lazyRender)
 class Zone {
   get className () {
     return this[$private].className
@@ -29,7 +28,7 @@ class Zone {
   }
 
   @repaint
-  [render] () {
+  [f.magic('zone/render')] () {
     this[$private].onScreen = f.T()
     return this
   }
