@@ -83,6 +83,7 @@ module.exports = {
       '@pricing': path.resolve(__dirname, 'src/pricing'),
       '@site': path.resolve(__dirname, 'src/site'),
       '@stories': path.resolve(__dirname, 'src/stories'),
+      '@structured': path.resolve(__dirname, 'src/structured'),
       '@ui': path.resolve(__dirname, 'src/ui')
     }
   },

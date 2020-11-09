@@ -1,13 +1,13 @@
 import { paint } from '@rex/h'
 import * as f from '@rex/f'
 import jsonld from '@rex/jsonld'
+import * as structured from '@structured'
 import component from './component'
-import website from './website'
 
 const oneOff = f.magic('oneOff')
 
 @paint(component)
-@jsonld(website)
+@jsonld(structured.website)
 class Site {
   get className () {
     return this[oneOff].className

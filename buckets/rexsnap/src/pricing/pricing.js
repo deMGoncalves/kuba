@@ -2,9 +2,9 @@ import { paint } from '@rex/h'
 import * as f from '@rex/f'
 import jsonld from '@rex/jsonld'
 import markup from '@rex/markup'
+import * as structured from '@structured'
 import component from './component'
 import schema from './schema.json'
-import webpage from './webpage'
 
 const currency = f.magic('currency')
 const price = f.magic('price')
@@ -12,7 +12,7 @@ const setData = f.magic('setData')
 const type = f.magic('type')
 
 @paint(component)
-@jsonld(webpage)
+@jsonld(structured.webpage)
 @markup
 class Pricing {
   get data () {

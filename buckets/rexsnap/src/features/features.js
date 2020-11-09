@@ -1,11 +1,11 @@
 import { paint } from '@rex/h'
 import jsonld from '@rex/jsonld'
 import markup from '@rex/markup'
+import * as structured from '@structured'
 import component from './component'
-import webpage from './webpage'
 
 @paint(component)
-@jsonld(webpage)
+@jsonld(structured.webpage)
 @markup
 class Features {
   get description () {

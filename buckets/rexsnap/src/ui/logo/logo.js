@@ -1,15 +1,14 @@
 import { paint } from '@rex/h'
 import * as f from '@rex/f'
-import hook from '@rex/hook'
 import jsonld from '@rex/jsonld'
+import * as structured from '@structured'
 import component from './component'
-import organization from './organization'
 import rexsnap from './rexsnap.png'
 
 const oneOff = f.magic('oneOff')
 
 @paint(component)
-@jsonld(organization)
+@jsonld(structured.organization)
 class Logo {
   get color () {
     return this[oneOff].color
@@ -19,7 +18,7 @@ class Logo {
     return 'Rexsnap'
   }
 
-  get src () {
+  get thumbnail () {
     return rexsnap
   }
 
