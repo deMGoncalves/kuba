@@ -1,4 +1,4 @@
 import * as f from '@rex/f'
 
-export default (__target__, component, children) =>
-  f.assign(component(__target__, children), { __target__ })
+export default (instance, component, children) =>
+  f.assign(component(instance, children), { [f.magic('h/target')]: instance })

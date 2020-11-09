@@ -1,19 +1,22 @@
 import * as f from '@rex/f'
+import hook from '@rex/hook'
 import paint from '@rex/h/src/paint'
 import repaint from '@rex/h/src/repaint'
-import offScreen, { render } from './offScreen'
+import offScreen from './offScreen'
 import component from './component'
 
 const $private = f.magic('private')
+const render = f.magic('render')
 
 @paint(component)
+@hook(offScreen)
 class Zone {
   get className () {
     return this[$private].className
   }
 
-  get offScreen () {
-    return !!this[$private].offScreen
+  get onScreen () {
+    return !!this[$private].onScreen
   }
 
   get slot () {
@@ -21,14 +24,13 @@ class Zone {
   }
 
   constructor (props) {
-    this[$private] = { ...props, offScreen: f.T() }
-    offScreen(this)
+    this[$private] = { ...props }
     return this
   }
 
   @repaint
   [render] () {
-    this[$private].offScreen = f.F()
+    this[$private].onScreen = f.T()
     return this
   }
 }

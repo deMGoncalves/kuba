@@ -1,18 +1,16 @@
 import * as f from '@rex/f'
 import reflow from '../reflow'
 
-export default (target, component, children) => {
-  f.assign(target, {
-    __element__: component(target, children),
+const element = f.magic('h/element')
 
-    __reflow__: f.idle(function () {
-      reflow(this.__element__, component(this, children))
+export default (instance, component, children) => {
+  f.assign(instance, {
+    [element]: f.assign(component(instance, children), { [f.magic('h/target')]: instance }),
+
+    [f.magic('h/reflow')]: f.idle(function () {
+      reflow(this[element], component(this, children))
     })
   })
 
-  f.assign(target.__element__, {
-    __target__: target
-  })
-
-  return target.__element__
+  return instance[element]
 }
