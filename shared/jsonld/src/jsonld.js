@@ -4,5 +4,5 @@ import graph from './graph'
 import render from './render'
 
 export default (target) =>
-  hook((page) =>
-    render(f.push(graph, target(page))))
+  hook(f.idle((page) =>
+    render(f.push(graph, target(page)))))

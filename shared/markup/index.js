@@ -11,4 +11,4 @@ import robots from './src/robots'
 import themeColor from './src/themeColor'
 import title from './src/title'
 
-export default hook(f.chain(alternate, author, base, canonical, charset, description, icon, robots, themeColor, title))
+export default hook(f.idle(f.chain(alternate, author, base, canonical, charset, description, icon, robots, themeColor, title)))
