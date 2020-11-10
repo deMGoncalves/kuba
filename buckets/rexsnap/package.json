@@ -13,8 +13,8 @@
     "@rex/reset": "1.0.0",
     "@rex/router": "1.0.0",
     "@rex/sw": "1.0.0",
-    "@rex/trackjs": "1.0.0",
-    "@rex/theme": "1.0.0"
+    "@rex/theme": "1.0.0",
+    "@rex/trackjs": "1.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.1",
@@ -42,6 +42,7 @@
     "lint-staged": "^10.2.11",
     "portfinder-sync": "^0.0.2",
     "postcss-loader": "^3.0.0",
+    "script-ext-html-webpack-plugin": "^2.1.5",
     "style-loader": "^2.0.0",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
