@@ -1,21 +1,19 @@
 import * as f from '@rex/f'
-import hook from '@rex/hook'
 import paint from '@rex/h/src/paint'
 import repaint from '@rex/h/src/repaint'
-import lazyRender from './lazyRender'
 import component from './component'
 
 const $private = f.magic('private')
+const render = f.magic('render')
 
 @paint(component)
-@hook(lazyRender)
 class Zone {
   get className () {
     return this[$private].className
   }
 
-  get onScreen () {
-    return !!this[$private].onScreen
+  get offScreen () {
+    return this[$private].offScreen
   }
 
   get slot () {
@@ -23,13 +21,18 @@ class Zone {
   }
 
   constructor (props) {
-    this[$private] = { ...props }
+    this[$private] = {
+      ...props,
+      offScreen: f.T()
+    }
+
+    f.lazyLoad(this, () => this[render]())
     return this
   }
 
   @repaint
-  [f.magic('zone/render')] () {
-    this[$private].onScreen = f.T()
+  [render] () {
+    this[$private].offScreen = f.F()
     return this
   }
 }

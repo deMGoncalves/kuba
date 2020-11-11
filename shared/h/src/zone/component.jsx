@@ -1,9 +1,9 @@
 import h from '@rex/h/src/h'
-import Show from '@rex/h/src/show'
+import Hide from '@rex/h/src/hide'
 
 export default (zone, children) =>
   <section className={zone.className} slot={zone.slot}>
-    <Show if={zone.onScreen}>
+    <Hide if={zone.offScreen}>
       {children}
-    </Show>
+    </Hide>
   </section>
