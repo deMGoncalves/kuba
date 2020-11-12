@@ -1,6 +1,7 @@
 import { paint } from '@rex/h'
 import * as f from '@rex/f'
 import jsonld from '@rex/jsonld'
+import { urlFor } from '@rex/router'
 import * as structured from '@structured'
 import component from './component'
 import rexsnap from './rexsnap.png'
@@ -32,7 +33,7 @@ class Logo {
   }
 
   redirect () {
-    location.assign('/')
+    location.assign(urlFor('home'))
     return this
   }
 }
