@@ -1,4 +1,4 @@
-const VERSION = 'Rex.SW.0.0.1'
+const VERSION = 'Rex.SW.0.0.2'
 
 const cache = (request) =>
   caches
