@@ -7,11 +7,14 @@ import offScreen from '@rex/f/src/offScreen'
 const event = 'scroll'
 const listener = magic('f/lazyLoad')
 
-const lazyLoad = (target, handler) =>
+const lazyLoad = (target, handler) => (
   window.addEventListener(event, (target[listener] = debounce(() =>
     not(offScreen(target)) && (
       window.removeEventListener(event, target[listener]), handler())
-    ))
-  )
+  ))
+  ),
+
+  target[listener]()
+)
 
 export default curry(lazyLoad)
