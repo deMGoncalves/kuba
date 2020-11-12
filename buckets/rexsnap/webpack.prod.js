@@ -10,6 +10,7 @@ module.exports = merge.smart(common, {
     minimizer: [
       new TerserJSPlugin({
         terserOptions: {
+          keep_fnames: true,
           safari10: true
         }
       })
