@@ -1,8 +1,6 @@
 {
   "routes": [
-    {
-      "handle": "filesystem"
-    },
+    { "handle": "filesystem" },
     {
       "dest": "/index.html",
       "headers": {
