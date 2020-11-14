@@ -1,7 +1,40 @@
 {
-  "version": 2,
+  "headers": [
+    {
+      "headers" : [
+        {
+          "key" : "Cache-Control",
+          "value" : "public, max-age=0, no-cache"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "gzip"
+        }
+      ],
+      "source": "**/index.@(html)"
+    },
+    {
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "gzip"
+        }
+      ],
+      "source": "**/*.@(eot|css|gif|jpeg|jpg|js|json|otf|png|svg|ttf|txt|woff|woff2|xml)"
+    }
+  ],
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
-  ]
+    {
+      "handle": "filesystem"
+    },
+    {
+      "dest": "/index.html",
+      "src": "/.*"
+    }
+  ],
+  "version": 2
 }
