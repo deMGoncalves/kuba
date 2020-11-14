@@ -11,7 +11,7 @@
           "value": "gzip"
         }
       ],
-      "source": "**/index.@(html)"
+      "source": "/index.html"
     },
     {
       "headers": [
@@ -24,7 +24,7 @@
           "value": "gzip"
         }
       ],
-      "source": "**/*.@(eot|css|gif|jpeg|jpg|js|json|otf|png|svg|ttf|txt|woff|woff2|xml)"
+      "source": "/.*"
     }
   ],
   "routes": [
