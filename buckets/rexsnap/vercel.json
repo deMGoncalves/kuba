@@ -2,6 +2,13 @@
   "routes": [
     {
       "continue": true,
+      "headers": {
+        "cache-control": "public, s-maxage=31536000",
+        "content-encoding": "gzip"
+      },
+      "src": "/.*"
+    },
+    {
       "handle": "filesystem"
     },
     {
@@ -11,14 +18,6 @@
         "content-encoding": "gzip"
       },
       "src": "/.*"
-    },
-    {
-      "dest": "/assets/$1",
-      "headers": {
-        "cache-control": "public, s-maxage=31536000",
-        "content-encoding": "gzip"
-      },
-      "src": "/assets/(.*)"
     }
   ],
   "version": 2
