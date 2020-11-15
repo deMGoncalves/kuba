@@ -1,22 +1,7 @@
 {
   "routes": [
     { "handle": "filesystem" },
-    {
-      "dest": "/index.html",
-      "headers": {
-        "cache-control": "public, s-maxage=0, no-cache",
-        "content-encoding": "gzip"
-      },
-      "src": "/.*"
-    },
-    {
-      "src": "/assets/(.*)",
-      "headers": {
-        "cache-control": "public, s-maxage=31536000",
-        "content-encoding": "gzip"
-      },
-      "dest": "/assets/$1"
-    }
+    { "src": "/.*", "dest": "/index.html" }
   ],
   "version": 2
 }
