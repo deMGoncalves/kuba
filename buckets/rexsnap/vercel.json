@@ -1,14 +1,6 @@
 {
   "routes": [
     {
-      "continue": true,
-      "headers": {
-        "cache-control": "public, s-maxage=31536000",
-        "content-encoding": "gzip"
-      },
-      "src": "/.*"
-    },
-    {
       "handle": "filesystem"
     },
     {
