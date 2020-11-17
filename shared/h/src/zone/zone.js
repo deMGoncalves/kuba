@@ -3,36 +3,36 @@ import paint from '@rex/h/src/paint'
 import repaint from '@rex/h/src/repaint'
 import component from './component'
 
-const $private = f.magic('private')
 const render = f.magic('render')
 
 @paint(component)
 class Zone {
+  #className
+  #offScreen
+  #slot
+
   get className () {
-    return this[$private].className
+    return this.#className
   }
 
   get offScreen () {
-    return this[$private].offScreen
+    return this.#offScreen
   }
 
   get slot () {
-    return this[$private].slot
+    return this.#slot
   }
 
   constructor (props) {
-    this[$private] = {
-      ...props,
-      offScreen: f.T()
-    }
-
+    this.#className = props.className
+    this.#offScreen = f.T()
     f.lazyLoad(this, () => this[render]())
     return this
   }
 
   @repaint
   [render] () {
-    this[$private].offScreen = f.F()
+    this.#offScreen = f.F()
     return this
   }
 }
