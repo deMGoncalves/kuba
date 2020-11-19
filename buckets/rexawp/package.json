@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@rex/sandbox": "1.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.1",
