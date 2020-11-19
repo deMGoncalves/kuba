@@ -10,6 +10,7 @@
     }
   },
   "lint-staged": {
+    "buckets/rexawp/**/*.{css,js,jsx}": "yarn workspace @rex/rexawp lint-staged --allow-empty",
     "buckets/rexsnap/**/*.{css,js,jsx}": "yarn workspace @rex/rexsnap lint-staged --allow-empty",
     "pixels/ga/**/*.{css,js,jsx}": "yarn workspace @rex/ga lint-staged --allow-empty",
     "pixels/gtag/**/*.{css,js,jsx}": "yarn workspace @rex/gtag lint-staged --allow-empty",
