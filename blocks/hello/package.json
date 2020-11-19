@@ -46,7 +46,7 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "main": "src/index.js",
-  "name": "@rex/rexawp",
+  "name": "@rex/hello",
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",
