@@ -1,7 +1,7 @@
 import * as f from '@rex/f'
 
-const setClassName = (element) =>
+const setClassName = (node) =>
   (_, className) =>
-    (element.className = f.join(f.flatten(f.concat([], className)), ' '))
+    (node.className = f.join(f.flatten(f.concat([], className)), ' '))
 
 export default setClassName
