@@ -1,5 +1,4 @@
 import * as f from '@rex/f'
-import slot from '@rex/h/src/slot'
 import createComment from './createComment'
 import createElement from './createElement'
 import executeComponent from './executeComponent'
@@ -11,4 +10,4 @@ export default (tagNameOrComponent, attributes, ...children) =>
     [isTagName, createElement],
     [isComponent, executeComponent],
     [f.T, createComment]
-  )(tagNameOrComponent, { ...attributes }, slot(f.flatten(children)))
+  )(tagNameOrComponent, { ...attributes }, f.flatten(children))
