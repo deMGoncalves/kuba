@@ -2,6 +2,6 @@ import * as f from '@rex/f'
 import addEventListener from './addEventListener'
 import stopPropagation from './stopPropagation'
 
-export default (element) =>
-  (eventName, handler) =>
-    addEventListener(element, f.slice(eventName, 0, -5), stopPropagation(f.idle(handler)))
+export default (node) =>
+  (name, listener) =>
+    addEventListener(node, f.slice(name, 0, -5), stopPropagation(f.idle(listener)))
