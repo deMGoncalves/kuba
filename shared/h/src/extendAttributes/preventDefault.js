@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
 
-export default (handler) =>
+export default (listener) =>
   (e) =>
-    handler(f.always(e)(e.preventDefault()))
+    listener(f.always(e)(e.preventDefault()))
