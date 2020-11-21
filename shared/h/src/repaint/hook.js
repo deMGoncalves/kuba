@@ -1,8 +1,7 @@
 import * as f from '@rex/f'
-
-const reflow = f.magic('h/reflow')
+import * as d from '@rex/h/src/dunders'
 
 export default (mathod) =>
   function () {
-    return f.always(mathod.call(this, ...arguments))(this[reflow] && this[reflow]())
+    return f.always(mathod.call(this, ...arguments))(this[d.reflow]())
   }
