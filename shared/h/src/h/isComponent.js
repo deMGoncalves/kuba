@@ -1,4 +1,3 @@
 import * as f from '@rex/f'
 
-export default (tagNameOrComponent) =>
-  f.test(/function/, typeof tagNameOrComponent)
+export default f.compose(f.test(/function/), f.typeOf)
