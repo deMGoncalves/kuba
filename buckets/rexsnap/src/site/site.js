@@ -1,13 +1,13 @@
 import { paint } from '@rex/h'
 import * as f from '@rex/f'
-import jsonld from '@rex/jsonld'
+import ldjson from '@rex/ldjson'
 import * as structured from '@structured'
 import component from './component'
 
 const $private = f.magic('private')
 
 @paint(component)
-@jsonld(structured.website)
+@ldjson(structured.website)
 class Site {
   get className () {
     return this[$private].className

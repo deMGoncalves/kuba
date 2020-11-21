@@ -28,7 +28,7 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "main": "index.js",
-  "name": "@rex/jsonld",
+  "name": "@rex/ldjson",
   "private": true,
   "scripts": {
     "start": "jest --watchAll",

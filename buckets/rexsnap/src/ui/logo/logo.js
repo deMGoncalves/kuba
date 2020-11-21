@@ -1,6 +1,6 @@
 import { paint } from '@rex/h'
 import * as f from '@rex/f'
-import jsonld from '@rex/jsonld'
+import ldjson from '@rex/ldjson'
 import { urlFor } from '@rex/router'
 import * as structured from '@structured'
 import component from './component'
@@ -9,7 +9,7 @@ import rexsnap from './rexsnap.png'
 const $private = f.magic('private')
 
 @paint(component)
-@jsonld(structured.organization)
+@ldjson(structured.organization)
 class Logo {
   get color () {
     return this[$private].color

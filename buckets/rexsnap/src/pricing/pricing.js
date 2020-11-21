@@ -1,6 +1,6 @@
 import { paint } from '@rex/h'
 import * as f from '@rex/f'
-import jsonld from '@rex/jsonld'
+import ldjson from '@rex/ldjson'
 import markup from '@rex/markup'
 import * as structured from '@structured'
 import component from './component'
@@ -12,7 +12,7 @@ const setData = f.magic('setData')
 const type = f.magic('type')
 
 @paint(component)
-@jsonld(structured.webpage)
+@ldjson(structured.webpage)
 @markup
 class Pricing {
   get data () {
