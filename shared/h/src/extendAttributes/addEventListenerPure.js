@@ -1,6 +1,6 @@
 import * as f from '@rex/f'
 import addEventListener from './addEventListener'
 
-export default (element) =>
+export default (node) =>
   (eventName, handler) =>
-    addEventListener(element, eventName, f.idle(handler))
+    addEventListener(node, eventName, f.idle(handler))
