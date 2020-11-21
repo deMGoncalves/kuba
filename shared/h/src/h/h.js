@@ -8,4 +8,4 @@ export default (tagNameOrComponent, props, ...children) =>
   f.cond(
     [isTagName, createElement],
     [isComponent, executeComponent]
-  )(tagNameOrComponent, props, f.flatten(children))
+  )(tagNameOrComponent, { ...props }, f.flatten(children))
