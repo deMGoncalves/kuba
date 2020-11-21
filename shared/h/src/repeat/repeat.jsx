@@ -4,5 +4,5 @@ import Fragment from '@rex/h/src/fragment'
 
 export default (props) =>
   <Fragment slot={props.slot}>
-    {f.map(props.iterator, (attrs, i) => props.component(attrs, i))}
+    {f.map(props.iterator, (attrs, index) => props.component(attrs, index))}
   </Fragment>
