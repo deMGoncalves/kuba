@@ -1,7 +1,5 @@
-import * as f from '@rex/f'
+import attributeMapper from './attributeMapper'
 
-export default (element) =>
-  (key, value) => {
-    element.__attributes__ = f.concat(f.or(element.__attributes__, []), key)
-    value && element.setAttribute(key, value)
-  }
+export default (node) =>
+  (key, value) =>
+    (value && node.setAttribute(attributeMapper(node, key), value))
