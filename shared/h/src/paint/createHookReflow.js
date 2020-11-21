@@ -6,7 +6,7 @@ export default (instance, component, children) => {
   f.assign(instance, {
     [d.element]: f.assign(component(instance, children), { [d.target]: instance }),
 
-    [f.magic('h/reflow')]: f.idle(function () {
+    [d.reflow]: f.idle(function () {
       reflow(this[d.element], component(this, children))
     })
   })
