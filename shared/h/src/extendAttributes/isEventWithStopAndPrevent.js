@@ -1,3 +1,3 @@
 import * as f from '@rex/f'
 
-export default f.test(/^on[a-z]+_(stop|prevent)_(stop|prevent)$/i)
+export default f.test(/^on[a-z]+(_stop|_prevent)+$/i)
