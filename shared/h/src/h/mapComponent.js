@@ -1,6 +1,5 @@
 import * as f from '@rex/f'
 import isComponent from './isComponent'
 
-export default (children) =>
-  f.map(children, (child) =>
-    isComponent(child) ? child() : child)
+export default f.map(f.__, (nodeOrComponent) =>
+  isComponent(nodeOrComponent) ? nodeOrComponent() : nodeOrComponent)
