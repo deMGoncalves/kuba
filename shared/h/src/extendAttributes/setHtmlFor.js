@@ -1,5 +1,5 @@
 import setAttribute from './setAttribute'
 
-export default (element) =>
+export default (node) =>
   (_, id) =>
-    setAttribute(element)('for', id)
+    setAttribute(node)('for', id)
