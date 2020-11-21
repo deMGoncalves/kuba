@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
-import reflow from '../reflow'
+import reflow from '@rex/h/src/reflow'
 
 const element = f.magic('h/element')
 
