@@ -73,8 +73,14 @@ module.exports = {
       }
     ]),
     new MiniCssExtractPlugin({
+      attributes: {
+        as: 'style',
+        onload: 'this.rel="stylesheet"',
+        rel: 'preload'
+      },
+      chunkFilename: '[name].[hash].css',
       filename: '[name].[hash].css',
-      chunkFilename: '[name].[hash].css'
+      linkType: false
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'template/index.html')
