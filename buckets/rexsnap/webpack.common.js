@@ -75,6 +75,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       attributes: {
         as: 'style',
+        async: true,
         onload: 'this.rel="stylesheet"',
         rel: 'preload'
       },
