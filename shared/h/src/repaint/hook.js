@@ -3,5 +3,5 @@ import * as d from '@rex/h/src/dunders'
 
 export default (mathod) =>
   function () {
-    return f.always(mathod.call(this, ...arguments))(this[d.reflow] && this[d.reflow]())
+    return f.always(mathod.call(this, ...arguments))(this[d.__reflow__] && this[d.__reflow__]())
   }
