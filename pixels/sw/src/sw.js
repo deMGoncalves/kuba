@@ -1,40 +1,46 @@
-const VERSION = 'Rex.SW.0.0.2'
+const CACHE = 'Rex.SW.0.0.3'
 
-const cache = (request) =>
-  caches
-    .open(VERSION)
-    .then((cache) =>
-      cache
-        .match(request)
-        .then((response) =>
-          (response || fetch(request))))
+self.addEventListener('activate', function (event) {
+  event.waitUntil(reset())
+})
 
-const reset = () =>
-  caches
-    .keys()
-    .then((versions) =>
-      Promise
-        .all(
-          versions
-            .map((version) =>
-              ((VERSION !== version) && caches.delete(version)))
-        ))
+self.addEventListener('install', function (event) {
+  event.waitUntil(precache())
+})
 
-const update = (request) =>
-  caches
-    .open(VERSION)
-    .then((cache) =>
-      fetch(request)
-        .then((response) =>
-          cache.put(request, response)))
-
-self.addEventListener('activate', (event) =>
-  event.waitUntil(reset()))
-
-self.addEventListener('install', (event) =>
-  console.log('SW instaled', event))
-
-self.addEventListener('fetch', (event) => {
-  event.respondWith(cache(event.request))
+self.addEventListener('fetch', function (event) {
+  event.respondWith(fromCache(event.request))
   event.waitUntil(update(event.request))
 })
+
+function reset () {
+  return caches.keys().then(function (versions) {
+    return Promise.all(versions.map(function (version) {
+      return (CACHE !== version) && caches.delete(version)
+    }))
+  })
+}
+
+function precache () {
+  return caches.open(CACHE).then(function (cache) {
+    return cache.addAll([
+      './index.html'
+    ])
+  })
+}
+
+function fromCache (request) {
+  return caches.open(CACHE).then(function (cache) {
+    return cache.match(request).then(function (matching) {
+      return matching || Promise.reject('no-match')
+    })
+  })
+}
+
+function update (request) {
+  return caches.open(CACHE).then(function (cache) {
+    return fetch(request).then(function (response) {
+      return cache.put(request, response)
+    })
+  })
+}
