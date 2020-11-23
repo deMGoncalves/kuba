@@ -32,7 +32,7 @@ function precache () {
 function fromCache (request) {
   return caches.open(CACHE).then(function (cache) {
     return cache.match(request).then(function (matching) {
-      return matching || Promise.reject('no-match')
+      return matching || fetch(request)
     })
   })
 }
@@ -41,7 +41,7 @@ function update (request) {
   return caches.open(CACHE).then(function (cache) {
     return fetch(request).then(function (response) {
       /^http/.test(request.url) && cache.put(request, response)
-      return response.clone()
+      return response
     })
   })
 }
