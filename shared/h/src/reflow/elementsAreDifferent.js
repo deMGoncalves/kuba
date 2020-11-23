@@ -1,4 +1,4 @@
 import * as f from '@rex/f'
 
-export default (element, vElement) =>
-  f.different(element.tagName, vElement.tagName)
+export default (node, vNode) =>
+  f.different(node.tagName, vNode.tagName)
