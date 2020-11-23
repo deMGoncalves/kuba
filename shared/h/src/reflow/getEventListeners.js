@@ -1,8 +1,8 @@
 import * as f from '@rex/f'
 
-export default (vElement) =>
+export default (vNode) =>
   []
     .slice
-    .call(f.or(vElement.__events__, []))
+    .call(f.or(vNode.__events__, []))
     .reduce((reducer, event) =>
-      ({ ...reducer, [event]: vElement[event] }), {})
+      ({ ...reducer, [event]: vNode[event] }), {})
