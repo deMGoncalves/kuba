@@ -1,4 +1,4 @@
-const CACHE = 'Rex.SW.0.0.6'
+const CACHE = 'Rex.SW.1.0.0'
 
 self.addEventListener('activate', function (event) {
   event.waitUntil(reset())
