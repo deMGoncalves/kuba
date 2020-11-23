@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
-import isCustomElement from './isCustomElement'
+import isCustomTag from './isCustomTag'
 
 export default (element, vElement) =>
-  f.and(isCustomElement(element.tagName), isCustomElement(vElement.tagName))
+  f.and(isCustomTag(element.tagName), isCustomTag(vElement.tagName))
