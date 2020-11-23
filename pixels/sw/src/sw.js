@@ -40,7 +40,8 @@ function fromCache (request) {
 function update (request) {
   return caches.open(CACHE).then(function (cache) {
     return fetch(request).then(function (response) {
-      return cache.put(request, response)
+      !(event.request.url.indexOf('http') === 0) && cache.put(request, response)
+      return response.clone()
     })
   })
 }
