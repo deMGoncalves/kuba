@@ -1,6 +1,6 @@
 import * as f from '@rex/f'
 
-export default (element) =>
-  f.always(element)(
-    f.forEach(f.or(element.__events__, []), (event) =>
-      (element[event] = undefined)))
+export default (node) =>
+  f.always(node)(
+    f.forEach(f.or(node.__events__, []), (event) =>
+      (node[event] = undefined)))

@@ -1,2 +1,2 @@
-export default (element, vElement) =>
-  (element.textContent = vElement.textContent)
+export default (node, vNode) =>
+  (node.textContent = vNode.textContent)

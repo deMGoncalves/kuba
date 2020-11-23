@@ -1,6 +1,6 @@
 import * as f from '@rex/f'
 
-export default (element) =>
-  f.always(element)(
-    f.forEach(f.or(element.__attributes__, []), (key) =>
-      element.removeAttribute(key)))
+export default (node) =>
+  f.always(node)(
+    f.forEach(f.or(node.__attributes__, []), (key) =>
+      node.removeAttribute(key)))

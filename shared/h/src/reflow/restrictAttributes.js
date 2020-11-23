@@ -4,9 +4,9 @@ import getEventListeners from './getEventListeners'
 import removeEventListener from './removeEventListener'
 import removeAttributes from './removeAttributes'
 
-export default (element, vElement) =>
+export default (node, vNode) =>
   extendAttributes({
-    ...getAttributes(vElement),
-    ...getEventListeners(vElement)
+    ...getAttributes(vNode),
+    ...getEventListeners(vNode)
   },
-  removeEventListener(removeAttributes(element)))
+  removeEventListener(removeAttributes(node)))

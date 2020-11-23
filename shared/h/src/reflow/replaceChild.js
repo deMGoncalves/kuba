@@ -1,6 +1,6 @@
 import * as f from '@rex/f'
 
-const replaceChild = (element, vElement, parent) =>
-  parent.replaceChild(vElement, element)
+const replaceChild = (node, vNode, parent) =>
+  parent.replaceChild(vNode, node)
 
 export default f.frame(replaceChild)
