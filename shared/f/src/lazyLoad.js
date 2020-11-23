@@ -5,16 +5,16 @@ import not from '@rex/f/src/not'
 import offScreen from '@rex/f/src/offScreen'
 
 const event = 'scroll'
-const listener = magic('f/lazyLoad')
+const listener = magic('listener')
 
-const lazyLoad = (target, handler) => (
-  window.addEventListener(event, (target[listener] = debounce(() =>
-    not(offScreen(target)) && (
-      window.removeEventListener(event, target[listener]), handler())
+const lazyLoad = (node, handler) => (
+  window.addEventListener(event, (node[listener] = debounce(() =>
+    not(offScreen(node)) && (
+      window.removeEventListener(event, node[listener]), handler())
   ))
   ),
 
-  target[listener]()
+  node[listener]()
 )
 
 export default curry(lazyLoad)

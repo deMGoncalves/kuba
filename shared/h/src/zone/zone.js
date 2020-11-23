@@ -1,3 +1,4 @@
+import * as d from '@rex/h/src/dunders'
 import * as f from '@rex/f'
 import paint from '@rex/h/src/paint'
 import repaint from '@rex/h/src/repaint'
@@ -27,7 +28,10 @@ class Zone {
     this.#className = props.className
     this.#slot = props.slot
     this.#offScreen = f.T()
-    f.lazyLoad(this, () => this[render]())
+
+    setTimeout(() =>
+      f.lazyLoad(this[d.__element__], () => this[render]()))
+
     return this
   }
 
