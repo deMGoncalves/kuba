@@ -1,2 +1,2 @@
-export default (element, vElement) =>
-  Math.max(element.childNodes.length, vElement.childNodes.length)
+export default (node, vNode) =>
+  Math.max(node.childNodes.length, vNode.childNodes.length)
