@@ -1,9 +1,9 @@
 import * as f from '@rex/f'
 import createHookReflow from './createHookReflow'
-import createVElementToCompare from './createVElementToCompare'
+import createComponent from './createComponent'
 import hasElementInTarget from './hasElementInTarget'
 
 export default f.cond(
-  [hasElementInTarget, createVElementToCompare],
+  [hasElementInTarget, createComponent],
   [f.T, createHookReflow]
 )
