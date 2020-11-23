@@ -1,4 +1,4 @@
 import * as f from '@rex/f'
 
-export default (element, vElement) =>
-  f.and(f.equal(element.nodeType, 3), f.equal(vElement.nodeType, 3))
+export default (node, vNode) =>
+  f.and(f.equal(node.nodeType, 3), f.equal(vNode.nodeType, 3))
