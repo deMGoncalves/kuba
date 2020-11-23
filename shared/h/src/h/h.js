@@ -4,8 +4,8 @@ import executeComponent from './executeComponent'
 import isComponent from './isComponent'
 import isTagName from './isTagName'
 
-export default async (tagNameOrComponent, props, ...children) =>
+export default (tagNameOrComponent, props, ...children) =>
   f.cond(
     [isTagName, createNode],
     [isComponent, executeComponent]
-  )(tagNameOrComponent, { ...props }, f.flatten(await Promise.all(children)))
+  )(tagNameOrComponent, { ...props }, f.flatten(children))

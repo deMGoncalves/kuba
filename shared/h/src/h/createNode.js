@@ -3,4 +3,4 @@ import extendAttributes from '@rex/h/src/extendAttributes'
 import appendChildren from './appendChildren'
 
 export default (tagName, props, children) =>
-  Promise.resolve(f.compose(appendChildren(children), extendAttributes(props))(document.createElement(tagName, { is: props.is })))
+  f.compose(appendChildren(children), extendAttributes(props))(document.createElement(tagName, { is: props.is }))
