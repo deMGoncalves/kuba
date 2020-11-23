@@ -1,4 +1,4 @@
-const CACHE = 'Rex.SW.0.0.5'
+const CACHE = 'Rex.SW.0.0.6'
 
 self.addEventListener('activate', function (event) {
   event.waitUntil(reset())
@@ -40,7 +40,7 @@ function fromCache (request) {
 function update (request) {
   return caches.open(CACHE).then(function (cache) {
     return fetch(request).then(function (response) {
-      /^http/.test(event.request.url) && cache.put(request, response)
+      /^http/.test(request.url) && cache.put(request, response)
       return response.clone()
     })
   })
