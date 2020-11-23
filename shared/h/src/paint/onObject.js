@@ -1,15 +1,16 @@
 import * as f from '@rex/f'
 import onComponent from './onComponent'
 
-export default (context, component) =>
+export default (instance, component) =>
   new Proxy(
-    (_, children) => onComponent(context, component, children),
+    function (_, children) {
+      return onComponent(instance, component, children)
+    },
     {
       get (_, key) {
-        const target = context[key]
-        return f.is(Function, target) ? target.bind(context) : target
+        const property = f.prop(key, instance)
+        return f.is(Function, property) ? property.bind(instance) : property
       },
-
-      set: (_, key, value) => f.T(context[key] = value)
+      set: (_, key, value) => f.T(instance[key] = value)
     }
   )
