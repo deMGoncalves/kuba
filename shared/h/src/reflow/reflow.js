@@ -5,7 +5,6 @@ import nodesAreDifferent from './nodesAreDifferent'
 import nodesIsCustomTag from './nodesIsCustomTag'
 import nodesIsText from './nodesIsText'
 import notHasNode from './notHasNode'
-import notHasNodeAndVNode from './notHasNodeAndVNode'
 import notHasVNode from './notHasVNode'
 import otherObject from './otherObject'
 import remove from './remove'
@@ -17,7 +16,6 @@ import sameObject from './sameObject'
 import setTextContent from './setTextContent'
 
 export default f.cond(
-  [notHasNodeAndVNode, doNothing],
   [notHasNode, appendChild],
   [notHasVNode, remove],
   [nodesIsText, setTextContent],
