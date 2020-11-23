@@ -1,5 +1,3 @@
-import blob from './blob'
-
 export default () =>
   navigator
     .serviceWorker
