@@ -12,7 +12,7 @@ import remove from './remove'
 import replaceChild from './replaceChild'
 import replaceComponent from './replaceComponent'
 import restrictAttributes from './restrictAttributes'
-import replaceElement from './replaceElement'
+import replaceNode from './replaceNode'
 import sameObject from './sameObject'
 import setTextContent from './setTextContent'
 
@@ -25,5 +25,5 @@ export default f.cond(
   [sameObject, doNothing],
   [otherObject, replaceComponent],
   [nodesIsCustomTag, restrictAttributes],
-  [f.T, replaceElement]
+  [f.T, replaceNode]
 )
