@@ -1,6 +1,6 @@
 import * as f from '@rex/f'
 import appendChild from './appendChild'
-import elementsAreDifferent from './elementsAreDifferent'
+import nodesAreDifferent from './nodesAreDifferent'
 import elementsIsCustomNode from './elementsIsCustomNode'
 import elementsIsTextNode from './elementsIsTextNode'
 import doNothing from './doNothing'
@@ -21,7 +21,7 @@ export default f.cond(
   [notHasElement, appendChild],
   [notHasVElement, remove],
   [elementsIsTextNode, setTextContent],
-  [elementsAreDifferent, replaceChild],
+  [nodesAreDifferent, replaceChild],
   [sameObject, doNothing],
   [otherObject, replaceComponent],
   [elementsIsCustomNode, restrictAttributes],
