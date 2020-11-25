@@ -26,7 +26,8 @@
     "typescript": "4.0.2"
   },
   "lint-staged": {
-    "*.{css,js,jsx}": "eslint --fix"
+    "*.css": "stylelint --fix",
+    "*.{js,jsx}": "eslint --fix"
   },
   "main": "index.js",
   "name": "@rex/feature",
