@@ -16,6 +16,7 @@
     "pixels/gtm/**/*.{css,js,jsx}": "yarn workspace @rex/gtm lint-staged --allow-empty",
     "pixels/hotjar/**/*.{css,js,jsx}": "yarn workspace @rex/hotjar lint-staged --allow-empty",
     "pixels/ld+json/**/*.{js,jsx}": "yarn workspace @rex/ldjson lint-staged --allow-empty",
+    "pixels/markup/**/*.{js,jsx}": "yarn workspace @rex/markupt lint-staged --allow-empty",
     "pixels/reset/**/*.css": "yarn workspace @rex/reset lint-staged --allow-empty",
     "pixels/sw/**/*.{css,js,jsx}": "yarn workspace @rex/sw lint-staged --allow-empty",
     "pixels/trackjs/**/*.{css,js,jsx}": "yarn workspace @rex/trackjs lint-staged --allow-empty",
@@ -23,7 +24,6 @@
     "shared/f/**/*.{js,jsx}": "yarn workspace @rex/f lint-staged --allow-empty",
     "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",
     "shared/hook/**/*.{js,jsx}": "yarn workspace @rex/hook lint-staged --allow-empty",
-    "shared/markup/**/*.{js,jsx}": "yarn workspace @rex/markup lint-staged --allow-empty",
     "shared/radio/**/*.{js,jsx}": "yarn workspace @rex/radio lint-staged --allow-empty",
     "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty",
     "shared/theme/**/*.css": "yarn workspace @rex/theme lint-staged --allow-empty"
