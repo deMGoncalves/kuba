@@ -26,7 +26,8 @@
     "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",
     "shared/hook/**/*.{js,jsx}": "yarn workspace @rex/hook lint-staged --allow-empty",
     "shared/radio/**/*.{js,jsx}": "yarn workspace @rex/radio lint-staged --allow-empty",
-    "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty"
+    "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty",
+    "tags/picture/**/*.{css,js,jsx}": "yarn workspace @rex/picture lint-staged --allow-empty"
   },
   "name": "rex",
   "private": true,
@@ -36,10 +37,12 @@
   "version": "1.0.0",
   "workspaces": {
     "packages": [
+      "actions/*",
       "blocks/*",
       "buckets/*",
       "pixels/*",
-      "shared/*"
+      "shared/*",
+      "tags/*"
     ]
   }
 }
