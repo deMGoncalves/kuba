@@ -1,0 +1,17 @@
+.logo {
+  cursor: pointer;
+  display: flex;
+  place-items: center;
+}
+
+.logo__picture {
+  cursor: pointer;
+  padding-top: 15px !important;
+  width: 19px !important;
+}
+
+.logo__heading {
+  letter-spacing: 1px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
