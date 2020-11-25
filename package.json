@@ -19,7 +19,7 @@
     "pixels/markup/**/*.{js,jsx}": "yarn workspace @rex/markupt lint-staged --allow-empty",
     "pixels/reset/**/*.css": "yarn workspace @rex/reset lint-staged --allow-empty",
     "pixels/sw/**/*.{css,js,jsx}": "yarn workspace @rex/sw lint-staged --allow-empty",
-    "pixels/theme/**/*.{css,js,jsx}": "yarn workspace @rex/theme lint-staged --allow-empty",
+    "pixels/theme/**/*.css": "yarn workspace @rex/theme lint-staged --allow-empty",
     "pixels/trackjs/**/*.{css,js,jsx}": "yarn workspace @rex/trackjs lint-staged --allow-empty",
     "shared/agent/**/*.{js,jsx}": "yarn workspace @rex/agent lint-staged --allow-empty",
     "shared/f/**/*.{js,jsx}": "yarn workspace @rex/f lint-staged --allow-empty",
