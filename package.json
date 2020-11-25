@@ -27,6 +27,7 @@
     "shared/hook/**/*.{js,jsx}": "yarn workspace @rex/hook lint-staged --allow-empty",
     "shared/radio/**/*.{js,jsx}": "yarn workspace @rex/radio lint-staged --allow-empty",
     "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty",
+    "tags/button/**/*.{css,js,jsx}": "yarn workspace @rex/button lint-staged --allow-empty",
     "tags/picture/**/*.{css,js,jsx}": "yarn workspace @rex/picture lint-staged --allow-empty"
   },
   "name": "rex",

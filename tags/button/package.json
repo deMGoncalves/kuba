@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@rex/f": "1.0.0",
     "@rex/h": "1.0.0"
   },
   "devDependencies": {
@@ -27,7 +28,7 @@
     "*.{css,js,jsx}": "eslint --fix"
   },
   "main": "index.js",
-  "name": "@rex/picture",
+  "name": "@rex/button",
   "private": true,
   "scripts": {
     "start": "jest --watchAll",
