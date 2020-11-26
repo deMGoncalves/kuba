@@ -29,7 +29,9 @@
     "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty",
     "tags/button/**/*.{css,js,jsx}": "yarn workspace @rex/button lint-staged --allow-empty",
     "tags/feature/**/*.{css,js,jsx}": "yarn workspace @rex/feature lint-staged --allow-empty",
+    "tags/link/**/*.{css,js,jsx}": "yarn workspace @rex/link lint-staged --allow-empty",
     "tags/logo/**/*.{css,js,jsx}": "yarn workspace @rex/logo lint-staged --allow-empty",
+    "tags/picture/**/*.{css,js,jsx}": "yarn workspace @rex/picture lint-staged --allow-empty",
     "tags/text/**/*.{css,js,jsx}": "yarn workspace @rex/text lint-staged --allow-empty"
   },
   "name": "rex",
