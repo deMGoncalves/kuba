@@ -10,6 +10,7 @@
     }
   },
   "lint-staged": {
+    "blocks/feature/**/*.{css,js,jsx}": "yarn workspace @rex/feature lint-staged --allow-empty",
     "blocks/footer/**/*.{css,js,jsx}": "yarn workspace @rex/footer lint-staged --allow-empty",
     "buckets/rexsnap/**/*.{css,js,jsx}": "yarn workspace @rex/rexsnap lint-staged --allow-empty",
     "pixels/ga/**/*.{css,js,jsx}": "yarn workspace @rex/ga lint-staged --allow-empty",
@@ -29,7 +30,6 @@
     "shared/radio/**/*.{js,jsx}": "yarn workspace @rex/radio lint-staged --allow-empty",
     "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty",
     "tags/button/**/*.{css,js,jsx}": "yarn workspace @rex/button lint-staged --allow-empty",
-    "tags/feature/**/*.{css,js,jsx}": "yarn workspace @rex/feature lint-staged --allow-empty",
     "tags/link/**/*.{css,js,jsx}": "yarn workspace @rex/link lint-staged --allow-empty",
     "tags/logo/**/*.{css,js,jsx}": "yarn workspace @rex/logo lint-staged --allow-empty",
     "tags/picture/**/*.{css,js,jsx}": "yarn workspace @rex/picture lint-staged --allow-empty",
