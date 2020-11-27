@@ -1,7 +1,7 @@
 import h, { Zone } from '@rex/h'
 import Link from '@rex/link'
 import Picture from '@rex/picture'
-import Text from '@rex/text'
+import text from '@rex/text'
 import style from './style.css'
 
 export default () =>

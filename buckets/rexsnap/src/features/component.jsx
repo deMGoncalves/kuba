@@ -1,5 +1,5 @@
 import h, { Repeat, Zone } from '@rex/h'
-import * as ui from '@ui'
+import Tarja from '@rex/tarja'
 import Site from '@site'
 import Hero from './hero'
 import Feature from './feature'
@@ -14,5 +14,5 @@ export default () =>
         <Repeat iterator={schema} component={Feature} />
       </ul>
     </Zone>
-    <ui.Tarja />
+    <Tarja />
   </Site>

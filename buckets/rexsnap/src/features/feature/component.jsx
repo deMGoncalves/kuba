@@ -1,12 +1,14 @@
 import h, { Fragment } from '@rex/h'
-import * as ui from '@ui'
+import Feature from '@rex/feature'
+import Sources from '@rex/sources'
+import text from '@rex/text'
 import style from './style.css'
 
 export default (props, i) =>
-  <ui.Feature className={style[`p${i}`]}>
-    <ui.Sources slot='picture' {...props} />
+  <Feature className={style[`p${i}`]}>
+    <Sources slot='picture' {...props} />
     <Fragment slot='caption'>
-      <ui.Heading level='2' size='large' className={style.feature__heading}>{props.title}</ui.Heading>
-      <ui.P className={style.feature__p}>{props.description}</ui.P>
+      <text.H2 size='large' className={style.feature__heading}>{props.title}</text.H2>
+      <text.P className={style.feature__p}>{props.description}</text.P>
     </Fragment>
-  </ui.Feature>
+  </Feature>
