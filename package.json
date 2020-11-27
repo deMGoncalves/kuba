@@ -11,6 +11,7 @@
   },
   "lint-staged": {
     "blocks/feature/**/*.{css,js,jsx}": "yarn workspace @rex/feature lint-staged --allow-empty",
+    "blocks/header/**/*.{css,js,jsx}": "yarn workspace @rex/header lint-staged --allow-empty",
     "blocks/footer/**/*.{css,js,jsx}": "yarn workspace @rex/footer lint-staged --allow-empty",
     "buckets/rexsnap/**/*.{css,js,jsx}": "yarn workspace @rex/rexsnap lint-staged --allow-empty",
     "pixels/ga/**/*.{css,js,jsx}": "yarn workspace @rex/ga lint-staged --allow-empty",
