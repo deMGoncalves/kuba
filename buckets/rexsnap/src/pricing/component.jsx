@@ -1,5 +1,6 @@
 import h, { Repeat } from '@rex/h'
-import * as ui from '@ui'
+import Tarja from '@rex/tarja'
+import text from '@rex/text'
 import Site from '@site'
 import Card from './card'
 import Hero from './hero'
@@ -13,12 +14,9 @@ export default (pricing) =>
     <Hero />
     <section className={style.pricing__content} data-pricing='month'>
       <Switch className={style.pricing__switch} />
-
       <Repeat iterator={pricing.data} component={Card} />
-
-      <p className={style.pricing__heading}>Compare</p>
+      <text.P className={style.pricing__heading}>Compare</text.P>
       <Table className={style.pricing__table} features={features} />
     </section>
-
-    <ui.Tarja />
+    <Tarja />
   </Site>

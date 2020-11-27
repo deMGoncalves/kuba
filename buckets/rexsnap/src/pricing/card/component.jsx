@@ -1,4 +1,5 @@
 import h, { Show } from '@rex/h'
+import Button from '@rex/button'
 import * as ui from '@ui'
 import style from './style.css'
 
@@ -17,5 +18,5 @@ export default (card) =>
       <em className={style.card__label}>{card.price}</em> per {card.plan}
     </data>
 
-    <ui.Button className={style.card__button} type={card.type}>Pick Plan</ui.Button>
+    <Button className={style.card__button} type={card.type}>Pick Plan</Button>
   </div>
