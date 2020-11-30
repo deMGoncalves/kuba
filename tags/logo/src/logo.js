@@ -1,9 +1,11 @@
+import * as f from '@rex/f'
 import { paint } from '@rex/h'
 import { urlFor } from '@rex/router'
 import ldjson from '@rex/ldjson'
 import component from './component'
 import organization from './organization'
-import rexsnap from './rexsnap.png'
+import kuba from './kuba.png'
+import kubaInverse from './kuba-inverse.png'
 
 @paint(component)
 @ldjson(organization)
@@ -15,11 +17,14 @@ class Logo {
   }
 
   get name () {
-    return 'Rexsnap'
+    return 'Kuba'
   }
 
   get thumbnail () {
-    return rexsnap
+    return f.cond(
+      [f.equal('inverse'), f.always(kubaInverse)],
+      [f.T, f.always(kuba)]
+    )(this.color)
   }
 
   get url () {

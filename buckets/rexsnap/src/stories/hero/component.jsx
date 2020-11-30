@@ -1,20 +1,23 @@
 import h, { Fragment } from '@rex/h'
-import * as ui from '@ui'
+import Hero from '@rex/hero'
+import Link from '@rex/link'
+import Sources from '@rex/sources'
+import text from '@rex/text'
 import schema from './schema.json'
 import style from './style.css'
 
 export default () =>
-  <ui.Hero color='inverse' direction='reverse'>
-    <ui.Sources slot='figure' {...schema} />
+  <Hero color='inverse' direction='reverse'>
+    <Sources slot='figure' {...schema} />
     <Fragment slot='caption'>
       <hgroup>
-        <ui.Heading level='2' className={style.hero__h2} size='small' {...schema}>{schema.subtitle}</ui.Heading>
-        <ui.Heading level='1' className={style.hero__h1} {...schema}>{schema.title}</ui.Heading>
+        <text.H2 className={style.hero__h2} size='small' {...schema}>{schema.subtitle}</text.H2>
+        <text.H1 className={style.hero__h1} {...schema}>{schema.title}</text.H1>
       </hgroup>
-      <ui.P className={style.hero__p} {...schema}>
+      <text.P className={style.hero__p} {...schema}>
         <date>{schema.date}</date> by {schema.author}
-      </ui.P>
-      <ui.P className={style.hero__p} {...schema}>{schema.description}</ui.P>
-      <ui.Link className={style.hero__linkButton} {...schema}>{schema.link}</ui.Link>
+      </text.P>
+      <text.P className={style.hero__p} {...schema}>{schema.description}</text.P>
+      <Link className={style.hero__linkButton} {...schema}>{schema.link}</Link>
     </Fragment>
-  </ui.Hero>
+  </Hero>
