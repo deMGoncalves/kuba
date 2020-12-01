@@ -1,4 +1,4 @@
-name: Rexsnap
+name: Kuba
 
 on:
   push:
@@ -8,9 +8,9 @@ on:
       - 'actions/**'
       - 'blocks/**'
       - 'buckets/kuba/**'
-      - 'elements/**'
       - 'pixels/**'
       - 'shared/**'
+      - 'tag/**'
 
 jobs:
   deploy:
