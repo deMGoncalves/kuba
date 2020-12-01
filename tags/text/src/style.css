@@ -3,26 +3,33 @@
   font-size: var(--font-size-base);
 }
 
+h1.text,
 .text.largest {
   font-size: var(--font-size-largest);
 }
 
+h2.text,
 .text.larger {
   font-size: var(--font-size-larger);
 }
 
+h3.text,
 .text.large {
   font-size: var(--font-size-large);
 }
 
+h4.text,
+p.text,
 .text.base {
   font-size: var(--font-size-base);
 }
 
+h5.text,
 .text.small {
   font-size: var(--font-size-small);
 }
 
+h6.text,
 .text.smaller {
   font-size: var(--font-size-smaller);
 }
