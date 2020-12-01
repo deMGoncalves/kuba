@@ -5,7 +5,7 @@ import ldjson from '@rex/ldjson'
 import component from './component'
 import organization from './organization'
 import kuba from './kuba.png'
-import kubaInverse from './kuba-inverse.png'
+import kubaInverse from './kuba_inverse.png'
 
 @paint(component)
 @ldjson(organization)
