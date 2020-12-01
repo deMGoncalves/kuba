@@ -10,7 +10,7 @@ on:
       - 'buckets/kuba/**'
       - 'pixels/**'
       - 'shared/**'
-      - 'tag/**'
+      - 'tags/**'
 
 jobs:
   deploy:
