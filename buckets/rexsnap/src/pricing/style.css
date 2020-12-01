@@ -25,8 +25,18 @@
 }
 
 .pricing__switch {
+  align-items: center;
+  color: #dfdfdf;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
   margin: 64px 0 16px 0;
   width: 100%;
+}
+
+.switch__monthly {
+  color: #000;
 }
 
 @media (min-width: 1111px) {

@@ -15,77 +15,77 @@
 	"prefer_related_applications" : false,
 	"icons" : [
 		{
-			"src": "https://rex-snap.web.app/kuba-192x192.png",
+			"src": "https://kuba-engineer.web.app/kuba-192x192.png",
       "type": "image/png",
 			"sizes": "192x192",
       "purpose": "any maskable"
 		},
     {
-			"src": "https://rex-snap.web.app/kuba-512x512.png",
+			"src": "https://kuba-engineer.web.app/kuba-512x512.png",
       "type": "image/png",
 			"sizes": "512x512",
       "purpose": "any maskable"
 		}
   ],
-	"url" : "https://rex-snap.web.app",
+	"url" : "https://kuba-engineer.web.app",
   "screenshots" : [
     {
-			"src": "https://rex-snap.web.app/assets/home.mobile.png",
+			"src": "https://kuba-engineer.web.app/assets/home.mobile.png",
       "sizes": "450x5428",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/stories.mobile.png",
+			"src": "https://kuba-engineer.web.app/assets/stories.mobile.png",
       "sizes": "450x8585",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/features.mobile.png",
+			"src": "https://kuba-engineer.web.app/assets/features.mobile.png",
       "sizes": "450x3357",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/pricing.mobile.png",
+			"src": "https://kuba-engineer.web.app/assets/pricing.mobile.png",
       "sizes": "450x3986",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/home.tablet.png",
+			"src": "https://kuba-engineer.web.app/assets/home.tablet.png",
       "sizes": "849x4033",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/stories.tablet.png",
+			"src": "https://kuba-engineer.web.app/assets/stories.tablet.png",
       "sizes": "849x5269",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/features.tablet.png",
+			"src": "https://kuba-engineer.web.app/assets/features.tablet.png",
       "sizes": "849x5269",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/pricing.tablet.png",
+			"src": "https://kuba-engineer.web.app/assets/pricing.tablet.png",
       "sizes": "849x3035",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/home.desktop.png",
+			"src": "https://kuba-engineer.web.app/assets/home.desktop.png",
       "sizes": "1440x3194",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/stories.desktop.png",
+			"src": "https://kuba-engineer.web.app/assets/stories.desktop.png",
       "sizes": "1440x2923",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/features.desktop.png",
+			"src": "https://kuba-engineer.web.app/assets/features.desktop.png",
       "sizes": "1440x1882",
       "type": "image/png"
     },
     {
-			"src": "https://rex-snap.web.app/assets/pricing.desktop.png",
+			"src": "https://kuba-engineer.web.app/assets/pricing.desktop.png",
       "sizes": "1440x2681",
       "type": "image/png"
     }
