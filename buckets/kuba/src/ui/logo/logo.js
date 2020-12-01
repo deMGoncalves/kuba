@@ -4,7 +4,8 @@ import ldjson from '@rex/ldjson'
 import { urlFor } from '@rex/router'
 import * as structured from '@structured'
 import component from './component'
-import rexsnap from './rexsnap.png'
+import kuba from './kuba.png'
+import kubaInverse from './kuba-inverse.png'
 
 const $private = f.magic('private')
 
@@ -16,11 +17,14 @@ class Logo {
   }
 
   get name () {
-    return 'Rexsnap'
+    return 'Kuba'
   }
 
   get thumbnail () {
-    return rexsnap
+    return f.cond(
+      [f.equal('inverse'), f.always(kubaInverse)],
+      [f.T, f.always(kuba)]
+    )(this.color)
   }
 
   get url () {

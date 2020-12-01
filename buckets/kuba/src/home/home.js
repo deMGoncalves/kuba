@@ -9,11 +9,11 @@ import component from './component'
 @markup
 class Home {
   get description () {
-    return 'Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others'
+    return 'Caindo no meu melhor'
   }
 
   get title () {
-    return 'Rexsnap'
+    return 'Kuba'
   }
 
   get url () {

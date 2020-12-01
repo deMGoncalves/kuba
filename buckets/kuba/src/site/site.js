@@ -14,7 +14,7 @@ class Site {
   }
 
   get name () {
-    return 'Rexsnap'
+    return 'Kuba'
   }
 
   get url () {
