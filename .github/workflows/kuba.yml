@@ -5,10 +5,12 @@ on:
     branches: [ master ]
 
     paths:
-      - 'buckets/rexsnap/**'
+      - 'actions/**'
+      - 'blocks/**'
+      - 'buckets/kuba/**'
+      - 'elements/**'
       - 'pixels/**'
       - 'shared/**'
-      - 'ui/**'
 
 jobs:
   deploy:
@@ -46,12 +48,12 @@ jobs:
         yarn workspace @rex/trackjs test
         yarn workspace @rex/sw test
         yarn workspace @rex/markup test
-        yarn workspace @rex/rexsnap test
+        yarn workspace @rex/kuba test
     
     - name: Run Photosnap build
-      run: yarn workspace @rex/rexsnap build
+      run: yarn workspace @rex/kuba build
     
     - name: Run Firebase deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: yarn workspace @rex/rexsnap deploy
+      run: yarn workspace @rex/kuba deploy

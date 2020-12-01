@@ -63,7 +63,7 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "main": "src/index.js",
-  "name": "@rex/rexsnap",
+  "name": "@rex/kuba",
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",
