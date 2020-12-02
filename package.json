@@ -15,6 +15,12 @@
     "blocks/footer/**/*.{css,js,jsx}": "yarn workspace @rex/footer lint-staged --allow-empty",
     "blocks/hero/**/*.{css,js,jsx}": "yarn workspace @rex/hero lint-staged --allow-empty",
     "buckets/kuba/**/*.{css,js,jsx}": "yarn workspace @rex/kuba lint-staged --allow-empty",
+    "elements/button/**/*.{css,js,jsx}": "yarn workspace @rex/button lint-staged --allow-empty",
+    "elements/link/**/*.{css,js,jsx}": "yarn workspace @rex/link lint-staged --allow-empty",
+    "elements/logo/**/*.{css,js,jsx}": "yarn workspace @rex/logo lint-staged --allow-empty",
+    "elements/picture/**/*.{css,js,jsx}": "yarn workspace @rex/picture lint-staged --allow-empty",
+    "elements/sources/**/*.{js,jsx}": "yarn workspace @rex/sources lint-staged --allow-empty",
+    "elements/text/**/*.{css,js,jsx}": "yarn workspace @rex/text lint-staged --allow-empty",
     "pixels/ga/**/*.{css,js,jsx}": "yarn workspace @rex/ga lint-staged --allow-empty",
     "pixels/gtag/**/*.{css,js,jsx}": "yarn workspace @rex/gtag lint-staged --allow-empty",
     "pixels/gtm/**/*.{css,js,jsx}": "yarn workspace @rex/gtm lint-staged --allow-empty",
@@ -30,13 +36,7 @@
     "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",
     "shared/hook/**/*.{js,jsx}": "yarn workspace @rex/hook lint-staged --allow-empty",
     "shared/radio/**/*.{js,jsx}": "yarn workspace @rex/radio lint-staged --allow-empty",
-    "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty",
-    "tags/button/**/*.{css,js,jsx}": "yarn workspace @rex/button lint-staged --allow-empty",
-    "tags/link/**/*.{css,js,jsx}": "yarn workspace @rex/link lint-staged --allow-empty",
-    "tags/logo/**/*.{css,js,jsx}": "yarn workspace @rex/logo lint-staged --allow-empty",
-    "tags/picture/**/*.{css,js,jsx}": "yarn workspace @rex/picture lint-staged --allow-empty",
-    "tags/sources/**/*.{js,jsx}": "yarn workspace @rex/sources lint-staged --allow-empty",
-    "tags/text/**/*.{css,js,jsx}": "yarn workspace @rex/text lint-staged --allow-empty"
+    "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty"
   },
   "name": "rex",
   "private": true,
@@ -49,9 +49,9 @@
       "actions/*",
       "blocks/*",
       "buckets/*",
+      "elements/*",
       "pixels/*",
-      "shared/*",
-      "tags/*"
+      "shared/*"
     ]
   }
 }
