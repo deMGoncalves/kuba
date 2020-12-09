@@ -1,7 +1,7 @@
 {
   "author": "Cleber de Moraes Gonçalves <cleber.engineer@gmail.com>",
   "devDependencies": {
-    "husky": "^4.3.0",
+    "husky": "^4.3.5",
     "lint-staged": "^10.2.11"
   },
   "husky": {
@@ -36,7 +36,8 @@
     "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",
     "shared/hook/**/*.{js,jsx}": "yarn workspace @rex/hook lint-staged --allow-empty",
     "shared/radio/**/*.{js,jsx}": "yarn workspace @rex/radio lint-staged --allow-empty",
-    "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty"
+    "shared/router/**/*.{js,jsx}": "yarn workspace @rex/router lint-staged --allow-empty",
+    "shared/sandbox/**/*.{js,jsx}": "yarn workspace @rex/sandbox lint-staged --allow-empty"
   },
   "name": "rex",
   "private": true,
