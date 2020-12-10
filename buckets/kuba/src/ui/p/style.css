@@ -1,7 +1,0 @@
-.p {
-  color: var(--color-master-darkest);
-}
-
-.p.inverse {
-  color: var(--color-master-lightest);
-}

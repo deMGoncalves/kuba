@@ -7,8 +7,7 @@
       "@pricing/*": ["src/pricing/*"],
       "@site/*": ["src/site/*"],
       "@stories/*": ["src/stories/*"],
-      "@structured/*": ["src/structured/*"],
-      "@ui/*": ["src/ui/*"]
+      "@structured/*": ["src/structured/*"]
     }
   },
   "extends": "../../tsconfig.json"
