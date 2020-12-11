@@ -1,17 +1,18 @@
 import * as f from '@rex/f'
-import dispatchEvent from './dispatchEvent'
-import reflow from './reflow'
-import render from './render'
 
-export default (tagName, worker) =>
-  customElements.define(tagName, class extends HTMLElement {
-    static get observedAttributes () {
-      return []
+customElements.define(
+  'awp-sandbox',
+  class extends HTMLElement {
+    get stats () {
+      return this.content
+    }
+
+    get tagName () {
+      return this.name
     }
 
     constructor () {
       super()
-      this.addEventListener('awp:event', dispatchEvent(worker))
     }
 
     adoptedCallback () {
@@ -23,12 +24,14 @@ export default (tagName, worker) =>
     }
 
     connectedCallback () {
-      worker.addEventListener('message', f.chain(render(this), reflow))
       return this
     }
 
     disconnectedCallback () {
-      worker.terminate()
       return this
     }
-  })
+  },
+  {
+    extends: 'meta'
+  }
+)

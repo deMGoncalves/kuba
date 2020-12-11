@@ -1,4 +1,4 @@
-import h from '@rex/h'
+import h from '@rex/sandbox'
 import Logo from '@rex/logo'
 import Nav from './nav'
 import style from './style.css'

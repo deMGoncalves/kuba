@@ -1,4 +1,4 @@
-import h, { Fragment } from '@rex/h'
+import h, { Fragment } from '@rex/sandbox'
 import { urlFor } from '@rex/router'
 import Button from '@rex/button'
 import Link from '@rex/link'

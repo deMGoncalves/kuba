@@ -6,5 +6,4 @@ import '@rex/trackjs'
 import '@rex/sw'
 import '@rex/reset'
 import '@rex/theme/light.css'
-
-import './routers'
+import '@rex/awp'

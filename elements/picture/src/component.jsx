@@ -1,4 +1,4 @@
-import h from '@rex/h'
+import h from '@rex/sandbox'
 import * as f from '@rex/f'
 import style from './style.css'
 

@@ -1,4 +1,4 @@
-import h from '@rex/h'
+import h from '@rex/sandbox'
 import style from './style.css'
 
 export default new Proxy({}, {

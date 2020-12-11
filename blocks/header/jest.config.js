@@ -25,6 +25,12 @@ module.exports = {
       tsConfig: 'tsconfig.json'
     }
   },
+  moduleNameMapper: {
+    '@features': '<rootDir>/src/features',
+    '@home': '<rootDir>/src/home',
+    '@pricing': '<rootDir>/src/pricing',
+    '@stories': '<rootDir>/src/stories'
+  },
   setupFiles: [
     '<rootDir>/jsdom.setup.js'
   ],

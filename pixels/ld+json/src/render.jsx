@@ -1,10 +1,9 @@
-import h, { render } from '@rex/h'
+import h, { render } from '@rex/sandbox'
 import * as f from '@rex/f'
 import graph from './graph'
 
 export default f.debounce(() =>
   render(
-    document.head,
     <script type='application/ld+json'>
       {
         JSON.stringify({

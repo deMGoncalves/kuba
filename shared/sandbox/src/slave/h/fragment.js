@@ -1,2 +1,2 @@
-export default (attributes, children) =>
-  ({ slot: attributes.slot, children })
+export default (_attributes, children) =>
+  children

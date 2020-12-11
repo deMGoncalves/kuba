@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
-import { paint } from '@rex/h'
+import { paint } from '@rex/sandbox'
 import { urlFor } from '@rex/router'
 import ldjson from '@rex/ldjson'
 import component from './component'

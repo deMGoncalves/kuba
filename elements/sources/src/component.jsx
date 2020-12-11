@@ -1,4 +1,4 @@
-import h, { Fragment } from '@rex/h'
+import h, { Fragment } from '@rex/sandbox'
 import * as f from '@rex/f'
 
 export default ({ slot, thumbnails: [mobile, tablet, desktop] }) =>

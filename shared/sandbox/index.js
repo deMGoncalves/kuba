@@ -1,5 +1,5 @@
 export { default } from './src/slave/h'
+export { default as Fragment } from './src/slave/h/fragment'
 export { default as paint } from './src/slave/paint'
 export { default as render } from './src/slave/render'
 export { default as repaint } from './src/slave/repaint'
-export { default as sandbox } from './src/master'

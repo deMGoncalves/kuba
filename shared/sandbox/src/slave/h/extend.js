@@ -9,5 +9,5 @@ export default (attributes) =>
       [isEvent, addEventListener(attr)],
       [f.T, setAttribute(attr)]
     )(key, value),
-  {}
+    {}
   )
