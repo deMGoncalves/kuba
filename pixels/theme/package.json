@@ -8,7 +8,7 @@
   "lint-staged": {
     "*.css": "stylelint --fix"
   },
-  "main": "light.css",
+  "main": "default.css",
   "name": "@rex/theme",
   "private": true,
   "version": "1.0.0"

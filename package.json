@@ -1,7 +1,7 @@
 {
   "author": "Cleber de Moraes Gonçalves <cleber.engineer@gmail.com>",
   "devDependencies": {
-    "husky": "^4.3.5",
+    "husky": "^4.3.6",
     "lint-staged": "^10.2.11"
   },
   "husky": {
@@ -10,11 +10,7 @@
     }
   },
   "lint-staged": {
-    "blocks/feature/**/*.{css,js,jsx}": "yarn workspace @rex/feature lint-staged --allow-empty",
     "blocks/header/**/*.{css,js,jsx}": "yarn workspace @rex/header lint-staged --allow-empty",
-    "blocks/footer/**/*.{css,js,jsx}": "yarn workspace @rex/footer lint-staged --allow-empty",
-    "blocks/hero/**/*.{css,js,jsx}": "yarn workspace @rex/hero lint-staged --allow-empty",
-    "buckets/kuba/**/*.{css,js,jsx}": "yarn workspace @rex/kuba lint-staged --allow-empty",
     "elements/button/**/*.{css,js,jsx}": "yarn workspace @rex/button lint-staged --allow-empty",
     "elements/link/**/*.{css,js,jsx}": "yarn workspace @rex/link lint-staged --allow-empty",
     "elements/logo/**/*.{css,js,jsx}": "yarn workspace @rex/logo lint-staged --allow-empty",
@@ -32,6 +28,7 @@
     "pixels/theme/**/*.css": "yarn workspace @rex/theme lint-staged --allow-empty",
     "pixels/trackjs/**/*.{css,js,jsx}": "yarn workspace @rex/trackjs lint-staged --allow-empty",
     "shared/agent/**/*.{js,jsx}": "yarn workspace @rex/agent lint-staged --allow-empty",
+    "shared/awp/**/*.{js,jsx}": "yarn workspace @rex/awp lint-staged --allow-empty",
     "shared/f/**/*.{js,jsx}": "yarn workspace @rex/f lint-staged --allow-empty",
     "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",
     "shared/hook/**/*.{js,jsx}": "yarn workspace @rex/hook lint-staged --allow-empty",
