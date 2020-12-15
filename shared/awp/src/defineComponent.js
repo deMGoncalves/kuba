@@ -13,8 +13,6 @@ export default (tagName, worker) =>
 
     constructor () {
       super()
-      this.#worker = worker()
-      this.addEventListener('awp:event', dispatchEvent(this.#worker))
     }
 
     adoptedCallback () {
@@ -26,12 +24,20 @@ export default (tagName, worker) =>
     }
 
     connectedCallback () {
-      this.#worker.addEventListener('message', f.chain(render(this), reflow))
+      f.lazyLoad(this, () => this.start())
       return this
     }
 
     disconnectedCallback () {
       this.#worker.terminate()
+      return this
+    }
+
+    start () {
+      this.#worker = worker()
+      this.#worker.addEventListener('message', f.chain(render(this), reflow))
+
+      this.addEventListener('awp:event', dispatchEvent(this.#worker))
       return this
     }
   })

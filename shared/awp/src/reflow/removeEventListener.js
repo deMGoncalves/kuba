@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
-import map from '@rex/sandbox/src/master/map'
+import map from '@rex/awp/src/map'
 
 const removeEventListener = (event) =>
   (delete map.get(event.data.payload['@unid'])[event.data.payload.event])

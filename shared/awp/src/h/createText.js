@@ -1,4 +1,4 @@
-import map from '@rex/sandbox/src/master/map'
+import map from '@rex/awp/src/map'
 
 export default (payload) =>
   map.set(

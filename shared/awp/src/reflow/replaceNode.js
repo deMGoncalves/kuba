@@ -1,6 +1,6 @@
 import * as f from '@rex/f'
-import h from '@rex/sandbox/src/master/h'
-import map from '@rex/sandbox/src/master/map'
+import h from '@rex/awp/src/h'
+import map from '@rex/awp/src/map'
 
 function replaceNode (event) {
   const unid = event.data.payload['@unid']

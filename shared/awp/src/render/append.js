@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
-import h from '@rex/sandbox/src/master/h'
+import h from '@rex/awp/src/h'
 
 const render = (node, event) =>
   node.append(h(event.data.payload))

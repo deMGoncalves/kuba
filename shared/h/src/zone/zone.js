@@ -29,8 +29,8 @@ class Zone {
     this.#slot = props.slot
     this.#offScreen = f.T()
 
-    setTimeout(() =>
-      f.lazyLoad(this[d.__element__], () => this[render]()))
+    // setTimeout(() =>
+    //   f.lazyLoad(this[d.__element__], () => this[render]()))
 
     return this
   }
