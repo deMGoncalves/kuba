@@ -19,18 +19,13 @@ module.exports = merge.smart(common, {
       })
     ]
   },
-  plugins: [
-    new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'async'
-    })
-  ],
   output: {
     filename: 'header.[hash].js',
     globalObject: 'self',
     library: 'header',
     libraryTarget: 'umd',
     path: path.resolve(__dirname, 'public'),
-    publicPath: 'https://header-kuba-engineer.web.app/',
+    publicPath: 'https://header.kuba.engineer/',
     umdNamedDefine: true
   },
   plugins: [
