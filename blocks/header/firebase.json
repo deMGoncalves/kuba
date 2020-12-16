@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "header-kuba-engineer",
+    "site": "header-kuba",
     "public": "public",
     "ignore": [
       "firebase.json",

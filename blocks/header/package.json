@@ -55,7 +55,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting:header-kuba-engineer",
+    "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting:header-kuba",
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "test": "concurrently 'yarn run test:*'",
     "test:git-branch-is": "git-branch-is master",

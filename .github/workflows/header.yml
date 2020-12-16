@@ -1,4 +1,4 @@
-name: Kuba
+name: Header
 
 on:
   push:
@@ -48,12 +48,12 @@ jobs:
         yarn workspace @rex/trackjs test
         yarn workspace @rex/sw test
         yarn workspace @rex/markup test
-        yarn workspace @rex/kuba test
+        yarn workspace @rex/header test
     
     - name: Run Photosnap build
-      run: yarn workspace @rex/kuba build
+      run: yarn workspace @rex/header build
     
     - name: Run Firebase deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: yarn workspace @rex/kuba deploy
+      run: yarn workspace @rex/header deploy
