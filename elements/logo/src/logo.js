@@ -1,14 +1,14 @@
 import * as f from '@rex/f'
 import { paint } from '@rex/sandbox'
 import { urlFor } from '@rex/router'
-import ldjson from '@rex/ldjson'
+import jsonld from '@rex/json-ld'
 import component from './component'
 import organization from './organization'
 import kuba from './kuba.png'
 import kubaInverse from './kuba_inverse.png'
 
 @paint(component)
-@ldjson(organization)
+@jsonld(organization)
 class Logo {
   #color
 

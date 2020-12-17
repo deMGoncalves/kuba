@@ -2,7 +2,7 @@
   "dependencies": {
     "@rex/f": "1.0.0",
     "@rex/h": "1.0.0",
-    "@rex/ldjson": "1.0.0",
+    "@rex/json-ld": "1.0.0",
     "@rex/picture": "1.0.0",
     "@rex/router": "1.0.0",
     "@rex/text": "1.0.0"
