@@ -27,6 +27,7 @@ class Logo {
   }
 
   get tagName () {
+    console.log(location.pathname)
     return f.test(/^\/$/, location.pathname)
       ? 'H1'
       : 'Strong'
