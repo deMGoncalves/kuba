@@ -1,29 +1,41 @@
-import * as f from '@rex/f'
 import { paint } from '@rex/htmlparser'
-import jsonld from '@rex/json-ld'
+import * as f from '@rex/f'
 import component from './component'
+import ghost from './kuba-ghost.png'
+import jsonld from '@rex/json-ld'
 import organization from './organization'
-import kuba from './kuba.png'
-import kubaInverse from './kuba_inverse.png'
+import primary from './kuba.png'
 
 @paint(component)
 @jsonld(organization)
 class Logo {
+  #className
   #color
 
+  get className () {
+    return f.or(this.#className, '')
+  }
+
   get color () {
-    return this.#color
+    return f.test(/^ghost$/, this.#color)
+      ? 'ghost'
+      : 'primay'
   }
 
   get name () {
     return 'Kuba'
   }
 
+  get tagName () {
+    return f.test(/^\/$/, location.pathname)
+      ? 'H1'
+      : 'Strong'
+  }
+
   get thumbnail () {
-    return f.cond(
-      [f.equal('inverse'), f.always(kubaInverse)],
-      [f.T, f.always(kuba)]
-    )(this.color)
+    return f.test(/^ghost$/, this.color)
+      ? ghost
+      : primary
   }
 
   get url () {
@@ -31,8 +43,8 @@ class Logo {
   }
 
   constructor (props) {
+    this.#className = props.className
     this.#color = props.color
-    return this
   }
 
   redirect () {

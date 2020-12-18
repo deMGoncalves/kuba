@@ -3,7 +3,6 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const merge = require('webpack-merge')
 const path = require('path')
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
-const { StatsWriterPlugin } = require('webpack-stats-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 
 module.exports = merge.smart(common, {
@@ -31,7 +30,6 @@ module.exports = merge.smart(common, {
   plugins: [
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async'
-    }),
-    new StatsWriterPlugin()
+    })
   ]
 })
