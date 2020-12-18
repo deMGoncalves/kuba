@@ -1,12 +1,13 @@
 {
   "dependencies": {
+    "@rex/awp": "1.0.0",
     "@rex/f": "1.0.0",
     "@rex/ga": "1.0.0",
     "@rex/gtag": "1.0.0",
     "@rex/gtm": "1.0.0",
     "@rex/h": "1.0.0",
     "@rex/hotjar": "1.0.0",
-    "@rex/ldjson": "1.0.0",
+    "@rex/json-ld": "1.0.0",
     "@rex/reset": "1.0.0",
     "@rex/router": "1.0.0",
     "@rex/sw": "1.0.0",
