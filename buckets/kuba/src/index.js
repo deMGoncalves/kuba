@@ -5,7 +5,6 @@ import '@rex/hotjar'
 import '@rex/trackjs'
 import '@rex/sw'
 import '@rex/reset'
-import '@rex/theme/default.css'
+import '@rex/theme'
 import '@rex/awp'
-
 import './routers.jsx'
