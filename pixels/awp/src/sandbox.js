@@ -1,8 +1,7 @@
-import * as f from '@rex/f'
 import appendStyle from './appendStyle'
 import createWorker from './createWorker'
 import defineComponent from './defineComponent'
-import fetchFiles from './fetchFiles'
+// import fetchFiles from './fetchFiles'
 
 customElements.define(
   'awp-sandbox',
@@ -16,11 +15,11 @@ customElements.define(
     }
 
     async connectedCallback () {
-      const [script, style] = await fetchFiles(this.publicPath)
-      const worker = createWorker(this.publicPath, script)
-      
+      // const [script, style] = await fetchFiles(this.publicPath)
+      const worker = createWorker(this.publicPath, 'script.js')
+
       defineComponent(this.tagName, worker)
-      appendStyle(this.publicPath, style)
+      appendStyle(this.publicPath, 'style.css')
 
       return this
     }
