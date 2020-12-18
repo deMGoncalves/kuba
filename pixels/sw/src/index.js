@@ -1,6 +1,6 @@
 import * as f from '@rex/f'
 import agent from '@rex/agent'
-import register from './src/register'
+import register from './register'
 
 f.and(
   agent.isUser,
