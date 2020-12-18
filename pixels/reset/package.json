@@ -8,7 +8,7 @@
   "lint-staged": {
     "*.css": "stylelint --fix"
   },
-  "main": "reset.css",
+  "main": "src/reset.css",
   "name": "@rex/reset",
   "private": true,
   "version": "1.0.0"
