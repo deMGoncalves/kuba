@@ -1,4 +1,4 @@
-import h from '@rex/sandbox'
+import h from '@rex/htmlparser'
 import * as f from '@rex/f'
 import style from './style.css'
 
