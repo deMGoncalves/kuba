@@ -19,7 +19,7 @@ module.exports = merge.smart(common, {
     ]
   },
   output: {
-    filename: 'header.kuba.js',
+    filename: 'script.js',
     globalObject: 'self',
     library: 'header',
     libraryTarget: 'umd',
