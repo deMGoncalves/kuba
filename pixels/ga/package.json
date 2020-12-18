@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@rex/f": "1.0.0",
     "@rex/h": "1.0.0"
   },
   "devDependencies": {
@@ -26,7 +27,7 @@
   "lint-staged": {
     "*.{js,jsx}": "eslint --fix"
   },
-  "main": "index.js",
+  "main": "src/index.js",
   "name": "@rex/ga",
   "private": true,
   "scripts": {
