@@ -1,7 +1,10 @@
 {
   "dependencies": {
+    "@rex/button": "1.0.0",
     "@rex/f": "1.0.0",
-    "@rex/awp-h": "1.0.0"
+    "@rex/htmlparser": "1.0.0",
+    "@rex/link": "1.0.0",
+    "@rex/logo": "1.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.1",

@@ -1,5 +1,4 @@
-import h from '@rex/sandbox'
-import { urlFor } from '@rex/router'
+import h from '@rex/htmlparser'
 import Button from '@rex/button'
 import Link from '@rex/link'
 import Logo from '@rex/logo'
@@ -11,9 +10,9 @@ export default (header) =>
       <Logo className={style.header__logo} />
       <button className={[style.header__toggle, style[header.status]]} onClick_prevent_stop={() => header.toggle()}>Menu</button>
       <nav className={style.header__nav}>
-        <Link className={style.header__link} href={urlFor('stories')}>Stories</Link>
-        <Link className={style.header__link} href={urlFor('features')}>Features</Link>
-        <Link className={style.header__link} href={urlFor('pricing')}>Pricing</Link>
+        <Link className={style.header__link} href='./stories'>Stories</Link>
+        <Link className={style.header__link} href='./features'>Features</Link>
+        <Link className={style.header__link} href='./pricing'>Pricing</Link>
       </nav>
       <Button className={style.header__button} href='/'>Get in invite</Button>
     </div>

@@ -1,4 +1,4 @@
-import h, { paint, repaint, start } from '@rex/sandbox'
+import h, { paint, repaint, start } from '@rex/htmlparser'
 import * as f from '@rex/f'
 import component from './component'
 
@@ -8,7 +8,7 @@ class Header {
   #status
 
   get status () {
-    return this.#status ? 'opened': 'closed'
+    return this.#status ? 'opened' : 'closed'
   }
 
   constructor () {
@@ -21,3 +21,5 @@ class Header {
     return this
   }
 }
+
+export default Header
