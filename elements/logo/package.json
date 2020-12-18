@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@rex/f": "1.0.0",
-    "@rex/h": "1.0.0",
+    "@rex/htmlparser": "1.0.0",
     "@rex/json-ld": "1.0.0",
     "@rex/picture": "1.0.0",
     "@rex/router": "1.0.0",
@@ -32,7 +32,7 @@
     "*.css": "stylelint --fix",
     "*.{js,jsx}": "eslint --fix"
   },
-  "main": "index.js",
+  "main": "src/index.js",
   "name": "@rex/logo",
   "private": true,
   "scripts": {

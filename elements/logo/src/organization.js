@@ -1,11 +1,11 @@
 import * as f from '@rex/f'
 
-export default f.once((organization) =>
+export default f.once((logo) =>
   ({
-    '@id': '#organization',
+    '@id': '#logo',
     '@type': 'Organization',
-    logo: organization.thumbnail,
-    name: organization.name,
-    url: organization.url
+    logo: logo.thumbnail,
+    name: logo.name,
+    url: logo.url
   })
 )
