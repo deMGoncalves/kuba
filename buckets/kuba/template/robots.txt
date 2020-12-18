@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://photosnap-rex.web.app/sitemap.xml
+Sitemap: https://kuba.engineer/sitemap.xml

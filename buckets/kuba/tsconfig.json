@@ -2,12 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@feature/*": ["src/feature/*"],
-      "@home/*": ["src/home/*"],
-      "@pricing/*": ["src/pricing/*"],
-      "@site/*": ["src/site/*"],
-      "@stories/*": ["src/stories/*"],
-      "@structured/*": ["src/structured/*"]
+      "@home/*": ["src/home/*"]
     }
   },
   "extends": "../../tsconfig.json"

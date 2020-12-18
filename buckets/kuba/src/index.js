@@ -7,3 +7,5 @@ import '@rex/sw'
 import '@rex/reset'
 import '@rex/theme/default.css'
 import '@rex/awp'
+
+import './routers.jsx'
