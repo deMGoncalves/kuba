@@ -26,13 +26,6 @@ class Logo {
     return 'Kuba'
   }
 
-  get tagName () {
-    console.log(location.pathname)
-    return f.test(/^\/$/, location.pathname)
-      ? 'H1'
-      : 'Strong'
-  }
-
   get thumbnail () {
     return f.test(/^ghost$/, this.color)
       ? ghost

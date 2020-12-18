@@ -8,5 +8,5 @@ export default (logo) =>
     <Picture className={style.logo__picture}>
       <source srcSet={logo.thumbnail} />
     </Picture>
-    {h(text[logo.tagName], { className: style.logo__heading, color: logo.color, size: 'large' }, logo.name)}
+    <text.H1 className={style.logo__heading} color={logo.color} size='large'>{logo.name}</text.H1>
   </div>
