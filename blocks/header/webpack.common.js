@@ -75,8 +75,8 @@ module.exports = {
         onload: 'this.rel="stylesheet"',
         rel: 'preload'
       },
-      chunkFilename: 'header.[hash].css',
-      filename: 'header.[hash].css',
+      chunkFilename: 'header.kuba.css',
+      filename: 'header.kuba.css',
       linkType: false
     }),
     new HtmlWebpackPlugin({
