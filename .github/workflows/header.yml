@@ -5,11 +5,7 @@ on:
     branches: [ master ]
 
     paths:
-      - 'actions/**'
-      - 'blocks/**'
-      - 'buckets/kuba/**'
       - 'elements/**'
-      - 'pixels/**'
       - 'shared/**'
 
 jobs:
@@ -36,21 +32,14 @@ jobs:
 
     - name: Run yarn test
       run: |
+        yarn workspace @rex/button test
         yarn workspace @rex/f test
-        yarn workspace @rex/h test
-        yarn workspace @rex/hook test
-        yarn workspace @rex/radio test
-        yarn workspace @rex/router test
-        yarn workspace @rex/ga test
-        yarn workspace @rex/gtag test
-        yarn workspace @rex/gtm test
-        yarn workspace @rex/hotjar test
-        yarn workspace @rex/trackjs test
-        yarn workspace @rex/sw test
-        yarn workspace @rex/markup test
+        yarn workspace @rex/htmlparser test
+        yarn workspace @rex/link test
+        yarn workspace @rex/logo test
         yarn workspace @rex/header test
     
-    - name: Run Photosnap build
+    - name: Run Header build
       run: yarn workspace @rex/header build
     
     - name: Run Firebase deploy

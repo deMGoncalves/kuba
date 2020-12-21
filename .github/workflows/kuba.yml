@@ -36,21 +36,9 @@ jobs:
 
     - name: Run yarn test
       run: |
-        yarn workspace @rex/f test
-        yarn workspace @rex/h test
-        yarn workspace @rex/hook test
-        yarn workspace @rex/radio test
-        yarn workspace @rex/router test
-        yarn workspace @rex/ga test
-        yarn workspace @rex/gtag test
-        yarn workspace @rex/gtm test
-        yarn workspace @rex/hotjar test
-        yarn workspace @rex/trackjs test
-        yarn workspace @rex/sw test
-        yarn workspace @rex/markup test
         yarn workspace @rex/kuba test
     
-    - name: Run Photosnap build
+    - name: Run Kuba build
       run: yarn workspace @rex/kuba build
     
     - name: Run Firebase deploy
