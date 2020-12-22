@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
-import extendAttributes from '@rex/h/src/extendAttributes'
+import extendAttributes from './extendAttributes'
 import appendChildren from './appendChildren'
 
 export default (tagName, props, children) =>

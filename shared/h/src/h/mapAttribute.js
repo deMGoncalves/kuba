@@ -14,7 +14,7 @@ import setClassName from './setClassName'
 import setHtmlFor from './setHtmlFor'
 
 export default (node) =>
-  (keyAndValue) =>
+  (args) =>
     f.cond(
       [isEvent, addEventListenerPure(node)],
       [isEventWithStop, addEventListenerWithStop(node)],
@@ -23,4 +23,4 @@ export default (node) =>
       [isClassName, setClassName(node)],
       [isHtmlFor, setHtmlFor(node)],
       [f.T, setAttribute(node)]
-    )(...keyAndValue)
+    )(...args)
