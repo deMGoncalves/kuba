@@ -35,8 +35,8 @@ Da mesma forma, qualquer forma de spam, troll, flame, bait ou qualquer outro com
 
 #### Comunidade
 
-Whatsapp: https://chat.whatsapp.com/DxkjKLenR7TFFsC0qT3dpu
-Discord: https://discord.gg/RzbJdCsh
+* [Whatsapp](https://chat.whatsapp.com/DxkjKLenR7TFFsC0qT3dpu)
+* [Discord](https://discord.gg/RzbJdCsh)
 
 #### Rex
 
