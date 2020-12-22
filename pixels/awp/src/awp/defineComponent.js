@@ -2,11 +2,15 @@ import * as f from '@rex/f'
 import appendStyle from './appendStyle'
 import createWorker from './createWorker'
 import dispatchEvent from './dispatchEvent'
-import reflow from './reflow'
-import render from './render'
+import reflow from '@rex/awp/src/reflow'
+import render from '@rex/awp/src/render'
+
+const start = f.magic('start')
 
 export default (schema) =>
   customElements.define(schema.tag, class extends HTMLElement {
+    #script
+    #style
     #worker
 
     static get observedAttributes () {
@@ -15,11 +19,8 @@ export default (schema) =>
 
     constructor () {
       super()
-      return this
-    }
-
-    adoptedCallback () {
-      return this
+      this.#script = `https://${schema.host}/script.js`
+      this.#style = `https://${schema.host}/style.css`
     }
 
     attributeChangedCallback () {
@@ -27,8 +28,8 @@ export default (schema) =>
     }
 
     connectedCallback () {
-      appendStyle(`https://${schema.host}/style.css`)
-      f.lazyLoad(this, () => this.start())
+      appendStyle(this.#style)
+      f.lazyLoad(this, () => this[start]())
       return this
     }
 
@@ -37,8 +38,8 @@ export default (schema) =>
       return this
     }
 
-    start () {
-      this.#worker = createWorker(`https://${schema.host}/script.js`)
+    [start] () {
+      this.#worker = createWorker(this.#script)
       this.#worker.addEventListener('message', f.chain(render(this), reflow))
 
       this.addEventListener('awp:event', dispatchEvent(this.#worker))
