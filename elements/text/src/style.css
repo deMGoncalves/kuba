@@ -3,34 +3,30 @@
   font-size: var(--font-size-base);
 }
 
-.text.largest {
+.text[largest] {
   font-size: var(--font-size-largest);
 }
 
-.text.larger {
+.text[larger] {
   font-size: var(--font-size-larger);
 }
 
-.text.large {
+.text[large] {
   font-size: var(--font-size-large);
 }
 
-.text.base {
+.text[base] {
   font-size: var(--font-size-base);
 }
 
-.text.small {
+.text[small] {
   font-size: var(--font-size-small);
 }
 
-.text.smaller {
+.text[smaller] {
   font-size: var(--font-size-smaller);
 }
 
-.text.smallest {
+.text[smallest] {
   font-size: var(--font-size-smallest);
-}
-
-.text.inverse {
-  color: var(--color-master-lightest);
 }
