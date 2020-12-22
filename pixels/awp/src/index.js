@@ -1,1 +1,1 @@
-import './sandbox'
+import './awp'
