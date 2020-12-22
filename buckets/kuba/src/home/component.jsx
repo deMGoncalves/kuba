@@ -1,4 +1,7 @@
 import h from '@rex/h'
+import Home from '@rex/home'
 
 export default () =>
-  <kuba-header />
+  <Home>
+    <kuba-header slot='header' />
+  </Home>

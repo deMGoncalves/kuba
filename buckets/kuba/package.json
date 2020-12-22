@@ -6,6 +6,7 @@
     "@rex/gtag": "1.0.0",
     "@rex/gtm": "1.0.0",
     "@rex/h": "1.0.0",
+    "@rex/home": "1.0.0",
     "@rex/hotjar": "1.0.0",
     "@rex/json-ld": "1.0.0",
     "@rex/reset": "1.0.0",
