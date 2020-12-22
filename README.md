@@ -1,3 +1,6 @@
+# Kuba
+Caindo no meu melhor
+
 <img src="https://github.com/oneOffJS/rex/raw/master/rex.png" alt="Rex Logotipo" width="300" height="300" />
 
 ## Simples, pequeno e imperfeito. Uma visão além da programação.
