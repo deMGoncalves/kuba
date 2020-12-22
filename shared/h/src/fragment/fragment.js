@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
-import appendChildren from '@rex/h/src/h/appendChildren'
+import append from '@rex/h/src/h/append'
 
 export default (props, children) =>
-  appendChildren(f.flatten(children), document.createDocumentFragment())
+  append(f.flatten(children), document.createDocumentFragment())

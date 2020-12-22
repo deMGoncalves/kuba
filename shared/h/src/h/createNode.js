@@ -1,6 +1,6 @@
 import * as f from '@rex/f'
-import extendAttributes from './extendAttributes'
-import appendChildren from './appendChildren'
+import extend from './extend'
+import append from './append'
 
 export default (tagName, props, children) =>
-  f.compose(appendChildren(children), extendAttributes(props))(document.createElement(tagName, { is: props.is }))
+  f.compose(append(children), extend(props))(document.createElement(tagName, { is: props.is }))
