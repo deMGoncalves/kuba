@@ -48,6 +48,7 @@
       "blocks/*",
       "buckets/*",
       "elements/*",
+      "models/*",
       "pixels/*",
       "shared/*"
     ]
