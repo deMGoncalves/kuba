@@ -85,10 +85,5 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx']
-  },
-  output: {
-    chunkFilename: '[name].[hash].js',
-    filename: '[name].[hash].js',
-    publicPath: '/'
   }
 }

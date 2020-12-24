@@ -7,12 +7,16 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: path.join(__dirname, '.temp'),
-    historyApiFallback: true,
-    hot: true,
+    historyApiFallback: false,
+    hot: false,
+    https: true,
     index: './.temp/index.html',
-    port: portFinderSync.getPort(5000)
+    port: portFinderSync.getPort(3000)
   },
   output: {
-    path: path.resolve(__dirname, '.temp')
+    chunkFilename: 'script.js',
+    filename: 'script.js',
+    path: path.resolve(__dirname, '.temp'),
+    publicPath: 'https://localhost:3000/'
   }
 })
