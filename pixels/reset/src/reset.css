@@ -6,13 +6,13 @@
   --font-size-small: 13px;
   --font-size-smaller: 10px;
   --font-size-smallest: 8px;
-  --spacer-largest: 48px;
-  --spacer-larger: 32px;
-  --spacer-large: 24px;
-  --spacer: 16px;
-  --spacer-small: 12px;
-  --spacer-smaller: 8px;
-  --spacer-smallest: 4px;
+  --gutter-largest: 34px;
+  --gutter-larger: 26px;
+  --gutter-large: 21px;
+  --gutter: 16px;
+  --gutter-small: 13px;
+  --gutter-smaller: 10px;
+  --gutter-smallest: 8px;
 }
 
 * {
