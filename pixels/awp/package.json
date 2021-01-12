@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@rex/lazyLoad": "1.0.0",
     "@rex/f": "1.0.0"
   },
   "devDependencies": {
