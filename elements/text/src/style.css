@@ -26,3 +26,27 @@
 .text[smallest] {
   font-size: var(--font-size-smallest);
 }
+
+.text[primary] {
+  color: var(--color-primary);
+}
+
+.text[complete] {
+  color: var(--color-complete);
+}
+
+.text[success] {
+  color: var(--color-success);
+}
+
+.text[warning] {
+  color: var(--color-warning);
+}
+
+.text[danger] {
+  color: var(--color-danger);
+}
+
+.text[info] {
+  color: var(--color-info);
+}

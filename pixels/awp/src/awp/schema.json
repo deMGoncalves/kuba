@@ -1,6 +1,6 @@
 [
   {
-    "host": "header.kuba.engineer",
+    "host": "localhost:3000",
     "tag": "kuba-header"
   }
 ]
