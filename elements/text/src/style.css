@@ -1,6 +1,6 @@
 .text {
-  color: var(--color-master-darkest);
-  font-size: var(--font-size-base);
+  color: var(--color-master);
+  font-size: var(--font-size);
 }
 
 .text[largest] {
@@ -13,10 +13,6 @@
 
 .text[large] {
   font-size: var(--font-size-large);
-}
-
-.text[base] {
-  font-size: var(--font-size-base);
 }
 
 .text[small] {
