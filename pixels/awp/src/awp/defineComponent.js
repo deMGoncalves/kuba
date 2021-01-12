@@ -1,4 +1,5 @@
 import * as f from '@rex/f'
+import lazyLoad from '@rex/lazyLoad'
 import appendStyle from './appendStyle'
 import createWorker from './createWorker'
 import dispatchEvent from './dispatchEvent'
@@ -29,7 +30,7 @@ export default (schema) =>
 
     connectedCallback () {
       appendStyle(this.#style)
-      f.lazyLoad(this, () => this[start]())
+      lazyLoad(this, () => this[start]())
       return this
     }
 
