@@ -10,9 +10,10 @@ const listener = magic('listener')
 const lazyLoad = (node, handler) => (
   window.addEventListener(event, (node[listener] = debounce(() =>
     not(offScreen(node)) && (
-      window.removeEventListener(event, node[listener]), handler())
-  ))
-  ),
+      window.removeEventListener(event, node[listener]),
+      handler()
+    )
+  ))),
 
   node[listener]()
 )
