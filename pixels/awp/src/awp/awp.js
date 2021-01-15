@@ -1,5 +1,7 @@
 import * as f from '@rex/f'
+import config from '@rex/config'
 import defineComponent from './defineComponent'
-import schema from './schema.json'
 
-f.forEach(schema, defineComponent)
+config
+  .fetchAndActivate()
+  .then(() => f.forEach(config.AWP, defineComponent))
