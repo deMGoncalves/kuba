@@ -2,7 +2,7 @@
   "dependencies": {
     "@rex/agent": "1.0.0",
     "@rex/f": "1.0.0",
-    "@rex/h": "1.0.0"
+    "@rex/firebase": "1.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.1",
@@ -29,7 +29,7 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "main": "src/index.js",
-  "name": "@rex/gtag",
+  "name": "@rex/performance",
   "private": true,
   "scripts": {
     "start": "jest --watchAll",
