@@ -3,4 +3,4 @@ import agent from '@rex/agent'
 import env from '@rex/env'
 import firebase from '@rex/firebase'
 
-f.and(agent.isUser, env.isProduction) && firebase.analytics()
+f.and(agent.isUser, env.isProd) && firebase.analytics()

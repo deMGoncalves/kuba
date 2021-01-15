@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@rex/agent": "1.0.0",
+    "@rex/env": "1.0.0",
     "@rex/f": "1.0.0",
     "@rex/firebase": "1.0.0"
   },
