@@ -1,4 +1,8 @@
 {
+  "dependencies": {
+    "@rex/f": "1.0.0",
+    "@rex/firebase": "1.0.0"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.1",
     "@typescript-eslint/parser": "^3.7.1",
@@ -32,8 +36,5 @@
     "test:git-branch-is": "git-branch-is master",
     "test:jest": "jest --passWithNoTests"
   },
-  "version": "1.0.0",
-  "dependencies": {
-    "firebase": "^8.2.3"
-  }
+  "version": "1.0.0"
 }

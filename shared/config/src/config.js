@@ -1,5 +1,5 @@
 import * as f from '@rex/f'
-import firebase from './firebase'
+import firebase from '@rex/firebase'
 
 export default new Proxy(
   firebase.remoteConfig(),
