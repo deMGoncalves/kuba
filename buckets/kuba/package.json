@@ -3,7 +3,6 @@
     "@rex/analytics": "1.0.0",
     "@rex/awp": "1.0.0",
     "@rex/f": "1.0.0",
-    "@rex/gtm": "1.0.0",
     "@rex/h": "1.0.0",
     "@rex/home": "1.0.0",
     "@rex/hotjar": "1.0.0",

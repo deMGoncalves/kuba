@@ -1,6 +1,5 @@
 import '@rex/performance'
 import '@rex/analytics'
-import '@rex/gtm'
 import '@rex/hotjar'
 import '@rex/trackjs'
 import '@rex/sw'
