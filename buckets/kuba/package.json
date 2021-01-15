@@ -1,8 +1,8 @@
 {
   "dependencies": {
+    "@rex/analytics": "1.0.0",
     "@rex/awp": "1.0.0",
     "@rex/f": "1.0.0",
-    "@rex/ga": "1.0.0",
     "@rex/gtag": "1.0.0",
     "@rex/gtm": "1.0.0",
     "@rex/h": "1.0.0",

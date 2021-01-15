@@ -1,4 +1,4 @@
-import '@rex/ga'
+import '@rex/analytics'
 import '@rex/gtag'
 import '@rex/gtm'
 import '@rex/hotjar'
