@@ -27,6 +27,7 @@
     "pixels/theme/**/*.css": "yarn workspace @rex/theme lint-staged --allow-empty",
     "shared/agent/**/*.{js,jsx}": "yarn workspace @rex/agent lint-staged --allow-empty",
     "shared/config/**/*.{js,jsx}": "yarn workspace @rex/config lint-staged --allow-empty",
+    "shared/env/**/*.{js,jsx}": "yarn workspace @rex/env lint-staged --allow-empty",
     "shared/f/**/*.{js,jsx}": "yarn workspace @rex/f lint-staged --allow-empty",
     "shared/firebase/**/*.{js,jsx}": "yarn workspace @rex/firebase lint-staged --allow-empty",
     "shared/h/**/*.{js,jsx}": "yarn workspace @rex/h lint-staged --allow-empty",
