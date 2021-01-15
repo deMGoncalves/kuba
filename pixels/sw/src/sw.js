@@ -1,4 +1,4 @@
-const CACHE = 'Kuba.1.0.1'
+const CACHE = 'Kuba.1.0.2'
 
 self.addEventListener('activate', function (event) {
   event.waitUntil(reset())
