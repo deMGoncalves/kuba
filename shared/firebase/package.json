@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@rex/env": "1.0.0",
     "firebase": "^8.2.3"
   },
   "devDependencies": {

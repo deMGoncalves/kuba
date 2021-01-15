@@ -1,4 +1,4 @@
-import * as f from '@rex/f'
+import env from '@rex/env'
 import firebase from 'firebase/app'
 import dev from './dev.json'
 import prod from './prod.json'
@@ -7,6 +7,6 @@ import 'firebase/analytics'
 import 'firebase/performance'
 import 'firebase/remote-config'
 
-firebase.initializeApp(f.equal(process.env.NODE_ENV, 'production') ? prod : dev)
+firebase.initializeApp(env.isProd ? prod : dev)
 
 export default firebase
