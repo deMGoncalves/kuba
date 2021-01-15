@@ -32,5 +32,8 @@
     "test:git-branch-is": "git-branch-is master",
     "test:jest": "jest --passWithNoTests"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "firebase": "^8.2.3"
+  }
 }
