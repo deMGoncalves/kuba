@@ -1,6 +1,5 @@
 import '@rex/performance'
 import '@rex/analytics'
-import '@rex/hotjar'
 import '@rex/trackjs'
 import '@rex/sw'
 import '@rex/reset'
