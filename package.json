@@ -1,7 +1,7 @@
 {
   "author": "Cleber de Moraes Gonçalves <cleber.engineer@gmail.com>",
   "devDependencies": {
-    "husky": "^4.3.7",
+    "husky": "^4.3.8",
     "lint-staged": "^10.2.11"
   },
   "husky": {
