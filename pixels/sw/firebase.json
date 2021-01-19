@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "public",
+    "site": "sw-kuba",
     "ignore": [
       "firebase.json",
       "**/.*",
