@@ -37,7 +37,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\"",
+    "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting:sw-kuba",
     "start": "jest --watchAll",
     "test": "concurrently 'yarn run test:*'",
     "test:git-branch-is": "git-branch-is master",
