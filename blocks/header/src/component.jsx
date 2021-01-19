@@ -3,6 +3,8 @@ import Container from '@rex/container'
 import Logo from '@rex/logo'
 import style from './style.css'
 
+import Drops from '@rex/drops'
+
 export default (header) =>
   <header className={style.header}>
     <Container className={style.header__container}>
@@ -13,6 +15,6 @@ export default (header) =>
       <div className={style.header__services}>services</div>
       <div className={style.header__user}>user</div>
       <div className={style.header__bag}>bag</div>
-      <div className={style.header__region}>region</div>
+      <Drops name='region' subtitle='ative condições e' title='ofertas da sua região' />
     </Container>
   </header>
