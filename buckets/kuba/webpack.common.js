@@ -67,7 +67,7 @@ module.exports = {
         from: path.resolve(__dirname, 'template'),
         to: '.'
       }
-    ]),
+    ]), 
     new MiniCssExtractPlugin({
       attributes: {
         as: 'style',
