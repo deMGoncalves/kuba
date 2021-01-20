@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@drop/*": ["src/drop/*"]
+      "@header/*": ["src/*"]
     }
   },
   "extends": "../../tsconfig.json"

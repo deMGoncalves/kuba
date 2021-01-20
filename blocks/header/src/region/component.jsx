@@ -1,6 +1,6 @@
 import h from '@rex/htmlparser'
 import text from '@rex/text'
-import Drop from '@drop'
+import Drop from '@header/drop'
 import style from './style.css'
 
 export default (props) =>

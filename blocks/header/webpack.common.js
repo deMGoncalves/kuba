@@ -85,7 +85,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      '@drop': path.resolve(__dirname, 'src/drop')
+      '@header': path.resolve(__dirname, 'src')
     },
     extensions: ['.js', '.jsx']
   }
