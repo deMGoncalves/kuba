@@ -3,6 +3,7 @@
     "@rex/button": "1.0.0",
     "@rex/f": "1.0.0",
     "@rex/htmlparser": "1.0.0",
+    "@rex/icon": "1.0.0",
     "@rex/link": "1.0.0",
     "@rex/logo": "1.0.0"
   },
