@@ -5,7 +5,8 @@
     "@rex/htmlparser": "1.0.0",
     "@rex/icon": "1.0.0",
     "@rex/link": "1.0.0",
-    "@rex/logo": "1.0.0"
+    "@rex/logo": "1.0.0",
+    "@rex/text": "1.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.1",
