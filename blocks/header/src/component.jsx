@@ -1,8 +1,7 @@
 import h from '@rex/htmlparser'
 import Container from '@rex/container'
 import Logo from '@rex/logo'
-import text from '@rex/text'
-import Drop from '@drop'
+import Region from './region'
 import style from './style.css'
 
 export default (header) =>
@@ -15,10 +14,6 @@ export default (header) =>
       <div className={style.header__services}>services</div>
       <div className={style.header__user}>user</div>
       <div className={style.header__bag}>bag</div>
-      <Drop>
-        <text.Span slot='subtitle'>ative condições e</text.Span>
-        <text.P slot='title'>ofertas da sua região</text.P>
-      </Drop>
-      teste
+      <Region className={style.header__region} />
     </Container>
   </header>
