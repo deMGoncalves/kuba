@@ -28,7 +28,7 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "main": "src/index.js",
-  "name": "@rex/drops",
+  "name": "@rex/icon",
   "private": true,
   "scripts": {
     "start": "jest --watchAll",

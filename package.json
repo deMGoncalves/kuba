@@ -13,7 +13,7 @@
     "blocks/header/**/*.{css,js,jsx}": "yarn workspace @rex/header lint-staged --allow-empty",
     "elements/button/**/*.{css,js,jsx}": "yarn workspace @rex/button lint-staged --allow-empty",
     "elements/container/**/*.{css,js,jsx}": "yarn workspace @rex/container lint-staged --allow-empty",
-    "elements/drops/**/*.{css,js,jsx}": "yarn workspace @rex/drops lint-staged --allow-empty",
+    "elements/icon/**/*.{css,js,jsx}": "yarn workspace @rex/icon lint-staged --allow-empty",
     "elements/link/**/*.{css,js,jsx}": "yarn workspace @rex/link lint-staged --allow-empty",
     "elements/logo/**/*.{css,js,jsx}": "yarn workspace @rex/logo lint-staged --allow-empty",
     "elements/picture/**/*.{css,js,jsx}": "yarn workspace @rex/picture lint-staged --allow-empty",
