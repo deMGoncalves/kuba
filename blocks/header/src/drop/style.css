@@ -1,0 +1,76 @@
+.drops {
+  align-items: center;
+  border-color: transparent transparent var(--color-master-light) transparent;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  height: 48px;
+  padding: 0 var(--gutter);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .drops {
+    border-bottom-color: transparent;
+    padding: 0 var(--font-size-smaller);
+    width: auto;
+  }
+}
+
+.drops:hover {
+  border-color: var(--color-master-light);
+  border-style: dotted;
+}
+
+.drops::before,
+.drops::after {
+  content: '';
+}
+
+.drops::after {
+  /* background-image: url('./arrow-left.svg'); */
+  height: 16px;
+  margin-left: auto;
+  width: 16px;
+}
+
+@media (min-width: 768px) {
+  .drops::after {
+    margin: auto 0 7px 0;
+    transform: rotate(90deg);
+  }
+}
+
+.drops__title {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .drops__title {
+    max-width: 150px;
+  }
+}
+
+.drops__subtitle {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .drops__subtitle {
+    display: block;
+    font-size: var(--font-size-small);
+    font-weight: normal;
+  }
+}
+
+.drops__region::before {
+  background-color: red;
+  height: 32px;
+  margin-right: 5px;
+  width: 32px;
+}
