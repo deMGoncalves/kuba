@@ -6,5 +6,5 @@ export default (props, children) =>
   <section className={[style.drops, props.className]}>
     {children.subtitle}
     {children.title}
-    <icon.ArrowLeft className={style.drops__arrowLeft} slot='icon' />
+    <icon.ArrowLeft className={style.drops__arrowLeft} />
   </section>
