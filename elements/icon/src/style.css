@@ -1,11 +1,41 @@
 .icon {
-  min-width: var(--size);
-  padding-top: var(--size) !important;
-  width: var(--size) !important;
+  min-width: var(--size-medium);
+  padding-top: var(--size-medium) !important;
+  width: var(--size-medium) !important;
 }
 
 .icon[largest] {
   min-width: var(--size-largest);
   padding-top: var(--size-largest) !important;
   width: var(--size-largest) !important;
+}
+
+.icon[larger] {
+  min-width: var(--size-larger);
+  padding-top: var(--size-larger) !important;
+  width: var(--size-larger) !important;
+}
+
+.icon[large] {
+  min-width: var(--size-large);
+  padding-top: var(--size-large) !important;
+  width: var(--size-large) !important;
+}
+
+.icon[small] {
+  min-width: var(--size-small);
+  padding-top: var(--size-small) !important;
+  width: var(--size-small) !important;
+}
+
+.icon[smaller] {
+  min-width: var(--size-smaller);
+  padding-top: var(--size-smaller) !important;
+  width: var(--size-smaller) !important;
+}
+
+.icon[smallest] {
+  min-width: var(--size-smallest);
+  padding-top: var(--size-smallest) !important;
+  width: var(--size-smallest) !important;
 }
