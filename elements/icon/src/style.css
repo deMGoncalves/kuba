@@ -1,5 +1,11 @@
 .icon {
-  min-width: 16px;
-  padding-top: 16px !important;
-  width: 16px !important;
+  min-width: var(--size);
+  padding-top: var(--size) !important;
+  width: var(--size) !important;
+}
+
+.icon[largest] {
+  min-width: var(--size-largest);
+  padding-top: var(--size-largest) !important;
+  width: var(--size-largest) !important;
 }
