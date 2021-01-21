@@ -7,6 +7,7 @@
   display: grid;
   grid-template-areas: 'icon title arrow';
   grid-template-columns: 40px 1fr 20px;
+  height: 48px;
   padding: 0 var(--size);
 }
 
@@ -14,6 +15,7 @@
   .drop {
     border-bottom-color: transparent;
     grid-template-areas: 'icon subtitle arrow' 'icon title arrow';
+    height: 40px;
     padding: 0 var(--size-smaller);
   }
 }
