@@ -39,4 +39,11 @@
   --color-menu-dark: #191b1f;
   --color-menu: #202328;
   --color-menu-light: #646972;
+  --size-largest: 34px;
+  --size-larger: 26px;
+  --size-large: 21px;
+  --size-medium: 16px;
+  --size-small: 13px;
+  --size-smaller: 10px;
+  --size-smallest: 8px;
 }
