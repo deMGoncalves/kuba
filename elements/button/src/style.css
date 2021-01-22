@@ -2,7 +2,7 @@
   border: none;
   color: var(--color-master-lightest);
   display: inline-flex;
-  font-size: var(--font-size);
+  font-size: var(--size-medium);
   font-weight: 700;
   height: 40px;
   padding: 0 var(--gutter-larger);
