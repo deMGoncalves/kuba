@@ -1,7 +1,7 @@
 .link {
   color: var(--color-success);
   display: inline-flex;
-  font-size: var(--font-size);
+  font-size: var(--size-medium);
   font-weight: 700;
   place-items: center;
   text-decoration: none;
