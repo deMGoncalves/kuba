@@ -1,8 +1,9 @@
 import h from '@rex/htmlparser'
+import style from './style.css'
+
 import Container from '@rex/container'
 import Logo from '@rex/logo'
 import Region from './region'
-import style from './style.css'
 
 export default (header) =>
   <header className={style.header}>
