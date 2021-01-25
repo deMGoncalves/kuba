@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 var(--gutter);
+  max-width: 1440px;
+  padding: 0 var(--size-medium);
   width: 100%;
 }
