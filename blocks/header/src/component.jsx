@@ -1,10 +1,11 @@
 import h from '@rex/htmlparser'
+import style from './style.css'
+
 import Container from '@rex/container'
 import Logo from '@rex/logo'
 import Region from './region'
-import style from './style.css'
 
-export default (header) =>
+export default () =>
   <header className={style.header}>
     <Container className={style.header__container}>
       <div className={style.header__partner}>partner</div>
