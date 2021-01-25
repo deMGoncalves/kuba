@@ -33,19 +33,19 @@
   .header__partner {
     margin-left: var(--gutter);
     order: 4;
-    width: 150px;
+    width: 200px;
   }
 
   .header__region {
     margin-left: var(--gutter);
     order: 5;
-    width: 150px;
+    width: 200px;
   }
 
   .header__services {
     margin-left: var(--gutter);
     order: 6;
-    width: 150px;
+    width: 200px;
   }
 
   .header__bag {
@@ -58,20 +58,22 @@
     margin-left: 0;
   }
 
-  .header__services {
-    display: block;
-    order: 7;
-  }
-
   .header__user {
     display: block;
     margin-left: var(--gutter);
     order: 8;
-    width: 150px;
+    width: 200px;
   }
 
   .header__menu {
     order: 11;
     width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__services {
+    display: block;
+    order: 7;
   }
 }
