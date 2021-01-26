@@ -1,8 +1,11 @@
 import * as f from '@rex/f'
 import firebase from '@rex/firebase'
 
+const remoteConfig = firebase.remoteConfig()
+remoteConfig.settings.minimumFetchIntervalMillis = 3600
+
 export default new Proxy(
-  firebase.remoteConfig(),
+  remoteConfig,
   {
     get: (config, key) =>
       f.has(key, config)
