@@ -9,5 +9,4 @@ export default new Proxy({}, {
       <Picture {...props} className={[style.icon, props.className]}>
         <source srcSet={mapper[icon]} />
       </Picture>
-
 })
