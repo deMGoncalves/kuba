@@ -3,13 +3,16 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "concurrently": "^5.2.0",
+    "git-branch-is": "^3.1.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.2.11"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged --allow-empty"
+      "pre-commit": "lint-staged --allow-empty",
+      "pre-push": "yarn test"
     }
   },
   "lint-staged": {
@@ -44,7 +47,10 @@
   "name": "rex",
   "private": true,
   "scripts": {
-    "setup": "yarn install && yarn add husky -D -W"
+    "setup": "yarn install && yarn add husky -D -W",
+    "test": "concurrently 'yarn run test:*'",
+    "test:git-branch-is": "git-branch-is master",
+    "test:git-pull-origin": "git pull origin master"
   },
   "version": "1.0.0",
   "workspaces": {
