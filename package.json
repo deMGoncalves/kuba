@@ -1,11 +1,14 @@
 {
   "author": "Cleber de Moraes Gonçalves <cleber.engineer@gmail.com>",
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.2.11"
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged --allow-empty"
     }
   },
