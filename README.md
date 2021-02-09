@@ -7,9 +7,9 @@ Arquiteturar um software é como uma folha em branco, a liberdade de programar d
 
 Alcançado a maturidade necessária, minimizamos a quantidade de programadores necessários para desenvolver e sustentar um software. As mudanças se tornam cirurgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. Fazemos a coisa certa da forma errada, mas não faça a coisa errada da forma certa. As funcionalidades e flexibilidades são maximizadas.
 
-Kuba não é um Framework, muito menos uma Library (Embora muitos tentem ser). Diferente deles somos uma arquitetura simples e robusta. Autores de Frameworks conhecem seus próprios problemas e escreve códigos para resolvê-los - não os seus problemas.
+Kuba não é um Framework, muito menos uma Library (Embora muitos tentem ser). Diferente deles somos uma arquitetura simples, pequena e imperfeita. Autores de Frameworks conhecem seus próprios problemas e escreve códigos para resolvê-los - não os seus problemas.
 
-Mostraremos uma visão alternativa na construção de Arquiteturas JavaScript, reunimos convenções e padrões que usamos, e o mais importante, porque as escolhemos.
+Mostraremos uma visão além da programação na construção de Arquiteturas JavaScript, reunimos convenções e padrões que usamos, e o mais importante, porque as escolhemos.
 
 #### Conduta
 
