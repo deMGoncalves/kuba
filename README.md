@@ -9,7 +9,7 @@ Alcançado a maturidade necessária, minimizamos a quantidade de programadores n
 
 Kuba não é um Framework, muito menos uma Library (Embora muitos tentem ser). Diferente deles somos uma arquitetura simples e robusta. Autores de Frameworks conhecem seus próprios problemas e escreve códigos para resolvê-los - não os seus problemas.
 
-Mostraremos uma visão alternativa na construção de Arquitetura JavaScript, reunimos convenções e padrões que usamos, e o mais importante, porque as escolhemos.
+Mostraremos uma visão alternativa na construção de Arquiteturas JavaScript, reunimos convenções e padrões que usamos, e o mais importante, porque as escolhemos.
 
 #### Conduta
 
