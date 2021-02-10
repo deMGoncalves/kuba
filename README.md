@@ -1,15 +1,15 @@
 ### Kuba
-#### Simples, pequeno e imperfeito. Uma visão além da programação
+
+
+#### Manifesto
 
 Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outra história. Desenvolver um software de maneira correta é um desafio que dexamos lançado. Requer maturidade e conhecimentos que a marioria dos programadores ainda não tem.
 
 Arquiteturar um software é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio.
 
-Alcançado a maturidade necessária, minimizamos a quantidade de programadores para desenvolver e sustentar um software. As mudanças se tornam cirurgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
+Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um software. As mudanças se tornam cirurgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
 
-Kuba é diferente por ser uma arquitetura simples, pequena e imperfeita. Não somos um Framework e muito menos uma Library (Embora muitos tentem ser). Quem cria um Framework tenta resolver especificamente os próprios problemas, não os seus.
-
-Podemos fazer a coisa certa da forma errada, mas não faremos a coisa errada da forma certa - uma visão além da programação.
+Somos simples, pequeno e imperfeito. Uma visão além da programação
 
 #### Conduta
 
