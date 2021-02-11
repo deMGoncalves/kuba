@@ -1,5 +1,14 @@
 ### Kuba
 
+#### Objetivo
+
+> “Javascript é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio”.
+
+Somos uma estrutura (boilerplate) baseada nos mais variados conceitos de arquitetura de software, descomplicando o desenvolvimento de grandes aplicações Javascript e trazendo ao desenvolvedor o poder de tomada de decisões. Com um grande arsenal de features de apoio e recursos que exploram a alta performance e desempenho, totalmente manutenível e escalável, abrindo um grande leque de possibilidades.
+
+Se deseja enriquecer seus conhecimentos na linguagem e ser independente para auditar e estender suas aplicações, somos perfeitos para você, não temos um aglomerado de dependências a serem baixadas e o core está em seu domínio não nas mãos de outras corporações.
+
+Seja bem vindo ao Kuba, aqui olhamos para o Javascript com o devido respeito.
 
 #### Manifesto
 
