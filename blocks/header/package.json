@@ -21,8 +21,8 @@
   "private": true,
   "scripts": {
     "test": "concurrently 'yarn run test:*'",
-    "test:eslint": "yarn run eslint src/**/*.js --fix",
-    "test:stylelint": "yarn run stylelint src/**/*.css --fix --allow-empty-input",
+    "test:eslint": "yarn run eslint src/**/*.js ",
+    "test:stylelint": "yarn run stylelint src/**/*.css  --allow-empty-input",
     "test:jest": "jest --passWithNoTests"
   },
   "version": "1.0.0"
