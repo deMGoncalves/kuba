@@ -1,0 +1,42 @@
+{
+  "categories": ["beauty", "fashion"],
+	"dir" : "ltr",
+	"lang" : "Portuguese",
+  "name": "Kuba",
+	"scope" : "/",
+	"display" : "standalone",
+	"start_url" : "/?source=pwa",
+	"short_name" : "Kuba",
+	"theme_color" : "#fafafa",
+  "description": "Arquiteturar um software é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio",
+  "orientation" : "portrait",
+	"background_color" : "#fafafa",
+	"related_applications" : [],
+	"prefer_related_applications" : true,
+	"icons" : [
+    {
+      "src": "kuba.svg",
+      "type": "image/svg",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ],
+	"url" : "https://kuba.engineer",
+  "screenshots" : [],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Arquiteturar um software é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio",
+      "url": "/?source=pwa",
+      "icons": [
+        {
+          "src": "/kuba.png",
+          "type": "image/svg",
+          "sizes": "any"
+        }
+      ]
+    }
+  ],
+	"generated" : "true"
+}

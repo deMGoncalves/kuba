@@ -1,5 +1,5 @@
-import arity from '@rex/f/src/arity'
-import curry from '@rex/f/src/curry'
+import arity from './arity'
+import curry from './curry'
 
 const debounce = (handler, wait = 250, timeoutID) =>
   (...args) => {

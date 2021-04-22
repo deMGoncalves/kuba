@@ -1,9 +1,3 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./",
-    "paths": {
-      "@header/*": ["src/*"]
-    }
-  },
-  "extends": "../../tsconfig.json"
+  "extends": "@kuba/tsconfig/tsconfig.json"
 }

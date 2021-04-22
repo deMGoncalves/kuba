@@ -1,16 +1,6 @@
 .logo {
   cursor: pointer;
-  display: flex;
-  place-items: center;
-}
-
-.logo__picture {
-  cursor: pointer;
-  padding-top: 32px !important;
-  width: 32px !important;
-}
-
-.logo__heading {
-  letter-spacing: 1px;
-  margin-left: 10px;
+  min-width: 42px;
+  padding-top: 42px;
+  width: 42px;
 }

@@ -1,48 +1,42 @@
-import { paint } from '@rex/htmlparser'
-import * as f from '@rex/f'
+import { paint } from '@kuba/h'
+import jsonld from '@kuba/jsonld'
 import component from './component'
-import ghost from './kuba-ghost.png'
-import jsonld from '@rex/json-ld'
-import organization from './organization'
-import primary from './kuba.png'
+import data from './data'
+import kuba from './kuba.svg'
 
 @paint(component)
-@jsonld(organization)
+@jsonld(data)
 class Logo {
   #className
-  #color
+  #slot
 
   get className () {
-    return f.or(this.#className, '')
+    return this.#className
   }
 
-  get color () {
-    return f.test(/^ghost$/, this.#color)
-      ? 'ghost'
-      : 'primay'
+  get href () {
+    return __settings.app.url
   }
 
   get name () {
-    return 'Kuba'
+    return __settings.app.name
   }
 
-  get thumbnail () {
-    return f.test(/^ghost$/, this.color)
-      ? ghost
-      : primary
+  get slot () {
+    return this.#slot
   }
 
   get url () {
-    return `https://${location.hostname}`
+    return kuba
   }
 
   constructor (props) {
     this.#className = props.className
-    this.#color = props.color
+    this.#slot = props.slot
   }
 
   redirect () {
-    location.assign('/')
+    location.assign(this.href)
     return this
   }
 }

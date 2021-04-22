@@ -1,5 +1,5 @@
-import curry from '@rex/f/src/curry'
-import reverse from '@rex/f/src/reverse'
+import curry from './curry'
+import reverse from './reverse'
 
 const flip = (target) =>
   (...args) => target(...reverse(args))

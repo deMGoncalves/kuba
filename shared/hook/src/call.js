@@ -1,4 +1,4 @@
-import * as f from '@rex/f'
+import * as f from '@kuba/f'
 
 export default (advice) =>
   (Klass) =>

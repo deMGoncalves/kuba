@@ -1,0 +1,69 @@
+name: APP
+
+on:
+  push:
+    branches: [ master ]
+
+    paths:
+      - '.github/workflows/**'
+      - 'actions/**'
+      - 'blocks/**'
+      - 'buckets/app/**'
+      - 'elements/**'
+      - 'infra/**'
+      - 'models/**'
+      - 'pixels/**'
+      - 'shared/**'
+
+jobs:
+  eslint:
+    runs-on: Ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run yarn install
+      run: yarn install --ignore-scripts
+
+    - name: Run yarn eslint
+      run: yarn workspaces -p run test:eslint
+
+  stylelint:
+    runs-on: Ubuntu-20.04
+    needs: eslint
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run yarn install
+      run: yarn install --ignore-scripts
+    
+    - name: Run yarn jest
+      run: yarn workspaces -p run test:stylelint
+
+  test:
+    runs-on: Ubuntu-20.04
+    needs: stylelint
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run yarn install
+      run: yarn install --ignore-scripts
+    
+    - name: Run yarn jest
+      run: yarn workspaces -p run test:jest
+  
+  deploy:
+    runs-on: Ubuntu-20.04
+    needs: test
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run yarn install
+      run: yarn install --ignore-scripts
+    
+    - name: Run build
+      run: yarn workspace @kuba/app build
+
+    - name: Run firebase deploy
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      run: yarn workspace @kuba/app deploy

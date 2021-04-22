@@ -1,4 +1,4 @@
-import h from '@rex/htmlparser'
+import h from '@kuba/h'
 import style from './style.css'
 
 export default (props, children) =>

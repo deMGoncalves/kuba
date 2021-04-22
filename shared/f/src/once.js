@@ -1,5 +1,5 @@
-import always from '@rex/f/src/always'
-import curry from '@rex/f/src/curry'
+import always from './always'
+import curry from './curry'
 
 const once = (target) =>
   (...args) =>

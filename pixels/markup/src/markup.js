@@ -1,4 +1,5 @@
-import * as f from '@rex/f'
+import * as f from '@kuba/f'
+import hook from '@kuba/hook'
 import alternate from './alternate'
 import author from './author'
 import base from './base'
@@ -10,4 +11,4 @@ import robots from './robots'
 import themeColor from './themeColor'
 import title from './title'
 
-export default f.idle(f.chain(alternate, author, base, canonical, charset, description, icon, robots, themeColor, title))
+export default hook(f.chain(alternate, author, base, canonical, charset, description, icon, robots, themeColor, title))

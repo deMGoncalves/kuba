@@ -1,6 +1,6 @@
-import * as f from '@rex/f'
+import * as f from '@kuba/f'
 
-const render = async (node, ...children) =>
-  node.append(...(await Promise.all(children)))
+const render = (element, node) =>
+  element.append(node[f.magic('paint')]())
 
 export default f.curry(f.arity(2, f.frame(render)))

@@ -1,4 +1,1 @@
-module.exports = {
-  parser: false,
-  plugins: {}
-}
+module.exports = require('@kuba/postcssconfig')

@@ -1,67 +1,18 @@
 .button {
+  align-items: center;
   border: none;
-  color: var(--color-master-lightest);
+  border-radius: 18px;
   display: inline-flex;
-  font-size: var(--size-medium);
+  font-size: var(--size-small) !important;
   font-weight: 700;
-  height: 40px;
-  padding: 0 var(--gutter-larger);
-  place-items: center;
+  height: var(--size-largest);
+  justify-content: center;
+  line-height: 0.5;
+  padding: var(--size-smaller) var(--size-largest);
   text-decoration: none;
 }
 
-.button[master] {
-  background-color: var(--color-master);
-}
-
-.button[master]:hover {
-  background-color: var(--color-master-light);
-}
-
-.button[primary] {
-  background-color: var(--color-primary);
-}
-
-.button[primary]:hover {
-  background-color: var(--color-primary-light);
-}
-
-.button[complete] {
-  background-color: var(--color-complete);
-}
-
-.button[complete]:hover {
-  background-color: var(--color-complete-light);
-}
-
-.button[success] {
-  background-color: var(--color-success);
-}
-
-.button[success]:hover {
-  background-color: var(--color-success-light);
-}
-
-.button[warning] {
-  background-color: var(--color-warning);
-}
-
-.button[warning]:hover {
-  background-color: var(--color-warning-light);
-}
-
-.button[danger] {
-  background-color: var(--color-danger);
-}
-
-.button[danger]:hover {
-  background-color: var(--color-danger-light);
-}
-
-.button[info] {
-  background-color: var(--color-info);
-}
-
-.button[info]:hover {
-  background-color: var(--color-info-light);
+.button.master {
+  background-color: var(--color-master-dark);
+  color: var(--color-master-lightest);
 }

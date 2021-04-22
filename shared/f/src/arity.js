@@ -1,15 +1,5 @@
 import curry from './curry'
 
-/**
- * Redefine o numero de parametros de uma funcao
- *
- * @name arity
- * @function
- * @access public
- * @param {Number} n Numero de parametros
- * @param {Function} target Funcao que tera seus numero de parametros redefinido
- * @return {*} Retorna o valor que a funcao alvo retornara
- */
 const arity = (n, target) => {
   switch (n) {
     case 0: return () => target()

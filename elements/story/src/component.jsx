@@ -1,0 +1,10 @@
+import h from '@kuba/h'
+import Container from '@kuba/container'
+import style from './style.css'
+
+export default (props, children) =>
+  <section className={[style.story, props.className]}>
+    <Container className={style.container}>
+      {children}
+    </Container>
+  </section>

@@ -1,6 +1,7 @@
-import * as f from '@rex/f'
+import isDev from './isDevelopment'
+import isProd from './isProduction'
 
 export default {
-  isDev: f.equal(process.env.NODE_ENV, 'development'),
-  isProd: f.equal(process.env.NODE_ENV, 'production')
+  isDev,
+  isProd
 }

@@ -1,0 +1,16 @@
+.metro {
+  display: flex;
+  -ms-overflow-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.metro::-webkit-scrollbar {
+  display: none;
+}
+
+.metro__container {
+  display: inline-flex;
+  text-align: inherit;
+  white-space: nowrap;
+}

@@ -1,10 +1,8 @@
-import h from '@rex/htmlparser'
-import Picture from '@rex/picture'
+import h from '@kuba/h'
+import Picture from '@kuba/picture'
 import style from './style.css'
 
 export default (logo) =>
-  <div className={[style.logo, logo.className]} onClick={() => logo.redirect()}>
-    <Picture className={style.logo__picture}>
-      <source srcSet={logo.thumbnail} />
-    </Picture>
-  </div>
+  <Picture className={style.logo} alt={logo.name} onClick={() => logo.redirect()}>
+    <source srcSet={logo.url} />
+  </Picture>

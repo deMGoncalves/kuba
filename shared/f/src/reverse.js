@@ -1,4 +1,4 @@
-import curry from '@rex/f/src/curry'
+import curry from './curry'
 
 const reverse = (target) =>
   target.reverse()

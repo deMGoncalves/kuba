@@ -1,4 +1,4 @@
-import * as f from '@rex/f'
+import * as f from '@kuba/f'
 
 export default (advice) =>
   (_, __, descriptor) => {
@@ -6,7 +6,7 @@ export default (advice) =>
 
     f.assign(descriptor, {
       value () {
-        return joinPoint.apply(this, advice(...arguments))
+        return joinPoint.apply(this, advice.apply(this, arguments))
       }
     })
   }

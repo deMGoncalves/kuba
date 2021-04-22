@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "baseUrl": "./",
-    "paths": {
-      "@home/*": ["src/home/*"]
-    }
-  },
-  "extends": "../../tsconfig.json"
-}

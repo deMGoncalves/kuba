@@ -1,52 +1,56 @@
-.text {
-  color: var(--color-master);
-  font-size: var(--size-medium);
-}
-
 .text[largest] {
-  font-size: var(--size-largest);
+  font-size: var(--size-largest) !important;
 }
 
 .text[larger] {
-  font-size: var(--size-larger);
+  font-size: var(--size-larger) !important;
 }
 
 .text[large] {
-  font-size: var(--size-large);
+  font-size: var(--size-large) !important;
+}
+
+.text,
+.text[medium] {
+  font-size: var(--size-medium) !important;
 }
 
 .text[small] {
-  font-size: var(--size-small);
+  font-size: var(--size-small) !important;
 }
 
 .text[smaller] {
-  font-size: var(--size-smaller);
+  font-size: var(--size-smaller) !important;
 }
 
 .text[smallest] {
-  font-size: var(--size-smallest);
+  font-size: var(--size-smallest) !important;
 }
 
-.text[primary] {
-  color: var(--color-primary);
+.text[master][darkest] {
+  color: var(--color-master-darkest) !important;
 }
 
-.text[complete] {
-  color: var(--color-complete);
+.text[master][darker] {
+  color: var(--color-master-darker) !important;
 }
 
-.text[success] {
-  color: var(--color-success);
+.text[master][dark] {
+  color: var(--color-master-dark) !important;
 }
 
-.text[warning] {
-  color: var(--color-warning);
+.text[master] {
+  color: var(--color-master) !important;
 }
 
-.text[danger] {
-  color: var(--color-danger);
+.text[master][light] {
+  color: var(--color-master-light) !important;
 }
 
-.text[info] {
-  color: var(--color-info);
+.text[master][lighter] {
+  color: var(--color-master-lighter) !important;
+}
+
+.text[master][lightest] {
+  color: var(--color-master-lightest) !important;
 }

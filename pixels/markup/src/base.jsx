@@ -1,6 +1,7 @@
-import h from '@rex/h'
-import * as f from '@rex/f'
+import h from '@kuba/h'
+import * as f from '@kuba/f'
 import render from './render'
+import settings from './settings'
 
-export default (schema) =>
-  render(<base href={f.or(schema.base, '/')} />)
+export default (page) =>
+  render(<base href={f.or(page.base, settings.base, '/')} />)

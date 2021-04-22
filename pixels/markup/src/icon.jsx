@@ -1,9 +1,9 @@
-import h from '@rex/h'
-import * as f from '@rex/f'
+import h from '@kuba/h'
+import * as f from '@kuba/f'
 import render from './render'
 
-export default (schema) =>
+export default (page) =>
   f.forEach(
     ['icon', 'shortcut', 'apple-touch-icon'],
-    rel => render(<link href={f.or(schema.icon, '/favicon.ico')} rel={rel} type='image/png' />)
+    rel => render(<link href={f.or(page.icon, '/favicon.ico')} rel={rel} type='image/x-icon' />)
   )
