@@ -1,1 +1,1 @@
-module.exports = require('jestconfig')
+module.exports = require('@kuba/jestconfig')

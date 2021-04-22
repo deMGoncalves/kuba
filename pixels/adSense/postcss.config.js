@@ -1,1 +1,1 @@
-module.exports = require('postcssconfig')
+module.exports = require('@kuba/postcssconfig')

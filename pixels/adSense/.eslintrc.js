@@ -1,1 +1,1 @@
-module.exports = require('eslintrc')
+module.exports = require('@kuba/eslintrc')
