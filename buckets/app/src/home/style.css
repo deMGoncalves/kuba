@@ -1,7 +1,8 @@
 .home__blockquote {
-  display: inline-block;
+  display: block;
   line-height: 1.38;
-  margin: var(--size-largest) 0;
+  margin: var(--size-largest) auto;
+  max-width: 764px;
 }
 
 .home__sup {
