@@ -21,7 +21,7 @@ export default () =>
         <Box className={style.home__box} onClick={() => location.assign(urlFor('mindset'))}>
           <text.Data className={style.home__data} master darker medium>0</text.Data>
           <text.Strong className={style.home__strong} master darker large>Mindset</text.Strong>
-          <text.P className={style.home__p} master small>Acredito que os princípios de Arquitetura compartilhados têm o poder de fazer coisas incríveis para os desenvolvedores de produtos digitais</text.P>
+          <text.P className={style.home__p} master small>Acredito que os princípios de Arquitetura quando compartilhados têm o poder de fazer coisas incríveis para os desenvolvedores de produtos digitais</text.P>
         </Box>
         <Box className={style.home__box} onClick={() => location.assign(urlFor('guidelines'))}>
           <text.Data className={style.home__data} master darker medium>1</text.Data>
