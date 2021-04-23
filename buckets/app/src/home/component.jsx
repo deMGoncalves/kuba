@@ -8,11 +8,11 @@ export default () =>
   <Site>
     <Story className={style.home}>
       <text.P>
-        Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outra história. Desenvolver um software de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem.
+        "Javascript é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio."
       </text.P>
       <br />
       <text.P>
-        "Arquiteturar um software é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio."
+        Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outra história. Desenvolver um software de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem.
       </text.P>
       <br />
       <text.P>
