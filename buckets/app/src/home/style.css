@@ -3,6 +3,7 @@
   line-height: 1.38;
   margin: var(--size-largest) auto;
   max-width: 764px;
+  padding: var(--size-largest);
 }
 
 .home__sup {
