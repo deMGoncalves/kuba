@@ -6,10 +6,13 @@ import style from './style.css'
 
 export default () =>
   <Site>
-    <Story className={style.home}>
-      <text.P>
-        "Javascript é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio."
-      </text.P>
+    <Story className={style.home__story}>
+      <text.Blockquote className={style.home__blockquote} master darke largest>
+        <text.Sup className={style.home__sup} master darker>“</text.Sup>
+        Javascript é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio
+        <br />
+        <text.Cite className={style.home__cite} master darker small>- deMGoncalves</text.Cite>
+      </text.Blockquote>
       <br />
       <text.P>
         Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outra história. Desenvolver um software de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem.

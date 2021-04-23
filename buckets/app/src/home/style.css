@@ -1,3 +1,15 @@
-.home {
-  position: inherit;
+.home__blockquote {
+  display: inline-block;
+  line-height: 1.38;
+  margin: var(--size-largest) 0;
+}
+
+.home__sup {
+  font-size: 55px !important;
+  line-height: 0;
+}
+
+.home__cite {
+  display: inline-block;
+  font-weight: 700;
 }
