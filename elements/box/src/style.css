@@ -1,0 +1,6 @@
+.box {
+  background-color: var(--color-master-lighter);
+  border: 1px solid var(--color-master-light);
+  border-radius: 3px;
+  padding: var(--size-medium);
+}
