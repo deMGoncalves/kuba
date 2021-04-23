@@ -17,7 +17,37 @@
     {
       "src": "kuba.svg",
       "type": "image/svg",
-      "sizes": "any",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "kuba.svg",
+      "type": "image/svg",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "kuba.svg",
+      "type": "image/svg",
+      "sizes": "144x144",
+      "purpose": "maskable"
+    },
+    {
+      "src": "kuba.svg",
+      "type": "image/svg",
+      "sizes": "96x96",
+      "purpose": "any"
+    },
+    {
+      "src": "kuba.svg",
+      "type": "image/svg",
+      "sizes": "72x72",
+      "purpose": "any"
+    },
+    {
+      "src": "kuba.svg",
+      "type": "image/svg",
+      "sizes": "48x48",
       "purpose": "any"
     }
   ],
@@ -31,7 +61,7 @@
       "url": "/?source=pwa",
       "icons": [
         {
-          "src": "/kuba.png",
+          "src": "kuba.svg",
           "type": "image/svg",
           "sizes": "any"
         }
