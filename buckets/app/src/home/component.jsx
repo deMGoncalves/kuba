@@ -23,6 +23,21 @@ export default () =>
           <text.Strong className={style.home__strong} master darker large>Mindset</text.Strong>
           <text.P className={style.home__p} master small>Simples, pequeno e imperfeito. Uma visão além da programação</text.P>
         </Box>
+        <Box className={style.home__box} onClick={() => location.assign(urlFor('guidelines'))}>
+          <text.Data className={style.home__data} master darker medium>1</text.Data>
+          <text.Strong className={style.home__strong} master darker large>Guidelines</text.Strong>
+          <text.P className={style.home__p} master small>Princípios de design de alta qualidade para ajudar desenvolvedores a criar seus produtos de maneira bonita e eficiente</text.P>
+        </Box>
+        <Box className={style.home__box} onClick={() => location.assign(urlFor('structure'))}>
+          <text.Data className={style.home__data} master darker medium>2</text.Data>
+          <text.Strong className={style.home__strong} master darker large>Structure</text.Strong>
+          <text.P className={style.home__p} master small>Tudo que você precisa para instalar, configurar e desenvolver com a nossa estrutura</text.P>
+        </Box>
+        <Box className={style.home__box} onClick={() => location.assign(urlFor('components'))}>
+          <text.Data className={style.home__data} master darker medium>3</text.Data>
+          <text.Strong className={style.home__strong} master darker large>Components</text.Strong>
+          <text.P className={style.home__p} master small>Nosso projeto contém um conjunto de componentes que definem nossas interfaces</text.P>
+        </Box>
       </div>
     </Story>
   </Site>
