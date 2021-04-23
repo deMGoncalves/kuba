@@ -1,4 +1,6 @@
 import h from '@kuba/h'
+import Box from '@kuba/box'
+import { urlFor } from '@kuba/router'
 import Site from '@kuba/site'
 import Story from '@kuba/story'
 import text from '@kuba/text'
@@ -16,7 +18,11 @@ export default () =>
     </Story>
     <Story className={style.home__story}>
       <div className={style.home__boxes}>
-
+        <Box className={style.home__box} onClick={() => location.assign(urlFor('mindset'))}>
+          <text.Data className={style.home__data} master darker medium>0</text.Data>
+          <text.Strong className={style.home__strong} master darker large>Mindset</text.Strong>
+          <text.P className={style.home__p} master small>Simples, pequeno e imperfeito. Uma visão além da programação</text.P>
+        </Box>
       </div>
     </Story>
   </Site>
