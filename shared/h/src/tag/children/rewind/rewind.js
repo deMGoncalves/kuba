@@ -2,8 +2,9 @@ import * as f from '@kuba/f'
 import added from './added'
 import append from './append'
 import different from './different'
-import entity from './entity'
+import differentEntity from './differentEntity'
 import equal from './equal'
+import equalEntity from './equalEntity'
 import next from './next'
 import reflow from './reflow'
 import remove from './remove'
@@ -17,7 +18,8 @@ export default (children, other) => (
       [added, append(children)],
       [removed, remove(children)],
       [different, replace(children)],
-      [entity, next],
+      [differentEntity, replace(children)],
+      [equalEntity, next],
       [equal, reflow]
     ))
   )
