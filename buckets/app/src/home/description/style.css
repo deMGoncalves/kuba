@@ -1,0 +1,9 @@
+.description {
+  margin: var(--size-largest) auto;
+  max-width: 764px;
+  padding: var(--size-largest);
+}
+
+.description > div {
+  padding: var(--size-largest) var(--size-medium);
+}
