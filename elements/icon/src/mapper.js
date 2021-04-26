@@ -1,4 +1,5 @@
 export { default as Facebook } from './assets/facebook.svg'
+export { default as Github } from './assets/github.svg'
 export { default as Instagram } from './assets/instagram.svg'
 export { default as Linkedin } from './assets/linkedin.svg'
 export { default as Menu } from './assets/menu.svg'
