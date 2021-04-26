@@ -1,17 +1,3 @@
-.home__blockquote {
-  display: block;
-  line-height: 1.38;
-  margin: var(--size-largest) auto;
-  max-width: 764px;
-  padding: var(--size-largest);
-  position: relative;
-}
-
-.home__cite {
-  display: inline-block;
-  font-weight: 700;
-}
-
 .home__boxes {
   display: grid;
   gap: var(--size-medium);
