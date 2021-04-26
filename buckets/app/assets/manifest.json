@@ -15,45 +15,46 @@
 	"prefer_related_applications" : true,
 	"icons" : [
     {
-      "src": "kuba.svg",
-      "type": "image/svg",
-      "purpose": "maskable"
-    },
-    {
       "src": "kuba_512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
       "src": "kuba_192.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
       "src": "kuba_144.png",
       "type": "image/png",
       "sizes": "144x144",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
       "src": "kuba_96.png",
       "type": "image/png",
       "sizes": "96x96",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
       "src": "kuba_72.png",
       "type": "image/png",
       "sizes": "72x72",
-      "purpose": "any"
+      "purpose": "any maskable"
+    },
+    {
+      "src": "kuba_72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "any maskable"
     },
     {
       "src": "kuba_48.png",
       "type": "image/png",
       "sizes": "48x48",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ],
 	"url" : "https://kuba.engineer",
@@ -66,9 +67,10 @@
       "url": "/?source=pwa",
       "icons": [
         {
-          "src": "kuba.png",
+          "src": "kuba_144.png",
           "type": "image/png",
-          "sizes": "any"
+          "sizes": "144x144",
+          "purpose": "any maskable"
         }
       ]
     }
