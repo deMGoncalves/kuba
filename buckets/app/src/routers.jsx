@@ -12,4 +12,9 @@ router(/^\/page-not-found$/, async function notFound () {
   render(<NotFound />)
 })
 
+router(/^\/mindset$/, async function mindset () {
+  const { default: Mindset } = await import('@/mindset' /* webpackChunckName: "mindset" */)
+  render(<Mindset />)
+})
+
 router(/^\/([\S]+)/, () => location.assign(urlFor('notFound')))
