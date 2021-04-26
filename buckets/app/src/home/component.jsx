@@ -11,7 +11,7 @@ export default () =>
     <Story className={style.home__story}>
       <text.Blockquote className={style.home__blockquote} master largest>
         <text.Sup className={style.home__sup} master darker>“</text.Sup>
-        Javascript é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio
+        <text.Strong master largest>Kuba</text.Strong> é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o produto
         <br />
         <text.Cite className={style.home__cite} master darker small>- deMGoncalves</text.Cite>
       </text.Blockquote>
