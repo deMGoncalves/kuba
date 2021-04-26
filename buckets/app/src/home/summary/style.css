@@ -12,6 +12,7 @@
 
 .summary__box {
   cursor: pointer;
+  user-select: none;
 }
 
 .summary__data {
