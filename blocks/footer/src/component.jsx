@@ -7,7 +7,7 @@ import style from './style.css'
 export default (props) =>
   <footer {...props} className={[style.footer, props.className]}>
     <Container className={style.footer__container}>
-      <text.I className={style.footer__i} master small>Simples, pequeno e imperfeito. Uma visão além da programação.</text.I>
+      <text.I className={style.footer__i} master small>Aquele que substitui por ser melhor</text.I>
       <nav className={style.footer__nav}>
         <icon.Facebook className={style.footer__icon} large />
         <icon.Github className={style.footer__icon} large />
