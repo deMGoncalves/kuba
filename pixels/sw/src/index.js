@@ -8,4 +8,4 @@ f.and(
   agent.isUser,
   env.isProd,
   f.has('serviceWorker', navigator)
-) && f.chain(install, register)()
+) && f.chain(register, install)()
