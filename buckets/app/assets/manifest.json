@@ -15,6 +15,11 @@
 	"prefer_related_applications" : true,
 	"icons" : [
     {
+      "src": "kuba.svg",
+      "type": "image/svg",
+      "purpose": "maskable"
+    },
+    {
       "src": "kuba_512.png",
       "type": "image/png",
       "sizes": "512x512",
