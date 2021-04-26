@@ -1,8 +1,8 @@
 window
-  .addEventListener('beforeinstallprompt', function () {
-    // event.preventDefault()
-    // event.prompt()
-    // console.log('SW installed:', await event.userChoice)
+  .addEventListener('beforeinstallprompt', function (event) {
+    event.preventDefault()
+    event.prompt()
+    console.log('SW installed:', await event.userChoice)
   })
 
 window
