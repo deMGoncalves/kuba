@@ -21,6 +21,12 @@
       "purpose": "any"
     },
     {
+      "src": "kuba.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
       "src": "kuba.svg",
       "type": "image/svg",
       "sizes": "192x192",
