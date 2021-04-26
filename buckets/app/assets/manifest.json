@@ -30,7 +30,7 @@
       "src": "kuba.svg",
       "type": "image/svg",
       "sizes": "144x144",
-      "purpose": "maskable"
+      "purpose": "any"
     },
     {
       "src": "kuba.svg",
