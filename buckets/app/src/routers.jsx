@@ -17,6 +17,11 @@ router(/^\/guidelines$/, async function guidelines () {
   render(<Guidelines />)
 })
 
+router(/^\/structure$/, async function structure () {
+  const { default: Structure } = await import('@/structure' /* webpackChunckName: "structure" */)
+  render(<Structure />)
+})
+
 router(/^\/page-not-found$/, async function notFound () {
   const { default: NotFound } = await import('@/notFound' /* webpackChunkName: "notFound" */)
   render(<NotFound />)
