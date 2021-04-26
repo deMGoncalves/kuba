@@ -22,6 +22,11 @@ router(/^\/structure$/, async function structure () {
   render(<Structure />)
 })
 
+router(/^\/components$/, async function components () {
+  const { default: Components } = await import('@/components' /* webpackChunckName: "components" */)
+  render(<Components />)
+})
+
 router(/^\/page-not-found$/, async function notFound () {
   const { default: NotFound } = await import('@/notFound' /* webpackChunkName: "notFound" */)
   render(<NotFound />)
