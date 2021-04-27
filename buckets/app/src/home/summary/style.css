@@ -9,33 +9,3 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-.summary__box {
-  cursor: pointer;
-  user-select: none;
-}
-
-.summary__data {
-  display: block;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.summary__strong {
-  display: inline-block;
-  margin-top: var(--size-largest);
-}
-
-.summary__box:hover {
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-primary-dark);
-}
-
-.summary__box:hover .summary__data,
-.summary__box:hover .summary__strong {
-  color: var(--color-primary-lighter) !important;
-}
-
-.summary__box:hover .summary__p {
-  color: var(--color-primary-lighter) !important;
-}
