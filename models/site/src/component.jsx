@@ -1,5 +1,6 @@
 import h, { Fragment } from '@kuba/h'
 import Footer from '@kuba/footer'
+import Zone from '@kuba/zone'
 import style from './style.css'
 
 export default (_site, children) =>
@@ -8,5 +9,7 @@ export default (_site, children) =>
     <main className={style.site__main}>
       {children.main}
     </main>
-    <Footer className={style.site__footer} />
+    <Zone>
+      <Footer className={style.site__footer} />
+    </Zone>
   </>
