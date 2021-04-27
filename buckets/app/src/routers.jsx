@@ -12,9 +12,9 @@ router(/^\/mindset$/, async function mindset () {
   render(<Mindset />)
 })
 
-router(/^\/guidelines$/, async function guidelines () {
-  const { default: Guidelines } = await import('@/guidelines' /* webpackChunckName: "guidelines" */)
-  render(<Guidelines />)
+router(/^\/patterns$/, async function patterns () {
+  const { default: Patterns } = await import('@/patterns' /* webpackChunckName: "patterns" */)
+  render(<Patterns />)
 })
 
 router(/^\/structure$/, async function structure () {

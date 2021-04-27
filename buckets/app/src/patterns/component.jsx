@@ -10,7 +10,7 @@ export default () =>
     <Header className={style.guidelines__header} slot='header' />
     <Fragment slot='main'>
       <Story className={style.guidelines__story}>
-        <text.H1 className={style.guidelines__h1} master darker larger>Guidelines</text.H1>
+        <text.H1 className={style.guidelines__h1} master darker larger>Patterns</text.H1>
       </Story>
     </Fragment>
   </Site>
