@@ -1,4 +1,4 @@
-.cite__blockquote {
+.definition__blockquote {
   display: block;
   line-height: 1.38;
   margin: 0 auto;
@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.cite__author {
+.definition__cite {
   display: inline-block;
   font-weight: 700;
 }
