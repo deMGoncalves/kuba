@@ -1,0 +1,22 @@
+[
+  {
+    "description": "visões além da programação quando compartilhados têm o poder de fazer coisas incríveis para as equipes de produtos digitais",
+    "router": "mindset",
+    "title": "Mindset"
+  },
+  {
+    "description": "Padrões catálogados para ajudar desenvolvedores de produtos digitais a tornar suas soluções melhores",
+    "router": "patterns",
+    "title": "Patterns"
+  },
+  {
+    "description": "Tudo que você precisa para instalar, configurar e desenvolver produtos digitais com esta arquitetura",
+    "router": "structure",
+    "title": "Structure"
+  },
+  {
+    "description": "Conjunto de componentes que uso para criar minhas interfaces, inspirado na metodologia do Atomic Design",
+    "router": "components",
+    "title": "Components"
+  }
+]
