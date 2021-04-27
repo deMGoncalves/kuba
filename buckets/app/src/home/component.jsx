@@ -1,6 +1,7 @@
 import h, { Fragment } from '@kuba/h'
 import Header from '@kuba/header'
 import Site from '@kuba/site'
+import Zone from '@kuba/zone'
 import Definition from './definition'
 import Description from './description'
 import Summary from './summary'
@@ -12,6 +13,8 @@ export default () =>
     <Fragment slot='main'>
       <Definition className={style.home__definition} />
       <Summary className={style.home__summary} />
-      <Description className={style.home__description} />
+      <Zone>
+        <Description className={style.home__description} />
+      </Zone>
     </Fragment>
   </Site>
