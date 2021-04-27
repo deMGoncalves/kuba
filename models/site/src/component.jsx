@@ -9,7 +9,7 @@ export default (_site, children) =>
     <main className={style.site__main}>
       {children.main}
     </main>
-    <Zone>
+    <Zone className={style.site__zone}>
       <Footer className={style.site__footer} />
     </Zone>
   </>

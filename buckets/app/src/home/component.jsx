@@ -13,7 +13,7 @@ export default () =>
     <Fragment slot='main'>
       <Definition className={style.home__definition} />
       <Summary className={style.home__summary} />
-      <Zone>
+      <Zone className={style.home__zone}>
         <Description className={style.home__description} />
       </Zone>
     </Fragment>
