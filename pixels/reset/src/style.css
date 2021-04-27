@@ -58,11 +58,8 @@
 }
 
 *::-webkit-scrollbar {
-  appearance: none;
   -webkit-appearance: none;
-}
-
-*::-webkit-scrollbar {
+  appearance: none;
   width: var(--size-smallest);
 }
  
