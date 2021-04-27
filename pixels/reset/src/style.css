@@ -57,10 +57,6 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-*:focus {
-  outline: 0;
-}
-
 *::-webkit-scrollbar {
   appearance: none;
   -webkit-appearance: none;
@@ -83,6 +79,10 @@
 *::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary);
   border: 1px solid var(--color-primary-dark);
+}
+
+*:focus {
+  outline: 0;
 }
 
 body {
