@@ -2,12 +2,14 @@ import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import component from './component'
 import data from './data'
-import kuba from './kuba.svg'
+import Ghost from './kuba--ghost.svg'
+import Primary from './kuba.svg'
 
 @paint(component)
 @jsonld(data)
 class Logo {
   #className
+  #ghost
   #slot
 
   get className () {
@@ -27,11 +29,12 @@ class Logo {
   }
 
   get url () {
-    return kuba
+    return this.#ghost ? Ghost : Primary
   }
 
   constructor (props) {
     this.#className = props.className
+    this.#ghost = props.ghost
     this.#slot = props.slot
   }
 
