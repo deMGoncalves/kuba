@@ -9,7 +9,7 @@
 
 .footer__container {
   display: grid;
-  gap: var(--size-medium);
+  gap: var(--size-largest);
   padding: var(--size-small) var(--size-medium) var(--size-largest) var(--size-medium);
   width: 100%;
 }
