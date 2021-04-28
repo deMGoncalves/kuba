@@ -1,0 +1,14 @@
+.link {
+  align-items: center;
+  color: var(--color-complete);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: var(--size-small) !important;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-complete-dark);
+  text-decoration: underline;
+}
