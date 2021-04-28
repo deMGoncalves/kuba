@@ -3,17 +3,18 @@ import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
 import component from './component'
 import data from './data'
+import schema from './schema.json'
 
 @paint(component)
 @jsonld(data)
 @markup
 class Guidelines {
   get description () {
-    return __settings.app.description
+    return schema.description
   }
 
   get title () {
-    return `Guidelines - ${__settings.app.title}`
+    return schema.title
   }
 }
 

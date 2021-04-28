@@ -1,3 +1,13 @@
-.patterns {
-  position: inherit;
+.patterns__h1 {
+  display: block;
+  margin: 0 auto;
+  max-width: 764px;
+  padding: 0 var(--size-largest);
+}
+
+.patterns__p {
+  display: block;
+  margin: 0 auto;
+  max-width: 764px;
+  padding: var(--size-largest);
 }

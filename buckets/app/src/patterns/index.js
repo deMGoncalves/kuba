@@ -1,1 +1,1 @@
-export { default } from './guidelines'
+export { default } from './patterns'
