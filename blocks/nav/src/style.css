@@ -1,0 +1,10 @@
+.nav__button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  height: var(--size-largest);
+  justify-content: center;
+  width: var(--size-largest);
+}
