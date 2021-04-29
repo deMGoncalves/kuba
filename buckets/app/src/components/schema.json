@@ -2,57 +2,57 @@
   "description": "Conjunto de componentes que uso para criar minhas interfaces, inspirado na metodologia do Atomic Design",
   "summary": [
     {
-      "description": "",
+      "description": "Box é o componente mais abstrato sobre o qual todos os outros componentes da IU do Kuba são construídos. Por padrão, ele renderiza um elemento div",
       "router": "box",
       "title": "Box"
     },
     {
-      "description": "",
+      "description": "O componente Botão é usado para acionar uma ação ou evento, como enviar um formulário, abrir uma caixa de diálogo, cancelar uma ação ou executar uma operação de exclusão",
       "router": "button",
       "title": "Button"
     },
     {
-      "description": "",
+      "description": "Os contêineres são usados para restringir a largura de um conteúdo ao ponto de interrupção atual, mantendo-o fluido",
       "router": "container",
       "title": "Container"
     },
     {
-      "description": "",
+      "description": "Kuba oferece várias maneiras de usar ícones em seu projeto",
       "router": "icon",
       "title": "Icon"
     },
     {
-      "description": "",
+      "description": "Kuba oferece várias maneiras de usar logo em seu projeto",
       "router": "logo",
       "title": "Logo"
     },
     {
-      "description": "",
+      "description": "O controle deslizante é usado para permitir que os usuários façam seleções a partir de uma gama de valores",
       "router": "metro",
       "title": "Metro"
     },
     {
-      "description": "",
+      "description": "O componente picture é usado para exibir imagens",
       "router": "picture",
       "title": "Picture"
     },
     {
-      "description": "",
+      "description": "Uma caixa de diálogo é uma janela sobreposta na janela principal ou em outra janela de diálogo",
       "router": "side",
       "title": "Side"
     },
     {
-      "description": "",
+      "description": "Um component abstrato para separar conteúdos na páginas",
       "router": "story",
       "title": "Story"
     },
     {
-      "description": "",
+      "description": "O componente de texto é usado para renderizar texto e parágrafos em uma interface",
       "router": "text",
       "title": "Text"
     },
     {
-      "description": "",
+      "description": "Este componente controle o carregamento da página por zonas",
       "router": "zone",
       "title": "Zone"
     }
