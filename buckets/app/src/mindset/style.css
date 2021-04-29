@@ -1,13 +1,4 @@
-.mindset__h1 {
-  display: block;
-  margin: 0 auto;
-  max-width: 764px;
-  padding: 0 var(--size-largest);
-}
-
+.mindset__h1,
 .mindset__p {
-  display: block;
-  margin: 0 auto;
   max-width: 764px;
-  padding: var(--size-largest);
 }
