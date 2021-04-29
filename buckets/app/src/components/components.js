@@ -13,6 +13,10 @@ class Components {
     return schema.description
   }
 
+  get summary () {
+    return schema.summary
+  }
+
   get title () {
     return schema.title
   }
