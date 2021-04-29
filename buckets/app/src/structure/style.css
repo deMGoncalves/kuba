@@ -1,13 +1,4 @@
-.structure__h1 {
-  display: block;
-  margin: 0 auto;
-  max-width: 764px;
-  padding: 0 var(--size-largest);
-}
-
+.structure__h1,
 .structure__p {
-  display: block;
-  margin: 0 auto;
   max-width: 764px;
-  padding: var(--size-largest);
 }

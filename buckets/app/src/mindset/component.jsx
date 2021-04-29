@@ -10,12 +10,12 @@ export default (mindset) =>
   <Site className={style.mindset}>
     <Nav className={style.mindset__nav} slot='header' />
     <Fragment slot='main'>
-      <Story className={style.components__story}>
+      <Story className={style.mindset__story}>
         <text.H1 className={style.mindset__h1} master darker larger>{mindset.title}</text.H1>
         <text.P className={style.mindset__p} master small>{mindset.description}</text.P>
       </Story>
-      <Story className={style.components__story}>
-        <Summary className={style.components__summary} iterator={mindset.summary} />
+      <Story className={style.mindset__story}>
+        <Summary className={style.mindset__summary} iterator={mindset.summary} />
       </Story>
     </Fragment>
   </Site>

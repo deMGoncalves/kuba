@@ -1,5 +1,61 @@
 {
   "description": "Conjunto de componentes que uso para criar minhas interfaces, inspirado na metodologia do Atomic Design",
-  "summary": [],
+  "summary": [
+    {
+      "description": "",
+      "router": "box",
+      "title": "Box"
+    },
+    {
+      "description": "",
+      "router": "button",
+      "title": "Button"
+    },
+    {
+      "description": "",
+      "router": "container",
+      "title": "Container"
+    },
+    {
+      "description": "",
+      "router": "icon",
+      "title": "Icon"
+    },
+    {
+      "description": "",
+      "router": "logo",
+      "title": "Logo"
+    },
+    {
+      "description": "",
+      "router": "metro",
+      "title": "Metro"
+    },
+    {
+      "description": "",
+      "router": "picture",
+      "title": "Picture"
+    },
+    {
+      "description": "",
+      "router": "side",
+      "title": "Side"
+    },
+    {
+      "description": "",
+      "router": "story",
+      "title": "Story"
+    },
+    {
+      "description": "",
+      "router": "text",
+      "title": "Text"
+    },
+    {
+      "description": "",
+      "router": "zone",
+      "title": "Zone"
+    }
+  ],
   "title": "Components"
 }
