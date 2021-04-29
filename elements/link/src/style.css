@@ -34,7 +34,7 @@
   font-size: var(--size-smallest);
 }
 
-.link.master[darkest]{
+.link.master[darkest] {
   color: var(--color-master-darkest);
 }
 
