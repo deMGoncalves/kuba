@@ -1,0 +1,4 @@
+{
+  "description": "Box é o componente mais abstrato sobre o qual todos os outros componentes da IU do Kuba são construídos. Por padrão, ele renderiza um elemento div",
+  "title": "Box"
+}

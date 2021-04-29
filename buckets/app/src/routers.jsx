@@ -31,5 +31,3 @@ router(/^\/page-not-found$/, async function notFound () {
   const { default: NotFound } = await import('@/notFound' /* webpackChunkName: "notFound" */)
   render(<NotFound />)
 })
-
-router(/^\/([\S]+)/, () => location.assign(urlFor('notFound')))

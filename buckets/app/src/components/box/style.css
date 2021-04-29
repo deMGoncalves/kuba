@@ -1,0 +1,10 @@
+.box__h1,
+.box__p {
+  display: block;
+  margin: 0 auto;
+  max-width: 764px;
+}
+
+.box__p {
+  padding: var(--size-largest) 0;
+}
