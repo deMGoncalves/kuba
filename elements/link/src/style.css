@@ -1,14 +1,63 @@
 .link {
   align-items: center;
-  color: var(--color-complete);
   cursor: pointer;
   display: inline-flex;
-  font-size: var(--size-small) !important;
   justify-content: center;
-  text-decoration: none;
 }
 
-.link:hover {
-  color: var(--color-complete-dark);
-  text-decoration: underline;
+.link[largest] {
+  font-size: var(--size-largest) !important;
+}
+
+.link[larger] {
+  font-size: var(--size-larger) !important;
+}
+
+.link[large] {
+  font-size: var(--size-large) !important;
+}
+
+.link,
+.link[medium] {
+  font-size: var(--size-medium) !important;
+}
+
+.link[small] {
+  font-size: var(--size-small) !important;
+}
+
+.link[smaller] {
+  font-size: var(--size-smaller) !important;
+}
+
+.link[smallest] {
+  font-size: var(--size-smallest) !important;
+}
+
+.link.master[darkest]{
+  color: var(--color-master-darkest) !important;
+}
+
+.link.master[darker] {
+  color: var(--color-master-darker) !important;
+}
+
+.link.master[dark] {
+  color: var(--color-master-dark) !important;
+}
+
+.link.master {
+  color: var(--color-master) !important;
+}
+
+.link.master[light] {
+  color: var(--color-master-light) !important;
+}
+
+.link.master[lighter] {
+  color: var(--color-master-lighter) !important;
+}
+
+.link.master[lightest] {
+  color: var(--color-master-lightest) !important;
 }

@@ -1,13 +1,13 @@
 import h from '@kuba/h'
-import Link from '@kuba/link'
+import link from '@kuba/link'
 import { urlFor } from '@kuba/router'
 import style from './style.css'
 
 export default (props) =>
   <nav className={[style.nav, props.className]}>
-    <Link className={style.nav__link} href={urlFor('home')}>Home</Link>
-    <Link className={style.nav__link} href={urlFor('mindset')}>Mindset</Link>
-    <Link className={style.nav__link} href={urlFor('patterns')}>Patterns</Link>
-    <Link className={style.nav__link} href={urlFor('structure')}>Structure</Link>
-    <Link className={style.nav__link} href={urlFor('components')}>Components</Link>
+    <link.Master className={style.nav__link} href={urlFor('home')} darker small>Home</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('mindset')} darker small>Mindset</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('patterns')} darker small>Patterns</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('structure')} darker small>Structure</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('components')} darker small>Components</link.Master>
   </nav>
