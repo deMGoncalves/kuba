@@ -1,0 +1,33 @@
+.chapter {
+  cursor: pointer;
+  user-select: none;
+}
+
+.chapter:first-of-type {
+  grid-column: span 2;
+}
+
+.chapter__data {
+  display: block;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.chapter__strong {
+  display: inline-block;
+  margin-top: var(--size-largest);
+}
+
+.chapter:hover {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary-dark);
+}
+
+.chapter:hover .chapter__data,
+.chapter:hover .chapter__strong {
+  color: var(--color-primary-lighter) !important;
+}
+
+.chapter:hover .chapter__p {
+  color: var(--color-primary-lighter) !important;
+}
