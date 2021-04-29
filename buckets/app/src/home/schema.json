@@ -1,6 +1,7 @@
 [
   {
     "description": "Visões além da programação quando compartilhados têm o poder de fazer coisas incríveis para as equipes de produtos digitais",
+    "icone": "mindset.svg",
     "router": "mindset",
     "title": "Mindset"
   },
