@@ -8,7 +8,7 @@ export default (nav, children) =>
     <button className={style.nav__button} onClick={() => nav.toggle()}>
       <icon.Menu className={style.nav__icon} />
     </button>
-    <Side onClick={() => nav.toggle()} opened={nav.opened}>
+    <Side onClose={() => nav.toggle()} opened={nav.opened}>
       {children}
     </Side>
   </nav>
