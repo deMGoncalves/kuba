@@ -6,58 +6,58 @@
 }
 
 .link[largest] {
-  font-size: var(--size-largest) !important;
+  font-size: var(--size-largest);
 }
 
 .link[larger] {
-  font-size: var(--size-larger) !important;
+  font-size: var(--size-larger);
 }
 
 .link[large] {
-  font-size: var(--size-large) !important;
+  font-size: var(--size-large);
 }
 
 .link,
 .link[medium] {
-  font-size: var(--size-medium) !important;
+  font-size: var(--size-medium);
 }
 
 .link[small] {
-  font-size: var(--size-small) !important;
+  font-size: var(--size-small);
 }
 
 .link[smaller] {
-  font-size: var(--size-smaller) !important;
+  font-size: var(--size-smaller);
 }
 
 .link[smallest] {
-  font-size: var(--size-smallest) !important;
+  font-size: var(--size-smallest);
 }
 
 .link.master[darkest]{
-  color: var(--color-master-darkest) !important;
+  color: var(--color-master-darkest);
 }
 
 .link.master[darker] {
-  color: var(--color-master-darker) !important;
+  color: var(--color-master-darker);
 }
 
 .link.master[dark] {
-  color: var(--color-master-dark) !important;
+  color: var(--color-master-dark);
 }
 
 .link.master {
-  color: var(--color-master) !important;
+  color: var(--color-master);
 }
 
 .link.master[light] {
-  color: var(--color-master-light) !important;
+  color: var(--color-master-light);
 }
 
 .link.master[lighter] {
-  color: var(--color-master-lighter) !important;
+  color: var(--color-master-lighter);
 }
 
 .link.master[lightest] {
-  color: var(--color-master-lightest) !important;
+  color: var(--color-master-lightest);
 }
