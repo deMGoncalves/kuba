@@ -1,8 +1,9 @@
 import * as f from '@kuba/f'
+import isEntity from './isEntity'
 
 export default (current, other) =>
   f.and(
-    f.isNil(current.type),
-    f.isNil(other.type),
+    isEntity(current),
+    isEntity(other),
     f.equal(current, other)
   )

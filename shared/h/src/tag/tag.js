@@ -54,6 +54,10 @@ class Tag {
     return 1
   }
 
+  get [f.magic('isNode')] () {
+    return f.T()
+  }
+
   constructor (tagName, props, children) {
     this.#attributes = Attributes.create(props, this)
     this.#children = Children.create(children, this)

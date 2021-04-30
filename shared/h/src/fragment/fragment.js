@@ -1,3 +1,4 @@
+import * as f from '@kuba/f'
 import Children from '@kuba/h/src/tag/children'
 import paint from './paint'
 
@@ -16,7 +17,7 @@ class Fragment {
   }
 
   get name () {
-    return '#fragmanet'
+    return '#fragment'
   }
 
   get slot () {
@@ -25,6 +26,10 @@ class Fragment {
 
   get type () {
     return 11
+  }
+
+  get [f.magic('isNode')] () {
+    return f.T()
   }
 
   constructor (props, children) {

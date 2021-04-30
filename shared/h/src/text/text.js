@@ -23,6 +23,10 @@ class Text {
     return 3
   }
 
+  get [f.magic('isNode')] () {
+    return f.T()
+  }
+
   constructor (content) {
     this.#content = content
     this.#id = Symbol(this.name)
