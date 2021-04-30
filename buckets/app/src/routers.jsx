@@ -1,5 +1,5 @@
 import h from '@kuba/h'
-import router, { urlFor } from '@kuba/router'
+import router from '@kuba/router'
 import render from './render'
 
 router(/^\/$/, async function home () {

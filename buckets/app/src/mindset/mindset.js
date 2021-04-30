@@ -17,10 +17,6 @@ class Mindset {
     return schema.summary
   }
 
-  get summary () {
-    return schema.summary
-  }
-
   get title () {
     return schema.title
   }
