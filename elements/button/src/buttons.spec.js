@@ -21,3 +21,15 @@ test('O tipo do botao eh determinado apos o operado de acesso', function () {
   expect(h).toHaveBeenCalledTimes(1)
   expect(h).toHaveBeenCalledWith('a', { className: [undefined, undefined, undefined] })
 })
+
+test('As cores e tamanhos sao determinados por atributos', function () {
+  button.Master({ darker: true, small: true }, []) // <button.Master darker small />
+
+  expect(f.toLower).toHaveBeenCalled()
+  expect(f.toLower).toHaveBeenCalledTimes(1)
+  expect(f.toLower).toHaveBeenCalledWith('Master')
+
+  expect(h).toHaveBeenCalled()
+  expect(h).toHaveBeenCalledTimes(1)
+  expect(h).toHaveBeenCalledWith('a', { darker: true, small: true, className: [undefined, undefined, undefined] })
+})
