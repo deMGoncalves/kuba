@@ -1,5 +1,5 @@
 import h from '@kuba/h'
-import text from './text'
+import text from '@kuba/text'
 
 jest.mock('@kuba/h')
 
@@ -13,4 +13,12 @@ test('O html tag eh determinado apos o operado de acesso', function () {
   expect(h).toHaveBeenCalled()
   expect(h).toHaveBeenCalledTimes(1)
   expect(h).toHaveBeenCalledWith('P', { className: [undefined, undefined] })
+})
+
+test('As cores e tamanhos sao determinados por atributos', function () {
+  const p = text.P({ master: true, darker: true, small: true }, []) // <text.P master darker small />
+
+  expect(h).toHaveBeenCalled()
+  expect(h).toHaveBeenCalledTimes(1)
+  expect(h).toHaveBeenCalledWith('P', { master: true, darker: true, small: true, className: [undefined, undefined] })
 })
