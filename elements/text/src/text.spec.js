@@ -9,7 +9,7 @@ beforeEach(function () {
 
 test('O html tag eh determinado apos o operado de acesso', function () {
   text.P({}, []) // <text.P />
-  
+
   expect(h).toHaveBeenCalled()
   expect(h).toHaveBeenCalledTimes(1)
   expect(h).toHaveBeenCalledWith('P', { className: [undefined, undefined] })
