@@ -8,7 +8,7 @@ beforeEach(function () {
 })
 
 test('O html tag eh determinado apos o operado de acesso', function () {
-  const p = text.P({}, []) // <text.P />
+  text.P({}, []) // <text.P />
   
   expect(h).toHaveBeenCalled()
   expect(h).toHaveBeenCalledTimes(1)
@@ -16,7 +16,7 @@ test('O html tag eh determinado apos o operado de acesso', function () {
 })
 
 test('As cores e tamanhos sao determinados por atributos', function () {
-  const p = text.P({ master: true, darker: true, small: true }, []) // <text.P master darker small />
+  text.P({ master: true, darker: true, small: true }, []) // <text.P master darker small />
 
   expect(h).toHaveBeenCalled()
   expect(h).toHaveBeenCalledTimes(1)
