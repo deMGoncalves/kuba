@@ -19,7 +19,8 @@ module.exports = {
     }
   },
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1'
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '\\.css$': '<rootDir>/__mocks__/style.js'
   },
   preset: 'ts-jest',
   testEnvironment: 'node',
