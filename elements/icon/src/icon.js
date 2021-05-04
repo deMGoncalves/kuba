@@ -10,4 +10,3 @@ export default new Proxy({}, {
         <source srcSet={mapper[icon]} />
       </Picture>
 })
-
