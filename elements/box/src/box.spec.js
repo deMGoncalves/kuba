@@ -7,7 +7,7 @@ beforeEach(function () {
   h.mockClear()
 })
 
-test('Os atributos sao extendido no tag div do container', function () {
+test('Os atributos sao extendido no tag div do box', function () {
   box({ slot: 'main' }, [])
 
   expect(h).toHaveBeenCalled()
