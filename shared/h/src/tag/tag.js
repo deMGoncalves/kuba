@@ -6,6 +6,7 @@ import Events from './events'
 import notCustomElement from './notCustomElement'
 import paint from './paint'
 import rewind from './rewind'
+import swapTag from './swapTag'
 
 @paint
 class Tag {
@@ -70,6 +71,7 @@ class Tag {
   }
 
   reflow (other) {
+    swapTag(this, other)
     rewind(this, other)
     notCustomElement(this) && (
       this.children.reflow(other.children)
