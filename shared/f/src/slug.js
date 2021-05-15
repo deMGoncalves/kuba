@@ -1,7 +1,7 @@
 export default (value) =>
-  value
+  value && value.toString()
+    .trim()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
-    .replace(/([^\w]+|\s+)/g, '-')
-    .replace(/-+/g, '-')
-    .replace(/(^-+|-+$)/, '')
+    .replace(/[^a-zA-Z0-9]+/g, '-')
+    .toLowerCase()
