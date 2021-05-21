@@ -1,11 +1,11 @@
 import * as f from '@kuba/f'
 import event from './event'
 import listener from './listener'
-import offScreen from './offScreen'
+import onScreen from './onScreen'
 
 const lazyLoad = (node, handler) => (
   window.addEventListener(event, (node[listener] = f.debounce(() =>
-    f.not(offScreen(node)) && (
+    onScreen(node) && (
       window.removeEventListener(event, node[listener]),
       handler()
     )
