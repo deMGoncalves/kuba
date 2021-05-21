@@ -8,7 +8,7 @@
 	"start_url" : "/?source=pwa",
 	"short_name" : "Kuba",
 	"theme_color" : "#fafafa",
-  "description": "Arquiteturar um software é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio",
+  "description": "Kuba é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o produto",
   "orientation" : "portrait",
 	"background_color" : "#fafafa",
 	"related_applications" : [],
@@ -63,7 +63,7 @@
     {
       "name": "Home",
       "short_name": "Home",
-      "description": "Arquiteturar um software é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o negócio",
+      "description": "Kuba é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o produto",
       "url": "/?source=pwa",
       "icons": [
         {
