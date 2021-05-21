@@ -9,4 +9,3 @@ export default () =>
       <text.H1 className={style.home__text} master darker largest>kuba</text.H1>
     </Fragment>
   </Site>
-
