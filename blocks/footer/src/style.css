@@ -3,6 +3,7 @@
   border-top: 1px solid var(--color-master-light);
   position: relative;
 }
+
 .footer {
   margin-top: var(--size-largest);
 }
