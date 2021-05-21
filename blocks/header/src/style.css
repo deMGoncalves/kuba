@@ -14,7 +14,3 @@
     flex-wrap: wrap;
   }
 }
-
-.header__search {
-  margin-left: var(--size-smaller);
-}

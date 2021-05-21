@@ -1,6 +1,6 @@
 import h, { Fragment } from '@kuba/h'
 import Site from '@kuba/site'
-import text from '@kuga/text'
+import text from '@kuba/text'
 import style from './style.css'
 
 export default () =>

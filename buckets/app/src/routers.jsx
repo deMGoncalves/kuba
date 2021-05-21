@@ -1,5 +1,5 @@
 import h from '@kuba/h'
-import router from '@kuba/router'
+import router, { urlFor } from '@kuba/router'
 import render from './render'
 
 router(/^\/$/, async function home () {
@@ -7,7 +7,10 @@ router(/^\/$/, async function home () {
   render(<Home />)
 })
 
-router(/^\/page-not-found$/, async function notFound () {
+router(/^\/not-found$/, async function notFound () {
   const { default: NotFound } = await import('@/notFound' /* webpackChunkName: "notFound" */)
   render(<NotFound />)
 })
+
+router(/^\/.+/, () =>
+  location.assign(urlFor('notFound')))
