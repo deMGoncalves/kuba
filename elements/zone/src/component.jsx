@@ -1,8 +1,8 @@
-import h, { Hide } from '@kuba/h'
+import h, { Show } from '@kuba/h'
 
 export default (zone, children) =>
   <div className={zone.className} slot={zone.slot}>
-    <Hide if={zone.offScreen}>
+    <Show if={zone.onScreen}>
       {children}
-    </Hide>
+    </Show>
   </div>

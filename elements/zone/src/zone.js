@@ -1,21 +1,22 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import schedule from '@kuba/schedule'
 import component from './component'
-import schedules from './schedules'
+import scroll from './scroll'
 
 @paint(component)
-@schedules
+@schedule(scroll)
 class Zone {
   #className
-  #offScreen
+  #onScreen
   #slot
 
   get className () {
     return this.#className
   }
 
-  get offScreen () {
-    return this.#offScreen
+  get onScreen () {
+    return this.#onScreen ??= f.F()
   }
 
   get slot () {
@@ -25,12 +26,11 @@ class Zone {
   constructor (props) {
     this.#className = props.className
     this.#slot = props.slot
-    this.#offScreen = f.T()
   }
 
   @repaint
   render () {
-    this.#offScreen = f.F()
+    this.#onScreen = f.T()
     return this
   }
 }
