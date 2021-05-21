@@ -3,6 +3,7 @@
   -ms-overflow-style: none;
   overflow-x: auto;
   scrollbar-width: none;
+  width: 100%;
 }
 
 .metro::-webkit-scrollbar {
