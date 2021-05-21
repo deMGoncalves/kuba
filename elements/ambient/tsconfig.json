@@ -1,0 +1,19 @@
+{
+  "extends": "@kuba/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "dist",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "plugins": [
+      { "transform": "typescript-transform-paths" }
+    ]
+  },
+  "exclude": [
+    "src/**/*.spec.js"
+  ],
+  "include": [
+    "src/**/index.js"
+  ]
+}
