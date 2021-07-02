@@ -1,5 +1,5 @@
-export default (value) =>
-  value && value.toString()
+export default (string) =>
+  string.toString()
     .trim()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')

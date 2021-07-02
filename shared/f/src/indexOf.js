@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const indexOf = (x, y) =>
-  x.indexOf(y)
+const indexOf = (array, x) =>
+  array.indexOf(x)
 
 export default curry(indexOf)

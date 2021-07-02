@@ -1,22 +1,22 @@
 import oneParameter from './oneParameter'
 import { isGap } from '@kuba/f/src/gap'
 
-export default (target) =>
-  function callback (a0, a1) {
+export default (func) =>
+  function callback (a, b) {
     switch (arguments.length) {
       case 0:
         return callback
       case 1:
-        return isGap(a0)
+        return isGap(a)
           ? callback
-          : oneParameter((...args) => target(a0, ...args))
+          : oneParameter((...args) => func(a, ...args))
       default:
-        return isGap(a0) && isGap(a1)
+        return isGap(a) && isGap(b)
           ? callback
-          : isGap(a0)
-            ? oneParameter((_a0, ...args) => target(_a0, a1, ...args))
-            : isGap(a1)
-              ? oneParameter((...args) => target(a0, ...args))
-              : target(...arguments)
+          : isGap(a)
+            ? oneParameter((_a, ...args) => func(_a, b, ...args))
+            : isGap(b)
+              ? oneParameter((...args) => func(a, ...args))
+              : func(...arguments)
     }
   }

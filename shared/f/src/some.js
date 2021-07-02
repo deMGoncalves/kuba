@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const some = (array, handler) =>
-  array.some(handler)
+const some = (array, func) =>
+  array.some(func)
 
 export default curry(some)

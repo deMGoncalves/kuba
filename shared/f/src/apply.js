@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const apply = (target, args) =>
-  target(...args)
+const apply = (func, args) =>
+  func(...args)
 
 export default curry(apply)

@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const concat = (target, values) =>
-  target.concat(values)
+const concat = (x, y) =>
+  x.concat(y)
 
 export default curry(concat)

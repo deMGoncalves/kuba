@@ -1,4 +1,11 @@
 import * as f from '@kuba/f'
 
 export default (props) =>
-  f.join(f.flatten(f.concat([], f.or(props.className, []))), ' ')
+  f
+    .from(props.className)
+    .pipe(f.or(f.__, []))
+    .pipe(f.concat([]))
+    .pipe(f.filter(f.__, f.truthy))
+    .pipe(f.flatten)
+    .pipe(f.join(f.__, ' '))
+    .done()

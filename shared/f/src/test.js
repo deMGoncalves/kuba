@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const test = (pattern, target) =>
-  pattern.test(target)
+const test = (regex, x) =>
+  regex.test(x)
 
 export default curry(test)

@@ -1,52 +1,52 @@
 import * as f from '@kuba/f'
 import mapper from './mapper'
+import reflow from './reflow'
 import paint from './paint'
-import repaint from './repaint'
-import rewind from './rewind'
 
-@paint
 class Children {
   #list
-  #target
+  #parent
 
   get list () {
     return this.#list
   }
 
-  get target () {
-    return this.#target
-  }
-
-  constructor (list, target) {
+  constructor (list, parent) {
     this.#list = list
-    this.#target = target
+    this.#parent = parent
   }
 
-  @repaint.append
-  append (other) {
-    f.push(this.list, other)
+  append (child) {
+    f.push(this.list, child)
+    this.#parent.append(paint(child))
     return this
   }
 
-  @repaint.replace
-  replace (current, other) {
-    f.splice(this.list, f.indexOf(this.list, current), 1, other)
+  paint () {
+    f.forEach(this.list, (child) =>
+      this.#parent.append(paint(child)))
     return this
   }
 
-  reflow (other) {
-    rewind(this, other)
+  replace (current, child) {
+    f.replace(this.list, current, child)
+    this.#parent.replaceChild(current.element, paint(child))
     return this
   }
 
-  @repaint.remove
-  remove (child) {
-    f.splice(this.list, f.indexOf(this.list, child), 1)
+  reflow (child) {
+    reflow(this, child)
     return this
   }
 
-  static create (list, target) {
-    return new Children(mapper(list), target)
+  remove (current) {
+    f.remove(this.list, current)
+    current.remove()
+    return this
+  }
+
+  static create (list, parent) {
+    return new Children(mapper(list), parent)
   }
 }
 

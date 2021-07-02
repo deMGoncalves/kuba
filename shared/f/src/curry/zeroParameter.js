@@ -1,4 +1,4 @@
-export default (target) =>
+export default (func) =>
   function () {
-    return target(...arguments)
+    return func(...arguments)
   }

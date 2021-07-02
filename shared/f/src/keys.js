@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const keys = (target) =>
-  Object.keys(target)
+const keys = (object) =>
+  Object.keys(object)
 
 export default curry(keys)

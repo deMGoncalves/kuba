@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const forEach = (target, callback) =>
-  target.forEach(callback)
+const forEach = (array, func) =>
+  array.forEach(func)
 
 export default curry(forEach)

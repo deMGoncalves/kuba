@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const reverse = (target) =>
-  target.reverse()
+const reverse = (array) =>
+  array.reverse()
 
 export default curry(reverse)

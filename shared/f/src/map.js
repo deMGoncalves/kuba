@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const map = (target, callback) =>
-  target.map(callback)
+const map = (array, func) =>
+  array.map(func)
 
 export default curry(map)

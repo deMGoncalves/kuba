@@ -2,8 +2,8 @@ import arity from './arity'
 import curry from './curry'
 import map from './map'
 
-const chain = (...targets) =>
+const chain = (...array) =>
   (...args) =>
-    map(targets, (target) => target(...args))
+    map(array, (func) => func(...args))
 
 export default curry(arity(1, chain))

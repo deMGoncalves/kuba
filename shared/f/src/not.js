@@ -1,2 +1,2 @@
-export default (target) =>
-  !target
+export default (x) =>
+  !x

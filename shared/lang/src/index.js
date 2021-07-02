@@ -1,13 +1,13 @@
-import * as f from '@kuba/f'
-import cookie from '@kuba/cookie'
+import changeTo from './changeTo'
+import getValue from './getValue'
 
 export default {
   get value () {
-    return f.or(cookie.getItem('kuba.lang'), __settings.lang.fallback)
+    return getValue()
   },
 
   changeTo (value) {
-    cookie.setItem('kuba.lang', value)
+    changeTo(value)
     return this
   }
 }

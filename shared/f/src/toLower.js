@@ -1,2 +1,2 @@
-export default (target) =>
-  target.toLowerCase()
+export default (string) =>
+  string.toLowerCase()

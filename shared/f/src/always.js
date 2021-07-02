@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const always = (value) =>
-  () => value
+const always = (x) =>
+  () => x
 
 export default curry(always)

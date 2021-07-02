@@ -2,38 +2,38 @@ import oneParameter from './oneParameter'
 import twoParameters from './twoParameters'
 import { isGap } from '@kuba/f/src/gap'
 
-export default (target) =>
-  function callback (a0, a1, a2) {
+export default (func) =>
+  function callback (a, b, c) {
     switch (arguments.length) {
       case 0:
         return callback
       case 1:
-        return isGap(a0)
+        return isGap(a)
           ? callback
-          : twoParameters((...args) => target(a0, ...args))
+          : twoParameters((...args) => func(a, ...args))
       case 2:
-        return isGap(a0) && isGap(a1)
+        return isGap(a) && isGap(b)
           ? callback
-          : isGap(a0)
-            ? twoParameters((_a0, ...args) => target(_a0, a1, ...args))
-            : isGap(a1)
-              ? twoParameters((...args) => target(a0, ...args))
-              : oneParameter((...args) => target(a0, a1, ...args))
+          : isGap(a)
+            ? twoParameters((_a, ...args) => func(_a, b, ...args))
+            : isGap(b)
+              ? twoParameters((...args) => func(a, ...args))
+              : oneParameter((...args) => func(a, b, ...args))
       default:
-        return isGap(a0) && isGap(a1) && isGap(a2)
+        return isGap(a) && isGap(b) && isGap(c)
           ? callback
-          : isGap(a0) && isGap(a1)
-            ? twoParameters((_a0, _a1, ...args) => target(_a0, _a1, a2, ...args))
-            : isGap(a0) && isGap(a2)
-              ? twoParameters((_a0, ...args) => target(_a0, a1, ...args))
-              : isGap(a1) && isGap(a2)
-                ? twoParameters((...args) => target(a0, ...args))
-                : isGap(a0)
-                  ? oneParameter((_a0, ...args) => target(_a0, a1, a2, ...args))
-                  : isGap(a1)
-                    ? oneParameter((_a1, ...args) => target(a0, _a1, a2, ...args))
-                    : isGap(a2)
-                      ? oneParameter((...args) => target(a0, a1, ...args))
-                      : target(...arguments)
+          : isGap(a) && isGap(b)
+            ? twoParameters((_a, _b, ...args) => func(_a, _b, c, ...args))
+            : isGap(a) && isGap(c)
+              ? twoParameters((_a, ...args) => func(_a, b, ...args))
+              : isGap(b) && isGap(c)
+                ? twoParameters((...args) => func(a, ...args))
+                : isGap(a)
+                  ? oneParameter((_a, ...args) => func(_a, b, c, ...args))
+                  : isGap(b)
+                    ? oneParameter((_b, ...args) => func(a, _b, c, ...args))
+                    : isGap(c)
+                      ? oneParameter((...args) => func(a, b, ...args))
+                      : func(...arguments)
     }
   }

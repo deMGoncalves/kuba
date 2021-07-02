@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const filter = (target, predicate) =>
-  target.filter(predicate)
+const filter = (array, func) =>
+  array.filter(func)
 
 export default curry(filter)

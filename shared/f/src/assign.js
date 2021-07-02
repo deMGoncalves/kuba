@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const assign = (target, descriptor) =>
-  Object.assign(target, descriptor)
+const assign = (x, y) =>
+  Object.assign(x, y)
 
 export default curry(assign)

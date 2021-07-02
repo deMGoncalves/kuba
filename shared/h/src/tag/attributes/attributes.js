@@ -1,21 +1,14 @@
 import * as f from '@kuba/f'
-import convertToList from './convertToList'
 import mapper from './mapper'
-import paint from './paint'
-import repaint from './repaint'
-import rewind from './rewind'
+import reflow from './reflow'
+import toList from './toList'
 
-@paint
 class Attributes {
   #map
   #target
 
   get list () {
-    return convertToList(this.#map)
-  }
-
-  get target () {
-    return this.#target
+    return toList(this.#map)
   }
 
   constructor (map, target) {
@@ -23,22 +16,25 @@ class Attributes {
     this.#target = target
   }
 
-  reflow (other) {
-    rewind(this, other)
+  paint () {
+    f.forEach(this.list, ({ key, value }) => this.#target.setAttribute(key, value))
     return this
   }
 
-  @repaint
-  removeItem (key) {
+  reflow (attributes) {
+    reflow(this, attributes)
+    return this
+  }
+
+  removeAttribute (key) {
     this.#map.remove(key)
+    this.#target.removeAttribute(key)
     return this
   }
 
-  @repaint
-  setItem (key, value) {
-    f.and(key, value) && (
-      this.#map.set(key, value)
-    )
+  setAttribute (key, value) {
+    this.#map.set(key, value),
+    this.#target.setAttribute(key, value)
     return this
   }
 

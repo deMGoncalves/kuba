@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const repeat = (target, n) =>
-  n ? Array(n).toString().split(',').map(() => target) : []
+const repeat = (value, n) =>
+  n ? Array(n).toString().split(',').map(() => value) : []
 
 export default curry(repeat)

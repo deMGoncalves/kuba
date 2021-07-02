@@ -1,7 +1,6 @@
-const gap = (new Date()).getTime().toString(32)
-
-const isGap = (target) =>
-  gap === target
+const gap = Symbol('__')
+const isGap = (value) =>
+  gap === value
 
 export default gap
 export {

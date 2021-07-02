@@ -2,8 +2,8 @@ export default (value) => (
   {
     done: () => value,
 
-    pipe (functor) {
-      value = functor(value)
+    pipe (func) {
+      value = func(value)
       return this
     }
   }

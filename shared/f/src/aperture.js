@@ -1,14 +1,17 @@
-import arity from './arity'
 import curry from './curry'
 import len from './len'
 import push from './push'
 import splice from './splice'
 
-const aperture = (x, y, z = []) => {
-  y = [...y]
+const aperture = (n, array) => {
+  const result = []
+  array = [...array]
 
-  while (len(y)) { push(z, splice(y, 0, x)) }
-  return z
+  while (len(array)) {
+    push(result, splice(array, 0, n))
+  }
+
+  return result
 }
 
-export default curry(arity(2, aperture))
+export default curry(aperture)

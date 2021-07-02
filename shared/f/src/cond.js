@@ -1,10 +1,11 @@
+import some from './some'
 import T from './T'
 
-export default (...pairs) =>
+export default (...array) =>
   (...args) => {
     let result
 
-    pairs.some(([can, process]) =>
+    some(array, ([can, process]) =>
       can(...args) && T(result = process(...args)))
 
     return result

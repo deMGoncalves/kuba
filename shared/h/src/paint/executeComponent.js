@@ -1,17 +1,13 @@
 import * as f from '@kuba/f'
 
 export default function (componentRef, entity, children) {
-  const element = componentRef(entity, children)
-
-  f.assign(element, {
-    [f.magic('entity')]: entity
-  })
+  const tag = componentRef(entity, children)
 
   f.assign(entity, {
-    [f.magic('element')]: element,
+    [f.magic('tag')]: tag,
     [f.magic('reflow')]: f.frame(() =>
-      entity[f.magic('element')].reflow(componentRef(entity, children)))
+      entity[f.magic('tag')].reflow(componentRef(entity, children)))
   })
 
-  return element
+  return tag
 }

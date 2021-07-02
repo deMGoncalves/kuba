@@ -1,8 +1,8 @@
 import always from './always'
 import curry from './curry'
 
-const once = (target) =>
+const once = (func) =>
   (...args) =>
-    always(target(...args))(target = always(undefined))
+    always(func(...args))(func = always(undefined))
 
 export default curry(once)

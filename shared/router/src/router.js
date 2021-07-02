@@ -1,18 +1,16 @@
 import * as f from '@kuba/f'
-import pathname from './pathname'
+import match from './match'
+import render from './render'
 import urls from './urls'
 
-const router = (path, listener) => (
+export default function (path, listener) {
+  const { name } = listener
+  const params = new RegExp(f.replace(path, /(:)\w+/g, '$1([a-z0-9]+)'), 'i')
+  const router = new RegExp(`^${f.replace(path, /:\w+/g, '([a-z0-9]+)')}$`, 'i')
+
   f.assign(urls, {
-    [listener.name]: f.replace(String(path), /^\/|\^|\\|\$|\/$/g, '')
-  }),
+    [name]: { listener, params, path, router }
+  })
 
-  router.pristine && (
-    f.test(path, pathname) && (
-      listener(...f.slice(f.exec(path, pathname), 1)),
-      f.assign(router, { pristine: f.F() })
-    )
-  )
-)
-
-export default f.assign(router, { pristine: f.T() })
+  match(name) && render(name)
+}

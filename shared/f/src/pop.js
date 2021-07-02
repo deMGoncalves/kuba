@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const pop = (target) =>
-  target.pop()
+const pop = (array) =>
+  array.pop()
 
 export default curry(pop)

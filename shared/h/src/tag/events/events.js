@@ -1,20 +1,15 @@
-import convertToList from './convertToList'
+import * as f from '@kuba/f'
+import filter from './filter'
 import mapper from './mapper'
-import paint from './paint'
-import repaint from './repaint'
-import rewind from './rewind'
+import reflow from './reflow'
+import toList from './toList'
 
-@paint
 class Events {
   #map
   #target
 
   get list () {
-    return convertToList(this.#map)
-  }
-
-  get target () {
-    return this.#target
+    return toList(this.#map)
   }
 
   constructor (map, target) {
@@ -22,20 +17,26 @@ class Events {
     this.#target = target
   }
 
-  reflow (other) {
-    rewind(this, other)
-    return this
-  }
-
-  @repaint
-  removeItem (name) {
-    this.#map.remove(name)
-    return this
-  }
-
-  @repaint
-  setItem (name, listener) {
+  addEventListener (name, listener) {
     this.#map.set(name, listener)
+    this.#target.addEventListener(...filter(name, listener))
+    return this
+  }
+
+  paint () {
+    f.forEach(this.list, ({ name, listener }) =>
+      this.#target.addEventListener(...filter(name, listener)))
+    return this
+  }
+
+  reflow (other) {
+    reflow(this, other)
+    return this
+  }
+
+  removeEventListener (name) {
+    this.#map.remove(name)
+    this.#target.removeEventListener(...filter(name))
     return this
   }
 

@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const find = (target, predicate) =>
-  target.find(predicate)
+const find = (array, func) =>
+  array.find(func)
 
 export default curry(find)

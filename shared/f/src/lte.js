@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const lte = (value, delimiter) =>
-  value <= delimiter
+const lte = (x, y) =>
+  x <= y
 
 export default curry(lte)

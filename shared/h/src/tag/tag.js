@@ -3,18 +3,15 @@ import Attributes from './attributes'
 import Children from './children'
 import ClassName from './className'
 import Events from './events'
-import notCustomElement from './notCustomElement'
 import paint from './paint'
-import rewind from './rewind'
-import swapTag from './swapTag'
+import reflow from './reflow'
 
-@paint
 class Tag {
   #attributes
   #children
   #className
+  #element
   #events
-  #id
   #is
   #slot
   #name
@@ -31,16 +28,20 @@ class Tag {
     return this.#className
   }
 
+  get element () {
+    return this.#element ??= document.createElement(this.name, { is: this.is })
+  }
+
   get events () {
     return this.#events
   }
 
-  get id () {
-    return this.#id
-  }
-
   get is () {
     return this.#is
+  }
+
+  get isNode () {
+    return f.T()
   }
 
   get name () {
@@ -55,27 +56,63 @@ class Tag {
     return 1
   }
 
-  get [f.magic('isNode')] () {
-    return f.T()
-  }
-
   constructor (tagName, props, children) {
     this.#attributes = Attributes.create(props, this)
     this.#children = Children.create(children, this)
     this.#className = ClassName.create(props, this)
     this.#events = Events.create(props, this)
-    this.#id = Symbol(tagName)
     this.#is = props.is
     this.#name = tagName
     this.#slot = props.slot
   }
 
-  reflow (other) {
-    swapTag(this, other)
-    rewind(this, other)
-    notCustomElement(this) && (
-      this.children.reflow(other.children)
-    )
+  addEventListener (name, listener) {
+    this.element[name] = listener
+    return this
+  }
+
+  append (child) {
+    this.element.append(child)
+    return this
+  }
+
+  paint () {
+    paint(this)
+    return this.element
+  }
+
+  reflow (tag) {
+    reflow(this, tag)
+    return this
+  }
+
+  remove () {
+    this.element.remove()
+    return this
+  }
+
+  removeAttribute (key) {
+    this.element.removeAttribute(key)
+    return this
+  }
+
+  removeEventListener (name) {
+    this.element[name] = undefined
+    return this
+  }
+
+  replaceChild (current, child) {
+    this.element.replaceChild(child, current)
+    return this
+  }
+
+  setAttribute (key, value) {
+    this.element.setAttribute(key, value)
+    return this
+  }
+
+  setClassName (value) {
+    this.element.className = value
     return this
   }
 

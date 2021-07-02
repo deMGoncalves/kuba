@@ -1,10 +1,9 @@
 import curry from './curry'
 
-const idle = (handler) =>
-  function () {
+const idle = (func) =>
+  (...args) =>
     'requestIdleCallback' in window
-      ? window.requestIdleCallback(handler.bind(this, ...arguments))
-      : window.setTimeout(handler.bind(this, ...arguments), 0)
-  }
+      ? window.requestIdleCallback(() => func(...args))
+      : window.setTimeout(() => func(...args), 0)
 
 export default curry(idle)
