@@ -1,8 +1,8 @@
-window
-  .addEventListener('beforeinstallprompt', (event) => (
-    event.preventDefault(),
-    event.prompt()
-  ))
+'use strict'
 
-window
-  .addEventListener('appinstalled', () => null)
+window.addEventListener('beforeinstallprompt', (event) => (
+  event.preventDefault(),
+  event.prompt()
+))
+
+window.addEventListener('appinstalled', () => null)
