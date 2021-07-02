@@ -8,7 +8,7 @@ import schema from './schema.json'
 f.and(agent.isUser, env.isProd) && (
   ga('create', schema.id, 'auto'),
   ga('send', 'pageview'),
-  render(document.head, <script src='https://www.google-analytics.com/analytics.js' async />)
+  render(document.head, <script src={schema.src} async />)
 )
 
 export default ga

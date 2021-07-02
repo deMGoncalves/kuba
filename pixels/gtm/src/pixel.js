@@ -10,7 +10,7 @@ f.and(agent.isUser, env.isProd) && (
     'gtm.start': new Date().getTime(),
     event: 'gtm.js'
   }),
-  render(document.head, <script src={`https://www.googletagmanager.com/gtm.js?id=${schema.id}`} async />)
+  render(document.head, <script src={schema.src} async />)
 )
 
 export default dataLayer

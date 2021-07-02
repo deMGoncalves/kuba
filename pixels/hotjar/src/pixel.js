@@ -6,8 +6,8 @@ import hj from './hj'
 import schema from './schema.json'
 
 f.and(agent.isUser, env.isProd) && (
-  window._hjSettings = schema,
-  render(document.head, <script src={`https://static.hotjar.com/c/hotjar-${schema.hjid}.js?sv=${schema.hjsv}`} async />)
+  window._hjSettings = { hjid, hjsv } = schema,
+  render(document.head, <script src={schema.src} async />)
 )
 
 export default hj
