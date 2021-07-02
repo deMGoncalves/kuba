@@ -10,13 +10,13 @@ export default function (query) {
   window.setTimeout(match, 0)
 
   return {
-    in (handler) {
-      listeners.in = handler
+    in (listener) {
+      listeners.in = listener
       return this
     },
 
-    out (handler) {
-      listeners.ou = handler
+    out (listener) {
+      listeners.ou = listener
       return this
     }
   }
