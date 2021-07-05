@@ -19,6 +19,7 @@
       "buckets/*",
       "dev/*",
       "elements/*",
+      "filters/*",
       "infra/*",
       "models/*",
       "pixels/*",
