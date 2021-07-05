@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  .profile {
+    display: none;
+  }
+}
+
+.profile__link {
+  border-bottom: 1px solid var(--color-master-lighter);
+  font-weight: 500;
+  justify-content: flex-start;
+  padding: var(--size-small) var(--size-medium);
+  text-decoration: none;
+  width: 100%;
+}
+
+.profile__link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+.darlings {
+  display: flex;
+}
+
+.darlings__link {
+  text-decoration: none;
+}
+
+.darlings__link:not(:first-child) {
+  margin-left: var(--size-medium);
+}

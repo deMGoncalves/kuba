@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+  .services {
+    display: none;
+  }
+}
+
+.services__p {
+  line-height: 1;
+  text-align: left;
+}
+
+.services__p strong {
+  color: var(--color-master-darker);
+}
+
+.services__link {
+  border-bottom: 1px solid var(--color-master-lighter);
+  font-weight: 500;
+  justify-content: flex-start;
+  padding: var(--size-small) var(--size-medium);
+  text-decoration: none;
+  width: 100%;
+}
+
+.services__link:hover {
+  text-decoration: underline;
+}
