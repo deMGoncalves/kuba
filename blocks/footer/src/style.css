@@ -34,8 +34,17 @@
   }
 }
 
-.footer__i {
-  display: block;
+.footer__strong {
   padding-top: var(--size-small);
 }
 
+.footer__i {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .footer__strong,
+  .footer__i {
+    text-align: center;
+  }
+}

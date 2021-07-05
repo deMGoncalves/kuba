@@ -11,6 +11,10 @@
   }
 }
 
+.social__icon {
+  cursor: pointer;
+}
+
 .social__icon:not(:first-of-type) {
   margin-left: var(--size-medium);
 }
