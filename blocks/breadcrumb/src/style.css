@@ -1,0 +1,15 @@
+.breadcrumb {
+  padding-bottom: var(--size-medium);
+  padding-top: 4px;
+}
+
+.breadcrumb__div {
+  align-items: center;
+  display: flex;
+  gap: var(--size-smallest);
+}
+
+.breadcrumb__link {
+  font-weight: 500;
+  text-decoration: none;
+}
