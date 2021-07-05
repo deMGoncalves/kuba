@@ -17,6 +17,7 @@
       "actions/*",
       "blocks/*",
       "buckets/*",
+      "dev/*",
       "elements/*",
       "infra/*",
       "models/*",
