@@ -1,0 +1,35 @@
+{
+  "title": "Destaques da semana",
+  "thumbnails": [
+    "https://via.placeholder.com/736x400",
+    "https://via.placeholder.com/591x645"
+  ],
+  "estrategia": {
+    "thumbnails": [
+      "https://via.placeholder.com/360x360",
+      "https://via.placeholder.com/285x285"
+    ],
+    "title": "Estratégia"
+  },
+  "inspiracao": {
+    "thumbnails": [
+      "https://via.placeholder.com/360x360",
+      "https://via.placeholder.com/285x285"
+    ],
+    "title": "Inspiração"
+  },
+  "produto": {
+    "thumbnails": [
+      "https://via.placeholder.com/360x360",
+      "https://via.placeholder.com/285x285"
+    ],
+    "title": "Produto"
+  },
+  "venda": {
+    "thumbnails": [
+      "https://via.placeholder.com/360x360",
+      "https://via.placeholder.com/285x285"
+    ],
+    "title": "Venda"
+  }
+}
