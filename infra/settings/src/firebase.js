@@ -1,9 +1,0 @@
-export default {
-  apiKey: 'AIzaSyCMlMrhPg4zSSJyCvlfipCqQDYHO6ZfsTo',
-  authDomain: 'kuba-engineer-cb153.firebaseapp.com',
-  projectId: 'kuba-engineer-cb153',
-  storageBucket: 'kuba-engineer-cb153.appspot.com',
-  messagingSenderId: '446047777188',
-  appId: '1:446047777188:web:72c61da5bbc2273ebad131',
-  measurementId: 'G-HNJ8243H3X'
-}

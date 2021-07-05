@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   bail: true,
   collectCoverage: true,
@@ -19,16 +21,16 @@ module.exports = {
     }
   },
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
-    '\\.css$': '<rootDir>/__mocks__/style.js'
+    '^@/(.*)$': '<rootDir>/src/$1'
   },
   preset: 'ts-jest',
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   testMatch: [
     '**/?(*.)+(spec).js?(x)'
   ],
   transform: {
-    '^.+\\.(js|jsx)$': 'ts-jest'
+    '^.+\\.(js|jsx)$': 'ts-jest',
+    '^.+\\.(css)$': 'jest-css-modules-transform'
   },
   transformIgnorePatterns: [
     '/node_modules/'
