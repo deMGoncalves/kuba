@@ -3,4 +3,4 @@ import cookie from '@kuba/cookie'
 import settings from './settings'
 
 export default () =>
-  f.or(cookie.getItem('zuen.lang'), settings.fallback)
+  f.or(cookie.getItem('lang'), settings.fallback)
