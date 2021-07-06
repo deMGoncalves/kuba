@@ -4,6 +4,9 @@ export default f.once((home) =>
   ({
     '@id': '#webpage',
     '@type': 'WebPage',
+    breadcrumb: {
+      '@id': '#breadcrumb'
+    },
     description: home.description,
     inLanguage: __settings.app.language,
     isPartOf: {
