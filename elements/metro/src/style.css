@@ -12,6 +12,7 @@
 
 .metro__container {
   display: inline-flex;
+  gap: var(--size-medium);
   text-align: inherit;
   white-space: nowrap;
 }

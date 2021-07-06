@@ -54,3 +54,23 @@
 .text[master][lightest] {
   color: var(--color-master-lightest);
 }
+
+.text.primary {
+  color: var(--color-primary);
+}
+
+.text.complete {
+  color: var(--color-complete);
+}
+
+.text.success {
+  color: var(--color-success);
+}
+
+.text.warning {
+  color: var(--color-warning);
+}
+
+.text.danger {
+  color: var(--color-danger);
+}

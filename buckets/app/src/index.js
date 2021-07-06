@@ -1,6 +1,6 @@
+import '@kuba/sentry'
 import '@kuba/reset'
 import '@kuba/settings'
-import '@kuba/firebase'
-import '@kuba/adsense'
+import '@kuba/formdata'
 import '@kuba/sw'
 import './routers'

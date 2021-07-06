@@ -13,14 +13,14 @@ import text from '@kuba/text'
 Para mudar o tamanho da fonte do texto, você pode passar uma das propriedades de tamanho
 
 ```javascript
-<text.P largest>(largest) apaixonado pelo Kuba</text.P>
+<text.P largest>(largest) apaixonado pelo uf</text.P>
 ```
 ### Mudando a cor do text
 
 Para mudar a cor da fonte do texto, você pode passar uma das propriedades de cor
 
 ```javascript
-<text.P master darkest>(darker) apaixonado pelo Kuba</text.P>
+<text.P master darkest>(darker) apaixonado pelo uf</text.P>
 ```
 
 ### props

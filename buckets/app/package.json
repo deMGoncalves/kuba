@@ -36,12 +36,11 @@
   "private": true,
   "scripts": {
     "build": "yarn run webpack --config webpack.prod.js",
-    "deploy": "yarn run firebase deploy --token \"$FIREBASE_TOKEN\"",
     "start": "yarn run webpack serve --config webpack.dev.js",
     "test": "concurrently 'yarn run test:*'",
     "test:eslint": "yarn run eslint src/**/*.{js,jsx}",
     "test:stylelint": "yarn run stylelint src/**/*.css --allow-empty-input",
     "test:jest": "jest --passWithNoTests"
   },
-  "version": "1.0.0"
+  "version": "1.0.0"  
 }

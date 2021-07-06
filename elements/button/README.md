@@ -13,14 +13,14 @@ import button from '@kuba/button'
 Para mudar o tamanho do button, você pode passar uma das propriedades de tamanho
 
 ```javascript
-<button.Master largest>(largest) apaixonado pelo Kuba</button.Master>
+<button.Master largest>(largest) apaixonado pelo uf</button.Master>
 ```
 ### Mudando o tipo do button
 
 Para mudar tipo do button, você pode passar uma das propriedades de cor
 
 ```javascript
-<button.Master darkest>(darker) apaixonado pelo Kuba</button.Master>
+<button.Master darkest>(darker) apaixonado pelo uf</button.Master>
 ```
 
 ### props

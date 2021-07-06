@@ -1,8 +1,11 @@
+'use strict'
+
 const common = require('./webpack.common.js')
 const { merge } = require('webpack-merge')
 const path = require('path')
 const ReplaceInFileWebpackPlugin = require('replace-in-file-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
+const radix = 32
 
 module.exports = merge(common, {
   mode: 'production',
@@ -26,7 +29,7 @@ module.exports = merge(common, {
         files: ['sw.js'],
         rules: [{
           search: '@cache',
-          replace: () => new Date().getTime().toString(32)
+          replace: () => new Date().getTime().toString(radix)
         }]
       }
     ])

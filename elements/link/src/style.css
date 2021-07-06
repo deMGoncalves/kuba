@@ -3,6 +3,7 @@
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
+  text-decoration: underline;
 }
 
 .link[largest] {
@@ -34,30 +35,26 @@
   font-size: var(--size-smallest);
 }
 
-.link.master[darkest] {
-  color: var(--color-master-darkest);
-}
-
-.link.master[darker] {
-  color: var(--color-master-darker);
-}
-
-.link.master[dark] {
+.link.master {
   color: var(--color-master-dark);
 }
 
-.link.master {
-  color: var(--color-master);
+.link.primary {
+  color: var(--color-primary);
 }
 
-.link.master[light] {
-  color: var(--color-master-light);
+.link.complete {
+  color: var(--color-complete);
 }
 
-.link.master[lighter] {
-  color: var(--color-master-lighter);
+.link.success {
+  color: var(--color-success);
 }
 
-.link.master[lightest] {
-  color: var(--color-master-lightest);
+.link.warning {
+  color: var(--color-warning);
+}
+
+.link.danger {
+  color: var(--color-danger);
 }

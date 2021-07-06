@@ -1,11 +1,10 @@
 import h, { Fragment } from '@kuba/h'
+import Header from '@kuba/header'
 import Site from '@kuba/site'
-import text from '@kuba/text'
 import style from './style.css'
 
 export default () =>
   <Site className={style.home}>
-    <Fragment slot='main'>
-      <text.H1 className={style.home__text} master darker largest>kuba</text.H1>
-    </Fragment>
+    <Header className={style.home__header} slot='header' />
+    <Fragment slot='main' />
   </Site>
