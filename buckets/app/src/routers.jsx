@@ -12,6 +12,11 @@ router('/cadeiras', async function cadeiras () {
   render(<Cadeiras />)
 })
 
+router('/sofas', async function sofas () {
+  const { default: Sofas } = await import('@/sofas' /* webpackChunkName: "sofas" */)
+  render(<Sofas />)
+})
+
 router('', async function notFound () {
   const { default: NotFound } = await import('@/notFound' /* webpackChunkName: "notFound" */)
   render(<NotFound />)

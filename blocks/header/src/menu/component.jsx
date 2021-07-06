@@ -14,8 +14,8 @@ export default (props) =>
       <span className={style.menu__span}>Navegue por</span>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>Home</link.Master>
       <link.Master className={style.menu__link} href={urlFor('cadeiras')} master darker small>Cadeiras</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('sofás')} master darker small>Sofás</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('acessórios')} master darker small>Acessórios</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('sofas')} master darker small>Sofás</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('acessorios')} master darker small>Acessórios</link.Master>
       <span className={style.menu__span}>Meus conteúdos</span>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>lista de desejo</link.Master>
       <span className={style.menu__span}>Serviços e atendimento</span>
