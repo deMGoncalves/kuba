@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Deve renderizar um paragrafo quando o namespace for text.P 1`] = `
+<p
+  class="text"
+>
+  zuen
+</p>
+`;

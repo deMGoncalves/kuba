@@ -2,59 +2,36 @@
   align-items: center;
   cursor: pointer;
   display: inline-flex;
+  font-size: var(--size-small) !important;
+  font-weight: 400;
   justify-content: center;
-  text-decoration: underline;
+  letter-spacing: 0.618px;
 }
 
-.link[largest] {
-  font-size: var(--size-largest);
+.link[master] {
+  color: var(--color-master-darker);
 }
 
-.link[larger] {
-  font-size: var(--size-larger);
+.link[primary] {
+  color: var(--color-primary-darker);
 }
 
-.link[large] {
-  font-size: var(--size-large);
+.link[complete] {
+  color: var(--color-complete-darker);
 }
 
-.link,
-.link[medium] {
-  font-size: var(--size-medium);
+.link[success] {
+  color: var(--color-success-darker);
 }
 
-.link[small] {
-  font-size: var(--size-small);
+.link[warning] {
+  color: var(--color-warning-darker);
 }
 
-.link[smaller] {
-  font-size: var(--size-smaller);
+.link[danger] {
+  color: var(--color-danger-darker);
 }
 
-.link[smallest] {
-  font-size: var(--size-smallest);
-}
-
-.link.master {
-  color: var(--color-master-dark);
-}
-
-.link.primary {
-  color: var(--color-primary);
-}
-
-.link.complete {
-  color: var(--color-complete);
-}
-
-.link.success {
-  color: var(--color-success);
-}
-
-.link.warning {
-  color: var(--color-warning);
-}
-
-.link.danger {
-  color: var(--color-danger);
+.link[info] {
+  color: var(--color-info-darker);
 }

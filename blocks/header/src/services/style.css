@@ -5,12 +5,12 @@
 }
 
 .services__p {
-  line-height: 1;
   text-align: left;
 }
 
 .services__p strong {
   color: var(--color-master-darker);
+  font-weight: 700;
 }
 
 .services__link {

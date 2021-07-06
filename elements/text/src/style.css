@@ -1,3 +1,8 @@
+.text {
+  color: var(--color-master);
+  font-size: var(--size-medium);
+}
+
 .text[largest] {
   font-size: var(--size-largest);
 }
@@ -8,11 +13,6 @@
 
 .text[large] {
   font-size: var(--size-large);
-}
-
-.text,
-.text[medium] {
-  font-size: var(--size-medium);
 }
 
 .text[small] {
@@ -27,50 +27,26 @@
   font-size: var(--size-smallest);
 }
 
-.text[master][darkest] {
+.text[darkest] {
   color: var(--color-master-darkest);
 }
 
-.text[master][darker] {
+.text[darker] {
   color: var(--color-master-darker);
 }
 
-.text[master][dark] {
+.text[dark] {
   color: var(--color-master-dark);
 }
 
-.text[master] {
-  color: var(--color-master);
-}
-
-.text[master][light] {
+.text[light] {
   color: var(--color-master-light);
 }
 
-.text[master][lighter] {
+.text[lighter] {
   color: var(--color-master-lighter);
 }
 
-.text[master][lightest] {
+.text[lightest] {
   color: var(--color-master-lightest);
-}
-
-.text.primary {
-  color: var(--color-primary);
-}
-
-.text.complete {
-  color: var(--color-complete);
-}
-
-.text.success {
-  color: var(--color-success);
-}
-
-.text.warning {
-  color: var(--color-warning);
-}
-
-.text.danger {
-  color: var(--color-danger);
 }

@@ -20,7 +20,7 @@
   display: none;
 }
 
-.side[opened] {
+.side[opened=true] {
   opacity: 1;
   transform: translate(0, 0);
 }
@@ -35,6 +35,6 @@
   z-index: 1;
 }
 
-.side__overlayer[opened] {
+.side__overlayer[opened=true] {
   display: block;
 }
