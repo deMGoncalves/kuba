@@ -11,8 +11,8 @@ export default (props) =>
     <Container className={style.footer__container}>
       <div className={style.footer__div}>
         <Logo className={style.footer__logo} />
-        <text.Strong className={style.footer__strong} master darker small>Transformamos negócios de moda</text.Strong>
-        <text.P className={style.footer__i} master small>Crie coleções de sucesso e aumente suas vendas com a maior plataforma brasileira de pesquisa de tendências de moda</text.P>
+        <text.Strong className={style.footer__strong} master darker small>Sua casa moderna</text.Strong>
+        <text.P className={style.footer__i} master small>Design e sofisticaçao em peças únicas feitas a mão. Sua casa nunca mais será a mesma. Dê um toque de sofisticação em sua casa com nossas cadeiras, sofás e acessórios</text.P>
         <Nav className={style.footer__nav} />
       </div>
       <Social className={style.footer__social} />
