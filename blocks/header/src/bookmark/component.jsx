@@ -2,6 +2,7 @@ import h, { Fragment } from '@kuba/h'
 import Action from '@kuba/action'
 import icon from '@kuba/icon'
 import link from '@kuba/link'
+import { urlFor } from '@kuba/router'
 import text from '@kuba/text'
 import style from './style.css'
 
@@ -13,7 +14,6 @@ export default (props) =>
     </text.P>
     <text.Strong className={style.bookmark__strong} slot='header' master darker>Meus conteúdos</text.Strong>
     <Fragment slot='main'>
-      <link.Master className={style.bookmark__link} href='//nova.usefashion.com/saved-content' master darker small>Contúdos</link.Master>
-      <link.Master className={style.bookmark__link} href='//nova.usefashion.com/interests' master darker small>Interesse</link.Master>
+      <link.Master className={style.bookmark__link} href={urlFor('home')} master darker small>lista de desejo</link.Master>
     </Fragment>
   </Action>
