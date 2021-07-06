@@ -9,23 +9,25 @@ import style from './style.css'
 export default (props) =>
   <Action className={[style.menu, props.className]}>
     <icon.Menu className={style.menu__icon} slot='icon' />
-    <text.Strong className={style.menu__text} slot='header' master darker>use fashion</text.Strong>
+    <text.Strong className={style.menu__text} slot='header' master darker>kuba</text.Strong>
     <Fragment slot='main'>
       <span className={style.menu__span}>Navegue por</span>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>Home</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('estrategia')} master darker small>Estratégia</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('inspiracao')} master darker small>Inspiração</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('produto')} master darker small>Produto</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('venda')} master darker small>Venda</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('segmentos')} master darker small>Segmentos</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('imagens')} master darker small>Imagens</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('cadeiras')} master darker small>Cadeiras</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('sofás')} master darker small>Sofás</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('acessórios')} master darker small>Acessórios</link.Master>
       <span className={style.menu__span}>Meus conteúdos</span>
-      <link.Master className={style.menu__link} href='//nova.usefashion.com/saved-content' master darker small>Contúdos</link.Master>
-      <link.Master className={style.menu__link} href='//nova.usefashion.com/interests' master darker small>Interesse</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>lista de desejo</link.Master>
       <span className={style.menu__span}>Serviços e atendimento</span>
-      <link.Master className={style.menu__link} href='mailto:suporte@usefashion.com' master darker small>suporte@usefashion.com</link.Master>
-      <link.Master className={style.menu__link} href='tel:11-4858-9425' master darker small>(11) 4858-9425</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>central de atendimento</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>compre pelo Whatsapp</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>cartão Kuba 4004-0000</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>acompanhar meu pedido</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>solicitar devolução de pedido</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>encontrar lojas</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>Kuba&VC</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>venda no Kuba</link.Master>
       <span className={style.menu__span}>Perfil</span>
-      <link.Master className={style.menu__link} href='//login.userfashion.com/login' master darker small>Sair</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>Sair</link.Master>
     </Fragment>
   </Action>
