@@ -9,5 +9,5 @@ export default (props) =>
     <link.Master className={style.nav__link} href={urlFor('cadeiras')} darker small>Cadeiras</link.Master>
     <link.Master className={style.nav__link} href={urlFor('sofas')} darker small>Sofás</link.Master>
     <link.Master className={style.nav__link} href={urlFor('acessorios')} darker small>Acessórios</link.Master>
-    <link.Master className={style.nav__link} href={urlFor('blog')} darker small>Blog</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('home')} darker small>Blog</link.Master>
   </nav>
