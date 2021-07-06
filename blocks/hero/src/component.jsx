@@ -4,7 +4,7 @@ import button from '@kuba/button'
 import Picture from '@kuba/picture'
 import Sources from '@kuba/sources'
 import text from '@kuba/text'
-import schema from './schema.json'
+import schema from './schema'
 import style from './style.css'
 
 export default (props) =>
@@ -12,11 +12,12 @@ export default (props) =>
     <Container className={style.hero__container}>
       <figure className={style.hero__figure}>
         <Picture className={style.hero__picture}>
-          <Sources thumbnails={schema.thumbnails} slot='sources' />
+          <Sources thumbnails={schema.thumbnails} />
         </Picture>
         <figcaption className={style.hero__figcaption}>
-          <text.H1 className={style.hero__text} slot='caption' master darker>{schema.title}</text.H1>
-          <button.Master className={style.hero__button} slot='caption' master>Confira</button.Master>
+          <text.H1 className={style.hero__text} master darker>{schema.title}</text.H1>
+          <text.P className={style.hero__text} master darker small>{schema.description}</text.P>
+          <button.Master className={style.hero__button} master>Confira</button.Master>
         </figcaption>
       </figure>
     </Container>
