@@ -7,6 +7,11 @@ router('/', async function home () {
   render(<Home />)
 })
 
+router('/cadeiras', async function cadeiras () {
+  const { default: Cadeiras } = await import('@/cadeiras' /* webpackChunkName: "cadeiras" */)
+  render(<Cadeiras />)
+})
+
 router('', async function notFound () {
   const { default: NotFound } = await import('@/notFound' /* webpackChunkName: "notFound" */)
   render(<NotFound />)

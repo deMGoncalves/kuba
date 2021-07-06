@@ -29,32 +29,37 @@
   display: flex;
   flex-direction: column;
   gap: var(--size-medium);
+  margin: 0 auto;
   padding-top: var(--size-smaller);
+  width: 89%;
+}
+
+@media (min-width: 426px) {
+  .banner__figcaption {
+    width: 68%;
+  }
 }
 
 @media (min-width: 769px) {
   .banner__figcaption {
-    align-items: center;
-    flex-direction: row;
+    align-items: flex-start;
     height: 100%;
-    justify-content: space-between;
+    justify-content: center;
     left: 0;
     padding: var(--size-largest);
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 42%;
   }
 }
 
-.banner__h2 {
-  font-size: var(--size-medium);
+.banner__text {
   line-height: 1.382;
   text-align: center;
 }
 
 @media (min-width: 769px) {
-  .banner__h2 {
-    font-size: var(--size-large);
+  .banner__text {
     text-align: left;
   }
 }
