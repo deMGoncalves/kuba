@@ -46,14 +46,12 @@
 }
 
 .hero__text {
-  font-size: var(--size-medium);
   line-height: 1.382;
   text-align: center;
 }
 
 @media (min-width: 769px) {
   .hero__text {
-    font-size: var(--size-large);
     text-align: left;
   }
 }

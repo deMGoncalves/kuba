@@ -15,8 +15,10 @@ export default (props) =>
           <Sources thumbnails={schema.thumbnails} />
         </Picture>
         <figcaption className={style.hero__figcaption}>
-          <text.H1 className={style.hero__text} master darker>{schema.title}</text.H1>
-          <text.P className={style.hero__text} master darker small>{schema.description}</text.P>
+          <hgroup>
+            <text.H1 className={style.hero__text} master darker large>{schema.title}</text.H1>
+            <text.P className={style.hero__text} master darker small>{schema.description}</text.P>
+          </hgroup>
           <button.Master className={style.hero__button} master>Confira</button.Master>
         </figcaption>
       </figure>
