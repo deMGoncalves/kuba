@@ -3,7 +3,7 @@ import { urlFor } from '@kuba/router'
 import Container from '@kuba/container'
 import link from '@kuba/link'
 import Metro from '@kuba/metro'
-import Bread from './bread'
+import Path from './path'
 import style from './style.css'
 
 export default (props, children) =>
@@ -12,7 +12,7 @@ export default (props, children) =>
       <Metro className={style.breadcrumb__metro}>
         <div className={style.breadcrumb__div}>
           <link.Master className={style.breadcrumb__link} href={urlFor('home')} small>Home</link.Master>
-          <Repeat iterator={children} component={Bread} />
+          <Repeat iterator={children} component={Path} />
         </div>
       </Metro>
     </Container>
