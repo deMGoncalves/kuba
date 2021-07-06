@@ -1,1 +1,3 @@
-module.exports = require('@kuba/stylelintrc')
+'use strict'
+
+module.exports = require('@zuen/stylelintrc')

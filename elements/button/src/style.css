@@ -1,6 +1,5 @@
 .button {
   align-items: center;
-  background-color: transparent;
   border: none;
   border-radius: 18px;
   color: var(--color-master-lightest);
@@ -16,31 +15,31 @@
   text-decoration: none;
 }
 
-.button.master {
+.button[master] {
   background-color: var(--color-master-dark);
 }
 
-.button.primary {
+.button[primary] {
   background-color: var(--color-primary);
 }
 
-.button.complete {
+.button[complete] {
   background-color: var(--color-complete);
 }
 
-.button.success {
+.button[success] {
   background-color: var(--color-success);
 }
 
-.button.warning {
+.button[warning] {
   background-color: var(--color-warning);
 }
 
-.button.danger {
+.button[danger] {
   background-color: var(--color-danger);
 }
 
-.button.info {
+.button[info] {
   border: 1px solid var(--color-master-dark);
   color: var(--color-master-dark);
 }

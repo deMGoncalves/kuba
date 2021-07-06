@@ -1,1 +1,3 @@
-module.exports = require('@kuba/postcssconfig')
+'use strict'
+
+module.exports = require('@zuen/postcssconfig')

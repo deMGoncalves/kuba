@@ -1,1 +1,3 @@
-module.exports = require('@kuba/eslintrc')
+'use strict'
+
+module.exports = require('@zuen/eslintrc')

@@ -1,1 +1,3 @@
-module.exports = require('@kuba/jestconfig')
+'use strict'
+
+module.exports = require('@zuen/jestconfig')
