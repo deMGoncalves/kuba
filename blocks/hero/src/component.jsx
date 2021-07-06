@@ -11,7 +11,7 @@ export default (props) =>
   <section {...props} className={[style.hero, props.className]}>
     <Container className={style.hero__container}>
       <figure className={style.hero__figure}>
-        <Picture className={style.hero__picture}>
+        <Picture className={style.hero__picture} alt={schema.title}>
           <Sources thumbnails={schema.thumbnails} />
         </Picture>
         <figcaption className={style.hero__figcaption}>
