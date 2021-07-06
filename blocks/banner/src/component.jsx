@@ -11,7 +11,7 @@ export default (props) =>
   <section {...props} className={[style.banner, props.className]}>
     <Container className={style.banner__container}>
       <figure className={style.banner__figure}>
-        <Picture className={style.banner__picture}>
+        <Picture className={style.banner__picture} alt={schema.title}>
           <Sources thumbnails={schema.thumbnails} />
         </Picture>
         <figcaption className={style.banner__figcaption}>
