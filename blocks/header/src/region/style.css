@@ -1,0 +1,26 @@
+@media (max-width: 769px) {
+  .region {
+    display: none;
+  }
+}
+
+.region__p {
+  text-align: left;
+}
+
+.region__p strong {
+  color: var(--color-master-darker);
+  font-weight: 700;
+}
+
+.region__link {
+  border-bottom: 1px solid var(--color-master-lighter);
+  justify-content: flex-start;
+  padding: var(--size-small) var(--size-medium);
+  text-decoration: none;
+  width: 100%;
+}
+
+.region__link:hover {
+  text-decoration: underline;
+}
