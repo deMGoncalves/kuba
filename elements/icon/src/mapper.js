@@ -1,6 +1,7 @@
 export { default as AngleLeft } from './assets/angle-left.svg'
 export { default as AngleRight } from './assets/angle-right.svg'
 export { default as ArrowLeft } from './assets/arrow-left.svg'
+export { default as Bag } from './assets/bag.svg'
 export { default as Bookmark } from './assets/bookmark.svg'
 export { default as Circle } from './assets/circle.svg'
 export { default as CircleChecked } from './assets/circle-checked.svg'
