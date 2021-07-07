@@ -4,10 +4,11 @@ export default f.once((breadcrumb) =>
   ({
     '@id': '#breadcrumb',
     '@type': 'BreadcrumbList',
-    'itemListElement': f.map(breadcrumb.paths, (path) => ({
+    'itemListElement': f.map(breadcrumb.paths, (path, i) => ({
       '@type': 'ListItem',
+      item: path.url,
       name: path.title,
-      item: path.url
+      position: f.inc(i)
     }))
   })
 )
