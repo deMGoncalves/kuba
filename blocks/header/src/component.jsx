@@ -19,7 +19,7 @@ export default (props) =>
         <Logo className={style.header__logo} />
         <Search className={style.header__search} />
       </div>
-      <div className={style.header__div}>
+      <div className={[style.header__div, style.widgets]}>
         <Region className={style.header__region} />
         <Services className={style.header__services} />
         <Profile className={style.header__profile} />
