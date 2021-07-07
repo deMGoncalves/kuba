@@ -7,13 +7,19 @@ import data from './data'
 @jsonld(data)
 class Breadcrumb {
   #className
+  #paths
 
   get className () {
     return this.#className
   }
 
+  get paths () {
+    return this.#paths ??= []
+  }
+
   constructor (props) {
     this.#className = props.className
+    this.#paths = props.paths
   }
 }
 
