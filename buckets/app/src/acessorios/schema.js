@@ -3,11 +3,11 @@ import { urlFor } from '@kuba/router'
 export default {
   paths: [
     {
-      title: 'Home',
+      title: 'home',
       url: urlFor('home')
     },
     {
-      title: 'Acessórios',
+      title: 'acessórios',
       url: urlFor('acessorios')
     }
   ]
