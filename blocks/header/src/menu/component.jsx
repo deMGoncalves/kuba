@@ -11,14 +11,14 @@ export default (props) =>
     <icon.Menu className={style.menu__icon} slot='icon' />
     <text.Strong className={style.menu__text} slot='header' master darker>kuba</text.Strong>
     <Fragment slot='main'>
-      <span className={style.menu__span}>Navegue por</span>
-      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>Home</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('cadeiras')} master darker small>Cadeiras</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('sofas')} master darker small>Sofás</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('acessorios')} master darker small>Acessórios</link.Master>
-      <span className={style.menu__span}>Meus conteúdos</span>
+      <span className={style.menu__span}>navegue por</span>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>home</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('cadeiras')} master darker small>cadeiras</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('sofas')} master darker small>sofás</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('acessorios')} master darker small>acessórios</link.Master>
+      <span className={style.menu__span}>pedidos e minha conta</span>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>lista de desejo</link.Master>
-      <span className={style.menu__span}>Serviços e atendimento</span>
+      <span className={style.menu__span}>serviços e atendimento</span>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>central de atendimento</link.Master>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>compre pelo Whatsapp</link.Master>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>cartão Kuba 4004-0000</link.Master>
@@ -27,7 +27,5 @@ export default (props) =>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>encontrar lojas</link.Master>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>Kuba&VC</link.Master>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>venda no Kuba</link.Master>
-      <span className={style.menu__span}>Perfil</span>
-      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>Sair</link.Master>
     </Fragment>
   </Action>

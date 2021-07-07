@@ -8,11 +8,11 @@ import style from './style.css'
 
 export default (props) =>
   <Action className={[style.services, props.className]}>
-    <icon.Comment className={style.services__icon} slot='icon' larger />
+    <icon.Comment className={style.services__icon} alt='serviços e atendimento' slot='icon' larger />
     <text.P className={style.services__p} slot='label' master ligth small>
-      serviços e<br /><strong>Atendimento</strong>
+      serviços e<br /><strong>atendimento</strong>
     </text.P>
-    <text.Strong className={style.services__strong} slot='header' master darker>Serviços e atendimento</text.Strong>
+    <text.Strong className={style.services__strong} slot='header' master darker>serviços e atendimento</text.Strong>
     <Fragment slot='main'>
       <link.Master className={style.services__link} href={urlFor('home')} master darker small>central de atendimento</link.Master>
       <link.Master className={style.services__link} href={urlFor('home')} master darker small>compre pelo Whatsapp</link.Master>

@@ -4,9 +4,17 @@
   }
 }
 
+.profile__p {
+  text-align: left;
+}
+
+.profile__p strong {
+  color: var(--color-master-darker);
+  font-weight: 700;
+}
+
 .profile__link {
   border-bottom: 1px solid var(--color-master-lighter);
-  font-weight: 500;
   justify-content: flex-start;
   padding: var(--size-small) var(--size-medium);
   text-decoration: none;

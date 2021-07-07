@@ -2,7 +2,7 @@ import h from '@kuba/h'
 import Container from '@kuba/container'
 import Logo from '@kuba/logo'
 import Search from '@kuba/search'
-import Bookmark from './bookmark'
+import Bag from './bag'
 import Darlings from './darlings'
 import Menu from './menu'
 import Nav from './nav'
@@ -19,8 +19,8 @@ export default (props) =>
       </div>
       <div className={style.header__div}>
         <Services className={style.header__services} />
-        <Bookmark className={style.header__bookmark} />
         <Profile className={style.header__profile} />
+        <Bag className={style.header__bag} />
         <Menu className={style.header__menu} />
       </div>
     </Container>
