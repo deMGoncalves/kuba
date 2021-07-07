@@ -2,6 +2,7 @@ import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import component from './component'
 import data from './data'
+import schema from './schema.json'
 
 @paint(component)
 @jsonld(data)
@@ -18,7 +19,7 @@ class Search {
   }
 
   get placeholder () {
-    return 'busque por tedências, segmentos ou marca...'
+    return schema.placeholder
   }
 
   get slot () {
