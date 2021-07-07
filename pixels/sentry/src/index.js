@@ -6,4 +6,3 @@ import sentry from './sentry'
 f.and(agent.isUser, env.isProd) && (
   sentry()
 )
-
