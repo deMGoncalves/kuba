@@ -42,13 +42,21 @@
 
 @media (min-width: 769px) {
   .banner__figcaption {
-    align-items: flex-start;
+    align-items: center;
     height: 100%;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     left: 0;
     padding: var(--size-largest);
     position: absolute;
     top: 0;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 769px) {
+  .banner__hgroup {
     width: 42%;
   }
 }

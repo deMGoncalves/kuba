@@ -4,6 +4,7 @@ import Breadcrumb from '@kuba/breadcrumb'
 import Header from '@kuba/header'
 import Site from '@kuba/site'
 import Title from '@kuba/title'
+import schema from './schema'
 import style from './style.css'
 
 export default (sofas) =>
@@ -11,7 +12,7 @@ export default (sofas) =>
     <Header className={style.sofas__header} slot='header' />
     <Fragment slot='main'>
       <Title className={style.sofas__title}>{sofas.title}</Title>
-      <Breadcrumb className={style.acessorios__breadcrumb} paths={sofas.paths} />
-      <Banner className={style.sofas__banner} />
+      <Breadcrumb {...schema.breadcrumb} className={style.acessorios__breadcrumb} />
+      <Banner {...schema.banner} className={style.sofas__banner} />
     </Fragment>
   </Site>
