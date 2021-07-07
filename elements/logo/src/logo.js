@@ -2,8 +2,8 @@ import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import component from './component'
 import data from './data'
-import Ghost from './kuba--ghost.svg'
-import Primary from './kuba.svg'
+import Ghost from './ghost.svg'
+import Primary from './primary.svg'
 
 @paint(component)
 @jsonld(data)
