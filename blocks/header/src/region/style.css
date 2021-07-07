@@ -1,11 +1,11 @@
-@media (max-width: 768px) {
-  .region {
-    display: none;
-  }
-}
-
 .region__p {
   text-align: left;
+}
+
+@media (max-width: 667px) {
+  .region__p {
+    display: none;
+  }
 }
 
 .region__p strong {
