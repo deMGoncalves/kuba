@@ -22,6 +22,11 @@ router('/acessorios', async function acessorios () {
   render(<Acessorios />)
 })
 
+router('/busca', async function busca () {
+  const { default: Busca } = await import('@/busca' /* webpackChunkName: "busca" */)
+  render(<Busca />)
+})
+
 router('', async function notFound () {
   const { default: NotFound } = await import('@/notFound' /* webpackChunkName: "notFound" */)
   render(<NotFound />)
