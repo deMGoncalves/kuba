@@ -19,7 +19,7 @@ export default (props) =>
             <text.H1 className={style.hero__text} master darker large>{schema.title}</text.H1>
             <text.P className={style.hero__text} master small>{schema.description}</text.P>
           </hgroup>
-          <button.Master className={style.hero__button} master>Confira</button.Master>
+          <button.Master className={style.hero__button} master>confira</button.Master>
         </figcaption>
       </figure>
     </Container>
