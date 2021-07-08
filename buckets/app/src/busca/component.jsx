@@ -3,6 +3,7 @@ import Breadcrumb from '@kuba/breadcrumb'
 import Header from '@kuba/header'
 import Site from '@kuba/site'
 import Title from '@kuba/title'
+import schema from './schema'
 import style from './style.css'
 
 export default (busca) =>
@@ -10,6 +11,6 @@ export default (busca) =>
     <Header className={style.busca__header} slot='header' />
     <Fragment slot='main'>
       <Title className={style.busca__title}>{busca.title}</Title>
-      <Breadcrumb className={style.busca__breadcrumb} paths={busca.paths} />
+      <Breadcrumb {...schema.breadcrumb} className={style.busca__breadcrumb} />
     </Fragment>
   </Site>
