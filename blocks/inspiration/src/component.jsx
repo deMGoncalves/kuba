@@ -1,9 +1,9 @@
-import h from '@kuba/h'
-import Box from '@kuba/box'
+import h, { Repeat } from '@kuba/h'
 import Picture from '@kuba/picture'
 import Sources from '@kuba/sources'
 import Story from '@kuba/story'
 import text from '@kuba/text'
+import Product from './product'
 import schema from './schema'
 import style from './style.css'
 
@@ -14,21 +14,6 @@ export default (props) =>
       <Picture className={style.inspiration__picture}>
         <Sources thumbnails={schema.thumbnails} />
       </Picture>
-      <Box className={style.inspiracao__box}>
-        <Sources thumbnails={schema.estrategia.thumbnails} slot='sources' />
-        <text.Strong className={style.inspiration__strong} slot='caption' master dark small>{schema.estrategia.title}</text.Strong>
-      </Box>
-      <Box className={style.inspiracao__box}>
-        <Sources thumbnails={schema.inspiracao.thumbnails} slot='sources' />
-        <text.Strong className={style.inspiration__strong} slot='caption' master dark small>{schema.inspiracao.title}</text.Strong>
-      </Box>
-      <Box className={style.inspiracao__box}>
-        <Sources thumbnails={schema.produto.thumbnails} slot='sources' />
-        <text.Strong className={style.inspiration__strong} slot='caption' master dark small>{schema.produto.title}</text.Strong>
-      </Box>
-      <Box className={style.inspiracao__box}>
-        <Sources thumbnails={schema.venda.thumbnails} slot='sources' />
-        <text.Strong className={style.inspiration__strong} slot='caption' master dark small>{schema.venda.title}</text.Strong>
-      </Box>
+      <Repeat iterator={schema.products} component={Product} />
     </div>
   </Story>
