@@ -1,7 +1,8 @@
 'use strict'
 
-const CopyWebpackPlugin = require("copy-webpack-plugin")
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
 module.exports = {
@@ -22,7 +23,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -48,6 +49,11 @@ module.exports = {
     ]
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      chunkFilename: "[id].[hash].css",
+      filename: "[name].[hash].css",
+      ignoreOrder: true
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { from: path.resolve(__dirname, 'assets'), to: '.' }
