@@ -8,7 +8,7 @@
 @media (min-width: 862px) {
   .header {
     gap: var(--size-small);
-    padding-bottom: 0;
+    padding-bottom: var(--size-smallest);
   }
 }
 
