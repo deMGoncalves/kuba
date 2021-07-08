@@ -43,20 +43,7 @@
   grid-area: box4;
 }
 
-.inspiration__h2 {
-  font-size: var(--size-medium);
-  line-height: 1.382;
-}
-
-@media (min-width: 769px) {
-  .inspiration__h2 {
-    font-size: var(--size-large);
-  }
-}
-
-.inspiration__h3 {
-  font-size: var(--size-small);
-  font-weight: 500;
+.inspiration__strong {
   line-height: 1.382;
 }
 
