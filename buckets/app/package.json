@@ -27,6 +27,7 @@
     "ts-loader": "^8.0.17",
     "typescript": "^4.1.4",
     "webpack": "^5.24.2",
+    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.5.0",
     "webpack-dashboard": "^3.3.3",
     "webpack-dev-server": "^3.11.2",
@@ -36,6 +37,7 @@
   "name": "@kuba/app",
   "private": true,
   "scripts": {
+    "analyzer": "yarn run webpack --config webpack.analyzer.js",
     "build": "yarn run webpack --config webpack.prod.js",
     "start": "yarn run webpack-dashboard -- webpack -- serve --config webpack.dev.js",
     "test": "concurrently 'yarn run test:*'",
