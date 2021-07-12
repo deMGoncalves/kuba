@@ -17,7 +17,17 @@ module.exports = merge(common, {
           safari10: true
         }
       })
-    ]
+    ],
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: 'all',
+          name: 'vendor',
+          test: /[\\/]node_modules[\\/]/
+        }
+      },
+      name: 'common'
+    }
   },
   output: {
     path: path.resolve(__dirname, 'public')
