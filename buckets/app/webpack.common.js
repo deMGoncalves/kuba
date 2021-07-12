@@ -3,6 +3,7 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const PreloadWebpackPlugin = require('preload-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -63,7 +64,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'assets/template.html')
-    })
+    }),
+    new PreloadWebpackPlugin()
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
