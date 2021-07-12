@@ -32,6 +32,11 @@ module.exports = merge(common, {
   output: {
     path: path.resolve(__dirname, 'public')
   },
+  performance: {
+    hints: 'error',
+    maxAssetSize: 200 * 1024,
+    maxEntrypointSize: 200 * 1024
+  },
   plugins: [
     new ReplaceInFileWebpackPlugin([
       {
