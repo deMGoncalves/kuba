@@ -1,4 +1,4 @@
-import '@kuba/sentry'
+import '@kuba/boma'
 import '@kuba/reset'
 import '@kuba/settings'
 import '@kuba/formdata'
