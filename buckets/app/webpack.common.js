@@ -50,8 +50,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      chunkFilename: "[id].[hash].css",
-      filename: "[name].[hash].css",
+      chunkFilename: "[id].[contenthash].css",
+      filename: "[name].[contenthash].css",
       ignoreOrder: true
     }),
     new CopyWebpackPlugin({
@@ -70,8 +70,8 @@ module.exports = {
     }
   },
   output: {
-    chunkFilename: '[name].[fullhash].js',
-    filename: '[name].[fullhash].js',
+    chunkFilename: '[name].[contenthash].js',
+    filename: '[name].[contenthash].js',
     publicPath: '/'
   }
 }
