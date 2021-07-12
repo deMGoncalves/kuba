@@ -1,6 +1,7 @@
 'use strict'
 
 const common = require('./webpack.common.js')
+const DashboardPlugin = require('webpack-dashboard/plugin')
 const { merge } = require('webpack-merge')
 const path = require('path')
 const portFinderSync = require('portfinder-sync')
@@ -25,5 +26,8 @@ module.exports = merge(common, {
   mode: 'development',
   output: {
     path: path.resolve(__dirname, '.temp')
-  }
+  },
+  plugins: [
+    new DashboardPlugin()
+  ]
 })
