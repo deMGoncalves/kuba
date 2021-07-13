@@ -5,7 +5,7 @@ const DashboardPlugin = require('webpack-dashboard/plugin')
 const { merge } = require('webpack-merge')
 const path = require('path')
 const portFinderSync = require('portfinder-sync')
-const port = 3000
+const port = 3001
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
