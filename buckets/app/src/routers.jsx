@@ -13,7 +13,7 @@ router('/cadeiras', async function cadeiras () {
 })
 
 router('/sofas', async function sofas () {
-  const { default: Sofas } = await import('@/sofas' /* webpackChunkName: "sofas" */)
+  const { default: Sofas } = await import('@kuba/sofas' /* webpackChunkName: "sofas" */)
   render(<Sofas />)
 })
 
