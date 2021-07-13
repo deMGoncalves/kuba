@@ -1,8 +1,8 @@
 import h, { Fragment } from '@kuba/h'
+import Async from '@kuba/async'
 import Exploration from '@kuba/exploration'
 import Header from '@kuba/header'
 import Hero from '@kuba/hero'
-import Lazy from '@kuba/lazy'
 import Site from '@kuba/site'
 import Zone from '@kuba/zone'
 import style from './style.css'
@@ -14,7 +14,7 @@ export default () =>
       <Hero className={style.home__hero} />
       <Exploration className={style.home__exploration} />
       <Zone>
-        <Lazy className={style.home__inspiration} from={() => import('@kuba/inspiration' /* webpackChunkName: "inspiration" */)} />
+        <Async className={style.home__inspiration} from={() => import('@kuba/inspiration' /* webpackChunkName: "inspiration" */)} />
       </Zone>
     </Fragment>
   </Site>

@@ -5,7 +5,7 @@ import require from './require'
 
 @paint(component)
 @schedule(require)
-class Lazy {
+class Async {
   #channel
   #component
   #from
@@ -40,4 +40,4 @@ class Lazy {
   }
 }
 
-export default Lazy
+export default Async
