@@ -8,7 +8,7 @@ router('/', async function home () {
 })
 
 router('/cadeiras', async function cadeiras () {
-  const { default: Cadeiras } = await import('@/cadeiras' /* webpackChunkName: "cadeiras" */)
+  const { default: Cadeiras } = await import('@kuba/cadeiras' /* webpackChunkName: "cadeiras" */)
   render(<Cadeiras />)
 })
 
