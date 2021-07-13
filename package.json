@@ -22,6 +22,7 @@
       "filters/*",
       "infra/*",
       "models/*",
+      "pages/*",
       "pixels/*",
       "shared/*"
     ]
