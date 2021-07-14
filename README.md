@@ -1,4 +1,9 @@
-## [Kuba](https://www.kuba.engineer)
+### [Kuba](https://www.kuba.engineer)
+
+[![GitHub issues](https://img.shields.io/github/issues/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/issues)
+[![GitHub forks](https://img.shields.io/github/forks/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/network)
+[![GitHub stars](https://img.shields.io/github/stars/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/stargazers)
+[![GitHub license](https://img.shields.io/github/license/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba)
 
 Ninguém precisa ter muitas habilidades para desenvolver um produto que funcione, fazer direito é outra história. Desenvolver um produto de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem.
 
