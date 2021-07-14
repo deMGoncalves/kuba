@@ -23,8 +23,7 @@ class Children {
   }
 
   paint () {
-    f.forEach(this.list, (child) =>
-      this.#parent.append(paint(child)))
+    this.#parent.append(...f.map(this.list, paint))
     return this
   }
 

@@ -71,8 +71,8 @@ class Tag {
     return this
   }
 
-  append (child) {
-    this.element.append(child)
+  append (...children) {
+    this.element.append(...children)
     return this
   }
 
