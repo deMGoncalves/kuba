@@ -1,9 +1,14 @@
 import * as f from '@kuba/f'
 import flatten from './flatten'
+import setClassName from './setClassName'
 
 class ClassName {
   #target
   #value
+
+  get target () {
+    return this.#target
+  }
 
   get value () {
     return this.#value
@@ -19,7 +24,7 @@ class ClassName {
   }
 
   paint () {
-    this.#target.setClassName(this.value)
+    setClassName(this)
     return this
   }
 
@@ -30,7 +35,7 @@ class ClassName {
 
   repaint (className) {
     this.#value = className.value
-    this.#target.setClassName(this.value)
+    setClassName(this)
     return this
   }
 

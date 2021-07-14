@@ -111,11 +111,6 @@ class Tag {
     return this
   }
 
-  setClassName (value) {
-    this.element.className = value
-    return this
-  }
-
   static create (tagName, props, children) {
     return new Tag(tagName, props, children)
   }
