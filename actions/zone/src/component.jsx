@@ -1,8 +1,7 @@
-import h, { Show } from '@kuba/h'
+import h, { Fragment, Hide, Show } from '@kuba/h'
 
 export default (zone, children) =>
-  <div className={zone.className} slot={zone.slot}>
-    <Show if={zone.onScreen}>
-      {children}
-    </Show>
-  </div>
+  <Fragment slot={zone.slot}>
+    <Show if={zone.onView}>{children}</Show>
+    <Hide if={zone.onView}><div /></Hide>
+  </Fragment>
