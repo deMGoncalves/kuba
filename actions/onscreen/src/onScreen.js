@@ -1,11 +1,11 @@
 import * as f from '@kuba/f'
 import event from './event'
 import method from './method'
-import onScreen from './onScreen'
+import onView from './onView'
 
-const lazyLoad = (node, listener) => (
+const onScreen = (node, listener) => (
   window.addEventListener(event, (node[method] = f.debounce(() =>
-    onScreen(node) && (
+    onView(node) && (
       window.removeEventListener(event, node[method]),
       listener()
     )
@@ -14,4 +14,4 @@ const lazyLoad = (node, listener) => (
   node[method]()
 )
 
-export default f.curry(lazyLoad)
+export default f.curry(onScreen)

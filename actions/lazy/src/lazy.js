@@ -5,11 +5,11 @@ import require from './require'
 
 @paint(component)
 @schedule(require)
-class Async {
+class Lazy {
   #channel
   #component
-  #from
   #props
+  #require
   
   get channel () {
     return this.#channel ??= Math.random()
@@ -18,19 +18,15 @@ class Async {
   get component () {
     return this.#component
   }
-
-  get from () {
-    return this.#from
-  }
-
+  
   get props () {
     return this.#props
   }
 
   constructor (props) {
-    this.#from = props.from
     this.#props = props
-    delete this.#props.from
+    this.#require = props.require
+    delete this.#props.require
   }
 
   @repaint
@@ -38,6 +34,10 @@ class Async {
     this.#component = component
     return this
   }
+
+  require () {
+    return this.#require()
+  }
 }
 
-export default Async
+export default Lazy

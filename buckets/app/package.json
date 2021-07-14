@@ -40,7 +40,7 @@
   "scripts": {
     "analyzer": "yarn run webpack --config webpack.analyzer.js",
     "build": "yarn run webpack --config webpack.prod.js",
-    "start": "yarn run webpack-dashboard -- webpack -- serve --config webpack.dev.js",
+    "start": "yarn run webpack-dashboard -- webpack -- serve --config webpack.dev.js --open",
     "test": "concurrently 'yarn run test:*'",
     "test:eslint": "yarn run eslint src/**/*.{js,jsx}",
     "test:stylelint": "yarn run stylelint src/**/*.css --allow-empty-input",

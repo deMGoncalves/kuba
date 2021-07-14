@@ -1,5 +1,5 @@
 import h, { Fragment } from '@kuba/h'
-import Async from '@kuba/async'
+import Lazy from '@kuba/lazy'
 import Zone from '@kuba/zone'
 import style from './style.css'
 
@@ -10,6 +10,6 @@ export default (_site, children) =>
       {children.main}
     </main>
     <Zone className={style.site__zone}>
-      <Async className={style.site__footer} from={() => import('@kuba/footer' /* webpackChunkName: "footer" */)} />
+      <Lazy className={style.site__footer} require={() => import('@kuba/footer' /* webpackChunkName: "footer" */)} />
     </Zone>
   </>

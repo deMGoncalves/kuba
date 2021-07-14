@@ -1,7 +1,7 @@
 import * as f from '@kuba/f'
-import lazyLoad from '@kuba/lazyload'
+import onScreen from '@kuba/onscreen'
 
 const scroll = (zone) =>
-  lazyLoad(zone[f.magic('tag')].element, () => zone.render())
+  onScreen(zone[f.magic('tag')].element, () => zone.render())
 
 export default f.idle(scroll)
