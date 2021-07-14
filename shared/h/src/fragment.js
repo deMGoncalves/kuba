@@ -49,6 +49,11 @@ class Fragment {
     this.children.reflow(fragment.children)
     return this
   }
+  
+  replaceChild (current, child) {
+    current.parentNode.replaceChild(child, current)
+    return this
+  }
 
   static execute (props, children) {
     return new Fragment(props, children)
