@@ -53,11 +53,14 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
-        { from: path.resolve(__dirname, 'assets'), to: '.' }
+        {
+          from: path.resolve(__dirname, 'assets'),
+          to: '.'
+        }
       ]
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'assets/template.html')
+      template: path.resolve(__dirname, 'src/index.html')
     }),
     new PreloadWebpackPlugin({
       rel: 'prefetch'
