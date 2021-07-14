@@ -59,7 +59,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'assets/template.html')
     }),
-    new PreloadWebpackPlugin()
+    new PreloadWebpackPlugin({
+      rel: 'prefetch'
+    })
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
