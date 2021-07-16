@@ -1,6 +1,5 @@
 import * as f from '@kuba/f'
 import Added from './added'
-import append from './append'
 import different from './different'
 import differentEntity from './differentEntity'
 import equal from './equal'
