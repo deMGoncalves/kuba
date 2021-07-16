@@ -1,7 +1,17 @@
 import * as f from '@kuba/f'
 
-export default (current, child) =>
-  f.or(
-    f.different(current.type, child.type),
-    f.different(current.name, child.name)
-  )
+class Different {
+  static exec (that) {
+    return (current, child) =>
+      that.replace(current, child)
+  }
+
+  static is (current, child) {
+    return f.or(
+      f.different(current.type, child.type),
+      f.different(current.name, child.name)
+    )
+  }
+}
+
+export default Different

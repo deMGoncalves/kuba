@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 import Added from './added'
-import different from './different'
+import Different from './different'
 import differentEntity from './differentEntity'
 import equal from './equal'
 import equalEntity from './equalEntity'
@@ -15,7 +15,7 @@ export default (children, other) => (
     f.apply(f.cond(
       [Added.is, Added.exec(children)],
       [Removed.is, Removed.exec(children)],
-      [different, replace(children)],
+      [Different.is, Different.exec(children)],
       [differentEntity, replace(children)],
       [equalEntity, stop],
       [equal, next]
