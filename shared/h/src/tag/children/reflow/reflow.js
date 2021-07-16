@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import added from './added'
+import Added from './added'
 import append from './append'
 import different from './different'
 import differentEntity from './differentEntity'
@@ -15,7 +15,7 @@ export default (children, other) => (
   f.forEach(
     f.zip(children.list, other.list),
     f.apply(f.cond(
-      [added, append(children)],
+      [Added.is, Added.exec(children)],
       [removed, remove(children)],
       [different, replace(children)],
       [differentEntity, replace(children)],
