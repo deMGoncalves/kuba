@@ -1,4 +1,14 @@
 import * as f from '@kuba/f'
 
-export default (current, child) =>
-  f.and(current, f.not(child))
+class Removed {
+  static exec (that) {
+    return (current) =>
+      that.remove(current)
+  }
+
+  static is (current, child) {
+    return f.and(current, f.not(child))
+  }
+}
+
+export default Removed

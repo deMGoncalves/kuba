@@ -5,8 +5,7 @@ import differentEntity from './differentEntity'
 import equal from './equal'
 import equalEntity from './equalEntity'
 import next from './next'
-import remove from './remove'
-import removed from './removed'
+import Removed from './removed'
 import replace from './replace'
 import stop from './stop'
 
@@ -15,7 +14,7 @@ export default (children, other) => (
     f.zip(children.list, other.list),
     f.apply(f.cond(
       [Added.is, Added.exec(children)],
-      [removed, remove(children)],
+      [Removed.is, Removed.exec(children)],
       [different, replace(children)],
       [differentEntity, replace(children)],
       [equalEntity, stop],
