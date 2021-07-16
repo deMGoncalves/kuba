@@ -2,9 +2,8 @@ import * as f from '@kuba/f'
 import Added from './added'
 import Different from './different'
 import differentEntity from './differentEntity'
-import equal from './equal'
+import Equal from './equal'
 import equalEntity from './equalEntity'
-import next from './next'
 import Removed from './removed'
 import replace from './replace'
 import stop from './stop'
@@ -18,7 +17,7 @@ export default (children, other) => (
       [Different.is, Different.exec(children)],
       [differentEntity, replace(children)],
       [equalEntity, stop],
-      [equal, next]
+      [Equal.is, Equal.exec]
     ))
   )
 )
