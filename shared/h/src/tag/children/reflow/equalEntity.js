@@ -1,9 +1,18 @@
 import * as f from '@kuba/f'
 import isEntity from './isEntity'
 
-export default (current, child) =>
-  f.and(
-    isEntity(current),
-    isEntity(child),
-    f.equal(current, child)
-  )
+class EqualEntity {
+  static exec () {
+    return this
+  }
+
+  static is (current, child) {
+    return f.and(
+      isEntity(current),
+      isEntity(child),
+      f.equal(current, child)
+    )
+  }
+}
+
+export default EqualEntity

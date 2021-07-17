@@ -3,9 +3,8 @@ import Added from './added'
 import Different from './different'
 import DifferentEntity from './differentEntity'
 import Equal from './equal'
-import equalEntity from './equalEntity'
+import EqualEntity from './equalEntity'
 import Removed from './removed'
-import stop from './stop'
 
 export default (children, other) => (
   f.forEach(
@@ -15,7 +14,7 @@ export default (children, other) => (
       [Removed.is, Removed.exec(children)],
       [Different.is, Different.exec(children)],
       [DifferentEntity.is, DifferentEntity.exec(children)],
-      [equalEntity, stop],
+      [EqualEntity.is, EqualEntity.exec],
       [Equal.is, Equal.exec]
     ))
   )
