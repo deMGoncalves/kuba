@@ -5,7 +5,9 @@ const { merge } = require('webpack-merge')
 const path = require('path')
 const ReplaceInFileWebpackPlugin = require('replace-in-file-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
+
 const radix = 32
+const maxSize = 200 * 1024
 
 module.exports = merge(common, {
   mode: 'production',
@@ -34,8 +36,8 @@ module.exports = merge(common, {
   },
   performance: {
     hints: 'error',
-    maxAssetSize: 200 * 1024,
-    maxEntrypointSize: 200 * 1024
+    maxAssetSize: maxSize,
+    maxEntrypointSize: maxSize
   },
   plugins: [
     new ReplaceInFileWebpackPlugin([
