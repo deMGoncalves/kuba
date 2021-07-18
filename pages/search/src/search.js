@@ -7,14 +7,14 @@ import data from './data'
 @paint(component)
 @jsonld(data)
 @markup
-class Busca {
+class Search {
   get description () {
     return __settings.app.description
   }
 
   get title () {
-    return 'Busca'
+    return 'Search'
   }
 }
 
-export default Busca
+export default Search
