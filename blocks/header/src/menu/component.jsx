@@ -14,10 +14,12 @@ export default (props) =>
       <span className={style.menu__span}>pedidos e minha conta</span>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>lista de desejo</link.Master>
       <span className={style.menu__span}>navegue por</span>
-      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>home</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('cadeiras')} master darker small>cadeiras</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('sofas')} master darker small>sofás</link.Master>
-      <link.Master className={style.menu__link} href={urlFor('acessorios')} master darker small>acessórios</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('home')} master darker small>Home</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('departament')} master darker small>Phasellus at</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('departament')} master darker small>Etiam non</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('departament')} master darker small>Aenean ac</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('departament')} master darker small>Ut at</link.Master>
+      <link.Master className={style.menu__link} href={urlFor('departament')} master darker small>Nulla molestie</link.Master>
       <span className={style.menu__span}>serviços e atendimento</span>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>central de atendimento</link.Master>
       <link.Master className={style.menu__link} href={urlFor('home')} master darker small>compre pelo Whatsapp</link.Master>

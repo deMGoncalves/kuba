@@ -5,8 +5,10 @@ import style from './style.css'
 
 export default (props) =>
   <nav {...props} className={[style.nav, props.className]}>
-    <link.Master className={style.nav__link} href={urlFor('home')} master darker small>home</link.Master>
-    <link.Master className={style.nav__link} href={urlFor('cadeiras')} master darker small>cadeiras</link.Master>
-    <link.Master className={style.nav__link} href={urlFor('sofas')} master darker small>sofás</link.Master>
-    <link.Master className={style.nav__link} href={urlFor('acessorios')} master darker small>acessórios</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('home')} master darker small>Home</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('departament')} master darker small>Phasellus at</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('departament')} master darker small>Etiam non</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('departament')} master darker small>Aenean ac</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('departament')} master darker small>Ut at</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('departament')} master darker small>Nulla molestie</link.Master>
   </nav>
