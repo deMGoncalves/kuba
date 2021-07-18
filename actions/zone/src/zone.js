@@ -7,8 +7,13 @@ import scroll from './scroll'
 @paint(component)
 @schedule(scroll)
 class Zone {
+  #className
   #onView
   #slot
+  
+  get className () {
+    return this.#className
+  }
 
   get onView () {
     return this.#onView ??= f.F()
@@ -19,6 +24,7 @@ class Zone {
   }
 
   constructor (props) {
+    this.#className = props.className
     this.#slot = props.slot
   }
 
