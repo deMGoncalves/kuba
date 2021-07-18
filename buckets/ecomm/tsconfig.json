@@ -1,0 +1,6 @@
+{
+  "extends": "@kuba/tsconfig/tsconfig.json",
+  "include": [
+    "./src"
+  ]
+}
