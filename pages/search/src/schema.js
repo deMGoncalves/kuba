@@ -4,7 +4,7 @@ export default {
   breadcrumb: {
     paths: [
       {
-        title: 'home',
+        title: 'Home',
         url: urlFor('home')
       },
       {
