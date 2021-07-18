@@ -13,7 +13,8 @@ export default () =>
     <Fragment slot='main'>
       <Hero className={style.home__hero} />
       <Exploration className={style.home__exploration} />
-      <Zone>
+      <Zone className={style.home__zone}>
+        <Lazy className={style.home__workflow} require={() => import('@kuba/workflow' /* webpackChunkName: "workflow" */)} />
         <Lazy className={style.home__inspiration} require={() => import('@kuba/inspiration' /* webpackChunkName: "inspiration" */)} />
       </Zone>
     </Fragment>
