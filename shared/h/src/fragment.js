@@ -35,8 +35,8 @@ class Fragment {
     this.#slot = props.slot
   }
 
-  append (...child) {
-    this.element.append(...child)
+  append (...children) {
+    this.element.append(...children)
     return this
   }
 
