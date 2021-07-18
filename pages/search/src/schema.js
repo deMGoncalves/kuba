@@ -8,8 +8,8 @@ export default {
         url: urlFor('home')
       },
       {
-        title: 'busca',
-        url: urlFor('busca')
+        title: 'Search',
+        url: urlFor('search')
       }
     ]
   }
