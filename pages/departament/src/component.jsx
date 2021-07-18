@@ -7,12 +7,12 @@ import Title from '@kuba/title'
 import schema from './schema'
 import style from './style.css'
 
-export default (cadeiras) =>
-  <Site className={style.cadeiras}>
-    <Header className={style.cadeiras__header} slot='header' />
+export default (acessorios) =>
+  <Site className={style.acessorios}>
+    <Header className={style.acessorios__header} slot='header' />
     <Fragment slot='main'>
-      <Title className={style.cadeiras__title}>{cadeiras.title}</Title>
+      <Title className={style.acessorios__title}>{acessorios.title}</Title>
       <Breadcrumb {...schema.breadcrumb} className={style.acessorios__breadcrumb} />
-      <Banner {...schema.banner} className={style.cadeiras__banner} />
+      <Banner {...schema.banner} className={style.acessorios__banner} />
     </Fragment>
   </Site>

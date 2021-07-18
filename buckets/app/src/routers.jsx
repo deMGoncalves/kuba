@@ -7,24 +7,19 @@ router('/', async function home () {
   render(<Home />)
 })
 
-router('/cadeiras', async function cadeiras () {
-  const { default: Cadeiras } = await import('@kuba/cadeiras' /* webpackChunkName: "cadeiras" */)
-  render(<Cadeiras />)
+router('/departament', async function departament () {
+  const { default: Departament } = await import('@kuba/departament' /* webpackChunkName: "departament" */)
+  render(<Departament />)
 })
 
-router('/sofas', async function sofas () {
-  const { default: Sofas } = await import('@kuba/sofas' /* webpackChunkName: "sofas" */)
-  render(<Sofas />)
+router('/departament/category', async function category () {
+  const { default: Category } = await import('@kuba/category' /* webpackChunkName: "category" */)
+  render(<Category />)
 })
 
-router('/acessorios', async function acessorios () {
-  const { default: Acessorios } = await import('@kuba/acessorios' /* webpackChunkName: "acessorios" */)
-  render(<Acessorios />)
-})
-
-router('/busca', async function busca () {
-  const { default: Busca } = await import('@kuba/busca' /* webpackChunkName: "busca" */)
-  render(<Busca />)
+router('/search', async function search () {
+  const { default: Search } = await import('@kuba/search' /* webpackChunkName: "search" */)
+  render(<Search />)
 })
 
 router('', async function notFound () {

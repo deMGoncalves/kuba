@@ -20,8 +20,8 @@ export default {
         url: urlFor('home')
       },
       {
-        title: 'cadeiras',
-        url: urlFor('cadeiras')
+        title: 'acessórios',
+        url: urlFor('acessorios')
       }
     ]
   }
