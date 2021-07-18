@@ -10,18 +10,18 @@ export default {
       medium,
       large
     ],
-    title: 'sua casa moderna',
-    description: 'Design e sofisticaçao em peças únicas feitas a mão. Sua casa nunca mais será a mesma. Dê um toque de sofisticação em sua casa com nossas cadeiras, sofás e acessórios'
+    title: 'Duis nec metus neque',
+    description: 'In hac habitasse platea dictumst. Donec convallis ullamcorper massa id volutpat. Maecenas quis tellus viverra, tincidunt urna vitae, blandit enim. Morbi varius, purus in efficitur malesuada.'
   },
   breadcrumb: {
     paths: [
       {
-        title: 'home',
+        title: 'Home',
         url: urlFor('home')
       },
       {
-        title: 'acessórios',
-        url: urlFor('acessorios')
+        title: 'Departament',
+        url: urlFor('departament')
       }
     ]
   }

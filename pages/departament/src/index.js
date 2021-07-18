@@ -1,1 +1,1 @@
-export { default } from './acessorios'
+export { default } from './departament'

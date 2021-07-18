@@ -7,14 +7,14 @@ import data from './data'
 @paint(component)
 @jsonld(data)
 @markup
-class Acessorios {
+class Departament {
   get description () {
     return __settings.app.description
   }
 
   get title () {
-    return 'Acessórios'
+    return 'Departament'
   }
 }
 
-export default Acessorios
+export default Departament
