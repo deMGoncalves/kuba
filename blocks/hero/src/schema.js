@@ -8,6 +8,6 @@ export default {
     medium,
     larger
   ],
-  "title": "sua casa moderna",
-  "description": "Design e sofisticaçao em peças únicas feitas a mão. Sua casa nunca mais será a mesma. Dê um toque de sofisticação em sua casa com nossas cadeiras, sofás e acessórios"
+  "title": "Nunc eu dignissim leo. Donec.",
+  "description": "Nulla id placerat sem. Vestibulum congue suscipit erat, eu tempor augue venenatis ut. Vestibulum magna ex, pulvinar eget quam et, rutrum sodales nisl. Curabitur finibus tristique."
 }
