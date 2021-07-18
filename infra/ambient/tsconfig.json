@@ -1,5 +1,5 @@
 {
-  "extends": "@kuba/tsconfig/tsconfig.json",
+  "extends": "@kuba/tsconfig",
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "dist",

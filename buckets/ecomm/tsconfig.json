@@ -1,7 +1,3 @@
 {
-  "extends": "@kuba/tsconfig/tsconfig.json",
-  "include": [
-    "./src/**/*.js",
-    "./src/**/*.jsx"
-  ]
+  "extends": "@kuba/tsconfig"
 }

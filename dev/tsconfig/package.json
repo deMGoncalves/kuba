@@ -1,4 +1,5 @@
 {
+  "main": "tsconfig.json",
   "name": "@kuba/tsconfig",
   "private": true,
   "scripts": {
