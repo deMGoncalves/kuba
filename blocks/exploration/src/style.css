@@ -6,7 +6,6 @@
 
 .exploration__box {
   cursor: pointer;
-  width: 388.666px;
 }
 
 .exploration__strong {
@@ -14,8 +13,14 @@
   line-height: 1.382;
 }
 
+.exploration__div {
+  display: grid;
+  gap: var(--size-medium);
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @media (min-width: 769px) {
-  .exploration__main {
-    grid-template-columns: repeat(3, 1fr);
+  .exploration__div {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
