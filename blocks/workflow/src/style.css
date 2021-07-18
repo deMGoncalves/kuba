@@ -1,4 +1,4 @@
-.workflow__container {
+.workflow__div {
   border: 1px solid var(--color-master-light);
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
 }
 
 @media (min-width: 961px) {
-  .workflow__container {
+  .workflow__div {
     align-items: flex-start;
     flex-direction: row;
   }
