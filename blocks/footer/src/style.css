@@ -11,7 +11,7 @@
 .footer__container {
   display: grid;
   gap: var(--size-largest);
-  padding: var(--size-small) var(--size-medium) var(--size-largest) var(--size-medium);
+  padding: var(--size-small) var(--size-medium) var(--size-largest) var(--size-medium) !important;
   width: 100%;
 }
 
