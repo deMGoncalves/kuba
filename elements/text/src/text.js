@@ -1,8 +1,9 @@
-import h from '@kuba/h'
-import style from './style.css'
+import styled, { color, size } from '@kuba/styled'
 
 export default new Proxy({}, {
   get: (_, tagName) =>
-    (props, children) =>
-      h(tagName, { ...props, className: [style.text, props.className] }, ...children)
+    styled[tagName]`
+      color: var(${color});
+      font-size: var(${size});
+    `
 })
