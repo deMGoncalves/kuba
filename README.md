@@ -15,7 +15,7 @@ O Kuba é um projeto de referência a ser seguido e não um Framework e/ou Libra
 
 > Kuba é como uma folha em branco! A liberdade de programar do jeito que faça sentido para o produto
 
-#### Começe por qui
+#### [Começe por aqui](https://github.com/deMGoncalves/kuba)
 
 Kuba foi projetado para um processo de trabalho simplificado, para instalar as dependencias e executar o projeto pasta apenas rodar este comando.
 
