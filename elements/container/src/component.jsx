@@ -1,5 +1,9 @@
-import h from '@kuba/h'
-import style from './style.css'
+import styled, { size } from '@kuba/styled'
 
-export default (props, children) =>
-  <div {...props} className={[style.container, props.className]}>{children}</div>
+export default styled.div`
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 0 var(${size});
+  position: relative;
+  width: 100%;
+`
