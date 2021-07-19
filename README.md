@@ -1,5 +1,6 @@
 ### [Kuba](https://www.kuba.engineer)
 
+![Vercel](https://vercelbadge.vercel.app/api/demgoncalves/kuba)
 [![GitHub issues](https://img.shields.io/github/issues/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/issues)
 [![GitHub forks](https://img.shields.io/github/forks/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/network)
 [![GitHub stars](https://img.shields.io/github/stars/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/stargazers)
