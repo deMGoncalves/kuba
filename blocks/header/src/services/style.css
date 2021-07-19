@@ -15,7 +15,7 @@
 
 .services__link {
   border-bottom: 1px solid var(--color-master-lighter);
-  justify-content: flex-start;
+  justify-content: flex-start !important;
   padding: var(--size-small) var(--size-medium);
   text-decoration: none;
   width: 100%;
