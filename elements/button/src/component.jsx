@@ -10,7 +10,7 @@ export default new Proxy({}, {
       color: var(--color-master-lightest);
       cursor: pointer;
       display: inline-flex;
-      font-size: var(--size-small) !important;
+      font-size: var(--size-small);
       font-weight: 500;
       height: var(--size-largest);
       justify-content: center;
