@@ -15,8 +15,10 @@ Kuba é um projeto de referência a ser seguido e não um Framework e/ou Library
 
 #### [Começe por aqui](https://github.com/deMGoncalves/kuba)
 
-	* [Instalação](#instalacao)
-	* [Como usar](#como-usar)
+<!--ts-->
+   * [Instalação](#instalação)
+   * [Como usar](#como-usar)
+<!--te-->
 
 #### [Instalação](https://github.com/deMGoncalves/kuba)
 
