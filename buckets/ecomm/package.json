@@ -3,6 +3,7 @@
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
     "concurrently": "^6.0.0",
+    "esbuild": "^0.12.15",
     "eslint": "^7.19.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
@@ -14,16 +15,12 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "ts-jest": "^26.5.1",
-    "typescript": "^4.3.5",
-    "vite": "^2.4.2"
+    "typescript": "^4.3.5"
   },
   "main": "src/index.js",
   "name": "@kuba/ecomm",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview",
     "test": "concurrently 'yarn run test:*'",
     "test:eslint": "yarn run eslint src/**/*.{js,jsx}",
     "test:stylelint": "yarn run stylelint src/**/*.css --allow-empty-input",
