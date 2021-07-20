@@ -12,6 +12,6 @@ export default (_site, children) =>
       {children.main}
     </main>
     <Zone className={style.site__zone}>
-      <Lazy className={style.site__footer} require={() => import('@kuba/footer' /* webpackChunkName: "footer" */)} />
+      <Lazy className={style.site__footer} require={() => import('@kuba/footer')} />
     </Zone>
   </>
