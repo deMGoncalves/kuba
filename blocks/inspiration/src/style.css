@@ -43,10 +43,6 @@
   grid-area: box4;
 }
 
-.inspiration__strong {
-  line-height: 1.382;
-}
-
 .inspiration__picture {
   border-radius: var(--size-smallest);
   padding-top: calc(400 / 736 * 100%) !important;
@@ -56,4 +52,12 @@
   .inspiration__picture {
     padding-top: calc(645 / 591 * 100%) !important;
   }
+}
+
+.inspiration__box {
+  cursor: pointer;
+}
+
+.inspiration__strong {
+  line-height: 1.382;
 }

@@ -12,7 +12,7 @@ import clock_l from './assets/clock_360x360.jpg'
 import clock_s from './assets/clock_285x285.jpg'
 
 export default {
-  title: 'destaques da semana',
+  title: 'Integer vestibulum finibus mollis',
   thumbnails: [
     inspiration_s,
     inspiration_l
@@ -23,7 +23,7 @@ export default {
         chair_l,
         chair_s
       ],
-      title: 'leather chair',
+      title: 'Nam dignissim',
       url: urlFor('departament')
     },
     {
@@ -31,7 +31,7 @@ export default {
         hadle_l,
         hadle_s
       ],
-      title: 'hadle',
+      title: 'Proin dictum',
       url: urlFor('departament')
     },
     {
@@ -39,7 +39,7 @@ export default {
         sofa_l,
         sofa_s
       ],
-      title: 'large sofa',
+      title: 'Fusce leo',
       url: urlFor('departament')
     },
     {
@@ -47,7 +47,7 @@ export default {
         clock_l,
         clock_s
       ],
-      title: 'clock',
+      title: 'Nunc aliquam',
       url: urlFor('departament')
     }
   ]
