@@ -6,7 +6,6 @@ import style from './style.css'
 
 export default (_site, children) =>
   <>
-    <Flag className={style.site__flag} />
     {children.header}
     <main className={style.site__main}>
       {children.main}
@@ -14,4 +13,5 @@ export default (_site, children) =>
     <Zone className={style.site__zone}>
       <Lazy className={style.site__footer} require={() => import('@kuba/footer')} />
     </Zone>
+    <Flag className={style.site__flag} />
   </>
