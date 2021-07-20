@@ -3,17 +3,16 @@ import Picture from '@kuba/picture'
 import Sources from '@kuba/sources'
 import Story from '@kuba/story'
 import text from '@kuba/text'
-import Product from './product'
-import schema from './schema'
+import Box from './box'
 import style from './style.css'
 
 export default (props) =>
-  <Story {...props} className={[style.inspiration, props.className]}>
-    <text.H2 className={style.inspiration__h2} master darker large>{schema.title}</text.H2>
+  <Story className={[style.inspiration, props.className]}>
+    <text.H2 className={style.inspiration__h2} master darker large>{props.title}</text.H2>
     <div className={style.inspiration__main}>
       <Picture className={style.inspiration__picture}>
-        <Sources thumbnails={schema.thumbnails} />
+        <Sources thumbnails={props.thumbnails} />
       </Picture>
-      <Repeat iterator={schema.products} component={Product} />
+      <Repeat iterator={props.products} component={Box} />
     </div>
   </Story>
