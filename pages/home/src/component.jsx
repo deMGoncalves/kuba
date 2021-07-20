@@ -1,9 +1,9 @@
 import h, { Fragment } from '@kuba/h'
-import Exploration from '@kuba/exploration'
 import Header from '@kuba/header'
 import Lazy from '@kuba/lazy'
 import Site from '@kuba/site'
 import Zone from '@kuba/zone'
+import Exploration from './exploration'
 import Hero from './hero'
 import style from './style.css'
 

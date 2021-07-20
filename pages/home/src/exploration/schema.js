@@ -1,8 +1,8 @@
 import { urlFor } from '@kuba/router'
-import cadeira from './cadeira.jpg'
-import sofa from './sofa.jpg'
-import acessorio from './acessorio.jpg'
-import banco from './banco.jpg'
+import acessorio from './assets/acessorio.jpg'
+import banco from './assets/banco.jpg'
+import cadeira from './assets/cadeira.jpg'
+import sofa from './assets/sofa.jpg'
 
 export default {
   title: 'In efficitur elementum odio',

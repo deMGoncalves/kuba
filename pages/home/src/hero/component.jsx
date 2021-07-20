@@ -4,4 +4,4 @@ import schema from './schema'
 import style from './style.css'
 
 export default (props) =>
-  <Hero {...schema} className={[style.home__hero, props.className]} />
+  <Hero {...schema} className={[style.hero, props.className]} />
