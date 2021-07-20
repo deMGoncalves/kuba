@@ -1,20 +1,20 @@
 import { urlFor } from '@kuba/router'
-import acessorio from './assets/acessorio.jpg'
-import banco from './assets/banco.jpg'
-import cadeira from './assets/cadeira.jpg'
+import acessory from './assets/acessory.jpg'
+import chair from './assets/chair.jpg'
 import sofa from './assets/sofa.jpg'
+import stool from './assets/stool.jpg'
 
 export default {
   title: 'In efficitur elementum odio',
   departaments: [
     {
       title: 'Mauris arcu dolor',
-      thumbnail: cadeira,
+      thumbnail: chair,
       url: urlFor('departament')
     },
     {
       title: 'Cras ac commodo',
-      thumbnail: banco,
+      thumbnail: stool,
       url: urlFor('departament')
     },
     {
@@ -24,7 +24,7 @@ export default {
     },
     {
       title: 'Interdum et',
-      thumbnail: acessorio,
+      thumbnail: acessory,
       url: urlFor('departament')
     }
   ]

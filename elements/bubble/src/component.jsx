@@ -5,7 +5,7 @@ import style from './style.css'
 export default (props, children) =>
   <div {...props} className={[style.box, props.className]}>
     <figure className={style.box__figure}>
-      <Picture className={style.box__picture}>
+      <Picture className={style.box__picture} alt={props.alt}>
         {children.sources}
       </Picture>
       <figcaption className={style.box__figcaption}>
