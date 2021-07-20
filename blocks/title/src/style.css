@@ -10,12 +10,12 @@
 }
 
 .title__h1 {
-  font-size: var(--size-large);
+  font-size: var(--size-large) !important;
   line-height: 1;
 }
 
 @media (min-width: 769px) {
   .title__h1 {
-    font-size: var(--size-larger);
+    font-size: var(--size-larger) !important;
   }
 }
