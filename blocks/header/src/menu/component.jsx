@@ -8,7 +8,7 @@ import style from './style.css'
 
 export default (props) =>
   <Action className={[style.menu, props.className]}>
-    <icon.Menu className={style.menu__icon} slot='icon' />
+    <icon.Menu className={style.menu__icon} slot='icon' larger />
     <text.Strong className={style.menu__text} slot='header' master darker>kuba</text.Strong>
     <Fragment slot='main'>
       <span className={style.menu__span}>pedidos e minha conta</span>

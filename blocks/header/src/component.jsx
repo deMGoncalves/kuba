@@ -15,7 +15,6 @@ export default (props) =>
   <header {...props} className={[style.header, props.className]}>
     <Container className={style.header__container}>
       <div className={style.header__div}>
-        <Menu className={style.header__menu} />
         <Logo className={style.header__logo} />
         <Search className={style.header__search} />
       </div>
@@ -24,6 +23,7 @@ export default (props) =>
         <Services className={style.header__services} />
         <Profile className={style.header__profile} />
         <Bag className={style.header__bag} />
+        <Menu className={style.header__menu} />
       </div>
     </Container>
     <Container className={[style.header__container, style.desktop]}>
