@@ -16,11 +16,11 @@ Kuba é um projeto de referência a ser seguido e não um Framework e/ou Library
 #### [Começe por aqui](https://github.com/deMGoncalves/kuba)
 
 <!--ts-->
-   * [Instalação](#instalação)
-   * [Como usar](#como-usar)
+  * [Instalação](#instalação)
+  * [Como usar](#como-usar)
 <!--te-->
 
-#### [Instalação](https://github.com/deMGoncalves/kuba)
+#### [Instalação](#instalação)
 
 Kuba foi projetado para um processo de trabalho simplificado, para instalar as dependencias e executar o projeto pasta apenas rodar este comando.
 
@@ -29,6 +29,6 @@ git clone https://github.com/deMGoncalves/kuba.git
 yarn install
 ```
 
-#### [Como usar](https://github.com/deMGoncalves/kuba)
+#### [Como usar](#como-usar)
 
 🚧  Como usar em construção...  🚧
