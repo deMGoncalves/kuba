@@ -5,6 +5,7 @@ import Site from '@kuba/site'
 import Zone from '@kuba/zone'
 import Exploration from './exploration'
 import Hero from './hero'
+import Workflow from './workflow'
 import style from './style.css'
 
 export default () =>
@@ -14,7 +15,7 @@ export default () =>
       <Hero className={style.home__hero} />
       <Exploration className={style.home__exploration} />
       <Zone className={style.home__zone}>
-        <Lazy className={style.home__workflow} require={() => import('@kuba/workflow' /* webpackChunkName: "workflow" */)} />
+        <Workflow className={style.home__workflow} />
         <Lazy className={style.home__inspiration} require={() => import('@kuba/inspiration' /* webpackChunkName: "inspiration" */)} />
       </Zone>
     </Fragment>

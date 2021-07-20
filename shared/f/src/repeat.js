@@ -1,6 +1,7 @@
 import curry from './curry'
+import or from './or'
 
 const repeat = (value, n) =>
-  n ? Array(n).toString().split(',').map(() => value) : []
+  Array(or(n, 0)).fill(value)
 
 export default curry(repeat)
