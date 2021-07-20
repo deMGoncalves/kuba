@@ -1,10 +1,10 @@
 import h, { Fragment } from '@kuba/h'
 import Header from '@kuba/header'
-import Lazy from '@kuba/lazy'
 import Site from '@kuba/site'
 import Zone from '@kuba/zone'
 import Exploration from './exploration'
 import Hero from './hero'
+import Inspiration from './inspiration'
 import Workflow from './workflow'
 import style from './style.css'
 
@@ -16,7 +16,7 @@ export default () =>
       <Exploration className={style.home__exploration} />
       <Zone className={style.home__zone}>
         <Workflow className={style.home__workflow} />
-        <Lazy className={style.home__inspiration} require={() => import('@kuba/inspiration' /* webpackChunkName: "inspiration" */)} />
+        <Inspiration className={style.home__inspiration} />
       </Zone>
     </Fragment>
   </Site>
