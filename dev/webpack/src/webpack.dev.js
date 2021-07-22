@@ -5,7 +5,7 @@ const DashboardPlugin = require('webpack-dashboard/plugin')
 const { merge } = require('webpack-merge')
 const path = require('path')
 const portFinderSync = require('portfinder-sync')
-const port = 5000
+const port = 9000
 
 module.exports = (dirname) =>
   merge(common(dirname), {
@@ -22,7 +22,7 @@ module.exports = (dirname) =>
           pathRewrite: {
             '^/api/': '/'
           },
-          target: 'http://localhost:5001/api'
+          target: 'http://localhost:9001/api'
         }
       }
     },
