@@ -2,4 +2,4 @@ export default () =>
   window.addEventListener('load', () =>
     navigator
       .serviceWorker
-      .register('/service-worker.js'))
+      .register(`https://${location.hostname}/service-worker.js`))

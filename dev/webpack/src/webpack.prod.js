@@ -5,8 +5,6 @@ const maxSize = 204800
 const { merge } = require('webpack-merge')
 const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
-const WorkboxPlugin = require('workbox-webpack-plugin')
-
 
 module.exports = (dirname) =>
   merge(common(dirname), {
@@ -38,11 +36,5 @@ module.exports = (dirname) =>
       hints: 'error',
       maxAssetSize: maxSize,
       maxEntrypointSize: maxSize
-    },
-    plugins: [
-      new WorkboxPlugin.GenerateSW({
-        clientsClaim: true,
-        skipWaiting: true
-      }) 
-    ]
+    }
   })
