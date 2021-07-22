@@ -5,6 +5,7 @@ const { merge } = require('webpack-merge')
 const path = require('path')
 const ReplaceInFileWebpackPlugin = require('replace-in-file-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 const radix = 32
 const maxSize = 204800
@@ -41,15 +42,9 @@ module.exports = (dirname) =>
       maxEntrypointSize: maxSize
     },
     plugins: [
-      new ReplaceInFileWebpackPlugin([
-        {
-          dir: 'public',
-          files: ['sw.js'],
-          rules: [{
-            search: '@cache',
-            replace: () => new Date().getTime().toString(radix)
-          }]
-        }
-      ])
+      new WorkboxPlugin.GenerateSW({
+       clientsClaim: true,
+       skipWaiting: true
+     })
     ]
   })

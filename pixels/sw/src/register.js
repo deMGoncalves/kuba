@@ -1,4 +1,5 @@
 export default () =>
-  navigator
-    .serviceWorker
-    .register(`https://${location.hostname}/sw.js`, { scope: '/' })
+  window.addEventListener('load', () =>
+    navigator
+      .serviceWorker
+      .register('/service-worker.js'))

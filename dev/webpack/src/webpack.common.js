@@ -78,6 +78,7 @@ module.exports = (dirname) => ({
     }
   },
   output: {
+    clean: true,
     chunkFilename: '[name].[contenthash].js',
     filename: '[name].[contenthash].js',
     publicPath: '/'
