@@ -18,8 +18,10 @@ module.exports = merge(common, {
     proxy: {
       '/api/*': {
         changeOrigin: true,
-        pathRewrite: { '^/api/': '/' },
-        target: 'http://localhost:9001/api'
+        pathRewrite: {
+          '^/api/': '/'
+        },
+        target: 'http://localhost:5001/api'
       }
     }
   },
