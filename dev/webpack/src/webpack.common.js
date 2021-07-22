@@ -65,7 +65,13 @@ module.exports = (dirname) => ({
       filename: '[name].[contenthash].css'
     }), 
     new PreloadWebpackPlugin({
-      rel: 'prefetch'
+      as (file) {
+        if (/\.css$/.test(file)) return 'style';
+        if (/\.(woff|woff2|eot|ttf|otf)$/.test(file)) return 'font';
+        if (/\.(png|svg|jpg|jpeg|gif)$/.test(file)) return 'image';
+        return 'script'
+      },
+      rel: 'preload'
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(dirname, 'src/index.html')
