@@ -63,12 +63,12 @@ module.exports = (dirname) => ({
     new MiniCssExtractPlugin({
       chunkFilename: '[name].[contenthash].css',
       filename: '[name].[contenthash].css'
+    }), 
+    new PreloadWebpackPlugin({
+      rel: 'prefetch'
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(dirname, 'src/index.html')
-    }),
-    new PreloadWebpackPlugin({
-      rel: 'prefetch'
     })
   ],
   resolve: {

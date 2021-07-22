@@ -1,14 +1,12 @@
 'use strict'
 
 const common = require('./webpack.common.js')
+const maxSize = 204800
 const { merge } = require('webpack-merge')
 const path = require('path')
-const ReplaceInFileWebpackPlugin = require('replace-in-file-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 
-const radix = 32
-const maxSize = 204800
 
 module.exports = (dirname) =>
   merge(common(dirname), {
@@ -43,8 +41,8 @@ module.exports = (dirname) =>
     },
     plugins: [
       new WorkboxPlugin.GenerateSW({
-       clientsClaim: true,
-       skipWaiting: true
-     })
+        clientsClaim: true,
+        skipWaiting: true
+      }) 
     ]
   })
