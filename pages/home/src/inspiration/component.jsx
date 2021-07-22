@@ -4,4 +4,4 @@ import schema from './schema'
 import style from './style.css'
 
 export default (props) =>
-  <Lazy {...schema} className={[style.inpiration, props.className]} require={() => import('@kuba/inspiration')} />
+  <Lazy {...schema} className={[style.inpiration, props.className]} require={() => import('@kuba/inspiration' /* webpackChunkName: "inspiration" */)} />

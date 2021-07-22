@@ -6,7 +6,7 @@
     "html-webpack-plugin": "^5.2.0",
     "mini-css-extract-plugin": "^2.1.0",
     "portfinder-sync": "^0.0.2",
-    "postcss-loader": "^5.0.0",
+    "postcss-loader": "^6.1.1",
     "preload-webpack-plugin": "3.0.0-beta.3",
     "terser-webpack-plugin": "^5.1.1",
     "ts-loader": "^8.0.17",
