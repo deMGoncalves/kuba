@@ -62,7 +62,8 @@ module.exports = (dirname) => ({
     }),
     new MiniCssExtractPlugin({
       chunkFilename: '[name].[contenthash].css',
-      filename: '[name].[contenthash].css'
+      filename: '[name].[contenthash].css',
+      ignoreOrder: true
     }), 
     new PreloadWebpackPlugin({
       as (file) {
