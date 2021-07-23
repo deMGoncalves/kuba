@@ -68,6 +68,7 @@
 body {
   background-color: var(--color-master-lightest);
   color: var(--color-master);
+  font-display: optional;
   font-family: 'Roboto', sans-serif;
   font-size: var(--size-medium);
   font-weight: 400;
