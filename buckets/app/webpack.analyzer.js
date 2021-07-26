@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = require('@kuba/webpack').analyzer(__dirname)
+module.exports = require('@kuba/webpack').analyzer('app', __dirname)
