@@ -1,6 +1,6 @@
 export { default } from './h'
 export { default as filters } from './filters'
-export { default as Fragment } from './fragment'
+export { Fragment } from './tag'
 export { default as Hide } from './hide'
 export { default as paint } from './paint'
 export { default as render } from './render'

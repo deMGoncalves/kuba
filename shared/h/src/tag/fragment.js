@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import Children from '@kuba/h/src/tag/children'
+import Children from './children'
 
 class Fragment {
   #children
