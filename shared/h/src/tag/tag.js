@@ -3,8 +3,6 @@ import Attributes from './attributes'
 import Children from './children'
 import ClassName from './className'
 import Events from './events'
-import paint from './paint'
-import reflow from './reflow'
 
 class Tag {
   #attributes
@@ -77,12 +75,18 @@ class Tag {
   }
 
   paint () {
-    paint(this)
+    this.attributes.paint()
+    this.children.paint()
+    this.className.paint()
+    this.events.paint()
     return this.element
   }
 
   reflow (tag) {
-    reflow(this, tag)
+    this.attributes.reflow(tag.attributes)
+    this.className.reflow(tag.className)
+    this.events.reflow(tag.events)
+    this.children.reflow(tag.children)
     return this
   }
 
@@ -116,7 +120,7 @@ class Tag {
   }
 
   static is (nameOrComponent) {
-    return f.is(String, nameOrComponent)
+    return f.test(/^\w+$/, nameOrComponent)
   }
 }
 

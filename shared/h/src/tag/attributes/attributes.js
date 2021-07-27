@@ -17,7 +17,8 @@ class Attributes {
   }
 
   paint () {
-    f.forEach(this.list, ({ key, value }) => this.#target.setAttribute(key, value))
+    f.forEach(this.list, ({ key, value }) =>
+      this.#target.setAttribute(key, value))
     return this
   }
 
