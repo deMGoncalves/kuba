@@ -26,10 +26,7 @@ module.exports = (name, pwd) => ({
     plugins.bundleAnalyzerPlugin()
   ],
   resolve: {
-    extensions: ['.js', '.jsx'],
-    alias: {
-      '@': path.resolve(pwd, 'src')
-    }
+    extensions: ['.js', '.jsx']
   },
   optimization: {
     minimizer: [

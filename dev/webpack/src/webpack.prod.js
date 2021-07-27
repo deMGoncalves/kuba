@@ -25,10 +25,7 @@ module.exports = (name, pwd) => ({
     plugins.htmlPlugin(pwd)
   ],
   resolve: {
-    extensions: ['.js', '.jsx'],
-    alias: {
-      '@': path.resolve(pwd, 'src')
-    }
+    extensions: ['.js', '.jsx']
   },
   optimization: {
     minimizer: [
