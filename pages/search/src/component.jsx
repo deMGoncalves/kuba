@@ -4,7 +4,7 @@ import Header from '@kuba/header'
 import Site from '@kuba/site'
 import Title from '@kuba/title'
 import schema from './schema'
-import style from './style.css'
+import style from './style'
 
 export default (busca) =>
   <Site className={style.busca}>

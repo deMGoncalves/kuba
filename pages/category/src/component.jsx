@@ -3,7 +3,7 @@ import Header from '@kuba/header'
 import Site from '@kuba/site'
 import Title from '@kuba/title'
 import Breadcrumb from './breadcrumb'
-import style from './style.css'
+import style from './style'
 
 export default (acessorios) =>
   <Site className={style.acessorios}>

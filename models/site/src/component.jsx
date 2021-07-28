@@ -2,7 +2,7 @@ import h, { Fragment } from '@kuba/h'
 import Flag from '@kuba/flag'
 import Lazy from '@kuba/lazy'
 import Zone from '@kuba/zone'
-import style from './style.css'
+import style from './style'
 
 export default (_site, children) =>
   <>

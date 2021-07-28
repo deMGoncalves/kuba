@@ -6,7 +6,7 @@ import Exploration from './exploration'
 import Hero from './hero'
 import Inspiration from './inspiration'
 import Workflow from './workflow'
-import style from './style.css'
+import style from './style'
 
 export default () =>
   <Site className={style.home}>

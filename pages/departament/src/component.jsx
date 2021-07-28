@@ -5,7 +5,7 @@ import Title from '@kuba/title'
 import Banner from './banner'
 import Breadcrumb from './breadcrumb'
 import Navigation from './navigation'
-import style from './style.css'
+import style from './style'
 
 export default (departament) =>
   <Site className={style.departament}>

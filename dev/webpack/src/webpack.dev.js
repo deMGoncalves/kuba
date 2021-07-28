@@ -4,7 +4,7 @@ const path = require('path')
 const portFinderSync = require('portfinder-sync')
 const loaders = require('./loaders')
 const plugins = require('./plugins')
-const port = 9001
+const port = 3000
 
 module.exports = (name, pwd) => ({
   context: path.resolve(pwd, 'src'),
@@ -32,7 +32,6 @@ module.exports = (name, pwd) => ({
   module: {
     rules: [
       loaders.tsLoader(),
-      loaders.cssLoader(),
       loaders.fileLoader()
     ]
   },

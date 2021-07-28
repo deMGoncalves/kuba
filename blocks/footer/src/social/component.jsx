@@ -1,7 +1,7 @@
 import h from '@kuba/h'
 import icon from '@kuba/icon'
 import { urlFor } from '@kuba/router'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <div className={[style.social, props.className]}>

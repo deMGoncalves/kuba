@@ -1,2 +1,2 @@
 import './renderFonts'
-import './style.css'
+import './style'
