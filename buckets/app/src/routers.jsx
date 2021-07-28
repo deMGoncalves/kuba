@@ -7,8 +7,8 @@ import NotFound from '@kuba/notfound'
 import Search from '@kuba/search'
 import render from './render'
 
-router('/', () => render(<Home />))
-router('/departament', () => render(<Departament />))
-router('/departament/category', () => render(<Category />))
-router('/search', () => render(<Search />))
-router('', () => render(<NotFound />))
+router('/', function home () { render(<Home />) })
+router('/departament', function departament () { render(<Departament />) })
+router('/departament/category', function category () { render(<Category />) })
+router('/search', function search () { render(<Search />) })
+router('', function notfound () { render(<NotFound />) })
