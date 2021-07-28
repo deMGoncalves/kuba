@@ -2,7 +2,7 @@ import h, { Repeat } from '@kuba/h'
 import Container from '@kuba/container'
 import Metro from '@kuba/metro'
 import Path from './path'
-import style from './style.css'
+import style from './style'
 
 export default (breadcrumb) =>
   <section className={[style.breadcrumb, breadcrumb.className]}>

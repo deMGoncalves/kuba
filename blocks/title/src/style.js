@@ -1,0 +1,25 @@
+import styled from '@kuba/styled'
+
+export default styled.style`
+  .title {
+    padding-bottom: 4px;
+    padding-top: var(--size-medium);
+  }
+
+  .title__container {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .title__h1 {
+    font-size: var(--size-large) !important;
+    line-height: 1;
+  }
+
+  @media (min-width: 769px) {
+    .title__h1 {
+      font-size: var(--size-larger) !important;
+    }
+  }
+`

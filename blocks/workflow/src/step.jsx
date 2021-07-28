@@ -1,7 +1,7 @@
 import h from '@kuba/h'
 import * as f from '@kuba/f'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (props, i) =>
   <li className={style.workflow__li} data-index={f.inc(i)}>

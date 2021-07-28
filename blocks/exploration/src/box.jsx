@@ -1,7 +1,7 @@
 import h from '@kuba/h'
 import Box from '@kuba/box'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <Box className={style.exploration__box} alt={props.title} onClick={() => location.assign(props.url)}>

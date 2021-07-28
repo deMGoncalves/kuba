@@ -1,7 +1,0 @@
-.option {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  gap: var(--size-medium);
-  user-select: none;
-}

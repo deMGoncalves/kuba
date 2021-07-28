@@ -3,7 +3,7 @@ import ambient from '@kuba/ambient'
 import link from '@kuba/link'
 import Metro from '@kuba/metro'
 import Story from '@kuba/story'
-import style from './style.css'
+import style from './style'
 
 export default (filter) =>
   <ambient.Dev>

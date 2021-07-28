@@ -4,7 +4,7 @@ import Sources from '@kuba/sources'
 import Story from '@kuba/story'
 import text from '@kuba/text'
 import Box from './box'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <Story className={[style.inspiration, props.className]}>

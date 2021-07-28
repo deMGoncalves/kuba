@@ -1,7 +1,7 @@
 import h, { Fragment, Show } from '@kuba/h'
 import icon from '@kuba/icon'
 import link from '@kuba/link'
-import style from './style.css'
+import style from './style'
 
 export default (path, i) =>
   <>

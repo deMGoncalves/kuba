@@ -1,8 +1,7 @@
 import h from '@kuba/h'
-import { urlFor } from '@kuba/router'
 import Bubble from '@kuba/bubble'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <Bubble className={style.navigation__bubble} alt={props.title} onClick={() => location.assign(props.url)}>

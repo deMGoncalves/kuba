@@ -2,7 +2,7 @@ import h, { Hide, Repeat } from '@kuba/h'
 import * as f from '@kuba/f'
 import Story from '@kuba/story'
 import Sampling from './sampling'
-import style from './style.css'
+import style from './style'
 
 export default (shelf, children) =>
   <Story className={[style.shelf, shelf.className]}>

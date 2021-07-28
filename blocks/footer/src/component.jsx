@@ -5,7 +5,7 @@ import text from '@kuba/text'
 import Nav from './nav'
 import Social from './social'
 import schema from './schema.json'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <footer {...props} className={[style.footer, props.className]}>

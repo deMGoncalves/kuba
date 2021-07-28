@@ -1,0 +1,22 @@
+import styled from '@kuba/styled'
+
+export default styled.style`
+  .navigation > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-medium);
+  }
+
+  .navigation__bubble {
+    cursor: pointer;
+    width: 135.8px;
+  }
+
+  .navigation__strong {
+    font-size: var(--size-small);
+    font-weight: 500;
+    line-height: 1.382;
+    text-align: center;
+    white-space: normal;
+  }
+`

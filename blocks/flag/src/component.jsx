@@ -1,7 +1,7 @@
 import h from '@kuba/h'
 import icon from '@kuba/icon'
 import schema from './schema.json'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <div {...props} className={[style.flag, props.className]}>

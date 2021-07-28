@@ -2,7 +2,7 @@ import h from '@kuba/h'
 import Box from '@kuba/box'
 import Sources from '@kuba/sources'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <Box className={style.inspiration__box} onClick={() => location.assign(props.url)}>

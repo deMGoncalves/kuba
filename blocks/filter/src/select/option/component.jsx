@@ -2,7 +2,7 @@ import h, { Hide, Show } from '@kuba/h'
 import text from '@kuba/text'
 import Circle from './circle'
 import Square from './square'
-import style from './style.css'
+import style from './style'
 
 export default (option) =>
   <div className={style.option} onClick={() => option.toggle()}>

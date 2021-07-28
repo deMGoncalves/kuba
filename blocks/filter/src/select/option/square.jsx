@@ -1,6 +1,6 @@
 import h, { Hide, Show } from '@kuba/h'
 import icon from '@kuba/icon'
-import style from './style.css'
+import style from './style'
 
 export default (option) =>
   <div>

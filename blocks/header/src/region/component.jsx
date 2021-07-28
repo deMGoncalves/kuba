@@ -2,7 +2,7 @@ import h, { Fragment } from '@kuba/h'
 import Action from '@kuba/action'
 import icon from '@kuba/icon'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <Action className={[style.region, props.className]}>

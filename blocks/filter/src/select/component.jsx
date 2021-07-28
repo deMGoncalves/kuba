@@ -3,7 +3,7 @@ import button from '@kuba/button'
 import icon from '@kuba/icon'
 import Select from '@kuba/select'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (select) =>
   <>

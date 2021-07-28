@@ -9,7 +9,7 @@ import Profile from './profile'
 import Region from './region'
 import Search from './search'
 import Services from './services'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <header {...props} className={[style.header, props.className]}>

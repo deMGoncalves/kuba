@@ -2,7 +2,7 @@ import h, { Repeat } from '@kuba/h'
 import Metro from '@kuba/metro'
 import Story from '@kuba/story'
 import Bubble from './bubble'
-import style from './style.css'
+import style from './style'
 
 export default (props, children) =>
   <Story {...props} className={[style.navigation, props.className]}>

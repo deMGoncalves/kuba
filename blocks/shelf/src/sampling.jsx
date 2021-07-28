@@ -2,7 +2,7 @@ import h from '@kuba/h'
 import { urlFor } from '@kuba/router'
 import Sampling from '@kuba/sampling'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (feed) =>
   <Sampling className={style.shelf__sampling} onClick={() => location.assign(urlFor('report', feed.id))}>

@@ -2,7 +2,7 @@ import h, { Repeat } from '@kuba/h'
 import Story from '@kuba/story'
 import text from '@kuba/text'
 import Box from './box'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <Story className={[style.exploration, props.className]}>

@@ -4,7 +4,7 @@ import Container from '@kuba/container'
 import Picture from '@kuba/picture'
 import Sources from '@kuba/sources'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <section {...props} className={[style.banner, props.className]}>

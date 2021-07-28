@@ -3,7 +3,7 @@ import Story from '@kuba/story'
 import text from '@kuba/text'
 import Step from './step'
 import schema from './schema.json'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <Story {...props} className={[style.workflow, props.className]}>

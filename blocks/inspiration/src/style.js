@@ -1,0 +1,67 @@
+import styled from '@kuba/styled'
+
+export default styled.style`
+  .inspiration > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-medium);
+  }
+
+  .inspiration__main {
+    display: grid;
+    gap: var(--size-medium);
+    grid-template-areas:
+      'thumbnail thumbnail'
+      'box1 box2'
+      'box3 box4';
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 769px) {
+    .inspiration__main {
+      grid-template-areas:
+        'thumbnail thumbnail box1 box2'
+        'thumbnail thumbnail box3 box4';
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .inspiration__main picture:first-child {
+    grid-area: thumbnail;
+  }
+
+  .inspiration__main div:nth-child(2n) {
+    grid-area: box1;
+  }
+
+  .inspiration__main div:nth-child(3n) {
+    grid-area: box2;
+  }
+
+  .inspiration__main div:nth-child(4n) {
+    grid-area: box3;
+  }
+
+  .inspiration__main div:last-child {
+    grid-area: box4;
+  }
+
+  .inspiration__picture {
+    border-radius: var(--size-smallest);
+    padding-top: calc(400 / 736 * 100%) !important;
+  }
+
+  @media (min-width: 769px) {
+    .inspiration__picture {
+      padding-top: calc(645 / 591 * 100%) !important;
+    }
+  }
+
+  .inspiration__box {
+    cursor: pointer;
+  }
+
+  .inspiration__strong {
+    line-height: 1.382;
+  }
+`

@@ -4,7 +4,7 @@ import icon from '@kuba/icon'
 import link from '@kuba/link'
 import { urlFor } from '@kuba/router'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <Action className={[style.profile, props.className]}>

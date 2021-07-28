@@ -4,7 +4,7 @@ const path = require('path')
 const portFinderSync = require('portfinder-sync')
 const loaders = require('./loaders')
 const plugins = require('./plugins')
-const port = 9000
+const port = 9001
 
 module.exports = (name, pwd) => ({
   context: path.resolve(pwd, 'src'),
