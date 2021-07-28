@@ -1,10 +1,10 @@
-import h from '@kuba/h'
-import interpolate from './interpolate'
-import minify from './minify'
+import * as f from '@kuba/f'
+import style from './style'
+import tag from './tag'
 
 export default new Proxy({}, {
   get: (_, tagName) =>
-    (strings, ...funcs) =>
-      (props, children) =>
-        h(tagName, { ...props, style: minify(interpolate(props, strings, funcs)) }, ...children)
+    f.equal(tagName, 'style')
+      ? style
+      : tag(tagName)
 })
