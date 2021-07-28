@@ -1,4 +1,5 @@
-import styled, { size } from '@kuba/styled'
+import { size } from '@kuba/polished'
+import styled from '@kuba/styled'
 
 export default styled.div`
   margin: 0 auto;
