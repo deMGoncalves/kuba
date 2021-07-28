@@ -12,7 +12,7 @@ module.exports = (name, pwd) => ({
   devServer: {
     contentBase: path.join(pwd, '.temp'),
     historyApiFallback: true,
-    hot: true,
+    hot: false,
     index: './.temp/index.html',
     port: portFinderSync.getPort(port),
     proxy: {
