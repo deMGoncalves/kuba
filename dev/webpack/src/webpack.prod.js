@@ -19,7 +19,8 @@ module.exports = (name, pwd) => ({
   },
   plugins: [
     plugins.copyPlugin(pwd),
-    plugins.htmlPlugin(pwd)
+    plugins.htmlPlugin(pwd),
+    plugins.inlineChunkHtmlPlugin()
   ],
   resolve: {
     extensions: ['.js', '.jsx']

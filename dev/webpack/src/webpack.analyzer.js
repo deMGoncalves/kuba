@@ -20,6 +20,7 @@ module.exports = (name, pwd) => ({
   plugins: [
     plugins.copyPlugin(pwd),
     plugins.htmlPlugin(pwd),
+    plugins.inlineChunkHtmlPlugin(),
     plugins.bundleAnalyzerPlugin()
   ],
   resolve: {
