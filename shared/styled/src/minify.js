@@ -1,8 +1,8 @@
 import * as f from '@kuba/f'
 
-export default (string) =>
+export default (textContent) =>
   f
-    .from(string)
+    .from(textContent)
     .pipe(f.replace(f.__, /\n/g, ''))
     .pipe(f.replace(f.__, /\t/g, ''))
     .pipe(f.replace(f.__, / +/g, ' '))
