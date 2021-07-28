@@ -1,7 +1,7 @@
 import h from '@kuba/h'
 import Picture from '@kuba/picture'
 import * as mapper from './mapper'
-import style from './style.css'
+import style from './style'
 
 export default new Proxy({}, {
   get: (_, icon) =>

@@ -1,0 +1,23 @@
+import styled from '@kuba/styled'
+
+export default styled.style`
+  .control {
+    background-color: #fff;
+    border: 1px solid var(--color-master-lighter);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-smallest);
+    padding: var(--size-smallest);
+  }
+
+  .control__label {
+    line-height: 1;
+  }
+
+  .control__input {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+  }
+`

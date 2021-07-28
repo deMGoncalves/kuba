@@ -1,5 +1,5 @@
 import h, { Fragment } from '@kuba/h'
-import style from './style.css'
+import style from './style'
 
 export default (props, children) =>
   <>

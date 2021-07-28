@@ -1,6 +1,6 @@
 import h from '@kuba/h'
 import Picture from '@kuba/picture'
-import style from './style.css'
+import style from './style'
 
 export default (props, children) =>
   <div {...props} className={[style.box, props.className]}>

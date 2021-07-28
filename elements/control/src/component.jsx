@@ -1,6 +1,6 @@
 import h from '@kuba/h'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (control) =>
   <div className={[style.control, control.className]}>

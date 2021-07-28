@@ -1,7 +1,7 @@
 import h, { Fragment } from '@kuba/h'
 import icon from '@kuba/icon'
 import Side from '@kuba/side'
-import style from './style.css'
+import style from './style'
 
 export default (action, children) =>
   <>
