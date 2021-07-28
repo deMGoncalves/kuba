@@ -3868,6 +3868,11 @@ ini@^1.3.4, ini@^1.3.5:
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
   integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
+inline-chunk-html-plugin@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/inline-chunk-html-plugin/-/inline-chunk-html-plugin-1.1.1.tgz#f64111aed16fac274d2b929f6a6a08671d82354e"
+  integrity sha512-6W1eGIj8z/Yla6xJx5il6jJfCxMZS3kVkbiLQThbbjdsDLRIWkUVmpnhfW2l6WAwCW+qfy0zoXVGBZM1E5XF3g==
+
 internal-ip@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/internal-ip/-/internal-ip-4.3.0.tgz#845452baad9d2ca3b69c635a137acb9a0dad0907"

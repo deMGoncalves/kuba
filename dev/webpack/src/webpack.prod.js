@@ -43,7 +43,8 @@ module.exports = (name, pwd) => ({
     clean: true,
     chunkFilename: '[name].[contenthash].js',
     filename: '[name].[contenthash].js',
-    path: path.resolve(pwd, 'public')
+    path: path.resolve(pwd, 'public'),
+    publicPath: '/'
   },
   performance: {
     hints: 'error',

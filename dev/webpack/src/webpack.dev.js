@@ -37,7 +37,8 @@ module.exports = (name, pwd) => ({
   },
   plugins: [
     plugins.copyPlugin(pwd),
-    plugins.htmlPlugin(pwd)
+    plugins.htmlPlugin(pwd),
+    plugins.inlineChunkHtmlPlugin()
   ],
   resolve: {
     extensions: ['.js', '.jsx']
@@ -46,6 +47,7 @@ module.exports = (name, pwd) => ({
     clean: true,
     chunkFilename: '[name].[contenthash].js',
     filename: '[name].[contenthash].js',
-    path: path.resolve(pwd, '.temp')
+    path: path.resolve(pwd, '.temp'),
+    publicPath: '/'
   }
 })
