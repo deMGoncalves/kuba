@@ -1,4 +1,5 @@
-import styled, { color } from '@kuba/styled'
+import { color } from '@kuba/polished'
+import styled from '@kuba/styled'
 
 export default new Proxy({}, {
   get: (_, type) =>
