@@ -14,7 +14,6 @@ module.exports = (name, pwd) => ({
   module: {
     rules: [
       loaders.tsLoader(),
-      loaders.cssLoader(),
       loaders.fileLoader()
     ]
   },
@@ -36,11 +35,6 @@ module.exports = (name, pwd) => ({
           chunks: 'all',
           name: 'vendor',
           test: /[\\/]node_modules[\\/]/
-        },
-        style: {
-          chunks: 'all',
-          name: 'style',
-          test: /\.css$/
         }
       },
       name: 'common'

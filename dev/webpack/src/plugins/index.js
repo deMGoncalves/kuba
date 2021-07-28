@@ -1,6 +1,6 @@
 module.exports = {
   copyPlugin: require('./copyPlugin'),
-  bundleAnalyzer: require('./bundleAnalyzerPlugin'),
+  bundleAnalyzerPlugin: require('./bundleAnalyzerPlugin'),
   htmlPlugin: require('./htmlPlugin'),
   terserJSPlugin: require('./terserJsPlugin')
 }
