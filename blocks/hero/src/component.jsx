@@ -4,7 +4,7 @@ import button from '@kuba/button'
 import Picture from '@kuba/picture'
 import Sources from '@kuba/sources'
 import text from '@kuba/text'
-import style from './style.css'
+import style from './style'
 
 export default (props) =>
   <section className={[style.hero, props.className]}>

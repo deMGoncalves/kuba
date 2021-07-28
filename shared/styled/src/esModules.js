@@ -6,8 +6,8 @@ export default function (textContent) {
   const textContentFormatted = f.replace(
     textContent,
     /\.([\w-_]+)/ig,
-    (_, $1) => mapper[$1] || (mapper[$1] = `._${hash()}`)
+    (_, $1) => `.${mapper[$1] || (mapper[$1] = hash())}`
   )
-  
+
   return [mapper, textContentFormatted]
 }
