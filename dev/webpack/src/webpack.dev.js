@@ -37,8 +37,6 @@ module.exports = (name, pwd) => ({
   },
   plugins: [
     plugins.copyPlugin(pwd),
-    plugins.miniCssExtractPlugin(),
-    plugins.preloadPlugin(),
     plugins.htmlPlugin(pwd)
   ],
   resolve: {

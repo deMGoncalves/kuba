@@ -1,8 +1,6 @@
 module.exports = {
   copyPlugin: require('./copyPlugin'),
+  bundleAnalyzer: require('./bundleAnalyzerPlugin'),
   htmlPlugin: require('./htmlPlugin'),
-  miniCssExtractPlugin: require('./miniCssExtractPlugin'),
-  preloadPlugin: require('./preloadPlugin'),
-  statsWriterPlugin: require('./statsWriterPlugin'),
   terserJSPlugin: require('./terserJsPlugin')
 }
