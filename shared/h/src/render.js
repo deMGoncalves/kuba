@@ -1,6 +1,7 @@
+import '@kuba/htmlparser'
 import * as f from '@kuba/f'
 
 const render = (element, node) =>
-  element.append(node.paint())
+  element.render(node.paint())
 
 export default f.curry(f.arity(2, f.frame(render)))
