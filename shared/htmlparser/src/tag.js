@@ -1,4 +1,8 @@
-export default () => ({
-  append () {},
-  removeAttribute () {}
-})
+export default () =>
+  Object.create({
+    append () {},
+    removeAttribute () {},
+    render () {
+      self.postMessage(this)
+    }
+  })
