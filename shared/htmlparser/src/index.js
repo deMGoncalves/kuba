@@ -1,12 +1,14 @@
-import tag from './tag'
-import text from './text'
+import * as f from '@kuba/f'
+import Root from './root'
+import Tag from './tag'
+import Text from './text'
 
-'window' in self
-  ? Element.prototype.render = Element.prototype.append
-  : self.document = {
-    body: tag('body'),
+f.not('window' in self) && (
+  self.document = {
+    body: Root.create('body'),
     createDocumentFragment () {},
-    createElement: tag,
-    createTextNode: text,
-    head: tag('head')
+    createElement: Tag.create,
+    createTextNode: Text.create,
+    head: Root.create('head'),
   }
+)
