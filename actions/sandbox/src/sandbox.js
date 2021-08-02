@@ -1,14 +1,22 @@
 import { paint, repaint } from '@kuba/h'
+import schedule from '@kuba/schedule'
 import component from './component'
+import connect from './connect'
 
 @paint(component)
+@schedule(connect)
 class Lazy {
   #component
+  #connect
+  #props
   #slot
-  #worker
   
   get component () {
     return this.#component
+  }
+
+  get props () {
+    return this.#props
   }
   
   get slot () {
@@ -16,10 +24,15 @@ class Lazy {
   }
 
   constructor (props) {
+    this.#connect = props.connect
+    this.#props = props
     this.#slot = props.slot
 
-    this.#worker = props.connect()
-    this.#worker.addEventListener('message', console.log)
+    delete this.#props.connect
+  }
+
+  connect () {
+    return this.#connect()
   }
 
   @repaint
