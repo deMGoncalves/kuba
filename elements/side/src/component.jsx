@@ -1,10 +1,11 @@
 import h, { Fragment } from '@kuba/h'
-import style from './style'
+import Aside from './aside'
+import Overlayer from './overlayer'
 
 export default (props, children) =>
   <>
-    <aside className={[style.side, props.className]} opened={props.opened}>
+    <Aside className={props.className} opened={props.opened}>
       {children}
-    </aside>
-    <div className={style.side__overlayer} opened={props.opened} onClick={props.onClose} />
+    </Aside>
+    <Overlayer opened={props.opened} onClick={props.onClose} />
   </>
