@@ -7,6 +7,10 @@ class Children {
   #list
   #parent
 
+  get last () {
+    return f.last(this.list)
+  }
+
   get list () {
     return this.#list
   }
@@ -18,7 +22,7 @@ class Children {
 
   append (child) {
     f.push(this.list, child)
-    this.#parent.append(paint(child))
+    this.#parent.appendChild(paint(child))
     return this
   }
 

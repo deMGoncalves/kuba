@@ -74,6 +74,16 @@ class Tag {
     return this
   }
 
+  appendChild (child) {
+    this.element.appendChild(child)
+    return this
+  }
+
+  insertAdjacentElement (position, child) {
+    this.element.insertAdjacentElement(position, child)
+    return this
+  }
+
   paint () {
     this.attributes.paint()
     this.children.paint()

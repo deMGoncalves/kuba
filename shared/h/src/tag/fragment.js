@@ -40,6 +40,16 @@ class Fragment {
     return this
   }
 
+  appendChild (child) {
+    this.insertAdjacentElement('afterend', child)
+    return this
+  }
+
+  insertAdjacentElement (position, child) {
+    this.children.last.insertAdjacentElement(position, child)
+    return this
+  }
+
   paint () {
     this.children.paint()
     return this.element
