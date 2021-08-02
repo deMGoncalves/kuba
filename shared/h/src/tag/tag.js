@@ -79,8 +79,8 @@ class Tag {
     return this
   }
 
-  insertAdjacentElement (position, child) {
-    this.element.insertAdjacentElement(position, child)
+  insertAdjacentElement (position, element) {
+    this.element.insertAdjacentElement(position, element)
     return this
   }
 

@@ -45,8 +45,8 @@ class Fragment {
     return this
   }
 
-  insertAdjacentElement (position, child) {
-    this.children.last.insertAdjacentElement(position, child)
+  insertAdjacentElement (position, element) {
+    this.children.last.insertAdjacentElement(position, element)
     return this
   }
 
