@@ -9,8 +9,11 @@ class Root {
 
   append (...children) {
     self.postMessage({
-      tagName: this.#tagName,
-      children: f.map(children, child => child.paint())
+      action: 'render',
+      payload: {
+        children: f.map(children, child => child.paint()),
+        element: this.#tagName
+      }
     })
     return this
   }

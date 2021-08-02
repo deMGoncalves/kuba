@@ -10,5 +10,6 @@ f.not('window' in self) && (
     createElement: Tag.create,
     createTextNode: Text.create,
     head: Root.create('head'),
+    root: Root.create('root')
   }
 )
