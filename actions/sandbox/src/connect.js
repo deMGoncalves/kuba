@@ -3,15 +3,16 @@ import * as f from '@kuba/f'
 
 export default function (sandbox) {
   const worker = sandbox.connect()
-  const paint = (node) => node
-    // f.is(String, node)
-    //   ? node
-    //   : h(node.name, node.props, ...f.map(node.children, paint))
+  const paint = (node) =>
+    f.equal(node.type, 3)
+      ? node.content
+      : h(node.name, node.props, ...f.map(node.children, paint))
 
 
   worker.addEventListener('message', ({ data: { action, payload }}) => {
     f.equal('render', action) && (
-      document[payload.element].append(...f.map(payload.children, paint))
+      console.log(...f.map(payload.children, paint)),
+      render(document[payload.element], ...f.map(payload.children, paint))
     )
   })
 
