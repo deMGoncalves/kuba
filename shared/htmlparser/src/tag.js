@@ -19,7 +19,8 @@ class Tag {
     return {
       children: f.map(this.#children, child => child.paint()),
       name: this.#name,
-      props: this.#attributes
+      props: this.#attributes,
+      type: 1
     }
   }
 
