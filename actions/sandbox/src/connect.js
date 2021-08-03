@@ -11,7 +11,6 @@ export default function (sandbox) {
 
   worker.addEventListener('message', ({ data: { action, payload }}) => {
     f.equal('render', action) && (
-      console.log(...f.map(payload.children, paint)),
       render(document[payload.element], ...f.map(payload.children, paint))
     )
   })
