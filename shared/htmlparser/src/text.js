@@ -7,8 +7,7 @@ class Text {
 
   paint () {
     return {
-      content: this.#content,
-      type: 3
+      content: this.#content
     }
   }
 

@@ -1,10 +1,10 @@
 import * as f from '@kuba/f'
 
 class Root {
-  #tagName
+  #name
 
-  constructor (tagName) {
-    this.#tagName = tagName
+  constructor (name) {
+    this.#name = name
   }
 
   append (...children) {
@@ -12,14 +12,14 @@ class Root {
       action: 'render',
       payload: {
         children: f.map(children, child => child.paint()),
-        element: this.#tagName
+        element: this.#name
       }
     })
     return this
   }
 
-  static create (tagName) {
-    return new Root(tagName)
+  static create (name) {
+    return new Root(name)
   }
 }
 

@@ -3,12 +3,11 @@ import * as f from '@kuba/f'
 class Tag {
   #attributes = {}
   #children = []
-  #is
-  #tagName
+  #name
 
-  constructor (tagName, is) {
-    this.#is = is
-    this.#tagName = tagName
+  constructor (name, is) {
+    this.#attributes = { is }
+    this.#name = name
   }
 
   append (...children) {
@@ -18,11 +17,9 @@ class Tag {
 
   paint () {
     return {
-      attributes: this.#attributes,
       children: f.map(this.#children, child => child.paint()),
-      is: this.#is,
-      tagName: this.#tagName,
-      type: 1
+      name: this.#name,
+      props: this.#attributes
     }
   }
 
@@ -36,8 +33,8 @@ class Tag {
     return this
   }
 
-  static create (tagName, { is }) {
-    return new Tag(tagName, is)
+  static create (name, { is }) {
+    return new Tag(name, is)
   }
 }
 
