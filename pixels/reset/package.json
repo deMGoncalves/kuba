@@ -20,7 +20,8 @@
   "lint-staged": {
     "src/**/*.{js,jsx}": [
       "yarn run eslint src/**/*.{js,jsx}",
-      "yarn run stylelint src/**/*.{js,jsx} --allow-empty-input"
+      "yarn run stylelint src/**/*.{js,jsx} --allow-empty-input",
+      "test"
     ]
   },
   "main": "src/index.js",

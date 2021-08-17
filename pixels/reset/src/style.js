@@ -60,14 +60,10 @@ export default styled.style`
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
-  *:focus {
-    outline: 0;
-  }
-
-  *:-webkit-autofill {
+  *::-webkit-autofill {
     -webkit-box-shadow: 0 0 0 9999px #fff inset !important;
   }
-  
+
   *::-webkit-scrollbar {
     display: none;
   }
@@ -76,7 +72,11 @@ export default styled.style`
   *::-webkit-search-cancel-button,
   *::-webkit-search-results-button,
   *::-webkit-search-results-decoration {
-    -webkit-appearance:none;
+    -webkit-appearance: none;
+  }
+
+  *:focus {
+    outline: 0;
   }
 
   body {
@@ -86,17 +86,7 @@ export default styled.style`
     font-family: 'Roboto', sans-serif;
     font-size: var(--size-medium);
     font-weight: 400;
-    letter-spacing: normal;
+    letter-spacing: 0.618px;
     line-height: 1.382;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong {
-    font-weight: 500;
   }
 `
