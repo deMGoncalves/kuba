@@ -46,8 +46,8 @@ export default styled.style`
   @media (min-width: 769px) {
     .banner__figcaption {
       align-items: center;
-      height: 100%;
       flex-direction: row;
+      height: 100%;
       justify-content: space-between;
       left: 0;
       padding: var(--size-largest);
@@ -56,7 +56,6 @@ export default styled.style`
       width: 100%;
     }
   }
-
 
   @media (min-width: 769px) {
     .banner__hgroup {
