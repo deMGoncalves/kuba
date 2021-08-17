@@ -12,7 +12,7 @@ export default (props) =>
     <Container className={style.footer__container}>
       <div className={style.footer__div}>
         <Logo className={style.footer__logo} ghost />
-        <text.Strong className={style.footer__strong} master darker>{schema.title}</text.Strong>
+        <text.Strong className={style.footer__strong} master darker bold>{schema.title}</text.Strong>
         <text.P className={style.footer__i} master small>{schema.description}</text.P>
         <Nav className={style.footer__nav} />
       </div>
