@@ -2,7 +2,7 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .hero {
-    padding-bottom: var(--size-largest);
+    padding-bottom: 55px;
     padding-top: var(--size-medium);
   }
 
@@ -57,7 +57,6 @@ export default styled.style`
   }
 
   .hero__text {
-    line-height: 1.382;
     text-align: center;
   }
 
