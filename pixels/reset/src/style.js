@@ -9,11 +9,11 @@ export default styled.style`
     --color-master-light: #e6e6e6;
     --color-master-lighter: #f0f0f0;
     --color-master-lightest: #fafafa;
-    --color-primary-darker: #916400;
-    --color-primary-dark: #cb8c00;
-    --color-primary: #f2a700;
-    --color-primary-light: #f5b933;
-    --color-primary-lighter: #fcedcc;
+    --color-primary-darker: #413768;
+    --color-primary-dark: #5b4d91;
+    --color-primary: #6d5cae;
+    --color-primary-light: #8a7dbe;
+    --color-primary-lighter: #e2deef;
     --color-complete-darker: #2b6a94;
     --color-complete-dark: #3c93ce;
     --color-complete: #48b0f7;
