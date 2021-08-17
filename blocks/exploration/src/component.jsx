@@ -6,7 +6,7 @@ import style from './style'
 
 export default (props) =>
   <Story className={[style.exploration, props.className]}>
-    <text.H2 className={style.exploration__h2} master darker large>{props.title}</text.H2>
+    <text.H2 className={style.exploration__h2} master darker large bold>{props.title}</text.H2>
     <div className={style.exploration__div}>
       <Repeat iterator={props.departaments} component={Box} />
     </div>
