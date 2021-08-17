@@ -13,7 +13,7 @@ export default new Proxy({}, {
       display: inline-flex;
       font-family: 'Roboto', sans-serif;
       font-size: var(--size-small);
-      font-weight: 500;
+      font-weight: 600;
       height: var(--size-largest);
       justify-content: center;
       letter-spacing: 0.618px;
