@@ -8,7 +8,6 @@ import Nav from './nav'
 import Profile from './profile'
 import Region from './region'
 import Search from './search'
-import Services from './services'
 import style from './style'
 
 export default (props) =>
@@ -20,7 +19,6 @@ export default (props) =>
       </div>
       <div className={style.header__div}>
         <Region className={style.header__region} />
-        <Services className={style.header__services} />
         <Profile className={style.header__profile} />
         <Bag className={style.header__bag} />
         <Menu className={style.header__menu} />
