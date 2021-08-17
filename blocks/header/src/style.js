@@ -5,12 +5,12 @@ export default styled.style`
     border-bottom: 1px solid var(--color-master-light);
     display: flex;
     flex-direction: column;
+    gap: var(--size-small);
     padding: var(--size-small) 0;
   }
 
-  @media (min-width: 862px) {
+  @media (min-width: 961px) {
     .header {
-      gap: var(--size-small);
       padding-bottom: var(--size-smallest);
     }
   }
@@ -21,7 +21,7 @@ export default styled.style`
     gap: var(--size-medium);
   }
 
-  @media (max-width: 861px) {
+  @media (max-width: 960px) {
     .header__container.desktop {
       display: none;
     }
@@ -34,7 +34,13 @@ export default styled.style`
 
   .header__div:first-child {
     flex-grow: 1;
-    justify-content: flex-start;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 769px) {
+    .header__div:first-child {
+      justify-content: flex-start;
+    }
   }
 
   .header__div:last-child {

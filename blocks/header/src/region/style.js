@@ -2,29 +2,13 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .region__p {
+    display: none;
     text-align: left;
   }
 
-  @media (max-width: 667px) {
+  @media (min-width: 1025px) {
     .region__p {
-      display: none;
+      display: inline;
     }
-  }
-
-  .region__p strong {
-    color: var(--color-master-darker);
-    font-weight: 700;
-  }
-
-  .region__link {
-    border-bottom: 1px solid var(--color-master-lighter);
-    justify-content: flex-start;
-    padding: var(--size-small) var(--size-medium);
-    text-decoration: none;
-    width: 100%;
-  }
-
-  .region__link:hover {
-    text-decoration: underline;
   }
 `

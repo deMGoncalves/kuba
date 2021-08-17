@@ -1,30 +1,14 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  @media (max-width: 861px) {
-    .profile {
-      display: none;
-    }
-  }
-
   .profile__p {
+    display: none;
     text-align: left;
   }
 
-  .profile__p strong {
-    color: var(--color-master-darker);
-    font-weight: 700;
-  }
-
-  .profile__link {
-    border-bottom: 1px solid var(--color-master-lighter);
-    justify-content: flex-start !important;
-    padding: var(--size-small) var(--size-medium);
-    text-decoration: none;
-    width: 100%;
-  }
-
-  .profile__link:hover {
-    text-decoration: underline;
+  @media (min-width: 1025px) {
+    .profile__p {
+      display: inline;
+    }
   }
 `

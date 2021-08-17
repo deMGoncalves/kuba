@@ -1,11 +1,25 @@
-import h from '@kuba/h'
+import h, { Fragment } from '@kuba/h'
 import icon from '@kuba/icon'
+import Modal from '@kuba/modal'
+import Form from './form'
+import History from './history'
 import style from './style'
 
 export default (search) =>
-  <form className={[style.search, search.className]} action={search.action}>
-    <input className={style.search__input} autocomplete='off' name='q' placeholder={search.placeholder} type='search' />
-    <button className={style.search__button}>
-      <icon.Search className={style.search__icon} alt='search' />
+  <>
+    <button className={style.search__open} onClick={() => search.open()}>
+      <icon.Search className={style.menu__icon} large />
     </button>
-  </form>
+    <Modal className={style.search__modal} onClose={() => search.close()} opened={search.opened}>
+      <header className={style.search__header}>
+        <button className={style.search__close} onClick={() => search.close()}>
+          <icon.ArrowLeft className={style.menu__icon} large />
+        </button>
+        <Form className={[style.search__form, style.mobile]} action={search.action} placeholder={search.placeholder} />
+      </header>
+      <main className={style.search__main}>
+        <History className={style.search__history} />
+      </main>
+    </Modal>
+    <Form className={[style.search__form, style.desktop]} action={search.action} placeholder={search.placeholder} />
+  </>

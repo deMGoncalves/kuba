@@ -1,34 +1,43 @@
-import { paint } from '@kuba/h'
+import { paint, repaint } from '@kuba/h'
+import * as f from '@kuba/f'
+import echo from '@kuba/echo'
 import jsonld from '@kuba/jsonld'
+import { urlFor } from '@kuba/router'
 import component from './component'
 import data from './data'
+import resize from './resize'
 import schema from './schema.json'
 
 @paint(component)
 @jsonld(data)
+@resize
 class Search {
-  #className
-  #slot
+  #opened
 
   get action () {
-    return `${__settings.app.url}/search`
+    return urlFor('search')
   }
 
-  get className () {
-    return this.#className
+  get opened () {
+    return this.#opened ??= f.F()
   }
 
   get placeholder () {
     return schema.placeholder
   }
 
-  get slot () {
-    return this.#slot
+  @repaint
+  close () {
+    this.#opened = f.F()
+    echo.emit('overlayer:close')
+    return this
   }
 
-  constructor (props) {
-    this.#className = props.className
-    this.#slot = props.slot
+  @repaint
+  open () {
+    this.#opened = f.T()
+    echo.emit('overlayer:open')
+    return this
   }
 }
 

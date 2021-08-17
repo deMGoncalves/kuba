@@ -1,44 +1,68 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .search {
-    max-width: 610px;
-    position: relative;
-    width: 100%;
-  }
-
-  .search__input {
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: var(--color-master-lighter);
-    border: 1px solid var(--color-master-light);
-    border-radius: 3px;
-    height: 42px;
-    padding: 0 55px 0 var(--size-smaller);
-    width: 100%;
-  }
-
-  .search__button {
+  .search__open {
     align-items: center;
-    background-color: var(--color-master-lighter);
+    background-color: transparent;
     border: none;
-    border-radius: 3px;
     cursor: pointer;
     display: flex;
-    height: 40px;
+    gap: var(--size-smallest);
     justify-content: center;
-    position: absolute;
-    right: 1px;
-    top: 1px;
-    width: 40px;
+    min-height: 42px;
+    min-width: 42px;
   }
 
-  .search__button::before {
-    border-left: 1px solid var(--color-master-light);
-    content: '';
-    display: block;
-    height: 55%;
-    left: 0;
-    position: absolute;
+  @media (min-width: 769px) {
+    .search__open {
+      display: none;
+    }
+  }
+
+  .search__modal {
+    height: 100vh !important;
+    max-height: 100vh !important;
+    max-width: 100vw !important;
+    width: 100vw !important;
+  }
+
+  .search__header {
+    border-bottom: 1px solid var(--color-master-light);
+    display: flex;
+    gap: var(--size-medium);
+    padding: var(--size-small) var(--size-medium);
+  }
+
+  .search__close {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: var(--size-smallest);
+    justify-content: center;
+    min-height: 42px;
+    min-width: 42px;
+  }
+
+  .search__main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-medium);
+    padding: var(--size-medium) 0;
+  }
+
+  .search__form.mobile {
+    max-width: 100%;
+  }
+
+  .search__form.desktop {
+    display: none;
+  }
+
+  @media (min-width: 769px) {
+    .search__form.desktop {
+      display: block;
+    }
   }
 `
