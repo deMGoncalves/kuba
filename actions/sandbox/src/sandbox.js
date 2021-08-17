@@ -10,7 +10,7 @@ class Lazy {
   #connect
   #props
   #slot
-  
+
   get component () {
     return this.#component
   }
@@ -18,7 +18,7 @@ class Lazy {
   get props () {
     return this.#props
   }
-  
+
   get slot () {
     return this.#slot
   }

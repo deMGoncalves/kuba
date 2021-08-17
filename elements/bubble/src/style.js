@@ -1,15 +1,21 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .box__picture {
+  .bubble {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-smallest);
+  }
+
+  .bubble__picture {
     border-radius: 50%;
   }
 
-  .box__figcaption {
+  .bubble__figcaption {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: var(--size-medium);
-    padding-top: var(--size-smaller);
+    width: 100%;
   }
 `

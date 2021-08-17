@@ -1,58 +1,28 @@
-import { paint, repaint } from '@kuba/h'
-import schedule from '@kuba/schedule'
-import category from './category'
+import { paint } from '@kuba/h'
 import component from './component'
-import fallback from './fallback'
-import segment from './segment'
-import search from './search'
-import universe from './universe'
+import schema from './schema'
 
 @paint(component)
-@schedule(search, universe, category, segment, fallback)
 class Shelf {
-  #category
   #className
-  #feeds
-  #query
-  #segment
-  #universe
-
-  get category () {
-    return this.#category
-  }
+  #services
+  #slot
 
   get className () {
     return this.#className
   }
 
-  get feeds () {
-    return this.#feeds ??= []
+  get services () {
+    return this.#services ??= schema.services
   }
 
-  get query () {
-    return this.#query
-  }
-
-  get segment () {
-    return this.#segment
-  }
-
-  get universe () {
-    return this.#universe
+  get slot () {
+    return this.#slot
   }
 
   constructor (props) {
-    this.#category = props.category
     this.#className = props.className
-    this.#query = props.query
-    this.#segment = props.segment
-    this.#universe = props.universe
-  }
-
-  @repaint
-  change (feeds) {
-    this.#feeds = feeds
-    return this
+    this.#slot = props.slot
   }
 }
 

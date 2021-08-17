@@ -9,10 +9,6 @@ class Custom extends Tag {
     return this
   }
 
-  static create (tagName, props, children) {
-    return new Custom(tagName, props, children)
-  }
-
   static is (nameOrComponent) {
     return f.test(/^\w+-/, nameOrComponent)
   }

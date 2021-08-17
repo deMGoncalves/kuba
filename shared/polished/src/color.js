@@ -1,9 +1,26 @@
 import * as f from '@kuba/f'
+import cleaner from './cleaner'
 
-export default (props) =>
+const mapper = [
+  'complete',
+  'danger',
+  'info',
+  'master',
+  'primary',
+  'success',
+  'warning',
+  'darkest',
+  'darker',
+  'dark',
+  'light',
+  'lighter',
+  'lightest'
+]
+
+const color = (props) =>
   f.join(
     f.chain(
-      f.always('--color-'),
+      f.always('var(--color-'),
       f.cond(
         [f.has('complete'), f.always('complete')],
         [f.has('danger'), f.always('danger')],
@@ -22,7 +39,10 @@ export default (props) =>
         [f.has('lighter'), f.always('-lighter')],
         [f.has('lightest'), f.always('-lightest')],
         [f.T, f.always('')]
-      )
+      ),
+      f.always(')')
     )(props),
     ''
   )
+
+export default cleaner(color, mapper)

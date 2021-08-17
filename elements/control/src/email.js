@@ -2,7 +2,7 @@ import { paint } from '@kuba/h'
 import component from './component'
 
 @paint(component)
-class Name {
+class Email {
   #className
 
   get className () {
@@ -30,4 +30,4 @@ class Name {
   }
 }
 
-export default Name
+export default Email

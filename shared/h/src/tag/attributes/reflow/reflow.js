@@ -4,7 +4,7 @@ import Changed from './changed'
 import Different from './different'
 import Removed from './removed'
 
-export default (that, attributes) =>
+export default (that, attributes) => (
   f.forEach(
     f.zip(that.list, attributes.list),
     f.apply(f.cond(
@@ -14,3 +14,4 @@ export default (that, attributes) =>
       [Different.is, Different.exec(that)]
     ))
   )
+)

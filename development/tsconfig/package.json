@@ -1,0 +1,12 @@
+{
+  "lint-staged": {
+    "*": "exit 0"
+  },
+  "main": "tsconfig.json",
+  "name": "@kuba/tsconfig",
+  "private": true,
+  "scripts": {
+    "test": "exit 0"
+  },
+  "version": "1.0.0"
+}

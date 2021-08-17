@@ -11,15 +11,15 @@ class Lazy {
   #props
   #require
   #slot
-  
+
   get channel () {
     return this.#channel ??= Math.random()
   }
-  
+
   get component () {
     return this.#component
   }
-  
+
   get props () {
     return this.#props
   }

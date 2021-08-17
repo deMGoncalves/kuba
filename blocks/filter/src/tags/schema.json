@@ -1,0 +1,6 @@
+{
+  "options": [
+    { "value": 1, "display": "Crítico" },
+    { "value": 2, "display": "Agendado" }
+  ]
+}

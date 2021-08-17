@@ -35,7 +35,7 @@ class Events {
   }
 
   removeEventListener (name) {
-    this.#map.remove(name)
+    this.#map.delete(name)
     this.#target.removeEventListener(...filter(name))
     return this
   }

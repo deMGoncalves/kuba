@@ -6,7 +6,7 @@ import hj from './hj'
 import schema from './schema.json'
 
 f.and(agent.isUser, env.isProd) && (
-  window._hjSettings = { hjid, hjsv } = schema,
+  window._hjSettings = schema,
   render(document.head, <script src={schema.src} async />)
 )
 

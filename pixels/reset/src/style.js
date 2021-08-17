@@ -9,11 +9,11 @@ export default styled.style`
     --color-master-light: #e6e6e6;
     --color-master-lighter: #f0f0f0;
     --color-master-lightest: #fafafa;
-    --color-primary-darker: #413768;
-    --color-primary-dark: #5b4d91;
-    --color-primary: #6d5cae;
-    --color-primary-light: #8a7dbe;
-    --color-primary-lighter: #e2deef;
+    --color-primary-darker: #916400;
+    --color-primary-dark: #cb8c00;
+    --color-primary: #f2a700;
+    --color-primary-light: #f5b933;
+    --color-primary-lighter: #fcedcc;
     --color-complete-darker: #2b6a94;
     --color-complete-dark: #3c93ce;
     --color-complete: #48b0f7;
@@ -67,6 +67,17 @@ export default styled.style`
   *:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 9999px #fff inset !important;
   }
+  
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  *::-webkit-search-decoration,
+  *::-webkit-search-cancel-button,
+  *::-webkit-search-results-button,
+  *::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+  }
 
   body {
     background-color: var(--color-master-lightest);
@@ -76,7 +87,7 @@ export default styled.style`
     font-size: var(--size-medium);
     font-weight: 400;
     letter-spacing: normal;
-    line-height: 1.618;
+    line-height: 1.382;
   }
 
   h1,

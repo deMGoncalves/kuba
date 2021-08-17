@@ -1,0 +1,20 @@
+{
+  "options": [
+    {
+      "value": 1,
+      "display": "Mais recentes"
+    },
+    {
+      "value": 2,
+      "display": "Mais vistos"
+    },
+    {
+      "value": 3,
+      "display": "Trabalho individuais"
+    },
+    {
+      "value": 4,
+      "display": "Trabalho em equipe"
+    }
+  ]
+}

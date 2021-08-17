@@ -10,5 +10,6 @@ export default styled.style`
     flex-direction: column;
     gap: var(--size-medium);
     padding-top: var(--size-smaller);
+    width: 100%;
   }
 `

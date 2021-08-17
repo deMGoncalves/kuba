@@ -15,10 +15,9 @@ export default styled.style`
 
   .action__header {
     align-items: center;
-    border-bottom: 1px solid var(--color-master-light);
     display: flex;
     gap: var(--size-medium);
     justify-content: flex-start;
-    padding: var(--size-smallest) var(--size-medium);
+    padding: var(--size-small) var(--size-medium);
   }
 `

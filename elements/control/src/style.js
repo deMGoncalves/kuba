@@ -3,7 +3,7 @@ import styled from '@kuba/styled'
 export default styled.style`
   .control {
     background-color: #fff;
-    border: 1px solid var(--color-master-lighter);
+    border: 1px solid var(--color-master-light);
     display: flex;
     flex-direction: column;
     gap: var(--size-smallest);
@@ -11,7 +11,7 @@ export default styled.style`
   }
 
   .control__label {
-    line-height: 1;
+    font-weight: 500;
   }
 
   .control__input {

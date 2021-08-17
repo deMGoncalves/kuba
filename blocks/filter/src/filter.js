@@ -1,42 +1,26 @@
-import { paint, repaint } from '@kuba/h'
-import * as f from '@kuba/f'
-import Select from './select'
+import { paint } from '@kuba/h'
+import echo from '@kuba/echo'
 import component from './component'
+import Ordenation from './ordenation'
+import Region from './region'
+import Tags from './tags'
 
 @paint(component)
 class Filter {
   #selects
-  #payload
-
-  get pristine () {
-    return f
-      .from(this.#payload)
-      .pipe(f.values)
-      .pipe(f.filter(f.__, f.compose(f.not, f.isEmpty)))
-      .pipe(f.len)
-      .pipe(f.not)
-      .done()
-  }
+  #refining = {}
 
   get selects () {
-    return this.#selects
+    return this.#selects ??= [
+      Ordenation.create(this),
+      Region.create(this),
+      Tags.create(this)
+    ]
   }
 
-  constructor (props) {
-    this.#payload = {}
-    this.#selects = f.map(f.or(props.selects, []), Select.create(this))
-  }
-
-  @repaint
-  change (select) {
-    this.#payload[select.key] = select.value
-    return this
-  }
-
-  @repaint
-  rewind () {
-    f.forEach(this.selects, (select) => select.rewind())
-    this.#payload = {}
+  refine (select) {
+    this.#refining[select.key] = select.value
+    echo.emit('filter:change', { ...this.#refining })
     return this
   }
 }

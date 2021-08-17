@@ -1,15 +1,11 @@
-import h, { Hide, Repeat } from '@kuba/h'
-import * as f from '@kuba/f'
+import h, { Repeat } from '@kuba/h'
 import Story from '@kuba/story'
-import Sampling from './sampling'
+import Service from './service'
 import style from './style'
 
-export default (shelf, children) =>
+export default (shelf) =>
   <Story className={[style.shelf, shelf.className]}>
-    <Hide if={f.isEmpty(children.title)}>
-      {children.title}
-    </Hide>
     <div className={style.shelf__main} >
-      <Repeat iterator={shelf.feeds} component={Sampling} />
+      <Repeat iterator={shelf.services} component={Service} />
     </div>
   </Story>

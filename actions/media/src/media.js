@@ -6,7 +6,7 @@ export default function (query) {
   const match = () =>
     listeners[window.matchMedia(query).matches ? 'in' : 'out']()
 
-  window.addEventListener('resize', f.debounce(match))
+  window.addEventListener('resize', f.debounce(match), 0)
   window.setTimeout(match, 0)
 
   return {

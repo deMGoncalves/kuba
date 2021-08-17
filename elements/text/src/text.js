@@ -1,10 +1,11 @@
-import { color, size } from '@kuba/polished'
+import { color, size, weight } from '@kuba/polished'
 import styled from '@kuba/styled'
 
 export default new Proxy({}, {
   get: (_, tagName) =>
     styled[tagName]`
-      color: var(${color});
-      font-size: var(${size});
+      color: ${color};
+      font-size: ${size};
+      font-weight: ${weight};
     `
 })

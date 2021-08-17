@@ -1,4 +1,14 @@
 import * as f from '@kuba/f'
 
-export default (current, event) =>
-  f.and(current, f.not(event))
+class Removed {
+  static exec (that) {
+    return (current) =>
+      that.removeEventListener(current.name)
+  }
+
+  static is (current, event) {
+    return f.and(current, f.not(event))
+  }
+}
+
+export default Removed

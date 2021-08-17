@@ -8,8 +8,7 @@ export default function (sandbox) {
       ? node.content
       : h(node.name, node.props, ...f.map(node.children, paint))
 
-
-  worker.addEventListener('message', ({ data: { action, payload }}) => {
+  worker.addEventListener('message', ({ data: { action, payload } }) => {
     f.equal('render', action) && (
       render(document[payload.element], ...f.map(payload.children, paint))
     )

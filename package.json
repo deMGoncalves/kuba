@@ -3,13 +3,14 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "husky": "^5.1.1",
+    "lint-staged": "^11.1.2",
     "pinst": "^2.1.4"
   },
   "name": "kuba",
   "private": true,
   "scripts": {
     "postinstall": "husky install",
-    "test": "yarn workspaces -p run test"
+    "test": "yarn workspaces run test"
   },
   "version": "1.0.0",
   "workspaces": {
@@ -17,7 +18,7 @@
       "actions/*",
       "blocks/*",
       "buckets/*",
-      "dev/*",
+      "development/*",
       "elements/*",
       "filters/*",
       "infra/*",

@@ -25,12 +25,4 @@ export default styled.style`
       grid-template-columns: repeat(4, 1fr);
     }
   }
-
-  .shelf__sampling {
-    cursor: pointer;
-  }
-
-  .shelf__strong {
-    line-height: 1.382;
-  }
 `

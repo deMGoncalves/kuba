@@ -15,10 +15,10 @@ export default (props) =>
         </Picture>
         <figcaption className={style.hero__figcaption}>
           <hgroup className={style.hero__hgroup}>
-            <text.H1 className={style.hero__text} master darker large>{props.title}</text.H1>
+            <text.H1 className={style.hero__text} master darker large bold>{props.title}</text.H1>
             <text.P className={style.hero__text} master small>{props.description}</text.P>
           </hgroup>
-          <button.Master className={style.hero__button} master>{props.cta}</button.Master>
+          <button.Master className={style.hero__button}>{props.cta}</button.Master>
         </figcaption>
       </figure>
     </Container>

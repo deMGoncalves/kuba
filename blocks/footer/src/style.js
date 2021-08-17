@@ -4,6 +4,7 @@ export default styled.style`
   .footer {
     background-color: var(--color-master-lighter);
     border-top: 1px solid var(--color-master-light);
+    content-visibility: auto;
     position: relative;
   }
 

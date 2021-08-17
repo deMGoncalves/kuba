@@ -14,7 +14,7 @@ class Password {
   }
 
   get label () {
-    return 'Password'
+    return 'Senha'
   }
 
   get name () {

@@ -1,5 +1,6 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import echo from '@kuba/echo'
 import component from './component'
 
 @paint(component)
@@ -28,12 +29,14 @@ class Action {
   @repaint
   close () {
     this.#opened = f.F()
+    echo.emit('overlayer:close')
     return this
   }
 
   @repaint
   open () {
     this.#opened = f.T()
+    echo.emit('overlayer:open')
     return this
   }
 }

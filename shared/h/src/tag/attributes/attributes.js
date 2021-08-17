@@ -28,7 +28,7 @@ class Attributes {
   }
 
   removeAttribute (key) {
-    this.#map.remove(key)
+    this.#map.delete(key)
     this.#target.removeAttribute(key)
     return this
   }

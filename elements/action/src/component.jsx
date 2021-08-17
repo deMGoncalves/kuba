@@ -14,7 +14,6 @@ export default (action, children) =>
         <button className={style.action__button} onClick={() => action.close()}>
           <icon.ArrowLeft className={style.action__icon} large />
         </button>
-        {children.header}
       </header>
       <main className={style.action__main}>
         {children.main}

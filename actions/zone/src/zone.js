@@ -10,7 +10,7 @@ class Zone {
   #className
   #onView
   #slot
-  
+
   get className () {
     return this.#className
   }
