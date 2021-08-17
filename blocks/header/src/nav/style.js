@@ -7,7 +7,7 @@ export default styled.style`
 
   .nav__link {
     font-weight: 500 !important;
-    line-height: 1;
+    line-height: normal;
     text-decoration: none;
   }
 
