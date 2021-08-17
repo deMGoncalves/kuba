@@ -5,11 +5,8 @@ export default styled.style`
     background-color: var(--color-master-lighter);
     border-top: 1px solid var(--color-master-light);
     content-visibility: auto;
-    position: relative;
-  }
-
-  .footer {
     margin-top: var(--size-largest);
+    position: relative;
   }
 
   .footer__container {

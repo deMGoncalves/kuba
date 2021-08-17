@@ -5,8 +5,7 @@ import style from './style'
 
 export default (props) =>
   <nav className={[style.nav, props.className]}>
-    <link.Master className={style.nav__link} href={urlFor('home')} darker small>Integer rhoncus</link.Master>
-    <link.Master className={style.nav__link} href={urlFor('home')} darker small>Ut molestie</link.Master>
-    <link.Master className={style.nav__link} href={urlFor('home')} darker small>Morbi ut</link.Master>
-    <link.Master className={style.nav__link} href={urlFor('home')} darker small>Donec tincidunt</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('home')} master small>In finibus</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('home')} master small>Donec suscipit</link.Master>
+    <link.Master className={style.nav__link} href={urlFor('home')} master small>Aenean mollis</link.Master>
   </nav>
