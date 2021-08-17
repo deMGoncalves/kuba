@@ -9,7 +9,7 @@ const mapper = [
 
 const weight = (props) =>
   f.cond(
-    [f.has('bold'), f.always('500')],
+    [f.has('bold'), f.always('700')],
     [f.has('normal'), f.always('400')],
     [f.has('thin'), f.always('300')],
     [f.T, f.always('400')]
