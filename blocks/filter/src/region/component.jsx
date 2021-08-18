@@ -8,7 +8,7 @@ import style from './style'
 export default (region) =>
   <>
     <tag.Master className={style.region__open} onClick={() => region.open()} selected={region.selected} lighter>
-      Regiões
+      Nam sed sem
       <Show if={region.selected}>
         <span className={style.region__span}>{region.display}</span>
       </Show>
@@ -20,7 +20,7 @@ export default (region) =>
         </button>
       </header>
       <main className={style.region__main}>
-        <text.Strong className={style.region__strong} master darker>Regiões</text.Strong>
+        <text.Strong className={style.region__strong} master darker bold>Nam sed sem</text.Strong>
         <ul className={style.region__ul}>
           {region.options}
         </ul>

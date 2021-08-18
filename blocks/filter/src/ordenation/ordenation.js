@@ -13,7 +13,7 @@ class Ordenation {
   #selected
 
   get display () {
-    return f.or(this.#selected.display, 'Ordenar por')
+    return f.or(this.#selected.display, 'Praesent nunc')
   }
 
   get opened () {

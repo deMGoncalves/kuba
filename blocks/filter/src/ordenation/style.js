@@ -10,6 +10,7 @@ export default styled.style`
 
   .ordenation__open[selected=true] {
     background-color: var(--color-primary) !important;
+    border: 1px solid var(--color-primary-darker) !important;
     color: var(--color-master-lightest) !important;
   }
 

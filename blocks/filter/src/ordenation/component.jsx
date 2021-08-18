@@ -17,7 +17,7 @@ export default (ordenation) =>
         </button>
       </header>
       <main className={style.ordenation__main}>
-        <text.Strong className={style.ordenation__strong} master darker>Ordenar por</text.Strong>
+        <text.Strong className={style.ordenation__strong} master darker bold>Praesent nunc</text.Strong>
         <ul className={style.ordenation__ul}>
           {ordenation.options}
         </ul>
