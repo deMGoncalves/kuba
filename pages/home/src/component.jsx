@@ -5,6 +5,7 @@ import Zone from '@kuba/zone'
 import Exploration from './exploration'
 import Hero from './hero'
 import Inspiration from './inspiration'
+import Shelf from './shelf'
 import Workflow from './workflow'
 import style from './style'
 
@@ -17,6 +18,9 @@ export default () =>
       <Zone className={style.home__zone}>
         <Workflow className={style.home__workflow} />
         <Inspiration className={style.home__inspiration} />
+      </Zone>
+      <Zone className={style.home__zone}>
+        <Shelf className={style.home__self} />
       </Zone>
     </Fragment>
   </Site>
