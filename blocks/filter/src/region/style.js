@@ -8,6 +8,10 @@ export default styled.style`
     padding: var(--size-small) var(--size-medium);
   }
 
+  .region__open {
+    border: 1px solid var(--color-master-darker) !important;
+  }
+
   .region__open[selected=true] {
     background-color: var(--color-primary) !important;
     border: 1px solid var(--color-primary-darker) !important;
