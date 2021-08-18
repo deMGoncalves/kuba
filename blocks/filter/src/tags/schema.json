@@ -1,6 +1,8 @@
 {
   "options": [
-    { "value": 1, "display": "Crítico" },
-    { "value": 2, "display": "Agendado" }
+    { "value": 1, "display": "Donec maximus" },
+    { "value": 2, "display": "Maecenas libero" },
+    { "value": 3, "display": "Sed nisi" },
+    { "value": 4, "display": "Nullam laoreet" }
   ]
 }
