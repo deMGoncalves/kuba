@@ -45,6 +45,42 @@ Usaremos este comando para servir o pacote @kuba/app, para isso bastar executar 
 yarn workspace @kuba/app serve
 ```
 
-Fiquem atentos, o comando dev será usado apenas nos pacotes do workspace buckets.
+> Fiquem atentos, o comando dev será usado apenas nos pacotes do workspace buckets.
+
+##### [test](https://github.com/deMGoncalves/kuba)
+
+Usaremos este comando para testar o pacote @kuba/app, para isso precisamos executar o comando abaixo.
+
+```bash
+yarn workspace @kuba/app test
+```
+
+Também podemos executar o teste em todos os pacotes do projeto
+
+```bash
+yarn test
+```
+
+##### [build](https://github.com/deMGoncalves/kuba)
+
+Usaremos este comando para compilar o pacote.
+
+```bash
+yarn workspace @kuba/app build
+```
+
+> Fiquem atentos, o comando build será usado apenas nos pacotes do workspace buckets.
+
+##### [build:analyzer](https://github.com/deMGoncalves/kuba)
+
+Usaremos este comando para analizar o build.
+
+```bash
+yarn workspace @kuba/app build:analyzer
+```
+
+> Fiquem atentos, o comando build:analyzer será usado apenas nos pacotes do workspace buckets.
+
+
 
 🚧  Como usar em construção...  🚧
