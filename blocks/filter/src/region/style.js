@@ -10,15 +10,17 @@ export default styled.style`
 
   .region__open[selected=true] {
     background-color: var(--color-primary) !important;
+    color: var(--color-master-lightest) !important;
   }
 
   .region__span {
     align-items: center;
-    background-color: var(--color-master-darker);
+    background-color: var(--color-master-lightest);
     border-radius: 10.5px;
-    color: var(--color-master-lightest);
+    color: var(--color-master-darker);
     display: flex;
     font-size: var(--size-smaller);
+    font-weight: 500;
     height: var(--size-large);
     justify-content: center;
     line-height: normal;

@@ -10,6 +10,7 @@ export default styled.style`
 
   .ordenation__open[selected=true] {
     background-color: var(--color-primary) !important;
+    color: var(--color-master-lightest) !important;
   }
 
   .ordenation__close {
