@@ -29,4 +29,22 @@ Kuba foi projetado para um processo de trabalho simplificado, para instalar as d
 yarn install
 ```
 
+#### [Commandos](https://github.com/deMGoncalves/kuba)
+
+Os comandos do projeto são muito bem padronizados, sendo eles serve, test, build e build:analyzer.
+
+```bash
+yarn workspace @kuba/[package] <command>
+```
+
+##### [serve](https://github.com/deMGoncalves/kuba)
+
+Usaremos este comando para servir o pacote @kuba/app, para isso bastar executar o comando abaixo.
+
+```bash
+yarn workspace @kuba/app serve
+```
+
+Fiquem atentos, o comando dev será usado apenas nos pacotes do workspace buckets.
+
 🚧  Como usar em construção...  🚧
