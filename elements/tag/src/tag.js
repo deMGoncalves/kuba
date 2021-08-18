@@ -5,8 +5,8 @@ export default new Proxy({}, {
   get: (_, type) =>
     styled.button`
       align-items: center;
-      background-color: transparent;
-      border: ${() => `1px solid var(--color-${f.toLower(type)}-darker)`};
+      background-color: ${() => `var(--color-${f.toLower(type)}-lighter)`};
+      border: 1px solid ${() => `var(--color-${f.toLower(type)}-light)`};
       border-radius: 17px;
       color: ${() => `var(--color-${f.toLower(type)}-darker)`};
       cursor: pointer;
