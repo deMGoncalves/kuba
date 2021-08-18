@@ -5,6 +5,7 @@ import Title from '@kuba/title'
 import Banner from './banner'
 import Breadcrumb from './breadcrumb'
 import Navigation from './navigation'
+import Shelf from './shelf'
 import style from './style'
 
 export default (departament) =>
@@ -15,5 +16,6 @@ export default (departament) =>
       <Breadcrumb className={style.departament__breadcrumb} />
       <Banner className={style.departament__banner} />
       <Navigation className={style.departament__navigation} />
+      <Shelf className={style.departament__shelf} />
     </Fragment>
   </Site>
