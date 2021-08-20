@@ -1,3 +1,4 @@
+import * as f from '@kuba/f'
 import attrs from './attrs'
 import hooks from './hooks'
 import render from './render'
@@ -118,7 +119,7 @@ function bricklayer (descriptor) {
       }
 
       setUseEffect (listener) {
-        this.#useEffect = listener
+        this.#useEffect = f.debounce(listener, 0)
         return this
       }
 
