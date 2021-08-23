@@ -9,6 +9,7 @@ class Tag {
   #children
   #className
   #element
+  #entity
   #events
   #is
   #slot
@@ -28,6 +29,10 @@ class Tag {
 
   get element () {
     return this.#element ??= document.createElement(this.name, { is: this.is })
+  }
+
+  get entity () {
+    return this.#entity ??= {}
   }
 
   get events () {
@@ -79,29 +84,55 @@ class Tag {
     return this
   }
 
+  connectEntity (entity) {
+    this.#entity = entity
+    return this
+  }
+
+  didMount () {
+    this.#entity?.[f.magic('didMount')]?.()
+    return this
+  }
+
+  didUnmount () {
+    this.#entity?.[f.magic('didUnmount')]?.()
+    return this
+  }
+
+  didUpdate () {
+    this.#entity?.[f.magic('didUpdate')]?.()
+    return this
+  }
+
   insertAdjacentElement (position, element) {
     this.element.insertAdjacentElement(position, element)
     return this
   }
 
   paint () {
+    this.willMount()
     this.attributes.paint()
     this.children.paint()
     this.className.paint()
     this.events.paint()
+    this.didMount()
     return this.element
   }
 
   reflow (tag) {
+    this.willUpdate()
     this.attributes.reflow(tag.attributes)
     this.className.reflow(tag.className)
     this.events.reflow(tag.events)
     this.children.reflow(tag.children)
+    this.didUpdate()
     return this
   }
 
   remove () {
+    this.willUnmount()
     this.element.remove()
+    this.didUnmount()
     return this
   }
 
@@ -122,6 +153,21 @@ class Tag {
 
   setAttribute (key, value) {
     this.element.setAttribute(key, value)
+    return this
+  }
+
+  willMount () {
+    this.#entity?.[f.magic('willMount')]?.()
+    return this
+  }
+
+  willUnmount () {
+    this.#entity?.[f.magic('willUnmount')]?.()
+    return this
+  }
+
+  willUpdate () {
+    this.#entity?.[f.magic('willUpdate')]?.()
     return this
   }
 
