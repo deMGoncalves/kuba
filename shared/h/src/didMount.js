@@ -1,9 +1,3 @@
-import * as f from '@kuba/f'
-import { after } from '@kuba/hook'
+import hook from './hook'
 
-function didMount (returned) {
-  this?.[f.magic('didMount')]?.()
-  return returned
-}
-
-export default after(didMount)
+export default hook('didMount')
