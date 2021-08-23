@@ -1,4 +1,4 @@
-import hook from '@kuba/hook'
+import middleware from '@kuba/middleware'
 import validate from './validate'
 
-export default hook(validate)
+export default middleware(validate)

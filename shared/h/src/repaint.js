@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import { after } from '@kuba/hook'
+import { after } from '@kuba/middleware'
 
 function repaint (returned) {
   this?.[f.magic('reflow')]?.()
