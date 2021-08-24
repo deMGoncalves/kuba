@@ -1,6 +1,7 @@
-import h, { Fragment, Show } from '@kuba/h'
+import h, { Fragment } from '@kuba/h'
 import icon from '@kuba/icon'
 import Select from '@kuba/select'
+import Show from '@kuba/show'
 import tag from '@kuba/tag'
 import text from '@kuba/text'
 import style from './style'
@@ -9,7 +10,7 @@ export default (region) =>
   <>
     <tag.Master className={style.region__open} onClick={() => region.open()} selected={region.selected} lighter>
       Nam sed sem
-      <Show if={region.selected}>
+      <Show when={region.selected}>
         <span className={style.region__span}>{region.display}</span>
       </Show>
     </tag.Master>
