@@ -1,17 +1,19 @@
-import h, { Fragment, Hide, Show } from '@kuba/h'
+import h, { Fragment } from '@kuba/h'
+import Hide from '@kuba/hide'
 import icon from '@kuba/icon'
+import Show from '@kuba/show'
 import text from '@kuba/text'
 import style from './style'
 
 export default (option) =>
   <>
-    <Show if={option.selected}>
+    <Show when={option.selected}>
       <li className={style.option} onClick={() => option.unselect()}>
         <icon.SquareChecked className={style.option__icon} small />
         <text.P className={style.option__strong} slot='caption' master darker small>{option.display}</text.P>
       </li>
     </Show>
-    <Hide if={option.selected}>
+    <Hide when={option.selected}>
       <li className={style.option} onClick={() => option.select()}>
         <icon.Square className={style.option__icon} small />
         <text.P className={style.option__strong} slot='caption' master darker small>{option.display}</text.P>

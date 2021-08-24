@@ -1,4 +1,5 @@
-import h, { Repeat } from '@kuba/h'
+import h from '@kuba/h'
+import Repeat from '@kuba/repeat'
 import Story from '@kuba/story'
 import text from '@kuba/text'
 import Step from './step'
