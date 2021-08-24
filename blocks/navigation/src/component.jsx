@@ -1,5 +1,6 @@
-import h, { Repeat } from '@kuba/h'
+import h from '@kuba/h'
 import Metro from '@kuba/metro'
+import Repeat from '@kuba/repeat'
 import Story from '@kuba/story'
 import Bubble from './bubble'
 import style from './style'
