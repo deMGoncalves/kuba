@@ -1,5 +1,6 @@
-import h, { Repeat } from '@kuba/h'
+import h from '@kuba/h'
 import Picture from '@kuba/picture'
+import Repeat from '@kuba/repeat'
 import Sources from '@kuba/sources'
 import Story from '@kuba/story'
 import text from '@kuba/text'
