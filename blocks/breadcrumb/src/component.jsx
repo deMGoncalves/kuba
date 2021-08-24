@@ -1,6 +1,7 @@
-import h, { Repeat } from '@kuba/h'
+import h from '@kuba/h'
 import Container from '@kuba/container'
 import Metro from '@kuba/metro'
+import Repeat from '@kuba/repeat'
 import Path from './path'
 import style from './style'
 
