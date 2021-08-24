@@ -1,4 +1,4 @@
-import { paint, willMount } from '@kuba/h'
+import { paint, didMount } from '@kuba/h'
 import echo from '@kuba/echo'
 import hook from '@kuba/hook'
 import component from './component'
@@ -27,7 +27,7 @@ class Shelf {
     this.#slot = props.slot
   }
 
-  @willMount
+  @didMount
   mount () {
     return this
   }
