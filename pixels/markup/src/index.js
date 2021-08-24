@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import hook from '@kuba/hook'
+import middleware from '@kuba/middleware'
 import alternate from './alternate'
 import author from './author'
 import base from './base'
@@ -12,4 +12,4 @@ import themeColor from './themeColor'
 import title from './title'
 import viewport from './viewport'
 
-export default hook(f.chain(alternate, author, base, canonical, charset, description, icon, robots, themeColor, title, viewport))
+export default middleware(f.chain(alternate, author, base, canonical, charset, description, icon, robots, themeColor, title, viewport))

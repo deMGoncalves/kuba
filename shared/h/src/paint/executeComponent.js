@@ -1,15 +1,19 @@
 import * as f from '@kuba/f'
+import Tag from '@kuba/h/src/tag'
 
 export default function (componentRef, entity, children) {
   const tag = componentRef(entity, children)
-
-  const reflow = f.debounce(f.frame(() =>
-    entity[f.magic('tag')].reflow(componentRef(entity, children))), 0)
+  const reflow = () =>
+    entity[f.magic('tag')].reflow(componentRef(entity, children))
 
   f.assign(entity, {
     [f.magic('tag')]: tag,
-    [f.magic('reflow')]: reflow
+    [f.magic('reflow')]: f.debounce(f.frame(reflow), 0)
   })
+
+  f.is(Tag, tag) && (
+    tag.connectEntity(entity)
+  )
 
   return tag
 }

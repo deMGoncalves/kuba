@@ -18,6 +18,7 @@
       "actions/*",
       "blocks/*",
       "buckets/*",
+      "directives/*",
       "development/*",
       "elements/*",
       "filters/*",

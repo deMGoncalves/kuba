@@ -1,9 +1,18 @@
-import after from './after'
-import before from './before'
-import call from './call'
+import * as f from '@kuba/f'
 
-export default call
-export {
-  after,
-  before
-}
+export default (handler) =>
+  function (entity, method, descriptor) {
+    const hook = f.magic(f.random())
+
+    handler(function (...args) {
+      return entity[hook](...args)
+    })
+
+    Object.defineProperty(entity, hook, {
+      value: function () {
+        return this[method](...arguments)
+      }
+    })
+
+    return descriptor
+  }

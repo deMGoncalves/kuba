@@ -24,7 +24,7 @@
     ]
   },
   "main": "src/index.js",
-  "name": "@kuba/bricklayer",
+  "name": "@kuba/hide",
   "private": true,
   "scripts": {
     "test": "jest --passWithNoTests"
