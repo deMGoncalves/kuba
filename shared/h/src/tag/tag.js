@@ -90,17 +90,20 @@ class Tag {
   }
 
   didMount () {
-    this.#entity?.[f.magic('didMount')]?.()
+    f.idle(() =>
+      this.#entity?.[f.magic('didMount')]?.())()
     return this
   }
 
   didUnmount () {
-    this.#entity?.[f.magic('didUnmount')]?.()
+    f.idle(() =>
+      this.#entity?.[f.magic('didUnmount')]?.())()
     return this
   }
 
   didUpdate () {
-    this.#entity?.[f.magic('didUpdate')]?.()
+    f.idle(() =>
+      this.#entity?.[f.magic('didUpdate')]?.())()
     return this
   }
 
