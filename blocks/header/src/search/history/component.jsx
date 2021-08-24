@@ -1,10 +1,11 @@
-import h, { Show } from '@kuba/h'
+import h from '@kuba/h'
 import * as f from '@kuba/f'
+import Show from '@kuba/show'
 import text from '@kuba/text'
 import style from './style'
 
 export default (history) =>
-  <Show if={history.has}>
+  <Show when={history.has}>
     <text.Strong className={style.history__strong} master darker small>Buscas recentes</text.Strong>
     <ul className={style.history__ul}>
       {
