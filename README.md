@@ -54,7 +54,7 @@
 
 <p align="center">
   <a href="https://github.com/deMGoncalves/kuba/graphs/contributors">
-    <img src="https://user-images.githubusercontent.com/35740192/130800331-2f7aef4c-00f1-4396-9fbd-a029b40c0888.png" alt="Sponsor logos" width="198" />
+    <img src="https://user-images.githubusercontent.com/35740192/130805795-8f7ffab2-21ee-46e8-83f7-f63f82e5c634.png" alt="Sponsor logos" width="198" />
   </a>
 </p>
 
