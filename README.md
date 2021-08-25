@@ -33,6 +33,9 @@
   Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um produto. As mudanças se tornam cirúrgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
 </p>
 
+<br />
+<br />
+
 <p align="center">
   <strong>
     <a href="https://github.com/deMGoncalves/kuba">Introdução</a> &nbsp;·&nbsp;
