@@ -23,5 +23,5 @@ download(url)
 ### [exemplos](#)
 
 
-- [thumbail](https://github.com/Usefashion-GitHub/moneyball/blob/bd6119f661fb0e2157c02b1f4458cbba69446d99/elements/thumbnail/src/thumbnail.js#L25)
+<!-- - [](#) -->
 
