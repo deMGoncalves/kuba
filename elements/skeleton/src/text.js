@@ -4,6 +4,6 @@ import styled from '@kuba/styled'
 
 export default styled.span`
   background-color: var(--color-master-light);
-  height: calc(${size} * 1.382);
+  height: ${size};
   width: ${() => f.random(42, 89)}%;
 `

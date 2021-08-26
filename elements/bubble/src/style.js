@@ -4,18 +4,18 @@ export default styled.style`
   .bubble {
     display: flex;
     flex-direction: column;
-    gap: var(--size-smallest);
+    gap: var(--spacing_inset-nano);
   }
 
   .bubble__picture {
-    border-radius: 50%;
+    border-radius: var(--border-radius-circular);
   }
 
   .bubble__figcaption {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: var(--size-medium);
+    gap: var(--spacing_inset-nano);
     width: 100%;
   }
 `

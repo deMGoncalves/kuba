@@ -1,5 +1,5 @@
 export default (func) =>
   (...args) =>
-    'window' in self
-      ? window.requestAnimationFrame(() => func(...args))
-      : setTimeout(() => func(...args), 0)
+    'requestAnimationFrame' in self
+      ? self.requestAnimationFrame(() => func(...args))
+      : self.setTimeout(() => func(...args), 0)

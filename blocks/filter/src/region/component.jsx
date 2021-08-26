@@ -21,7 +21,7 @@ export default (region) =>
         </button>
       </header>
       <main className={style.region__main}>
-        <text.Strong className={style.region__strong} master darker bold>Nam sed sem</text.Strong>
+        <text.Strong className={style.region__text} master darker xxxs medium>Nam sed sem</text.Strong>
         <ul className={style.region__ul}>
           {region.options}
         </ul>

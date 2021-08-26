@@ -7,7 +7,7 @@ import style from './style'
 export default (props) =>
   <Action className={[style.profile, props.className]}>
     <icon.Profile className={style.profile__icon} alt='Orci sem bibendum' slot='icon' larger />
-    <text.P className={style.profile__p} slot='label' master darker small>
+    <text.P className={style.profile__p} slot='label' master darker xxxs>
       Orci sem<br /><strong>bibendum</strong>
     </text.P>
     <Fragment slot='main' />

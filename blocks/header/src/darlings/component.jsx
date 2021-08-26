@@ -5,7 +5,7 @@ import style from './style'
 
 export default (props) =>
   <darlings {...props} className={[style.darlings, props.className]}>
-    <link.Master className={style.darlings__link} href={urlFor('home')} master small>In finibus</link.Master>
-    <link.Master className={style.darlings__link} href={urlFor('home')} master small>Donec suscipit</link.Master>
-    <link.Master className={style.darlings__link} href={urlFor('home')} master small>Aenean mollis</link.Master>
+    <link.Master className={style.darlings__link} href={urlFor('home')}>In finibus</link.Master>
+    <link.Master className={style.darlings__link} href={urlFor('home')}>Donec suscipit</link.Master>
+    <link.Master className={style.darlings__link} href={urlFor('home')}>Aenean mollis</link.Master>
   </darlings>

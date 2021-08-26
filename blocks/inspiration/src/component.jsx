@@ -9,7 +9,7 @@ import style from './style'
 
 export default (props) =>
   <Story className={[style.inspiration, props.className]}>
-    <text.H2 className={style.inspiration__h2} master darker large bold>{props.title}</text.H2>
+    <text.H2 className={style.inspiration__h2} master darker sm medium>{props.title}</text.H2>
     <div className={style.inspiration__main}>
       <Picture className={style.inspiration__picture}>
         <Sources thumbnails={props.thumbnails} />

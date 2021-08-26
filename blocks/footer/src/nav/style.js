@@ -2,11 +2,11 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .nav {
-    display: block;
-    padding-top: var(--size-largest);
+    display: flex;
+    gap: var(--spacing_inset-xs);
   }
 
-  .nav__link:not(:first-of-type) {
-    margin-left: var(--size-medium);
+  .nav__link {
+    font-size: var(--font-size-xxxs) !important;
   }
 `

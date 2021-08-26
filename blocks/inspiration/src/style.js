@@ -4,12 +4,12 @@ export default styled.style`
   .inspiration > div {
     display: flex;
     flex-direction: column;
-    gap: var(--size-medium);
+    gap: var(--spacing_inset-xs);
   }
 
   .inspiration__main {
     display: grid;
-    gap: var(--size-medium);
+    gap: var(--spacing-xxxs);
     grid-template-areas:
       'thumbnail thumbnail'
       'box1 box2'
@@ -47,7 +47,7 @@ export default styled.style`
   }
 
   .inspiration__picture {
-    border-radius: var(--size-smallest);
+    border-radius: var(--border-radius-sm);
     padding-top: calc(400 / 736 * 100%) !important;
   }
 
@@ -59,9 +59,5 @@ export default styled.style`
 
   .inspiration__box {
     cursor: pointer;
-  }
-
-  .inspiration__strong {
-    line-height: 1.382;
   }
 `

@@ -12,16 +12,19 @@ export default styled.style`
     background-color: var(--color-master-lighter);
     color: var(--color-master-darker);
     display: flex;
-    font-size: var(--size-small);
-    font-weight: 700;
+    font-size: var(--font-size-xxxs);
+    font-weight: var(--font-weight-medium);
     justify-content: flex-start;
-    padding: var(--size-small) var(--size-medium);
+    line-height: var(--line-height-lg);
+    padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
   }
 
   .menu__link {
-    border-bottom: 1px solid var(--color-master-lighter);
+    border-bottom: var(--border-width-hairline) solid var(--color-master-lighter);
+    font-size: var(--font-size-xxxs) !important;
     justify-content: flex-start !important;
-    padding: var(--size-small) var(--size-medium);
+    line-height: var(--line-height-lg);
+    padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
     text-decoration: none;
     width: 100%;
   }

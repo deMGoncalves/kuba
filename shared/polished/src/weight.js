@@ -3,16 +3,21 @@ import cleaner from './cleaner'
 
 const mapper = [
   'bold',
-  'normal',
-  'thin'
+  'medium',
+  'regular'
 ]
 
 const weight = (props) =>
-  f.cond(
-    [f.has('bold'), f.always('500')],
-    [f.has('normal'), f.always('400')],
-    [f.has('thin'), f.always('300')],
-    [f.T, f.always('400')]
-  )(props)
+  f.join(
+    f.chain(
+      f.always('var(--font-weight-'),
+      f.cond(
+        ...f.map(mapper, (token) => [f.has(token), f.always(token)]),
+        [f.T, f.always('regular')]
+      ),
+      f.always(')')
+    )(props),
+    ''
+  )
 
 export default cleaner(weight, mapper)

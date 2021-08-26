@@ -6,19 +6,18 @@ export default new Proxy({}, {
     styled.button`
       align-items: center;
       background-color: ${() => `var(--color-${f.toLower(type)}-lighter)`};
-      border: 1px solid ${() => `var(--color-${f.toLower(type)}-light)`};
-      border-radius: 17px;
+      border: var(--border-width-hairline) solid ${() => `var(--color-${f.toLower(type)}-light)`};
+      border-radius: var(--border-radius-pill);
       color: ${() => `var(--color-${f.toLower(type)}-darker)`};
       cursor: pointer;
       display: inline-flex;
-      font-family: 'Roboto', sans-serif;
-      font-size: var(--size-small);
-      font-weight: 500;
-      height: var(--size-largest);
+      font-family: var(--font-family-base);
+      font-size: var(--font-size-xxxs);
+      font-weight: var(--font-weight-medium);
       justify-content: center;
       letter-spacing: 0.618px;
-      line-height: 1;
-      padding: var(--size-smaller) var(--size-larger);
+      line-height: var(--line-height-sm);
+      padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
       text-decoration: none;
       user-select: none;
     `

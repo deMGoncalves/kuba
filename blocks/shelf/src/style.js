@@ -4,14 +4,14 @@ export default styled.style`
   .shelf > div {
     display: flex;
     flex-direction: column;
-    gap: var(--size-medium);
+    gap: var(--spacing-xxxs);
   }
 
   .shelf__main {
-    column-gap: var(--size-medium);
+    column-gap: var(--spacing-xxxs);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: var(--size-largest);
+    row-gap: var(--spacing-sm);
   }
 
   @media (min-width: 769px) {

@@ -3,19 +3,15 @@ import styled from '@kuba/styled'
 export default styled.style`
   .option {
     align-items: center;
+    border-bottom: var(--border-width-hairline) solid var(--color-master-lighter);
     cursor: pointer;
     display: flex;
-    gap: var(--size-medium);
-    padding: var(--size-small) var(--size-medium);
+    gap: var(--spacing_inset-xs);
+    padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
     user-select: none;
   }
 
-  .option:not(:first-of-type) {
-    border-top: 1px solid var(--color-master-lighter);
-  }
-
-  .option__p {
-    text-align: center;
-    white-space: normal;
+  .option__text {
+    line-height: var(--line-height-lg);
   }
 `

@@ -6,10 +6,11 @@ export default styled.style`
   }
 
   .darlings__link {
+    font-size: var(--font-size-xxxs) !important;
     text-decoration: none;
   }
 
   .darlings__link:not(:first-child) {
-    margin-left: var(--size-medium);
+    margin-left: var(--spacing-xxxs);
   }
 `

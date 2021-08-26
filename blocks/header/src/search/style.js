@@ -7,7 +7,6 @@ export default styled.style`
     border: none;
     cursor: pointer;
     display: flex;
-    gap: var(--size-smallest);
     justify-content: center;
     min-height: 42px;
     min-width: 42px;
@@ -27,10 +26,9 @@ export default styled.style`
   }
 
   .search__header {
-    border-bottom: 1px solid var(--color-master-light);
     display: flex;
-    gap: var(--size-medium);
-    padding: var(--size-small) var(--size-medium);
+    gap: var(--spacing_inset-xs);
+    padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
   }
 
   .search__close {
@@ -39,7 +37,6 @@ export default styled.style`
     border: none;
     cursor: pointer;
     display: flex;
-    gap: var(--size-smallest);
     justify-content: center;
     min-height: 42px;
     min-width: 42px;
@@ -48,8 +45,6 @@ export default styled.style`
   .search__main {
     display: flex;
     flex-direction: column;
-    gap: var(--size-medium);
-    padding: var(--size-medium) 0;
   }
 
   .search__form.mobile {

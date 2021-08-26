@@ -2,28 +2,26 @@ import * as f from '@kuba/f'
 import cleaner from './cleaner'
 
 const mapper = [
-  'largest',
-  'larger',
-  'large',
-  'medium',
-  'small',
-  'smaller',
-  'smallest'
+  'xxxs',
+  'xxs',
+  'xs',
+  'sm',
+  'md',
+  'lg',
+  'xl',
+  'xxl',
+  'xxxl',
+  'display',
+  'giant'
 ]
 
 const size = (props) =>
   f.join(
     f.chain(
-      f.always('var(--size-'),
+      f.always('var(--font-size-'),
       f.cond(
-        [f.has('largest'), f.always('largest')],
-        [f.has('larger'), f.always('larger')],
-        [f.has('large'), f.always('large')],
-        [f.has('medium'), f.always('medium')],
-        [f.has('small'), f.always('small')],
-        [f.has('smaller'), f.always('smaller')],
-        [f.has('smallest'), f.always('smallest')],
-        [f.T, f.always('medium')]
+        ...f.map(mapper, (token) => [f.has(token), f.always(token)]),
+        [f.T, f.always('xs')]
       ),
       f.always(')')
     )(props),

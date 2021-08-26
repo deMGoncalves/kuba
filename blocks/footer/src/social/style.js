@@ -4,6 +4,7 @@ export default styled.style`
   .social {
     align-items: center;
     display: flex;
+    gap: var(--spacing_inset-xs);
     justify-content: center;
   }
 
@@ -16,9 +17,5 @@ export default styled.style`
 
   .social__icon {
     cursor: pointer;
-  }
-
-  .social__icon:not(:first-of-type) {
-    margin-left: var(--size-medium);
   }
 `

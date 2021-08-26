@@ -15,8 +15,8 @@ export default (props) =>
         </Picture>
         <figcaption className={style.banner__figcaption}>
           <hgroup className={style.banner__hgroup}>
-            <text.H2 className={style.banner__text} master darker large bold>{props.title}</text.H2>
-            <text.P className={style.banner__text} master small>{props.description}</text.P>
+            <text.H2 className={style.banner__text} master darker sm medium>{props.title}</text.H2>
+            <text.P className={style.banner__text} master xxxs>{props.description}</text.P>
           </hgroup>
           <button.Master className={style.banner__button} master>Sed dapibus</button.Master>
         </figcaption>

@@ -2,8 +2,10 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .hero {
-    padding-bottom: 55px;
-    padding-top: var(--size-medium);
+    display: inline-flex;
+    margin-bottom: var(--spacing-lg);
+    margin-top: var(--spacing-nano);
+    width: 100%;
   }
 
   .hero__figure {
@@ -11,7 +13,7 @@ export default styled.style`
   }
 
   .hero__picture {
-    border-radius: var(--size-smallest);
+    border-radius: var(--border-radius-sm);
     padding-top: calc(400 / 736 * 100%) !important;
   }
 
@@ -31,9 +33,9 @@ export default styled.style`
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: var(--size-medium);
+    gap: var(--spacing_inset-xs);
     margin: 0 auto;
-    padding-top: var(--size-smaller);
+    padding-top: var(--spacing_inset-xs);
     width: 89%;
   }
 
@@ -49,14 +51,21 @@ export default styled.style`
       height: 100%;
       justify-content: center;
       left: 0;
-      padding: var(--size-largest);
+      padding: 0 var(--spacing_inset-lg);
       position: absolute;
       top: 0;
       width: 42%;
     }
   }
 
+  .hero__hgroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-quarck);
+  }
+
   .hero__text {
+    line-height: var(--line-height-lg);
     text-align: center;
   }
 

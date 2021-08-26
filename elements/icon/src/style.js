@@ -6,37 +6,37 @@ export default styled.style`
   }
 
   .icon {
-    padding-top: var(--size-medium) !important;
-    width: var(--size-medium) !important;
+    padding-top: 16px !important;
+    width: 16px !important;
   }
 
   .icon[largest] {
-    padding-top: var(--size-largest) !important;
-    width: var(--size-largest) !important;
+    padding-top: 34px !important;
+    width: 34px !important;
   }
 
   .icon[larger] {
-    padding-top: var(--size-larger) !important;
-    width: var(--size-larger) !important;
+    padding-top: 26px !important;
+    width: 26px !important;
   }
 
   .icon[large] {
-    padding-top: var(--size-large) !important;
-    width: var(--size-large) !important;
+    padding-top: 21px !important;
+    width: 21px !important;
   }
 
   .icon[small] {
-    padding-top: var(--size-small) !important;
-    width: var(--size-small) !important;
+    padding-top: 13px !important;
+    width: 13px !important;
   }
 
   .icon[smaller] {
-    padding-top: var(--size-smaller) !important;
-    width: var(--size-smaller) !important;
+    padding-top: 10px !important;
+    width: 10px !important;
   }
 
   .icon[smallest] {
-    padding-top: var(--size-smallest) !important;
-    width: var(--size-smallest) !important;
+    padding-top: 8px !important;
+    width: 8px !important;
   }
 `

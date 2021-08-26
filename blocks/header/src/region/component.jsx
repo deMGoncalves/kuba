@@ -7,7 +7,7 @@ import style from './style'
 export default (props) =>
   <Action className={[style.region, props.className]}>
     <icon.MapMarker className={style.region__icon} alt='Praesent gravida leo' slot='icon' larger />
-    <text.P className={style.region__p} slot='label' master darker small>
+    <text.P className={style.region__p} slot='label' master darker xxxs>
       Praesent<br /><strong>gravida leo</strong>
     </text.P>
     <Fragment slot='main' />

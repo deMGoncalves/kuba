@@ -2,23 +2,17 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .header {
-    border-bottom: 1px solid var(--color-master-light);
+    border-bottom: var(--border-width-hairline) solid var(--color-master-light);
     display: flex;
     flex-direction: column;
-    gap: var(--size-small);
-    padding: var(--size-small) 0;
-  }
-
-  @media (min-width: 961px) {
-    .header {
-      padding-bottom: var(--size-smallest);
-    }
+    gap: var(--spacing-xxxs);
+    padding: var(--spacing-nano) 0;
   }
 
   .header__container {
     align-items: center;
     display: flex;
-    gap: var(--size-medium);
+    gap: var(--spacing-xxxs);
   }
 
   @media (max-width: 960px) {
@@ -29,7 +23,7 @@ export default styled.style`
 
   .header__div {
     display: flex;
-    gap: var(--size-medium);
+    gap: var(--spacing-xxxs);
   }
 
   .header__div:first-child {

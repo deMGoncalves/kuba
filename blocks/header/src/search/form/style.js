@@ -11,10 +11,10 @@ export default styled.style`
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--color-master-lighter);
-    border: 1px solid var(--color-master-light);
-    border-radius: 3px;
+    border: var(--border-width-hairline) solid var(--color-master-light);
+    border-radius: 4px;
     height: 42px;
-    padding: 0 55px 0 var(--size-smaller);
+    padding: 0 55px 0 var(--spacing_inset-xs);
     width: 100%;
   }
 

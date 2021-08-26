@@ -8,7 +8,7 @@ export default styled.style`
     display: flex;
     height: 144px;
     justify-content: flex-start;
-    padding: var(--size-small);
+    padding: 13px;
     position: fixed;
     right: -72px;
     transform: rotate(45deg);

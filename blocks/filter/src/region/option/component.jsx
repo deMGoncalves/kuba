@@ -10,13 +10,13 @@ export default (option) =>
     <Show when={option.selected}>
       <li className={style.option} onClick={() => option.unselect()}>
         <icon.SquareChecked className={style.option__icon} small />
-        <text.P className={style.option__strong} slot='caption' master darker small>{option.display}</text.P>
+        <text.P className={style.option__text} slot='caption' master darker xxxs>{option.display}</text.P>
       </li>
     </Show>
     <Hide when={option.selected}>
       <li className={style.option} onClick={() => option.select()}>
         <icon.Square className={style.option__icon} small />
-        <text.P className={style.option__strong} slot='caption' master darker small>{option.display}</text.P>
+        <text.P className={style.option__text} slot='caption' master darker xxxs>{option.display}</text.P>
       </li>
     </Hide>
   </>

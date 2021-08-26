@@ -1,14 +1,17 @@
 import * as f from '@kuba/f'
 import cleaner from './cleaner'
 
-const mapper = [
+const colors = [
   'complete',
   'danger',
   'info',
   'master',
   'primary',
   'success',
-  'warning',
+  'warning'
+]
+
+const modifiers = [
   'darkest',
   'darker',
   'dark',
@@ -22,22 +25,11 @@ const color = (props) =>
     f.chain(
       f.always('var(--color-'),
       f.cond(
-        [f.has('complete'), f.always('complete')],
-        [f.has('danger'), f.always('danger')],
-        [f.has('info'), f.always('info')],
-        [f.has('master'), f.always('master')],
-        [f.has('primary'), f.always('primary')],
-        [f.has('success'), f.always('success')],
-        [f.has('warning'), f.always('warning')],
+        ...f.map(colors, (token) => [f.has(token), f.always(token)]),
         [f.T, f.always('master')]
       ),
       f.cond(
-        [f.has('darkest'), f.always('-darkerst')],
-        [f.has('darker'), f.always('-darker')],
-        [f.has('dark'), f.always('-dark')],
-        [f.has('light'), f.always('-light')],
-        [f.has('lighter'), f.always('-lighter')],
-        [f.has('lightest'), f.always('-lightest')],
+        ...f.map(modifiers, (token) => [f.has(token), f.always(`-${token}`)]),
         [f.T, f.always('')]
       ),
       f.always(')')
@@ -45,4 +37,4 @@ const color = (props) =>
     ''
   )
 
-export default cleaner(color, mapper)
+export default cleaner(color, [...colors, ...modifiers])

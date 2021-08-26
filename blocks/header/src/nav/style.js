@@ -6,12 +6,12 @@ export default styled.style`
   }
 
   .nav__link {
-    font-weight: 500 !important;
-    line-height: normal;
+    font-size: var(--font-size-xxxs) !important;
+    font-weight: var(--font-weight-medium) !important;
     text-decoration: none;
   }
 
   .nav__link:not(:first-child) {
-    margin-left: var(--size-medium);
+    margin-left: var(--spacing-xxxs);
   }
 `

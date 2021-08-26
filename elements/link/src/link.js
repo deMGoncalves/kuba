@@ -8,10 +8,11 @@ export default new Proxy({}, {
       color: ${() => `var(--color-${f.toLower(type)}-darker)`};
       cursor: pointer;
       display: inline-flex;
-      font-size: var(--size-small);
-      font-weight: 400;
-      justify-content: center;
+      font-family: var(--font-family-base);
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-weight-regular);
       letter-spacing: 0.618px;
+      justify-content: center;
       user-select: none;
     `
 })

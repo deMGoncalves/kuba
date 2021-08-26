@@ -5,8 +5,8 @@ export default styled.style`
     border: 1px solid var(--color-master-light);
     display: flex;
     flex-direction: column;
-    gap: var(--size-largest);
-    padding: var(--size-largest);
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs);
   }
 
   @media (min-width: 961px) {
@@ -19,35 +19,36 @@ export default styled.style`
   .workflow__hgroup {
     display: flex;
     flex-direction: column;
+    gap: var(--spacing-quarck);
   }
 
   @media (min-width: 961px) {
     .workflow__hgroup {
-      padding-right: var(--size-largest);
+      padding-right: var(--spacing-xs);
     }
   }
 
-  .workflow__h3 {
-    font-weight: 400;
+  .workflow__text {
+    line-height: var(--line-height-lg);
   }
 
   .workflow__ol {
     display: flex;
     flex-direction: column;
-    gap: var(--size-medium);
+    gap: var(--spacing-xxxs);
     list-style: none;
   }
 
   @media (min-width: 769px) {
     .workflow__ol {
       display: grid;
-      gap: var(--size-largest);
+      gap: var(--spacing-xs);
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   .workflow__li {
-    padding-left: 42px;
+    padding-left: var(--spacing-sm);
     position: relative;
   }
 

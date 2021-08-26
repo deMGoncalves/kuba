@@ -7,7 +7,7 @@ export default styled.style`
     border: none;
     cursor: pointer;
     display: flex;
-    gap: var(--size-smallest);
+    gap: var(--spacing_inset-nano);
     justify-content: center;
     min-height: 42px;
     min-width: 42px;
@@ -16,8 +16,8 @@ export default styled.style`
   .action__header {
     align-items: center;
     display: flex;
-    gap: var(--size-medium);
+    gap: var(--spacing-xxxs);
     justify-content: flex-start;
-    padding: var(--size-small) var(--size-medium);
+    padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
   }
 `

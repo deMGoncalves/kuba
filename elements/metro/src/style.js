@@ -15,7 +15,7 @@ export default styled.style`
 
   .metro__container {
     display: inline-flex;
-    gap: var(--size-medium);
+    gap: var(--spacing_inset-xs);
     text-align: inherit;
     white-space: nowrap;
   }

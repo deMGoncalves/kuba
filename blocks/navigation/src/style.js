@@ -4,7 +4,7 @@ export default styled.style`
   .navigation > div {
     display: flex;
     flex-direction: column;
-    gap: var(--size-medium);
+    gap: var(--spacing_inset-xs);
   }
 
   .navigation__bubble {
@@ -12,10 +12,7 @@ export default styled.style`
     width: 135.8px;
   }
 
-  .navigation__strong {
-    font-size: var(--size-small);
-    font-weight: 500;
-    line-height: 1.382;
+  .navigation__text {
     text-align: center;
     white-space: normal;
   }

@@ -3,7 +3,7 @@ import styled from '@kuba/styled'
 export default styled.style`
   .select {
     background-color: var(--color-master-lightest);
-    border-left: 1px solid var(--color-master-light);
+    border-left: var(--border-width-hairline) solid var(--color-master-light);
     bottom: 0;
     box-shadow: 0 -10px 37px 0 rgba(0, 0, 0, 0.15);
     content-visibility: auto;

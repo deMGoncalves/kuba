@@ -9,5 +9,5 @@ export default (path, i) =>
     <Show when={i}>
       <icon.AngleRight className={style.breadcrumb__icon} />
     </Show>
-    <link.Master className={style.breadcrumb__link} href={path.url} small>{path.title}</link.Master>
+    <link.Master className={style.breadcrumb__link} href={path.url}>{path.title}</link.Master>
   </>
