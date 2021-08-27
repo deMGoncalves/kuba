@@ -4,6 +4,7 @@ export default styled.aside`
   background-color: var(--color-master-lightest);
   border-left: var(--border-width-hairline) solid var(--color-master-light);
   box-shadow: 0 10px 37px 0 rgba(0, 0, 0, 0.15);
+  content-visibility: auto;
   height: 100vh;
   opacity: ${(props) => props.opened ? 1 : 0};
   -ms-overflow-style: none;
