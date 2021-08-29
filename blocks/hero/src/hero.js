@@ -21,7 +21,7 @@ class Hero {
   }
 
   get description () {
-    return this.#description
+    return this.#description ??= ''
   }
 
   get url () {
@@ -33,7 +33,7 @@ class Hero {
   }
 
   get title () {
-    return this.#title
+    return this.#title ??= ''
   }
 
   constructor (props) {
@@ -47,6 +47,11 @@ class Hero {
     this.#url = descriptor.url
     this.#thumbnails = descriptor.thumbnails
     this.#title = descriptor.title
+    return this
+  }
+
+  redirect () {
+    location.assign(this.url)
     return this
   }
 }
