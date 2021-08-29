@@ -17,7 +17,7 @@ class Hero {
   }
 
   get cta () {
-    return this.#cta
+    return this.#cta ??= ''
   }
 
   get description () {
@@ -25,7 +25,7 @@ class Hero {
   }
 
   get url () {
-    return this.#url
+    return this.#url ??= '#'
   }
 
   get thumbnails () {
