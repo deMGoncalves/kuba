@@ -1,21 +1,22 @@
-import { paint, didMount } from '@kuba/h'
+import { didMount, paint, repaint } from '@kuba/h'
+import * as f from '@kuba/f'
 import echo from '@kuba/echo'
 import hook from '@kuba/hook'
 import component from './component'
-import schema from './schema'
+import getData from './getData'
 
 @paint(component)
 class Shelf {
   #className
-  #services
+  #products
   #slot
 
   get className () {
     return this.#className
   }
 
-  get services () {
-    return this.#services ??= schema.services
+  get products () {
+    return this.#products ??= f.repeat({}, 12)
   }
 
   get slot () {
@@ -27,13 +28,21 @@ class Shelf {
     this.#slot = props.slot
   }
 
+  @repaint
+  change (descriptor) {
+    this.#products = descriptor.products
+    return this
+  }
+
   @didMount
   mount () {
+    getData(this)
     return this
   }
 
   @hook(echo.on('filter:change'))
-  refinin (_descriptor) {
+  refinin () {
+    getData(this)
     return this
   }
 }
