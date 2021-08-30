@@ -6,8 +6,8 @@ const render = function (name) {
   const { listener, params, path, router } = urls[name]
   const descriptor = f.pairs(
     f.zip(
-      f.slice(f.exec(params, path), 1, Infinity),
-      f.slice(f.exec(router, pathname), 1, Infinity)
+      f.slice(f.exec(params, path), 1),
+      f.slice(f.exec(router, pathname), 1)
     )
   )
 
