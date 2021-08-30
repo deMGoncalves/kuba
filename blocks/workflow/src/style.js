@@ -24,6 +24,7 @@ export default styled.style`
 
   @media (min-width: 961px) {
     .workflow__hgroup {
+      flex: 33.333%;
       padding-right: var(--spacing-xs);
     }
   }
@@ -44,6 +45,12 @@ export default styled.style`
       display: grid;
       gap: var(--spacing-xs);
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 961px) {
+    .workflow__ol {
+      flex: 66.666%;
     }
   }
 
