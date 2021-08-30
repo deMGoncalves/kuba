@@ -8,7 +8,7 @@ const onScreen = (node, listener) => (
     onView(node) && (
       window.removeEventListener(event, node[method]),
       listener()
-    )
+    ), 0
   ))),
 
   node[method]()
