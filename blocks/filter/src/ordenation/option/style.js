@@ -12,7 +12,6 @@ export default styled.style`
   }
 
   .option__text {
-    line-height: var(--line-height-lg);
+    line-height: var(--line-height-xl);
   }
 `
-
