@@ -4,6 +4,6 @@ import Link from './link'
 import style from './style'
 
 export default (darlings) =>
-  <darlings className={[style.darlings, darlings.className]}>
+  <nav className={[style.darlings, darlings.className]}>
     <Repeat iterator={darlings.links} component={Link} />
-  </darlings>
+  </nav>
