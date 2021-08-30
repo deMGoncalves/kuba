@@ -14,7 +14,7 @@ class Darlings {
   }
 
   get links () {
-    return this.#links ??= f.repeat({}, 6)
+    return this.#links ??= f.repeat({}, 3)
   }
 
   constructor (props) {
