@@ -2,30 +2,17 @@ import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import echo from '@kuba/echo'
 import hook from '@kuba/hook'
+import globalProps from '@kuba/globalprops'
 import component from './component'
 import getData from './getData'
 
 @paint(component)
+@globalProps
 class Shelf {
-  #className
   #products
-  #slot
-
-  get className () {
-    return this.#className
-  }
 
   get products () {
     return this.#products ??= f.repeat({}, 12)
-  }
-
-  get slot () {
-    return this.#slot
-  }
-
-  constructor (props) {
-    this.#className = props.className
-    this.#slot = props.slot
   }
 
   @repaint
