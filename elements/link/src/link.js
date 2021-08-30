@@ -11,8 +11,8 @@ export default new Proxy({}, {
       font-family: var(--font-family-base);
       font-size: var(--font-size-xs);
       font-weight: var(--font-weight-regular);
-      letter-spacing: 0.618px;
       justify-content: center;
+      letter-spacing: 0.618px;
       user-select: none;
     `
 })
