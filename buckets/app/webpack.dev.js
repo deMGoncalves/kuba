@@ -82,8 +82,8 @@ module.exports = {
   },
   output: {
     clean: true,
-    chunkFilename: `[name].${hash}.js`,
-    filename: `[name].${hash}.js`,
+    chunkFilename: '[name].[contenthash].js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, '.temp'),
     publicPath: '/'
   }

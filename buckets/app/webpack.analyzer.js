@@ -6,7 +6,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const InlineChunkHtmlPlugin = require('inline-chunk-html-plugin')
 const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
-const hash = new Date().getTime().toString(32)
 const maxSize = 200 * 1024
 
 module.exports = {
@@ -83,8 +82,8 @@ module.exports = {
   },
   output: {
     clean: true,
-    chunkFilename: `[name].${hash}.js`,
-    filename: `[name].${hash}.js`,
+    chunkFilename: '[name].[contenthash].js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'public'),
     publicPath: '/'
   },
