@@ -6,8 +6,8 @@ const InlineChunkHtmlPlugin = require('inline-chunk-html-plugin')
 const path = require('path')
 const portFinderSync = require('portfinder-sync')
 const webpack = require('webpack')
+const hash = new Date().getTime().toString(32)
 const port = 3000
-const version = new Date().getTime().toString(32)
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -60,7 +60,7 @@ module.exports = {
   },
   plugins: [
     new webpack.EnvironmentPlugin({
-      SW_VERSION: version
+      SW_VERSION: hash
     }),
     new CopyWebpackPlugin({
       patterns: [
@@ -82,8 +82,8 @@ module.exports = {
   },
   output: {
     clean: true,
-    chunkFilename: '[name].[fullhash].js',
-    filename: '[name].[fullhash].js',
+    chunkFilename: `[name].${hash}.js`,
+    filename: `[name].${hash}.js`,
     path: path.resolve(__dirname, '.temp'),
     publicPath: '/'
   }
