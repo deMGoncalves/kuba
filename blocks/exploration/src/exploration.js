@@ -22,6 +22,10 @@ class Exploration {
     return this.#title ??= ''
   }
 
+  constructor (props) {
+    this.#className = props.className
+  }
+
   @repaint
   change (descriptor) {
     this.#departaments = descriptor.departaments
