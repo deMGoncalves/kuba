@@ -1,22 +1,30 @@
 import * as f from '@kuba/f'
 
-export default (Entity) =>
+export default (Klass) =>
   new Proxy(
     function (props) {
-      const instance = (this instanceof Entity)
-        ? new Entity(...arguments)
-        : Entity(...arguments)
+      const target = (this instanceof Klass)
+        ? new Klass(...arguments)
+        : Klass(...arguments)
 
-      return new Proxy(instance, {
-        get: (target, key) =>
-          (f.has(key, target) ? target : props)[key],
+      const traps = {
+        get (target, key) {
+          const member = (f.has(key, target) ? target : props)[key]
 
-        set: (target, key, value) =>
-          f.T(target[key] = value)
-      })
+          return f.is(Function, member)
+            ? member.bind(target)
+            : member
+        },
+
+        set (target, key, value) {
+          return f.T(target[key] = value)
+        }
+      }
+
+      return new Proxy(target, traps)
     },
     {
-      get: (_, key) => Entity[key],
-      set: (_, key, value) => f.T(Entity[key] = value)
+      get: (_, key) => Klass[key],
+      set: (_, key, value) => f.T(Klass[key] = value)
     }
   )
