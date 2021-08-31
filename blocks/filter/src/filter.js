@@ -1,5 +1,5 @@
 import { paint } from '@kuba/h'
-import echo from '@kuba/echo'
+import change from './change'
 import component from './component'
 import Ordenation from './ordenation'
 import Region from './region'
@@ -7,8 +7,12 @@ import Tags from './tags'
 
 @paint(component)
 class Filter {
+  #refining
   #selects
-  #refining = {}
+
+  get refining () {
+    return this.#refining ??= {}
+  }
 
   get selects () {
     return this.#selects ??= [
@@ -18,9 +22,9 @@ class Filter {
     ]
   }
 
+  @change
   refine (select) {
-    this.#refining[select.key] = select.value
-    echo.emit('filter:change', { ...this.#refining })
+    this.refining[select.key] = select.value
     return this
   }
 }
