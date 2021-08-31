@@ -9,13 +9,10 @@ export default (Entity) =>
 
       return new Proxy(instance, {
         get: (target, key) =>
-          f.has(key, target)
-            ? f.is(Function, target[key])
-              ? target[key].bind(target)
-              : target[key]
-            : props[key],
+          (f.has(key, target) ? target : props)[key],
 
-        set: (target, key, value) => f.T(target[key] = value)
+        set: (target, key, value) =>
+          f.T(target[key] = value)
       })
     },
     {
