@@ -1,7 +1,7 @@
 import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import globalProps from '@kuba/globalprops'
-import change from './change'
+import hook from './hook'
 import component from './component'
 import getData from './getData'
 
@@ -26,8 +26,8 @@ class Shelf {
     return this
   }
 
-  @change
-  refinin () {
+  @hook
+  refine () {
     getData(this)
     return this
   }
