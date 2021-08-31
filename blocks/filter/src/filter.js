@@ -1,6 +1,6 @@
 import { paint } from '@kuba/h'
-import change from './change'
 import component from './component'
+import notify from './notify'
 import Ordenation from './ordenation'
 import Region from './region'
 import Tags from './tags'
@@ -22,7 +22,7 @@ class Filter {
     ]
   }
 
-  @change
+  @notify
   refine (select) {
     this.refining[select.key] = select.value
     return this
