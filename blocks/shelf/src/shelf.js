@@ -1,12 +1,12 @@
 import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
-import globalProps from '@kuba/globalprops'
+import props from '@kuba/props'
 import hook from './hook'
 import component from './component'
 import getData from './getData'
 
 @paint(component)
-@globalProps
+@props
 class Shelf {
   #products
 
