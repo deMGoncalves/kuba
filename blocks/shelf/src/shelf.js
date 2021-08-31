@@ -1,8 +1,7 @@
 import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
-import echo from '@kuba/echo'
-import hook from '@kuba/hook'
 import globalProps from '@kuba/globalprops'
+import change from './change'
 import component from './component'
 import getData from './getData'
 
@@ -27,7 +26,7 @@ class Shelf {
     return this
   }
 
-  @hook(echo.on('filter:change'))
+  @change
   refinin () {
     getData(this)
     return this
