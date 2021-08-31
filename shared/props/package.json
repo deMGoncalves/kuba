@@ -24,7 +24,7 @@
     ]
   },
   "main": "src/index.js",
-  "name": "@kuba/globalprops",
+  "name": "@kuba/props",
   "private": true,
   "scripts": {
     "test": "jest --passWithNoTests"
