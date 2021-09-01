@@ -19,7 +19,11 @@ router('/departament/category', async function category () {
 
 router('/search', async function search () {
   const { default: Search } = await import('@kuba/search' /* webpackChunkName: "search" */)
-  render(<Search />)
+  const params = {
+    q: new URL(location.href).searchParams.get('q')
+  }
+
+  render(<Search {...params} />)
 })
 
 router('', async function notFound () {
