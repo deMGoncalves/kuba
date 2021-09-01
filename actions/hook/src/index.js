@@ -1,16 +1,16 @@
 import * as f from '@kuba/f'
 
 export default (handler) =>
-  function (entity, method, descriptor) {
-    const hook = f.magic(f.random())
+  function (target, method, descriptor) {
+    const spy = f.magic(f.random())
 
     handler(function (...args) {
-      return entity[hook](...args)
+      return target[spy](...args)
     })
 
-    Object.defineProperty(entity, hook, {
+    Object.defineProperty(target, spy, {
       value: function () {
-        return this[method](...arguments)
+        return Reflect.apply(this[method], this, arguments)
       }
     })
 
