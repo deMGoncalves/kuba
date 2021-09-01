@@ -6,7 +6,7 @@ export default function (q) {
     .pipe(f.or(f.__, '[]'))
     .pipe(JSON.parse)
     .pipe(f.unshift(f.__, q))
-    .pipe(f.slice(f.__, 0, 5))
+    .pipe(f.splice(f.__, 0, 5))
     .pipe(JSON.stringify)
     .done()
 
