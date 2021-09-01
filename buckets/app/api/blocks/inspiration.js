@@ -8,32 +8,32 @@ export default function (_request, response) {
     departaments: [
       {
         thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/chair_360x360.jpg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/chair_285x285.jpg'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_360x360.jpeg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_285x285.jpeg'
         ],
         title: 'Nam dignissim',
         url: '/departament'
       },
       {
         thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/hadle_360x360.jpg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/hadle_285x285.jpg'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_360x360.jpeg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_285x285.jpeg'
         ],
         title: 'Proin dictum',
         url: '/departament'
       },
       {
         thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/sofa_360x360.jpg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/sofa_285x285.jpg'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_360x360.jpeg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_285x285.jpeg'
         ],
         title: 'Fusce leo',
         url: '/departament'
       },
       {
         thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/clock_360x360.jpg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/clock_285x285.jpg'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_360x360.jpeg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_285x285.jpeg'
         ],
         title: 'Nunc aliquam',
         url: '/departament'
