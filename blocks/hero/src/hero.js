@@ -1,20 +1,17 @@
 import { paint, repaint } from '@kuba/h'
+import props from '@kuba/props'
 import component from './component'
 import getData from './getData'
 
 @paint(component)
 @getData
+@props
 class Hero {
-  #className
   #cta
   #description
   #url
   #thumbnails
   #title
-
-  get className () {
-    return this.#className
-  }
 
   get cta () {
     return this.#cta ??= ''
@@ -34,10 +31,6 @@ class Hero {
 
   get title () {
     return this.#title ??= ''
-  }
-
-  constructor (props) {
-    this.#className = props.className
   }
 
   @repaint
