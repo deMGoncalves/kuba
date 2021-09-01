@@ -20,7 +20,7 @@ export default (banner) =>
         <figcaption className={style.banner__figcaption}>
           <hgroup className={style.banner__hgroup}>
             <text.H2 className={style.banner__text} master darker sm medium>{banner.title}</text.H2>
-            <text.P className={style.banner__text} master xxxs>{banner.description}</text.P>
+            <text.P className={style.banner__text} master dark xxxs>{banner.description}</text.P>
           </hgroup>
           <button.Master className={style.banner__button} onClick:stop={() => banner.redirect()} master>{banner.cta}</button.Master>
         </figcaption>
