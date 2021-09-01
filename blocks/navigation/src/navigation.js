@@ -1,18 +1,15 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import props from '@kuba/props'
 import component from './component'
 import getData from './getData'
 
 @paint(component)
 @getData
+@props
 class Navigaiton {
-  #className
   #categories
   #title
-
-  get className () {
-    return this.#className
-  }
 
   get categories () {
     return this.#categories ??= f.repeat({}, 8)
@@ -20,10 +17,6 @@ class Navigaiton {
 
   get title () {
     return this.#title ??= ''
-  }
-
-  constructor (props) {
-    this.#className = props.className
   }
 
   @repaint
