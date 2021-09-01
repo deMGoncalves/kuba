@@ -1,4 +1,5 @@
 import { paint } from '@kuba/h'
+import props from '@kuba/props'
 import component from './component'
 import notify from './notify'
 import Ordenation from './ordenation'
@@ -6,6 +7,7 @@ import Region from './region'
 import Tags from './tags'
 
 @paint(component)
+@props
 class Filter {
   #refining
   #selects
