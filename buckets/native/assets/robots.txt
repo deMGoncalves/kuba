@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kuba.engineer/sitemap.xml
