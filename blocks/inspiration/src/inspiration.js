@@ -8,12 +8,28 @@ import getData from './getData'
 @getData
 @props
 class Inspiration {
+  #cta
+  #description
   #departaments
+  #subtitle
   #thumbnails
   #title
+  #url
+
+  get cta () {
+    return this.#cta ??= ''
+  }
+
+  get description () {
+    return this.#description ??= ''
+  }
 
   get departaments () {
     return this.#departaments ??= f.repeat({}, 4)
+  }
+
+  get subtitle () {
+    return this.#subtitle ??= ''
   }
 
   get thumbnails () {
@@ -24,11 +40,24 @@ class Inspiration {
     return this.#title ??= ''
   }
 
+  get url () {
+    return this.#url ??= '#'
+  }
+
   @repaint
   change (descriptor) {
+    this.#cta = descriptor.cta
+    this.#description = descriptor.description
     this.#departaments = descriptor.departaments
+    this.#subtitle = descriptor.subtitle
     this.#thumbnails = descriptor.thumbnails
     this.#title = descriptor.title
+    this.#url = descriptor.url
+    return this
+  }
+
+  redirect () {
+    location.assign(this.url)
     return this
   }
 }
