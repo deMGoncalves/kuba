@@ -26,7 +26,7 @@ router('/search', async function search () {
   render(<Search {...params} />)
 })
 
-router('*', async function notFound () {
+router('', async function notFound () {
   const { default: NotFound } = await import('@kuba/notfound' /* webpackChunkName: "notfound" */)
   render(<NotFound />)
 })
