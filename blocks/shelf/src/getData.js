@@ -1,4 +1,3 @@
-export default (shelf) =>
+export default () =>
   fetch(`${__settings.api.host}/blocks/shelf`)
     .then(response => response.json())
-    .then(data => shelf.change(data))
