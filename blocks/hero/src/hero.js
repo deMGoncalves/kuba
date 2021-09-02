@@ -1,10 +1,9 @@
-import { paint, repaint } from '@kuba/h'
+import { didMount, paint, repaint } from '@kuba/h'
 import props from '@kuba/props'
 import component from './component'
 import getData from './getData'
 
 @paint(component)
-@getData
 @props
 class Hero {
   #cta
@@ -40,6 +39,12 @@ class Hero {
     this.#url = descriptor.url
     this.#thumbnails = descriptor.thumbnails
     this.#title = descriptor.title
+    return this
+  }
+
+  @didMount
+  async getData () {
+    this.change(await getData())
     return this
   }
 
