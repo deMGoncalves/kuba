@@ -40,7 +40,7 @@ export default function (_request, response) {
         url: '/departament'
       }
     ],
-    subtitle: 'Vestibulum gravida finibus lorem, vel.',
+    subtitle: 'Vestibulum gravida finibus lorem',
     thumbnails: [
       '//fakeimg.pl/736x400/f0f0f0/626262',
       '//fakeimg.pl/456x497/f0f0f0/626262',
