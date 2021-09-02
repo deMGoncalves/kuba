@@ -5,6 +5,7 @@ import author from './author'
 import base from './base'
 import canonical from './canonical'
 import charset from './charset'
+import cps from './cps'
 import description from './description'
 import icon from './icon'
 import robots from './robots'
@@ -12,4 +13,4 @@ import themeColor from './themeColor'
 import title from './title'
 import viewport from './viewport'
 
-export default middleware(f.chain(alternate, author, base, canonical, charset, description, icon, robots, themeColor, title, viewport))
+export default middleware(f.chain(alternate, author, base, canonical, charset, cps, description, icon, robots, themeColor, title, viewport))
