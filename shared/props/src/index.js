@@ -9,7 +9,7 @@ export default (Klass) =>
 
       const traps = {
         get (target, key) {
-          const member = (f.has(key, target) ? target : props)[key]
+          const member = (key in target ? target : props)[key]
 
           return f.is(Function, member)
             ? member.bind(target)

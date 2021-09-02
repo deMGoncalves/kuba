@@ -27,14 +27,14 @@ class Shelf {
   }
 
   @didMount
-  mount () {
-    getData(this)
+  async mount () {
+    this.change(await getData())
     return this
   }
 
   @hook
-  refine () {
-    getData(this)
+  async refine () {
+    this.change(await getData())
     return this
   }
 }

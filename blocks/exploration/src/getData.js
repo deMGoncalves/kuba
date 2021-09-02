@@ -1,8 +1,3 @@
-import schedule from '@kuba/schedule'
-
-const getData = (exploration) =>
+export default () =>
   fetch(`${__settings.api.host}/blocks/exploration`)
     .then(response => response.json())
-    .then(data => exploration.change(data))
-
-export default schedule(getData)

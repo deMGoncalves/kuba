@@ -35,7 +35,7 @@
     ]
   },
   "main": "src/index.js",
-  "name": "@kuba/app",
+  "name": "@kuba/native",
   "private": true,
   "scripts": {
     "build": "yarn run webpack --config webpack.prod.js",
