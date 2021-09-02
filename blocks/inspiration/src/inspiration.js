@@ -1,11 +1,10 @@
-import { paint, repaint } from '@kuba/h'
+import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import props from '@kuba/props'
 import component from './component'
 import getData from './getData'
 
 @paint(component)
-@getData
 @props
 class Inspiration {
   #cta
@@ -53,6 +52,12 @@ class Inspiration {
     this.#thumbnails = descriptor.thumbnails
     this.#title = descriptor.title
     this.#url = descriptor.url
+    return this
+  }
+
+  @didMount
+  async getData () {
+    this.change(await getData())
     return this
   }
 
