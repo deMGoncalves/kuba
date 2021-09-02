@@ -3,6 +3,6 @@ import Show from '@kuba/show'
 import style from './style'
 
 export default (zone, children) =>
-  <div className={[style.zone, zone.className]} slot={zone.slot}>
+  <div className={[style.zone, zone.className]} view={zone.onView} slot={zone.slot}>
     <Show when={zone.onView}>{children}</Show>
   </div>
