@@ -9,14 +9,20 @@ import getData from './getData'
 @props
 class Shelf {
   #products
+  #title
 
   get products () {
     return this.#products ??= f.repeat({}, 12)
   }
 
+  get title () {
+    return this.#title ??= ''
+  }
+
   @repaint
   change (descriptor) {
     this.#products = descriptor.products
+    this.#title = descriptor.title
     return this
   }
 
