@@ -1,29 +1,16 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import echo from '@kuba/echo'
+import props from '@kuba/props'
 import component from './component'
 
 @paint(component)
+@props
 class Action {
-  #className
   #opened
-  #slot
-
-  get className () {
-    return this.#className
-  }
 
   get opened () {
     return this.#opened ??= f.F()
-  }
-
-  get slot () {
-    return this.#slot
-  }
-
-  constructor (props) {
-    this.#className = props.className
-    this.#slot = props.slot
   }
 
   @repaint
