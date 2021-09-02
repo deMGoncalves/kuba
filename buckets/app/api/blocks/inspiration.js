@@ -3,11 +3,14 @@ export default function (_request, response) {
     title: 'Integer vestibulum finibus mollis',
     thumbnails: [
       'https://fakeimg.pl/736x400/f0f0f0/626262',
+      'https://fakeimg.pl/456x497/f0f0f0/626262',
       'https://fakeimg.pl/591x645/f0f0f0/626262'
     ],
     departaments: [
       {
         thumbnails: [
+          'https://fakeimg.pl/360x360/f0f0f0/626262',
+          'https://fakeimg.pl/220x220/f0f0f0/626262',
           'https://fakeimg.pl/287x287/f0f0f0/626262'
         ],
         title: 'Nam dignissim',
@@ -15,6 +18,8 @@ export default function (_request, response) {
       },
       {
         thumbnails: [
+          'https://fakeimg.pl/360x360/f0f0f0/626262',
+          'https://fakeimg.pl/220x220/f0f0f0/626262',
           'https://fakeimg.pl/287x287/f0f0f0/626262'
         ],
         title: 'Proin dictum',
@@ -22,6 +27,8 @@ export default function (_request, response) {
       },
       {
         thumbnails: [
+          'https://fakeimg.pl/360x360/f0f0f0/626262',
+          'https://fakeimg.pl/220x220/f0f0f0/626262',
           'https://fakeimg.pl/287x287/f0f0f0/626262'
         ],
         title: 'Fusce leo',
@@ -29,6 +36,8 @@ export default function (_request, response) {
       },
       {
         thumbnails: [
+          'https://fakeimg.pl/360x360/f0f0f0/626262',
+          'https://fakeimg.pl/220x220/f0f0f0/626262',
           'https://fakeimg.pl/287x287/f0f0f0/626262'
         ],
         title: 'Nunc aliquam',
