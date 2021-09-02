@@ -1,11 +1,7 @@
 export default function (_request, response) {
   response.json({
-    title: 'Integer vestibulum finibus mollis',
-    thumbnails: [
-      '//fakeimg.pl/736x400/f0f0f0/626262',
-      '//fakeimg.pl/456x497/f0f0f0/626262',
-      '//fakeimg.pl/591x645/f0f0f0/626262'
-    ],
+    cta: 'Aliquam fringilla',
+    description: 'Curabitur ornare ligula ex, non efficitur orci placerat in. Sed faucibus non orci et fringilla. Nulla tincidunt mattis mi. Vivamus in nulla eu est dignissim laoreet.',
     departaments: [
       {
         thumbnails: [
@@ -43,6 +39,14 @@ export default function (_request, response) {
         title: 'Nunc aliquam',
         url: '/departament'
       }
-    ]
+    ],
+    subtitle: 'Vestibulum gravida finibus lorem, vel.',
+    thumbnails: [
+      '//fakeimg.pl/736x400/f0f0f0/626262',
+      '//fakeimg.pl/456x497/f0f0f0/626262',
+      '//fakeimg.pl/591x645/f0f0f0/626262'
+    ],
+    title: 'Integer vestibulum finibus mollis',
+    url: '/departament'
   })
 }
