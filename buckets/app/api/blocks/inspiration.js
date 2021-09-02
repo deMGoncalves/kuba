@@ -8,8 +8,7 @@ export default function (_request, response) {
     departaments: [
       {
         thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_360x360.jpeg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_285x285.jpeg'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_tenis_287x287.jpg'
         ],
         title: 'Nam dignissim',
         url: '/departament'
