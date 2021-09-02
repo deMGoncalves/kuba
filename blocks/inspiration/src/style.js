@@ -4,12 +4,12 @@ export default styled.style`
   .inspiration > div {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-xs);
+    gap: var(--spacing_inset-sm);
   }
 
   .inspiration__main {
     display: grid;
-    gap: var(--spacing-xxxs);
+    gap: var(--spacing_inset-xs);
     grid-template-areas:
       'thumbnail thumbnail'
       'box1 box2'
