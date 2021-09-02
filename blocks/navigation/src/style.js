@@ -4,7 +4,7 @@ export default styled.style`
   .navigation > div {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-xs);
+    gap: var(--spacing_inset-sm);
   }
 
   .navigation__bubble {

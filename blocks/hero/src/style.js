@@ -3,9 +3,15 @@ import styled from '@kuba/styled'
 export default styled.style`
   .hero {
     display: inline-flex;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
     margin-top: var(--spacing-nano);
     width: 100%;
+  }
+
+  @media (min-width: 961px) {
+    .hero {
+      margin-bottom: var(--spacing-lg);
+    }
   }
 
   .hero__figure {

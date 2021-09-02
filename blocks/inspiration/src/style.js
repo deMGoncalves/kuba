@@ -4,12 +4,12 @@ export default styled.style`
   .inspiration > div {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-xs);
+    gap: var(--spacing_inset-sm);
   }
 
   .inspiration__main {
     display: grid;
-    gap: var(--spacing-xxxs);
+    gap: var(--spacing_inset-xs);
     grid-template-areas:
       'thumbnail thumbnail'
       'box1 box2'
@@ -26,28 +26,9 @@ export default styled.style`
     }
   }
 
-  .inspiration__main picture:first-child {
-    grid-area: thumbnail;
-  }
-
-  .inspiration__main div:nth-child(2n) {
-    grid-area: box1;
-  }
-
-  .inspiration__main div:nth-child(3n) {
-    grid-area: box2;
-  }
-
-  .inspiration__main div:nth-child(4n) {
-    grid-area: box3;
-  }
-
-  .inspiration__main div:last-child {
-    grid-area: box4;
-  }
-
   .inspiration__picture {
     border-radius: var(--border-radius-sm);
+    grid-area: thumbnail;
     padding-top: calc(400 / 736 * 100%) !important;
   }
 
@@ -59,5 +40,21 @@ export default styled.style`
 
   .inspiration__box {
     cursor: pointer;
+  }
+
+  .inspiration__box:nth-child(2n) {
+    grid-area: box1;
+  }
+
+  .inspiration__box:nth-child(3n) {
+    grid-area: box2;
+  }
+
+  .inspiration__box:nth-child(4n) {
+    grid-area: box3;
+  }
+
+  .inspiration__box:last-child {
+    grid-area: box4;
   }
 `

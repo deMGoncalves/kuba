@@ -3,9 +3,15 @@ import styled from '@kuba/styled'
 export default styled.style`
   .banner {
     display: inline-flex;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
     margin-top: var(--spacing-nano);
     width: 100%;
+  }
+
+  @media (min-width: 961px) {
+    .banner {
+      margin-bottom: var(--spacing-lg);
+    }
   }
 
   .banner__figure {
