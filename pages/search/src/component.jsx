@@ -1,19 +1,19 @@
 import h, { Fragment } from '@kuba/h'
-import Header from '@kuba/header'
+import Filter from '@kuba/filter'
+import Shelf from '@kuba/shelf'
 import Site from '@kuba/site'
 import Title from '@kuba/title'
 import Breadcrumb from './breadcrumb'
-import Filter from './filter'
-import Shelf from './shelf'
 import style from './style'
 
 export default (search) =>
   <Site className={style.search}>
-    <Header className={style.search__header} slot='header' />
-    <Fragment slot='main'>
+    <Fragment slot='hot'>
       <Title className={style.search__title}>{search.q}</Title>
       <Breadcrumb className={style.search__breadcrumb} />
       <Filter className={style.search__filter} />
+    </Fragment>
+    <Fragment slot='warm'>
       <Shelf className={style.search__shelf} />
     </Fragment>
   </Site>

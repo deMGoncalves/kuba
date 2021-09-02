@@ -17,7 +17,7 @@ export default new Proxy({}, {
       justify-content: center;
       letter-spacing: 0.618px;
       line-height: var(--line-height-sm);
-      padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
+      padding: var(--spacing_inset-nano) var(--spacing_inset-sm);
       text-decoration: none;
       user-select: none;
     `
