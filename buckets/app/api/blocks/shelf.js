@@ -1,5 +1,6 @@
 export default function (_request, response) {
   response.json({
+    title: 'Phasellus vitae est nisi. Morbi.',
     products: [
       {
         name: 'Donec molestie malesuada aliquam',
