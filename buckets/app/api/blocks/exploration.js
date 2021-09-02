@@ -4,22 +4,38 @@ export default function (_request, response) {
     departaments: [
       {
         title: 'Mauris arcu dolor',
-        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262',
+        thumbnails: [
+          'https://fakeimg.pl/360x360/f0f0f0/626262',
+          'https://fakeimg.pl/220x220/f0f0f0/626262',
+          'https://fakeimg.pl/287x287/f0f0f0/626262'
+        ],
         url: '/departament'
       },
       {
         title: 'Cras ac commodo',
-        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262',
+        thumbnails: [
+          'https://fakeimg.pl/360x360/f0f0f0/626262',
+          'https://fakeimg.pl/220x220/f0f0f0/626262',
+          'https://fakeimg.pl/287x287/f0f0f0/626262'
+        ],
         url: '/departament'
       },
       {
         title: 'Nullam a pulvinar',
-        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262',
+        thumbnails: [
+          'https://fakeimg.pl/360x360/f0f0f0/626262',
+          'https://fakeimg.pl/220x220/f0f0f0/626262',
+          'https://fakeimg.pl/287x287/f0f0f0/626262'
+        ],
         url: '/departament'
       },
       {
         title: 'Interdum et',
-        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262',
+        thumbnails: [
+          'https://fakeimg.pl/360x360/f0f0f0/626262',
+          'https://fakeimg.pl/220x220/f0f0f0/626262',
+          'https://fakeimg.pl/287x287/f0f0f0/626262'
+        ],
         url: '/departament'
       }
     ]
