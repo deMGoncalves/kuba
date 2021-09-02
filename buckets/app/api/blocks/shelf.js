@@ -3,99 +3,99 @@ export default function (_request, response) {
     products: [
       {
         name: 'Donec molestie malesuada aliquam',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Mauris tempus, lectus sed molestie',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Donec consequat urna in ante',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Nullam ac metus ante. Vestibulum',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Ut eu semper ex, vitae',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'In hac habitasse platea dictumst',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Vivamus elementum eros vel massa',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Integer vulputate, ligula id feugiat',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Donec vel ipsum blandit, bibendum',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Praesent ante tellus, pretium quis',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Etiam vitae porta nunc, in',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Duis sit amet nibh et',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Donec non massa aliquam erat',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'In hac habitasse platea dictumst',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Vivamus elementum eros vel massa',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Donec consequat urna in ante',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Donec molestie malesuada aliquam',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Ut eu semper ex, vitae',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Mauris tempus, lectus sed molestie',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Donec consequat urna in ante',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Nullam ac metus ante. Vestibulum',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Ut eu semper ex, vitae',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'Donec non massa aliquam erat',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       },
       {
         name: 'In hac habitasse platea dictumst',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/product/product_287x287.jpeg'
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262'
       }
     ]
   })

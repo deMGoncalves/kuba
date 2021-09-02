@@ -4,22 +4,22 @@ export default function (_request, response) {
     departaments: [
       {
         title: 'Mauris arcu dolor',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/exploration/exploration_clothes_287x287.jpg',
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262',
         url: '/departament'
       },
       {
         title: 'Cras ac commodo',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/exploration/exploration_tenis_287x287.jpg',
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262',
         url: '/departament'
       },
       {
         title: 'Nullam a pulvinar',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/exploration/exploration_287x287.jpeg',
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262',
         url: '/departament'
       },
       {
         title: 'Interdum et',
-        thumbnail: 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/exploration/exploration_287x287.jpeg',
+        thumbnail: 'https://fakeimg.pl/287x287/f0f0f0/626262',
         url: '/departament'
       }
     ]

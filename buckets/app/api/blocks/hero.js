@@ -3,9 +3,9 @@ export default function (_request, response) {
     cta: 'Sed cursus',
     description: 'Nulla id placerat sem. Vestibulum congue suscipit erat, eu tempor augue venenatis ut. Vestibulum magna ex, pulvinar eget quam et, rutrum sodales nisl. Curabitur finibus tristique.',
     thumbnails: [
-      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/hero/hero_736x400.jpg',
-      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/hero/hero_928x400.jpg',
-      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/hero/hero_1198x400.jpg'
+      'https://fakeimg.pl/736x400/f0f0f0/626262',
+      'https://fakeimg.pl/928x400/f0f0f0/626262',
+      'https://fakeimg.pl/1198x400/f0f0f0/626262'
     ],
     title: 'Nunc eu dignissim leo. Donec.',
     url: '/departament'

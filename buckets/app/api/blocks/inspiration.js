@@ -2,37 +2,34 @@ export default function (_request, response) {
   response.json({
     title: 'Integer vestibulum finibus mollis',
     thumbnails: [
-      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_736x400.jpg',
-      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_591x645.jpg'
+      'https://fakeimg.pl/736x400/f0f0f0/626262',
+      'https://fakeimg.pl/591x645/f0f0f0/626262'
     ],
     departaments: [
       {
         thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_tenis_287x287.jpg'
+          'https://fakeimg.pl/287x287/f0f0f0/626262'
         ],
         title: 'Nam dignissim',
         url: '/departament'
       },
       {
         thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_360x360.jpeg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_285x285.jpeg'
+          'https://fakeimg.pl/287x287/f0f0f0/626262'
         ],
         title: 'Proin dictum',
         url: '/departament'
       },
       {
         thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_360x360.jpeg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_285x285.jpeg'
+          'https://fakeimg.pl/287x287/f0f0f0/626262'
         ],
         title: 'Fusce leo',
         url: '/departament'
       },
       {
         thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_360x360.jpeg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/kuba/inspiration/inspiration_285x285.jpeg'
+          'https://fakeimg.pl/287x287/f0f0f0/626262'
         ],
         title: 'Nunc aliquam',
         url: '/departament'
