@@ -1,7 +1,8 @@
 import h from '@kuba/h'
 
-export default (value) =>
-  h('input', { value })
-    .paint()
-    .select()
-    .execCommand('copy')
+export default function (value) {
+  const input = h('input', { value }).paint()
+
+  input.select()
+  input.execCommand('copy')
+}
