@@ -4,7 +4,7 @@ export default styled.style`
   .exploration > div {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-xxxs);
+    gap: var(--spacing_inset-sm);
   }
 
   .exploration__box {
@@ -18,7 +18,7 @@ export default styled.style`
 
   .exploration__div {
     display: grid;
-    gap: var(--spacing-xxxs);
+    gap: var(--spacing_inset-xs);
     grid-template-columns: repeat(2, 1fr);
   }
 
