@@ -1,14 +1,10 @@
 import { paint } from '@kuba/h'
+import props from '@kuba/props'
 import component from './component'
 
 @paint(component)
+@props
 class Email {
-  #className
-
-  get className () {
-    return this.#className
-  }
-
   get id () {
     return 'email'
   }
@@ -23,10 +19,6 @@ class Email {
 
   get type () {
     return 'email'
-  }
-
-  constructor (props) {
-    this.#className = props.className
   }
 }
 
