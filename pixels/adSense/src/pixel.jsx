@@ -7,4 +7,3 @@ import schema from './schema.json'
 f.and(agent.isUser, env.isProd) && (
   render(document.head, <script data-ad-client={schema.adClient} src={schema.src} async />)
 )
-
