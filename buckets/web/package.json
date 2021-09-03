@@ -30,7 +30,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
+    "{api,src}/**/*.{js,jsx}": [
       "yarn run eslint src/**/*.{js,jsx}",
       "yarn run stylelint src/**/*.{js,jsx} --allow-empty-input"
     ]
