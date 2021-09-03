@@ -1,14 +1,10 @@
 import { paint } from '@kuba/h'
+import props from '@kuba/props'
 import component from './component'
 
 @paint(component)
+@props
 class Password {
-  #className
-
-  get className () {
-    return this.#className
-  }
-
   get id () {
     return 'id'
   }
@@ -23,10 +19,6 @@ class Password {
 
   get type () {
     return 'password'
-  }
-
-  constructor (props) {
-    this.#className = props.className
   }
 }
 
