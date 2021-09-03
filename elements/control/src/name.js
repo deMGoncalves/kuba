@@ -1,14 +1,10 @@
 import { paint } from '@kuba/h'
+import props from '@kuba/props'
 import component from './component'
 
 @paint(component)
+@props
 class Name {
-  #className
-
-  get className () {
-    return this.#className
-  }
-
   get id () {
     return 'name'
   }
@@ -23,10 +19,6 @@ class Name {
 
   get type () {
     return 'text'
-  }
-
-  constructor (props) {
-    this.#className = props.className
   }
 }
 
