@@ -6,7 +6,7 @@ export default styled.style`
   }
 
   .zone[view=false] {
-    height: ${() => window.innerHeight * 0.2}px;
+    height: ${() => window.innerHeight * 0.382}px;
   }
 
   .zone[view=true] {
