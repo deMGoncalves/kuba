@@ -7,6 +7,7 @@ import '@kuba/boma'
 import '@kuba/ga'
 import '@kuba/gtag'
 import '@kuba/gtm'
+import '@kuba/hotjar'
 
 import '@kuba/formdata'
 import '@kuba/prevent'
