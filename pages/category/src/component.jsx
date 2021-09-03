@@ -1,6 +1,6 @@
 import h, { Fragment } from '@kuba/h'
 import Filter from '@kuba/filter'
-import Shelf from '@kuba/shelf'
+import Lazy from '@kuba/lazy'
 import Site from '@kuba/site'
 import Title from '@kuba/title'
 import Breadcrumb from './breadcrumb'
@@ -12,6 +12,8 @@ export default (category) =>
       <Title className={style.category__title}>{category.title}</Title>
       <Breadcrumb className={style.category__breadcrumb} />
       <Filter className={style.category__filter} />
-      <Shelf className={style.category__shelf} />
+    </Fragment>
+    <Fragment slot='warm'>
+      <Lazy require={() => import('@kuba/shelf' /* webpackChunkName: "shelf" */)} />
     </Fragment>
   </Site>
