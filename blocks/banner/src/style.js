@@ -75,6 +75,7 @@ export default styled.style`
 
   @media (min-width: 769px) {
     .banner__hgroup {
+      align-items: flex-start;
       width: 42%;
     }
   }
