@@ -6,8 +6,8 @@ export default styled.style`
     border: 1px solid var(--color-master-light);
     display: flex;
     flex-direction: column;
-    gap: var(--size-smallest);
-    padding: var(--size-smallest);
+    gap: var(--spacing_inset-nano);
+    padding: var(--spacing_inset-nano);
   }
 
   .control__label {
