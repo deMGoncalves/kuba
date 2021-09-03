@@ -1,7 +1,7 @@
 import h, { Fragment } from '@kuba/h'
 import Banner from '@kuba/banner'
+import Lazy from '@kuba/lazy'
 import Navigation from '@kuba/navigation'
-import Shelf from '@kuba/shelf'
 import Site from '@kuba/site'
 import Title from '@kuba/title'
 import Breadcrumb from './breadcrumb'
@@ -16,6 +16,6 @@ export default (departament) =>
       <Navigation className={style.departament__navigation} />
     </Fragment>
     <Fragment slot='warm'>
-      <Shelf className={style.departament__shelf} />
+      <Lazy require={() => import('@kuba/shelf' /* webpackChunkName: "shelf" */)} />
     </Fragment>
   </Site>
