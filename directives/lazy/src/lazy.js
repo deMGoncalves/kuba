@@ -1,16 +1,13 @@
 import { paint, repaint } from '@kuba/h'
-import schedule from '@kuba/schedule'
 import component from './component'
-import require from './require'
+import connected from './connected'
 
 @paint(component)
-@schedule(require)
+@connected
 class Lazy {
   #channel
   #component
-  #props
   #require
-  #slot
 
   get channel () {
     return this.#channel ??= Math.random()
@@ -20,20 +17,8 @@ class Lazy {
     return this.#component
   }
 
-  get props () {
-    return this.#props
-  }
-
-  get slot () {
-    return this.#slot
-  }
-
   constructor (props) {
-    this.#props = props
     this.#require = props.require
-    this.#slot = props.slot
-
-    delete this.#props.require
   }
 
   @repaint
