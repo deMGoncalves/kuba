@@ -12,5 +12,7 @@ export default function (path, listener) {
     [name]: { listener, params, path, router }
   })
 
-  match(name) && render(name)
+  setTimeout(() =>
+    match(name) && render(name)
+  )
 }
