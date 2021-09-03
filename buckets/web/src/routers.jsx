@@ -1,24 +1,29 @@
 import h from '@kuba/h'
+import Category from '@kuba/category'
+import Departament from '@kuba/departament'
+import NotFound from '@kuba/notfound'
+import Home from '@kuba/home'
 import router from '@kuba/router'
+import Search from '@kuba/search'
 import render from './render'
 
-router('/', async function home () {
-  const { default: Home } = await import('@kuba/home' /* webpackChunkName: "home" */)
+router('/', function home () {
+  // const { default: Home } = await import('@kuba/home' /* webpackChunkName: "home" */)
   render(<Home />)
 })
 
-router('/departament', async function departament () {
-  const { default: Departament } = await import('@kuba/departament' /* webpackChunkName: "departament" */)
+router('/departament', function departament () {
+  // const { default: Departament } = await import('@kuba/departament' /* webpackChunkName: "departament" */)
   render(<Departament />)
 })
 
-router('/departament/category', async function category () {
-  const { default: Category } = await import('@kuba/category' /* webpackChunkName: "category" */)
+router('/departament/category', function category () {
+  // const { default: Category } = await import('@kuba/category' /* webpackChunkName: "category" */)
   render(<Category />)
 })
 
-router('/search', async function search () {
-  const { default: Search } = await import('@kuba/search' /* webpackChunkName: "search" */)
+router('/search', function search () {
+  // const { default: Search } = await import('@kuba/search' /* webpackChunkName: "search" */)
   const params = {
     q: new URL(location.href).searchParams.get('q')
   }
@@ -26,7 +31,7 @@ router('/search', async function search () {
   render(<Search {...params} />)
 })
 
-router('', async function notFound () {
-  const { default: NotFound } = await import('@kuba/notfound' /* webpackChunkName: "notfound" */)
+router('', function notFound () {
+  // const { default: NotFound } = await import('@kuba/notfound' /* webpackChunkName: "notfound" */)
   render(<NotFound />)
 })
