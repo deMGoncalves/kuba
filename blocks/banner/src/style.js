@@ -66,9 +66,11 @@ export default styled.style`
   }
 
   .banner__hgroup {
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-quarck);
+    width: 100%;
   }
 
   @media (min-width: 769px) {
