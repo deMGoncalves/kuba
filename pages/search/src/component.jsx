@@ -12,8 +12,6 @@ export default (search) =>
       <Title className={style.search__title}>{search.q}</Title>
       <Breadcrumb className={style.search__breadcrumb} />
       <Filter className={style.search__filter} />
-    </Fragment>
-    <Fragment slot='warm'>
       <Shelf className={style.search__shelf} />
     </Fragment>
   </Site>
