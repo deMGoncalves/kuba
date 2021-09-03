@@ -5,8 +5,8 @@ export default styled.style`
     border: 1px solid var(--color-master-light);
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-xs);
-    padding: var(--spacing-xs);
+    gap: var(--spacing_inset-md);
+    padding: var(--spacing_inset-md);
   }
 
   @media (min-width: 961px) {
@@ -19,13 +19,13 @@ export default styled.style`
   .workflow__hgroup {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-quarck);
+    gap: var(--spacing_inset-quarck);
   }
 
   @media (min-width: 961px) {
     .workflow__hgroup {
       flex: 33.333%;
-      padding-right: var(--spacing-xs);
+      padding-right: var(--spacing_inset-md);
     }
   }
 
@@ -36,14 +36,14 @@ export default styled.style`
   .workflow__ol {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-xxxs);
+    gap: var(--spacing_inset-xs);
     list-style: none;
   }
 
   @media (min-width: 769px) {
     .workflow__ol {
       display: grid;
-      gap: var(--spacing-xs);
+      gap: var(--spacing_inset-md);
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -55,7 +55,10 @@ export default styled.style`
   }
 
   .workflow__li {
-    padding-left: var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-quarck);
+    padding-left: var(--spacing_inset-lg);
     position: relative;
   }
 
