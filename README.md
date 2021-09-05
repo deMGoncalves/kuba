@@ -5,6 +5,12 @@
 </p>
 
 <p align="center">
+  <a href="https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge}" target="_blank">
+    <img alt="DeepSource" title="DeepSource" src="https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=active+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26"/>
+  </a>
+  <a href="https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge}" target="_blank">
+    <img alt="DeepSource" title="DeepSource" src="https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=resolved+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26"/>
+  </a>
   <a href="https://codeclimate.com/github/deMGoncalves/kuba/maintainability">
     <img src="https://api.codeclimate.com/v1/badges/f000644462eae8e6b020/maintainability" />
   </a>
