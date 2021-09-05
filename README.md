@@ -41,20 +41,27 @@
   Ninguém precisa ter muitas habilidades para desenvolver um produto que funcione, fazer direito é outra história. Desenvolver um produto de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem.
 </p>
 
-<p align="justify">
-  Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um produto. As mudanças se tornam cirúrgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
-</p>
-
 <br />
 <br />
 
 <p align="center">
   <strong>
     <a href="https://github.com/deMGoncalves/kuba">Introdução</a> &nbsp;·&nbsp;
-    <a href="https://github.com/deMGoncalves/kuba">Sobre</a> &nbsp;·&nbsp;
+    <a href="https://github.com/deMGoncalves/kuba">Contribuidores</a> &nbsp;·&nbsp;
     <a href="https://github.com/deMGoncalves/kuba">Começe aqui</a> &nbsp;·&nbsp;
-    <a href="https://assemblyscript.org/examples.html">Projeto case</a>
+    <a href="https://assemblyscript.org/examples.html">Performance</a>
   </strong>
+</p>
+
+<br />
+<br />
+
+<p align="center">
+  <strong>Introdução</strong>
+</p>
+
+<p align="justify">
+  Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um produto. As mudanças se tornam cirúrgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
 </p>
 
 <br />
@@ -74,7 +81,7 @@
 <br />
 
 <p align="center">
-  <strong>Introdução</strong>
+  <strong>começe aqui</strong>
 </p>
 
 <p align="justify">
