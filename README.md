@@ -4,6 +4,9 @@
   </a>
 </p>
 
+[![Code Climate](https://codeclimate.com/github/deMGoncalves/kuba/badges/gpa.svg)](https://codeclimate.com/github/deMGoncalves/kuba)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8d2b7ccbd9d64b90bcccc515a1f61457)](https://www.codacy.com/gh/deMGoncalves/kuba/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=deMGoncalves/kuba&amp;utm_campaign=Badge_Grade)
+
 <p align="center">
   <a href="https://github.com/deMGoncalves/kuba">
     <img src="https://vercelbadge.vercel.app/api/demgoncalves/kuba" alt="Vercel" />
