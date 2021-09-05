@@ -1,25 +1,24 @@
 import h from '@kuba/h'
-import Category from '@kuba/category'
-import Departament from '@kuba/departament'
-import NotFound from '@kuba/notfound'
-import Home from '@kuba/home'
 import router from '@kuba/router'
-import Search from '@kuba/search'
 import render from './render'
 
 router('/', function home () {
+  const { default: Home } = require('@kuba/home')
   render(<Home />)
 })
 
 router('/departament', function departament () {
+  const { default: Departament } = require('@kuba/departament')
   render(<Departament />)
 })
 
 router('/departament/category', function category () {
+  const { default: Category } = require('@kuba/category')
   render(<Category />)
 })
 
 router('/search', function search () {
+  const { default: Search } = require('@kuba/search')
   const params = {
     q: new URL(location.href).searchParams.get('q')
   }
@@ -28,5 +27,6 @@ router('/search', function search () {
 })
 
 router('', function notFound () {
+  const { default: NotFound } = require('@kuba/notfound')
   render(<NotFound />)
 })
