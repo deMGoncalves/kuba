@@ -80,3 +80,13 @@
 <p align="justify">
   Kuba é um projeto de referência (Amálgama) a ser seguido e não um Framework e/ou Library que condiciona e obriga a uma situação de implementação! Ele deve ser estudado, entendido e adaptado as realidades do produto, de forma a garantir as condições de comportamento e estrutura.
 </p>
+
+<br />
+<br />
+
+<p align="center">
+  <strong>Performance</strong>
+</p>
+
+<img src="https://github.com/deMGoncalves/kuba/blob/master/github-metrics.svg" width="100%" />
+
