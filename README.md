@@ -8,6 +8,9 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/8d2b7ccbd9d64b90bcccc515a1f61457)](https://www.codacy.com/gh/deMGoncalves/kuba/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=deMGoncalves/kuba&amp;utm_campaign=Badge_Grade)
 
 <p align="center">
+  <a href="https://codeclimate.com/github/deMGoncalves/kuba/maintainability">
+    <img src="https://api.codeclimate.com/v1/badges/f000644462eae8e6b020/maintainability" />
+  </a>
   <a href="https://github.com/deMGoncalves/kuba">
     <img src="https://vercelbadge.vercel.app/api/demgoncalves/kuba" alt="Vercel" />
   </a>
