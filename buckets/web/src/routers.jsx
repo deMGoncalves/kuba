@@ -17,7 +17,7 @@ router('/departament/category', function category () {
   render(<Category />)
 })
 
-router('/product', function product () {
+router('/departament/category/product', function product () {
   const { default: Product } = require('@kuba/product')
   render(<Product />)
 })
