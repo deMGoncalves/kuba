@@ -40,7 +40,6 @@
   "private": true,
   "scripts": {
     "build": "yarn run webpack --config webpack.prod.js",
-    "build:analyzer": "yarn run webpack --config webpack.analyzer.js",
     "serve": "yarn run webpack serve --config webpack.dev.js --open",
     "test": "jest --passWithNoTests"
   },

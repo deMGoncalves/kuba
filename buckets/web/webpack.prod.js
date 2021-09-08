@@ -1,11 +1,13 @@
 'use strict'
 
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const InlineChunkHtmlPlugin = require('inline-chunk-html-plugin')
 const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const webpack = require('webpack')
+
 const hash = new Date().getTime().toString(32)
 const maxSize = 200 * 1024
 
@@ -58,7 +60,10 @@ module.exports = {
       inject: 'body',
       template: path.resolve(__dirname, 'src/index.html')
     }),
-    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/app/, /common/])
+    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/app/, /common/]),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static'
+    })
   ],
   resolve: {
     extensions: ['.js', '.jsx']

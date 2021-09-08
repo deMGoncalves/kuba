@@ -6,6 +6,7 @@ const InlineChunkHtmlPlugin = require('inline-chunk-html-plugin')
 const path = require('path')
 const portFinderSync = require('portfinder-sync')
 const webpack = require('webpack')
+
 const hash = new Date().getTime().toString(32)
 const port = 3000
 
