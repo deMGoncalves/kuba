@@ -5,36 +5,36 @@ export default function (_request, response) {
     departaments: [
       {
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/220x220/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_220x220.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ],
         title: 'Nam dignissim',
         url: '/departament'
       },
       {
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/220x220/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_220x220.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ],
         title: 'Proin dictum',
         url: '/departament'
       },
       {
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/220x220/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_220x220.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ],
         title: 'Fusce leo',
         url: '/departament'
       },
       {
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/220x220/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_220x220.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ],
         title: 'Nunc aliquam',
         url: '/departament'
@@ -42,9 +42,9 @@ export default function (_request, response) {
     ],
     subtitle: 'Vestibulum gravida finibus lorem',
     thumbnails: [
-      '//fakeimg.pl/736x400/f0f0f0/626262',
-      '//fakeimg.pl/456x497/f0f0f0/626262',
-      '//fakeimg.pl/591x645/f0f0f0/626262'
+      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_736x400.svg',
+      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_456x497.svg',
+      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_591x645.svg'
     ],
     title: 'Integer vestibulum finibus mollis',
     url: '/departament'

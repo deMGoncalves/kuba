@@ -5,193 +5,193 @@ export default function (_request, response) {
       {
         name: 'Donec molestie malesuada aliquam',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Mauris tempus, lectus sed molestie',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Donec consequat urna in ante',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Nullam ac metus ante. Vestibulum',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Ut eu semper ex, vitae',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'In hac habitasse platea dictumst',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Vivamus elementum eros vel massa',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Integer vulputate, ligula id feugiat',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Donec vel ipsum blandit, bibendum',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Praesent ante tellus, pretium quis',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Etiam vitae porta nunc, in',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Duis sit amet nibh et',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Donec non massa aliquam erat',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'In hac habitasse platea dictumst',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Vivamus elementum eros vel massa',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Donec consequat urna in ante',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Donec molestie malesuada aliquam',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Ut eu semper ex, vitae',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Mauris tempus, lectus sed molestie',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Donec consequat urna in ante',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Nullam ac metus ante. Vestibulum',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Ut eu semper ex, vitae',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'Donec non massa aliquam erat',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       },
       {
         name: 'In hac habitasse platea dictumst',
         thumbnails: [
-          '//fakeimg.pl/360x360/f0f0f0/626262',
-          '//fakeimg.pl/298x298/f0f0f0/626262',
-          '//fakeimg.pl/287x287/f0f0f0/626262'
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
         ]
       }
     ]
