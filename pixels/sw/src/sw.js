@@ -1,3 +1,5 @@
+'use strict'
+
 const CACHE = process.env.SW_VERSION
 
 const when = (event, listener) =>
