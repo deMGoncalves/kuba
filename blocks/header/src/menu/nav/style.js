@@ -9,7 +9,7 @@ export default styled.style`
     font-size: var(--font-size-xxxs);
     font-weight: var(--font-weight-medium);
     justify-content: flex-start;
-    line-height: var(--line-height-xl);
+    line-height: var(--line-height-xxl);
     padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
   }
 
@@ -20,8 +20,10 @@ export default styled.style`
 
   .nav__link {
     font-size: var(--font-size-xxxs) !important;
-    line-height: var(--line-height-xl);
+    justify-content: flex-start !important;
+    line-height: var(--line-height-xxl);
     text-decoration: none;
+    width: 100%;
   }
 
   .nav__link:hover {
