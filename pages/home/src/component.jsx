@@ -1,4 +1,5 @@
 import h, { Fragment } from '@kuba/h'
+import Exploration from '@kuba/exploration'
 import Hero from '@kuba/hero'
 import Lazy from '@kuba/lazy'
 import Site from '@kuba/site'
@@ -8,7 +9,7 @@ export default () =>
   <Site className={style.home}>
     <Fragment slot='hot'>
       <Hero className={style.home__hero} />
-      <Lazy require={() => import('@kuba/exploration' /* webpackChunkName: "exploration" */)} />
+      <Exploration className={style.home__exploration} />
     </Fragment>
     <Fragment slot='warm'>
       <Lazy require={() => import('@kuba/workflow' /* webpackChunkName: "workflow" */)} />
