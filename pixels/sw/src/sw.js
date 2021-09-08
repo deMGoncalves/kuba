@@ -27,7 +27,7 @@ when('install', (event) => {
 })
 
 when('fetch', (event) => {
-  if (/.(css|eot|htm|html|ico|js|json|otf|svg|ttf|woff|woff2)$/i.test(event.request.url)) {
+  if (/.(?<ext>css|eot|htm|html|ico|js|json|otf|svg|ttf|woff|woff2)$/i.test(event.request.url)) {
     event.respondWith(
       (async () => {
         const cache = await caches.open(CACHE)
