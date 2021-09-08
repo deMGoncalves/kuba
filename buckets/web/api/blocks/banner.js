@@ -3,9 +3,9 @@ export default function (_request, response) {
     cta: 'Sed dapibus',
     description: 'In hac habitasse platea dictumst. Donec convallis ullamcorper massa id volutpat. Maecenas quis tellus viverra, tincidunt urna vitae, blandit enim. Morbi varius, purus in efficitur malesuada.',
     thumbnails: [
-      '//fakeimg.pl/736x400/f0f0f0/626262',
-      '//fakeimg.pl/928x300/f0f0f0/626262',
-      '//fakeimg.pl/1198x200/f0f0f0/626262'
+      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_736x400.svg',
+      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_928x300.svg',
+      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_1198x200.svg'
     ],
     title: 'Duis nec metus neque',
     url: '/departament/category'
