@@ -62,7 +62,7 @@ module.exports = {
     }),
     new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/app/, /common/]),
     new BundleAnalyzerPlugin({
-      analyzerMode: 'static'
+      analyzerMode: 'disabled'
     })
   ],
   resolve: {
