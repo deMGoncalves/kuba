@@ -1,198 +1,108 @@
 export default function (_request, response) {
+  const thumbnails = [
+    'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
+    'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
+    'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
+  ]
+
   response.json({
     title: 'Phasellus vitae est nisi. Morbi.',
     products: [
       {
         name: 'Donec molestie malesuada aliquam',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Mauris tempus, lectus sed molestie',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Donec consequat urna in ante',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Nullam ac metus ante. Vestibulum',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Ut eu semper ex, vitae',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'In hac habitasse platea dictumst',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Vivamus elementum eros vel massa',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Integer vulputate, ligula id feugiat',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Donec vel ipsum blandit, bibendum',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Praesent ante tellus, pretium quis',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Etiam vitae porta nunc, in',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Duis sit amet nibh et',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Donec non massa aliquam erat',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'In hac habitasse platea dictumst',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Vivamus elementum eros vel massa',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Donec consequat urna in ante',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Donec molestie malesuada aliquam',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Ut eu semper ex, vitae',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Mauris tempus, lectus sed molestie',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Donec consequat urna in ante',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Nullam ac metus ante. Vestibulum',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Ut eu semper ex, vitae',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'Donec non massa aliquam erat',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       },
       {
         name: 'In hac habitasse platea dictumst',
-        thumbnails: [
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-          'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
-        ]
+        thumbnails
       }
     ]
   })
