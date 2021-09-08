@@ -1,7 +1,11 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .category {
+  .product {
     position: inherit;
+  }
+
+  .product__div {
+    display: flex;
   }
 `
