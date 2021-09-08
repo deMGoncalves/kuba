@@ -27,19 +27,20 @@ export default styled.style`
 
   .search__header {
     display: flex;
-    gap: var(--spacing_inset-xs);
     padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
   }
 
   .search__close {
     align-items: center;
-    background-color: transparent;
-    border: none;
+    background-color: var(--color-master-lighter);
+    border: var(--border-width-hairline) solid var(--color-master-light);
+    border-radius: 4px 0 0 4px;
+    border-right: none;
     cursor: pointer;
     display: flex;
+    height: 42px;
     justify-content: center;
-    min-height: 42px;
-    min-width: 42px;
+    width: 42px;
   }
 
   .search__main {

@@ -13,7 +13,7 @@ export default (search) =>
     <Modal className={style.search__modal} onClose={() => search.close()} opened={search.opened}>
       <header className={style.search__header}>
         <button className={style.search__close} onClick={() => search.close()}>
-          <icon.ArrowLeft className={style.menu__icon} large />
+          <icon.ArrowLeft className={style.menu__icon} />
         </button>
         <Form className={[style.search__form, style.mobile]} action={search.action} placeholder={search.placeholder} />
       </header>

@@ -12,10 +12,19 @@ export default styled.style`
     appearance: none;
     background-color: var(--color-master-lighter);
     border: var(--border-width-hairline) solid var(--color-master-light);
-    border-radius: 4px;
+    border-left-width: 0;
+    border-radius: 0 4px 4px 0;
     height: 42px;
-    padding: 0 55px 0 var(--spacing_inset-xs);
+    padding: 0 55px 0 var(--spacing_inset-nano);
     width: 100%;
+  }
+
+  @media (min-width: 769px) {
+    .form__input {
+      border-left-width: var(--border-width-hairline);
+      border-radius: 4px;
+      padding: 0 55px 0 var(--spacing_inset-xs);
+    }
   }
 
   .form__button {
