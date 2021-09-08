@@ -1,6 +1,9 @@
 const CACHE = process.env.SW_VERSION
 
-self.addEventListener('activate', (event) => {
+const when = (event, listener) =>
+  self.addEventListener(event, listener)
+
+when('activate', (event) => {
   event.waitUntil(
     (async () => {
       Promise.all((await caches.keys()).map((v) => (CACHE !== v && caches.delete(v))))
@@ -10,7 +13,7 @@ self.addEventListener('activate', (event) => {
   self.clients.claim()
 })
 
-self.addEventListener('install', (event) => {
+when('install', (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE)
@@ -21,7 +24,7 @@ self.addEventListener('install', (event) => {
   self.skipWaiting()
 })
 
-self.addEventListener('fetch', (event) => {
+when('fetch', (event) => {
   if (/.(css|eot|htm|html|ico|js|json|otf|svg|ttf|woff|woff2)$/i.test(event.request.url)) {
     event.respondWith(
       (async () => {
