@@ -1,4 +1,3 @@
-import '@kuba/htmlparser'
 import h, { render } from '@kuba/h'
 
 export default (textContent) =>

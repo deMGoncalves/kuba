@@ -1,4 +1,3 @@
-import '@kuba/htmlparser'
 import * as f from '@kuba/f'
 
 const render = (element, ...children) =>
