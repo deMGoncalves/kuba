@@ -6,5 +6,5 @@ import style from './style'
 export default (props) =>
   <>
     <Hero className={[style.hero, props.className]} />
-    <Sandbox className={[style.hero, props.className]} connect={() => new Worker(new URL('@kuba/hero', import.meta.url /* WebpackChunckName: 'hero' */))} />
+    <Sandbox className={[style.hero, props.className]} require={() => new Worker(new URL('@kuba/hero', import.meta.url /* WebpackChunckName: 'hero' */))} />
   </>
