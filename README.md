@@ -100,5 +100,7 @@ yarn workspace @kuba/web serve
   <strong>Performance</strong>
 </p>
 
-<img src="https://github.com/deMGoncalves/kuba/blob/master/github-metrics.svg" width="100%" />
+<p align="center">
+  <img src="https://github.com/deMGoncalves/kuba/blob/master/github-metrics.svg" />
+</p>
 
