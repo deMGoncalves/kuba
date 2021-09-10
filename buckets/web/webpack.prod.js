@@ -16,7 +16,7 @@ module.exports = {
   entry: {
     app: './index.js'
   },
-  mode: 'production',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -96,7 +96,7 @@ module.exports = {
     publicPath: '/'
   },
   performance: {
-    hints: 'error',
+    hints: 'warning',
     maxAssetSize: maxSize,
     maxEntrypointSize: maxSize
   }
