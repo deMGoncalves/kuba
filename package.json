@@ -6,6 +6,9 @@
     "lint-staged": "^11.1.2",
     "pinst": "^2.1.4"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "name": "kuba",
   "private": true,
   "scripts": {
