@@ -88,6 +88,9 @@
   Kuba é um projeto de referência (Amálgama) a ser seguido e não um Framework e/ou Library que condiciona e obriga a uma situação de implementação! Ele deve ser estudado, entendido e adaptado as realidades do produto, de forma a garantir as condições de comportamento e estrutura.
 </p>
 
+<br />
+<br />
+
 <p align="center">
   <a href="https://heroku.com/deploy">
     <img src="https://www.herokucdn.com/deploy/button.png"alt="Heroku" />
