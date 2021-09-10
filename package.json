@@ -1,9 +1,4 @@
 {
-  "dependencies": {
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "http-proxy-middleware": "^2.0.1"
-  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
@@ -17,9 +12,7 @@
   "name": "kuba",
   "private": true,
   "scripts": {
-    "heroku-postbuild": "yarn workspace @kuba/web build",
     "postinstall": "husky install",
-    "start": "node serve",
     "test": "yarn workspaces run test"
   },
   "version": "1.0.0",

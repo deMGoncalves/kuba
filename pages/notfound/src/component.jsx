@@ -3,4 +3,4 @@ import Site from '@kuba/site'
 import style from './style'
 
 export default () =>
-  <Site className={style.notFound} />
+  <Site className={style.notfound} />

@@ -31,7 +31,7 @@ router('/search', function search () {
   render(<Search {...params} />)
 })
 
-router('/playground', function notFound () {
+router('/not-found', function notFound () {
   const { default: NotFound } = require('@kuba/notfound')
   render(<NotFound />)
 })

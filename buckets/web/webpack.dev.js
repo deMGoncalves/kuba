@@ -8,7 +8,7 @@ const portFinderSync = require('portfinder-sync')
 const webpack = require('webpack')
 
 const hash = new Date().getTime().toString(32)
-const port = 3000
+const port = portFinderSync.getPort(3000)
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -18,7 +18,7 @@ module.exports = {
     historyApiFallback: true,
     hot: false,
     index: './.temp/index.html',
-    port: portFinderSync.getPort(port),
+    port,
     proxy: {
       '/api/*': {
         changeOrigin: true,

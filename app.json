@@ -1,8 +1,0 @@
-{
-  "name": "Kuba",
-  "description": "Kuba é como uma folha em branco, a liberdade de programar do jeito que faça sendo para o produto",
-  "repository": "https://github.com/deMGoncalves/kuba",
-  "logo": "https://user-images.githubusercontent.com/35740192/130795916-f2064dcf-8541-45c9-85c5-ca06df71990f.png",
-  "keywords": ["javascript", "html", "css"],
-  "image": "heroku/nodejs"
-}
