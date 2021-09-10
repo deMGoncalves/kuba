@@ -24,4 +24,4 @@ app.get('/*', (_request, response) =>
   response.sendFile(path.join(__dirname, 'public/index.html'))
 )
 
-app.listen(process.env.PORT)
+app.listen(process.env.PORT || 5000)
