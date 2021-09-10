@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/api', proxy({
   changeOrigin: true,
   pathRewrite: {
-    ['^/api']: '/api'
+    '^/api': '/api'
   },
   target: process.env.API_URL
 }))
