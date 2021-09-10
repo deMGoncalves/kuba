@@ -3,14 +3,14 @@
 const dotenv = require('dotenv')
 const express = require('express')
 const path = require('path')
-const proxy = require('http-proxy-middleware').createProxyMiddleware
+const httpProxyMiddleware = require('http-proxy-middleware')
 const app = express()
 
 dotenv.config()
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/api', proxy({
+app.use('/api', httpProxyMiddleware.createProxyMiddleware({
   changeOrigin: true,
   pathRewrite: {
     '^/api': '/api'
