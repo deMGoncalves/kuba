@@ -24,6 +24,4 @@ app.get('/*', (_request, response) =>
   response.sendFile(path.join(__dirname, 'public/index.html'))
 )
 
-app.listen(PORT, () =>
-  console.log(`Listening on ${ PORT }`)
-)
+app.listen(process.env.PORT)
