@@ -13,7 +13,6 @@
   "private": true,
   "scripts": {
     "heroku-postbuild": "yarn workspace @kuba/web start",
-    "heroku-prebuild": "yarn install",
     "postinstall": "husky install",
     "test": "yarn workspaces run test"
   },
