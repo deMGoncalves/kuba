@@ -45,9 +45,7 @@
   "scripts": {
     "build": "yarn run webpack --config webpack.prod.js",
     "serve": "yarn run webpack serve --config webpack.dev.js --open",
-    "start": "yarn start:build && yarn start:serve",
-    "start:build": "yarn run webpack --config webpack.prod.js",
-    "start:serve": "node server",
+    "start": "node server",
     "test": "jest --passWithNoTests"
   },
   "version": "1.0.0"
