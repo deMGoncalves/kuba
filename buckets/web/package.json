@@ -7,7 +7,6 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
-    "concurrently": "^6.2.1",
     "copy-webpack-plugin": "^9.0.1",
     "eslint": "^7.19.0",
     "eslint-config-standard": "^16.0.2",
@@ -46,7 +45,7 @@
   "scripts": {
     "build": "yarn run webpack --config webpack.prod.js",
     "serve": "yarn run webpack serve --config webpack.dev.js --open",
-    "start": "concurrently 'yarn run start:*'",
+    "start": "yarn run start:build && yarn run start:serve",
     "start:build": "yarn run webpack --config webpack.prod.js",
     "start:serve": "node server",
     "test": "jest --passWithNoTests"
