@@ -88,10 +88,11 @@
   Kuba é um projeto de referência (Amálgama) a ser seguido e não um Framework e/ou Library que condiciona e obriga a uma situação de implementação! Ele deve ser estudado, entendido e adaptado as realidades do produto, de forma a garantir as condições de comportamento e estrutura.
 </p>
 
-```bash
-yarn install
-yarn workspace @kuba/web serve
-```
+<p align="center">
+  <a href="https://www.herokucdn.com/deploy/button.png">
+    <img src="https://heroku.com/deploy" alt="Heroku" />
+  </a>
+</p>
 
 <br />
 <br />
