@@ -1,3 +1,5 @@
+'use strict'
+
 const dotenv = require('dotenv')
 const express = require('express')
 const path = require('path')
@@ -20,4 +22,4 @@ app.get('/*', (_request, response) =>
   response.sendFile(path.join(__dirname, 'public/index.html'))
 )
 
-app.listen(process.env.PORT, process.env.HOST)
+app.listen(process.env.PORT || 5000)
