@@ -89,8 +89,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.herokucdn.com/deploy/button.png">
-    <img src="https://heroku.com/deploy" alt="Heroku" />
+  <a href="https://heroku.com/deploy">
+    <img src="https://www.herokucdn.com/deploy/button.png"alt="Heroku" />
   </a>
 </p>
 
