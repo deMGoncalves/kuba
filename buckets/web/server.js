@@ -10,7 +10,7 @@ dotenv.config()
 
 app.disable('x-powered-by')
 
-app.use(express.static(path.join(__dirname, 'buckets/web/public')))
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/api', httpProxyMiddleware.createProxyMiddleware({
   changeOrigin: true,
@@ -21,7 +21,7 @@ app.use('/api', httpProxyMiddleware.createProxyMiddleware({
 }))
 
 app.get('/*', (_request, response) =>
-  response.sendFile(path.join(__dirname, 'buckets/web/public/index.html'))
+  response.sendFile(path.join(__dirname, 'public/index.html'))
 )
 
 app.listen(process.env.PORT || 5000)
