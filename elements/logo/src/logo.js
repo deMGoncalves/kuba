@@ -1,5 +1,6 @@
 import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
+import props from '@kuba/props'
 import component from './component'
 import data from './data'
 import Ghost from './ghost.svg'
@@ -7,14 +8,9 @@ import Primary from './primary.svg'
 
 @paint(component)
 @jsonld(data)
+@props
 class Logo {
-  #className
   #ghost
-  #slot
-
-  get className () {
-    return this.#className
-  }
 
   get href () {
     return __settings.app.url
@@ -24,18 +20,12 @@ class Logo {
     return __settings.app.name
   }
 
-  get slot () {
-    return this.#slot
-  }
-
   get url () {
     return this.#ghost ? Ghost : Primary
   }
 
   constructor (props) {
-    this.#className = props.className
     this.#ghost = props.ghost
-    this.#slot = props.slot
   }
 
   redirect () {
