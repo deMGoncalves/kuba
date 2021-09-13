@@ -12,12 +12,21 @@ export default styled.style`
     z-index: 1;
   }
 
+  @media (min-width: 426px) {
+    .modal {
+      max-width: 393px;
+    }
+  }
+
   @media (min-width: 769px) {
     .modal {
-      height: auto;
-      max-height: 466px;
-      max-width: 987px;
-      width: 89vw;
+      max-width: 737px;
+    }
+  }
+
+  @media (min-width: 961px) {
+    .modal {
+      max-width: 929px;
     }
   }
 
