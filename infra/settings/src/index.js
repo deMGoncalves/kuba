@@ -1,13 +1,5 @@
-import adSense from './adSense'
-import api from './api'
-import app from './app'
-import cookie from './cookie'
-import lang from './lang'
-
-window.__settings = {
-  adSense,
-  api,
-  app,
-  cookie,
-  lang
-}
+export { default as adSense } from './adSense'
+export { default as api } from './api'
+export { default as app } from './app'
+export { default as cookie } from './cookie'
+export { default as lang } from './lang'

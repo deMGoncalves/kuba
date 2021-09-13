@@ -1,15 +1,16 @@
 import * as f from '@kuba/f'
+import * as settings from '@kuba/settings'
 
 export default f.once((home) =>
   ({
     '@id': '#webpage',
     '@type': 'WebPage',
     description: home.description,
-    inLanguage: __settings.app.language,
+    inLanguage: settings.app.language,
     isPartOf: {
       '@id': '#website'
     },
     name: home.title,
-    url: __settings.app.url
+    url: settings.app.url
   })
 )

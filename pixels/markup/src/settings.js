@@ -1,3 +1,3 @@
-import * as f from '@kuba/f'
+import * as settings from '@kuba/settings'
 
-export default f.or(f.prop('__settings.app', window), {})
+export default settings.app

@@ -1,3 +1,5 @@
+import * as settings from '@kuba/settings'
+
 export default () =>
-  fetch(`${__settings.api.host}/blocks/workflow`)
+  fetch(`${settings.api.host}/blocks/workflow`)
     .then(response => response.json())

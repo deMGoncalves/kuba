@@ -2,6 +2,7 @@ import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
 import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
+import * as settings from '@kuba/settings'
 import component from './component'
 import data from './data'
 import history from './history'
@@ -13,7 +14,7 @@ class Search {
   #q
 
   get description () {
-    return __settings.app.description
+    return settings.app.description
   }
 
   get q () {

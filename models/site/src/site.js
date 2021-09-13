@@ -1,5 +1,6 @@
 import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
+import * as settings from '@kuba/settings'
 import component from './component'
 import data from './data'
 
@@ -7,11 +8,11 @@ import data from './data'
 @jsonld(data)
 class Site {
   get name () {
-    return __settings.app.name
+    return settings.app.name
   }
 
   get url () {
-    return __settings.app.url
+    return settings.app.url
   }
 }
 

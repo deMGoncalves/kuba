@@ -2,7 +2,6 @@
 
 module.exports = {
   globals: {
-    __settings: 'readonly'
   },
   env: {
     browser: true,

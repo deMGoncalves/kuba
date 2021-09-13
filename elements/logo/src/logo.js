@@ -1,6 +1,7 @@
 import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import props from '@kuba/props'
+import * as settings from '@kuba/settings'
 import component from './component'
 import data from './data'
 import Ghost from './ghost.svg'
@@ -13,11 +14,11 @@ class Logo {
   #ghost
 
   get href () {
-    return __settings.app.url
+    return settings.app.url
   }
 
   get name () {
-    return __settings.app.name
+    return settings.app.name
   }
 
   get url () {
