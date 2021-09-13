@@ -21,7 +21,8 @@ module.exports = {
     }
   },
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1'
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '\\.(?<ext>png|svg|jpg|jpeg|gif|woff|woff2|eot|ttf|otf)$': '<rootDir>/__mocks__/file.js'
   },
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
