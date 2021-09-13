@@ -15,14 +15,14 @@ const packages = workspaces
       .map(d => d.name)
   )
 
-const listener = (workspace, package) =>
-  `${workspace}/${package}/**/*`
+const listener = (workspace, pkg) =>
+  `${workspace}/${pkg}/**/*`
 
-const command = (package) =>
-  `yarn workspace @${root.name}/${package} lint-staged --allow-empty`
+const command = (pkg) =>
+  `yarn workspace @${root.name}/${pkg} lint-staged --allow-empty`
 
 const mapper = workspaces
   .reduce((object, workspace, index) =>
-    (packages[index].forEach(package => object[listener(workspace, package)] = command(package)), object), {})
+    (packages[index].forEach(pkg => object[listener(workspace, pkg)] = command(pkg)), object), {})
 
 module.exports = mapper
