@@ -15,9 +15,9 @@ export default styled.style`
   @media (min-width: 769px) {
     .modal {
       height: 68vh;
-      max-height: 764px;
-      max-width: 610px;
-      width: 68vw;
+      max-height: 466px;
+      max-width: 987px;
+      width: 89vw;
     }
   }
 
