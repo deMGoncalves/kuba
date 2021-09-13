@@ -5,16 +5,16 @@ export default styled.style`
     background-color: var(--color-master-lightest);
     box-shadow: 0 10px 37px 0 rgba(0, 0, 0, 0.15);
     content-visibility: auto;
-    height: 100vh;
+    height: auto;
     -ms-overflow-style: none;
     overflow-y: auto;
-    width: 100vw;
+    width: calc(100vw - var(--spacing-xs));
     z-index: 1;
   }
 
   @media (min-width: 769px) {
     .modal {
-      height: 68vh;
+      height: auto;
       max-height: 466px;
       max-width: 987px;
       width: 89vw;
