@@ -1,5 +1,8 @@
 import h from '@kuba/h'
-import style from './style'
+import styled from '@kuba/styled'
 
-export default (props) =>
-  <picture {...props} className={[style.picture, props.className]} />
+export default styled.picture`
+  background-color: var(--color-master-light);
+  padding-top: 100%;
+  width: 100%;
+`
