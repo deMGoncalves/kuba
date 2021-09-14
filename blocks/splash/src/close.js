@@ -1,2 +1,2 @@
 export default (splash) =>
-  sessionStorage.setItem(splash.id, 'closed')
+  localStorage.setItem(splash.id, 'closed')
