@@ -2,7 +2,7 @@ import { didMount, paint, repaint } from '@kuba/h'
 import echo from '@kuba/echo'
 import close from './close'
 import component from './component'
-import getData from './getData'
+import open from './open'
 import toggle from './toggle'
 
 @paint(component)
@@ -64,16 +64,16 @@ class Splash {
   }
 
   @didMount
-  async getData () {
+  async open () {
     this.opened && (
-      this.change(await getData()),
+      open(this),
       echo.emit('overlayer:open')
     )
     return this
   }
 
   redirect () {
-    close(this)
+    this.close()
     location.assign(this.url)
     return this
   }
