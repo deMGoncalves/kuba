@@ -1,4 +1,5 @@
 import { didMount, paint, repaint } from '@kuba/h'
+import echo from '@kuba/echo'
 import close from './close'
 import component from './component'
 import getData from './getData'
@@ -58,12 +59,16 @@ class Splash {
   @repaint
   close () {
     close(this)
+    echo.emit('overlayer:close')
     return this
   }
 
   @didMount
   async getData () {
-    this.change(await getData())
+    this.opened && (
+      this.change(await getData()),
+      echo.emit('overlayer:open')
+    )
     return this
   }
 
