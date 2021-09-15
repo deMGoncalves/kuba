@@ -1,9 +1,13 @@
 {
   "description": "Kuba é como uma folha em branco, a liberdade de programar do jeito que faça sendo para o produto",
   "env": {
-		"API_URL": {
-      "description": "Backend API URL",
-      "value": "https://kuba.engineer"
+		"PRESTASHOP_API_KEY": {
+      "description": "Prestashop API Key",
+      "value": "your key"
+    },
+		"PRESTASHOP_API_URL": {
+      "description": "Prestashop API URL",
+      "value": "https://yourdomain/api"
     }
 	},
   "image": "heroku/nodejs",
