@@ -14,10 +14,14 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/api', httpProxyMiddleware.createProxyMiddleware({
   changeOrigin: true,
-  pathRewrite: {
-    '^/api': '/api'
+  onProxyReq: (proxy) => {
+    proxy.setHeader('Authorization', `Basic ${Buffer.from(process.env.PRESTASHOP_API_KEY).toString('base64')}`)
+    proxy.setHeader('Output-Format', 'JSON')
   },
-  target: process.env.API_URL
+  pathRewrite: {
+    '^/api': '/'
+  },
+  target: process.env.PRESTASHOP_API_URL
 }))
 
 app.get('/*', (_request, response) =>
