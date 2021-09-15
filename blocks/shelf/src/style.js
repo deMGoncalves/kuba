@@ -11,7 +11,7 @@ export default styled.style`
     column-gap: var(--spacing-xxxs);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: var(--spacing_inset-xs);
+    row-gap: var(--spacing_inset-lg);
   }
 
   @media (min-width: 769px) {
