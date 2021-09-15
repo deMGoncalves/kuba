@@ -1,10 +1,9 @@
-import { paint, repaint } from '@kuba/h'
+import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import component from './component'
 import getData from './getData'
 
 @paint(component)
-@getData
 class Darlings {
   #className
   #links
@@ -24,6 +23,12 @@ class Darlings {
   @repaint
   change (descriptor) {
     this.#links = descriptor.darlings
+    return this
+  }
+  
+  @didMount
+  async mount () {
+    this.change(await getData())
     return this
   }
 }

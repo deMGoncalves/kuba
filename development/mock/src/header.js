@@ -1,5 +1,5 @@
 export default function () {
-  Promise.resolve({
+  return Promise.resolve({
     darlings: [
       {
         text: 'In finibus',

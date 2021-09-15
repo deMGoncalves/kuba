@@ -1,11 +1,10 @@
-import { paint, repaint } from '@kuba/h'
+import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import props from '@kuba/props'
 import component from './component'
 import getData from './getData'
 
 @paint(component)
-@getData
 @props
 class Nav {
   #darlings
@@ -23,6 +22,12 @@ class Nav {
   change (descriptor) {
     this.#darlings = descriptor.darlings
     this.#nav = descriptor.nav
+    return this
+  }
+
+  @didMount
+  async mount () {
+    this.change(await getData())
     return this
   }
 }

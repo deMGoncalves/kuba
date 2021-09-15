@@ -1,5 +1,5 @@
 export default function () {
-  Promise.resolve({
+  return Promise.resolve({
     title: 'In non consectetur ante.',
     description: 'Vestibulum dapibus tortor magna, quis cursus nunc vestibulum nec. Nam in magna sagittis, eleifend ante nec, rhoncus libero.',
     steps: [

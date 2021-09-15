@@ -5,7 +5,7 @@ export default function () {
     'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
   ]
 
-  Promise.resolve({
+  return Promise.resolve({
     cta: 'Aliquam fringilla',
     description: 'Curabitur ornare ligula ex, non efficitur orci placerat in. Sed faucibus non orci et fringilla. Nulla tincidunt mattis mi. Vivamus in nulla eu est dignissim laoreet.',
     departaments: [

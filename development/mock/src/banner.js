@@ -1,5 +1,5 @@
 export default function () {
-  Promise.resolve({
+  return Promise.resolve({
     cta: 'Sed dapibus',
     description: 'In hac habitasse platea dictumst. Donec convallis ullamcorper massa id volutpat. Maecenas quis tellus viverra, tincidunt urna vitae, blandit enim. Morbi varius, purus in efficitur malesuada.',
     thumbnails: [

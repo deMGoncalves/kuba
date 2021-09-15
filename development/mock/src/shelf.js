@@ -5,7 +5,7 @@ export default function () {
     'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
   ]
 
-  Promise.resolve({
+  return Promise.resolve({
     title: 'Phasellus vitae est nisi. Morbi.',
     products: [
       {

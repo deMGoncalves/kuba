@@ -32,7 +32,7 @@ class Workspace {
   }
 
   @didMount
-  async getData () {
+  async mount () {
     this.change(await getData())
     return this
   }

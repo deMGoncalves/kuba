@@ -1,7 +1,7 @@
 export default function () {
   const thumbnail = 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_135x135.svg'
 
-  Promise.resolve({
+  return Promise.resolve({
     title: 'Vivamus nulla erat, interdum',
     categories: [
       {
