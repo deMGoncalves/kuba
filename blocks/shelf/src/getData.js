@@ -1,5 +1,5 @@
 import * as settings from '@kuba/settings'
 
 export default () =>
-  fetch(`${settings.api.host}/blocks/shelf`)
+  fetch(`${settings.api.url}/products?display=full`)
     .then(response => response.json())
