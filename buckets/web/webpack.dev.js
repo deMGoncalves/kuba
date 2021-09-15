@@ -1,6 +1,7 @@
 'use strict'
 
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const dotenv = require('dotenv')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const InlineChunkHtmlPlugin = require('inline-chunk-html-plugin')
 const path = require('path')
@@ -8,7 +9,8 @@ const portFinderSync = require('portfinder-sync')
 const webpack = require('webpack')
 
 const hash = new Date().getTime().toString(32)
-const port = portFinderSync.getPort(3000)
+
+dotenv.config()
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -18,14 +20,18 @@ module.exports = {
     historyApiFallback: true,
     hot: false,
     index: './.temp/index.html',
-    port,
+    port: portFinderSync.getPort(3000),
     proxy: {
       '/api/*': {
         changeOrigin: true,
+        headers: {
+          'Authorization': `Basic ${Buffer.from(process.env.PRESTASHOP_API_KEY).toString('base64')}`,
+          'Output-Format': 'JSON'
+        },
         pathRewrite: {
           '^/api/': '/'
         },
-        target: `http://localhost:${port + 1}/api`
+        target: process.env.PRESTASHOP_API_URL
       }
     }
   },
