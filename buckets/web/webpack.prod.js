@@ -8,9 +8,6 @@ const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const webpack = require('webpack')
 
-const hash = new Date().getTime().toString(32)
-const maxSize = 200 * 1024
-
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
@@ -45,7 +42,7 @@ module.exports = {
   },
   plugins: [
     new webpack.EnvironmentPlugin({
-      SW_VERSION: hash
+      SW_VERSION: new Date().getTime().toString(32)
     }),
     new CopyWebpackPlugin({
       patterns: [
@@ -97,7 +94,7 @@ module.exports = {
   },
   performance: {
     hints: 'error',
-    maxAssetSize: maxSize,
-    maxEntrypointSize: maxSize
+    maxAssetSize: process.env.MAX_ASSET_SIZE,
+    maxEntrypointSize: process.env.MAX_ENTRYPOINT_SIZE
   }
 }

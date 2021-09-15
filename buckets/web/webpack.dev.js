@@ -8,8 +8,6 @@ const path = require('path')
 const portFinderSync = require('portfinder-sync')
 const webpack = require('webpack')
 
-const hash = new Date().getTime().toString(32)
-
 dotenv.config()
 
 module.exports = {
@@ -20,7 +18,7 @@ module.exports = {
     historyApiFallback: true,
     hot: false,
     index: './.temp/index.html',
-    port: portFinderSync.getPort(3000),
+    port: portFinderSync.getPort(process.env.PORT),
     proxy: {
       '/api/*': {
         changeOrigin: true,
@@ -67,7 +65,7 @@ module.exports = {
   },
   plugins: [
     new webpack.EnvironmentPlugin({
-      SW_VERSION: hash
+      SW_VERSION: new Date().getTime().toString(32)
     }),
     new CopyWebpackPlugin({
       patterns: [
