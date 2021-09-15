@@ -4,7 +4,7 @@ import * as settings from '@kuba/settings'
 import headers from './headers'
 
 export default () =>
-  fetch(`${settings.api.host}/auth/user`, { headers })
+  fetch(`${settings.api.url}/auth/user`, { headers })
     .then(response => response.json())
     .then(f.prop('data.aud'))
     .then(f.different('authenticated'))

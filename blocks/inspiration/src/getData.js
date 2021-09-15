@@ -1,5 +1,5 @@
 import * as settings from '@kuba/settings'
 
 export default () =>
-  fetch(`${settings.api.host}/blocks/inspiration`)
+  fetch(`${settings.api.url}/blocks/inspiration`)
     .then(response => response.json())

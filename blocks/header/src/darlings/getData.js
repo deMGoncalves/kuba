@@ -6,7 +6,7 @@ import * as settings from '@kuba/settings'
 const getData = (darlings) =>
   media('(min-width: 961px)')
     .in(f.once(() =>
-      fetch(`${settings.api.host}/blocks/header`)
+      fetch(`${settings.api.url}/blocks/header`)
         .then(response => response.json())
         .then(data => darlings.change(data))
     ))
