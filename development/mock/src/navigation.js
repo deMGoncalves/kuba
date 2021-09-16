@@ -1,5 +1,7 @@
+import placeholder from './assets/placeholder_135x135.svg'
+
 export default function () {
-  const thumbnail = 'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_135x135.svg'
+  const thumbnail = placeholder
 
   return Promise.resolve({
     title: 'Vivamus nulla erat, interdum',

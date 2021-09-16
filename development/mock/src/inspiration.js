@@ -1,8 +1,15 @@
+import placeholderSM from './assets/placeholder_360x360.svg'
+import placeholderMD from './assets/placeholder_220x220.svg'
+import placeholderLG from './assets/placeholder_287x287.svg'
+import placeholderSMB from './assets/placeholder_736x400.svg'
+import placeholderMDB from './assets/placeholder_456x497.svg'
+import placeholderLGB from './assets/placeholder_591x645.svg'
+
 export default function () {
   const thumbnails = [
-    'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-    'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_220x220.svg',
-    'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
+    placeholderSM,
+    placeholderMD,
+    placeholderLG
   ]
 
   return Promise.resolve({
@@ -32,9 +39,9 @@ export default function () {
     ],
     subtitle: 'Vestibulum gravida finibus lorem',
     thumbnails: [
-      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_736x400.svg',
-      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_456x497.svg',
-      'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_591x645.svg'
+      placeholderSMB,
+      placeholderMDB,
+      placeholderLGB
     ],
     title: 'Integer vestibulum finibus mollis',
     url: '/departament'

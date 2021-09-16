@@ -1,8 +1,12 @@
+import placeholderSM from './assets/placeholder_360x360.svg'
+import placeholderMD from './assets/placeholder_220x220.svg'
+import placeholderLG from './assets/placeholder_287x287.svg'
+
 export default function () {
   const thumbnails = [
-    'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_360x360.svg',
-    'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_298x298.svg',
-    'https://wbfsnickkamdoyzndmec.supabase.in/storage/v1/object/public/fakeimg/placeholder_287x287.svg'
+    placeholderSM,
+    placeholderMD,
+    placeholderLG
   ]
 
   return Promise.resolve({
