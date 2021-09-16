@@ -7,12 +7,12 @@ router('/', function home () {
   render(<Home />)
 })
 
-router('/departament', function departament () {
+router('/:departament', function departament () {
   const { default: Departament } = require('@kuba/departament')
   render(<Departament />)
 })
 
-router('/departament/category', function category () {
+router('/:departament/category', function category () {
   const { default: Category } = require('@kuba/category')
   render(<Category />)
 })
