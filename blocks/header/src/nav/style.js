@@ -5,13 +5,14 @@ export default styled.style`
     display: flex;
   }
 
-  .nav__link {
+  .nav__home,
+  .nav__departament {
     font-size: var(--font-size-xxxs) !important;
     font-weight: var(--font-weight-medium) !important;
     text-decoration: none;
   }
 
-  .nav__link:not(:first-child) {
+  .nav__departament {
     margin-left: var(--spacing-xxxs);
   }
 `

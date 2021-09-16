@@ -14,11 +14,11 @@ class Nav {
   }
 
   @repaint
-  change (descriptor) {
-    this.#links = descriptor.nav
+  change (response) {
+    this.#links = response.categories
     return this
   }
-  
+
   @didMount
   async mount () {
     this.change(await getData())

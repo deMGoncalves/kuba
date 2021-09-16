@@ -25,7 +25,7 @@ class Darlings {
     this.#links = descriptor.darlings
     return this
   }
-  
+
   @didMount
   async mount () {
     this.change(await getData())
