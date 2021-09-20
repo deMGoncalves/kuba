@@ -1,5 +1,6 @@
 import h from '@kuba/h'
 import router from '@kuba/router'
+import getDepartament from './getDepartament'
 import render from './render'
 
 router('/', function home () {
@@ -7,9 +8,10 @@ router('/', function home () {
   render(<Home />)
 })
 
-router('/:departament', function departament () {
+router('/:departament', async function departament (params) {
   const { default: Departament } = require('@kuba/departament')
-  render(<Departament />)
+  const props = await getDepartament(params)
+  render(<Departament { ...props } />)
 })
 
 router('/:departament/category', function category () {
