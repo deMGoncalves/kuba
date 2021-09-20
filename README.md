@@ -18,7 +18,7 @@
     <img src="https://app.codacy.com/project/badge/Grade/8d2b7ccbd9d64b90bcccc515a1f61457" />
   </a>
   <a href="https://github.com/deMGoncalves/kuba">
-    <img src="https://vercelbadge.vercel.app/api/demgoncalves/kuba" alt="Vercel" />
+    <img src="https://heroku-badge.herokuapp.com/?app=projetokua" alt="Vercel" />
   </a>
   <a href="http://standardjs.com">
     <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="JS Standard Style" />
@@ -38,7 +38,7 @@
 </p>
 
 <p align="justify">
-  Ninguém precisa ter muitas habilidades para desenvolver um produto que funcione, fazer direito é outra história. Desenvolver um produto de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem.
+  Ninguém precisa ter muitas habilidades para desenvolver um ecommerce que funcione, fazer direito é outra história. Desenvolver um ecommerce de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem.
 </p>
 
 <br />
@@ -61,7 +61,7 @@
 </p>
 
 <p align="justify">
-  Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um produto. As mudanças se tornam cirúrgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
+  Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um ecommerce. As mudanças se tornam cirúrgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
 </p>
 
 <br />
@@ -85,7 +85,7 @@
 </p>
 
 <p align="justify">
-  Kuba é um projeto de referência (Amálgama) a ser seguido e não um Framework e/ou Library que condiciona e obriga a uma situação de implementação! Ele deve ser estudado, entendido e adaptado as realidades do produto, de forma a garantir as condições de comportamento e estrutura.
+  Kuba é um projeto de referência (Amálgama) a ser seguido e não um Framework e/ou Library que condiciona e obriga a uma situação de implementação! Ele deve ser estudado, entendido e adaptado as realidades do seu ecommerce, de forma a garantir as condições de comportamento e estrutura.
 </p>
 
 <br />
