@@ -13,7 +13,10 @@ class Departament {
   #name
 
   get description () {
-    return this.#description
+    return new DOMParser()
+      .parseFromString(this.#description, 'text/html')
+      .body
+      .innerText
   }
 
   get id () {
