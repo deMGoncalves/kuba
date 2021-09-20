@@ -14,7 +14,7 @@ router('/:departament', async function departament (params) {
   render(<Departament { ...props } />)
 })
 
-router('/:departament/category', function category () {
+router('/:departament/:category', function category () {
   const { default: Category } = require('@kuba/category')
   render(<Category />)
 })
