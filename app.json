@@ -1,6 +1,12 @@
 {
   "description": "Kuba é como uma folha em branco, a liberdade de programar do jeito que faça sendo para o produto",
   "env": {
+    "MAX_ASSET_SIZE": {
+      "value": 2000
+    },
+    "MAX_ENTRYPOINT_SIZE": {
+      "value": 2000
+    },
 		"PRESTASHOP_API_KEY": {
       "description": "Prestashop API Key",
       "value": "your key"
