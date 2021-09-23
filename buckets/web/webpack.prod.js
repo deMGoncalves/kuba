@@ -94,7 +94,7 @@ module.exports = {
   },
   performance: {
     hints: 'error',
-    maxAssetSize: process.env.MAX_ASSET_SIZE,
-    maxEntrypointSize: process.env.MAX_ENTRYPOINT_SIZE
+    maxAssetSize: Number(process.env.MAX_ASSET_SIZE),
+    maxEntrypointSize: Number(process.env.MAX_ENTRYPOINT_SIZE)
   }
 }
