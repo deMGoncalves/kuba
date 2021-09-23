@@ -18,7 +18,7 @@
     <img src="https://app.codacy.com/project/badge/Grade/8d2b7ccbd9d64b90bcccc515a1f61457" />
   </a>
   <a href="https://github.com/deMGoncalves/kuba">
-    <img src="https://heroku-badge.herokuapp.com/?app=projetokua" alt="Vercel" />
+    <img src="https://heroku-badge.herokuapp.com/?app=projetokuba" alt="Heroku" />
   </a>
   <a href="http://standardjs.com">
     <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="JS Standard Style" />
