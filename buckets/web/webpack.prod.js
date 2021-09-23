@@ -93,7 +93,7 @@ module.exports = {
     publicPath: '/'
   },
   performance: {
-    hints: 'error',
+    hints: 'warning',
     maxAssetSize: Number(process.env.MAX_ASSET_SIZE),
     maxEntrypointSize: Number(process.env.MAX_ENTRYPOINT_SIZE)
   }
