@@ -34,18 +34,17 @@
     "webpack-dev-server": "^3.11.2"
   },
   "lint-staged": {
-    "{api,src}/**/*.{js,jsx}": [
+    "src/**/*.{js,jsx}": [
       "yarn run eslint src/**/*.{js,jsx}",
       "yarn run stylelint src/**/*.{js,jsx} --allow-empty-input"
     ]
   },
   "main": "src/index.js",
-  "name": "@kuba/web",
+  "name": "@kuba/ecomm",
   "private": true,
   "scripts": {
-    "build": "yarn run webpack --config webpack.prod.js",
-    "serve": "yarn run webpack serve --config webpack.dev.js --open",
-    "start": "node server",
+    "build": "yarn run webpack --config webpack.config.js --mode production",
+    "build:dev": "yarn run webpack --config webpack.config.js --mode development --watch",
     "test": "jest --passWithNoTests"
   },
   "version": "1.0.0"

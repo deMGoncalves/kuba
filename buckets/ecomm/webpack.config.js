@@ -1,42 +1,19 @@
 'use strict'
 
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const dotenv = require('dotenv')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const InlineChunkHtmlPlugin = require('inline-chunk-html-plugin')
 const path = require('path')
-const portFinderSync = require('portfinder-sync')
+const TerserJSPlugin = require('terser-webpack-plugin')
 const webpack = require('webpack')
-
-dotenv.config()
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   devtool: 'inline-source-map',
-  devServer: {
-    contentBase: path.join(__dirname, '.temp'),
-    historyApiFallback: true,
-    hot: false,
-    index: './.temp/index.html',
-    port: portFinderSync.getPort(process.env.PORT),
-    proxy: {
-      '/api/*': {
-        changeOrigin: true,
-        headers: {
-          'Authorization': `Basic ${Buffer.from(process.env.PRESTASHOP_API_KEY).toString('base64')}`,
-          'Output-Format': 'JSON'
-        },
-        pathRewrite: {
-          '^/api/': '/'
-        },
-        target: process.env.PRESTASHOP_API_URL
-      }
-    }
-  },
   entry: {
     app: './index.js'
   },
-  mode: 'development',
   module: {
     rules: [
       {
@@ -80,16 +57,44 @@ module.exports = {
       inject: 'body',
       template: path.resolve(__dirname, 'src/index.html')
     }),
-    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/app/, /common/])
+    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/app/, /common/]),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static'
+    })
   ],
   resolve: {
     extensions: ['.js', '.jsx']
+  },
+  optimization: {
+    minimizer: [
+      new TerserJSPlugin({
+        terserOptions: {
+          keep_fnames: true,
+          safari10: true
+        }
+      })
+    ],
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: 'all',
+          name: 'vendor',
+          test: /[\\/]node_modules[\\/]/
+        }
+      },
+      name: 'common'
+    }
   },
   output: {
     clean: true,
     chunkFilename: '[name].[contenthash].js',
     filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, '.temp'),
+    path: path.resolve(__dirname, 'public'),
     publicPath: '/'
+  },
+  performance: {
+    hints: 'warning',
+    maxAssetSize: Number(process.env.MAX_ASSET_SIZE),
+    maxEntrypointSize: Number(process.env.MAX_ENTRYPOINT_SIZE)
   }
 }
