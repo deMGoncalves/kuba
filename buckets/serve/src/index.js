@@ -24,6 +24,10 @@ app.use('/api', httpProxyMiddleware.createProxyMiddleware({
   target: process.env.PRESTASHOP_API_URL
 }))
 
+app.get('/@report', (_request, response) =>
+  response.sendFile(path.join(__dirname, process.env.PUBLIC, 'report.html'))
+)
+
 app.get('/*', (_request, response) =>
   response.sendFile(path.join(__dirname, process.env.PUBLIC, 'index.html'))
 )
