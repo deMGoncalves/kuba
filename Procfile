@@ -1,1 +1,1 @@
-web: yarn workspace @kuba/web start
+web: yarn workspace @kuba/serve start
