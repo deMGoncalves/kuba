@@ -13,7 +13,10 @@
     },
 		"PRESTASHOP_API_URL": {
       "description": "Prestashop API URL",
-      "value": "https://yourdomain/api"
+      "value": "your domain api"
+    },
+    "PUBLIC": {
+      "value": "../../ecomm/public"
     }
 	},
   "image": "heroku/nodejs",
