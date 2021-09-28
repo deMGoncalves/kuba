@@ -30,5 +30,8 @@
     "start": "node src/index.js",
     "test": "jest --passWithNoTests"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "mongodb": "^4.1.2"
+  }
 }
