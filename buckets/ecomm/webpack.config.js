@@ -59,7 +59,7 @@ module.exports = {
     }),
     new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/app/, /common/]),
     new BundleAnalyzerPlugin({
-      analyzerMode: 'static'
+      analyzerMode: process.env.ANALYZER_MODE
     })
   ],
   resolve: {
