@@ -1,14 +1,12 @@
 import * as f from '@kuba/f'
 
-export default f.once(() =>
+export default (shelf) =>
   ({
-    '@id': '#collectionpage',
-    '@type': 'CollectionPage',
-    about: {
-      '@id': '#itemlist'
-    },
-    mainEntityOfPage: {
-      '@id': '#webpage'
-    }
+    '@id': '#itemlist',
+    '@type': 'ItemList',
+    itemListElement: f.map(shelf.products, (product) => ({
+      '@type': 'Product',
+      name: product.name
+    })),
+    numberOfItems: f.len(shelf.products)
   })
-)
