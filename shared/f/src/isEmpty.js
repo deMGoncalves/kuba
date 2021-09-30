@@ -1,8 +1,9 @@
 import curry from './curry'
 import isNil from './isNil'
 import not from './not'
+import or from './or'
 
 const isEmpty = (value) =>
-  isNil(value) || not(Object.keys(value).length)
+  or(isNil(value), not(Object.keys(value).length))
 
 export default curry(isEmpty)
