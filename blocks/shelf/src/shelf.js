@@ -1,12 +1,15 @@
 import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import jsonld from '@kuba/jsonld'
 import props from '@kuba/props'
 import hook from './hook'
 import component from './component'
+import data from './data'
 import getData from './getData'
 import Product from './product'
 
 @paint(component)
+@jsonld(data)
 @props
 class Shelf {
   #products
