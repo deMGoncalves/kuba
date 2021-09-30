@@ -1,9 +1,9 @@
 import * as settings from '@kuba/settings'
 
-export default (search) =>
+export default (category) =>
   ({
-    '@id': '#searchresultspage',
-    '@type': 'SearchResultsPage',
+    '@id': '#collectionpage',
+    '@type': 'CollectionPage',
     about: {
       '@id': '#itemlist'
     },
@@ -13,12 +13,12 @@ export default (search) =>
       breadcrumb: {
         '@id': '#breadcrumb'
       },
-      description: search.description,
+      description: category.description,
       inLanguage: settings.app.language,
       isPartOf: {
         '@id': '#website'
       },
-      name: search.title,
+      name: category.title,
       url: settings.app.url
     }
   })
