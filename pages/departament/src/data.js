@@ -1,17 +1,24 @@
 import * as settings from '@kuba/settings'
 
-export default (home) =>
+export default (departament) =>
   ({
-    '@id': '#webpage',
-    '@type': 'WebPage',
-    breadcrumb: {
-      '@id': '#breadcrumb'
+    '@id': '#collectionpage',
+    '@type': 'CollectionPage',
+    about: {
+      '@id': '#itemlist'
     },
-    description: home.description,
-    inLanguage: settings.app.language,
-    isPartOf: {
-      '@id': '#website'
-    },
-    name: home.title,
-    url: settings.app.url
+    mainEntityOfPage: {
+      '@id': '#webpage',
+      '@type': 'WebPage',
+      breadcrumb: {
+        '@id': '#breadcrumb'
+      },
+      description: departament.description,
+      inLanguage: settings.app.language,
+      isPartOf: {
+        '@id': '#website'
+      },
+      name: departament.title,
+      url: settings.app.url
+    }
   })
