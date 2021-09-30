@@ -1,7 +1,7 @@
 import * as f from '@kuba/f'
 import * as settings from '@kuba/settings'
 
-export default f.once((breadcrumb) =>
+export default (breadcrumb) =>
   ({
     '@id': '#breadcrumb',
     '@type': 'BreadcrumbList',
@@ -12,4 +12,3 @@ export default f.once((breadcrumb) =>
       position: f.inc(i)
     }))
   })
-)

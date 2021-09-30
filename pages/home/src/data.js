@@ -1,16 +1,21 @@
-import * as f from '@kuba/f'
 import * as settings from '@kuba/settings'
 
-export default f.once((home) =>
+export default (home) =>
   ({
-    '@id': '#webpage',
-    '@type': 'WebPage',
-    description: home.description,
-    inLanguage: settings.app.language,
-    isPartOf: {
-      '@id': '#website'
+    '@id': '#collectionpage',
+    '@type': 'CollectionPage',
+    about: {
+      '@id': '#itemlist'
     },
-    name: home.title,
-    url: settings.app.url
+    mainEntityOfPage: {
+      '@id': '#webpage',
+      '@type': 'WebPage',
+      description: home.description,
+      inLanguage: settings.app.language,
+      isPartOf: {
+        '@id': '#website'
+      },
+      name: home.title,
+      url: settings.app.url
+    }
   })
-)

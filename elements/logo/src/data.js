@@ -1,6 +1,4 @@
-import * as f from '@kuba/f'
-
-export default f.once((logo) =>
+export default (logo) =>
   ({
     '@id': '#organization',
     '@type': 'Organization',
@@ -8,4 +6,3 @@ export default f.once((logo) =>
     name: logo.name,
     url: logo.href
   })
-)

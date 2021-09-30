@@ -1,7 +1,6 @@
-import * as f from '@kuba/f'
 import * as settings from '@kuba/settings'
 
-export default f.once((home) =>
+export default (home) =>
   ({
     '@id': '#webpage',
     '@type': 'WebPage',
@@ -16,4 +15,3 @@ export default f.once((home) =>
     name: home.title,
     url: settings.app.url
   })
-)

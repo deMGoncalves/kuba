@@ -1,6 +1,4 @@
-import * as f from '@kuba/f'
-
-export default f.once((page) =>
+export default (page) =>
   ({
     '@id': '#webpage',
     '@type': 'WebPage',
@@ -15,4 +13,3 @@ export default f.once((page) =>
     name: page.title,
     url: page.url
   })
-)

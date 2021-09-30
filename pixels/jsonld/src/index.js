@@ -4,4 +4,4 @@ import graph from './graph'
 import render from './render'
 
 export default (structured) =>
-  middleware(f.once((target) => render(f.push(graph, structured(target)))))
+  middleware((target) => render(f.push(graph, structured(target))))
