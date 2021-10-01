@@ -3,7 +3,9 @@ import * as f from '@kuba/f'
 class Changed {
   static exec (that) {
     return (_, attribute) =>
-      that.setAttribute(attribute.key, attribute.value)
+      f.isNil(attribute.value)
+        ? that.removeAttribute(attribute.key)
+        : that.setAttribute(attribute.key, attribute.value)
   }
 
   static is (current, attribute) {

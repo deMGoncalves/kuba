@@ -1,4 +1,5 @@
 import * as f from '@kuba/f'
+import filter from './filter'
 import mapper from './mapper'
 import reflow from './reflow'
 import toList from './toList'
@@ -17,8 +18,13 @@ class Attributes {
   }
 
   paint () {
-    f.forEach(this.list, ({ key, value }) =>
-      this.#target.setAttribute(key, value))
+    f.forEach(this.list, (attr) => {
+      const [key, value] = filter(attr.key, attr.value)
+
+      f.not(f.isNil(value)) && (
+        this.#target.setAttribute(key, value)
+      )
+    })
     return this
   }
 
@@ -27,13 +33,15 @@ class Attributes {
     return this
   }
 
-  removeAttribute (key) {
+  removeAttribute (...args) {
+    const [key] = filter(...args)
     this.#map.delete(key)
     this.#target.removeAttribute(key)
     return this
   }
 
-  setAttribute (key, value) {
+  setAttribute (...args) {
+    const [key, value] = filter(...args)
     this.#map.set(key, value),
     this.#target.setAttribute(key, value)
     return this
