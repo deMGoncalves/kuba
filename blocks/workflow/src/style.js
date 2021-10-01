@@ -64,7 +64,7 @@ export default styled.style`
 
   .workflow__li::before {
     color: var(--color-master-darker);
-    content: attr(data-index);
+    content: attr(index);
     display: block;
     float: left;
     font-size: 42px;
