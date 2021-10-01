@@ -155,7 +155,9 @@ class Tag {
   }
 
   setAttribute (key, value) {
-    this.element.setAttribute(key, value)
+    f.not(f.isNil(value)) && (
+      this.element.setAttribute(key, value)
+    )
     return this
   }
 

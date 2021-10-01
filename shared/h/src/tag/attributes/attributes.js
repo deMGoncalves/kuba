@@ -18,13 +18,8 @@ class Attributes {
   }
 
   paint () {
-    f.forEach(this.list, (attr) => {
-      const [key, value] = filter(attr.key, attr.value)
-
-      f.not(f.isNil(value)) && (
-        this.#target.setAttribute(key, value)
-      )
-    })
+    f.forEach(this.list, ({ key, value }) =>
+      this.#target.setAttribute(...filter(key, value)))
     return this
   }
 
