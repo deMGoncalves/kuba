@@ -34,7 +34,7 @@
     ]
   },
   "main": "src/index.js",
-  "name": "@kuba/playgrounnd",
+  "name": "@kuba/playground",
   "private": true,
   "scripts": {
     "build": "yarn run webpack --config webpack.config.js --mode production",
