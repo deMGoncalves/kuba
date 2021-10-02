@@ -4,7 +4,7 @@ import Show from '@kuba/show'
 import './cron'
 
 export default (lazy) =>
-  <Fragment slot={lazy.slot}>
+  <Fragment>
     <Show when={lazy.component}><lazy.component /></Show>
-    <Hide when={lazy.component}><div is='lazy-cron' channel={lazy.channel} /></Hide>
+    <Hide when={lazy.component}><div is='lazy-cron' data-channel={lazy.channel} /></Hide>
   </Fragment>
