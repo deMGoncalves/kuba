@@ -12,7 +12,6 @@ import '@kuba/value'
 import './routers'
 
 import '@kuba/boma'
-import '@kuba/cloudflare'
 import '@kuba/ga'
 import '@kuba/gtag'
 import '@kuba/gtm'
