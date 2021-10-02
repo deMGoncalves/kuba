@@ -6,6 +6,7 @@ import '@kuba/reset'
 import '@kuba/scrolllock'
 
 import '@kuba/formdata'
+import '@kuba/istruthy'
 import '@kuba/prevent'
 import '@kuba/stop'
 import '@kuba/value'
