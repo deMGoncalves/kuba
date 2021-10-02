@@ -3,29 +3,29 @@ import router from '@kuba/router'
 import getDepartament from './getDepartament'
 import render from './render'
 
-router('/', function home () {
-  const { default: Home } = require('@kuba/home')
+router('/', async function home () {
+  const { default: Home } = await import('@kuba/home' /* webpackChunkName: "home" */)
   render(<Home />)
 })
 
 router('/:departament', async function departament (params) {
-  const { default: Departament } = require('@kuba/departament')
+  const { default: Departament } = await import('@kuba/departament' /* webpackChunkName: "departament" */)
   const props = await getDepartament(params)
   render(<Departament { ...props } />)
 })
 
-router('/:departament/:category', function category () {
-  const { default: Category } = require('@kuba/category')
+router('/:departament/:category', async function category () {
+  const { default: Category } = await import('@kuba/category' /* webpackChunkName: "category" */)
   render(<Category />)
 })
 
-router('/departament/category/product', function product () {
-  const { default: Product } = require('@kuba/product')
+router('/departament/category/product', async function product () {
+  const { default: Product } = await import('@kuba/product' /* webpackChunkName: "product" */)
   render(<Product />)
 })
 
-router('/search', function search () {
-  const { default: Search } = require('@kuba/search')
+router('/search', async function search () {
+  const { default: Search } = await import('@kuba/search' /* webpackChunkName: "search" */)
   const params = {
     q: new URL(location.href).searchParams.get('q')
   }
@@ -33,7 +33,7 @@ router('/search', function search () {
   render(<Search {...params} />)
 })
 
-router('/not-found', function notFound () {
-  const { default: NotFound } = require('@kuba/notfound')
+router('/not-found', async function notFound () {
+  const { default: NotFound } = await import('@kuba/notfound' /* webpackChunkName: "notfound" */)
   render(<NotFound />)
 })
