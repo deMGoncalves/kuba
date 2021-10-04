@@ -5,7 +5,7 @@ export default (props) =>
     .from(props.className)
     .pipe(f.or(f.__, []))
     .pipe(f.concat([]))
-    .pipe(f.filter(f.__, f.truthy))
+    .pipe(f.filter(f.__, f.isTruthy))
     .pipe(f.flatten)
     .pipe(f.join(f.__, ' '))
     .done()
