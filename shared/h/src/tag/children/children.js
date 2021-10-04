@@ -23,8 +23,8 @@ class Children {
   }
 
   append (child) {
-    f.push(this.list, child)
     this.#parent.appendChild(paint(child))
+    f.push(this.list, child)
     return this
   }
 
@@ -34,8 +34,8 @@ class Children {
   }
 
   replace (current, child) {
-    f.replace(this.list, current, child)
     this.#parent.replaceChild(element(current), paint(child))
+    f.replace(this.list, current, child)
     return this
   }
 
@@ -45,8 +45,8 @@ class Children {
   }
 
   remove (current) {
-    f.remove(this.list, current)
     tag(current).remove()
+    f.remove(this.list, current)
     return this
   }
 
