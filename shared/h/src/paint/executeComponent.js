@@ -1,4 +1,5 @@
 import * as f from '@kuba/f'
+import Tag, { Fragment } from '@kuba/h/src/tag'
 
 export default function (componentRef, entity, children) {
   const tag = componentRef(entity, children)
@@ -10,7 +11,9 @@ export default function (componentRef, entity, children) {
     [f.magic('reflow')]: f.debounce(f.frame(reflow), 0)
   })
 
-  tag.connectEntity(entity)
+  f.some([Tag, Fragment], f.is(f.__, tag)) && (
+    tag.connectEntity(entity)
+  )
 
   return tag
 }
