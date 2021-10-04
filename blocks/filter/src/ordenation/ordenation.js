@@ -25,7 +25,7 @@ class Ordenation {
   }
 
   get selected () {
-    return f.truthy(this.#selected.value)
+    return f.isTruthy(this.#selected.value)
   }
 
   get value () {

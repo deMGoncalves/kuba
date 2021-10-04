@@ -25,7 +25,7 @@ class Region {
   }
 
   get selected () {
-    return f.truthy(this.#value.size)
+    return f.isTruthy(this.#value.size)
   }
 
   get value () {
