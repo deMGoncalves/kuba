@@ -180,6 +180,10 @@ class Tag {
     return this
   }
 
+  [f.magic('isEmpty')] () {
+    return f.F()
+  }
+
   static create (tagName, props, children) {
     return new Tag(tagName, props, children)
   }
