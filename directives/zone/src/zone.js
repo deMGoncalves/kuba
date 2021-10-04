@@ -1,16 +1,14 @@
 import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import onScreen from '@kuba/onscreen'
-import props from '@kuba/props'
 import component from './component'
 
 @paint(component)
-@props
 class Zone {
   #onView
 
   get element () {
-    return this[f.magic('tag')].element
+    return this[f.magic('tag')].children.list[0].element
   }
 
   get onView () {

@@ -1,8 +1,10 @@
-import h from '@kuba/h'
+import h, { Fragment } from '@kuba/h'
+import Hide from '@kuba/hide'
 import Show from '@kuba/show'
 import style from './style'
 
 export default (zone, children) =>
-  <div className={[style.zone, zone.className]} view={zone.onView} slot={zone.slot}>
+  <>
     <Show when={zone.onView}>{children}</Show>
-  </div>
+    <Hide when={zone.onView}><div className={style.zone} /></Hide>
+  </>
