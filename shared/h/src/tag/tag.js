@@ -2,6 +2,7 @@ import * as f from '@kuba/f'
 import Attributes from './attributes'
 import Children from './children'
 import ClassName from './className'
+import domParser from './domParser'
 import Events from './events'
 
 class Tag {
@@ -108,7 +109,10 @@ class Tag {
   }
 
   insertAdjacentElement (position, element) {
-    this.element.insertAdjacentElement(position, element)
+    f.forEach(
+      domParser(element),
+      (element) => this.element.insertAdjacentElement(position, element)
+    )
     return this
   }
 
