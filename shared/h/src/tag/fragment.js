@@ -97,6 +97,10 @@ class Fragment {
     return this
   }
 
+  [f.magic('isEmpty')] () {
+    return f.F()
+  }
+
   static execute (props, children) {
     return new Fragment(props, children)
   }
