@@ -8,7 +8,7 @@ class History {
   #values
 
   get has () {
-    return f.truthy(f.len(this.values))
+    return f.isTruthy(f.len(this.values))
   }
 
   get values () {
