@@ -14,6 +14,7 @@ const evalute = (value) =>
 const isEmpty = cond(
   [isNil, T],
   [is(Boolean), F],
+  [is(Date), F],
   [is(Number), F],
   [T, evalute]
 )
