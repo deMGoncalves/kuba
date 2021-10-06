@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import { color, blend } from '@start/polished'
+import { color, blend } from '@kuba/polished'
 import styled from '@kuba/styled'
 
 const button = new Proxy({}, {
