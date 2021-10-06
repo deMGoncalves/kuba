@@ -20,4 +20,3 @@ const weight = (props) =>
   )
 
 export default cleaner(weight, mapper)
-
