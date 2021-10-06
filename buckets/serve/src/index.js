@@ -6,7 +6,9 @@ const path = require('path')
 const httpProxyMiddleware = require('http-proxy-middleware')
 const app = express()
 
-dotenv.config()
+dotenv.config({
+  path: '../../.env'
+})
 
 app.disable('x-powered-by')
 
