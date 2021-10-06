@@ -1,16 +1,13 @@
 import '@kuba/tokens'
 import '@kuba/reset'
 
-import h, { render } from '@kuba/h'
-import Zone from '@kuba/zone'
-import Lazy from '@kuba/lazy'
+import h, { Fragment, render } from '@kuba/h'
+import text from '@kuba/text'
+
+const params = { year: '2-digit', month: '2-digit', day: '2-digit' }
+const date = new Intl.DateTimeFormat('en-US', params).format(new Date())
 
 render(
   document.body,
-  <Zone>
-    <p>1. teste</p>
-    <p>2. teste</p>
-    <Lazy require={() => import('./component')} />
-    <Lazy require={() => import('./component')} />
-  </Zone>
+  <Fragment>{date}</Fragment>
 )

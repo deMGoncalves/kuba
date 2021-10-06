@@ -4,5 +4,5 @@ import minify from './minify'
 
 export default (tagName) =>
   (strings, ...funcs) =>
-    (props, children) =>
+    (props, children = []) =>
       h(tagName, { style: minify(interpolate(strings, funcs, props)), ...props }, ...children)

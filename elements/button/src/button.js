@@ -2,7 +2,7 @@ import * as f from '@kuba/f'
 import { color, blend } from '@start/polished'
 import styled from '@kuba/styled'
 
-export default new Proxy({}, {
+const button = new Proxy({}, {
   get: (_, type) =>
     styled.button`
       align-items: center;
@@ -23,3 +23,9 @@ export default new Proxy({}, {
       user-select: none;
     `
 })
+
+f.assign(button, {
+  is: f.T
+})
+
+export default button

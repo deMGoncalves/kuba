@@ -1,11 +1,11 @@
 import skeleton from '@kuba/skeleton'
 import has from './has'
-import button from './button'
+import mapper from './mapper'
 
 export default new Proxy({}, {
   get: (_, type) =>
     (props, children) =>
       has(children)
-        ? button[type](props, children)
+        ? mapper(type)(props, children)
         : skeleton.button(props)
 })
