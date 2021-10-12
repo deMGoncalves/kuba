@@ -1,18 +1,13 @@
 import { paint } from '@kuba/h'
-import * as f from '@kuba/f'
-import * as settings from '@kuba/settings'
 import component from './component'
 
 @paint(component)
 class Product {
-  #id
-  #idDefaultImage
   #name
+  #thumbnails
 
-  get image () {
-    return f.and(this.#id, this.#idDefaultImage)
-      ? `${settings.api.url}/images/products/${this.#id}/${this.#idDefaultImage}`
-      : ''
+  get thumbnails () {
+    return this.#thumbnails ??= []
   }
 
   get name () {
@@ -20,9 +15,8 @@ class Product {
   }
 
   constructor (descriptor) {
-    this.#id = descriptor.id
-    this.#idDefaultImage = descriptor.id_default_image
     this.#name = descriptor.name
+    this.#thumbnails = descriptor.thumbnails
   }
 
   static create (descriptor) {

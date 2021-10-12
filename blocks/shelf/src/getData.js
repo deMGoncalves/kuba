@@ -1,5 +1,3 @@
-import * as settings from '@kuba/settings'
+import * as mock from '@kuba/mock'
 
-export default () =>
-  fetch(`${settings.api.url}/products?display=full`)
-    .then(response => response.json())
+export default mock.shelf
