@@ -1,4 +1,4 @@
 import { urlFor } from '@kuba/router'
 
 export default (category) =>
-  location.assign(urlFor('category', { departament: 'women', category: category.link_rewrite }))
+  location.assign(urlFor('category', { departament: 'departament', category: category.url }))

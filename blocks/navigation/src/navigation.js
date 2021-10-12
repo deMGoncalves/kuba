@@ -2,7 +2,7 @@ import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import props from '@kuba/props'
 import component from './component'
-import getCategories from './getCategories'
+import getData from './getData'
 
 @paint(component)
 @props
@@ -28,14 +28,15 @@ class Navigaiton {
   }
 
   @repaint
-  change (categories) {
-    this.#categories = categories
+  change (descriptor) {
+    this.#title = descriptor.title
+    this.#categories = descriptor.categories
     return this
   }
 
   @didMount
   async mount () {
-    this.change(await getCategories(this))
+    this.change(await getData(this))
     return this
   }
 }

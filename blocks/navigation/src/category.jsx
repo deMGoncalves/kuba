@@ -10,5 +10,5 @@ export default (category) =>
     <Show when={category.thumbnail}>
       <source srcSet={category.thumbnail} slot='sources' />
     </Show>
-    <text.Strong className={style.navigation__text} slot='caption' master darker xxxs regular>{category.name}</text.Strong>
+    <text.Strong className={style.navigation__text} slot='caption' master darker xxxs regular>{category.title}</text.Strong>
   </Figure>
