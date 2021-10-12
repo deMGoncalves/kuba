@@ -3,37 +3,37 @@ export default function () {
     darlings: [
       {
         text: 'In finibus',
-        url: 'in-finibus'
+        url: 'departament'
       },
       {
         text: 'Donec suscipit',
-        url: 'donec-suscipit'
+        url: 'departament'
       },
       {
         text: 'Aenean mollis',
-        url: 'aenean-mollis'
+        url: 'departament'
       }
     ],
     nav: [
       {
         text: 'Phasellus at',
-        url: 'phasellus-at'
+        url: 'departament'
       },
       {
         text: 'Etiam non',
-        url: 'etiam-non'
+        url: 'departament'
       },
       {
         text: 'Aenean ac',
-        url: 'aenean-ac'
+        url: 'departament'
       },
       {
         text: 'Ut at',
-        url: 'ut-at'
+        url: 'departament'
       },
       {
         text: 'Nulla molestie',
-        url: 'nulla-molestie'
+        url: 'departament'
       }
     ]
   })

@@ -9,42 +9,42 @@ export default function () {
       {
         thumbnail,
         title: 'Integer ultrices',
-        url: '/departament/category'
+        url: 'category'
       },
       {
         thumbnail,
         title: 'Praesent faucibus',
-        url: '/departament/category'
+        url: 'category'
       },
       {
         thumbnail,
         title: 'Cras id',
-        url: '/departament/category'
+        url: 'category'
       },
       {
         thumbnail,
         title: 'Vestibulum nibh',
-        url: '/departament/category'
+        url: 'category'
       },
       {
         thumbnail,
         title: 'Integer id',
-        url: '/departament/category'
+        url: 'category'
       },
       {
         thumbnail,
         title: 'Aenean vitae',
-        url: '/departament/category'
+        url: 'category'
       },
       {
         thumbnail,
         title: 'In non',
-        url: '/departament/category'
+        url: 'category'
       },
       {
         thumbnail,
         title: 'Sed pharetra',
-        url: '/departament/category'
+        url: 'category'
       }
     ]
   })
