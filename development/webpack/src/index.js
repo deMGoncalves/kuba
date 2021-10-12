@@ -16,6 +16,15 @@ dotenv.config({
 module.exports = (dirname) => ({
   context: path.resolve(dirname, 'src'),
   devtool: 'inline-source-map',
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+      serveIndex: true
+    },
+    historyApiFallback: true,
+    hot: true,
+    port: process.env.PORT
+  },
   entry: {
     app: './index.js'
   },
@@ -98,7 +107,7 @@ module.exports = (dirname) => ({
     publicPath: '/'
   },
   performance: {
-    hints: 'warning',
+    hints: process.env.HINTS,
     maxAssetSize: Number(process.env.MAX_ASSET_SIZE),
     maxEntrypointSize: Number(process.env.MAX_ENTRYPOINT_SIZE)
   }
