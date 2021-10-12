@@ -1,13 +1,17 @@
 import '@kuba/tokens'
 import '@kuba/reset'
 
-import h, { Fragment, render } from '@kuba/h'
-import text from '@kuba/text'
+import '@kuba/scrolllock'
 
-const params = { year: '2-digit', month: '2-digit', day: '2-digit' }
-const date = new Intl.DateTimeFormat('en-US', params).format(new Date())
+import '@kuba/formdata'
+import '@kuba/istruthy'
+import '@kuba/prevent'
+import '@kuba/stop'
+import '@kuba/value'
 
-render(
-  document.body,
-  <Fragment>{date}</Fragment>
-)
+import '@kuba/boma'
+import '@kuba/ga'
+import '@kuba/gtag'
+import '@kuba/gtm'
+import '@kuba/hotjar'
+import '@kuba/sw'
