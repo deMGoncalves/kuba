@@ -1,6 +1,5 @@
 import h from '@kuba/h'
 import router from '@kuba/router'
-import getDepartament from './getDepartament'
 import render from './render'
 
 router('/', async function home () {
@@ -8,10 +7,9 @@ router('/', async function home () {
   render(<Home />)
 })
 
-router('/:departament', async function departament (params) {
+router('/:departament', async function departament () {
   const { default: Departament } = await import('@kuba/departament' /* webpackChunkName: "departament" */)
-  const props = await getDepartament(params)
-  render(<Departament { ...props } />)
+  render(<Departament />)
 })
 
 router('/:departament/:category', async function category () {
