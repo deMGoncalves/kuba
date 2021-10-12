@@ -12,7 +12,6 @@
   "name": "kuba",
   "private": true,
   "scripts": {
-    "heroku-postbuild": "yarn workspace @kuba/ecomm build",
     "postinstall": "husky install",
     "test": "yarn workspaces run test"
   },
