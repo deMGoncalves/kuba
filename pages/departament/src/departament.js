@@ -1,6 +1,7 @@
 import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
+import * as settings from '@kuba/settings'
 import component from './component'
 import data from './data'
 
@@ -8,29 +9,12 @@ import data from './data'
 @jsonld(data)
 @markup
 class Departament {
-  #description
-  #id
-  #name
-
   get description () {
-    return new DOMParser()
-      .parseFromString(this.#description, 'text/html')
-      .body
-      .innerText
-  }
-
-  get id () {
-    return this.#id
+    return settings.app.description
   }
 
   get title () {
-    return this.#name
-  }
-
-  constructor (props) {
-    this.#description = props.description
-    this.#id = props.id
-    this.#name = props.name
+    return 'Departament'
   }
 }
 

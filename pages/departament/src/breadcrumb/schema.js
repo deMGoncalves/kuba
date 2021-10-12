@@ -8,7 +8,7 @@ export default {
     },
     {
       title: 'Departament',
-      url: urlFor('departament')
+      url: urlFor('departament', { departament: 'departament' })
     }
   ]
 }
