@@ -15,7 +15,7 @@ class Nav {
 
   @repaint
   change (response) {
-    this.#links = response.categories
+    this.#links = response.nav
     return this
   }
 
