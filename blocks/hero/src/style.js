@@ -15,6 +15,9 @@ export default styled.style`
   }
 
   .hero__figure {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-xs);
     position: relative;
   }
 
@@ -36,56 +39,41 @@ export default styled.style`
   }
 
   .hero__figcaption {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-xs);
-    margin: 0 auto;
-    padding-top: var(--spacing_inset-xs);
     width: 89%;
-  }
-
-  @media (min-width: 426px) {
-    .hero__figcaption {
-      width: 68%;
-    }
   }
 
   @media (min-width: 769px) {
     .hero__figcaption {
       align-items: flex-start;
       height: 100%;
-      justify-content: center;
+      justify-content: flex-end;
       left: 0;
-      padding: 0 var(--spacing_inset-lg);
+      padding: var(--spacing_inset-lg);
       position: absolute;
       top: 0;
+      width: 68%;
+    }
+  }
+
+  @media (min-width: 961px) {
+    .hero__figcaption {
       width: 42%;
     }
   }
 
   .hero__hgroup {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-quarck);
     width: 100%;
   }
 
-  @media (min-width: 769px) {
-    .hero__hgroup {
-      align-items: flex-start;
-    }
-  }
-
   .hero__text {
     line-height: var(--line-height-lg);
-    text-align: center;
-  }
-
-  @media (min-width: 769px) {
-    .hero__text {
-      text-align: left;
-    }
   }
 `
