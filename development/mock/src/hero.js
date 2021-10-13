@@ -12,6 +12,6 @@ export default function () {
       placeholderLG
     ],
     title: 'Como uma folha em branco',
-    url: '/departament'
+    url: 'https://github.com/deMGoncalves/kuba'
   })
 }
