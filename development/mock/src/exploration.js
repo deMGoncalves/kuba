@@ -11,26 +11,26 @@ export default function () {
 
   return Promise.resolve({
     title: 'In efficitur elementum odio',
-    departaments: [
+    shields: [
       {
-        title: 'Mauris arcu dolor',
-        thumbnails,
-        url: '/departament'
+        title: '100% Javascript',
+        description: 'Vestibulum egestas dolor urna, sollicitudin posuere turpis bibendum sed. Integer quis bibendum nibh. Integer ac eleifend leo. Sed.',
+        thumbnails
       },
       {
-        title: 'Cras ac commodo',
-        thumbnails,
-        url: '/departament'
+        title: 'Micro Front-end',
+        description: 'Pellentesque dignissim tortor lectus, sit amet imperdiet leo convallis pharetra. Integer venenatis mi odio, in dictum mauris mollis.',
+        thumbnails
       },
       {
-        title: 'Nullam a pulvinar',
-        thumbnails,
-        url: '/departament'
+        title: 'Yarn workspaces',
+        description: 'Vestibulum dapibus tortor magna, quis cursus nunc vestibulum nec. Nam in magna sagittis, eleifend ante nec, rhoncus libero.',
+        thumbnails
       },
       {
-        title: 'Interdum et',
-        thumbnails,
-        url: '/departament'
+        title: 'Web Workers',
+        description: 'Nam ac erat faucibus, venenatis quam imperdiet, commodo leo. Suspendisse sollicitudin quam at purus pellentesque, quis euismod risus.',
+        thumbnails
       }
     ]
   })
