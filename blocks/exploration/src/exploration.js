@@ -7,11 +7,11 @@ import getData from './getData'
 @paint(component)
 @props
 class Exploration {
-  #departaments
+  #shields
   #title
 
-  get departaments () {
-    return this.#departaments ??= f.repeat({}, 4)
+  get shields () {
+    return this.#shields ??= f.repeat({}, 4)
   }
 
   get title () {
@@ -20,7 +20,7 @@ class Exploration {
 
   @repaint
   change (descriptor) {
-    this.#departaments = descriptor.departaments
+    this.#shields = descriptor.shields
     this.#title = descriptor.title
     return this
   }
