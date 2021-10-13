@@ -42,7 +42,7 @@ export default styled.style`
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-xs);
+    gap: var(--spacing_inset-sm);
     width: 89%;
   }
 
@@ -69,7 +69,6 @@ export default styled.style`
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-quarck);
     width: 100%;
   }
 
