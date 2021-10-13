@@ -1,15 +1,14 @@
 import * as f from '@kuba/f'
-import { color, blend } from '@kuba/polished'
 import styled from '@kuba/styled'
 
 const button = new Proxy({}, {
   get: (_, type) =>
     styled.button`
       align-items: center;
-      background-color: ${(props) => color({ ...props, [f.toLower(type)]: f.T() })};
+      background-color: var(--color-${() => f.toLower(type)}-dark);
       border: none;
       border-radius: var(--border-radius-pill);
-      color: ${(props) => blend({ ...props, [f.toLower(type)]: f.T() })};
+      color: var(--color-master-lightest);
       cursor: pointer;
       display: inline-flex;
       font-family: var(--font-family-base);
