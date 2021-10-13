@@ -17,9 +17,8 @@ export default () =>
     </Fragment>
     <Fragment slot='warm'>
       <Lazy require={() => import('@kuba/workflow' /* webpackChunkName: "workflow" */)} />
-      <Lazy require={() => import('@kuba/inspiration' /* webpackChunkName: "inspiration" */)} />
     </Fragment>
     <Fragment slot='cold'>
-      <Lazy require={() => import('@kuba/shelf' /* webpackChunkName: "shelf" */)} />
+      <Lazy require={() => import('@kuba/inspiration' /* webpackChunkName: "inspiration" */)} />
     </Fragment>
   </Site>
