@@ -21,7 +21,7 @@ export default function () {
       },
       {
         title: 'Codacy',
-        description: 'Qualidade do código alto',
+        description: 'Qualidade do seu código alto',
         thumbnail
       }
     ]
