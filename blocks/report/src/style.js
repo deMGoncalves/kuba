@@ -1,7 +1,7 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  @media (min-width: 761px) {
+  @media (min-width: 769px) {
     .report {
       margin-top: 0;
     }
@@ -10,10 +10,16 @@ export default styled.style`
   .report > div {
     display: grid;
     gap: var(--spacing_inset-sm);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
-  @media (min-width: 761px) {
+  @media (min-width: 426px) {
+    .report > div {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 769px) {
     .report > div {
       grid-template-columns: repeat(4, 1fr);
     }
