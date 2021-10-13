@@ -49,7 +49,7 @@ class Hero {
   }
 
   redirect () {
-    location.assign(this.url)
+    window.open(this.url, '_blank')
     return this
   }
 }
