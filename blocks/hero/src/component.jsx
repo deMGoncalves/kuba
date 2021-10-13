@@ -22,7 +22,7 @@ export default (hero) =>
             <text.H1 className={style.hero__text} master darker sm medium>{hero.title}</text.H1>
             <text.P className={style.hero__text} master dark xxxs>{hero.description}</text.P>
           </hgroup>
-          <button.Primary className={style.hero__button} onClick:stop={() => hero.redirect()}>{hero.cta}</button.Primary>
+          <button.Master className={style.hero__button} onClick:stop={() => hero.redirect()}>{hero.cta}</button.Master>
         </figcaption>
       </figure>
     </Container>
