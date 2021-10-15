@@ -1,24 +1,21 @@
 import h, { Fragment } from '@kuba/h'
-import Exploration from '@kuba/exploration'
-import Hero from '@kuba/hero'
-import Lazy from '@kuba/lazy'
-import Report from '@kuba/report'
+import Cover from '@kuba/cover'
 import Sandbox from '@kuba/sandbox'
 import Site from '@kuba/site'
+import Splash from '@kuba/splash'
 import style from './style'
 
 export default () =>
   <Site className={style.home}>
     <Fragment slot='hot'>
-      <Hero className={style.home__hero} />
-      <Sandbox require={() => new Worker(new URL('@kuba/hero', import.meta.url /* WebpackChunckName: 'hero' */))} />
-      <Report className={style.home__report} />
-      <Exploration className={style.home__exploration} />
-    </Fragment>
-    <Fragment slot='warm'>
-      <Lazy require={() => import('@kuba/workflow' /* webpackChunkName: "workflow" */)} />
-    </Fragment>
-    <Fragment slot='cold'>
-      <Lazy require={() => import('@kuba/inspiration' /* webpackChunkName: "inspiration" */)} />
+      <Splash className={style.home__splash} />
+      <Cover className={style.home__cover} />
+
+      {/**
+       * TODO: Teste do projeto Sandbox, cada bloco de
+       * layout deve ser executado em seu Web Worker
+       */}
+      <Sandbox require={() => new Worker(new URL('@kuba/cover', import.meta.url /* WebpackChunckName: 'cover' */))} />
+
     </Fragment>
   </Site>
