@@ -5,6 +5,12 @@ export default styled.style`
     -webkit-appearance: none;
     appearance: none;
     box-sizing: border-box;
+    color: var(--color-master);
+    font-display: optional;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-default);
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -27,15 +33,5 @@ export default styled.style`
 
   *:focus {
     outline: 0;
-  }
-
-  body {
-    background-color: var(--color-master-lightest);
-    color: var(--color-master);
-    font-display: optional;
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-default);
   }
 `
