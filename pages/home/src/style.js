@@ -23,9 +23,7 @@ export default styled.style`
 
   @media (min-width: 769px) {
     .home__cover {
-      max-width: 466px;
-      min-width: 377px;
-      width: 32vw;
+      width: 466px;
     }
   }
 `
