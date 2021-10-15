@@ -7,10 +7,10 @@
 	"display" : "standalone",
 	"start_url" : "/?source=pwa",
 	"short_name" : "Kuba",
-	"theme_color" : "#fafafa",
+	"theme_color" : "#6d5cae",
   "description": "Kuba é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o produto",
   "orientation" : "portrait",
-	"background_color" : "#fafafa",
+	"background_color" : "#6d5cae",
 	"related_applications" : [],
 	"prefer_related_applications" : true,
 	"icons" : [
