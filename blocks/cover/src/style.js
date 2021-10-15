@@ -6,7 +6,7 @@ export default styled.style`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: var(--spacing_inset-sm);
+    padding: var(--spacing_inset-lg);
   }
 
   .cover__blockquote {
