@@ -1,5 +1,5 @@
 import h from '@kuba/h'
 import style from './style'
 
-export default () =>
-  <section className={style.cover} />
+export default (cover) =>
+  <section className={[style.cover, cover.className]} />
