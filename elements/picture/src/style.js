@@ -9,6 +9,10 @@ export default styled.style`
     width: 100%;
   }
 
+  .picture[circular] {
+    border-radius: var(--border-radius-circular);
+  }
+
   .picture__img {
     border-radius: inherit;
     height: 100%;

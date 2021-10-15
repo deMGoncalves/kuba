@@ -11,10 +11,6 @@ export default styled.style`
     border-radius: var(--border-radius-sm);
   }
 
-  .figure[circular] .figure__picture {
-    border-radius: var(--border-radius-circular);
-  }
-
   .figure__figcaption {
     align-items: center;
     display: flex;

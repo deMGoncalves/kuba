@@ -1,10 +1,10 @@
 export default {
-  author: 'Cleber de Moraes Gonçalves <cleber.engineer@gmail.com>',
-  description: 'Design e sofisticaçao em peças únicas feitas a mão. Sua casa nunca mais será a mesma. Dê um toque de sofisticação em sua casa com nossas cadeiras, sofás e acessórios',
+  author: 'deMGoncalves',
+  description: 'Como uma folha em branco, a liberdade de programar do jeito que faça sentido para o produto',
   language: 'pt-BR',
-  name: 'Kuba',
+  name: 'kuba',
   release: '1.0.0',
   themeColor: '#fafafa',
-  title: 'Kuba',
+  title: 'kuba',
   url: `${location.protocol}//${location.host}`
 }

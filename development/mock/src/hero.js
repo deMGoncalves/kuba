@@ -4,14 +4,14 @@ import placeholderLG from './assets/placeholder_1198x400.svg'
 
 export default function () {
   return Promise.resolve({
-    cta: 'Sed cursus',
-    description: 'Nulla id placerat sem. Vestibulum congue suscipit erat, eu tempor augue venenatis ut. Vestibulum magna ex, pulvinar eget quam et, rutrum sodales nisl. Curabitur finibus tristique.',
+    cta: 'Git Clone',
+    description: 'A liberdade de programar do jeito que faça sendo para o produto',
     thumbnails: [
       placeholderSM,
       placeholderMD,
       placeholderLG
     ],
-    title: 'Nunc eu dignissim leo. Donec.',
-    url: '/departament'
+    title: 'Como uma folha em branco',
+    url: 'https://github.com/deMGoncalves/kuba'
   })
 }

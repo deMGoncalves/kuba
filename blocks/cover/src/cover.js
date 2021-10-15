@@ -1,21 +1,22 @@
 import { paint } from '@kuba/h'
-import jsonld from '@kuba/jsonld'
 import props from '@kuba/props'
 import * as settings from '@kuba/settings'
 import component from './component'
-import data from './data'
 
 @paint(component)
-@jsonld(data)
 @props
-class Site {
+class Cover {
+  get author () {
+    return settings.app.author
+  }
+
   get name () {
     return settings.app.name
   }
 
-  get url () {
-    return settings.app.url
+  get description () {
+    return settings.app.description
   }
 }
 
-export default Site
+export default Cover

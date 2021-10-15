@@ -1,12 +1,13 @@
 import * as f from '@kuba/f'
+import { color } from '@kuba/polished'
 import styled from '@kuba/styled'
 
-const ghost = styled.button`
+const button = styled.button`
   align-items: center;
-  background-color: var(--color-master-dark);
-  border: none;
+  background-color: var(--color-master-lightest);
+  border: 1px solid ${color};
   border-radius: var(--border-radius-pill);
-  color: var(--color-master-lightest);
+  color: ${color};
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-base);
@@ -20,8 +21,8 @@ const ghost = styled.button`
   user-select: none;
 `
 
-f.assign(ghost, {
-  is: f.equal('Ghost')
+f.assign(button, {
+  is: f.has('ghost')
 })
 
-export default ghost
+export default button
