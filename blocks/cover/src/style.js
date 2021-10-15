@@ -16,4 +16,9 @@ export default styled.style`
     line-height: var(--line-height-sm);
     padding-right: var(--spacing_inset-lg);
   }
+
+  .cover__nav {
+    display: flex;
+    gap: var(--spacing_inset-xs);
+  }
 `
