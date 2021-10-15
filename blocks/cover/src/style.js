@@ -10,6 +10,10 @@ export default styled.style`
   }
 
   .cover__blockquote {
-    width: 89%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-xs);
+    line-height: var(--line-height-sm);
+    padding-right: var(--spacing_inset-lg);
   }
 `
