@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://kuba.engineer" target="_blank" rel="noopener">
-    <img width="128" src="https://user-images.githubusercontent.com/35740192/130795916-f2064dcf-8541-45c9-85c5-ca06df71990f.png" alt="kuba">
+    <img width="300" src="https://user-images.githubusercontent.com/35740192/137381340-e9cc5364-833b-4786-a514-d962b6fe313b.png" alt="kuba">
   </a>
 </p>
 
@@ -16,9 +16,6 @@
   </a>
   <a href="https://www.codacy.com/gh/deMGoncalves/kuba/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=deMGoncalves/ku" target="_blank">
     <img src="https://app.codacy.com/project/badge/Grade/8d2b7ccbd9d64b90bcccc515a1f61457" alt="Codacy" />
-  </a>
-  <a href="https://github.com/deMGoncalves/kuba" target="_blank">
-    <img src="https://heroku-badge.herokuapp.com/?app=projetokuba" alt="Heroku" />
   </a>
   <a href="http://standardjs.com" target="_blank">
     <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="JS Standard Style" />
@@ -37,8 +34,8 @@
   </a>
 </p>
 
-<p align="justify">
-  Ninguém precisa ter muitas habilidades para desenvolver um ecommerce que funcione, fazer direito é outra história. Desenvolver um ecommerce de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem.
+<p align="center">
+  Ninguém precisa ter muitas habilidades para desenvolver um produto que funcione, fazer direito é outra história. Desenvolver um produto de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem. Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um produto. As mudanças se tornam cirúrgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
 </p>
 
 <br />
@@ -46,23 +43,9 @@
 
 <p align="center">
   <strong>
-    <a href="https://github.com/deMGoncalves/kuba">Introdução</a> &nbsp;·&nbsp;
-    <a href="https://github.com/deMGoncalves/kuba">Contribuidores</a> &nbsp;·&nbsp;
-    <a href="https://github.com/deMGoncalves/kuba">Começe aqui</a> &nbsp;·&nbsp;
-    <a href="https://miro.com/app/board/o9J_l5BlhrE=/" target="_blank">Documentação</a> &nbsp;·&nbsp;
-    <a href="https://assemblyscript.org/examples.html">Performance</a>
+    <a href="https://github.com/deMGoncalves/kuba">Documentção</a> &nbsp;·&nbsp;
+    <a href="https://github.com/deMGoncalves/kuba">TodoMVC</a>
   </strong>
-</p>
-
-<br />
-<br />
-
-<p align="center">
-  <strong>Introdução</strong>
-</p>
-
-<p align="justify">
-  Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um ecommerce. As mudanças se tornam cirúrgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
 </p>
 
 <br />
@@ -82,30 +65,9 @@
 <br />
 
 <p align="center">
-  <strong>Começe aqui</strong>
+  <strong>Antes de começar</strong>
 </p>
 
-<p align="justify">
+<p align="center">
   Kuba é um projeto de referência (Amálgama) a ser seguido e não um Framework e/ou Library que condiciona e obriga a uma situação de implementação! Ele deve ser estudado, entendido e adaptado as realidades do seu ecommerce, de forma a garantir as condições de comportamento e estrutura.
 </p>
-
-<br />
-<br />
-
-<p align="center">
-  <a href="https://heroku.com/deploy">
-    <img src="https://www.herokucdn.com/deploy/button.png"alt="Heroku" />
-  </a>
-</p>
-
-<br />
-<br />
-
-<p align="center">
-  <strong>Performance</strong>
-</p>
-
-<p align="center">
-  <img src="https://github.com/deMGoncalves/kuba/blob/master/github-metrics.svg" />
-</p>
-
