@@ -43,8 +43,9 @@
 
 <p align="center">
   <strong>
-    <a href="https://github.com/deMGoncalves/kuba">Documentção</a> &nbsp;·&nbsp;
-    <a href="https://github.com/deMGoncalves/kuba">TodoMVC</a>
+    <a href="https://kuba.engineer">Site</a> &nbsp;·&nbsp;
+    <a href="https://docs.kuba.engineer">Documentção</a> &nbsp;·&nbsp;
+    <a href="https://todomvc.kuba.engineer">Todo MVC</a>
   </strong>
 </p>
 
