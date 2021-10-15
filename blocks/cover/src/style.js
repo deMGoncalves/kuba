@@ -5,4 +5,8 @@ export default styled.style`
     background-color: var(--color-primary);
     padding: var(--spacing_inset-sm);
   }
+
+  .cover__blockquote {
+    width: 80%;
+  }
 `
