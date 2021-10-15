@@ -5,8 +5,12 @@ export default styled.style`
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: var(--spacing_inset-lg);
     padding: var(--spacing_inset-lg);
+  }
+
+  .cover__h1 {
+    flex-grow: 1;
   }
 
   .cover__blockquote {
