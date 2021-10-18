@@ -1,6 +1,7 @@
 import h from '@kuba/h'
-import Link from '@kuba/link'
+import Repeat from '@kuba/repeat'
 import text from '@kuba/text'
+import Link from './link'
 import style from './style'
 
 export default (cover) =>
@@ -11,8 +12,6 @@ export default (cover) =>
       {cover.description}
     </text.Blockquote>
     <nav className={style.cover__nav}>
-      <Link className={style.cover__link} href='//github.com/deMGoncalves/kuba' target='_blank' master lightest xxs medium>Github</Link>
-      <Link className={style.cover__link} href='//docs.kuba.engineer' target='_blank' master lightest xxs medium>Documentação</Link>
-      <Link className={style.cover__link} href='//todomvc.kuba.engineer' target='_blank' master lightest xxs medium>Todo MVC</Link>
+      <Repeat iterator={cover.links} component={Link} />
     </nav>
   </section>
