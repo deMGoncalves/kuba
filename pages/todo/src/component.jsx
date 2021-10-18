@@ -4,8 +4,8 @@ import Site from '@kuba/site'
 import style from './style'
 
 export default () =>
-  <Site className={style.home}>
+  <Site className={style.todo}>
     <Fragment slot='hot'>
-      <Header className={style.home__title} />
+      <Header className={style.todo__title} />
     </Fragment>
   </Site>
