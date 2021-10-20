@@ -16,6 +16,5 @@ export default () =>
        * layout deve ser executado em seu Web Worker
        */}
       <Sandbox require={() => new Worker(new URL('@kuba/cover', import.meta.url /* WebpackChunckName: 'cover' */))} />
-
     </Fragment>
   </Site>
