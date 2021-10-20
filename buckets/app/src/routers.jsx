@@ -3,6 +3,6 @@ import router from '@kuba/router'
 import render from './render'
 
 router('/', async function home () {
-  const { default: Todo } = await import('@kuba/todo' /* webpackChunkName: "todo" */)
-  render(<Todo />)
+  const { default: Home } = await import('@kuba/home' /* webpackChunkName: "home" */)
+  render(<Home />)
 })
