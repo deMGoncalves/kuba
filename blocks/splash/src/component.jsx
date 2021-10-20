@@ -1,5 +1,5 @@
 import h from '@kuba/h'
 import style from './style'
 
-export default () =>
-  <section className={style.splash} />
+export default (props) =>
+  <section className={[style.splash, props.className]} />
