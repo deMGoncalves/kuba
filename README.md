@@ -44,8 +44,7 @@
 <p align="center">
   <strong>
     <a href="https://kuba.engineer">Site</a> &nbsp;·&nbsp;
-    <a href="https://docs.kuba.engineer">Documentção</a> &nbsp;·&nbsp;
-    <a href="https://todomvc.kuba.engineer">Todo MVC</a>
+    <a href="https://docs.kuba.engineer">Documentção</a>
   </strong>
 </p>
 
