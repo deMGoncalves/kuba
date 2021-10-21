@@ -1,10 +1,10 @@
 ## [download](#)
 
-A action download permite realizar o download de qualquer tipo de arquivo a partir de uma url
+O download baixa qualquer tipo de arquivo a partir de uma url
 
 ### [import](#)
 
-```javascript
+```js
 import download from '@kuba/download'
 ```
 
@@ -12,16 +12,11 @@ import download from '@kuba/download'
 
 Passe a url do arquivo que deseja baixar pela action
 
-```javascript
-download(url)
+```js
+download(url, name)
 ```
 
 #### Parâmetros:
 
 - **url**: url do arquivo que deseja baixar
-
-### [exemplos](#)
-
-
-<!-- - [](#) -->
-
+- **name**: novo nome que sera dado ao arquvio (Não obrigatório)
