@@ -19,4 +19,4 @@ download(url, name)
 #### Parâmetros:
 
 - **url**: url do arquivo que deseja baixar
-- **name**: novo nome que sera dado ao arquvio (Não obrigatório)
+- **name**: (Não obrigatório) novo nome que sera dado ao arquvio
