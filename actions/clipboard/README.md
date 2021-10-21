@@ -1,27 +1,21 @@
-## [download](#)
+## [clipboard](#)
 
-A action download permite realizar o download de qualquer tipo de arquivo a partir de uma url
+A action clipboard permite permite copiar conteudo para area de transferencia
 
 ### [import](#)
 
-```javascript
-import download from '@kuba/download'
+```js
+import clipboard from '@kuba/clipboard'
 ```
 
 ### [uso](#)
 
-Passe a url do arquivo que deseja baixar pela action
+Passe o texto que deve ser incluido na area de transferencia
 
-```javascript
-download(url)
+```js
+clipboard('hello!')
 ```
 
 #### Parâmetros:
 
-- **url**: url do arquivo que deseja baixar
-
-### [exemplos](#)
-
-
-<!-- - [](#) -->
-
+- **text**: texto que sera copiado para area de transfencia
