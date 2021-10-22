@@ -10,7 +10,10 @@
   "private": true,
   "scripts": {
     "postinstall": "husky install",
-    "test": "yarn workspaces run test"
+    "formatter": "yarn workspace @kuba/scripts start formatter",
+    "generate": "yarn workspace @kuba/scripts start",
+    "serve": "yarn workspace @kuba/scripts start serve",
+    "test": "yarn workspace @kuba/scripts start test"
   },
   "version": "1.0.0",
   "workspaces": {
