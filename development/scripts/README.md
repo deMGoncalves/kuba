@@ -1,6 +1,6 @@
 ## [Scripts](#)
 
-O Scripts é uma ferramenta de interface de linha de comando que você usa para inicializar, desenvolver, criar scaffold e manter aplicativos Start diretamente de um shell de comando.
+O Scripts é uma ferramenta de interface de linha de comando que você usa para inicializar, desenvolver, criar scaffold.
 
 ### [generate package](#)
 
