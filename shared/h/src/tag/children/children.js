@@ -28,6 +28,11 @@ class Children {
     return this
   }
 
+  drop () {
+    f.forEach(this.list, child => this.remove(child))
+    return this
+  }
+
   paint () {
     this.#parent.append(...f.map(this.list, paint))
     return this
