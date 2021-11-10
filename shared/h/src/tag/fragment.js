@@ -57,6 +57,12 @@ class Fragment {
     return this
   }
 
+  didUnmout () {
+    f.idle(() =>
+      this.#entity?.[f.magic('didUnmount')]?.())()
+    return this
+  }
+
   didUpdate () {
     f.idle(() =>
       this.#entity?.[f.magic('didUpdate')]?.())()
@@ -82,6 +88,13 @@ class Fragment {
     return this
   }
 
+  remove () {
+    this.willUnmount()
+    this.children.drop()
+    this.didUnmount()
+    return this
+  }
+
   replaceChild (current, child) {
     current.parentNode.replaceChild(child, current)
     return this
@@ -89,6 +102,11 @@ class Fragment {
 
   willMount () {
     this.#entity?.[f.magic('willMount')]?.()
+    return this
+  }
+
+  willUnmount () {
+    this.#entity?.[f.magic('willUnmount')]?.()
     return this
   }
 
