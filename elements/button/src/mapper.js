@@ -3,6 +3,6 @@ import button from './button'
 import ghost from './ghost'
 
 export default f.cond(
-  [ghost.is, ghost],
-  [button.is, button]
+  [ghost.is, f.always(ghost)],
+  [button.is, f.always(button)]
 )
