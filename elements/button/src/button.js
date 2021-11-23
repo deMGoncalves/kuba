@@ -13,6 +13,7 @@ const button = styled.button`
   font-family: var(--font-family-base);
   font-size: var(--font-size-xxs);
   font-weight: ${weight};
+  gap: var(--spacing_inset-nano);
   justify-content: center;
   letter-spacing: 0.618px;
   line-height: var(--line-height-default);
