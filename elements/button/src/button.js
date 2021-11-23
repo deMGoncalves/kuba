@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import { color, blend } from '@kuba/polished'
+import { blend, color, weight } from '@kuba/polished'
 import styled from '@kuba/styled'
 
 const button = styled.button`
@@ -11,13 +11,12 @@ const button = styled.button`
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-base);
-  font-size: var(--font-size-xxxs);
-  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xxs);
+  font-weight: ${weight};
   justify-content: center;
   letter-spacing: 0.618px;
-  line-height: var(--line-height-sm);
+  line-height: var(--line-height-default);
   padding: var(--spacing_inset-nano) var(--spacing_inset-sm);
-  text-decoration: none;
   user-select: none;
 `
 
