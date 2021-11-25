@@ -7,6 +7,12 @@ export default styled.style`
     gap: var(--spacing_inset-nano);
   }
 
+  .input__text {
+    align-items: center;
+    display: flex;
+    gap: var(--spacing_inset-nano);
+  }
+
   .input__text[oncolor] {
     color: var(--color-master-lighter) !important;
   }
