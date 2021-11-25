@@ -9,7 +9,7 @@ class Mask extends HTMLInputElement {
   }
 
   connectedCallback () {
-    this.#imask = new IMask(this, mapper(this.dataset.type))
+    this.#imask = new IMask(this, mapper(this.getAttribute('type')))
     return this
   }
 }

@@ -8,11 +8,7 @@ export default {
       }
     }
   },
-  number: {
-    mask: Number,
-    thousandsSeparator: '.'
-  },
-  text: {
+  stub: {
     mask: String
   }
 }
