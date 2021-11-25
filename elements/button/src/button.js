@@ -1,8 +1,7 @@
-import * as f from '@kuba/f'
 import { blend, color, weight } from '@kuba/polished'
 import styled from '@kuba/styled'
 
-const button = styled.button`
+export default styled.button`
   align-items: center;
   background-color: ${color};
   border: none;
@@ -20,9 +19,3 @@ const button = styled.button`
   padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
   user-select: none;
 `
-
-f.assign(button, {
-  is: f.T
-})
-
-export default button
