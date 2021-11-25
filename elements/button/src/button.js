@@ -6,7 +6,7 @@ const button = styled.button`
   align-items: center;
   background-color: ${color};
   border: none;
-  border-radius: var(--border-radius-pill);
+  border-radius: var(--border-radius-sm);
   color: ${blend};
   cursor: pointer;
   display: inline-flex;
@@ -17,7 +17,7 @@ const button = styled.button`
   justify-content: center;
   letter-spacing: 0.618px;
   line-height: var(--line-height-default);
-  padding: var(--spacing_inset-nano) var(--spacing_inset-sm);
+  padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
   user-select: none;
 `
 
