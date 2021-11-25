@@ -4,10 +4,10 @@ import style from './style'
 
 export default (props, children) =>
   <figure className={[style.figure, props.className]}>
-    <Picture className={style.figure__picture} alt={props.alt} circular={props.circular}>
+    <Picture alt={props.alt} circular:isTruthy={props.circular}>
       {children.sources}
     </Picture>
-    <figcaption className={style.figure__figcaption}>
+    <figcaption>
       {children.caption}
     </figcaption>
   </figure>
