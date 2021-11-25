@@ -3,6 +3,8 @@ import '@kuba/reset'
 
 import '@kuba/scrolllock'
 
+import '@kuba/mask'
+
 import '@kuba/formdata'
 import '@kuba/istruthy'
 import '@kuba/prevent'
