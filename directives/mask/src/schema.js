@@ -1,15 +1,16 @@
 export default {
   money: {
-    mask: '$ num',
+    mask: '$ n',
     blocks: {
-      num: {
+      n: {
         mask: Number,
         thousandsSeparator: '.'
       }
     }
   },
   number: {
-    mask: Number
+    mask: Number,
+    thousandsSeparator: '.'
   },
   text: {
     mask: String
