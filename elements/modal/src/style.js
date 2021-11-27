@@ -32,6 +32,7 @@ export default styled.style`
 
   .modal__overlayer {
     align-items: center;
+    background-color: rgba(0, 0, 0, var(--opacity-level-semitransparent));
     display: flex;
     height: 100vh;
     justify-content: center;
