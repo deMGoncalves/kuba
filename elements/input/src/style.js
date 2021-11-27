@@ -22,7 +22,7 @@ export default styled.style`
     appearance: none;
     border: var(--border-width-thin) solid var(--color-master-dark);
     border-radius: var(--border-radius-sm);
-    color: var(--color-master);
+    color: var(--color-master-dark);
     font-weight: var(--font-weight-regular);
     height: 48px;
     padding: 0 var(--spacing_inset-xs);
