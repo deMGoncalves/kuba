@@ -49,7 +49,7 @@ export default styled.style`
     z-index: 1;
   }
 
-  .modal__overlayer[opened=true] {
+  .modal__overlayer[opened] {
     opacity: 1;
     transform: scale(1);
     visibility: visible;
