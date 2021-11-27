@@ -23,7 +23,7 @@ export default styled.style`
     background-color: transparent;
     border: var(--border-width-thin) solid var(--color-master-darkest);
     border-radius: var(--border-radius-sm);
-    color: var(--color-master-dark);
+    color: var(--color-master-darker);
     font-weight: var(--font-weight-regular);
     height: 48px;
     padding: 0 var(--spacing_inset-xs);
