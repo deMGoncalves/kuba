@@ -4,7 +4,7 @@ export default styled.style`
   .modal {
     background-color: var(--color-master-lightest);
     border-radius: var(--border-radius-sm);
-    box-shadow: 0 10px 37px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-level-1) rgba(0, 0, 0, var(--opacity-level-light));
     content-visibility: auto;
     height: auto;
     -ms-overflow-style: none;
