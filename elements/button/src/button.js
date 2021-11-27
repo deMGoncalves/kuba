@@ -13,9 +13,10 @@ export default styled.button`
   font-size: var(--font-size-xxs);
   font-weight: ${weight};
   gap: var(--spacing_inset-nano);
+  height: 48px;
   justify-content: center;
   letter-spacing: 0.618px;
   line-height: var(--line-height-xl);
-  padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
+  padding: 0 var(--spacing_inset-xs);
   user-select: none;
 `
