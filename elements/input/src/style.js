@@ -20,6 +20,7 @@ export default styled.style`
   .input {
     -webkit-appearance: none;
     appearance: none;
+    background-color: transparent;
     border: var(--border-width-thin) solid var(--color-master-dark);
     border-radius: var(--border-radius-sm);
     color: var(--color-master-dark);
@@ -29,7 +30,6 @@ export default styled.style`
   }
 
   .input[oncolor] {
-    background-color: transparent;
     border-color: var(--color-master-lightest);
     color: var(--color-master-lighter);
   }
