@@ -21,7 +21,7 @@ export default styled.style`
     -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
-    border: var(--border-width-thin) solid var(--color-master-dark);
+    border: var(--border-width-thin) solid var(--color-master-darkest);
     border-radius: var(--border-radius-sm);
     color: var(--color-master-dark);
     font-weight: var(--font-weight-regular);
