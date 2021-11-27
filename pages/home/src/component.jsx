@@ -3,11 +3,11 @@ import button from '@kuba/button'
 import Container from '@kuba/container'
 import Form from '@kuba/form'
 import input from '@kuba/input'
-import Story from '@kuba/story'
+import Modal from '@kuba/modal'
 
 export default () =>
   <Container>
-    <Story>
+    <Modal opened={true}>
       <Form onSubmit={console.log}>
         <input.Email name='email'>
           <Fragment slot='label'>Email</Fragment>
@@ -17,5 +17,5 @@ export default () =>
         </input.Password>
         <button.Primary dark medium>Log in</button.Primary>
       </Form>
-    </Story>
+    </Modal>
   </Container>
