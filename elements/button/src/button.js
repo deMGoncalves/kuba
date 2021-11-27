@@ -10,7 +10,7 @@ export default styled.button`
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-base);
-  font-size: var(--font-size-xxs);
+  font-size: var(--font-size-xs);
   font-weight: ${weight};
   gap: var(--spacing_inset-nano);
   height: 48px;
