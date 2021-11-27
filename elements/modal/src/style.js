@@ -3,6 +3,7 @@ import styled from '@kuba/styled'
 export default styled.style`
   .modal {
     background-color: var(--color-master-lightest);
+    border-radius: var(--border-radius-sm);
     box-shadow: 0 10px 37px 0 rgba(0, 0, 0, 0.15);
     content-visibility: auto;
     height: auto;
