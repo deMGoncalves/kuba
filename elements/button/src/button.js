@@ -15,7 +15,7 @@ export default styled.button`
   gap: var(--spacing_inset-nano);
   justify-content: center;
   letter-spacing: 0.618px;
-  line-height: var(--line-height-default);
+  line-height: var(--line-height-xl);
   padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
   user-select: none;
 `
