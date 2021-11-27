@@ -24,7 +24,7 @@ export default styled.style`
     border-radius: var(--border-radius-sm);
     color: var(--color-master);
     height: 48px;
-    padding: 0 var(--spacing_inset-nano);
+    padding: 0 var(--spacing_inset-xs);
   }
 
   .input[oncolor] {
