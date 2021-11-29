@@ -2,7 +2,7 @@
   "categories": ["web application"],
 	"dir" : "ltr",
 	"lang" : "Portuguese",
-  "name": "kuba engineer",
+  "name": "kuba",
 	"scope" : "/",
 	"display" : "standalone",
 	"start_url" : "/?source=pwa",
