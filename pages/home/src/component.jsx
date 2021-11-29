@@ -4,8 +4,8 @@ import Logo from '@kuba/logo'
 import Story from '@kuba/story'
 
 export default () =>
-  <Container>
-    <Story>
+  <Story>
+    <Container>
       <Logo />
-    </Story>
-  </Container>
+    </Container>
+  </Story>
