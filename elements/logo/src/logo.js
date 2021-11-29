@@ -4,14 +4,14 @@ import props from '@kuba/props'
 import * as settings from '@kuba/settings'
 import component from './component'
 import data from './data'
-import Ghost from './ghost.svg'
-import Primary from './primary.svg'
+import master from './kuba.svg'
+import onColor from './kuba_onColor.svg'
 
 @paint(component)
 @jsonld(data)
 @props
 class Logo {
-  #ghost
+  #onColor
 
   get href () {
     return settings.app.url
@@ -22,11 +22,11 @@ class Logo {
   }
 
   get url () {
-    return this.#ghost ? Ghost : Primary
+    return this.#onColor ? onColor : master
   }
 
   constructor (props) {
-    this.#ghost = props.ghost
+    this.#onColor = props.onColor
   }
 
   redirect () {
