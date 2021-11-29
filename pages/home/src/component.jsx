@@ -1,11 +1,5 @@
 import h, { Fragment } from '@kuba/h'
-import Container from '@kuba/container'
-import Logo from '@kuba/logo'
-import Story from '@kuba/story'
+import Site from '@kuba/site'
 
 export default () =>
-  <Story>
-    <Container>
-      <Logo />
-    </Container>
-  </Story>
+  <Site />
