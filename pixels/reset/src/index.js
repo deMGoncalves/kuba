@@ -34,4 +34,8 @@ export default styled.style`
   *:focus {
     outline: 0;
   }
+
+  body {
+    background-color: var(--color-master-lightest);
+  }
 `
