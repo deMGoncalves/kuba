@@ -3,7 +3,7 @@ import styled from '@kuba/styled'
 
 export default styled.span`
   background-color: var(--color-master-light);
-  border-radius: var(--border-radius-pill);
-  height: 30px;
+  border-radius: var(--border-radius-sm);
+  height: 48px;
   width: ${() => f.random(89, 178)}px;
 `
