@@ -5,6 +5,6 @@ export default {
   name: 'kuba',
   release: '1.0.0',
   themeColor: '#fafafa',
-  title: 'kuba enginner',
+  title: 'kuba',
   url: `${location.protocol}//${location.host}`
 }
