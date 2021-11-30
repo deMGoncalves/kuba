@@ -9,5 +9,6 @@ export default styled.style`
     align-items: center;
     display: flex;
     height: 88px;
+    justify-content: space-between;
   }
 `
