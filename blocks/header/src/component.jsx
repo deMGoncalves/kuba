@@ -5,7 +5,7 @@ import style from './style'
 
 export default (props) =>
   <header className={[style.header, props.className]}>
-    <container.Nav className={style.header__container}>
+    <container.Div className={style.header__container}>
       <Logo />
-    </container.Nav>
+    </container.Div>
   </header>
