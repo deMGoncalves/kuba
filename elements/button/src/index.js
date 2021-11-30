@@ -1,7 +1,7 @@
 import skeleton from '@kuba/skeleton'
 import button from './button'
-import merge from './merge'
 import has from './has'
+import merge from './merge'
 
 export default new Proxy({}, {
   get: (_, type) =>
