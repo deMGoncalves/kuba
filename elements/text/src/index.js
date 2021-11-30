@@ -3,9 +3,9 @@ import has from './has'
 import text from './text'
 
 export default new Proxy({}, {
-  get: (_, tagName) =>
+  get: (_, tag) =>
     (props, children) =>
       has(children)
-        ? text[tagName](props, children)
+        ? text[tag](props, children)
         : skeleton.text(props)
 })
