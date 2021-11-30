@@ -1,8 +1,11 @@
 import * as f from '@kuba/f'
 import { blend, color, weight } from '@kuba/polished'
+import skeleton from '@kuba/skeleton'
 import styled from '@kuba/styled'
+import has from './has'
+import merge from './merge'
 
-const button = styled.button`
+const component = styled.button`
   align-items: center;
   background-color: ${color};
   border: none;
@@ -21,6 +24,12 @@ const button = styled.button`
   padding: 0 var(--spacing_inset-sm);
   user-select: none;
 `
+
+const button = (type) =>
+  (props, children) =>
+    has(children)
+      ? component(merge(props, type), children)
+      : skeleton.button(props)
 
 f.assign(button, {
   is: f.T

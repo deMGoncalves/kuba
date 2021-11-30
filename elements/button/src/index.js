@@ -1,12 +1,11 @@
-import skeleton from '@kuba/skeleton'
-import has from './has'
-import mapper from './mapper'
-import merge from './merge'
+import * as f from '@kuba/f'
+import button from './button'
+import icon from './icon'
 
 export default new Proxy({}, {
   get: (_, type) =>
-    (props, children) =>
-      has(children)
-        ? mapper(type)(merge(props, type), children)
-        : skeleton.button(props)
+    f.cond(
+      [icon.is, icon],
+      [button.is, button]
+    )(type)
 })

@@ -1,7 +1,8 @@
 import * as f from '@kuba/f'
 import styled from '@kuba/styled'
+import icon from '@kuba/icon'
 
-const button = styled.button`
+const component = styled.button`
   align-items: center;
   background-color: transparent;
   border: none;
@@ -14,8 +15,15 @@ const button = styled.button`
   width: 48px;
 `
 
+const button = () =>
+  new Proxy({}, {
+    get: (_, name) =>
+      (props) =>
+        component({ className: props.className }, [icon[name]({ ...props, className: undefined })])
+  })
+
 f.assign(button, {
-  is: f.equal('Icon')
+  is: f.equal('icon')
 })
 
 export default button
