@@ -38,9 +38,9 @@ export default styled.style`
     gap: var(--spacing_inset-xs);
     height: 48px;
     justify-content: space-between;
-    max-width: 473px;
+    max-width: 489px;
     overflow: hidden;
-    padding-left: var(--spacing_inset-xs);
+    padding-left: var(--spacing_inset-sm);
     position: relative;
     white-space: nowrap;
   }
