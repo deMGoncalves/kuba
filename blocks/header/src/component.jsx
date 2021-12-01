@@ -13,11 +13,11 @@ export default (header) =>
     <container.Div className={style.header__container}>
       <Logo />
       <nav className={style.header__nav} opened:isTruthy={header.opened}>
-        <link.Master href={urlFor('about')} darker medium xxs>sobre</link.Master>
-        <link.Master href={urlFor('introduction')} darker medium xxs>introducao</link.Master>
-        <link.Master href={urlFor('designSystem')} darker medium xxs>design system</link.Master>
-        <link.Master href={urlFor('components')} darker medium xxs>componentes</link.Master>
-        <link.Master href={urlFor('arquiteture')} darker medium xxs>arquitetura</link.Master>
+        <link.Master className={style.header__link} href={urlFor('about')} darker medium>sobre</link.Master>
+        <link.Master className={style.header__link} href={urlFor('introduction')} darker medium>introducao</link.Master>
+        <link.Master className={style.header__link} href={urlFor('designSystem')} darker medium>design system</link.Master>
+        <link.Master className={style.header__link} href={urlFor('components')} darker medium>componentes</link.Master>
+        <link.Master className={style.header__link} href={urlFor('arquiteture')} darker medium>arquitetura</link.Master>
       </nav>
       <Hide when={header.opened}>
         <button.icon.Menu className={style.header__button} onClick={() => header.open()} />

@@ -46,6 +46,16 @@ export default styled.style`
     }
   }
 
+  .header__link {
+    font-size: var(--font-size-xs) !important;
+  }
+
+  @media (min-width: 648px) {
+    .header__link {
+      font-size: var(--font-size-xxs) !important;
+    }
+  }
+
   @media (min-width: 648px) {
     .header__button {
       display: none !important;
