@@ -25,6 +25,7 @@ export default styled.style`
     position: absolute;
     top: 89px;
     width: 100%;
+    z-index: 1;
   }
 
   .header__nav[opened] {
