@@ -19,7 +19,7 @@ const button = () =>
   new Proxy({}, {
     get: (_, name) =>
       (props) =>
-        component({ className: props.className }, [icon[name]({ ...props, className: undefined })])
+        component({ className: props.className, onClick: props.onClick }, [icon[name]({ ...props, className: undefined })])
   })
 
 f.assign(button, {
