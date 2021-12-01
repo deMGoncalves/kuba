@@ -1,3 +1,5 @@
+export { default as Clone } from './assets/clone.svg'
+export { default as CloneOnColor } from './assets/clone_onColor.svg'
 export { default as Close } from './assets/close.svg'
 export { default as CloseOnColor } from './assets/close_onColor.svg'
 export { default as Menu } from './assets/menu.svg'
