@@ -2,13 +2,13 @@ import { color, weight } from '@kuba/polished'
 import styled from '@kuba/styled'
 
 export default styled.button`
-  --tag-color: ${color};
+  --color: ${color};
 
   align-items: center;
   background-color: transparent;
-  border: var(--border-width-thin) solid var(--tag-color);
+  border: var(--border-width-thin) solid var(--color);
   border-radius: var(--border-radius-pill);
-  color: var(--tag-color);
+  color: var(--color);
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-base);
