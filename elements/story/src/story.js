@@ -4,5 +4,5 @@ import style from './style'
 export default new Proxy({}, {
   get: (_, tag) =>
     (props, children) =>
-      h(tag, { className: [style.story, props.className], slot: props.slot }, ...children)
+      h(tag, { className: [style.story, props.className] }, ...children)
 })
