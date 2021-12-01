@@ -8,6 +8,28 @@ export default styled.style`
     margin: var(--spacing-giant) 0;
   }
 
+  .hero__text {
+    font-size: var(--font-size-xxxs) !important;
+  }
+
+  @media (min-width: 400px) {
+    .hero__text {
+      font-size: var(--font-size-xxs) !important;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .hero__text {
+      font-size: var(--font-size-xs) !important;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .hero__text {
+      font-size: var(--font-size-md) !important;
+    }
+  }
+
   .hero__div {
     align-items: center;
     border: var(--border-width-hairline) solid var(--color-master-darker);

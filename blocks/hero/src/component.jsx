@@ -9,8 +9,13 @@ export default (hero) =>
   <Fragment slot={hero.slot}>
     <story.Section className={style.hero__story}>
       <container.HGroup>
-        <text.H1 master darker lg medium>como uma folha em branco</text.H1>
-        <text.H2 master dark xs>a liberdade de programar do jeito que faca sentido para o produto</text.H2>
+        <text.H1 className={style.hero__text} master dark mono medium>
+          /**<br />
+          &nbsp;* <text.Strong className={style.hero__text} master darkest mono bold>TODO</text.Strong>: como uma folha em branco,<br />
+          &nbsp;* a liberdade de programar do jeito que<br />
+          &nbsp;* faca sentido para o produto<br />
+          &nbsp;*/
+      </text.H1>
       </container.HGroup>
       <container.Div>
         <div className={style.hero__div}>
