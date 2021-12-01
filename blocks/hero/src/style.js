@@ -5,7 +5,19 @@ export default styled.style`
     display: inline-flex;
     flex-direction: column;
     gap: var(--spacing_inset-lg);
-    margin: var(--spacing-giant) 0;
+    margin: var(--spacing-xxxl) 0;
+  }
+
+  @media (min-width: 769px) {
+    .hero__story {
+      margin: var(--spacing-huge) 0;
+    }
+  }
+
+  @media (min-width: 961px) {
+    .hero__story {
+      margin: var(--spacing-giant) 0;
+    }
   }
 
   .hero__text {
