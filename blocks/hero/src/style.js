@@ -38,16 +38,21 @@ export default styled.style`
     gap: var(--spacing_inset-xs);
     height: 48px;
     justify-content: space-between;
+    max-width: 473px;
+    overflow: hidden;
     padding-left: var(--spacing_inset-xs);
-    width: 338px;
+    position: relative;
+    white-space: nowrap;
   }
 
   .hero__button {
-    background-color: transparent;
+    background-color: var(--color-master-lightest);
     border: none;
     border-left: var(--border-width-hairline) solid var(--color-master-darker);
     cursor: pointer;
     height: 46px;
+    position: absolute;
+    right: 0;
     width: 48px;
   }
 `

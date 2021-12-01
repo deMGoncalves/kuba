@@ -19,7 +19,7 @@ export default (hero) =>
       </container.HGroup>
       <container.Div>
         <div className={style.hero__div}>
-          <text.P master dark xxxs>https://github.com/deMGoncalves/kuba.git</text.P>
+          <text.P master dark xxxs mono>git clone https://github.com/deMGoncalves/kuba.git</text.P>
           <button className={style.hero__button}>
             <icon.Clone />
           </button>
