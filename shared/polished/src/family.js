@@ -3,7 +3,8 @@ import cleaner from './cleaner'
 
 const mapper = [
   'highlight',
-  'base'
+  'base',
+  'mono'
 ]
 
 const weight = (props) =>
