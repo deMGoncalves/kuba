@@ -2,9 +2,11 @@ import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import props from '@kuba/props'
 import component from './component'
+import resize from './resize'
 
 @paint(component)
 @props
+@resize
 class Header {
   #opened
 
