@@ -13,8 +13,14 @@ class Header {
   }
 
   @repaint
-  toggle () {
-    this.#opened = f.not(this.opened)
+  close () {
+    this.#opened = f.F()
+    return this
+  }
+
+  @repaint
+  open () {
+    this.#opened = f.T()
     return this
   }
 }

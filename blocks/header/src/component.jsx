@@ -2,8 +2,10 @@ import h from '@kuba/h'
 import { urlFor } from '@kuba/router'
 import button from '@kuba/button'
 import container from '@kuba/container'
+import Hide from '@kuba/hide'
 import link from '@kuba/link'
 import Logo from '@kuba/logo'
+import Show from '@kuba/show'
 import style from './style'
 
 export default (header) =>
@@ -17,6 +19,11 @@ export default (header) =>
         <link.Master href={urlFor('components')} darker medium xxs>componentes</link.Master>
         <link.Master href={urlFor('arquiteture')} darker medium xxs>arquitetura</link.Master>
       </nav>
-      <button.icon.Menu className={style.header__button} onClick={() => header.toggle()} />
+      <Hide when={header.opened}>
+        <button.icon.Menu className={style.header__button} onClick={() => header.open()} />
+      </Hide>
+      <Show when={header.opened}>
+        <button.icon.Close className={style.header__button} onClick={() => header.close()} />
+      </Show>
     </container.Div>
   </header>
