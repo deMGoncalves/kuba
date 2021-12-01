@@ -18,7 +18,7 @@ export default styled.style`
     background-color: var(--color-master-lightest);
     display: none;
     flex-direction: column;
-    gap: var(--spacing_inset-md);
+    gap: var(--spacing_inset-lg);
     height: calc(100vh - 89px);
     left: 0;
     padding: var(--spacing_inset-lg) var(--spacing_inset-xs);
@@ -36,6 +36,7 @@ export default styled.style`
       background-color: transparent;
       display: flex;
       flex-direction: row;
+      gap: var(--spacing_inset-md);
       height: auto;
       left: auto;
       padding: 0;
