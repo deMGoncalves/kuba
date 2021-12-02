@@ -9,7 +9,7 @@ export default styled.style`
   .footer__container {
     align-items: center;
     display: flex;
-    gap: var(--spacing_inset-sm);
+    gap: var(--spacing_inset-xs);
     height: 100%;
   }
 
