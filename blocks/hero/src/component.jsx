@@ -21,7 +21,7 @@ export default (hero) =>
       <container.Div>
         <div className={style.hero__div}>
           <text.P master dark xxxs mono>{schema.command} {schema.package}</text.P>
-          <button className={style.hero__button} onClick={() => hero.clone()}>
+          <button className={style.hero__button} onClick={() => hero.copy()}>
             <icon.Clone />
           </button>
         </div>
