@@ -6,9 +6,7 @@ import ga from './ga'
 import schema from './schema.json'
 
 f.and(agent.isUser, env.isProd) && (
+  render(document.head, <script src={schema.src} async />),
   ga('create', schema.id, 'auto'),
-  ga('send', 'pageview'),
-  render(document.head, <script src={schema.src} async />)
+  ga('send', 'pageview')
 )
-
-export default ga
