@@ -1,5 +1,4 @@
 import h from '@kuba/h'
-import { urlFor } from '@kuba/router'
 import button from '@kuba/button'
 import container from '@kuba/container'
 import Hide from '@kuba/hide'
@@ -11,13 +10,13 @@ import style from './style'
 export default (header) =>
   <header className={[style.header, header.className]}>
     <container.Div className={style.header__container}>
-      <Logo />
+      <Logo onClick={() => header.redirectTo('home')} />
       <nav className={style.header__nav} opened:isTruthy={header.opened}>
-        <link.Master className={style.header__link} href={urlFor('about')} darker medium>sobre</link.Master>
-        <link.Master className={style.header__link} href={urlFor('introduction')} darker medium>introducao</link.Master>
-        <link.Master className={style.header__link} href={urlFor('designSystem')} darker medium>design system</link.Master>
-        <link.Master className={style.header__link} href={urlFor('components')} darker medium>componentes</link.Master>
-        <link.Master className={style.header__link} href={urlFor('arquiteture')} darker medium>arquitetura</link.Master>
+        <link.Master className={style.header__link} onClick={() => header.redirectTo('about')} darker medium>sobre</link.Master>
+        <link.Master className={style.header__link} onClick={() => header.redirectTo('introduction')} darker medium>introducao</link.Master>
+        <link.Master className={style.header__link} onClick={() => header.redirectTo('designSystem')} darker medium>design system</link.Master>
+        <link.Master className={style.header__link} onClick={() => header.redirectTo('components')} darker medium>componentes</link.Master>
+        <link.Master className={style.header__link} onClick={() => header.redirectTo('arquiteture')} darker medium>arquitetura</link.Master>
       </nav>
       <Hide when={header.opened}>
         <button.icon.Menu className={style.header__button} onClick={() => header.open()} />

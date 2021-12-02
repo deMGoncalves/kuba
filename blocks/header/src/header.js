@@ -1,6 +1,7 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import props from '@kuba/props'
+import { urlFor } from '@kuba/router'
 import component from './component'
 import resize from './resize'
 
@@ -23,6 +24,11 @@ class Header {
   @repaint
   open () {
     this.#opened = f.T()
+    return this
+  }
+
+  redirectTo (page) {
+    location.assign(urlFor(page))
     return this
   }
 }
