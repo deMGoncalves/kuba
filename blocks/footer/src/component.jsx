@@ -4,10 +4,10 @@ import Logo from '@kuba/logo'
 import text from '@kuba/text'
 import style from './style'
 
-export default () =>
+export default (footer) =>
   <footer className={style.footer}>
     <container.Div className={style.footer__container}>
-      <Logo symbol />
+      <Logo onClick={() => footer.redirectTo('home')} symbol />
       <text.P className={style.footer__text} master dark xxxs>Simples, pequeno e imperfeito. Uma visao alem da programacao.</text.P>
     </container.Div>
   </footer>

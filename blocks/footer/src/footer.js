@@ -1,10 +1,12 @@
 import { paint } from '@kuba/h'
+import { urlFor } from '@kuba/router'
 import component from './component'
 
 @paint(component)
 class Footer {
-  get name () {
-    return 'footer'
+  redirectTo (page) {
+    location.assign(urlFor(page))
+    return this
   }
 }
 
