@@ -14,8 +14,5 @@ import '@kuba/value'
 import './routers'
 
 import '@kuba/boma'
-import '@kuba/ga'
-import '@kuba/gtag'
 import '@kuba/gtm'
-import '@kuba/hotjar'
 import '@kuba/sw'
