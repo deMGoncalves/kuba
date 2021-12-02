@@ -34,11 +34,6 @@ class Logo {
     this.#onColor = props.onColor
     this.#symbol = props.symbol
   }
-
-  redirect () {
-    location.assign(this.href)
-    return this
-  }
 }
 
 export default Logo
