@@ -3,6 +3,7 @@ import container from '@kuba/container'
 import icon from '@kuba/icon'
 import story from '@kuba/story'
 import text from '@kuba/text'
+import schema from './schema.json'
 import style from './style'
 
 export default (hero) =>
@@ -19,7 +20,7 @@ export default (hero) =>
       </container.HGroup>
       <container.Div>
         <div className={style.hero__div}>
-          <text.P master dark xxxs mono>git clone https://github.com/deMGoncalves/kuba.git</text.P>
+          <text.P master dark xxxs mono>{schema.command} {schema.package}</text.P>
           <button className={style.hero__button} onClick={() => hero.clone()}>
             <icon.Clone />
           </button>

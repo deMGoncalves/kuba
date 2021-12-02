@@ -1,0 +1,4 @@
+{
+  "command": "git clone",
+  "package": "https://github.com/deMGoncalves/kuba.git"
+}
