@@ -12,4 +12,8 @@ export default styled.style`
     gap: var(--spacing_inset-sm);
     height: 100%;
   }
+
+  .footer__text {
+    line-height: var(--line-height-sm) !important;
+  }
 `
