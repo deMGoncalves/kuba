@@ -18,7 +18,7 @@ export default styled.style`
 
   .hero__text {
     font-size: var(--font-size-xxxs) !important;
-    line-height: var(--line-height-sm) !important;
+    line-height: var(--line-height-md) !important;
   }
 
   @media (min-width: 426px) {
