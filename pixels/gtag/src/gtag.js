@@ -1,6 +1,6 @@
-import * as f from '@kuba/f'
+import dataLayer from './dataLayer'
 
 window.gtag = (...args) =>
-  (window.dataLayer = window.dataLayer || []).push(args)
+  dataLayer.push(args)
 
-export default f.idle(window.gtag)
+export default window.gtag
