@@ -5,19 +5,9 @@ export default styled.style`
     display: inline-flex;
     flex-direction: column;
     gap: var(--spacing_inset-lg);
-    margin: var(--spacing-xxxl) 0;
-  }
-
-  @media (min-width: 769px) {
-    .hero__story {
-      margin: var(--spacing-huge) 0;
-    }
-  }
-
-  @media (min-width: 961px) {
-    .hero__story {
-      margin: var(--spacing-giant) 0;
-    }
+    height: calc(100vh - 304px);
+    justify-content: center;
+    min-height: 360px;
   }
 
   .hero__text {
@@ -25,19 +15,19 @@ export default styled.style`
     line-height: var(--line-height-sm);
   }
 
-  @media (min-width: 400px) {
+  @media (min-width: 426px) {
     .hero__text {
       font-size: var(--font-size-xxs) !important;
     }
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 769px) {
     .hero__text {
       font-size: var(--font-size-xs) !important;
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 961px) {
     .hero__text {
       font-size: var(--font-size-md) !important;
     }
