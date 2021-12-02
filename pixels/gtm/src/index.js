@@ -1,1 +1,3 @@
-export { default } from './pixel'
+import './pixel'
+
+export { default as dataLayer } from './dataLayer'

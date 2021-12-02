@@ -6,11 +6,9 @@ import dataLayer from './dataLayer'
 import schema from './schema.json'
 
 f.and(agent.isUser, env.isProd) && (
+  render(document.head, <script src={schema.src} async />),
   dataLayer.push({
-    'gtm.start': new Date().getTime(),
+    'gtm.kuba': new Date().getTime(),
     event: 'gtm.js'
-  }),
-  render(document.head, <script src={schema.src} async />)
+  })
 )
-
-export default dataLayer
