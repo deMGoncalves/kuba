@@ -5,9 +5,15 @@ export default styled.style`
     display: inline-flex;
     flex-direction: column;
     gap: var(--spacing_inset-lg);
-    height: calc(100vh - 304px);
+    height: calc(100vh - calc(176px + 112px));
     justify-content: center;
     min-height: 360px;
+  }
+
+  @media (min-width: 769px) {
+    .hero__story {
+      height: calc(100vh - calc(176px + 128px));
+    }
   }
 
   .hero__text {
