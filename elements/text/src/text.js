@@ -9,5 +9,6 @@ export default new Proxy({}, {
       font-size: ${size};
       font-weight: ${weight};
       letter-spacing: 0.618px;
+      line-height: var(--line-height-default);
     `
 })
