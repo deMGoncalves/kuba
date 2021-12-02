@@ -14,6 +14,6 @@ export default styled.style`
   }
 
   .footer__text {
-    line-height: var(--line-height-sm) !important;
+    line-height: var(--line-height-md) !important;
   }
 `
