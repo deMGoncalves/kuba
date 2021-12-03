@@ -7,6 +7,10 @@ export default styled.style`
     gap: var(--spacing_inset-lg);
   }
 
+  .about__hgroup {
+    margin-bottom: var(--spacing-xxxs);
+  }
+
   .about__hgroup h1,
   .about__hgroup h2 {
     line-height: var(--line-height-md) !important;
