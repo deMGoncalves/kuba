@@ -10,7 +10,7 @@ export default () =>
     <Fragment slot='hot'>
       <story.Article className={style.about__article}>
         <container.HGroup className={style.about__hgroup}>
-          <text.H1 master darker xl highlight medium>o kuba</text.H1>
+          <text.H1 master darker xxl highlight medium>o kuba</text.H1>
           <text.H2 master xxxs>simples, pequeno e imperfeito, uma visao alem da programacao</text.H2>
         </container.HGroup>
         <container.Section className={style.about__section}>
@@ -25,6 +25,9 @@ export default () =>
           </text.P>
           <text.P master dark xs>
             as funcionalidades e flexibilidades sao maximizadas.
+          </text.P>
+          <text.P master dark xs>
+            criei este projeto de referencia como a unica fonte da verdade para todos os processos e crencas. como qualquer ferramenta ou metodologia, ela so funcionara corretamente quando usada da maneira certa. e o "certo" so pode ser determinado por meio de um processo de polimento e pratica constantes.
           </text.P>
         </container.Section>
       </story.Article>
