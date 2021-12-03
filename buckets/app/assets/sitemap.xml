@@ -5,4 +5,9 @@
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
+  <url>
+    <loc>https://kuba.engineer/about</loc>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
 </urlset>
