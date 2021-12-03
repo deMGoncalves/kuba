@@ -11,7 +11,7 @@ export default () =>
       <story.Article className={style.about__article}>
         <container.Section className={style.about__section}>
           <hgroup className={style.about__hgroup}>
-            <text.H1 master darker xxl highlight medium>o kuba</text.H1>
+            <text.H1 master darker xl highlight medium>o kuba</text.H1>
             <text.H2 master xxxs>simples, pequeno e imperfeito, uma visao alem da programacao</text.H2>
           </hgroup>
           <text.P master dark xs>
@@ -32,10 +32,18 @@ export default () =>
         </container.Section>
         <container.Section className={style.about__section}>
           <hgroup className={style.about__hgroup}>
-            <text.H2 master darker xl highlight medium>objetivo</text.H2>
+            <text.H2 master darker lg highlight medium>objetivo</text.H2>
           </hgroup>
           <text.P master dark xs>
             o kuba nao eh uma vontade recente, o plano de ter uma arquitetura criado a partir das minhas experiencias e metodologias eh um sonho que comecou em marco de 2016. uni essa vontade com o momento profissional que estou vivendo para unir o util ao agradavel. por isso, este projeto acumula alguns objetivos bastante transparentes.
+          </text.P>
+        </container.Section>
+        <container.Section className={style.about__section}>
+          <hgroup className={style.about__hgroup}>
+            <text.H3 master darker md highlight medium>apoio ao aprendizado</text.H3>
+          </hgroup>
+          <text.P master dark xs>
+            o primeiro e, talvez maior, papel deste projeto eh servir como apoio aos meus estudos, dos meus colegas de trabalho e de qualquer pessoa interessada, tornando nossos conceitos mais acessiveis e fáceis de compreender atraves de um exemplo pratico.
           </text.P>
         </container.Section>
       </story.Article>
