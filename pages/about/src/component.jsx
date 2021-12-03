@@ -11,7 +11,7 @@ export default () =>
       <story.Article className={style.about__article}>
         <container.Section className={style.about__section}>
           <hgroup className={style.about__hgroup}>
-            <text.H1 master darker xl highlight medium>o kuba</text.H1>
+            <text.H1 master darker xxl highlight medium>o kuba</text.H1>
             <text.H2 master xxxs>simples, pequeno e imperfeito, uma visao alem da programacao</text.H2>
           </hgroup>
           <text.P master dark xs>
@@ -40,10 +40,18 @@ export default () =>
         </container.Section>
         <container.Section className={style.about__section}>
           <hgroup className={style.about__hgroup}>
-            <text.H3 master darker md highlight medium>apoio ao aprendizado</text.H3>
+            <text.H3 master darker sm highlight medium>apoio ao aprendizado</text.H3>
           </hgroup>
           <text.P master dark xs>
             o primeiro e, talvez maior, papel deste projeto eh servir como apoio aos meus estudos, dos meus colegas de trabalho e de qualquer pessoa interessada, tornando nossos conceitos mais acessiveis e fáceis de compreender atraves de um exemplo pratico.
+          </text.P>
+        </container.Section>
+        <container.Section className={style.about__section}>
+          <hgroup className={style.about__hgroup}>
+            <text.H4 master darker sm highlight medium>piloto para versão em rust</text.H4>
+          </hgroup>
+          <text.P master dark xs>
+            estou trabalhando para a versao deste projeto totalmente escrito em rust (hoje eh 100% em javascript), a ideia eh que esta arquitetura seja um grande facilitador para o desenvolvedor. e claro, naturalmente ter um boilerplate aberto ao publico tambem ajuda a divulgar minhas metodologia de codificacao.
           </text.P>
         </container.Section>
       </story.Article>
