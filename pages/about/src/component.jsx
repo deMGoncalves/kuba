@@ -47,6 +47,15 @@ export default () =>
           <text.P master dark xs>
             kuba eh um projeto de referência (amalgama) a ser seguido e não um framework e/ou library que condiciona e obriga a uma situacao de implementacao! ele deve ser estudado, entendido e adaptado as realidades do seu produto, de forma a garantir as condicoes de comportamento e estrutura.
           </text.P>
+          <hgroup className={style.about__hgroup}>
+            <text.H3 master darker sm bold>um agradecimento a comunidade</text.H3>
+          </hgroup>
+          <text.P master dark xs>
+            meus ultimos 6 anos foram repletos de desafios. ajudei algumas empresas, colaborei com alguns colegas, claro, aprendi muito com todos. e nada, mas nada mesmo, seria possivel sem o carinho e reconhecimento que meus colegas tiveram com meu trabalho.
+          </text.P>
+          <text.P master dark xs>
+            o kuba eh de voces, para voces! aproveitem.
+          </text.P>
         </container.Section>
       </story.Article>
     </Fragment>
