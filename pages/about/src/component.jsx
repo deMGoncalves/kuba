@@ -8,8 +8,8 @@ import style from './style'
 export default () =>
   <Site>
     <Fragment slot='hot'>
-      <story.Article className={style.about__article}>
-        <container.Section className={style.about__section}>
+      <story.Article>
+        <container.Section className={style.about__container}>
           <hgroup className={style.about__hgroup}>
             <text.H1 master darker xxl bold>o kuba</text.H1>
             <text.H2 master xxxs>simples, pequeno e imperfeito, uma visao alem da programacao</text.H2>
@@ -24,7 +24,7 @@ export default () =>
             criei este projeto de referencia como a unica fonte da verdade para todos os processos e crencas. como qualquer ferramenta ou metodologia, ela so funcionara corretamente quando usada da maneira certa. e o "certo" so pode ser determinado por meio de um processo de polimento e pratica constantes.
           </text.P>
           <hgroup className={style.about__hgroup}>
-            <text.H2 master darker lg bold>objetivo</text.H2>
+            <text.H2 master darker lg bold>objetivos</text.H2>
           </hgroup>
           <text.P master dark xs>
             o kuba nao eh uma vontade recente, o plano de ter uma arquitetura criado a partir das minhas experiencias e metodologias eh um sonho que comecou em marco de 2016. uni essa vontade com o momento profissional que estou vivendo para unir o util ao agradavel. por isso, este projeto acumula alguns objetivos bastante transparentes.
@@ -55,6 +55,27 @@ export default () =>
           </text.P>
           <text.P master dark xs>
             o kuba eh de voces, para voces! aproveitem.
+          </text.P>
+          <hgroup className={style.about__hgroup}>
+            <text.H2 master darker lg bold>o que estou tentando alcancar?</text.H2>
+          </hgroup>
+          <hgroup className={style.about__hgroup}>
+            <text.H3 master darker sm bold>hackear a maneira como trabalhamos</text.H3>
+          </hgroup>
+          <text.P master dark xs>
+            por meio da documentacao de processos comprovados e pre-testados. a documentacao nos da a capacidade de ver o quadro completo do processo e melhorar peças especificas por meio da reutilizacao constante.
+          </text.P>
+          <hgroup className={style.about__hgroup}>
+            <text.H3 master darker sm bold>economizar tempo</text.H3>
+          </hgroup>
+          <text.P master dark xs>
+            divida nosso produtos em componentes para melhor consistencia, menos debito tecnico e atualizacoes mais rapidas.
+          </text.P>
+          <hgroup className={style.about__hgroup}>
+            <text.H3 master darker sm bold>construir uma cultura</text.H3>
+          </hgroup>
+          <text.P master dark xs>
+            documentar e divulguar nossos valores essenciais para construir a cultura e encontrar equipes de produtos e individuos com visao semelhante.
           </text.P>
         </container.Section>
       </story.Article>
