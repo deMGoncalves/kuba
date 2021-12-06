@@ -29,7 +29,7 @@
       "models/*",
       "pages/*",
       "pixels/*",
-      "shared/*"
+      "standard/*"
     ]
   }
 }
