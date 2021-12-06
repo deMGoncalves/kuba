@@ -23,29 +23,29 @@ export default () =>
           <text.P master dark xs>
             criei este projeto de referencia como a unica fonte da verdade para todos os processos e crencas. como qualquer ferramenta ou metodologia, ela so funcionara corretamente quando usada da maneira certa. e o "certo" so pode ser determinado por meio de um processo de polimento e pratica constantes.
           </text.P>
-        </container.Section>
-        <container.Section className={style.about__section}>
           <hgroup className={style.about__hgroup}>
             <text.H2 master darker lg bold>objetivo</text.H2>
           </hgroup>
           <text.P master dark xs>
             o kuba nao eh uma vontade recente, o plano de ter uma arquitetura criado a partir das minhas experiencias e metodologias eh um sonho que comecou em marco de 2016. uni essa vontade com o momento profissional que estou vivendo para unir o util ao agradavel. por isso, este projeto acumula alguns objetivos bastante transparentes.
           </text.P>
-        </container.Section>
-        <container.Section className={style.about__section}>
           <hgroup className={style.about__hgroup}>
             <text.H3 master darker sm bold>apoio ao aprendizado</text.H3>
           </hgroup>
           <text.P master dark xs>
             o primeiro e, talvez maior, papel deste projeto eh servir como apoio aos meus estudos, dos meus colegas de trabalho e de qualquer pessoa interessada, tornando nossos conceitos mais acessiveis e fáceis de compreender atraves de um exemplo pratico.
           </text.P>
-        </container.Section>
-        <container.Section className={style.about__section}>
           <hgroup className={style.about__hgroup}>
-            <text.H4 master darker sm bold>piloto para versão em rust</text.H4>
+            <text.H3 master darker sm bold>piloto para versão em rust</text.H3>
           </hgroup>
           <text.P master dark xs>
             estou trabalhando para a versao deste projeto totalmente escrito em rust (hoje eh 100% em javascript), a ideia eh que esta arquitetura seja um grande facilitador para o desenvolvedor. e claro, naturalmente ter um boilerplate aberto ao publico tambem ajuda a divulgar minhas metodologia de codificacao.
+          </text.P>
+          <hgroup className={style.about__hgroup}>
+            <text.H3 master darker sm bold>base para seus produtos</text.H3>
+          </hgroup>
+          <text.P master dark xs>
+            kuba eh um projeto de referência (amalgama) a ser seguido e não um framework e/ou library que condiciona e obriga a uma situacao de implementacao! ele deve ser estudado, entendido e adaptado as realidades do seu produto, de forma a garantir as condicoes de comportamento e estrutura.
           </text.P>
         </container.Section>
       </story.Article>

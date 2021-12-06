@@ -8,7 +8,11 @@ export default styled.style`
   }
 
   .about__hgroup {
-    margin-bottom: var(--spacing-xxxs);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .about__hgroup:not(:first-of-type) {
+    margin-top: var(--spacing-xs);
   }
 
   .about__hgroup h1,
