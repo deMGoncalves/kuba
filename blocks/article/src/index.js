@@ -1,1 +1,1 @@
-export { default } from './article'
+export { default } from './component'

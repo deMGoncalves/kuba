@@ -1,5 +1,10 @@
 import h from '@kuba/h'
-import style from './style'
+import container from '@kuba/container'
+import story from '@kuba/story'
 
-export default (article) =>
-  <div className={style.article}>{article.name}</div>
+export default (props, children) =>
+  <story.Article>
+    <container.Div>
+      {children}
+    </container.Div>
+  </story.Article>
