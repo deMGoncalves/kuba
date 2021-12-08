@@ -3,10 +3,10 @@ import pathname from './pathname'
 import urls from './urls'
 
 const render = function (page) {
-  const { path, listener, keys, values } = urls[page]
+  const { router, listener, keys, values } = urls[page]
   const descriptor = f.pairs(
     f.zip(
-      f.slice(f.exec(keys, path), 1),
+      f.slice(f.exec(keys, router), 1),
       f.slice(f.exec(values, pathname), 1)
     )
   )
