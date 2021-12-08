@@ -2,12 +2,12 @@ import * as f from '@kuba/f'
 import pathname from './pathname'
 import urls from './urls'
 
-const render = function (name) {
-  const { listener, params, path, router } = urls[name]
+const render = function (page) {
+  const { path, listener, keys, values } = urls[page]
   const descriptor = f.pairs(
     f.zip(
-      f.slice(f.exec(params, path), 1),
-      f.slice(f.exec(router, pathname), 1)
+      f.slice(f.exec(keys, path), 1),
+      f.slice(f.exec(values, pathname), 1)
     )
   )
 
