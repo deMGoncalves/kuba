@@ -4,6 +4,9 @@ export default (about) =>
   ({
     '@id': '#webpage',
     '@type': 'WebPage',
+    breadcrumb: {
+      '@id': '#breadcrumb'
+    },
     description: about.description,
     inLanguage: settings.app.language,
     isPartOf: {
