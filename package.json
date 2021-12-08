@@ -27,6 +27,7 @@
       "filters/*",
       "infra/*",
       "models/*",
+      "modules/*",
       "pages/*",
       "pixels/*",
       "standard/*"
