@@ -5,7 +5,7 @@ class Text {
   #element
 
   get content () {
-    return this.#content
+    return this.#content ?? ''
   }
 
   get element () {
@@ -41,6 +41,11 @@ class Text {
     return this
   }
 
+  remove () {
+    this.element.remove()
+    return this
+  }
+
   repaint (text) {
     this.#content = text.content
     this.element.textContent = this.content
@@ -52,7 +57,10 @@ class Text {
   }
 
   static is (textOrTag) {
-    return f.some([String, Number], f.is(f.__, textOrTag))
+    return f.or(
+      f.isNil(textOrTag),
+      f.some([String, Number, Date], f.is(f.__, textOrTag))
+    )
   }
 }
 
