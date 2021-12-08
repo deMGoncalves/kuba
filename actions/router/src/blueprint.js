@@ -1,4 +1,4 @@
-import * as f from '@gotenks/f'
+import * as f from '@kuba/f'
 import router from './router'
 
 export default (module, prefix) =>

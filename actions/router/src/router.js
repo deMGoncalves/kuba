@@ -1,4 +1,4 @@
-import * as f from '@gotenks/f'
+import * as f from '@kuba/f'
 import match from './match'
 import render from './render'
 import urls from './urls'

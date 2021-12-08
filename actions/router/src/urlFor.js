@@ -1,4 +1,4 @@
-import * as f from '@gotenks/f'
+import * as f from '@kuba/f'
 import urls from './urls'
 
 export default (page, params = {}) =>
