@@ -1,10 +1,10 @@
-import * as f from '@kuba/f'
+import * as f from '@gotenks/f'
 import urls from './urls'
 
-export default (name, params = {}) =>
+export default (page, params = {}) =>
   f
     .from(params)
     .pipe(f.entries)
     .pipe(f.map(f.__, ([key, value]) => [`:${key}`, value]))
-    .pipe(f.reduce(f.__, (path, args) => f.replace(path, ...args), urls[name]?.path))
+    .pipe(f.reduce(f.__, (path, args) => f.replace(path, ...args), urls[page]?.path))
     .done()

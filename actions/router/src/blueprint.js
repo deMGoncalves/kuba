@@ -1,11 +1,9 @@
-import * as f from '@kuba/f'
+import * as f from '@gotenks/f'
 import router from './router'
 
-export default (module) =>
+export default (module, prefix) =>
   (path, listener) =>
     router(
-      `/${module}${f.replace(path, /^\/$/, '')}`,
-      f.assign(listener, {
-        name: `${module}.${listener.name}`
-      })
+      f.add(prefix, f.replace(path, /^\/$/, '')),
+      f.assign(listener, { module })
     )
