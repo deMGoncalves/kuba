@@ -1,12 +1,15 @@
 import h, { Fragment } from '@kuba/h'
 import Article from '@kuba/article'
+import Breadcrumb from '@kuba/breadcrumb'
 import text from '@kuba/text'
 import Site from '@kuba/site'
+import schema from './schema.json'
 import style from './style'
 
 export default () =>
   <Site>
     <Fragment slot='hot'>
+      <Breadcrumb paths={schema.breadcrumb} />
       <Article>
         <hgroup className={style.about__hgroup}>
           <text.H1 master darker xxl bold>o kuba</text.H1>
