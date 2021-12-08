@@ -6,5 +6,5 @@ export default (page, params = {}) =>
     .from(params)
     .pipe(f.entries)
     .pipe(f.map(f.__, ([key, value]) => [`:${key}`, value]))
-    .pipe(f.reduce(f.__, (path, args) => f.replace(path, ...args), urls[page]?.path))
+    .pipe(f.reduce(f.__, (path, args) => f.replace(path, ...args), urls[page]?.url))
     .done()
