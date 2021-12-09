@@ -7,15 +7,15 @@ import merge from './merge'
 const style = styled.style`
   .avatar {
     border-radius: var(--border-radius-circular);
-    padding-top: 40px;
+    padding-top: 40px !important;
   }
 
   .avatar[small] {
-    padding-top: 24px;
+    padding-top: 24px !important;
   }
 
   .avatar[large] {
-    padding-top: 64px;
+    padding-top: 64px !important;
   }
 `
 
