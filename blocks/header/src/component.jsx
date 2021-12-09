@@ -9,7 +9,7 @@ import style from './style'
 
 export default (header) =>
   <header className={[style.header, header.className]}>
-    <container.Div className={style.header__container}>
+    <container.Div className={style.header__container} fluid={header.fluid}>
       <Logo onClick={() => header.redirectTo('home')} />
       <nav className={style.header__nav} opened:isTruthy={header.opened}>
         <link.Master className={style.header__link} onClick={() => header.redirectTo('about')} darker medium>sobre</link.Master>
