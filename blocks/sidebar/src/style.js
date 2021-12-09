@@ -29,4 +29,23 @@ export default styled.style`
       transform: translate(210px, 0);
     }
   }
+
+  .sidebar__header {
+    background-color: var(--color-menu-dark);
+    border-bottom: var(--border-width-hairline) solid var(--color-master-darker);
+    height: 88px;
+  }
+
+  .sidebar__div {
+    display: none;
+  }
+
+  .sidebar__div[opened] {
+    display: block;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    width: calc(100% - 298px);
+    z-index: 1;
+  }
 `
