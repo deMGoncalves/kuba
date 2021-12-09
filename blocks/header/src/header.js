@@ -5,6 +5,7 @@ import { urlFor } from '@kuba/router'
 import component from './component'
 import event from './event'
 import resize from './resize'
+import scroll from './scroll'
 
 @paint(component)
 @props
@@ -18,6 +19,7 @@ class Header {
 
   @repaint
   @event.toggle
+  @scroll.unlock
   close () {
     this.#opened = f.F()
     return this
@@ -25,6 +27,7 @@ class Header {
 
   @repaint
   @event.toggle
+  @scroll.lock
   open () {
     this.#opened = f.T()
     return this
