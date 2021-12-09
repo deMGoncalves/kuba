@@ -5,9 +5,7 @@ import style from './style'
 
 export default (app, children) =>
   <>
-    <aside className={style.app__aside}>
-      <Sidebar />
-    </aside>
+    <Sidebar />
     <main className={style.app__main}>
       <Header fluid />
       {children}
