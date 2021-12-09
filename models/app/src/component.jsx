@@ -6,7 +6,7 @@ export default (app, children) =>
   <>
     <aside className={style.app__aside} />
     <main className={style.app__main}>
-      <Header />
+      <Header fluid />
       {children}
     </main>
   </>
