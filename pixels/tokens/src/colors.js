@@ -39,5 +39,8 @@ export default styled.style`
     --color-info: #3b4752;
     --color-info-light: #626c75;
     --color-info-lighter: #d8dadc;
+    --color-menu-dark: #21252d;
+    --color-menu: #2b303b;
+    --color-menu-light: #929aac;
   }
 `
