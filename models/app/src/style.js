@@ -10,7 +10,7 @@ export default styled.style`
       display: block;
       height: 100vh;
       left: 0;
-      position: absolute;
+      position: fixed;
       top: 0;
       width: 88px;
     }
