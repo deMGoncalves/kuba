@@ -32,7 +32,7 @@ export default styled.style`
 
   .sidebar__header {
     background-color: var(--color-menu-dark);
-    border-bottom: var(--border-width-hairline) solid var(--color-master-darker);
+    border-bottom: var(--border-width-hairline) solid var(--color-master-darkest);
     height: 88px;
   }
 
