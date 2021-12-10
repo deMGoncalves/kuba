@@ -10,7 +10,8 @@ class Sidebar {
   #opened
 
   get opened () {
-    return this.#opened ??= f.F()
+    // return this.#opened ??= f.F()
+    return f.T()
   }
 
   @repaint
