@@ -3,7 +3,7 @@ import echo from '@kuba/echo'
 import media from '@kuba/media'
 import { after } from '@kuba/middleware'
 
-var mobile = f.T()
+let mobile = f.T()
 
 const lock = after(function (output) {
   mobile && echo.emit('overlayer:open')
