@@ -20,7 +20,7 @@ export default styled.style`
     display: flex;
   }
 
-  @media (min-width: 648px) {
+  @media (min-width: 769px) {
     .nav {
       background-color: transparent;
       display: flex;
@@ -39,13 +39,13 @@ export default styled.style`
     font-size: var(--font-size-xs) !important;
   }
 
-  @media (min-width: 648px) {
+  @media (min-width: 769px) {
     .nav__link {
       font-size: var(--font-size-xxs) !important;
     }
   }
 
-  @media (min-width: 648px) {
+  @media (min-width: 769px) {
     .nav__button {
       display: none !important;
     }
