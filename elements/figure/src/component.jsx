@@ -4,7 +4,7 @@ import style from './style'
 
 export default (props, children) =>
   <figure className={[style.figure, props.className]}>
-    <Picture alt={props.alt} circular:isTruthy={props.circular}>
+    <Picture alt={props.alt} circular={props.circular}>
       {children.sources}
     </Picture>
     <figcaption>
