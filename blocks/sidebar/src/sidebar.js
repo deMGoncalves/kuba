@@ -1,6 +1,7 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import component from './component'
+import scroll from './scroll'
 
 @paint(component)
 class Sidebar {
@@ -11,12 +12,14 @@ class Sidebar {
   }
 
   @repaint
+  @scroll.unlock
   close () {
     this.#opened = f.F()
     return this
   }
 
   @repaint
+  @scroll.lock
   open () {
     this.#opened = f.T()
     return this
