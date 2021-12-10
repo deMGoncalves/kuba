@@ -2,8 +2,15 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .header {
+    background-color: var(--color-master-lightest);
     border-bottom: var(--border-width-hairline) solid var(--color-master-light);
     height: 88px;
+  }
+
+  .header[fixed] {
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 
   .header__container {
