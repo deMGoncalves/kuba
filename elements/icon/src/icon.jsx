@@ -8,5 +8,5 @@ import style from './style'
 export default new Proxy({}, {
   get: (_, name) =>
     (props) =>
-      <img className={[style.icon, props.className]} src={mapper[merge(props, name)]} loading='lazy' alt={f.or(props.alt, settings.app.name)} small:isTruthy={props.small} large:isTruthy={props.large} />
+      <img className={[style.icon, props.className]} src={mapper[merge(props, name)]} loading='lazy' alt={f.or(props.alt, settings.app.name)} small={props.small} large={props.large} />
 })
