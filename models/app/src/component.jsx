@@ -7,7 +7,7 @@ export default (app, children) =>
   <>
     <Sidebar />
     <main className={style.app__main}>
-      <Header fluid />
+      <Header fixed />
       {children}
     </main>
   </>
