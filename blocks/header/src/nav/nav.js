@@ -10,7 +10,7 @@ import scroll from './scroll'
 @paint(component)
 @props
 @resize
-class Header {
+class Nav {
   #opened
 
   get opened () {
@@ -40,4 +40,4 @@ class Header {
   }
 }
 
-export default Header
+export default Nav

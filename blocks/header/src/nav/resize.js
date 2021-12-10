@@ -1,8 +1,8 @@
 import media from '@kuba/media'
 import middleware from '@kuba/middleware'
 
-const resize = (header) =>
+const resize = (nav) =>
   media('(min-width: 648px)')
-    .in(() => header.opened && header.close())
+    .in(() => nav.opened && nav.close())
 
 export default middleware(resize)
