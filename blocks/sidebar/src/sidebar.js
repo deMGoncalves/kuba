@@ -2,8 +2,10 @@ import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import component from './component'
 import scroll from './scroll'
+import toggle from './toggle'
 
 @paint(component)
+@toggle
 class Sidebar {
   #opened
 
