@@ -15,7 +15,7 @@ export default (nav) =>
       <link.Master className={style.nav__link} onClick={() => nav.edirectTo('arquiteture')} darker medium>arquitetura</link.Master>
     </nav>
     <Hide when={nav.opened}>
-      <button.icon.Menu className={style.nav__button} onClick={() => nav.open()} />
+      <button.icon.Bars className={style.nav__button} onClick={() => nav.open()} />
     </Hide>
     <Show when={nav.opened}>
       <button.icon.Close className={style.nav__button} onClick={() => nav.close()} />
