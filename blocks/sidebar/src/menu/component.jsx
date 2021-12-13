@@ -3,4 +3,4 @@ import button from '@kuba/button'
 import style from './style'
 
 export default (menu) =>
-  <button.icon.Menu className={style.menu} onClick={() => menu.open()} />
+  <button.icon.Bars className={style.menu} onClick={() => menu.open()} />

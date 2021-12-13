@@ -14,4 +14,8 @@ export default styled.style`
     justify-content: space-between;
     padding: 0 var(--spacing_inset-md);
   }
+
+  .nav__icon {
+    margin: 0 var(--spacing-quarck);
+  }
 `
