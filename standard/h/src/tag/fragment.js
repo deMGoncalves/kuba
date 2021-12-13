@@ -1,5 +1,6 @@
 import * as f from '@kuba/f'
 import Children from './children'
+import swapTag from './swapTag'
 
 class Fragment {
   #children
@@ -13,6 +14,10 @@ class Fragment {
 
   get element () {
     return this.#element ??= document.createDocumentFragment()
+  }
+
+  get entity () {
+    return this.#entity ??= {}
   }
 
   get isNode () {
@@ -81,6 +86,7 @@ class Fragment {
     return this.element
   }
 
+  @swapTag
   reflow (fragment) {
     this.willUpdate()
     this.children.reflow(fragment.children)
