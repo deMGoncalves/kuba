@@ -10,12 +10,12 @@ const style = styled.style`
     width: 40px;
   }
 
-  .avatar[small] {
+  .avatar.small {
     height: 24px;
     width: 24px;
   }
 
-  .avatar[large] {
+  .avatar.large {
     height: 64px;
     width: 64px;
   }
@@ -24,5 +24,5 @@ const style = styled.style`
 export default new Proxy({}, {
   get: (_, name) =>
     (props) =>
-      icon[name](merge(props, style.avatar), [])
+      icon[name](merge(props, style), [])
 })

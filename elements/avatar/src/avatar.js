@@ -8,18 +8,21 @@ const style = styled.style`
   .avatar {
     border-radius: var(--border-radius-circular);
     padding-top: 40px !important;
+    width: 40px !important;
   }
 
-  .avatar[small] {
+  .avatar.small {
     padding-top: 24px !important;
+    width: 24px !important;
   }
 
-  .avatar[large] {
+  .avatar.large {
     padding-top: 64px !important;
+    width: 64px !important;
   }
 `
 
 export default (props, children) =>
   has(children)
-    ? picture(merge(props, style.avatar), children)
-    : skeleton.picture(merge(props, style.avatar))
+    ? picture(merge(props, style), children)
+    : skeleton.picture(merge(props, style))
