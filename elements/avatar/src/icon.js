@@ -1,5 +1,4 @@
 import h from '@kuba/h'
-import * as f from '@kuba/f'
 import icon from '@kuba/icon'
 import styled from '@kuba/styled'
 import merge from './merge'
@@ -22,15 +21,8 @@ const style = styled.style`
   }
 `
 
-const avatar = () =>
-  new Proxy({}, {
-    get: (_, name) =>
-      (props) =>
-        icon[name](merge(props, style.avatar), [])
-  })
-
-f.assign(avatar, {
-  is: f.equal('icon')
+export default new Proxy({}, {
+  get: (_, name) =>
+    (props) =>
+      icon[name](merge(props, style.avatar), [])
 })
-
-export default avatar
