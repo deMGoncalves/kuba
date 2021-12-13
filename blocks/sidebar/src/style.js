@@ -4,7 +4,6 @@ export default styled.style`
   .sidebar {
     background-color: var(--color-menu);
     height: 100vh;
-    left: -298px;
     position: fixed;
     top: 0;
     transition: transform 618ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -12,8 +11,14 @@ export default styled.style`
     z-index: 2;
   }
 
-  .sidebar[opened] {
-    transform: translate(298px, 0);
+  @media (max-width: 768px) {
+    .sidebar {
+      left: -298px;
+    }
+
+    .sidebar[opened] {
+      transform: translate(298px, 0);
+    }
   }
 
   @media (min-width: 769px) {
@@ -21,7 +26,7 @@ export default styled.style`
       left: -210px;
     }
 
-    .sidebar[opened] {
+    .sidebar:hover {
       transform: translate(210px, 0);
     }
   }

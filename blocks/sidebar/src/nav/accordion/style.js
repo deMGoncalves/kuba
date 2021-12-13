@@ -12,4 +12,14 @@ export default styled.style`
   .accordion__icon {
     margin: 0 var(--spacing-quarck);
   }
+
+  .accordion__section {
+    display: none;
+  }
+
+  .accordion__section[opened] {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-xs);
+  }
 `

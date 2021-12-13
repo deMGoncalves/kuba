@@ -1,15 +1,72 @@
 [
-  { "page": "actions", "text": "actions", "icon": "Plug" },
-  { "page": "blocks", "text": "blocks", "icon": "Cube" },
-  { "page": "buckets", "text": "buckets", "icon": "Fill" },
-  { "page": "development", "text": "development", "icon": "Code" },
-  { "page": "directives", "text": "directives", "icon": "Random" },
-  { "page": "elements", "text": "elements", "icon": "Atom" },
-  { "page": "filters", "text": "filters", "icon": "Filter" },
-  { "page": "infra", "text": "infra", "icon": "Close" },
-  { "page": "models", "text": "models", "icon": "Close" },
-  { "page": "modules", "text": "modules", "icon": "Close" },
-  { "page": "pages", "text": "pages", "icon": "Close" },
-  { "page": "pixels", "text": "pixels", "icon": "Close" },
-  { "page": "standard", "text": "standard", "icon": "Close" }
+  {
+    "page": "actions",
+    "text": "actions",
+    "icon": "Plug",
+    "group": [
+      { "page": "authrequired", "text": "authrequired", "icon": "a" },
+      { "page": "clipboard", "text": "clipboard", "icon": "c" },
+      { "page": "download", "text": "download", "icon": "d" }
+    ]
+  },
+  {
+    "page": "blocks",
+    "text": "blocks",
+    "icon": "Cube"
+  },
+  {
+    "page": "buckets",
+    "text": "buckets",
+    "icon": "Fill"
+  },
+  {
+    "page": "development",
+    "text": "development",
+    "icon": "Code"
+  },
+  {
+    "page": "directives",
+    "text": "directives",
+    "icon": "Random"
+  },
+  {
+    "page": "elements",
+    "text": "elements",
+    "icon": "Atom"
+  },
+  {
+    "page": "filters",
+    "text": "filters",
+    "icon": "Filter"
+  },
+  {
+    "page": "infra",
+    "text": "infra",
+    "icon": "Close"
+  },
+  {
+    "page": "models",
+    "text": "models",
+    "icon": "Close"
+  },
+  {
+    "page": "modules",
+    "text": "modules",
+    "icon": "Close"
+  },
+  {
+    "page": "pages",
+    "text": "pages",
+    "icon": "Close"
+  },
+  {
+    "page": "pixels",
+    "text": "pixels",
+    "icon": "Close"
+  },
+  {
+    "page": "standard",
+    "text": "standard",
+    "icon": "Close"
+  }
 ]

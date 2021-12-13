@@ -1,18 +1,17 @@
-import h from '@kuba/h'
+import h, { Fragment } from '@kuba/h'
 import * as f from '@kuba/f'
 import { urlFor } from '@kuba/router'
 import icon from '@kuba/icon'
 import link from '@kuba/link'
 import style from './style'
 
-const component = (props) =>
-  <link.Master className={style.link} href={urlFor(props.page)} lightest>
-    {props.text}
-    {icon[props.icon]({ className: style.link__icon, small: f.T(), onColor: f.T() })}
-  </link.Master>
-
-f.assign(component, {
-  is: f.has('group')
-})
-
-export default component
+export default (accordion) =>
+  <>
+    <link.Master className={style.accordion} onClick:prevent={() => accordion.toggle()} href={urlFor(accordion.page)} lightest>
+      {accordion.text}
+      {icon[accordion.icon]({ className: style.accordion__icon, small: f.T(), onColor: f.T() })}
+    </link.Master>
+    <section className={style.accordion__section} opened:isTruthy={accordion.opened}>
+      teste
+    </section>
+  </>

@@ -6,7 +6,7 @@ import style from './style'
 
 export default (sidebar) =>
   <>
-    <aside className={style.sidebar} onMouseenter={() => sidebar.open()} onMouseleave={() => sidebar.close()} opened:isTruthy={sidebar.opened}>
+    <aside className={style.sidebar} opened:isTruthy={sidebar.opened}>
       <Header className={style.sidebar__header} fixed />
       <Nav />
     </aside>
