@@ -17,7 +17,7 @@ export default styled.style`
     display: none;
   }
 
-  .accordion__section[opened=true] {
+  .accordion__section[opened] {
     background-color: var(--color-menu-dark);
     display: flex;
     flex-direction: column;

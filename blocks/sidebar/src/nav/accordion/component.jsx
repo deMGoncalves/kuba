@@ -13,7 +13,7 @@ export default (accordion) =>
       {accordion.text}
       {icon[accordion.icon]({ className: style.accordion__icon, small: f.T(), onColor: f.T() })}
     </link.Master>
-    <section className={style.accordion__section} opened={accordion.opened}>
+    <section className={style.accordion__section} opened:isTruthy={accordion.opened}>
       <Repeat iterator={accordion.group} component={Link} />
     </section>
   </>
