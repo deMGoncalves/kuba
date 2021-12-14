@@ -6,6 +6,7 @@ const colors = [
   'danger',
   'info',
   'master',
+  'menu',
   'primary',
   'success',
   'warning'
