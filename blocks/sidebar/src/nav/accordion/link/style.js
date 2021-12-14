@@ -5,11 +5,16 @@ export default styled.style`
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: var(--spacing_inset-xs) var(--spacing_inset-md);
+    padding-left: var(--spacing_inset-sm);
     text-decoration: none;
   }
 
   .link__icon {
-    margin: 0 var(--spacing-quarck);
+    align-items: center;
+    background-color: var(--color-menu);
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    width: 24px;
   }
 `

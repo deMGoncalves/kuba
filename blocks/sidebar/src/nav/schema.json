@@ -12,7 +12,10 @@
   {
     "page": "blocks",
     "text": "blocks",
-    "icon": "Cube"
+    "icon": "Cube",
+    "group": [
+      { "page": "article", "text": "article", "icon": "a" }
+    ]
   },
   {
     "page": "buckets",

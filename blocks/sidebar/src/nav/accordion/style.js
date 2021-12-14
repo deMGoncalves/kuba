@@ -5,7 +5,7 @@ export default styled.style`
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0 var(--spacing_inset-md);
+    padding: var(--spacing_inset-xs) var(--spacing_inset-md);
     text-decoration: none;
   }
 
@@ -17,9 +17,11 @@ export default styled.style`
     display: none;
   }
 
-  .accordion__section[opened] {
+  .accordion__section[opened=true] {
+    background-color: var(--color-menu-dark);
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-xs);
+    padding: var(--spacing_inset-md);
   }
 `
