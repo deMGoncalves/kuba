@@ -5,7 +5,7 @@ export default styled.style`
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding-left: var(--spacing_inset-sm);
+    padding-left: var(--spacing_inset-md);
     text-decoration: none;
   }
 
