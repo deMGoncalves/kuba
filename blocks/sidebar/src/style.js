@@ -4,6 +4,7 @@ export default styled.style`
   .sidebar {
     background-color: var(--color-menu);
     height: 100vh;
+    overflow-y: auto;
     position: fixed;
     top: 0;
     transition: transform 618ms cubic-bezier(0.77, 0, 0.175, 1);
