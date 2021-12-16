@@ -11,3 +11,8 @@ router('/about', async function about () {
   const { default: About } = await import('@kuba/about' /* webpackChunkName: "about" */)
   render(<About />)
 })
+
+router('/values', async function values () {
+  const { default: Values } = await import('@kuba/values' /* webpackChunkName: "about" */)
+  render(<Values />)
+})
