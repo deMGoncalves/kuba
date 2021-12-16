@@ -8,11 +8,12 @@ import style from './style'
 export default (nav) =>
   <>
     <nav className={style.nav} opened:isTruthy={nav.opened}>
-      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('about')} darker medium>sobre</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.edirectTo('introduction')} darker medium>introducao</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.edirectTo('designSystem')} darker medium>design system</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.edirectTo('components')} darker medium>componentes</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.edirectTo('arquiteture')} darker medium>arquitetura</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('about')} darker medium>about</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.edirectTo('values')} darker medium>values</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.edirectTo('design')} darker medium>design</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.edirectTo('arquiteture')} darker medium>architecture</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.edirectTo('components')} darker medium>components</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.edirectTo('patterns')} darker medium>patterns</link.Master>
     </nav>
     <Hide when={nav.opened}>
       <button.icon.Bars className={style.nav__button} onClick={() => nav.open()} />
