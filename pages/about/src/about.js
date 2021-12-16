@@ -14,7 +14,7 @@ class About {
   }
 
   get title () {
-    return 'Sobre'
+    return 'about'
   }
 }
 
