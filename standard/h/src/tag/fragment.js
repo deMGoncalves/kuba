@@ -1,6 +1,5 @@
 import * as f from '@kuba/f'
 import Children from './children'
-import swapTag from './swapTag'
 
 class Fragment {
   #children
@@ -17,7 +16,7 @@ class Fragment {
   }
 
   get entity () {
-    return this.#entity ??= {}
+    return this.#entity
   }
 
   get isNode () {
@@ -86,7 +85,6 @@ class Fragment {
     return this.element
   }
 
-  @swapTag
   reflow (fragment) {
     this.willUpdate()
     this.children.reflow(fragment.children)
@@ -101,8 +99,12 @@ class Fragment {
     return this
   }
 
-  replaceChild (current, child) {
-    current.parentNode.replaceChild(child, current)
+  replace (fragment) {
+    // TODO: Preciso entender porque os metodos unmount
+    // nao estao sendo executados
+    this.willUnmount?.()
+    this.reflow(fragment)
+    this.didUnmount?.()
     return this
   }
 

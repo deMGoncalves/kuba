@@ -4,7 +4,6 @@ import Children from './children'
 import ClassName from './className'
 import domParser from './domParser'
 import Events from './events'
-import swapTag from './swapTag'
 
 class Tag {
   #attributes
@@ -34,7 +33,7 @@ class Tag {
   }
 
   get entity () {
-    return this.#entity ??= {}
+    return this.#entity
   }
 
   get events () {
@@ -127,7 +126,6 @@ class Tag {
     return this.element
   }
 
-  @swapTag
   reflow (tag) {
     this.willUpdate()
     this.attributes.reflow(tag.attributes)
@@ -155,8 +153,10 @@ class Tag {
     return this
   }
 
-  replaceChild (current, child) {
-    this.element.replaceChild(child, current)
+  replace (tag) {
+    this.willUnmount()
+    this.element.parentNode.replaceChild(tag.paint(), this.element)
+    this.didUnmount()
     return this
   }
 

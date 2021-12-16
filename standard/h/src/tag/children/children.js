@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import element from './element'
+// import element from './element'
 import mapper from './mapper'
 import paint from './paint'
 import reflow from './reflow'
@@ -39,7 +39,7 @@ class Children {
   }
 
   replace (current, child) {
-    this.#parent.replaceChild(element(current), paint(child))
+    tag(current).replace(tag(child))
     f.replace(this.list, current, child)
     return this
   }
