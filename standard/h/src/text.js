@@ -32,8 +32,8 @@ class Text {
     return this.element
   }
 
-  reflow (text) {
-    f.different(this, text) && this.repaint(text)
+  reflow (vText) {
+    f.different(this, vText) && this.repaint(vText)
     return this
   }
 
@@ -42,8 +42,8 @@ class Text {
     return this
   }
 
-  repaint (text) {
-    this.#content = text.content
+  repaint (vText) {
+    this.#content = vText.content
     this.element.textContent = this.content
     return this
   }
