@@ -28,17 +28,12 @@ class Text {
     this.#content = content
   }
 
-  // TODO: para que eh usado este medoto
-  different (text) {
-    return f.different(this.content, text.content)
-  }
-
   paint () {
     return this.element
   }
 
   reflow (text) {
-    this.different(text) && this.repaint(text)
+    f.different(this.content, text.content) && this.repaint(text)
     return this
   }
 
