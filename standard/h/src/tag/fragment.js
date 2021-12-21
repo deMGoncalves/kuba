@@ -6,6 +6,7 @@ class Fragment {
   #element
   #entity
   #slot
+  #uid
 
   get children () {
     return this.#children
@@ -35,9 +36,14 @@ class Fragment {
     return 11
   }
 
+  get uid () {
+    return this.#uid
+  }
+
   constructor (props, children) {
     this.#children = Children.create(children, this)
     this.#slot = props.slot
+    this.#uid = props.uid
   }
 
   append (...children) {
