@@ -100,11 +100,9 @@ class Fragment {
   }
 
   replace (fragment) {
-    // TODO: Preciso entender porque os metodos unmount
-    // nao estao sendo executados
-    this.willUnmount?.()
+    this.willUnmount()
     this.reflow(fragment)
-    this.didUnmount?.()
+    this.didUnmount()
     return this
   }
 
