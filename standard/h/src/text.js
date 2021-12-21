@@ -56,10 +56,10 @@ class Text {
     return new Text(content)
   }
 
-  static is (textOrTag) {
+  static is (target) {
     return f.or(
-      f.isNil(textOrTag),
-      f.some([String, Number, Date], f.is(f.__, textOrTag))
+      f.isNil(target),
+      f.some([String, Number, Date], f.is(f.__, target))
     )
   }
 }
