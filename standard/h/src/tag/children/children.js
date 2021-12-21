@@ -1,5 +1,4 @@
 import * as f from '@kuba/f'
-// import element from './element'
 import mapper from './mapper'
 import paint from './paint'
 import reflow from './reflow'
