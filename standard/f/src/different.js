@@ -7,10 +7,10 @@ import not from './not'
 
 const method = magic('different')
 
-const evalute = (target) =>
+const evaluate = (target) =>
   has(method, target) ? target[method]() : target
 
 const different = (x, y) =>
-  not(equal(evalute(x), evalute(y)))
+  not(equal(evaluate(x), evaluate(y)))
 
 export default curry(arity(2, different))
