@@ -41,12 +41,12 @@ class Fragment {
   }
 
   append (...children) {
-    this.element.append(...children)
+    this.element.append(...f.map(children, c => c.paint()))
     return this
   }
 
   appendChild (child) {
-    this.insertAdjacentElement('afterend', child)
+    this.insertAdjacentElement('afterend', child.paint())
     return this
   }
 
