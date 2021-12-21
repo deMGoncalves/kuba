@@ -190,8 +190,8 @@ class Tag {
     return new Tag(tagName, props, children)
   }
 
-  static is (nameOrComponent) {
-    return f.test(/^\w+$/, nameOrComponent)
+  static is (target) {
+    return f.test(/^\w+$/, target)
   }
 }
 
