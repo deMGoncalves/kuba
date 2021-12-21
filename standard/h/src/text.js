@@ -33,7 +33,7 @@ class Text {
   }
 
   reflow (text) {
-    f.different(this.content, text.content) && this.repaint(text)
+    f.different(this, text) && this.repaint(text)
     return this
   }
 
@@ -46,6 +46,10 @@ class Text {
     this.#content = text.content
     this.element.textContent = this.content
     return this
+  }
+
+  [f.magic('different')] () {
+    return this.content
   }
 
   static create (content) {
