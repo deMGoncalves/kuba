@@ -6,6 +6,7 @@ import DifferentEntity from './differentEntity'
 import Equal from './equal'
 import EqualComponent from './equalComponent'
 import EqualEntity from './equalEntity'
+import EqualUID from './equalUID'
 import Removed from './removed'
 
 export default (children, other) => (
@@ -19,6 +20,7 @@ export default (children, other) => (
       [DifferentComponent.is, DifferentComponent.exec(children)],
       [EqualEntity.is, EqualEntity.exec(children)],
       [EqualComponent.is, EqualComponent.exec(children)],
+      [EqualUID.is, EqualUID.exec(children)],
       [Equal.is, Equal.exec(children)]
     ))
   )
