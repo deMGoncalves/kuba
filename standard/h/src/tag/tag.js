@@ -13,8 +13,9 @@ class Tag {
   #entity
   #events
   #is
-  #slot
   #name
+  #slot
+  #uid
 
   get attributes () {
     return this.#attributes
@@ -60,6 +61,10 @@ class Tag {
     return 1
   }
 
+  get uid () {
+    return this.#uid
+  }
+
   constructor (tagName, props, children) {
     this.#attributes = Attributes.create(props, this)
     this.#children = Children.create(children, this)
@@ -68,6 +73,7 @@ class Tag {
     this.#is = props.is
     this.#name = tagName
     this.#slot = props.slot
+    this.#uid = props.uid
   }
 
   addEventListener (name, listener) {
