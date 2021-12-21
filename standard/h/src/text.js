@@ -28,6 +28,7 @@ class Text {
     this.#content = content
   }
 
+  // TODO: para que eh usado este medoto
   different (text) {
     return f.different(this.content, text.content)
   }
