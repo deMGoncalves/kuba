@@ -2,7 +2,6 @@ import * as f from '@kuba/f'
 import mapper from './mapper'
 import paint from './paint'
 import reflow from './reflow'
-import tag from './tag'
 
 class Children {
   #list
@@ -38,7 +37,7 @@ class Children {
   }
 
   replace (current, child) {
-    tag(current).replace(tag(child))
+    current.replace(child)
     f.replace(this.list, current, child)
     return this
   }
@@ -49,7 +48,7 @@ class Children {
   }
 
   remove (current) {
-    tag(current).remove()
+    current.remove()
     f.remove(this.list, current)
     return this
   }
