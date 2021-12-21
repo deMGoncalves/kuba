@@ -1,5 +1,4 @@
 import * as f from '@kuba/f'
-import isEntity from './isEntity'
 
 class DifferentEntity {
   static exec (that) {
@@ -8,11 +7,7 @@ class DifferentEntity {
   }
 
   static is (current, child) {
-    return f.and(
-      isEntity(current),
-      isEntity(child),
-      f.different(current, child)
-    )
+    return f.different(current.entity, child.entity)
   }
 }
 

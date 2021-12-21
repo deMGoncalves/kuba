@@ -1,5 +1,4 @@
 import * as f from '@kuba/f'
-import isEntity from './isEntity'
 
 class EqualEntity {
   static exec () {
@@ -8,9 +7,9 @@ class EqualEntity {
 
   static is (current, child) {
     return f.and(
-      isEntity(current),
-      isEntity(child),
-      f.equal(current, child)
+      f.not(f.isEmpty(current.entity)),
+      f.not(f.isEmpty(child.entity)),
+      f.equal(current.entity, child.entity)
     )
   }
 }
