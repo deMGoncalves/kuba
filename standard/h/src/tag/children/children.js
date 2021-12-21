@@ -1,6 +1,5 @@
 import * as f from '@kuba/f'
 import mapper from './mapper'
-import paint from './paint'
 import reflow from './reflow'
 
 class Children {
@@ -21,7 +20,7 @@ class Children {
   }
 
   append (child) {
-    this.#parent.appendChild(paint(child))
+    this.#parent.appendChild(child)
     f.push(this.list, child)
     return this
   }
@@ -32,7 +31,7 @@ class Children {
   }
 
   paint () {
-    this.#parent.append(...f.map(this.list, paint))
+    this.#parent.append(...this.list)
     return this
   }
 
