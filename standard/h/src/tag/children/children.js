@@ -26,7 +26,7 @@ class Children {
   }
 
   drop () {
-    f.forEach(this.list, child => this.remove(child))
+    f.forEach(this.list, this.remove.bind(this))
     return this
   }
 
