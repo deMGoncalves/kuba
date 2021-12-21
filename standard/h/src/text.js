@@ -48,7 +48,7 @@ class Text {
     return this
   }
 
-  [f.magic('different')] () {
+  [f.dunder.different] () {
     return this.content
   }
 
