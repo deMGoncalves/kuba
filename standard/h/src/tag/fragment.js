@@ -67,7 +67,7 @@ class Fragment {
     return this
   }
 
-  didUnmout () {
+  didUnmount () {
     f.idle(() =>
       this.#entity?.[f.magic('didUnmount')]?.())()
     return this
