@@ -76,12 +76,12 @@ class Tag {
   }
 
   append (...children) {
-    this.element.append(...children)
+    this.element.append(...f.map(children, c => c.paint()))
     return this
   }
 
   appendChild (child) {
-    this.element.appendChild(child)
+    this.element.appendChild(child.paint())
     return this
   }
 
