@@ -6,8 +6,8 @@ class Component {
     return componentRef(props, slot(children))
   }
 
-  static is (tagNameOrComponent) {
-    return f.is(Function, tagNameOrComponent)
+  static is (target) {
+    return f.is(Function, target)
   }
 }
 
