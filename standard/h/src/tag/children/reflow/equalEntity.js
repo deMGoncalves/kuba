@@ -3,7 +3,7 @@ import isEntity from './isEntity'
 
 class EqualEntity {
   static exec () {
-    return this
+    return () => null
   }
 
   static is (current, child) {

@@ -18,8 +18,8 @@ export default (children, other) => (
       [DifferentEntity.is, DifferentEntity.exec(children)],
       [DifferentComponent.is, DifferentComponent.exec(children)],
       [EqualComponent.is, EqualComponent.exec(children)],
-      [EqualEntity.is, EqualEntity.exec],
-      [Equal.is, Equal.exec]
+      [EqualEntity.is, EqualEntity.exec(children)],
+      [Equal.is, Equal.exec(children)]
     ))
   )
 )

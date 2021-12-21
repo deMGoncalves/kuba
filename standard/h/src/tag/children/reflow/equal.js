@@ -1,8 +1,9 @@
 import * as f from '@kuba/f'
 
 class Equal {
-  static exec (current, child) {
-    return current.reflow(child)
+  static exec () {
+    return (current, child) =>
+      current.reflow(child)
   }
 
   static is (current, child) {
