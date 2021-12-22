@@ -169,6 +169,11 @@ class Tag {
     return this
   }
 
+  setClassName (value) {
+    this.element.className = value
+    return this
+  }
+
   willMount () {
     this?.entity?.[f.dunder.willMount]?.()
     return this

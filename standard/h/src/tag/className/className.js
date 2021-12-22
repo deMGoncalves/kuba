@@ -1,17 +1,12 @@
 import * as f from '@kuba/f'
 import flatten from './flatten'
-import setClassName from './setClassName'
 
 class ClassName {
   #target
   #value
 
-  get target () {
-    return this.#target
-  }
-
   get value () {
-    return this.#value
+    return this.#value ??= ''
   }
 
   constructor (value, target) {
@@ -19,24 +14,21 @@ class ClassName {
     this.#value = value
   }
 
-  different (className) {
-    return f.different(this.value, className.value)
-  }
-
   paint () {
-    setClassName(this)
+    this.#target.setClassName(this.value)
     return this
   }
 
-  reflow (className) {
-    this.different(className) && this.repaint(className)
+  reflow (vClassName) {
+    f.different(this, vClassName) && (
+      this.#value = vClassName.value,
+      this.#target.setClassName(this.value)
+    )
     return this
   }
 
-  repaint (className) {
-    this.#value = className.value
-    setClassName(this)
-    return this
+  [f.dunder.different] () {
+    return this.value
   }
 
   static create (props, target) {
