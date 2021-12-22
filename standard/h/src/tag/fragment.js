@@ -88,9 +88,9 @@ class Fragment {
     return this.element
   }
 
-  reflow (fragment) {
+  reflow (vFragment) {
     this.willUpdate()
-    this.children.reflow(fragment.children)
+    this.children.reflow(vFragment.children)
     this.didUpdate()
     return this
   }
@@ -102,9 +102,9 @@ class Fragment {
     return this
   }
 
-  replace (fragment) {
+  replace (vFragment) {
     this.willUnmount()
-    this.reflow(fragment)
+    this.reflow(vFragment)
     this.didUnmount()
     return this
   }
