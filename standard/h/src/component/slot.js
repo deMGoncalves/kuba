@@ -4,7 +4,7 @@ export default (children) =>
   new Proxy(
     children,
     {
-      get: (target, slotName) =>
-        f.or(target[slotName], f.filter(target, f.compose(f.equal(slotName), f.prop('slot'))))
+      get: (target, name) =>
+        f.or(target[name], f.filter(target, f.compose(f.equal(name), f.prop('slot'))))
     }
   )
