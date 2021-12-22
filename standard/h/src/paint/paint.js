@@ -1,17 +1,17 @@
 import * as f from '@kuba/f'
-import executeComponent from './executeComponent'
-import createEntity from './createEntity'
+import execute from './execute'
+import create from './create'
 
-export default (componentRef) =>
-  (Entity) =>
+export default (component) =>
+  (Klass) =>
     new Proxy(
       function (props, children) {
-        return (this instanceof Entity)
-          ? createEntity(componentRef, new Entity(...arguments))
-          : executeComponent(componentRef, new Entity({ ...props }), children)
+        return (this instanceof Klass)
+          ? create(component, new Klass(...arguments), children)
+          : execute(component, new Klass({ ...props }), children)
       },
       {
-        get: (_, key) => Entity[key],
-        set: (_, key, value) => f.T(Entity[key] = value)
+        get: (_, key) => Klass[key],
+        set: (_, key, value) => f.T(Klass[key] = value)
       }
     )
