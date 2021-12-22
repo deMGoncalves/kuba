@@ -1,14 +1,14 @@
 import * as settings from '@kuba/settings'
 
-export default (home) =>
+export default (page) =>
   ({
     '@id': '#webpage',
     '@type': 'WebPage',
-    description: home.description,
+    description: page.description,
     inLanguage: settings.app.language,
     isPartOf: {
       '@id': '#website'
     },
-    name: home.title,
+    name: page.title,
     url: settings.app.url
   })

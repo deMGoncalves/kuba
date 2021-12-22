@@ -4,7 +4,7 @@ import Site from '@kuba/site'
 
 export default () =>
   <Site>
-    <Fragment slot='hot'>
-      <Hero />
-    </Fragment>
+    <Fragment slot='hot' />
+    <Fragment slot='warm' />
+    <Fragment slot='cold' />
   </Site>

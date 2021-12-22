@@ -2,17 +2,17 @@ import h from '@kuba/h'
 import router from '@kuba/router'
 import render from './render'
 
-router('/', async function home () {
-  const { default: Home } = await import('@kuba/home' /* webpackChunkName: "home" */)
-  render(<Home />)
+router('/', async function skate () {
+  const { default: Skate } = await import('./skate' /* webpackChunkName: "skate" */)
+  render(<Skate />)
 })
 
-router('/about', async function about () {
-  const { default: About } = await import('@kuba/about' /* webpackChunkName: "about" */)
-  render(<About />)
+router('/longboard', async function longboard () {
+  const { default: Longboard } = await import('./longboard' /* webpackChunkName: "longboard" */)
+  render(<Longboard />)
 })
 
-router('/values', async function values () {
-  const { default: Values } = await import('@kuba/values' /* webpackChunkName: "about" */)
-  render(<Values />)
+router('/cruiser', async function cruiser () {
+  const { default: Cruiser } = await import('./cruiser' /* webpackChunkName: "cruiser" */)
+  render(<Cruiser />)
 })
