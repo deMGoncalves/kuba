@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://kuba.ink" target="_blank" rel="noopener">
-    <img width="300" src="https://user-images.githubusercontent.com/35740192/137381340-e9cc5364-833b-4786-a514-d962b6fe313b.png" alt="kuba">
+    <img width="300" src="https://user-images.githubusercontent.com/35740192/147132766-ad6e25c3-22c0-4b19-acd7-be87bfc5870e.png" alt="kuba">
   </a>
 </p>
 
@@ -32,8 +32,4 @@
   <a href="https://github.com/deMGoncalves/kuba" target="_blank">
     <img src="https://img.shields.io/github/license/deMGoncalves/kuba" alt="GitHub license" />
   </a>
-</p>
-
-<p align="center">
-  Aquele que substitui por ser melhor
 </p>
