@@ -62,20 +62,17 @@ class Fragment {
   }
 
   didMount () {
-    f.idle(() =>
-      this.#entity?.[f.magic('didMount')]?.())()
+    f.idle(() => this?.entity?.[f.dunder.didMount]?.())()
     return this
   }
 
   didUnmount () {
-    f.idle(() =>
-      this.#entity?.[f.magic('didUnmount')]?.())()
+    f.idle(() => this?.entity?.[f.dunder.didUnmount]?.())()
     return this
   }
 
   didUpdate () {
-    f.idle(() =>
-      this.#entity?.[f.magic('didUpdate')]?.())()
+    f.idle(() => this?.entity?.[f.dunder.didUpdate]?.())()
     return this
   }
 
@@ -113,17 +110,17 @@ class Fragment {
   }
 
   willMount () {
-    this.#entity?.[f.magic('willMount')]?.()
+    this?.entity?.[f.dunder.willMount]?.()
     return this
   }
 
   willUnmount () {
-    this.#entity?.[f.magic('willUnmount')]?.()
+    this?.entity?.[f.dunder.willUnmount]?.()
     return this
   }
 
   willUpdate () {
-    this.#entity?.[f.magic('willUpdate')]?.()
+    this?.entity?.[f.dunder.willUpdate]?.()
     return this
   }
 
