@@ -5,7 +5,7 @@ class Entity {
     return f.has(f.dunder.tag, target)
   }
 
-  static transform (entity) {
+  static parse (entity) {
     return entity[f.dunder.tag]
   }
 }
