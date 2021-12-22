@@ -184,10 +184,6 @@ class Tag {
     return this
   }
 
-  [f.magic('isEmpty')] () {
-    return f.F()
-  }
-
   [f.dunder.forEach] () {
     return [this]
   }
