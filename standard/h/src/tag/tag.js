@@ -2,7 +2,6 @@ import * as f from '@kuba/f'
 import Attributes from './attributes'
 import Children from './children'
 import ClassName from './className'
-import domParser from './domParser'
 import Events from './events'
 
 class Tag {
@@ -111,10 +110,10 @@ class Tag {
     return this
   }
 
-  insertAdjacentElement (position, element) {
+  insertAdjacent (vTag) {
     f.forEach(
-      domParser(element),
-      (element) => this.element.insertAdjacentElement(position, element)
+      vTag,
+      (c) => this.element.insertAdjacentElement('afterend', c.paint())
     )
     return this
   }
@@ -187,6 +186,10 @@ class Tag {
 
   [f.magic('isEmpty')] () {
     return f.F()
+  }
+
+  [f.dunder.forEach] () {
+    return [this]
   }
 
   static create (tagName, props, children) {

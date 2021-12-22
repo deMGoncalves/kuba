@@ -52,6 +52,10 @@ class Text {
     return this.content
   }
 
+  [f.dunder.forEach] () {
+    return [this]
+  }
+
   static create (content) {
     return new Text(content)
   }

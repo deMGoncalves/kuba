@@ -51,8 +51,8 @@ class Fragment {
     return this
   }
 
-  appendChild (child) {
-    this.insertAdjacentElement('afterend', child.paint())
+  appendChild (vTag) {
+    this.insertAdjacent(vTag)
     return this
   }
 
@@ -79,8 +79,8 @@ class Fragment {
     return this
   }
 
-  insertAdjacentElement (position, element) {
-    this.children.last.insertAdjacentElement(position, element)
+  insertAdjacent (vTag) {
+    this.children.last.insertAdjacent(vTag)
     return this
   }
 
@@ -129,6 +129,10 @@ class Fragment {
 
   [f.magic('isEmpty')] () {
     return f.F()
+  }
+
+  [f.dunder.forEach] () {
+    return this.children.list
   }
 
   static execute (props, children) {
