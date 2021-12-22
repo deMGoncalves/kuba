@@ -2,8 +2,8 @@ import * as f from '@kuba/f'
 import slot from './slot'
 
 class Component {
-  static execute (componentRef, props, children) {
-    return componentRef(props, slot(children))
+  static execute (component, props, children) {
+    return component(props, slot(children))
   }
 
   static is (target) {
