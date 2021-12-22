@@ -1,9 +1,9 @@
 import * as f from '@kuba/f'
 import { after } from '@kuba/middleware'
 
-function repaint (returned) {
+function repaint (output) {
   this?.[f.magic('reflow')]?.()
-  return returned
+  return output
 }
 
 export default after(repaint)

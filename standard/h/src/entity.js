@@ -6,7 +6,7 @@ class Entity {
   }
 
   static transform (entity) {
-    return entity[f.magic('tag')]()
+    return entity[f.magic('tag')]
   }
 }
 
