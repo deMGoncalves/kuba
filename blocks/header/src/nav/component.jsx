@@ -8,12 +8,9 @@ import style from './style'
 export default (nav) =>
   <>
     <nav className={style.nav} opened:isTruthy={nav.opened}>
-      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('about')} darker medium>about</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('values')} darker medium>values</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('design')} darker medium>design</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('arquiteture')} darker medium>architecture</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('components')} darker medium>components</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('patterns')} darker medium>patterns</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('skateboard')} darker medium>skate</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('longboard')} darker medium>longboard</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('cruiser')} darker medium>cruiser</link.Master>
     </nav>
     <Hide when={nav.opened}>
       <button.icon.Bars className={style.nav__button} onClick={() => nav.open()} />
