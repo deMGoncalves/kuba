@@ -129,12 +129,12 @@ class Tag {
     return this.element
   }
 
-  reflow (tag) {
+  reflow (vTag) {
     this.willUpdate()
-    this.attributes.reflow(tag.attributes)
-    this.className.reflow(tag.className)
-    this.events.reflow(tag.events)
-    this.children.reflow(tag.children)
+    this.attributes.reflow(vTag.attributes)
+    this.className.reflow(vTag.className)
+    this.events.reflow(vTag.events)
+    this.children.reflow(vTag.children)
     this.didUpdate()
     return this
   }
@@ -156,9 +156,9 @@ class Tag {
     return this
   }
 
-  replace (tag) {
+  replace (vTag) {
     this.willUnmount()
-    this.element.parentNode.replaceChild(tag.paint(), this.element)
+    this.element.parentNode.replaceChild(vTag.paint(), this.element)
     this.didUnmount()
     return this
   }
