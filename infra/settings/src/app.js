@@ -1,6 +1,6 @@
 export default {
   author: 'deMGoncalves',
-  description: 'Kuba é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o produto',
+  description: 'Aquele que substitui por ser melhor',
   language: 'pt-BR',
   name: 'kuba',
   release: '1.0.0',
