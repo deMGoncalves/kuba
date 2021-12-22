@@ -5,11 +5,11 @@ class EqualUID {
     return () => null
   }
 
-  static is (current, child) {
+  static is (tag, vTag) {
     return f.and(
-      f.not(f.isEmpty(current.uid)),
-      f.not(f.isEmpty(child.uid)),
-      f.equal(current.uid, child.uid)
+      f.not(f.isEmpty(tag.uid)),
+      f.not(f.isEmpty(vTag.uid)),
+      f.equal(tag.uid, vTag.uid)
     )
   }
 }

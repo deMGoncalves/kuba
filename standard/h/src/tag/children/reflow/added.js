@@ -1,13 +1,13 @@
 import * as f from '@kuba/f'
 
 class Added {
-  static exec (that) {
-    return (_, child) =>
-      that.append(child)
+  static exec (children) {
+    return (_tag, vTag) =>
+      children.append(vTag)
   }
 
-  static is (current, child) {
-    return f.and(f.not(current), child)
+  static is (tag, vTag) {
+    return f.and(f.not(tag), vTag)
   }
 }
 

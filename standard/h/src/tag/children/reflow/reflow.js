@@ -15,8 +15,8 @@ export default (children, vChildren) => (
       [Removed.is, Removed.exec(children)],
       [Different.is, Different.exec(children)],
       [EqualUID.is, EqualUID.exec(children)],
-      [DifferentEntity.is, DifferentEntity.exec(children)],
       [EqualEntity.is, EqualEntity.exec(children)],
+      [DifferentEntity.is, DifferentEntity.exec(children)],
       [Equal.is, Equal.exec(children)]
     ))
   )

@@ -2,14 +2,14 @@ import * as f from '@kuba/f'
 
 class Equal {
   static exec () {
-    return (current, child) =>
-      current.reflow(child)
+    return (tag, vTag) =>
+      tag.reflow(vTag)
   }
 
-  static is (current, child) {
+  static is (tag, vTag) {
     return f.and(
-      f.equal(current.type, child.type),
-      f.equal(current.name, child.name)
+      f.equal(tag.type, vTag.type),
+      f.equal(tag.name, vTag.name)
     )
   }
 }

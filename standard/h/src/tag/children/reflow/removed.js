@@ -1,13 +1,13 @@
 import * as f from '@kuba/f'
 
 class Removed {
-  static exec (that) {
-    return (current) =>
-      that.remove(current)
+  static exec (children) {
+    return (tag) =>
+      children.remove(tag)
   }
 
-  static is (current, child) {
-    return f.and(current, f.not(child))
+  static is (tag, vTag) {
+    return f.and(tag, f.not(vTag))
   }
 }
 
