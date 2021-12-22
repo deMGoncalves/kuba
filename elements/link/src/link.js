@@ -8,5 +8,6 @@ export default styled.a`
   font-size: ${size};
   font-weight: ${weight};
   letter-spacing: 0.618px;
+  line-height: var(--line-height-default);
   user-select: none;
 `

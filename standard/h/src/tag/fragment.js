@@ -1,0 +1,140 @@
+import * as f from '@kuba/f'
+import Children from './children'
+
+class Fragment {
+  #children
+  #element
+  #entity
+  #slot
+  #uid
+
+  get children () {
+    return this.#children
+  }
+
+  get element () {
+    return this.#element ??= document.createDocumentFragment()
+  }
+
+  get entity () {
+    return this.#entity
+  }
+
+  get isNode () {
+    return f.T()
+  }
+
+  get name () {
+    return '#fragment'
+  }
+
+  get slot () {
+    return this.#slot
+  }
+
+  get type () {
+    return 11
+  }
+
+  get uid () {
+    return this.#uid
+  }
+
+  constructor (props, children) {
+    this.#children = Children.create(children, this)
+    this.#slot = props.slot
+    this.#uid = props.uid
+  }
+
+  append (...children) {
+    this.element.append(...f.map(children, c => c.paint()))
+    return this
+  }
+
+  appendChild (vTag) {
+    this.insertAdjacent(vTag)
+    return this
+  }
+
+  connect (entity) {
+    this.#entity = entity
+    return this
+  }
+
+  didMount () {
+    f.idle(() => this?.entity?.[f.dunder.didMount]?.())()
+    return this
+  }
+
+  didUnmount () {
+    f.idle(() => this?.entity?.[f.dunder.didUnmount]?.())()
+    return this
+  }
+
+  didUpdate () {
+    f.idle(() => this?.entity?.[f.dunder.didUpdate]?.())()
+    return this
+  }
+
+  insertAdjacent (vTag) {
+    this.children.last.insertAdjacent(vTag)
+    return this
+  }
+
+  paint () {
+    this.willMount()
+    this.children.paint()
+    this.didMount()
+    return this.element
+  }
+
+  reflow (vFragment) {
+    this.willUpdate()
+    this.children.reflow(vFragment.children)
+    this.didUpdate()
+    return this
+  }
+
+  remove () {
+    this.willUnmount()
+    this.children.drop()
+    this.didUnmount()
+    return this
+  }
+
+  replace (vFragment) {
+    this.willUnmount()
+    this.reflow(vFragment)
+    this.didUnmount()
+    return this
+  }
+
+  willMount () {
+    this?.entity?.[f.dunder.willMount]?.()
+    return this
+  }
+
+  willUnmount () {
+    this?.entity?.[f.dunder.willUnmount]?.()
+    return this
+  }
+
+  willUpdate () {
+    this?.entity?.[f.dunder.willUpdate]?.()
+    return this
+  }
+
+  [f.dunder.forEach] () {
+    return this.children.list
+  }
+
+  [f.dunder.isEmpty] () {
+    return f.F()
+  }
+
+  static execute (props, children) {
+    return new Fragment(props, children)
+  }
+}
+
+export default Fragment

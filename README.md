@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://kuba.engineer" target="_blank" rel="noopener">
-    <img width="300" src="https://user-images.githubusercontent.com/35740192/137381340-e9cc5364-833b-4786-a514-d962b6fe313b.png" alt="kuba">
+  <a href="https://kuba.ink" target="_blank" rel="noopener">
+    <img width="300" src="https://user-images.githubusercontent.com/35740192/147132766-ad6e25c3-22c0-4b19-acd7-be87bfc5870e.png" alt="kuba">
   </a>
 </p>
 
@@ -32,42 +32,4 @@
   <a href="https://github.com/deMGoncalves/kuba" target="_blank">
     <img src="https://img.shields.io/github/license/deMGoncalves/kuba" alt="GitHub license" />
   </a>
-</p>
-
-<p align="center">
-  Ninguém precisa ter muitas habilidades para desenvolver um produto que funcione, fazer direito é outra história. Desenvolver um produto de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem. Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um produto. As mudanças se tornam cirúrgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
-</p>
-
-<br />
-<br />
-
-<p align="center">
-  <strong>
-    <a href="https://kuba.engineer">Site</a> &nbsp;·&nbsp;
-    <a href="https://docs.kuba.engineer">Documentção</a>
-  </strong>
-</p>
-
-<br />
-<br />
-
-<p align="center">
-  <strong>Contribuidores</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/deMGoncalves/kuba/graphs/contributors">
-    <img src="https://user-images.githubusercontent.com/35740192/130805795-8f7ffab2-21ee-46e8-83f7-f63f82e5c634.png" alt="Sponsor logos" width="198" />
-  </a>
-</p>
-
-<br />
-<br />
-
-<p align="center">
-  <strong>Antes de começar</strong>
-</p>
-
-<p align="center">
-  Kuba é um projeto de referência (Amálgama) a ser seguido e não um Framework e/ou Library que condiciona e obriga a uma situação de implementação! Ele deve ser estudado, entendido e adaptado as realidades do seu ecommerce, de forma a garantir as condições de comportamento e estrutura.
 </p>

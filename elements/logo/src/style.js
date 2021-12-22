@@ -3,8 +3,14 @@ import styled from '@kuba/styled'
 export default styled.style`
   .logo {
     cursor: pointer;
-    min-width: 42px;
-    padding-top: 42px;
-    width: 42px;
+    height: 28px;
+  }
+
+  .logo[small] {
+    height: 16px;
+  }
+
+  .logo[large] {
+    height: 40px;
   }
 `

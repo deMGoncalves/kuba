@@ -3,16 +3,20 @@ import match from './match'
 import render from './render'
 import urls from './urls'
 
-export default function (path, listener) {
-  const { name } = listener
-  const params = new RegExp(f.replace(path, /(:)\w+/g, '$1([a-z0-9-]+)'), 'i')
-  const router = new RegExp(`^${f.replace(path, /:\w+/g, '([a-z0-9-]+)')}$`, 'i')
+export default function (url, listener) {
+  const { module, name } = listener
+  const keys = new RegExp(f.replace(url, /(:)\w+/g, '$1([a-z0-9-]+)'), 'i')
+  const values = new RegExp(`^${f.replace(url, /:\w+/g, '([a-z0-9-]+)')}$`, 'i')
+
+  const page = module
+    ? `${module}.${name}`
+    : name
 
   f.assign(urls, {
-    [name]: { listener, params, path, router }
+    [page]: { url, listener, keys, values }
   })
 
   setTimeout(() =>
-    match(name) && render(name)
+    match(page) && render(page)
   )
 }

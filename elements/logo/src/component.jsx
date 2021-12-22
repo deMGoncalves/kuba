@@ -1,8 +1,5 @@
 import h from '@kuba/h'
-import Picture from '@kuba/picture'
 import style from './style'
 
 export default (logo) =>
-  <Picture className={[style.logo, logo.className]} alt={logo.name} onClick={() => logo.redirect()}>
-    <source srcSet={logo.url} />
-  </Picture>
+  <img className={[style.logo, logo.className]} src={logo.url} loading='lazy' alt={logo.name} onClick={logo.onClick} small={logo.small} large={logo.large} />

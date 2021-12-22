@@ -6,9 +6,7 @@ import gtag from './gtag'
 import schema from './schema.json'
 
 f.and(agent.isUser, env.isProd) && (
+  render(document.head, <script src={schema.src} async />),
   gtag('js', new Date()),
-  gtag('config', schema.id),
-  render(document.head, <script src={schema.src} async />)
+  gtag('config', schema.id)
 )
-
-export default gtag

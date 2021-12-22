@@ -3,7 +3,8 @@ import styled from '@kuba/styled'
 export default styled.style`
   .modal {
     background-color: var(--color-master-lightest);
-    box-shadow: 0 10px 37px 0 rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shadow-level-1) rgba(0, 0, 0, var(--opacity-level-light));
     content-visibility: auto;
     height: auto;
     -ms-overflow-style: none;
@@ -32,6 +33,7 @@ export default styled.style`
 
   .modal__overlayer {
     align-items: center;
+    background-color: rgba(0, 0, 0, var(--opacity-level-semitransparent));
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -49,7 +51,7 @@ export default styled.style`
     z-index: 1;
   }
 
-  .modal__overlayer[opened=true] {
+  .modal__overlayer[opened] {
     opacity: 1;
     transform: scale(1);
     visibility: visible;
