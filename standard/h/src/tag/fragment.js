@@ -56,7 +56,7 @@ class Fragment {
     return this
   }
 
-  connectEntity (entity) {
+  connect (entity) {
     this.#entity = entity
     return this
   }

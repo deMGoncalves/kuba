@@ -91,7 +91,7 @@ class Tag {
     return this
   }
 
-  connectEntity (entity) {
+  connect (entity) {
     this.#entity = entity
     return this
   }
