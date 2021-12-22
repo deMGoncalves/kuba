@@ -2,10 +2,10 @@ import * as f from '@kuba/f'
 import Tag from './tag'
 
 class Custom extends Tag {
-  reflow (tag) {
-    this.attributes.reflow(tag.attributes)
-    this.className.reflow(tag.className)
-    this.events.reflow(tag.events)
+  reflow (vCustom) {
+    this.attributes.reflow(vCustom.attributes)
+    this.className.reflow(vCustom.className)
+    this.events.reflow(vCustom.events)
     return this
   }
 
