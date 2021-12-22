@@ -6,7 +6,7 @@ export default styled.style`
     background-color: var(--color-master-lightest);
     display: none;
     flex-direction: column;
-    gap: var(--spacing_inset-lg);
+    gap: var(--spacing_inset-xs);
     height: calc(100vh - 89px);
     left: 0;
     padding: var(--spacing_inset-lg) var(--spacing_inset-xs);
@@ -35,13 +35,18 @@ export default styled.style`
     }
   }
 
-  .nav__link {
-    font-size: var(--font-size-xs) !important;
-  }
-
-  @media (min-width: 769px) {
+  @media (max-width: 768px) {
     .nav__link {
-      font-size: var(--font-size-xxs) !important;
+      align-items: center;
+      border-radius: var(--border-radius-pill);
+      display: inline-flex;
+      height: 35px;
+      justify-content: center;
+      width: 298px;
+    }
+
+    .nav__link:hover {
+      background-color: var(--color-master-lighter);
     }
   }
 
