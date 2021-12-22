@@ -19,9 +19,9 @@ class Children {
     this.#parent = parent
   }
 
-  append (child) {
-    this.#parent.appendChild(child)
-    f.push(this.list, child)
+  append (vTag) {
+    this.#parent.appendChild(vTag)
+    f.push(this.list, vTag)
     return this
   }
 
@@ -35,20 +35,20 @@ class Children {
     return this
   }
 
-  replace (current, child) {
-    current.replace(child)
-    f.replace(this.list, current, child)
+  replace (tag, vTag) {
+    tag.replace(vTag)
+    f.replace(this.list, tag, vTag)
     return this
   }
 
-  reflow (child) {
-    reflow(this, child)
+  reflow (vChildren) {
+    reflow(this, vChildren)
     return this
   }
 
-  remove (current) {
-    current.remove()
-    f.remove(this.list, current)
+  remove (tag) {
+    tag.remove()
+    f.remove(this.list, tag)
     return this
   }
 
