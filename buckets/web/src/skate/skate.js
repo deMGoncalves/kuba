@@ -14,7 +14,7 @@ class Skate {
   }
 
   get title () {
-    return settings.app.title
+    return 'Skate'
   }
 }
 
