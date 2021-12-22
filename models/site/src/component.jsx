@@ -12,7 +12,7 @@ export default (site, children) =>
       <Logo />
       <Nav />
     </Header>
-    <main className={[style.site__main, site.className]}>
+    <main className={style.site__main}>
       {children.hot}
       <Show when={f.len(children.warm)}>
         <Zone>
