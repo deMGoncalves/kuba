@@ -1,8 +1,8 @@
 import * as f from '@kuba/f'
 
 export default (hook) =>
-  (entity, method, descriptor) => (
-    Object.defineProperty(entity, f.magic(hook), {
+  (klass, method, descriptor) => (
+    Object.defineProperty(klass, f.dunder[hook], {
       value: function () {
         return this[method]()
       }
