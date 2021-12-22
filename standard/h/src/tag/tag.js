@@ -193,6 +193,10 @@ class Tag {
     return [this]
   }
 
+  [f.dunder.isEmpty] () {
+    return f.F()
+  }
+
   static create (tagName, props, children) {
     return new Tag(tagName, props, children)
   }

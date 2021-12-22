@@ -128,6 +128,10 @@ class Fragment {
     return this.children.list
   }
 
+  [f.dunder.isEmpty] () {
+    return f.F()
+  }
+
   static execute (props, children) {
     return new Fragment(props, children)
   }
