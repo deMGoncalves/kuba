@@ -8,14 +8,14 @@ import data from './data'
 @paint(component)
 @jsonld(data)
 @markup
-class Longboard {
+class Shape {
   get description () {
     return settings.app.description
   }
 
   get title () {
-    return 'Longboard'
+    return 'kuba'
   }
 }
 
-export default Longboard
+export default Shape
