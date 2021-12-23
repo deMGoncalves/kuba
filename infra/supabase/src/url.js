@@ -1,1 +1,1 @@
-export default process.env.SUPABASE_URL
+export default process.env.API_URL

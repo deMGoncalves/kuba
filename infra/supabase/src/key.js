@@ -1,1 +1,1 @@
-export default process.env.SUPABASE_APIKEY
+export default process.env.API_KEY
