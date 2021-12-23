@@ -96,17 +96,17 @@ class Tag {
   }
 
   didMount () {
-    f.idle(() => this?.entity?.[f.dunder.didMount]?.())()
+    this?.entity?.[f.dunder.didMount]?.()
     return this
   }
 
   didUnmount () {
-    f.idle(() => this?.entity?.[f.dunder.didUnmount]?.())()
+    this?.entity?.[f.dunder.didUnmount]?.()
     return this
   }
 
   didUpdate () {
-    f.idle(() => this?.entity?.[f.dunder.didUpdate]?.())()
+    this?.entity?.[f.dunder.didUpdate]?.()
     return this
   }
 
