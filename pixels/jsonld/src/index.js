@@ -3,5 +3,5 @@ import middleware from '@kuba/middleware'
 import graph from './graph'
 import render from './render'
 
-export default (structured) =>
-  middleware((target) => render(f.push(graph, structured(target))))
+export default (schema) =>
+  middleware((entity) => render(f.push(graph, schema(entity))))
