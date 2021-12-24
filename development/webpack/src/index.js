@@ -18,7 +18,16 @@ module.exports = (dirname) => ({
     },
     historyApiFallback: true,
     hot: true,
-    port: process.env.PORT
+    port: process.env.PORT,
+    proxy: {
+      '/api/*': {
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api/': '/'
+        },
+        target: 'http://localhost:3000/api'
+      }
+    }
   },
   entry: {
     app: './index.js'
