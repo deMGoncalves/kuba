@@ -13,6 +13,7 @@ import '@kuba/value'
 
 import './routers'
 
+import '@kuba/adsense'
 import '@kuba/boma'
 import '@kuba/gtm'
 import '@kuba/sw'
