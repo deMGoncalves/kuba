@@ -2,11 +2,15 @@ import h, { render } from '@kuba/h'
 import * as f from '@kuba/f'
 import agent from '@kuba/agent'
 import env from '@kuba/env'
+import { gtm } from '@kuba/settings'
 import dataLayer from './dataLayer'
-import schema from './schema.json'
 
 f.and(agent.isUser, env.isProd) && (
-  render(document.head, <script src={schema.src} async />),
+  render(
+    document.head,
+    <script src={`https://www.googletagmanager.com/gtm.js?id=${gtm.id}`} async />
+  ),
+
   dataLayer.push({
     'gtm.kuba': new Date().getTime(),
     event: 'gtm.js'
