@@ -9,10 +9,6 @@ const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const webpack = require('webpack')
 
-dotenv.config({
-  path: '../../.env'
-})
-
 module.exports = (dirname) => ({
   context: path.resolve(dirname, 'src'),
   devtool: 'inline-source-map',

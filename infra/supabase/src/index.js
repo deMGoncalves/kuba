@@ -1,5 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
-import { supabase } from '@kuba/settings'
 import options from './options'
 
-export default createClient(supabase.apiURL, supabase.apiKey, options)
+export default createClient(
+  process.env.API_URL,
+  process.env.API_KEY,
+  options
+)
