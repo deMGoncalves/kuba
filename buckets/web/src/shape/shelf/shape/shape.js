@@ -3,8 +3,10 @@ import component from './component'
 
 @paint(component)
 class Shape {
-  get name () {
-    return 'shape'
+  #modelo
+
+  get modelo () {
+    return this.#modelo ??= ''
   }
 
   static stub () {
