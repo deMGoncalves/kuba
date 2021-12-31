@@ -2,14 +2,14 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .story {
-    display: inline-block;
-    margin: var(--spacing-lg) auto;
+    display: block;
+    padding: var(--spacing_inset-md) 0;
     width: 100%;
   }
 
   @media (min-width: 961px) {
     .story {
-      margin: var(--spacing-xl) auto;
+      padding: var(--spacing_inset-lg) 0;
     }
   }
 `
