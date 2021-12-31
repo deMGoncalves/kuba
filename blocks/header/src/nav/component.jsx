@@ -14,7 +14,7 @@ export default (nav) =>
       <link.Master className={style.nav__link} onClick={() => nav.redirectTo('truck')} darker medium xxs>truck</link.Master>
       <link.Master className={style.nav__link} onClick={() => nav.redirectTo('cushionSet')} darker medium xxs>cushion set</link.Master>
       <link.Master className={style.nav__link} onClick={() => nav.redirectTo('pads')} darker medium xxs>pads</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('rodas')} darker medium xxs>roda</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('rodas')} darker medium xxs>rodas</link.Master>
       <link.Master className={style.nav__link} onClick={() => nav.redirectTo('rolamentos')} darker medium xxs>rolamentos</link.Master>
       <link.Master className={style.nav__link} onClick={() => nav.redirectTo('chave')} darker medium xxs>chave</link.Master>
     </nav>
