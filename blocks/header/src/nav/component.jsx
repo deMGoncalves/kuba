@@ -11,8 +11,10 @@ export default (nav) =>
       <link.Master className={style.nav__link} onClick={() => nav.redirectTo('shape')} darker medium xxs>shape</link.Master>
       <link.Master className={style.nav__link} onClick={() => nav.redirectTo('lixa')} darker medium xxs>lixa</link.Master>
       <link.Master className={style.nav__link} onClick={() => nav.redirectTo('truck')} darker medium xxs>truck</link.Master>
-      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('rolamento')} darker medium xxs>rolamento</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('cushionSet')} darker medium xxs>cushion set</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('pads')} darker medium xxs>pads</link.Master>
       <link.Master className={style.nav__link} onClick={() => nav.redirectTo('roda')} darker medium xxs>roda</link.Master>
+      <link.Master className={style.nav__link} onClick={() => nav.redirectTo('rolamento')} darker medium xxs>rolamento</link.Master>
     </nav>
     <Hide when={nav.opened}>
       <button.icon.Bars className={style.nav__button} onClick={() => nav.open()} />
