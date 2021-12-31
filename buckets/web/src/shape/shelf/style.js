@@ -16,6 +16,7 @@ export default styled.style`
 
   @media (min-width: 769px) {
     .shelf__container {
+      grid-row-gap: var(--spacing_inset-lg);
       grid-template-columns: repeat(4, 1fr);
     }
   }
