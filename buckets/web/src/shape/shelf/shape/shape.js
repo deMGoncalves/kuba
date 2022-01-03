@@ -9,6 +9,10 @@ class Shape {
     return this.#modelo ??= ''
   }
 
+  static create () {
+    return new Shape()
+  }
+
   static stub () {
     return new Shape()
   }
