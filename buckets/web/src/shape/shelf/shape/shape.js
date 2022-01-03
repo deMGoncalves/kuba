@@ -13,8 +13,8 @@ class Shape {
     this.#modelo = modelo
   }
 
-  static create (dto) {
-    return new Shape(dto.modelo)
+  static create (data) {
+    return new Shape(data.modelo)
   }
 
   static stub () {

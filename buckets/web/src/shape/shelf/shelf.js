@@ -13,8 +13,8 @@ class Shelf {
   }
 
   @repaint
-  changeShapes (shapes) {
-    this.#shapes = f.map(shapes, Shape.create)
+  changeShapes (data) {
+    this.#shapes = f.map(data, Shape.create)
     return this
   }
 
