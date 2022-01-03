@@ -4,17 +4,26 @@ import component from './component'
 @paint(component)
 class Shape {
   #modelo
+  #tamanho
 
   get modelo () {
     return this.#modelo ??= ''
   }
 
-  constructor (modelo) {
+  get tamanho () {
+    return this.#tamanho ??= ''
+  }
+
+  constructor (modelo, tamanho) {
     this.#modelo = modelo
+    this.#tamanho = tamanho
   }
 
   static create (data) {
-    return new Shape(data.modelo)
+    return new Shape(
+      data.modelo,
+      data.tamanho.valor
+    )
   }
 
   static stub () {
