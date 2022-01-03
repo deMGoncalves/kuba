@@ -10,12 +10,12 @@ export default styled.style`
   }
 
   .shape__span::before {
-    border: 14px solid transparent;
+    border: 17.5px solid transparent;
     border-right-color: var(--color-master-light);
     border-top-color: var(--color-master-light);
     content: '';
     display: blok;
-    left: -28px;
+    left: -34px;
     position: absolute;
     top: 0;
   }
@@ -24,7 +24,7 @@ export default styled.style`
     align-items: center;
     background-color: var(--color-master-light);
     display: flex;
-    height: 28px;
+    height: 35px;
     justify-content: center;
     position: absolute;
     right: 0;
