@@ -19,7 +19,7 @@ class Shelf {
   }
 
   @didMount
-  async [f.dunder.mount] () {
+  async mount () {
     const { data, error } = await getShapes()
     f.not(error) && this.changeShapes(data)
     return this
