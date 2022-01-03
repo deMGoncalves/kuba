@@ -26,7 +26,6 @@ export default styled.style`
     display: flex;
     height: 28px;
     justify-content: center;
-    padding: var(--spacing_inset-nano);
     position: absolute;
     right: 0;
     top: 0;
