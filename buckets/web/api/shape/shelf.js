@@ -4,20 +4,14 @@ export default async function (_request, response) {
   const { data, error } = await supabase
     .from('shape')
     .select(`
-      id,
+      *,
       tipo (valor),
       marca (nome, descricao, site, origem (valor)),
       tamanho (valor),
       material (valor),
-      wheelbase (valor) as wheelbase,
+      wheelbase (valor),
       montagem (valor),
-      flag (valor),
-      lixa,
-      nose,
-      tail,
-      concave,
-      modelo,
-      laminas
+      flag (valor)
     `)
 
   response.json({ data, error })

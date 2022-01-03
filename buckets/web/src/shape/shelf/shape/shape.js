@@ -9,8 +9,12 @@ class Shape {
     return this.#modelo ??= ''
   }
 
-  static create () {
-    return new Shape()
+  constructor (modelo) {
+    this.#modelo = modelo
+  }
+
+  static create (dto) {
+    return new Shape(dto.modelo)
   }
 
   static stub () {
