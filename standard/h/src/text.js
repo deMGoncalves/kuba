@@ -63,7 +63,7 @@ class Text {
   static is (target) {
     return f.or(
       f.isNil(target),
-      f.some([String, Number, Date], f.is(f.__, target))
+      f.some([String, Number, Date, Array], f.is(f.__, target))
     )
   }
 }
