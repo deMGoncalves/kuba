@@ -2,12 +2,12 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .tamanho::before {
-    border: 17.5px solid transparent;
+    border: 16px solid transparent;
     border-right-color: var(--color-master-light);
     border-top-color: var(--color-master-light);
     content: '';
     display: blok;
-    left: -34px;
+    left: -32px;
     position: absolute;
     top: 0;
   }
@@ -16,7 +16,7 @@ export default styled.style`
     align-items: center;
     background-color: var(--color-master-light);
     display: flex;
-    height: 35px;
+    height: 32px;
     justify-content: center;
     position: absolute;
     right: 0;
