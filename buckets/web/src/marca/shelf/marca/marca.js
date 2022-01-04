@@ -3,7 +3,7 @@ import component from './component'
 
 @paint(component)
 class Marca {
-  get name () {
+  get nome () {
     return 'marca'
   }
 

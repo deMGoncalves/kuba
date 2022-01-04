@@ -1,5 +1,10 @@
 import h from '@kuba/h'
+import Picture from '@kuba/picture'
+import text from '@kuba/text'
 import style from './style'
 
 export default (marca) =>
-  <div className={style.marca}>{marca.name}</div>
+  <section className={style.marca}>
+    <Picture className={style.marca__picture} />
+    <text.Strong className={style.marca__text} master dark xxxs regular>{marca.nome}</text.Strong>
+  </section>
