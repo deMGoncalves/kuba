@@ -6,7 +6,7 @@ import style from './style'
 export default (shape) =>
   <Figure className={style.shape}>
     <Fragment slot='caption'>
-      <text.Span className={style.shape__span} master darker xxs bold>{shape.tamanho} &quot;</text.Span>
+      {shape.tamanho}
       <text.Strong master darker xxxs medium>{shape.modelo}</text.Strong>
     </Fragment>
   </Figure>

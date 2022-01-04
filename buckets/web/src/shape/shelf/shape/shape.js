@@ -1,4 +1,5 @@
 import { paint } from '@kuba/h'
+import Tamanho from './tamanho'
 import component from './component'
 
 @paint(component)
@@ -11,7 +12,7 @@ class Shape {
   }
 
   get tamanho () {
-    return this.#tamanho ??= ''
+    return this.#tamanho
   }
 
   constructor (modelo, tamanho) {
@@ -22,7 +23,7 @@ class Shape {
   static create (data) {
     return new Shape(
       data.modelo,
-      data.tamanho.valor
+      Tamanho.create(data.tamanho)
     )
   }
 
