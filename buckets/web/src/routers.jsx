@@ -7,22 +7,7 @@ router('/', async function shape () {
   render(<Shape />)
 })
 
-router('/lixa', async function lixa () {
-  const { default: Lixa } = await import('./lixa' /* webpackChunkName: "lixa" */)
-  render(<Lixa />)
-})
-
-router('/truck', async function truck () {
-  const { default: Truck } = await import('./truck' /* webpackChunkName: "truck" */)
-  render(<Truck />)
-})
-
-router('/rolamento', async function rolamento () {
-  const { default: Rolamento } = await import('./rolamento' /* webpackChunkName: "rolamento" */)
-  render(<Rolamento />)
-})
-
-router('/roda', async function roda () {
-  const { default: Roda } = await import('./roda' /* webpackChunkName: "roda" */)
-  render(<Roda />)
+router('/marcas', async function marca () {
+  const { default: Marca } = await import('./marca' /* webpackChunkName: "marca" */)
+  render(<Marca />)
 })
