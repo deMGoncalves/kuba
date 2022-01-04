@@ -5,13 +5,13 @@ export default async function (_request, response) {
     .from('shape')
     .select(`
       *,
-      tipo (valor),
-      marca (nome, descricao, site, origem (valor)),
-      tamanho (valor),
-      material (valor),
-      wheelbase (valor),
-      montagem (valor),
-      flag (valor)
+      tipo (*),
+      marca (*, origem (*)),
+      tamanho (*),
+      material (*),
+      wheelbase (*),
+      montagem (*),
+      flag (*)
     `)
 
   response.json({ data, error })
