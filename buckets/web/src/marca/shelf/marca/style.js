@@ -19,7 +19,7 @@ export default styled.style`
   }
 
   .marca__picture img {
-    background-color: var(--color-master-lightest);
+    background-color: #fff;
     object-fit: contain;
     padding: var(--spacing_inset-nano);
   }
