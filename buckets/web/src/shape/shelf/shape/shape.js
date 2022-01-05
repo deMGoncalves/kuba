@@ -4,8 +4,13 @@ import component from './component'
 
 @paint(component)
 class Shape {
+  #logo
   #modelo
   #tamanho
+
+  get logo () {
+    return this.#logo
+  }
 
   get modelo () {
     return this.#modelo ??= ''
@@ -15,7 +20,8 @@ class Shape {
     return this.#tamanho
   }
 
-  constructor (modelo, tamanho) {
+  constructor (modelo, tamanho, logo) {
+    this.#logo = logo
     this.#modelo = modelo
     this.#tamanho = tamanho
   }
@@ -23,7 +29,8 @@ class Shape {
   static create (data) {
     return new Shape(
       data.modelo,
-      Tamanho.create(data.tamanho)
+      Tamanho.create(data.tamanho),
+      data.logo
     )
   }
 
