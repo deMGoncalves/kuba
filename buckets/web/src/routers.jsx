@@ -3,12 +3,12 @@ import router from '@kuba/router'
 import render from './render'
 
 router('/', async function shapes () {
-  const { default: Shapes } = await import('./shape' /* webpackChunkName: "shapes" */)
+  const { default: Shapes } = await import('./shapes' /* webpackChunkName: "shapes" */)
   render(<Shapes />)
 })
 
 router('/marcas', async function marcas () {
-  const { default: Marcas } = await import('./marca' /* webpackChunkName: "marcas" */)
+  const { default: Marcas } = await import('./marcas' /* webpackChunkName: "marcas" */)
   render(<Marcas />)
 })
 
