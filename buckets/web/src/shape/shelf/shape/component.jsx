@@ -5,8 +5,8 @@ import style from './style'
 
 export default (shape) =>
   <Figure className={style.shape}>
-    <Show when={shape.logo}>
-      <source srcSet={shape.logo} slot='sources' />
+    <Show when={shape.thumbnail}>
+      <source srcSet={shape.thumbnail} slot='sources' />
     </Show>
     <Fragment slot='caption'>
       {shape.tamanho}

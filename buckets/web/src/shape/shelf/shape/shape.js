@@ -5,13 +5,9 @@ import component from './component'
 
 @paint(component)
 class Shape {
-  #logo
   #modelo
   #tamanho
-
-  get logo () {
-    return this.#logo
-  }
+  #thumbnail
 
   get modelo () {
     return this.#modelo
@@ -21,24 +17,29 @@ class Shape {
     return this.#tamanho
   }
 
-  constructor (modelo, tamanho, logo) {
-    this.#logo = logo
+  get thumbnail () {
+    return this.#thumbnail ??= ''
+  }
+
+  constructor (modelo, tamanho, thumbnail) {
     this.#modelo = modelo
     this.#tamanho = tamanho
+    this.#thumbnail = thumbnail
   }
 
   static create (data) {
     return new Shape(
       Modelo.create(data.modelo),
       Tamanho.create(data.tamanho),
-      data.logo
+      data.thumbnail
     )
   }
 
   static stub () {
     return new Shape(
       Modelo.stub(),
-      Tamanho.stub()
+      Tamanho.stub(),
+      ''
     )
   }
 }
