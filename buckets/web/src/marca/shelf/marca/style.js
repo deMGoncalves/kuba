@@ -11,6 +11,7 @@ export default styled.style`
   .marca__picture {
     border-radius: var(--border-radius-sm);
     box-shadow: var(--shadow-level-1) rgba(0, 0, 0, var(--opacity-level-light));
+    filter: grayscale(100%);
     margin: var(--spacing-xxs) auto;
     padding-top: 74.8px !important;
     width: 121px !important;
