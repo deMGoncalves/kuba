@@ -8,7 +8,7 @@ import style from './style'
 export default (footer) =>
   <footer className={style.footer}>
     <container.Div className={style.footer__container}>
-      <Logo onClick={() => footer.redirectTo('shape')} symbol />
+      <Logo onClick={() => footer.redirectTo('shapes')} symbol />
       <text.P className={style.footer__text} master dark xxxs>{schema.description}</text.P>
     </container.Div>
   </footer>
