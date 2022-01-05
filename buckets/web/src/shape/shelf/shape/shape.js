@@ -1,4 +1,5 @@
 import { paint } from '@kuba/h'
+import Modelo from './modelo'
 import Tamanho from './tamanho'
 import component from './component'
 
@@ -13,7 +14,7 @@ class Shape {
   }
 
   get modelo () {
-    return this.#modelo ??= ''
+    return this.#modelo
   }
 
   get tamanho () {
@@ -28,7 +29,7 @@ class Shape {
 
   static create (data) {
     return new Shape(
-      data.modelo,
+      Modelo.create(data.modelo),
       Tamanho.create(data.tamanho),
       data.logo
     )
@@ -36,7 +37,7 @@ class Shape {
 
   static stub () {
     return new Shape(
-      '',
+      Modelo.stub(),
       Tamanho.stub()
     )
   }
