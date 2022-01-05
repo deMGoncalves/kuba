@@ -17,7 +17,7 @@ export default styled.style`
     z-index: 1;
   }
 
-  .marca__text {
+  .marca__div {
     align-items: center;
     background-color: var(--color-master-lighter);
     border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);

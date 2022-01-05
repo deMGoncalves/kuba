@@ -3,8 +3,10 @@ import component from './component'
 
 @paint(component)
 class Marca {
+  #nome
+
   get nome () {
-    return 'marca'
+    return this.#nome ??= ''
   }
 
   static stub () {

@@ -6,5 +6,7 @@ import style from './style'
 export default (marca) =>
   <section className={style.marca}>
     <Picture className={style.marca__picture} />
-    <text.Strong className={style.marca__text} master dark xxxs regular>{marca.nome}</text.Strong>
+    <div className={style.marca__div}>
+      <text.Strong master dark xxxs regular>{marca.nome}</text.Strong>
+    </div>
   </section>
