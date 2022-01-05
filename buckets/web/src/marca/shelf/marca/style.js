@@ -18,6 +18,12 @@ export default styled.style`
     z-index: 1;
   }
 
+  .marca__picture img {
+    background-color: var(--color-master-lightest);
+    object-fit: contain;
+    padding: var(--spacing_inset-nano);
+  }
+
   .marca__div {
     align-items: center;
     background-color: var(--color-master-lighter);
