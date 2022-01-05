@@ -28,7 +28,10 @@ class Shape {
   }
 
   static stub () {
-    return new Shape()
+    return new Shape(
+      '',
+      Tamanho.stub()
+    )
   }
 }
 

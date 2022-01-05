@@ -21,6 +21,6 @@ export default styled.style`
     position: absolute;
     right: 0;
     top: 0;
-    width: 40px;
+    width: 48px;
   }
 `

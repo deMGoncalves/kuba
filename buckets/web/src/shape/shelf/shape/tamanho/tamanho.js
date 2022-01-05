@@ -18,6 +18,10 @@ class Tamanho {
   static create (data) {
     return new Tamanho(data.valor)
   }
+
+  static stub () {
+    return new Tamanho()
+  }
 }
 
 export default Tamanho
