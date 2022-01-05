@@ -19,4 +19,11 @@ export default styled.style`
       grid-template-columns: repeat(4, 1fr);
     }
   }
+
+  @media (min-width: 960px) {
+    .shelf__container {
+      grid-row-gap: var(--spacing_inset-lg);
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
 `

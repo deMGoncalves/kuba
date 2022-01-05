@@ -4,16 +4,16 @@ export default styled.style`
   .marca {
     background-color: var(--color-master-light);
     border-radius: var(--border-radius-sm);
-    height: 144px;
+    height: 136px;
     position: relative;
   }
 
   .marca__picture {
     border-radius: var(--border-radius-sm);
     box-shadow: var(--shadow-level-1) rgba(0, 0, 0, var(--opacity-level-light));
-    margin: var(--spacing-sm) auto;
-    padding-top: 68px !important;
-    width: 110px !important;
+    margin: var(--spacing-xxs) auto;
+    padding-top: 74.8px !important;
+    width: 121px !important;
     z-index: 1;
   }
 
@@ -26,6 +26,7 @@ export default styled.style`
     height: 48px;
     justify-content: center;
     left: 0;
+    padding-top: var(--spacing_inset-nano);
     position: absolute;
     width: 100%;
   }
