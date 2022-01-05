@@ -18,7 +18,7 @@ class Shape {
   }
 
   get thumbnail () {
-    return this.#thumbnail ??= ''
+    return this.#thumbnail
   }
 
   constructor (modelo, tamanho, thumbnail) {
@@ -39,7 +39,7 @@ class Shape {
     return new Shape(
       Modelo.stub(),
       Tamanho.stub(),
-      ''
+      undefined
     )
   }
 }
