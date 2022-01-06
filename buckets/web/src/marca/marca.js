@@ -1,7 +1,7 @@
 import { paint } from '@kuba/h'
+import global from '@kuba/global'
 import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
-import * as settings from '@kuba/settings'
 import component from './component'
 import data from './data'
 
@@ -10,11 +10,11 @@ import data from './data'
 @markup
 class Marca {
   get description () {
-    return settings.app.description
+    return global.descricao
   }
 
   get title () {
-    return 'Marcas'
+    return global.nome
   }
 }
 
