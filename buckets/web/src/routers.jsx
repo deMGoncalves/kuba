@@ -1,4 +1,5 @@
 import h from '@kuba/h'
+import { setGlobal } from '@kuba/global'
 import router from '@kuba/router'
 import getShape from './getShape'
 import render from './render'
@@ -22,5 +23,6 @@ router('/:marca/:shape', async function shape () {
   const { default: Shape } = await import('./shape' /* webpackChunkName: "shape" */)
   const { data } = await getShape()
 
-  render(<Shape {...data} />)
+  setGlobal(data)
+  render(<Shape />)
 })
