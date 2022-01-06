@@ -3,7 +3,7 @@ import Picture from '@kuba/picture'
 import style from './style'
 
 export default (props, children) =>
-  <figure className={[style.figure, props.className]}>
+  <figure className={[style.figure, props.className]} onClick={props.onClick}>
     <Picture alt={props.alt} circular={props.circular}>
       {children.sources}
     </Picture>
