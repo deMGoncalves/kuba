@@ -4,6 +4,7 @@ export default styled.style`
   .marca {
     background-color: var(--color-master-light);
     border-radius: var(--border-radius-sm);
+    cursor: pointer;
     height: 136px;
     position: relative;
   }

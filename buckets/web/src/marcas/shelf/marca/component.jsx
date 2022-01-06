@@ -5,7 +5,7 @@ import text from '@kuba/text'
 import style from './style'
 
 export default (marca) =>
-  <section className={style.marca}>
+  <section className={style.marca} onClick={() => marca.redirect()}>
     <Picture className={style.marca__picture}>
       <Show when={marca.logo}>
         <source srcSet={marca.logo} />
