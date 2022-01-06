@@ -11,5 +11,5 @@ export default (path, index) =>
     <Show when={f.isTruthy(index)}>
       <text.Span master xxxs bold>/</text.Span>
     </Show>
-    <link.Master className={style.breadcrumb__link} href={urlFor(path.page)} xxxs>{path.title}</link.Master>
+    <link.Master className={style.breadcrumb__link} href={urlFor(path.page, path.params)} xxxs>{path.title}</link.Master>
   </>
