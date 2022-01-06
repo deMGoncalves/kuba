@@ -1,4 +1,3 @@
-import * as f from '@kuba/f'
 import supabase from '@kuba/supabase'
 
 export default async function (request, response) {
@@ -17,5 +16,5 @@ export default async function (request, response) {
     `)
     .eq('slug', slug)
 
-  response.json({ data: f.pop(data), error })
+  response.json({ data: data.shift(), error })
 }
