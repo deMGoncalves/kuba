@@ -4,22 +4,22 @@ import component from './component'
 
 @paint(component)
 class Marca {
-  #logo
   #nome
   #slug
-
-  get logo () {
-    return this.#logo
-  }
+  #thumbnail
 
   get nome () {
     return this.#nome ??= ''
   }
 
-  constructor (nome, logo, slug) {
-    this.#logo = logo
+  get thumbnail () {
+    return this.#thumbnail
+  }
+
+  constructor (nome, slug, thumbnail) {
     this.#nome = nome
     this.#slug = slug
+    this.#thumbnail = thumbnail
   }
 
   redirect () {
@@ -30,8 +30,8 @@ class Marca {
   static create (data) {
     return new Marca(
       data.nome,
-      data.logo,
-      data.slug
+      data.slug,
+      data.logo
     )
   }
 
