@@ -1,7 +1,6 @@
 import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
-import * as settings from '@kuba/settings'
 import component from './component'
 import data from './data'
 
@@ -9,12 +8,20 @@ import data from './data'
 @jsonld(data)
 @markup
 class Shape {
+  #description
+  #title
+
   get description () {
-    return settings.app.description
+    return this.#description
   }
 
   get title () {
-    return 'Shapes'
+    return this.#title
+  }
+
+  constructor (data) {
+    this.#description = data.descricao
+    this.#title = data.modelo
   }
 }
 
