@@ -1,8 +1,9 @@
+import * as f from '@kuba/f'
 import supabase from '@kuba/supabase'
 
 export default async function (request, response) {
   const { slug } = JSON.parse(request.body)
-  const { data, error } = await supabase
+  const { data = [], error } = await supabase
     .from('shape')
     .select(`
       *,
@@ -16,5 +17,5 @@ export default async function (request, response) {
     `)
     .eq('slug', slug)
 
-  response.json({ data, error })
+  response.json({ data: f.pop(data), error })
 }
