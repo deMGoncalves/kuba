@@ -63,7 +63,10 @@ class Shape {
 
   static stub () {
     return new Shape(
+      undefined,
       Modelo.stub(),
+      undefined,
+      undefined,
       Tamanho.stub(),
       undefined
     )
