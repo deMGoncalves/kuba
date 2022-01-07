@@ -1,25 +1,34 @@
 import { paint } from '@kuba/h'
+import jsonld from '@kuba/jsonld'
 import { redirectTo } from '@kuba/router'
 import component from './component'
+import data from './data'
 
 @paint(component)
+@jsonld(data)
 class Marca {
+  #descricao
+  #logo
   #nome
   #slug
-  #thumbnail
+
+  get descricao () {
+    return this.#descricao
+  }
+
+  get logo () {
+    return this.#logo
+  }
 
   get nome () {
     return this.#nome ??= ''
   }
 
-  get thumbnail () {
-    return this.#thumbnail
-  }
-
-  constructor (nome, slug, thumbnail) {
+  constructor (descricao, logo, nome, slug) {
+    this.#descricao
+    this.#logo = logo
     this.#nome = nome
     this.#slug = slug
-    this.#thumbnail = thumbnail
   }
 
   redirect () {
@@ -29,9 +38,10 @@ class Marca {
 
   static create (data) {
     return new Marca(
+      data.descricao,
+      data.logo,
       data.nome,
-      data.slug,
-      data.logo
+      data.slug
     )
   }
 
