@@ -2,8 +2,11 @@ import supabase from '@kuba/supabase'
 
 export default async function (_request, response) {
   const { data } = await supabase
-    .from('marca')
-    .select('slug')
+    .from('shape')
+    .select(`
+      slug,
+      marca (slug)
+    `)
 
   response.setHeader('Content-Type', 'application/xml')
   response.send(
@@ -11,9 +14,9 @@ export default async function (_request, response) {
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${
         data
-          .map((marca) => `
+          .map((shape) => `
             <url>
-              <loc>https://www.kuba.ink/${marca.slug}</loc>
+              <loc>https://www.kuba.ink/${shape.marca.slug}/${shape.slug}</loc>
             </url>
           `)
           .join('')
