@@ -24,6 +24,10 @@ class Marca {
     return this.#nome ??= ''
   }
 
+  get slug () {
+    return this.#slug ??= ''
+  }
+
   constructor (descricao, logo, nome, slug) {
     this.#descricao
     this.#logo = logo
@@ -32,7 +36,7 @@ class Marca {
   }
 
   redirect () {
-    redirectTo('marca', { marca: this.#slug })
+    redirectTo('marca', { marca: this.slug })
     return this
   }
 
