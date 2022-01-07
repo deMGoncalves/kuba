@@ -1,6 +1,6 @@
 export default (shape) =>
   ({
-    '@id': '#product',
+    '@id': `#${shape.slug}`,
     '@type': 'Product',
     brand: {
       '@id': '#brand',

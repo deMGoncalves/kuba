@@ -28,6 +28,10 @@ class Shape {
     return this.#modelo ??= ''
   }
 
+  get slug () {
+    return this.#slug ??= ''
+  }
+
   get tamanho () {
     return this.#tamanho ??= ''
   }
@@ -46,7 +50,7 @@ class Shape {
   }
 
   redirect () {
-    redirectTo('shape', { marca: this.#marca.slug, shape: this.#slug })
+    redirectTo('shape', { marca: this.#marca.slug, shape: this.slug })
     return this
   }
 
