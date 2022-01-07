@@ -51,14 +51,14 @@
       "purpose": "any maskable"
     }
   ],
-	"url" : "https://kuba.engineer",
+	"url" : "https://www.kuba.ink",
   "screenshots" : [],
   "shortcuts": [
     {
       "name": "Home",
       "short_name": "Home",
       "description": "kuba é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o produto",
-      "url": "/?source=pwa",
+      "url": "/?utm_source=pwa",
       "icons": [
         {
           "src": "kuba_144x144.png",
