@@ -30,7 +30,7 @@ class Marca {
   }
 
   constructor (descricao, logo, nome, slug) {
-    this.#descricao
+    this.#descricao = descricao
     this.#logo = logo
     this.#nome = nome
     this.#slug = slug
