@@ -32,5 +32,8 @@
       "pixels/*",
       "standard/*"
     ]
+  },
+  "dependencies": {
+    "vercel": "^23.1.2"
   }
 }
