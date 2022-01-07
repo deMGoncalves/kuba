@@ -4,7 +4,7 @@ export default () => (
   {
     breadcrumb: [
       { page: 'shapes', title: 'Home' },
-      { page: 'marca', params: { marca: global.slug }, title: global.nome },
+      { page: 'marca', params: { marca: global.slug }, title: global.nome }
     ]
   }
 )
