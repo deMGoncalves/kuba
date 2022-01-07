@@ -13,5 +13,5 @@ export default (shape) =>
     image: [
       shape.thumbnail
     ],
-    name: shape.modelo
+    name: shape.modelo.valor
   })

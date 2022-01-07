@@ -41,7 +41,7 @@ class Shape {
     return this.#thumbnail ??= ''
   }
 
-  constructor (descricao, modelo, marca, slug, tamanho, thumbnail) {
+  constructor (descricao, marca, modelo, slug, tamanho, thumbnail) {
     this.#descricao = descricao
     this.#marca = marca
     this.#modelo = modelo
@@ -58,8 +58,8 @@ class Shape {
   static create (data) {
     return new Shape(
       data.descricao,
-      Modelo.create(data.modelo),
       data.marca,
+      Modelo.create(data.modelo),
       data.slug,
       Tamanho.create(data.tamanho),
       data.thumbnail
