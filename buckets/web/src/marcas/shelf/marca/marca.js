@@ -13,11 +13,11 @@ class Marca {
   #slug
 
   get descricao () {
-    return this.#descricao
+    return this.#descricao ??= ''
   }
 
   get logo () {
-    return this.#logo
+    return this.#logo ??= ''
   }
 
   get nome () {
