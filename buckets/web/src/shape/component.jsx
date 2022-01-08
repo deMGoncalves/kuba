@@ -7,6 +7,7 @@ export default () =>
   <Site>
     <Fragment slot='hot'>
       <Breadcrumb paths={schema().breadcrumb} />
+      /* pagina do shape aqui */
     </Fragment>
     <Fragment slot='warm' />
     <Fragment slot='cold' />
