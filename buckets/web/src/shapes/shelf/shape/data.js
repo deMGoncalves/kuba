@@ -3,7 +3,7 @@ export default (shape) =>
     '@id': `#${shape.slug}`,
     '@type': 'Product',
     brand: {
-      '@id': '#brand',
+      '@id': `#${shape.marca.slug}`,
       '@type': 'Brand',
       description: shape.marca.descricao,
       logo: shape.marca.logo,
@@ -13,5 +13,5 @@ export default (shape) =>
     image: [
       shape.thumbnail
     ],
-    name: shape.modelo
+    name: shape.modelo.valor
   })
