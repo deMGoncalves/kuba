@@ -1,11 +1,16 @@
 import { paint } from '@kuba/h'
-import global from '@kuba/global'
 import component from './component'
+import Details from './details'
+import Thumbnail from './thumbnail'
 
 @paint(component)
 class Shelf {
-  get image () {
-    return global.thumbnail
+  get thumbnail () {
+    return new Thumbnail()
+  }
+
+  get details () {
+    return new Details()
   }
 }
 
