@@ -35,6 +35,10 @@ export default styled.style`
     }
   }
 
+  .nav__link {
+    text-decoration: none;
+  }
+
   @media (max-width: 768px) {
     .nav__link {
       align-items: center;
