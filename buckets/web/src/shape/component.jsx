@@ -5,6 +5,7 @@ import container from '@kuba/container'
 import Site from '@kuba/site'
 import schema from './schema'
 import style from './style'
+import Thumbnail from './thumbnail'
 
 export default (shape) =>
   <Site>
@@ -14,6 +15,7 @@ export default (shape) =>
         <Hgroup>
           <Fragment slot='title'>{shape.title}</Fragment>
         </Hgroup>
+        <Thumbnail thumb={shape.image}/>
       </container.Section>
     </Fragment>
     <Fragment slot='warm' />

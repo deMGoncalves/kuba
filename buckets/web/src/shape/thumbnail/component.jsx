@@ -1,4 +1,4 @@
 import h from '@kuba/h'
 
-export default () =>
-  <span>...</span>
+export default (props) =>
+  <img srcSet={props.thumb}/>

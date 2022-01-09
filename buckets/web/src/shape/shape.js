@@ -13,6 +13,10 @@ class Shape {
     return global.descricao
   }
 
+  get image () {
+    return global.thumbnail
+  }
+
   get title () {
     return global.modelo
   }
