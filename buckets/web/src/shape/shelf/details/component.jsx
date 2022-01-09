@@ -12,7 +12,7 @@ export default (details) =>
       </Show>
     </text.P>
     <Show when={details.tamanho}>
-      <text.Label>Largura do shape: {details.tamanho}</text.Label>
+      <text.Label>Largura do shape: {details.tamanho}"</text.Label>
     </Show>
     <text.Label>Lixa inclusa: {details.lixa}</text.Label>
     <text.Label>Nose: {details.nose}</text.Label>
