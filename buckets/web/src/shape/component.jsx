@@ -9,10 +9,11 @@ export default (shape) =>
   <Site>
     <Fragment slot='hot'>
       <Breadcrumb paths={schema().breadcrumb} />
-      <Hgroup>
-        <Fragment slot='title'>{shape.title}</Fragment>
-      </Hgroup>
       <container.Section>
+        <Hgroup>
+          <Fragment slot='title'>{shape.title}</Fragment>
+          <Fragment slot='description'>{shape.description}</Fragment>
+        </Hgroup>
         {shape.shelf}
       </container.Section>
     </Fragment>
