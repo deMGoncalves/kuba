@@ -12,7 +12,6 @@ export default (shape) =>
       <container.Section>
         <Hgroup>
           <Fragment slot='title'>{shape.title}</Fragment>
-          <Fragment slot='description'>{shape.description}</Fragment>
         </Hgroup>
         {shape.shelf}
       </container.Section>
