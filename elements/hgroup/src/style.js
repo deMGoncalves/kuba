@@ -12,6 +12,7 @@ export default styled.style`
   .hgroup__h1 {
     font-size: var(--font-size-md) !important;
     line-height: var(--line-height-default);
+    padding: var(--spacing_inset-lg) 0;
   }
 
   @media (min-width: 769px) {
