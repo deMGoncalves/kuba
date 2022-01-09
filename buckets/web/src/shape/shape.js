@@ -4,6 +4,7 @@ import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
 import component from './component'
 import data from './data'
+import Shelf from './shelf'
 
 @paint(component)
 @jsonld(data)
@@ -13,8 +14,8 @@ class Shape {
     return global.descricao
   }
 
-  get image () {
-    return global.thumbnail
+  get shelf () {
+    return new Shelf()
   }
 
   get title () {
