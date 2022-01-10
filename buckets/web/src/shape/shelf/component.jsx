@@ -3,6 +3,5 @@ import style from './style'
 
 export default (shelf) =>
   <div className={style.shelf}>
-    {shelf.thumbnail}
     {shelf.details}
   </div>

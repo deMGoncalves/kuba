@@ -1,21 +1,21 @@
 import h, { Fragment } from '@kuba/h'
 import Breadcrumb from '@kuba/breadcrumb'
-import Hgroup from '@kuba/hgroup'
 import container from '@kuba/container'
 import Site from '@kuba/site'
+import story from '@kuba/story'
 import schema from './schema'
 
 export default (shape) =>
   <Site>
     <Fragment slot='hot'>
       <Breadcrumb paths={schema().breadcrumb} />
-      <container.Section>
-        {shape.thumbnail}
-        <Hgroup>
-          <Fragment slot='title'>{shape.title}</Fragment>
-        </Hgroup>
-        {shape.shelf}
-      </container.Section>
+      <story.Section>
+        <container.Div>
+          {shape.thumbnail}
+          {shape.modelo}
+          {shape.shelf}
+        </container.Div>
+      </story.Section>
     </Fragment>
     <Fragment slot='warm' />
     <Fragment slot='cold' />
