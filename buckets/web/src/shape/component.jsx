@@ -14,6 +14,7 @@ export default (shape) =>
           {shape.thumbnail}
           {shape.modelo}
           {shape.descricao}
+          {shape.tamanho}
           {shape.shelf}
         </container.Div>
       </story.Section>

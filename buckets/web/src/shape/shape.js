@@ -6,6 +6,7 @@ import data from './data'
 import Descricao from './descricao'
 import Shelf from './shelf'
 import Modelo from './modelo'
+import Tamanho from './tamanho'
 import Thumbnail from './thumbnail'
 
 @paint(component)
@@ -14,6 +15,7 @@ import Thumbnail from './thumbnail'
 class Shape {
   #descricao
   #modelo
+  #tamanho
   #thumbnail
 
   get descricao () {
@@ -31,6 +33,10 @@ class Shape {
 
   get shelf () {
     return new Shelf()
+  }
+
+  get tamanho () {
+    return this.#tamanho ??= Tamanho.create()
   }
 
   get thumbnail () {
