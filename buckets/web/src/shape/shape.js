@@ -9,6 +9,7 @@ import Shelf from './shelf'
 import Modelo from './modelo'
 import Nose from './nose'
 import Tamanho from './tamanho'
+import Tail from './tail'
 import Thumbnail from './thumbnail'
 
 @paint(component)
@@ -19,6 +20,7 @@ class Shape {
   #lixa
   #modelo
   #nose
+  #tail
   #tamanho
   #thumbnail
 
@@ -45,6 +47,10 @@ class Shape {
 
   get shelf () {
     return new Shelf()
+  }
+
+  get tail () {
+    return this.#tail ??= Tail.create()
   }
 
   get tamanho () {
