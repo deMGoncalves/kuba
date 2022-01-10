@@ -15,6 +15,7 @@ export default (shape) =>
           {shape.modelo}
           {shape.descricao}
           {shape.tamanho}
+          {shape.lixa}
           {shape.shelf}
         </container.Div>
       </story.Section>

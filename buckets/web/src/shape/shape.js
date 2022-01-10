@@ -4,6 +4,7 @@ import markup from '@kuba/markup'
 import component from './component'
 import data from './data'
 import Descricao from './descricao'
+import Lixa from './lixa'
 import Shelf from './shelf'
 import Modelo from './modelo'
 import Tamanho from './tamanho'
@@ -14,6 +15,7 @@ import Thumbnail from './thumbnail'
 @markup
 class Shape {
   #descricao
+  #lixa
   #modelo
   #tamanho
   #thumbnail
@@ -25,6 +27,10 @@ class Shape {
   get description () {
     // TODO: a descriciption deveria ser um decorator no getter descricao
     return this.descricao.valor
+  }
+
+  get lixa () {
+    return this.#lixa ??= Lixa.create()
   }
 
   get modelo () {
