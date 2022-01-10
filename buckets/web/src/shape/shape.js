@@ -7,6 +7,7 @@ import Descricao from './descricao'
 import Lixa from './lixa'
 import Shelf from './shelf'
 import Modelo from './modelo'
+import Nose from './nose'
 import Tamanho from './tamanho'
 import Thumbnail from './thumbnail'
 
@@ -17,6 +18,7 @@ class Shape {
   #descricao
   #lixa
   #modelo
+  #nose
   #tamanho
   #thumbnail
 
@@ -35,6 +37,10 @@ class Shape {
 
   get modelo () {
     return this.#modelo ??= Modelo.create()
+  }
+
+  get nose () {
+    return this.#nose ??= Nose.create()
   }
 
   get shelf () {
