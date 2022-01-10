@@ -13,6 +13,7 @@ export default (shape) =>
         <container.Div>
           {shape.thumbnail}
           {shape.modelo}
+          {shape.descricao}
           {shape.shelf}
         </container.Div>
       </story.Section>

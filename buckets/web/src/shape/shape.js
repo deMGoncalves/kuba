@@ -1,9 +1,9 @@
 import { paint } from '@kuba/h'
-import global from '@kuba/global'
 import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
 import component from './component'
 import data from './data'
+import Descricao from './descricao'
 import Shelf from './shelf'
 import Modelo from './modelo'
 import Thumbnail from './thumbnail'
@@ -12,11 +12,17 @@ import Thumbnail from './thumbnail'
 @jsonld(data)
 @markup
 class Shape {
+  #descricao
   #modelo
   #thumbnail
 
+  get descricao () {
+    return this.#descricao ??= Descricao.create()
+  }
+
   get description () {
-    return global.descricao
+    // TODO: a descriciption deveria ser um decorator no getter descricao
+    return this.descricao.valor
   }
 
   get modelo () {
@@ -32,6 +38,7 @@ class Shape {
   }
 
   get title () {
+    // TODO: o title deveria ser um decorator no getter modelo
     return this.modelo.valor
   }
 }
