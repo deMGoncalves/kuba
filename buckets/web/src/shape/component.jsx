@@ -19,6 +19,7 @@ export default (shape) =>
             {shape.tamanho}
             {shape.lixa}
             {shape.nose}
+            {shape.tail}
             {shape.shelf}
           </div>
         </container.Div>
