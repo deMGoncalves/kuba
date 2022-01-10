@@ -20,6 +20,7 @@ export default (shape) =>
             {shape.lixa}
             {shape.nose}
             {shape.tail}
+            {shape.concave}
             {shape.shelf}
           </div>
         </container.Div>

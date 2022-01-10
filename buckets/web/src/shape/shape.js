@@ -2,6 +2,7 @@ import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
 import component from './component'
+import Concave from './concave'
 import data from './data'
 import Descricao from './descricao'
 import Lixa from './lixa'
@@ -16,6 +17,7 @@ import Thumbnail from './thumbnail'
 @jsonld(data)
 @markup
 class Shape {
+  #concave
   #descricao
   #lixa
   #modelo
@@ -23,6 +25,10 @@ class Shape {
   #tail
   #tamanho
   #thumbnail
+
+  get concave () {
+    return this.#concave ??= Concave.create()
+  }
 
   get descricao () {
     return this.#descricao ??= Descricao.create()
