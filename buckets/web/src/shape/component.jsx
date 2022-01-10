@@ -10,6 +10,7 @@ export default (shape) =>
     <Fragment slot='hot'>
       <Breadcrumb paths={schema().breadcrumb} />
       <container.Section>
+        {shape.thumbnail}
         <Hgroup>
           <Fragment slot='title'>{shape.title}</Fragment>
         </Hgroup>

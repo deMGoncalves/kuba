@@ -4,8 +4,27 @@ import component from './component'
 
 @paint(component)
 class Thumbnail {
-  get image () {
-    return global.thumbnail
+  #alt
+  #src
+
+  get alt () {
+    return this.#alt
+  }
+
+  get src () {
+    return this.#src
+  }
+
+  constructor (alt, src) {
+    this.#alt = alt
+    this.#src = src
+  }
+
+  static create () {
+    return new Thumbnail(
+      global.modelo,
+      global.thumbnail
+    )
   }
 }
 

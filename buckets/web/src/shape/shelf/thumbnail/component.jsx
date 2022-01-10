@@ -1,7 +1,8 @@
 import h from '@kuba/h'
+import Picture from '@kuba/picture'
 import style from './style'
 
 export default (thumbnail) =>
-  <figure className={style.shelf__picture}>
-    <img srcSet={thumbnail.image}/>
-  </figure>
+  <Picture className={style.thumbnail} alt={thumbnail.alt}>
+    <source srcSet={thumbnail.src} />
+  </Picture>
