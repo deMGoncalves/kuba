@@ -5,8 +5,8 @@ import component from './component'
 import Concave from './concave'
 import data from './data'
 import Descricao from './descricao'
+import Laminas from './laminas'
 import Lixa from './lixa'
-import Shelf from './shelf'
 import Material from './material'
 import Modelo from './modelo'
 import Nose from './nose'
@@ -20,6 +20,7 @@ import Thumbnail from './thumbnail'
 class Shape {
   #concave
   #descricao
+  #laminas
   #lixa
   #material
   #modelo
@@ -41,6 +42,10 @@ class Shape {
     return this.descricao.valor
   }
 
+  get laminas () {
+    return this.#laminas ??= Laminas.create()
+  }
+
   get lixa () {
     return this.#lixa ??= Lixa.create()
   }
@@ -55,10 +60,6 @@ class Shape {
 
   get nose () {
     return this.#nose ??= Nose.create()
-  }
-
-  get shelf () {
-    return new Shelf()
   }
 
   get tail () {

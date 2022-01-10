@@ -22,7 +22,7 @@ export default (shape) =>
             {shape.tail}
             {shape.concave}
             {shape.material}
-            {shape.shelf}
+            {shape.laminas}
           </div>
         </container.Div>
       </story.Section>
