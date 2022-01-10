@@ -9,6 +9,7 @@ export default (shape) =>
       <source srcSet={shape.thumbnail} slot='sources' />
     </Show>
     <Fragment slot='caption'>
+      {shape.comparar}
       {shape.tamanho}
       {shape.modelo}
     </Fragment>
