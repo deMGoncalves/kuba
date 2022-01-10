@@ -21,6 +21,7 @@ export default (shape) =>
             {shape.nose}
             {shape.tail}
             {shape.concave}
+            {shape.material}
             {shape.shelf}
           </div>
         </container.Div>

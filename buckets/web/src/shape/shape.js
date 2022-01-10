@@ -7,6 +7,7 @@ import data from './data'
 import Descricao from './descricao'
 import Lixa from './lixa'
 import Shelf from './shelf'
+import Material from './material'
 import Modelo from './modelo'
 import Nose from './nose'
 import Tamanho from './tamanho'
@@ -20,6 +21,7 @@ class Shape {
   #concave
   #descricao
   #lixa
+  #material
   #modelo
   #nose
   #tail
@@ -41,6 +43,10 @@ class Shape {
 
   get lixa () {
     return this.#lixa ??= Lixa.create()
+  }
+
+  get material () {
+    return this.#material ??= Material.create()
   }
 
   get modelo () {
