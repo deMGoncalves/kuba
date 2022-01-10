@@ -11,9 +11,11 @@ export default (shape) =>
     <Fragment slot='hot'>
       <Breadcrumb paths={schema().breadcrumb} />
       <story.Section>
-        <container.Div className={style.shape__area}>
-          {shape.thumbnail}
-          <div className={style.shape__spec}>
+        <container.Div className={style.shape__div}>
+          <section className={[style.shape__section, style.thumbnail]}>
+            {shape.thumbnail}
+          </section>
+          <section className={[style.shape__section, style.specification]}>
             {shape.modelo}
             {shape.descricao}
             {shape.tamanho}
@@ -23,7 +25,7 @@ export default (shape) =>
             {shape.concave}
             {shape.material}
             {shape.laminas}
-          </div>
+          </section>
         </container.Div>
       </story.Section>
     </Fragment>
