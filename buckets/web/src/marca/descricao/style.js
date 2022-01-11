@@ -8,6 +8,6 @@ export default styled.style`
   }
 
   .descricao__paragraph {
-    line-height: var(--line-height-xs);
+    line-height: var(--line-height-sm) !important;
   }
 `

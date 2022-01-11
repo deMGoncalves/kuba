@@ -8,6 +8,7 @@ export default styled.style`
   }
 
   .link:hover {
+    border-bottom: 1px solid var(--color-master-darkest);
     color: var(--color-master-darkest);
     font-weight: var(--font-weight-bold);
   }
