@@ -10,5 +10,6 @@ export default async function (request, response) {
     `)
     .eq('slug', slug)
 
+  response.setHeader('Cache-Control', 'public, max-age=86400')
   response.json({ data: data.shift(), error })
 }
