@@ -1,7 +1,7 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .laminas__h2 {
+  .laminas__strong {
     line-height: var(--line-height-sm) !important;
   }
 
