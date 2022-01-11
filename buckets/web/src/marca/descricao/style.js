@@ -15,6 +15,10 @@ export default styled.style`
     position: relative;
   }
 
+  .descricao__about {
+    cursor: pointer !important;
+  }
+
   .descricao__text[opened] .descricao__paragraph {
     max-height: initial;
   }
