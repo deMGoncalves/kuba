@@ -14,11 +14,9 @@ export default (marca) =>
         <container.Div className={style.marca}>
           <section className={style.marca__thumbnail}>
             {marca.thumbnail}
+            {marca.descricao}
             {marca.link}
             {marca.origem}
-          </section>
-          <section className={style.marca__descricao}>
-            {marca.descricao}
           </section>
         </container.Div>
       </story.Section>
