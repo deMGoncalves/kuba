@@ -14,7 +14,10 @@ router('/', async function shapes () {
 })
 
 router('/marcas', async function marcas () {
-  const { default: Marcas } = await import('./marcas' /* webpackChunkName: "marcas" */)
+  const { default: Marcas, getMarcas } = await import('./marcas' /* webpackChunkName: "marcas" */)
+  const { data: marcas } = await getMarcas()
+
+  setGlobal({ marcas })
   render(<Marcas />)
 })
 
