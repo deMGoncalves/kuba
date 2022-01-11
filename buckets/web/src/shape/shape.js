@@ -7,6 +7,7 @@ import data from './data'
 import Descricao from './descricao'
 import Laminas from './laminas'
 import Lixa from './lixa'
+import Marca from './marca'
 import Material from './material'
 import Modelo from './modelo'
 import Nose from './nose'
@@ -22,6 +23,7 @@ class Shape {
   #descricao
   #laminas
   #lixa
+  #marca
   #material
   #modelo
   #nose
@@ -48,6 +50,10 @@ class Shape {
 
   get lixa () {
     return this.#lixa ??= Lixa.create()
+  }
+
+  get marca () {
+    return this.#marca ??= Marca.create()
   }
 
   get material () {

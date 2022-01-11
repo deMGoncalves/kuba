@@ -17,6 +17,7 @@ export default (shape) =>
           </section>
           <section className={[style.shape__section, style.specification]}>
             <hgroup className={style.shape__hgroup}>
+              {shape.marca}
               {shape.modelo}
             </hgroup>
             {shape.descricao}
