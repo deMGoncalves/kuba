@@ -14,5 +14,6 @@ export default async function (_request, response) {
       flag (*)
     `)
 
+  response.setHeader('Cache-Control', '86400')
   response.json({ data, error })
 }
