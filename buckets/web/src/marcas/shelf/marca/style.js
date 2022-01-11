@@ -15,8 +15,13 @@ export default styled.style`
     filter: grayscale(100%);
     margin: var(--spacing-xxs) auto;
     padding-top: 74.8px !important;
+    transition: 0.2s all ease-in;
     width: 121px !important;
     z-index: 1;
+  }
+
+  .marca__picture:hover {
+    filter: grayscale(0);
   }
 
   .marca__picture img {
