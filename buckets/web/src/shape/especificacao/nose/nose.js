@@ -3,11 +3,11 @@ import global from '@kuba/global'
 import component from './component'
 
 @paint(component)
-class Tail {
+class Nose {
   #valor
 
   get valor () {
-    return this.#valor ? 'Sim' : 'Nao'
+    return this.#valor
   }
 
   constructor (valor) {
@@ -15,8 +15,8 @@ class Tail {
   }
 
   static create () {
-    return new Tail(global.tail)
+    return new Nose(global.nose)
   }
 }
 
-export default Tail
+export default Nose

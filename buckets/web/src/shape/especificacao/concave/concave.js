@@ -3,11 +3,11 @@ import global from '@kuba/global'
 import component from './component'
 
 @paint(component)
-class Lixa {
+class Concave {
   #valor
 
   get valor () {
-    return this.#valor ? 'Sim' : 'Nao'
+    return this.#valor
   }
 
   constructor (valor) {
@@ -15,8 +15,8 @@ class Lixa {
   }
 
   static create () {
-    return new Lixa(global.lixa)
+    return new Concave(global.concave)
   }
 }
 
-export default Lixa
+export default Concave

@@ -21,16 +21,9 @@ export default (shape) =>
               {shape.modelo}
             </hgroup>
             {shape.descricao}
-            <dl>
-              {shape.tamanho}
-              {shape.wheelbase}
-              {shape.nose}
-              {shape.tail}
-              {shape.concave}
-              {shape.lixa}
-              {shape.material}
-              {shape.laminas}
-            </dl>
+            {shape.especificacao}
+            {shape.material}
+            {shape.laminas}
           </section>
         </container.Div>
       </story.Section>

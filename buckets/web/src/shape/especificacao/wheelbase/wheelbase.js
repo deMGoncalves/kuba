@@ -7,7 +7,7 @@ class Wheelbase {
   #valor
 
   get valor () {
-    return this.#valor
+    return `${this.#valor}"`
   }
 
   constructor (valor) {
