@@ -9,7 +9,7 @@ export default (lnk) =>
     <Show when={lnk.url}>
       <text.Label>
         <text.Strong master darker xxs>Site:</text.Strong>
-        <link.Master href={lnk.url} className={style.link} onClick={() => lnk.redirect()} regular>{lnk.nome}</link.Master>
+        <link.Master className={style.link} onClick={() => lnk.redirect()} regular>{lnk.nome}</link.Master>
       </text.Label>
     </Show>
   </>

@@ -3,7 +3,6 @@ import component from './component'
 
 @paint(component)
 class Thumbnail {
-  #info
   #logo
   #nome
   #site
