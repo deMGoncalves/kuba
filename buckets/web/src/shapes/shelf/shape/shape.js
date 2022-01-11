@@ -6,7 +6,6 @@ import Modelo from './modelo'
 import Tamanho from './tamanho'
 import component from './component'
 import data from './data'
-import Stub from './stub'
 
 @paint(component)
 @jsonld(data)
@@ -70,10 +69,6 @@ class Shape {
       Tamanho.create(data.tamanho),
       data.thumbnail
     )
-  }
-
-  static stub () {
-    return Stub.create()
   }
 }
 
