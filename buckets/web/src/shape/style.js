@@ -17,7 +17,7 @@ export default styled.style`
   .shape__section.specification {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-xs);
+    gap: var(--spacing_inset-md);
   }
 
   @media (min-width: 769px) {
