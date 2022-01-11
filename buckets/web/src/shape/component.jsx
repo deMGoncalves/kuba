@@ -23,6 +23,7 @@ export default (shape) =>
             {shape.descricao}
             <dl>
               {shape.tamanho}
+              {shape.wheelbase}
               {shape.nose}
               {shape.tail}
               {shape.concave}

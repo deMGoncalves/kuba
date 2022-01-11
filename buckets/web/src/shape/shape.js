@@ -14,6 +14,7 @@ import Nose from './nose'
 import Tamanho from './tamanho'
 import Tail from './tail'
 import Thumbnail from './thumbnail'
+import Wheelbase from './wheelbase'
 
 @paint(component)
 @jsonld(data)
@@ -30,6 +31,7 @@ class Shape {
   #tail
   #tamanho
   #thumbnail
+  #wheelbase
 
   get concave () {
     return this.#concave ??= Concave.create()
@@ -83,6 +85,10 @@ class Shape {
   get title () {
     // TODO: o title deveria ser um decorator no getter modelo
     return this.modelo.valor
+  }
+
+  get wheelbase () {
+    return this.#wheelbase = Wheelbase.create()
   }
 }
 
