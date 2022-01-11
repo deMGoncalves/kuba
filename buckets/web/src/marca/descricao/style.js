@@ -6,4 +6,8 @@ export default styled.style`
     flex-direction: column;
     gap: var(--spacing_inset-xs);
   }
+
+  .descricao__paragraph {
+    line-height: var(--line-height-xs);
+  }
 `

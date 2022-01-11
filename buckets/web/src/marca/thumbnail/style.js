@@ -7,12 +7,7 @@ export default styled.style`
     cursor: pointer;
     height: 107px;
     position: relative;
-  }
-
-  @media (min-width: 769px) {
-    .marca__logo {
-      width: 80%;
-    }
+    width: 80%;
   }
 
   .marca__picture {
