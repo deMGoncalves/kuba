@@ -26,6 +26,12 @@ export default styled.style`
     }
   }
 
+  @media (min-width: 769px) {
+    .shape__section.specification {
+      width: calc(100% * 0.618);
+    }
+  }
+
   .shape__hgroup {
     display: flex;
     flex-direction: column;

@@ -20,7 +20,6 @@ const component = styled.button`
   height: 48px;
   justify-content: center;
   letter-spacing: 0.618px;
-  line-height: var(--line-height-xl);
   padding: 0 var(--spacing_inset-sm);
   user-select: none;
 `

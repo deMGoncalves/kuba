@@ -1,5 +1,5 @@
 import h from '@kuba/h'
-import tag from '@kuba/tag'
+import style from './style'
 
 export default (props) =>
-  <tag.Master darker>{props.valor}</tag.Master>
+  <button className={style.material__tag}>{props.valor}</button>
