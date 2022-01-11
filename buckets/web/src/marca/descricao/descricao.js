@@ -1,10 +1,12 @@
-import { paint } from '@kuba/h'
+import { paint, repaint } from '@kuba/h'
+import * as f from '@kuba/f'
 import component from './component'
 
 @paint(component)
 class Descricao {
   #nome
   #descricao
+  #opened
   get descricao () {
     return this.#descricao ??= ''
   }
@@ -13,9 +15,19 @@ class Descricao {
     return this.#nome ??= ''
   }
 
+  get opened () {
+    return this.#opened ??= f.F()
+  }
+
   constructor (nome, descricao) {
     this.#nome = nome
     this.#descricao = descricao
+  }
+
+  @repaint
+  open () {
+    this.#opened = f.not(this.opened)
+    return this
   }
 
   static create (props) {

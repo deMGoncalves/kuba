@@ -5,9 +5,8 @@ export default styled.style`
     background-color: var(--color-master-light);
     border-radius: var(--border-radius-sm);
     cursor: pointer;
-    height: 107px;
+    height: 136px;
     position: relative;
-    width: 80%;
   }
 
   .marca__picture {
