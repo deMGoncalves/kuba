@@ -29,6 +29,5 @@ export default styled.style`
   .shape__hgroup {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-nano);
   }
 `

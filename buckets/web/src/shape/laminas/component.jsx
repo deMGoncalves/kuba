@@ -1,8 +1,9 @@
-import h, { Fragment } from '@kuba/h'
+import h from '@kuba/h'
 import text from '@kuba/text'
+import style from './style'
 
 export default (laminas) =>
-  <>
-    <text.Dt master dark xxxs medium>Laminas</text.Dt>
-    <text.Dd master xxs>{laminas.valor}</text.Dd>
-  </>
+  <section className={style.laminas}>
+    <text.H2 className={style.laminas__h2} master darker md medium>Lâminas</text.H2>
+    <text.P className={style.laminas__p} master xxxs>{laminas.valor}</text.P>
+  </section>
