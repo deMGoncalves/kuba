@@ -1,8 +1,9 @@
-import h, { Fragment } from '@kuba/h'
-import text from '@kuba/text'
+import h from '@kuba/h'
+import Repeat from '@kuba/repeat'
+import Tag from './tag'
+import style from './style'
 
 export default (material) =>
-  <>
-    <text.Dt master dark xxxs medium>Material</text.Dt>
-    <text.Dd master xxs>{material.valor}</text.Dd>
-  </>
+  <section className={style.material}>
+    <Repeat iterator={material.valor} component={Tag} />
+  </section>
