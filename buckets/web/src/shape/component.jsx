@@ -18,15 +18,17 @@ export default (shape) =>
           <section className={[style.shape__section, style.specification]}>
             <hgroup className={style.shape__hgroup}>
               {shape.modelo}
-              {shape.descricao}
             </hgroup>
-            {shape.tamanho}
-            {shape.lixa}
-            {shape.nose}
-            {shape.tail}
-            {shape.concave}
-            {shape.material}
-            {shape.laminas}
+            {shape.descricao}
+            <dl>
+              {shape.tamanho}
+              {shape.nose}
+              {shape.tail}
+              {shape.concave}
+              {shape.lixa}
+              {shape.material}
+              {shape.laminas}
+            </dl>
           </section>
         </container.Div>
       </story.Section>
