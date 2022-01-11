@@ -4,12 +4,12 @@ import link from '@kuba/link'
 import text from '@kuba/text'
 import style from './style'
 
-export default (link) =>
+export default (lnk) =>
   <>
-    <Show when={link.url}>
+    <Show when={lnk.url}>
       <text.Label>
         <text.Strong master darker xxs>Site:</text.Strong>
-        <link.Master href={link.url} className={style.link} onClick={() => link.redirect()} regular>{link.nome}</link.Master>
+        <link.Master href={lnk.url} className={style.link} onClick={() => lnk.redirect()} regular>{lnk.nome}</link.Master>
       </text.Label>
     </Show>
   </>

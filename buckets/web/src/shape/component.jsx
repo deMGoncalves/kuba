@@ -16,8 +16,10 @@ export default (shape) =>
             {shape.thumbnail}
           </section>
           <section className={[style.shape__section, style.specification]}>
-            {shape.modelo}
-            {shape.descricao}
+            <hgroup className={style.shape__hgroup}>
+              {shape.modelo}
+              {shape.descricao}
+            </hgroup>
             {shape.tamanho}
             {shape.lixa}
             {shape.nose}

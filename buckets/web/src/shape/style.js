@@ -25,4 +25,11 @@ export default styled.style`
       width: calc(100% * 0.382);
     }
   }
+
+  .shape__hgroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-nano);
+    text-align: center;
+  }
 `

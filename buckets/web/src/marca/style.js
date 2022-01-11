@@ -3,8 +3,8 @@ import styled from '@kuba/styled'
 export default styled.style`
   .marca {
     display: grid;
-    grid-template-columns: 1fr;
     gap: var(--spacing_inset-lg);
+    grid-template-columns: 1fr;
   }
 
   @media (min-width: 769px) {
