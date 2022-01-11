@@ -22,8 +22,8 @@ export default (shape) =>
             </hgroup>
             {shape.descricao}
             {shape.especificacao}
-            {shape.material}
             {shape.laminas}
+            {shape.material}
           </section>
         </container.Div>
       </story.Section>
