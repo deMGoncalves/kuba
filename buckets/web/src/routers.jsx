@@ -6,7 +6,10 @@ import getShape from './getShape'
 import render from './render'
 
 router('/', async function shapes () {
-  const { default: Shapes } = await import('./shapes' /* webpackChunkName: "shapes" */)
+  const { default: Shapes, getShapes } = await import('./shapes' /* webpackChunkName: "shapes" */)
+  const { data: shapes } = await getShapes()
+
+  setGlobal({ shapes })
   render(<Shapes />)
 })
 
