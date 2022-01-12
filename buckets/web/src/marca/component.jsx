@@ -12,15 +12,13 @@ export default (marca) =>
       <Breadcrumb paths={schema().breadcrumb} />
       <story.Section>
         <container.Div className={style.marca}>
-          <section className={style.marca__thumbnail}>
+          <container.Section className={style.marca__thumbnail}>
             {marca.thumbnail}
             {marca.descricao}
             {marca.link}
             {marca.origem}
-          </section>
-          <section>
-            {marca.shapes}
-          </section>
+          </container.Section>
+          {marca.shapes}
         </container.Div>
       </story.Section>
     </Fragment>
