@@ -1,5 +1,6 @@
 import h, { Fragment } from '@kuba/h'
 import * as f from '@kuba/f'
+import Comparebar, { Compare } from '@kuba/comparebar'
 import Header, { Logo, Nav } from '@kuba/header'
 import Lazy from '@kuba/lazy'
 import Show from '@kuba/show'
@@ -11,7 +12,9 @@ export default (site, children) =>
     <Header>
       <Logo />
       <Nav />
+      <Compare />
     </Header>
+    <Comparebar />
     <main className={style.site__main}>
       {children.hot}
       <Show when={f.len(children.warm)}>
