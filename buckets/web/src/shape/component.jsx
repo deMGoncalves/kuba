@@ -31,11 +31,7 @@ export default (shape) =>
       </story.Section>
     </Fragment>
     <Fragment slot='warm'>
-      <story.Section>
-        <container.Div>
-          {shape.related}
-        </container.Div>
-      </story.Section>
+      {shape.related}
     </Fragment>
     <Fragment slot='cold' />
   </Site>
