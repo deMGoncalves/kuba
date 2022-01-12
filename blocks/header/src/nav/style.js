@@ -13,7 +13,7 @@ export default styled.style`
     position: absolute;
     top: 89px;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
   }
 
   .nav[opened] {
