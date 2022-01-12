@@ -8,8 +8,8 @@ function getShape (shape) {
       method: 'POST'
     }
   )
-    .then(response => response.json())
     .then(f.or(f.__, []))
+    .then(response => response.json())
     .then(snapshot => shape.getImages(snapshot.data))
 }
 
