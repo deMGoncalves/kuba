@@ -2,6 +2,7 @@ import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
 import component from './component'
+import Creditos from './creditos'
 import data from './data'
 import Descricao from './descricao'
 import Especificacao from './especificacao'
@@ -15,6 +16,7 @@ import Thumbnail from './thumbnail'
 @jsonld(data)
 @markup
 class Shape {
+  #creditos
   #descricao
   #especificacao
   #laminas
@@ -22,6 +24,10 @@ class Shape {
   #material
   #modelo
   #thumbnail
+
+  get creditos () {
+    return this.#creditos ??= Creditos.create()
+  }
 
   get descricao () {
     return this.#descricao ??= Descricao.create()
