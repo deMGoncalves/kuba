@@ -7,7 +7,9 @@ class Wheelbase {
   #valor
 
   get valor () {
-    return `${this.#valor}"`
+    return this.#valor
+      ? `${this.#valor}"`
+      : '-'
   }
 
   constructor (valor) {
@@ -15,7 +17,7 @@ class Wheelbase {
   }
 
   static create () {
-    return new Wheelbase(global.wheelbase.valor)
+    return new Wheelbase(global.wheelbase?.valor)
   }
 }
 
