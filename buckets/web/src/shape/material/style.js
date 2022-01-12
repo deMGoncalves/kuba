@@ -8,10 +8,10 @@ export default styled.style`
 
   .material__tag {
     align-items: center;
-    background-color: var(--color-master-darker);
+    background-color: var(--color-master-light);
     border: none;
     border-radius: var(--border-radius-pill);
-    color: var(--color-master-lightest);
+    color: var(--color-master-darker);
     cursor: pointer;
     display: inline-flex;
     font-family: var(--font-family-base);
