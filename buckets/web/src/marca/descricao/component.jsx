@@ -7,6 +7,6 @@ export default (data) =>
   <article className={style.descricao__text} opened:isTruthy={data.opened} onClick={() => data.open()}>
     <text.P className={style.descricao__paragraph} xxs>{data.descricao}</text.P>
     <Hide when={data.opened}>
-      <text.Strong master darkest xxxs>Ver mais...</text.Strong>
+      <text.Strong className={style.descricao__about} master darkest bold xxxs>Ver mais...</text.Strong>
     </Hide>
   </article>
