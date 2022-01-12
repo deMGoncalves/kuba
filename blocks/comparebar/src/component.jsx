@@ -7,6 +7,6 @@ import style from './style'
 export default (comparebar) =>
   <Side className={style.comparebar} onClose={() => comparebar.close()} opened={comparebar.opened}>
     <Header>
-      <button.icon.Close onClick={() => comparebar.close()} />
+      <button.icon.ArrowLeft onClick={() => comparebar.close()} />
     </Header>
   </Side>
