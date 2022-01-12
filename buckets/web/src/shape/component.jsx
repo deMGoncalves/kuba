@@ -23,6 +23,7 @@ export default (shape) =>
             </hgroup>
             {shape.descricao}
             {shape.especificacao}
+            {shape.comparar}
             {shape.laminas}
             {shape.material}
           </section>
