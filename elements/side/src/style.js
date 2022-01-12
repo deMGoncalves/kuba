@@ -18,7 +18,7 @@ export default styled.style`
       opacity 618ms cubic-bezier(0.77, 0, 0.175, 1),
       transform 618ms cubic-bezier(0.77, 0, 0.175, 1);
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
   }
 
   .side[opened] {
