@@ -2,4 +2,4 @@ import h from '@kuba/h'
 import Logo from '@kuba/logo'
 
 export default (logo) =>
-  <Logo onClick={() => logo.redirectTo('shapes')} />
+  <Logo className={logo.className} onClick={() => logo.redirectTo('shapes')} />
