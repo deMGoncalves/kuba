@@ -14,13 +14,16 @@ class Shape {
     return this.#thumbnail ??= ''
   }
 
-  constructor (descriptor) {
-    this.#thumbnail = descriptor?.thumbnail
-    this.#modelo = descriptor?.modelo
+  constructor (modelo, thumbnail) {
+    this.#modelo = modelo
+    this.#thumbnail = thumbnail
   }
 
   static create (descriptor) {
-    return new Shape(descriptor)
+    return new Shape(
+      descriptor?.modelo,
+      descriptor?.thumbnail
+    )
   }
 
   static stub () {
