@@ -7,7 +7,9 @@ class Tamanho {
   #valor
 
   get valor () {
-    return `${this.#valor}"`
+    return this.#valor
+      ? `${this.#valor}"`
+      : '-'
   }
 
   constructor (valor) {
@@ -15,7 +17,7 @@ class Tamanho {
   }
 
   static create () {
-    return new Tamanho(global.tamanho.valor)
+    return new Tamanho(global.tamanho?.valor)
   }
 }
 
