@@ -8,16 +8,16 @@ export default styled.style`
 
   .material__tag {
     align-items: center;
-    background-color: var(--color-master-darker);
+    background-color: var(--color-master-light);
     border: none;
     border-radius: var(--border-radius-pill);
-    color: var(--color-master-lightest);
+    color: var(--color-master-darker);
     cursor: pointer;
     display: inline-flex;
     font-family: var(--font-family-base);
     font-size: var(--font-size-xxxs);
     font-weight: var(--font-weight-medium);
-    height: 26px;
+    height: 35px;
     justify-content: center;
     letter-spacing: 0.618px;
     padding: 0 var(--spacing_inset-sm);

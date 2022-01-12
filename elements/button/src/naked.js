@@ -18,7 +18,7 @@ const component = styled.button`
   font-family: var(--font-family-base);
   font-size: var(--font-size-xs);
   font-weight: ${weight};
-  gap: var(--spacing_inset-nano);
+  gap: var(--spacing_inset-sm);
   height: 48px;
   justify-content: center;
   letter-spacing: 0.618px;

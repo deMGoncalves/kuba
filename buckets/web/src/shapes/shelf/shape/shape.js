@@ -1,7 +1,6 @@
 import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import { redirectTo } from '@kuba/router'
-import Comparar from './comparar'
 import Modelo from './modelo'
 import Tamanho from './tamanho'
 import component from './component'
@@ -10,17 +9,12 @@ import data from './data'
 @paint(component)
 @jsonld(data)
 class Shape {
-  #comparar
   #descricao
   #marca
   #modelo
   #slug
   #tamanho
   #thumbnail
-
-  get comparar () {
-    return this.#comparar ??= Comparar.create()
-  }
 
   get descricao () {
     return this.#descricao ??= ''

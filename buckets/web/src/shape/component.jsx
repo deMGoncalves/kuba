@@ -14,6 +14,7 @@ export default (shape) =>
         <container.Div className={style.shape__div}>
           <section className={[style.shape__section, style.thumbnail]}>
             {shape.thumbnail}
+            {shape.creditos}
           </section>
           <section className={[style.shape__section, style.specification]}>
             <hgroup className={style.shape__hgroup}>
@@ -22,6 +23,7 @@ export default (shape) =>
             </hgroup>
             {shape.descricao}
             {shape.especificacao}
+            {shape.comparar}
             {shape.laminas}
             {shape.material}
           </section>
