@@ -4,7 +4,7 @@ export default styled.style`
   .shape__div {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-md);
+    gap: var(--spacing_inset-lg);
   }
 
   @media (min-width: 769px) {
@@ -13,11 +13,16 @@ export default styled.style`
     }
   }
 
-  .shape__section.thumbnail,
+  .shape__section.thumbnail {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-xs);
+  }
+
   .shape__section.specification {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-md);
+    gap: var(--spacing_inset-lg);
   }
 
   @media (min-width: 769px) {
