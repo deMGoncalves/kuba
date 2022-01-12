@@ -1,3 +1,4 @@
+/*
 import supabase from '@kuba/supabase'
 
 export default async function (request, response) {
@@ -6,3 +7,4 @@ export default async function (request, response) {
 
   response.json({ data, error })
 }
+*/
