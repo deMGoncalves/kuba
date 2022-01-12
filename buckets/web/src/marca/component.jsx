@@ -18,6 +18,9 @@ export default (marca) =>
             {marca.link}
             {marca.origem}
           </section>
+          <section>
+            {marca.shapes}
+          </section>
         </container.Div>
       </story.Section>
     </Fragment>

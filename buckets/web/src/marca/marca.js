@@ -6,20 +6,20 @@ import component from './component'
 import data from './data'
 import Descricao from './descricao'
 import Link from './link'
+import Shapes from './shapes'
 import Thumbnail from './thumbnail'
 import Origem from './origem'
-import getShape from './getShape'
 
 @paint(component)
 @jsonld(data)
 @markup
-@getShape
 class Marca {
   #thumbnail
   #descricao
   #link
   #origem
-  #snapshot
+  #shapes
+
   get origem () {
     return this.#origem ??= Origem.create(global)
   }
@@ -40,17 +40,8 @@ class Marca {
     return this.#thumbnail ??= Thumbnail.create(global)
   }
 
-  get snapshot () {
-    return this.#snapshot ??= []
-  }
-
-  constructor () {
-    this.getImages()
-  }
-
-  getImages (snapshot) {
-    this.#snapshot = snapshot
-    return this
+  get shapes () {
+    return this.#shapes ??= Shapes.create()
   }
 }
 

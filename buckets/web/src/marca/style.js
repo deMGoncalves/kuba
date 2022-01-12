@@ -17,6 +17,6 @@ export default styled.style`
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-xs);
-    justify-content: center;
+    justify-content: flex-start;
   }
 `
