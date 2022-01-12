@@ -21,7 +21,7 @@ export default styled.style`
     z-index: 1;
   }
 
-  .side[opened=true] {
+  .side[opened] {
     opacity: 1;
     transform: translate(0, 0);
   }
@@ -43,7 +43,7 @@ export default styled.style`
     z-index: 1;
   }
 
-  .side__overlayer[opened=true] {
+  .side__overlayer[opened] {
     display: block;
   }
 
