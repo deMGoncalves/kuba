@@ -14,7 +14,7 @@
       "headers" : [
         {
           "key" : "Cache-Control",
-          "value" : "must-revalidate, public, max-age=86400000"
+          "value" : "must-revalidate, public, max-age=86400"
         },
         {
           "key" : "X-Content-Type-Options",
