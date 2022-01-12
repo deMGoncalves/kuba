@@ -11,6 +11,7 @@ import Laminas from './laminas'
 import Marca from './marca'
 import Material from './material'
 import Modelo from './modelo'
+import Related from './related'
 import Thumbnail from './thumbnail'
 
 @paint(component)
@@ -25,6 +26,7 @@ class Shape {
   #marca
   #material
   #modelo
+  #related
   #thumbnail
 
   get comparar () {
@@ -62,6 +64,10 @@ class Shape {
 
   get modelo () {
     return this.#modelo ??= Modelo.create()
+  }
+
+  get related () {
+    return this.#related ??= Related.create()
   }
 
   get thumbnail () {
