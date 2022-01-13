@@ -2,15 +2,20 @@ import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import component from './component'
 import scroll from './scroll'
-import toggle from './toggle'
+import actions from './actions'
 
 @paint(component)
-@toggle
+@actions
 class Comparebar {
   #opened
 
   get opened () {
     return this.#opened ??= f.F()
+  }
+
+  add () {
+    this.open()
+    return this
   }
 
   @repaint
