@@ -25,7 +25,7 @@ class Marca {
   }
 
   get descricao () {
-    return this.#descricao ??= Descricao.create(global)
+    return this.#descricao ??= Descricao.create()
   }
 
   get link () {

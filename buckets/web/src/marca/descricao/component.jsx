@@ -1,12 +1,6 @@
 import h from '@kuba/h'
 import text from '@kuba/text'
-import Hide from '@kuba/hide'
 import style from './style'
 
-export default (data) =>
-  <article className={style.descricao__text} opened:isTruthy={data.opened} onClick={() => data.open()}>
-    <text.P className={style.descricao__paragraph} xxs>{data.descricao}</text.P>
-    <Hide when={data.opened}>
-      <text.Strong className={style.descricao__about} master darkest bold xxxs>Ver mais...</text.Strong>
-    </Hide>
-  </article>
+export default (descricao) =>
+  <text.P className={style.descricao} master xxxs>{descricao.valor}</text.P>
