@@ -38,6 +38,7 @@ export default styled.style`
   }
 
   .shape__header {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-quarck);

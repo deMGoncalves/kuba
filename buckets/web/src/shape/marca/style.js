@@ -2,6 +2,8 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .marca {
-    line-height: var(--line-height-lg) !important;
+    background-color: var(--color-master-darker);
+    border-radius: var(--border-radius-pill);
+    padding: var(--spacing_inset-quarck) var(--spacing_inset-xs);
   }
 `

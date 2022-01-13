@@ -3,4 +3,4 @@ import text from '@kuba/text'
 import style from './style'
 
 export default (marca) =>
-  <text.Strong className={style.marca} master xxxs medium>{marca.nome}</text.Strong>
+  <text.Strong className={style.marca} master lightest xxxs medium>{marca.nome}</text.Strong>
