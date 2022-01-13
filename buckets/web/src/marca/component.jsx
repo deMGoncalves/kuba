@@ -16,7 +16,7 @@ export default (marca) =>
             {marca.thumbnail}
             {marca.origem}
             {marca.descricao}
-            {marca.link}
+            {marca.site}
           </section>
           <section className={[style.marca__section, style.shelf]}>
             {marca.shapes}
