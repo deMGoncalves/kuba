@@ -1,10 +1,11 @@
 import * as f from '@kuba/f'
+import { params } from '@kuba/router'
 import middleware from '@kuba/middleware'
 
 function getShape (shape) {
   fetch('http://localhost:8080/api/shape/marca',
     {
-      body: JSON.stringify({ slug: 'real-skateboards' }),
+      body: JSON.stringify({ slug: params.marca }),
       method: 'POST'
     }
   )
