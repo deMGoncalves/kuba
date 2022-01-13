@@ -6,7 +6,7 @@ import style from './style'
 
 export default (shapes) =>
   <container.Div>
-    <text.Strong medium master darkest xxs>Shapes relacionados:</text.Strong>
+    <text.Strong medium master darkest xxs>Produtos da marca:</text.Strong>
     <story.Div className={style.shapes__grid}>
       {shapes.snapshot}
     </story.Div>
