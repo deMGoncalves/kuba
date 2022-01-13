@@ -20,6 +20,7 @@ export default (shape) =>
             <header className={style.shape__header}>
               {shape.marca}
               {shape.modelo}
+              {shape.origem}
             </header>
             {shape.descricao}
             {shape.especificacao}

@@ -11,6 +11,7 @@ import Laminas from './laminas'
 import Marca from './marca'
 import Material from './material'
 import Modelo from './modelo'
+import Origem from './origem'
 import Related from './related'
 import Thumbnail from './thumbnail'
 
@@ -26,6 +27,7 @@ class Shape {
   #marca
   #material
   #modelo
+  #origem
   #related
   #thumbnail
 
@@ -64,6 +66,10 @@ class Shape {
 
   get modelo () {
     return this.#modelo ??= Modelo.create()
+  }
+
+  get origem () {
+    return this.#origem ??= Origem.create()
   }
 
   get related () {
