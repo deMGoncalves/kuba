@@ -19,7 +19,7 @@ export default (marca) =>
             {marca.site}
           </section>
           <section className={[style.marca__section, style.shelf]}>
-            {marca.shapes}
+            {marca.shelf}
           </section>
         </container.div>
       </story.Section>

@@ -1,5 +1,3 @@
-import * as f from '@kuba/f'
-import global from '@kuba/global'
 import { params } from '@kuba/router'
 import * as settings from '@kuba/settings'
 
@@ -8,9 +6,7 @@ export default () =>
     `${settings.api.url}/shape/marca`,
     {
       body: JSON.stringify({
-        material: f.map(global.material, f.prop('id')),
-        slug: params.shape,
-        tamanho: global.tamanho.id
+        slug: params.marca
       }),
       method: 'POST'
     }

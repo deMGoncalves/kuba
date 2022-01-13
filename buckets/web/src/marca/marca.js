@@ -5,7 +5,7 @@ import markup from '@kuba/markup'
 import component from './component'
 import data from './data'
 import Descricao from './descricao'
-import Shapes from './shapes'
+import Shelf from './shelf'
 import Site from './site'
 import Thumbnail from './thumbnail'
 import Origem from './origem'
@@ -17,7 +17,7 @@ class Marca {
   #thumbnail
   #descricao
   #origem
-  #shapes
+  #shelf
   #site
 
   get origem () {
@@ -40,8 +40,8 @@ class Marca {
     return this.#thumbnail ??= Thumbnail.create(global)
   }
 
-  get shapes () {
-    return this.#shapes ??= Shapes.create()
+  get shelf () {
+    return this.#shelf ??= Shelf.create()
   }
 
   get site () {
