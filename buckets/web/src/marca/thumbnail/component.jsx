@@ -12,6 +12,6 @@ export default (thumbnail) =>
       </Show>
     </Picture>
     <div className={style.marca__div}>
-      <text.Strong master dark xxxs regular>{thumbnail.nome}</text.Strong>
+      <text.H1 master dark xxxs regular>{thumbnail.nome}</text.H1>
     </div>
   </section>
