@@ -3,7 +3,7 @@ import button from '@kuba/button'
 import icon from '@kuba/icon'
 import style from './style'
 
-export default () =>
+export default (comparar) =>
   <section className={style.comparar}>
-    <button.naked.Master darker medium>Comparar <icon.Compare /></button.naked.Master>
+    <button.naked.Master onClick={() => comparar.adicionar()} darker medium>Comparar <icon.Compare /></button.naked.Master>
   </section>
