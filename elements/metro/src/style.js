@@ -18,5 +18,6 @@ export default styled.style`
     gap: var(--spacing_inset-xs);
     text-align: inherit;
     white-space: nowrap;
+    width: 100%;
   }
 `

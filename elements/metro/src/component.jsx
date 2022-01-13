@@ -1,8 +1,8 @@
 import h from '@kuba/h'
 import style from './style'
 
-export default (props, children) =>
-  <div {...props} className={[style.metro, props.className]}>
+export default (_props, children) =>
+  <div className={style.metro}>
     <div className={style.metro__container}>
       {children}
     </div>
