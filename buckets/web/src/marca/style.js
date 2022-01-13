@@ -5,6 +5,7 @@ export default styled.style`
     display: grid;
     gap: var(--spacing_inset-lg);
     grid-template-columns: 1fr;
+    padding: 0 !important;
   }
 
   @media (min-width: 769px) {

@@ -11,7 +11,7 @@ export default (marca) =>
     <Fragment slot='hot'>
       <Breadcrumb paths={schema().breadcrumb} />
       <story.Section>
-        <container.Div className={style.marca}>
+        <container.Section className={style.marca}>
           <container.Section className={style.marca__thumbnail}>
             {marca.thumbnail}
             {marca.descricao}
@@ -19,7 +19,7 @@ export default (marca) =>
             {marca.origem}
           </container.Section>
           {marca.shapes}
-        </container.Div>
+        </container.Section>
       </story.Section>
     </Fragment>
     <Fragment slot='warm' />
