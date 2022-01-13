@@ -26,10 +26,10 @@ class Shape {
   }
 
   constructor (modelo, thumbnail, marca, slug) {
-    this.#modelo = modelo
-    this.#thumbnail = thumbnail
     this.#marca = marca
+    this.#modelo = modelo
     this.#slug = slug
+    this.#thumbnail = thumbnail
   }
 
   redirect () {
