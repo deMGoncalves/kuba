@@ -10,11 +10,7 @@ class Shapes {
   #snapshot
 
   get snapshot () {
-    return this.#snapshot ??= f.map(f.repeat({}, 4), Shape.create)
-  }
-
-  constructor () {
-    this.#snapshot = []
+    return this.#snapshot ??= f.map(f.repeat({}, 4), Shape.stub)
   }
 
   @repaint
