@@ -17,10 +17,10 @@ export default (shape) =>
             {shape.creditos}
           </section>
           <section className={[style.shape__section, style.specification]}>
-            <hgroup className={style.shape__hgroup}>
+            <header className={style.shape__header}>
               {shape.marca}
               {shape.modelo}
-            </hgroup>
+            </header>
             {shape.descricao}
             {shape.especificacao}
             {shape.comparar}

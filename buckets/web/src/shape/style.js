@@ -37,8 +37,9 @@ export default styled.style`
     }
   }
 
-  .shape__hgroup {
+  .shape__header {
     display: flex;
     flex-direction: column;
+    gap: var(--spacing_inset-quarck);
   }
 `
