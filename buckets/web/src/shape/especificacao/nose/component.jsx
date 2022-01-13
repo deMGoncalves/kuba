@@ -8,13 +8,13 @@ export default (nose) =>
   <>
     <Show when={nose.valor}>
       <div className={style.nose}>
-        <text.Strong master darker sm medium>Nose</text.Strong>
+        <text.Strong master darker xs medium>Nose</text.Strong>
         <text.Span master xxxs>Sim</text.Span>
       </div>
     </Show>
     <Hide when={nose.valor}>
       <div className={style.nose}>
-        <text.Strong master light sm medium>Nose</text.Strong>
+        <text.Strong master light xs medium>Nose</text.Strong>
         <text.Span master light xxxs>Não</text.Span>
       </div>
     </Hide>
