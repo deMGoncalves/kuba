@@ -1,19 +1,26 @@
 import { paint } from '@kuba/h'
+import global from '@kuba/global'
 import component from './component'
+import * as mapper from './mapper'
 
 @paint(component)
 class Origem {
-  #local
-  get local () {
-    return this.#local ??= ''
+  #valor
+
+  get url () {
+    return mapper[this.valor]
   }
 
-  constructor (origem) {
-    this.#local = origem
+  get valor () {
+    return this.#valor
   }
 
-  static create (props) {
-    return new Origem(props?.origem?.valor)
+  constructor (valor) {
+    this.#valor = valor
+  }
+
+  static create () {
+    return new Origem(global.origem?.valor)
   }
 }
 

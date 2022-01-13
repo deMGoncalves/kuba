@@ -21,7 +21,7 @@ class Marca {
   #shapes
 
   get origem () {
-    return this.#origem ??= Origem.create(global)
+    return this.#origem ??= Origem.create()
   }
 
   get descricao () {

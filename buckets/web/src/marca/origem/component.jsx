@@ -1,14 +1,12 @@
-import h, { Fragment } from '@kuba/h'
-import Show from '@kuba/show'
+import h from '@kuba/h'
+import Avatar from '@kuba/avatar'
 import text from '@kuba/text'
 import style from './style'
 
 export default (origem) =>
-  <>
-    <Show when={origem.local}>
-      <text.Label>
-        <text.Strong master darker xxs>Origem:</text.Strong>
-        <text.Strong className={style.origem} regular master darkest>{origem.local}</text.Strong>
-      </text.Label>
-    </Show>
-  </>
+  <section className={style.origem}>
+    <Avatar small>
+      <source srcSet={origem.url} />
+    </Avatar>
+    <text.Strong master darker xxxs medium>{origem.valor}</text.Strong>
+  </section>
