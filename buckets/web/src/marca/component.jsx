@@ -14,9 +14,9 @@ export default (marca) =>
         <container.div className={style.marca__div}>
           <section className={[style.marca__section, style.marca]}>
             {marca.thumbnail}
+            {marca.origem}
             {marca.descricao}
             {marca.link}
-            {marca.origem}
           </section>
           <section className={[style.marca__section, style.shelf]}>
             {marca.shapes}
