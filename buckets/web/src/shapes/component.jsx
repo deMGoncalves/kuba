@@ -7,6 +7,4 @@ export default () =>
     <Fragment slot='hot'>
       <Shelf />
     </Fragment>
-    <Fragment slot='warm' />
-    <Fragment slot='cold' />
   </Site>

@@ -34,5 +34,4 @@ export default (shape) =>
     <Fragment slot='warm'>
       {shape.related}
     </Fragment>
-    <Fragment slot='cold' />
   </Site>

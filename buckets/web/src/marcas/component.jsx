@@ -10,6 +10,4 @@ export default () =>
       <Breadcrumb paths={schema.breadcrumb} />
       <Shelf />
     </Fragment>
-    <Fragment slot='warm' />
-    <Fragment slot='cold' />
   </Site>

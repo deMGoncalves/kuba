@@ -22,6 +22,4 @@ export default (marca) =>
         </container.Section>
       </story.Section>
     </Fragment>
-    <Fragment slot='warm' />
-    <Fragment slot='cold' />
   </Site>
