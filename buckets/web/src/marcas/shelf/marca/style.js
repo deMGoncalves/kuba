@@ -20,10 +20,6 @@ export default styled.style`
     z-index: 1;
   }
 
-  .marca__picture:hover {
-    filter: grayscale(0);
-  }
-
   .marca__picture img {
     background-color: #fff;
     object-fit: contain;
