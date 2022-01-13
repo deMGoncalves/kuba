@@ -4,7 +4,7 @@ import text from '@kuba/text'
 import style from './style'
 
 export default (shape) =>
-  <figure className={style.shape__figure}>
+  <figure className={style.shape__figure} onClick={() => shape.redirect()}>
     <Picture>
       <source srcSet={shape.thumbnail} />
     </Picture>

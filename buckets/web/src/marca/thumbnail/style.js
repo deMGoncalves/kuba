@@ -19,11 +19,6 @@ export default styled.style`
     z-index: 1;
   }
 
-  .marca__picture:hover {
-    filter: grayscale(0);
-    transition: 0.1s all ease-in;
-  }
-
   .marca__picture img {
     background-color: #fff;
     object-fit: contain;
