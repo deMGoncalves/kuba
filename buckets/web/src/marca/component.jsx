@@ -11,15 +11,17 @@ export default (marca) =>
     <Fragment slot='hot'>
       <Breadcrumb paths={schema().breadcrumb} />
       <story.Section>
-        <container.Section className={style.marca}>
-          <container.Section className={style.marca__thumbnail}>
+        <container.div className={style.marca__div}>
+          <section className={[style.marca__section, style.marca]}>
             {marca.thumbnail}
             {marca.descricao}
             {marca.link}
             {marca.origem}
-          </container.Section>
-          {marca.shapes}
-        </container.Section>
+          </section>
+          <section className={[style.marca__section, style.shelf]}>
+            {marca.shapes}
+          </section>
+        </container.div>
       </story.Section>
     </Fragment>
   </Site>

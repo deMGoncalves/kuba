@@ -1,23 +1,39 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .marca {
-    display: grid;
+  .marca__div {
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing_inset-lg);
-    grid-template-columns: 1fr;
-    padding: 0 !important;
   }
 
   @media (min-width: 769px) {
-    .marca {
-      grid-template-columns: 1fr 2fr;
+    .marca__div {
+      flex-direction: row;
     }
   }
 
-  .marca__thumbnail {
+  .marca__section.marca {
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-xs);
-    justify-content: flex-start;
+  }
+
+  .marca__section.shelf {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-lg);
+  }
+
+  @media (min-width: 769px) {
+    .marca__section.marca {
+      width: calc(100% * 0.382);
+    }
+  }
+
+  @media (min-width: 769px) {
+    .marca__section.shelf {
+      width: calc(100% * 0.618);
+    }
   }
 `
