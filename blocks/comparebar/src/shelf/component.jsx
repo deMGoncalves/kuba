@@ -4,7 +4,7 @@ import story from '@kuba/story'
 import style from './style'
 
 export default (shelf) =>
-  <story.Section>
+  <story.Section className={style.shelf}>
     <container.Div className={style.shelf__container}>
       {shelf.shapes}
     </container.Div>
