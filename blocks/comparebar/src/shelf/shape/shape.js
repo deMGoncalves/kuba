@@ -1,6 +1,6 @@
 import { paint } from '@kuba/h'
+import Compare from '@kuba/compare'
 import jsonld from '@kuba/jsonld'
-import { redirectTo } from '@kuba/router'
 import Modelo from './modelo'
 import Tamanho from './tamanho'
 import component from './component'
@@ -10,6 +10,7 @@ import data from './data'
 @jsonld(data)
 class Shape {
   #descricao
+  #id
   #marca
   #modelo
   #slug
@@ -40,8 +41,9 @@ class Shape {
     return this.#thumbnail ??= ''
   }
 
-  constructor (descricao, marca, modelo, slug, tamanho, thumbnail) {
+  constructor (descricao, id, marca, modelo, slug, tamanho, thumbnail) {
     this.#descricao = descricao
+    this.#id = id
     this.#marca = marca
     this.#modelo = modelo
     this.#slug = slug
@@ -49,14 +51,15 @@ class Shape {
     this.#thumbnail = thumbnail
   }
 
-  redirect () {
-    redirectTo('shape', { marca: this.#marca.slug, shape: this.slug })
+  remove () {
+    Compare.remove({ id: this.#id })
     return this
   }
 
   static create (data) {
     return new Shape(
       data.descricao,
+      data.id,
       data.marca,
       Modelo.create(data.modelo),
       data.slug,

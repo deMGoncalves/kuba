@@ -8,10 +8,8 @@ import Shape from './shape'
 @paint(component)
 @actions
 class Shelf {
-  #shapes
-
   get shapes () {
-    return this.#shapes ??= f.map(Compare.shelf, Shape.create)
+    return f.map(Compare.shelf, Shape.create)
   }
 }
 
