@@ -13,11 +13,6 @@ class Comparebar {
     return this.#opened ??= f.F()
   }
 
-  add () {
-    this.open()
-    return this
-  }
-
   @repaint
   @scroll.unlock
   close () {
