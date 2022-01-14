@@ -2,8 +2,9 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .shelf__container {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing_inset-xs);
+    display: grid;
+    grid-column-gap: var(--spacing_inset-xs);
+    grid-row-gap: var(--spacing_inset-lg);
+    grid-template-columns: repeat(2, 1fr);
   }
 `
