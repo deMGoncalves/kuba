@@ -24,7 +24,7 @@ export default (shape) =>
             </header>
             {shape.descricao}
             {shape.especificacao}
-            {shape.comparar}
+            {shape.comparebutton}
             {shape.laminas}
             {shape.material}
           </section>

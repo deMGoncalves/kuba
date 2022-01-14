@@ -1,24 +1,25 @@
 import { paint } from '@kuba/h'
-import echo from '@kuba/echo'
+import Compare from '@kuba/compare'
 import global from '@kuba/global'
 import component from './component'
 
 @paint(component)
-class Comparar {
+class CompararButton extends Compare {
   #shape
 
-  adicionar () {
-    echo.emit('compare:add', this.#shape)
+  add () {
+    super.add(this.#shape)
     return this
   }
 
   constructor (shape) {
+    super()
     this.#shape = shape
   }
 
   static create () {
-    return new Comparar(global)
+    return new CompararButton(global)
   }
 }
 
-export default Comparar
+export default CompararButton

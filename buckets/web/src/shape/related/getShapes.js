@@ -5,7 +5,7 @@ import * as settings from '@kuba/settings'
 
 export default () =>
   fetch(
-    `${settings.api.url}/shape/marca`,
+    `${settings.api.url}/shape/related`,
     {
       body: JSON.stringify({
         material: f.map(global.material, f.prop('id')),

@@ -5,5 +5,8 @@ import style from './style'
 
 export default (comparar) =>
   <section className={style.comparar}>
-    <button.naked.Master onClick={() => comparar.adicionar()} darker medium>Comparar <icon.Compare /></button.naked.Master>
+    <button.naked.Master onClick={() => comparar.add()} darker medium>
+      Comparar
+      <icon.Compare />
+    </button.naked.Master>
   </section>

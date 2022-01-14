@@ -1,7 +1,7 @@
 import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
-import Comparar from './comparar'
+import Comparebutton from './comparebutton'
 import component from './component'
 import Creditos from './creditos'
 import data from './data'
@@ -19,7 +19,7 @@ import Thumbnail from './thumbnail'
 @jsonld(data)
 @markup
 class Shape {
-  #comparar
+  #comparebutton
   #creditos
   #descricao
   #especificacao
@@ -31,8 +31,8 @@ class Shape {
   #related
   #thumbnail
 
-  get comparar () {
-    return this.#comparar ??= Comparar.create()
+  get comparebutton () {
+    return this.#comparebutton ??= Comparebutton.create()
   }
 
   get creditos () {
