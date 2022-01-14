@@ -28,7 +28,7 @@ class Compare {
   }
 
   @actions.remove
-  remove (shape) {
+  static remove (shape) {
     const shelf = f.filter(Compare.shelf, f.compose(f.different(shape.id), f.prop('id')))
     localStorage.setItem(Compare.name, JSON.stringify(shelf))
     return this
