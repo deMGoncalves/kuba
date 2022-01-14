@@ -6,5 +6,6 @@ export default styled.style`
     grid-column-gap: var(--spacing_inset-xs);
     grid-row-gap: var(--spacing_inset-lg);
     grid-template-columns: repeat(2, 1fr);
+    min-height: calc(100vh - 176px);
   }
 `
