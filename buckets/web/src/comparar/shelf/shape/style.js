@@ -25,15 +25,4 @@ export default styled.style`
   .shape picture {
     padding-top: calc(4 / 3 * 100%) !important;
   }
-
-  .shape figcaption {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing_inset-xs);
-  }
-
-  .shape__ficha {
-    border: 1px solid var(--color-master-light);
-    border-radius: var(--border-radius-sm);
-  }
 `
