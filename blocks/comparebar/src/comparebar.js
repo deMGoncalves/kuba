@@ -3,6 +3,7 @@ import * as f from '@kuba/f'
 import component from './component'
 import scroll from './scroll'
 import actions from './actions'
+import { redirectTo } from '@kuba/router'
 
 @paint(component)
 @actions
@@ -24,6 +25,11 @@ class Comparebar {
   @scroll.lock
   open () {
     this.#opened = f.T()
+    return this
+  }
+
+  redirect () {
+    redirectTo('compare')
     return this
   }
 }
