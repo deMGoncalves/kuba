@@ -1,5 +1,5 @@
 import h from '@kuba/h'
-import style from './style'
+import Site from '@kuba/site'
 
-export default (comparar) =>
-  <div className={style.comparar}>{comparar.name}</div>
+export default () =>
+  <Site />
