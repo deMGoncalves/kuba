@@ -34,7 +34,7 @@ class Ficha {
   }
 
   get flag () {
-    return this.#flag ??= ''
+    return this.#flag ??= []
   }
 
   get laminas () {
@@ -50,7 +50,7 @@ class Ficha {
   }
 
   get material () {
-    return this.#material ??= ''
+    return this.#material ??= []
   }
 
   get montagem () {
