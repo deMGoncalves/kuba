@@ -11,6 +11,11 @@ router('/', async function shapes () {
   render(<Shapes />)
 })
 
+router('/comparar', async function comparar () {
+  const { default: Comparar } = await import('./comparar' /* webpackChunkName: "comparar" */)
+  render(<Comparar />)
+})
+
 router('/marcas', async function marcas () {
   const { default: Marcas, getMarcas } = await import('./marcas' /* webpackChunkName: "marcas" */)
   const { data: marcas } = await getMarcas()
