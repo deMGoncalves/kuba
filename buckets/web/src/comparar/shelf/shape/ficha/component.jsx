@@ -12,7 +12,7 @@ export default (ficha) =>
       {ficha.lixa}
       {ficha.marca}
       {ficha.material}
-      {ficha.monatgem}
+      {ficha.montagem}
       {ficha.nose}
       {ficha.origem}
       {ficha.tail}

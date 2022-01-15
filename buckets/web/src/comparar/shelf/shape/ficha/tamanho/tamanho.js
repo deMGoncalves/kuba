@@ -3,14 +3,17 @@ import component from './component'
 
 @paint(component)
 class Tamanho {
+  #valor
+  get valor () {
+    return this.#valor ??= ''
+  }
+
   constructor (valor) {
-    valor
+    this.#valor = valor
   }
 
   static create (valor) {
-    return new Tamanho(
-      valor
-    )
+    return new Tamanho(valor)
   }
 }
 

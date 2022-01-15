@@ -3,14 +3,17 @@ import component from './component'
 
 @paint(component)
 class Marca {
+  #valor
+  get valor () {
+    return this.#valor ??= ''
+  }
+
   constructor (valor) {
-    valor
+    this.#valor = valor
   }
 
   static create (valor) {
-    return new Marca(
-      valor
-    )
+    return new Marca(valor)
   }
 }
 

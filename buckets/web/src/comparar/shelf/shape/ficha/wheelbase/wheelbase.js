@@ -3,14 +3,17 @@ import component from './component'
 
 @paint(component)
 class Wheelbase {
+  #valor
+  get valor () {
+    return this.#valor ??= ''
+  }
+
   constructor (valor) {
-    valor
+    this.#valor = valor
   }
 
   static create (valor) {
-    return new Wheelbase(
-      valor
-    )
+    return new Wheelbase(valor)
   }
 }
 

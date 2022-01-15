@@ -109,9 +109,9 @@ class Ficha {
       Nose.create(data?.nose),
       Origem.create(data?.marca?.origem?.valor),
       Tail.create(data?.tail),
-      Tamanho.create(data?.tamanho),
-      Tipo.create(data?.tipo),
-      Wheelbase.create(data?.wheelbase)
+      Tamanho.create(data?.tamanho?.valor),
+      Tipo.create(data?.tipo?.valor),
+      Wheelbase.create(data?.wheelbase?.valor)
     )
   }
 }
