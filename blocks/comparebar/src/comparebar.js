@@ -1,5 +1,6 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import { redirectTo } from '@kuba/router'
 import component from './component'
 import scroll from './scroll'
 import actions from './actions'
@@ -29,7 +30,7 @@ class Comparebar {
   }
 
   redirect () {
-    redirectTo('compare')
+    redirectTo('comparar')
     return this
   }
 }

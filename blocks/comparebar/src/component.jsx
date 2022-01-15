@@ -14,9 +14,7 @@ export default (comparebar) =>
     <Shelf />
     <footer className={style.comparebar__footer}>
       <container.Div className={style.comparebar__div}>
-        <button.naked.Master className={style.comparebar__button} onClick={() => comparebar.redirect()} darker medium>
-          Comparar
-        </button.naked.Master>
+        <button.naked.Master className={style.comparebar__button} onClick={() => comparebar.redirect()} darker medium>Comparar</button.naked.Master>
       </container.Div>
     </footer>
   </Side>
