@@ -1,6 +1,7 @@
 import h, { Fragment } from '@kuba/h'
 import Figure from '@kuba/figure'
 import Show from '@kuba/show'
+import story from '@kuba/story'
 import style from './style'
 
 export default (shape) =>
@@ -11,5 +12,8 @@ export default (shape) =>
     <Fragment slot='caption'>
       {shape.tamanho}
       {shape.modelo}
+      <story.Section className={style.shape__ficha}>
+        {shape.ficha}
+      </story.Section>
     </Fragment>
   </Figure>
