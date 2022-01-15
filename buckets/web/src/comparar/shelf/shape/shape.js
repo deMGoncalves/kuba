@@ -10,6 +10,7 @@ import Ficha from './ficha'
 @paint(component)
 @jsonld(data)
 class Shape {
+  #data
   #descricao
   #ficha
   #id
@@ -19,12 +20,16 @@ class Shape {
   #tamanho
   #thumbnail
 
+  get data () {
+    return this.#data ??= ''
+  }
+
   get descricao () {
     return this.#descricao ??= ''
   }
 
   get ficha () {
-    return this.#ficha ??= ''
+    return this.#ficha ??= Ficha.create(this.data)
   }
 
   get marca () {
@@ -47,9 +52,9 @@ class Shape {
     return this.#thumbnail ??= ''
   }
 
-  constructor (descricao, ficha, id, marca, modelo, slug, tamanho, thumbnail) {
+  constructor (data, descricao, id, marca, modelo, slug, tamanho, thumbnail) {
+    this.#data = data
     this.#descricao = descricao
-    this.#ficha = ficha
     this.#id = id
     this.#marca = marca
     this.#modelo = modelo
@@ -65,8 +70,8 @@ class Shape {
 
   static create (data) {
     return new Shape(
+      data,
       data.descricao,
-      Ficha.create(data),
       data.id,
       data.marca,
       Modelo.create(data.modelo),
