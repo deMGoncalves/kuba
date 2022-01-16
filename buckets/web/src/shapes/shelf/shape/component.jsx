@@ -11,9 +11,10 @@ export default (shape) =>
       <source srcSet={shape.thumbnail} slot='sources' />
     </Picture>
     <main className={style.shape__main}>
-      {shape.modelo}
-      {shape.laminas}
+      <hgroup>
+        {shape.modelo}
+        {shape.laminas}
+      </hgroup>
       {shape.tamanho}
     </main>
-    <footer className={style.shape__footer} />
   </section>

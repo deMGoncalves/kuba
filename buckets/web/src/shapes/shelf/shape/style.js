@@ -24,8 +24,4 @@ export default styled.style`
     gap: var(--spacing_inset-xs);
     padding: var(--spacing_inset-xs);
   }
-
-  .shape__footer {
-    padding: 0 var(--spacing_inset-xs);
-  }
 `
