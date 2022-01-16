@@ -3,4 +3,4 @@ import text from '@kuba/text'
 import style from './style'
 
 export default (modelo) =>
-  <text.Strong className={style.modelo} master darker xxxs medium>{modelo.valor}</text.Strong>
+  <text.H1 className={style.modelo} master darker xxs medium>{modelo.valor}</text.H1>

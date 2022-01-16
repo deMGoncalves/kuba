@@ -1,15 +1,19 @@
 import h, { Fragment } from '@kuba/h'
-import Figure from '@kuba/figure'
-import Show from '@kuba/show'
+import Picture from '@kuba/picture'
 import style from './style'
 
 export default (shape) =>
-  <Figure className={style.shape} onClick={() => shape.redirect()}>
-    <Show when={shape.thumbnail}>
+  <section className={style.shape} onClick={() => shape.redirect()}>
+    <header className={style.shape__header}>
+      {shape.marca}
+    </header>
+    <Picture className={style.shape__picture}>
       <source srcSet={shape.thumbnail} slot='sources' />
-    </Show>
-    <Fragment slot='caption'>
-      {shape.tamanho}
+    </Picture>
+    <main className={style.shape__main}>
       {shape.modelo}
-    </Fragment>
-  </Figure>
+      {shape.laminas}
+      {shape.tamanho}
+    </main>
+    <footer className={style.shape__footer} />
+  </section>
