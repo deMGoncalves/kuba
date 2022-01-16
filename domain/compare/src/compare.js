@@ -15,7 +15,7 @@ class Compare {
   }
 
   @actions.add
-  add (shape) {
+  static add (shape) {
     const contains = f.find(Compare.shelf, f.compose(f.equal(shape.id), f.prop('id')))
     const shelf = Compare.shelf
 
