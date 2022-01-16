@@ -5,6 +5,8 @@ export default styled.style`
     background-color: #fff;
     border-radius: var(--border-radius-sm);
     cursor: pointer;
+    padding-bottom: 35px;
+    position: relative;
   }
 
   .shape__header {
@@ -21,7 +23,17 @@ export default styled.style`
   .shape__main {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-xs);
     padding: var(--spacing_inset-xs);
+  }
+
+  .shpae__footer {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    height: 35px;
+    left: 0;
+    padding: 0 var(--spacing_inset-xs);
+    position: absolute;
+    width: 100%;
   }
 `
