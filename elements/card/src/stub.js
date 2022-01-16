@@ -1,8 +1,9 @@
 import { paint } from '@kuba/h'
+import component from './component'
 import Laminas from './laminas'
 import Marca from './marca'
 import Modelo from './modelo'
-import component from './component'
+import Tamanho from './tamanho'
 
 @paint(component)
 class Stub {
@@ -35,7 +36,7 @@ class Stub {
   }
 
   get tamanho () {
-    return this.#tamanho ??= ''
+    return this.#tamanho ??= Tamanho.stub()
   }
 
   get thumbnail () {
