@@ -6,7 +6,6 @@ import Laminas from './laminas'
 import Lixa from './lixa'
 import Marca from './marca'
 import Material from './material'
-import Montagem from './montagem'
 import Nose from './nose'
 import Origem from './origem'
 import Tail from './tail'
@@ -22,7 +21,6 @@ class Ficha {
   #lixa
   #marca
   #material
-  #montagem
   #nose
   #origem
   #tail
@@ -53,10 +51,6 @@ class Ficha {
     return this.#material ??= []
   }
 
-  get montagem () {
-    return this.#montagem ??= ''
-  }
-
   get nose () {
     return this.#nose ??= ''
   }
@@ -81,14 +75,13 @@ class Ficha {
     return this.#wheelbase ??= ''
   }
 
-  constructor (concave, flag, laminas, lixa, marca, material, montagem, nose, origem, tail, tamanho, tipo, wheelbase) {
+  constructor (concave, flag, laminas, lixa, marca, material, nose, origem, tail, tamanho, tipo, wheelbase) {
     this.#concave = concave
     this.#flag = flag
     this.#laminas = laminas
     this.#lixa = lixa
     this.#marca = marca
     this.#material = material
-    this.#montagem = montagem
     this.#nose = nose
     this.#origem = origem
     this.#tail = tail
@@ -105,7 +98,6 @@ class Ficha {
       Lixa.create(data?.lixa),
       Marca.create(data?.marca?.nome),
       Material.create(data?.material),
-      Montagem.create(data?.montagem),
       Nose.create(data?.nose),
       Origem.create(data?.marca?.origem?.valor),
       Tail.create(data?.tail),
