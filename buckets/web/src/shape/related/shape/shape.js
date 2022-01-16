@@ -1,6 +1,8 @@
 import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import { redirectTo } from '@kuba/router'
+import Laminas from './laminas'
+import Marca from './marca'
 import Modelo from './modelo'
 import Tamanho from './tamanho'
 import component from './component'
@@ -10,6 +12,7 @@ import data from './data'
 @jsonld(data)
 class Shape {
   #descricao
+  #laminas
   #marca
   #modelo
   #slug
@@ -20,8 +23,12 @@ class Shape {
     return this.#descricao ??= ''
   }
 
+  get laminas () {
+    return this.#laminas ??= ''
+  }
+
   get marca () {
-    return this.#marca ??= {}
+    return this.#marca ??= ''
   }
 
   get modelo () {
@@ -40,8 +47,9 @@ class Shape {
     return this.#thumbnail ??= ''
   }
 
-  constructor (descricao, marca, modelo, slug, tamanho, thumbnail) {
+  constructor (descricao, laminas, marca, modelo, slug, tamanho, thumbnail) {
     this.#descricao = descricao
+    this.#laminas = laminas
     this.#marca = marca
     this.#modelo = modelo
     this.#slug = slug
@@ -57,7 +65,8 @@ class Shape {
   static create (data) {
     return new Shape(
       data.descricao,
-      data.marca,
+      Laminas.create(data.laminas),
+      Marca.create(data.marca),
       Modelo.create(data.modelo),
       data.slug,
       Tamanho.create(data.tamanho),

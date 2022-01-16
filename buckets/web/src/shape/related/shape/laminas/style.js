@@ -1,7 +1,7 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .tamanho {
-    text-align: center;
+  .laminas__p {
+    line-height: var(--line-height-lg) !important;
   }
 `
