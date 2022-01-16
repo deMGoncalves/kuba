@@ -4,16 +4,15 @@ import global from '@kuba/global'
 import component from './component'
 
 @paint(component)
-class CompararButton extends Compare {
+class CompararButton {
   #shape
 
   add () {
-    super.add(this.#shape)
+    Compare.add(this.#shape)
     return this
   }
 
   constructor (shape) {
-    super()
     this.#shape = shape
   }
 
