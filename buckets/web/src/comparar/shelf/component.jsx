@@ -4,8 +4,8 @@ import story from '@kuba/story'
 import style from './style'
 
 export default (shelf) =>
-  <>
-    <story.Section className={style.shelf__section}>
+  <story.Section>
+    <section className={style.shelf__section}>
       <container.Div className={style.shelf__div}>
         {shelf.thumbnail}
       </container.Div>
@@ -16,15 +16,13 @@ export default (shelf) =>
       <container.Div className={style.shelf__div}>
         {shelf.descricao}
       </container.Div>
-    </story.Section>
-    <story.Section className={style.shelf__section}>
+    </section>
+    <section className={[style.shelf__section, style.especificacao]}>
       <container.Div className={style.shelf__div}>
         {shelf.tamanho}
       </container.Div>
-    </story.Section>
-    <story.Section className={style.shelf__section}>
       <container.Div className={style.shelf__div}>
         {shelf.wheelbase}
       </container.Div>
-    </story.Section>
-  </>
+    </section>
+  </story.Section>

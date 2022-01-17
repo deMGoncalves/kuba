@@ -7,6 +7,11 @@ export default styled.style`
     gap: var(--spacing_inset-xs);
   }
 
+  .shelf__section.especificacao {
+    gap: var(--spacing_inset-lg);
+    padding-top: var(--spacing_inset-lg);
+  }
+
   .shelf__div {
     display: grid;
     grid-column-gap: var(--spacing_inset-lg);
