@@ -7,6 +7,7 @@ import Marca from './marca'
 import Modelo from './modelo'
 import Tamanho from './tamanho'
 import Thumbnail from './thumbnail'
+import Wheelbase from './wheelbase'
 
 @paint(component)
 class Shelf {
@@ -15,6 +16,7 @@ class Shelf {
   #modelo
   #tamanho
   #thumbnail
+  #wheelbase
 
   get descricao () {
     return this.#descricao ??= f.map(Compare.shelf, Descricao.create)
@@ -34,6 +36,10 @@ class Shelf {
 
   get thumbnail () {
     return this.#thumbnail ??= f.map(Compare.shelf, Thumbnail.create)
+  }
+
+  get wheelbase () {
+    return this.#wheelbase ??= f.map(Compare.shelf, Wheelbase.create)
   }
 }
 

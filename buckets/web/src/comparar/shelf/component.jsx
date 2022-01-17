@@ -22,4 +22,9 @@ export default (shelf) =>
         {shelf.tamanho}
       </container.Div>
     </story.Section>
+    <story.Section className={style.shelf__section}>
+      <container.Div className={style.shelf__div}>
+        {shelf.wheelbase}
+      </container.Div>
+    </story.Section>
   </>
