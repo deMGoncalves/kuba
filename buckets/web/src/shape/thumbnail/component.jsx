@@ -1,8 +1,14 @@
-import h from '@kuba/h'
-import Picture from '@kuba/picture'
+import h, { Fragment } from '@kuba/h'
+import Figure from '@kuba/figure'
+import text from '@kuba/text'
 import style from './style'
 
 export default (thumbnail) =>
-  <Picture className={style.thumbnail} alt={thumbnail.alt}>
-    <source srcSet={thumbnail.src} />
-  </Picture>
+  <Figure className={style.thumbnail} alt={thumbnail.alt}>
+    <Fragment slot='sources'>
+      <source srcSet={thumbnail.src} />
+    </Fragment>
+    <Fragment slot='caption'>
+      <text.Span info light xxxs>Créditos para {thumbnail.creditos}</text.Span>
+    </Fragment>
+  </Figure>
