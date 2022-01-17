@@ -33,5 +33,11 @@ export default (shelf) =>
       <container.Div className={style.shelf__div}>
         {shelf.concave}
       </container.Div>
+      <container.Div className={style.shelf__div}>
+        {shelf.lixa}
+      </container.Div>
+      <container.Div className={style.shelf__div}>
+        {shelf.laminas}
+      </container.Div>
     </section>
   </story.Section>

@@ -4,6 +4,8 @@ import Compare from '@kuba/compare'
 import component from './component'
 import Concave from './concave'
 import Descricao from './descricao'
+import Laminas from './laminas'
+import Lixa from './lixa'
 import Marca from './marca'
 import Modelo from './modelo'
 import Nose from './nose'
@@ -16,6 +18,8 @@ import Wheelbase from './wheelbase'
 class Shelf {
   #concave
   #descricao
+  #laminas
+  #lixa
   #marca
   #modelo
   #nose
@@ -30,6 +34,14 @@ class Shelf {
 
   get descricao () {
     return this.#descricao ??= f.map(Compare.shelf, Descricao.create)
+  }
+
+  get laminas () {
+    return this.#laminas ??= f.map(Compare.shelf, Laminas.create)
+  }
+
+  get lixa () {
+    return this.#lixa ??= f.map(Compare.shelf, Lixa.create)
   }
 
   get marca () {

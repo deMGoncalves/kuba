@@ -4,13 +4,13 @@ import Show from '@kuba/show'
 import text from '@kuba/text'
 import style from './style'
 
-export default (nose) =>
-  <text.Strong className={style.nose} master darker xs medium>
-    <Show when={nose.valor}>
-      Nose<br />
+export default (lixa) =>
+  <text.Strong className={style.lixa} master darker xs medium>
+    <Show when={lixa.valor}>
+      Lixa<br />
       <text.Span master xxxs>Sim</text.Span>
     </Show>
-    <Hide when={nose.valor}>
+    <Hide when={lixa.valor}>
       -<br />
       <text.Span master xxxs>Não</text.Span>
     </Hide>
