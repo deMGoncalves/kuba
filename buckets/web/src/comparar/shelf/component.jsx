@@ -24,5 +24,8 @@ export default (shelf) =>
       <container.Div className={style.shelf__div}>
         {shelf.wheelbase}
       </container.Div>
+      <container.Div className={style.shelf__div}>
+        {shelf.nose}
+      </container.Div>
     </section>
   </story.Section>
