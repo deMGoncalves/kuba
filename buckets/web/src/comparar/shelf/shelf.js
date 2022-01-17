@@ -2,12 +2,14 @@ import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
 import Compare from '@kuba/compare'
 import component from './component'
-import Shape from './shape'
+import Thumbnail from './thumbnail'
 
 @paint(component)
 class Shelf {
-  get shapes () {
-    return f.map(Compare.shelf, Shape.create)
+  #thumbnail
+
+  get thumbnail () {
+    return this.#thumbnail ??= f.map(Compare.shelf, Thumbnail.create)
   }
 }
 

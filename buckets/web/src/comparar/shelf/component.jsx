@@ -6,6 +6,6 @@ import style from './style'
 export default (shelf) =>
   <story.Section>
     <container.Div className={style.shelf__div}>
-        {shelf.shapes}
+        {shelf.thumbnail}
     </container.Div>
   </story.Section>
