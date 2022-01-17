@@ -10,9 +10,10 @@ export default (shape) =>
     </Picture>
     <main className={style.shape__main}>
       {shape.modelo}
+      {shape.laminas}
       {shape.tamanho}
-      <button className={style.shape__button} onClick={() => shape.remove()}>
-        <icon.Close onColor />
-      </button>
     </main>
+    <button className={style.shape__button} onClick={() => shape.remove()}>
+      <icon.Close onColor />
+    </button>
   </section>

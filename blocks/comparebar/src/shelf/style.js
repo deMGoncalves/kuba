@@ -8,6 +8,6 @@ export default styled.style`
   .shelf__container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-lg);
+    gap: var(--spacing_inset-xs);
   }
 `
