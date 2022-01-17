@@ -12,7 +12,7 @@ const redirect = before(function (page) {
 const toggle = after(function (output) {
   dataLayer.push({
     event: 'header',
-    header_toggle: this.opened ? 'open' : 'close'
+    header_menu: this.opened ? 'open' : 'close'
   })
   return output
 })
