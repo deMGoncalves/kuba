@@ -1,19 +1,18 @@
 import h, { Fragment } from '@kuba/h'
-import Figure from '@kuba/figure'
 import icon from '@kuba/icon'
-import Show from '@kuba/show'
+import Picture from '@kuba/picture'
 import style from './style'
 
 export default (shape) =>
-  <Figure className={style.shape}>
-    <Show when={shape.thumbnail}>
+  <section className={style.shape}>
+    <Picture className={style.shape__picture}>
       <source srcSet={shape.thumbnail} slot='sources' />
-    </Show>
-    <Fragment slot='caption'>
-      {shape.tamanho}
+    </Picture>
+    <main className={style.shape__main}>
       {shape.modelo}
+      {shape.tamanho}
       <button className={style.shape__button} onClick={() => shape.remove()}>
         <icon.Close onColor />
       </button>
-    </Fragment>
-  </Figure>
+    </main>
+  </section>
