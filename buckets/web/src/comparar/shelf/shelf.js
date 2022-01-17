@@ -2,6 +2,7 @@ import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
 import Compare from '@kuba/compare'
 import component from './component'
+import Concave from './concave'
 import Descricao from './descricao'
 import Marca from './marca'
 import Modelo from './modelo'
@@ -13,6 +14,7 @@ import Wheelbase from './wheelbase'
 
 @paint(component)
 class Shelf {
+  #concave
   #descricao
   #marca
   #modelo
@@ -21,6 +23,10 @@ class Shelf {
   #tamanho
   #thumbnail
   #wheelbase
+
+  get concave () {
+    return this.#concave ??= f.map(Compare.shelf, Concave.create)
+  }
 
   get descricao () {
     return this.#descricao ??= f.map(Compare.shelf, Descricao.create)

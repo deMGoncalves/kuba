@@ -30,5 +30,8 @@ export default (shelf) =>
       <container.Div className={style.shelf__div}>
         {shelf.tail}
       </container.Div>
+      <container.Div className={style.shelf__div}>
+        {shelf.concave}
+      </container.Div>
     </section>
   </story.Section>
