@@ -9,6 +9,6 @@ export default (thumbnail) =>
       <source srcSet={thumbnail.src} />
     </Fragment>
     <Fragment slot='caption'>
-      <text.Span info light xxxs>Créditos para {thumbnail.creditos}</text.Span>
+      <text.Span master xxxs>Créditos para {thumbnail.creditos}</text.Span>
     </Fragment>
   </Figure>
