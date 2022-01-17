@@ -1,13 +1,10 @@
 import { paint } from '@kuba/h'
 import Compare from '@kuba/compare'
-import jsonld from '@kuba/jsonld'
 import Modelo from './modelo'
 import Tamanho from './tamanho'
 import component from './component'
-import data from './data'
 
 @paint(component)
-@jsonld(data)
 class Shape {
   #descricao
   #id
