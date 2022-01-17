@@ -11,6 +11,7 @@ class Compare {
       .from(localStorage.getItem(Compare.name))
       .pipe(f.or(f.__, '[]'))
       .pipe(JSON.parse)
+      .pipe(f.slice(f.__, -2))
       .done()
   }
 
