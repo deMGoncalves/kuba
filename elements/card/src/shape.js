@@ -59,7 +59,7 @@ class Shape {
   }
 
   redirect () {
-    redirectTo('shape', { marca: this.#marca.slug, shape: this.slug })
+    redirectTo('shape', { marca: this.marca.slug, shape: this.slug })
     return this
   }
 

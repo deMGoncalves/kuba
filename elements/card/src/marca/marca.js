@@ -4,17 +4,26 @@ import component from './component'
 @paint(component)
 class Marca {
   #nome
+  #slug
 
   get nome () {
     return this.#nome ??= ''
   }
 
-  constructor (nome) {
+  get slug () {
+    return this.#slug ??= ''
+  }
+
+  constructor (nome, slug) {
     this.#nome = nome
+    this.#slug = slug
   }
 
   static create (data) {
-    return new Marca(data.nome)
+    return new Marca(
+      data.nome,
+      data.slug
+    )
   }
 
   static stub () {
