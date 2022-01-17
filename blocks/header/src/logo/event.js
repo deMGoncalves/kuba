@@ -4,7 +4,7 @@ import { before } from '@kuba/middleware'
 const redirect = before(function (page) {
   dataLayer.push({
     event: 'header',
-    header_redirect: page
+    header_logo: page
   })
   return [page]
 })
