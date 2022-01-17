@@ -7,11 +7,14 @@ export default (shelf) =>
   <>
     <story.Section className={style.shelf__section}>
       <container.Div className={style.shelf__div}>
-          {shelf.thumbnail}
+        {shelf.thumbnail}
       </container.Div>
       <container.Div className={style.shelf__div}>
-          {shelf.marca}
-          {shelf.modelo}
+        {shelf.marca}
+        {shelf.modelo}
+      </container.Div>
+      <container.Div className={style.shelf__div}>
+        {shelf.descricao}
       </container.Div>
     </story.Section>
   </>
