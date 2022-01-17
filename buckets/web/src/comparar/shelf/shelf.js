@@ -7,6 +7,7 @@ import Descricao from './descricao'
 import Laminas from './laminas'
 import Lixa from './lixa'
 import Marca from './marca'
+import Material from './material'
 import Modelo from './modelo'
 import Nose from './nose'
 import Tail from './tail'
@@ -21,6 +22,7 @@ class Shelf {
   #laminas
   #lixa
   #marca
+  #material
   #modelo
   #nose
   #tail
@@ -46,6 +48,10 @@ class Shelf {
 
   get marca () {
     return this.#marca ??= f.map(Compare.shelf, Marca.create)
+  }
+
+  get material () {
+    return this.#material ??= f.map(Compare.shelf, Material.create)
   }
 
   get modelo () {

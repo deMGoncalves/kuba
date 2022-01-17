@@ -39,5 +39,8 @@ export default (shelf) =>
       <container.Div className={style.shelf__div}>
         {shelf.laminas}
       </container.Div>
+      <container.Div className={style.shelf__div}>
+        {shelf.material}
+      </container.Div>
     </section>
   </story.Section>
