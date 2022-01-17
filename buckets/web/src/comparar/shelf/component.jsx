@@ -27,5 +27,8 @@ export default (shelf) =>
       <container.Div className={style.shelf__div}>
         {shelf.nose}
       </container.Div>
+      <container.Div className={style.shelf__div}>
+        {shelf.tail}
+      </container.Div>
     </section>
   </story.Section>

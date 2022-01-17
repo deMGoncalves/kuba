@@ -6,6 +6,7 @@ import Descricao from './descricao'
 import Marca from './marca'
 import Modelo from './modelo'
 import Nose from './nose'
+import Tail from './tail'
 import Tamanho from './tamanho'
 import Thumbnail from './thumbnail'
 import Wheelbase from './wheelbase'
@@ -16,6 +17,7 @@ class Shelf {
   #marca
   #modelo
   #nose
+  #tail
   #tamanho
   #thumbnail
   #wheelbase
@@ -34,6 +36,10 @@ class Shelf {
 
   get nose () {
     return this.#nose ??= f.map(Compare.shelf, Nose.create)
+  }
+
+  get tail () {
+    return this.#tail ??= f.map(Compare.shelf, Tail.create)
   }
 
   get tamanho () {
