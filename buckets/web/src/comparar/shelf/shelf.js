@@ -2,13 +2,19 @@ import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
 import Compare from '@kuba/compare'
 import component from './component'
+import Marca from './marca'
 import Modelo from './modelo'
 import Thumbnail from './thumbnail'
 
 @paint(component)
 class Shelf {
+  #marca
   #modelo
   #thumbnail
+
+  get marca () {
+    return this.#marca ??= f.map(Compare.shelf, Marca.create)
+  }
 
   get modelo () {
     return this.#modelo ??= f.map(Compare.shelf, Modelo.create)

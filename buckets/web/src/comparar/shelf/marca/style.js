@@ -1,11 +1,11 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .modelo {
+  .marca {
     line-height: var(--line-height-sm) !important;
   }
 
-  .modelo + .modelo {
+  .marca + .marca {
     text-align: right;
   }
 `
