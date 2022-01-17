@@ -2,19 +2,20 @@ import { paint } from '@kuba/h'
 import component from './component'
 
 @paint(component)
-class Marca {
+class Modelo {
   #valor
+
   get valor () {
-    return this.#valor ??= ''
+    return this.#valor
   }
 
   constructor (valor) {
     this.#valor = valor
   }
 
-  static create (valor) {
-    return new Marca(valor)
+  static create (data) {
+    return new Modelo(data.modelo)
   }
 }
 
-export default Marca
+export default Modelo
