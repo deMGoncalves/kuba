@@ -17,4 +17,9 @@ export default (shelf) =>
         {shelf.descricao}
       </container.Div>
     </story.Section>
+    <story.Section className={style.shelf__section}>
+      <container.Div className={style.shelf__div}>
+        {shelf.tamanho}
+      </container.Div>
+    </story.Section>
   </>

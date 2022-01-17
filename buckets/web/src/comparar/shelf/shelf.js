@@ -5,6 +5,7 @@ import component from './component'
 import Descricao from './descricao'
 import Marca from './marca'
 import Modelo from './modelo'
+import Tamanho from './tamanho'
 import Thumbnail from './thumbnail'
 
 @paint(component)
@@ -12,6 +13,7 @@ class Shelf {
   #descricao
   #marca
   #modelo
+  #tamanho
   #thumbnail
 
   get descricao () {
@@ -24,6 +26,10 @@ class Shelf {
 
   get modelo () {
     return this.#modelo ??= f.map(Compare.shelf, Modelo.create)
+  }
+
+  get tamanho () {
+    return this.#tamanho ??= f.map(Compare.shelf, Tamanho.create)
   }
 
   get thumbnail () {
