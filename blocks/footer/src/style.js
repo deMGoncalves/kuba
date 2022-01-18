@@ -3,7 +3,7 @@ import styled from '@kuba/styled'
 export default styled.style`
   .footer {
     border-top: var(--border-width-hairline) solid var(--color-master-light);
-    height: 88px;
+    height: 89px;
   }
 
   .footer__container {
