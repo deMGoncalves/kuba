@@ -7,7 +7,7 @@ import style from './style'
 
 export default () =>
   <container.Footer className={style.footer}>
-    <link.Master className={style.footer__link} href={urlFor('comparar')} darker medium>
+    <link.Master className={style.footer__link} href={urlFor('comparar')} darker xxs medium>
       Ver comparação
       <icon.ArrowLongRight />
     </link.Master>
