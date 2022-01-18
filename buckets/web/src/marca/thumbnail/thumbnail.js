@@ -1,4 +1,5 @@
 import { paint } from '@kuba/h'
+import global from '@kuba/global'
 import component from './component'
 
 @paint(component)
@@ -6,16 +7,17 @@ class Thumbnail {
   #logo
   #nome
   #site
+
   get logo () {
-    return this.#logo ??= ''
+    return this.#logo
   }
 
   get nome () {
-    return this.#nome ??= ''
+    return this.#nome
   }
 
   get site () {
-    return this.#site ??= ''
+    return this.#site
   }
 
   constructor (logo, nome, site) {
@@ -29,11 +31,11 @@ class Thumbnail {
     return this
   }
 
-  static create (props) {
+  static create () {
     return new Thumbnail(
-      props?.logo,
-      props?.nome,
-      props?.site
+      global.logo,
+      global.nome,
+      global.site
     )
   }
 }

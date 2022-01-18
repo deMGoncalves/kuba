@@ -6,7 +6,6 @@ import component from './component'
 import data from './data'
 import Descricao from './descricao'
 import Shelf from './shelf'
-import Site from './site'
 import Thumbnail from './thumbnail'
 import Origem from './origem'
 
@@ -18,7 +17,6 @@ class Marca {
   #descricao
   #origem
   #shelf
-  #site
 
   get origem () {
     return this.#origem ??= Origem.create()
@@ -29,7 +27,7 @@ class Marca {
   }
 
   get description () {
-    return this.descricao.valor
+    return global.descricao
   }
 
   get title () {
@@ -42,10 +40,6 @@ class Marca {
 
   get shelf () {
     return this.#shelf ??= Shelf.create()
-  }
-
-  get site () {
-    return this.#site ??= Site.create()
   }
 }
 

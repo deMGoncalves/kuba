@@ -1,7 +1,7 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .marca__logo {
+  .thumbnail {
     background-color: var(--color-master-light);
     border-radius: var(--border-radius-sm);
     cursor: pointer;
@@ -10,11 +10,11 @@ export default styled.style`
     transition: 0.3s all cubic-bezier(0.77, 0, 0.175, 1);
   }
 
-  .marca__logo:hover {
+  .thumbnail:hover {
     background-color: var(--color-primary-light);
   }
 
-  .marca__picture {
+  .thumbnail__picture {
     border-radius: var(--border-radius-sm);
     box-shadow: var(--shadow-level-1) rgba(0, 0, 0, var(--opacity-level-light));
     filter: grayscale(100%);
@@ -24,15 +24,15 @@ export default styled.style`
     z-index: 1;
   }
 
-  .marca__picture img {
+  .thumbnail__picture img {
     background-color: #fff;
     object-fit: contain;
     padding: var(--spacing_inset-nano);
   }
 
-  .marca__div {
+  .thumbnail__div {
     align-items: center;
-    background-color: var(--color-master-lighter);
+    background-color: rgba(250, 250, 250, 0.618);
     border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
     bottom: 0;
     display: inline-flex;
@@ -42,5 +42,9 @@ export default styled.style`
     padding-top: var(--spacing_inset-nano);
     position: absolute;
     width: 100%;
+  }
+
+  .thumbnail__link {
+    text-decoration: none;
   }
 `

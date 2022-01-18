@@ -1,17 +1,18 @@
 import h from '@kuba/h'
+import icon from '@kuba/icon'
+import link from '@kuba/link'
 import Picture from '@kuba/picture'
-import Show from '@kuba/show'
 import style from './style'
-import text from '@kuba/text'
 
 export default (thumbnail) =>
-  <section className={style.marca__logo} onClick={() => thumbnail.redirect()}>
-    <Picture className={style.marca__picture}>
-      <Show when={thumbnail.logo}>
-        <source srcSet={thumbnail.logo} />
-      </Show>
+  <section className={style.thumbnail} onClick={() => thumbnail.redirect()}>
+    <Picture className={style.thumbnail__picture} alt={thumbnail.nome}>
+      <source srcSet={thumbnail.logo} />
     </Picture>
-    <div className={style.marca__div}>
-      <text.H1 master dark xxxs regular>{thumbnail.nome}</text.H1>
+    <div className={style.thumbnail__div}>
+      <link.Master className={style.thumbnail__link} href={thumbnail.site} target='_black' dark xxxs medium>
+        Site oficial
+        <icon.ArrowLongRight />
+      </link.Master>
     </div>
   </section>
