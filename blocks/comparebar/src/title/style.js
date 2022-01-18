@@ -5,6 +5,8 @@ export default styled.style`
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-quarck);
+    height: 89px;
+    justify-content: center;
   }
 
   .title__strong,

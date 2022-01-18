@@ -5,6 +5,5 @@ export default styled.style`
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-lg);
-    padding: var(--spacing_inset-lg) var(--spacing_inset-xs);
   }
 `
