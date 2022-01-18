@@ -7,6 +7,11 @@ export default styled.style`
     cursor: pointer;
     height: 136px;
     position: relative;
+    transition: 0.3s all cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  .marca__logo:hover {
+    background-color: var(--color-primary-light);
   }
 
   .marca__picture {
