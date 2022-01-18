@@ -9,34 +9,20 @@ class Thumbnail {
   #site
 
   get logo () {
-    return this.#logo
+    return global.logo
   }
 
   get nome () {
-    return this.#nome
+    return global.nome
   }
 
   get site () {
-    return this.#site
-  }
-
-  constructor (logo, nome, site) {
-    this.#logo = logo
-    this.#nome = nome
-    this.#site = site
+    return global.site
   }
 
   redirect () {
     window.open(this.site)
     return this
-  }
-
-  static create () {
-    return new Thumbnail(
-      global.logo,
-      global.nome,
-      global.site
-    )
   }
 }
 

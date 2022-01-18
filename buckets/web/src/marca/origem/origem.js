@@ -5,22 +5,12 @@ import * as mapper from './mapper'
 
 @paint(component)
 class Origem {
-  #valor
-
   get url () {
     return mapper[this.valor]
   }
 
   get valor () {
-    return this.#valor
-  }
-
-  constructor (valor) {
-    this.#valor = valor
-  }
-
-  static create () {
-    return new Origem(global.origem?.valor)
+    return global.origem?.valor
   }
 }
 

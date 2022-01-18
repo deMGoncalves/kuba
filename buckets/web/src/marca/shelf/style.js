@@ -7,17 +7,4 @@ export default styled.style`
     grid-row-gap: var(--spacing_inset-lg);
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @media (min-width: 426px) {
-    .shelf {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  @media (min-width: 769px) {
-    .shelf {
-      grid-row-gap: var(--spacing_inset-lg);
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
 `

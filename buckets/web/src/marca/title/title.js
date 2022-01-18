@@ -3,10 +3,10 @@ import global from '@kuba/global'
 import component from './component'
 
 @paint(component)
-class Descricao {
+class Title {
   get valor () {
-    return global.descricao
+    return global.nome
   }
 }
 
-export default Descricao
+export default Title

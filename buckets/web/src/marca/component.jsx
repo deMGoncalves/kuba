@@ -3,22 +3,28 @@ import Breadcrumb from '@kuba/breadcrumb'
 import container from '@kuba/container'
 import Site from '@kuba/site'
 import story from '@kuba/story'
+import Descricao from './descricao'
+import Origem from './origem'
 import schema from './schema'
+import Shelf from './shelf'
 import style from './style'
+import Thumbnail from './thumbnail'
+import Title from './title'
 
-export default (marca) =>
+export default () =>
   <Site>
     <Fragment slot='hot'>
       <Breadcrumb paths={schema().breadcrumb} />
+      <Title />
       <story.Section>
         <container.div className={style.marca__div}>
           <section className={[style.marca__section, style.marca]}>
-            {marca.thumbnail}
-            {marca.origem}
-            {marca.descricao}
+            <Thumbnail />
+            <Origem />
+            <Descricao />
           </section>
           <section className={[style.marca__section, style.shelf]}>
-            {marca.shelf}
+            <Shelf />
           </section>
         </container.div>
       </story.Section>
