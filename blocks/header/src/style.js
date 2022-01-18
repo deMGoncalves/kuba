@@ -4,7 +4,7 @@ export default styled.style`
   .header {
     background-color: var(--color-master-lightest);
     border-bottom: var(--border-width-hairline) solid var(--color-master-light);
-    height: 88px;
+    height: 89px;
   }
 
   .header[fixed] {
