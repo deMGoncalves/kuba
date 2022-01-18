@@ -25,7 +25,7 @@ export default styled.style`
     border-radius: var(--border-radius-sm);
     color: var(--color-master-darker);
     font-weight: var(--font-weight-regular);
-    height: 48px;
+    height: 42px;
     padding: 0 var(--spacing_inset-xs);
   }
 
