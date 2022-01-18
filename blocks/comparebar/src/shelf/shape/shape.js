@@ -3,7 +3,6 @@ import Compare from '@kuba/compare'
 import component from './component'
 import Laminas from './laminas'
 import Modelo from './modelo'
-import Tamanho from './tamanho'
 
 @paint(component)
 class Shape {
@@ -11,7 +10,6 @@ class Shape {
   #laminas
   #marca
   #modelo
-  #tamanho
   #thumbnail
 
   get laminas () {
@@ -26,20 +24,15 @@ class Shape {
     return this.#modelo
   }
 
-  get tamanho () {
-    return this.#tamanho
-  }
-
   get thumbnail () {
     return this.#thumbnail
   }
 
-  constructor (id, laminas, marca, modelo, tamanho, thumbnail) {
+  constructor (id, laminas, marca, modelo, thumbnail) {
     this.#id = id
     this.#laminas = laminas
     this.#marca = marca
     this.#modelo = modelo
-    this.#tamanho = tamanho
     this.#thumbnail = thumbnail
   }
 
@@ -54,7 +47,6 @@ class Shape {
       Laminas.create(data.laminas),
       data.marca,
       Modelo.create(data.modelo),
-      Tamanho.create(data.tamanho),
       data.thumbnail
     )
   }

@@ -11,7 +11,6 @@ export default (shape) =>
     <main className={style.shape__main}>
       {shape.modelo}
       {shape.laminas}
-      {shape.tamanho}
     </main>
     <button className={style.shape__button} onClick={() => shape.remove()}>
       <icon.Close onColor />
