@@ -1,4 +1,4 @@
 export default {
-  hjid: '',
+  hjid: '2005194',
   hjsv: 6
 }

@@ -17,12 +17,13 @@ export default styled.style`
   }
 
   .shape__picture {
-    padding-top: calc(4 / 3 * 100%) !important;
+    padding-top: calc(5 / 4 * 100%) !important;
   }
 
   .shape__main {
     display: flex;
     flex-direction: column;
+    gap: var(--spacing_inset-quarck);
     padding: var(--spacing_inset-xs);
   }
 

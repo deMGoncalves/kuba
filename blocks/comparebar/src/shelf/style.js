@@ -6,9 +6,8 @@ export default styled.style`
   }
 
   .shelf__container {
-    display: grid;
-    grid-column-gap: var(--spacing_inset-xs);
-    grid-row-gap: var(--spacing_inset-lg);
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-xs);
   }
 `

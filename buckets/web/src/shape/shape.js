@@ -3,7 +3,6 @@ import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
 import Comparebutton from './comparebutton'
 import component from './component'
-import Creditos from './creditos'
 import data from './data'
 import Descricao from './descricao'
 import Especificacao from './especificacao'
@@ -20,7 +19,6 @@ import Thumbnail from './thumbnail'
 @markup
 class Shape {
   #comparebutton
-  #creditos
   #descricao
   #especificacao
   #laminas
@@ -33,10 +31,6 @@ class Shape {
 
   get comparebutton () {
     return this.#comparebutton ??= Comparebutton.create()
-  }
-
-  get creditos () {
-    return this.#creditos ??= Creditos.create()
   }
 
   get descricao () {
