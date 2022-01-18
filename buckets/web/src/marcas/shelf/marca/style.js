@@ -7,6 +7,7 @@ export default styled.style`
     cursor: pointer;
     height: 136px;
     position: relative;
+    transition: 0.3s all cubic-bezier(0.77, 0, 0.175, 1);
   }
 
   .marca__picture {
@@ -18,6 +19,10 @@ export default styled.style`
     transition: 0.2s all ease-in;
     width: 121px !important;
     z-index: 1;
+  }
+
+  .marca:hover {
+    background-color: var(--color-primary-light);
   }
 
   .marca__picture img {
