@@ -15,7 +15,7 @@ export default styled.button`
   font-size: var(--font-size-xs);
   font-weight: ${weight};
   gap: var(--spacing_inset-nano);
-  height: 35px;
+  height: 34px;
   justify-content: center;
   letter-spacing: 0.618px;
   padding: 0 var(--spacing_inset-sm);
