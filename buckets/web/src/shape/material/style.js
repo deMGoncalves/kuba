@@ -15,7 +15,7 @@ export default styled.style`
     font-family: var(--font-family-base);
     font-size: var(--font-size-xxxs);
     font-weight: var(--font-weight-medium);
-    height: 35px;
+    height: 26px;
     justify-content: center;
     letter-spacing: 0.618px;
     padding: 0 var(--spacing_inset-sm);
