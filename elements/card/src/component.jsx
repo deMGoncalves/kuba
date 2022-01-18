@@ -17,7 +17,4 @@ export default (shape) =>
       {shape.modelo}
       {shape.laminas}
     </main>
-    <footer className={style.shpae__footer}>
-      {shape.tamanho}
-    </footer>
   </section>

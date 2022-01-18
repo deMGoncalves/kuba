@@ -6,7 +6,6 @@ import data from './data'
 import Laminas from './laminas'
 import Marca from './marca'
 import Modelo from './modelo'
-import Tamanho from './tamanho'
 import Stub from './stub'
 
 @paint(component)
@@ -17,7 +16,6 @@ class Shape {
   #marca
   #modelo
   #slug
-  #tamanho
   #thumbnail
 
   get descricao () {
@@ -25,36 +23,31 @@ class Shape {
   }
 
   get laminas () {
-    return this.#laminas ??= ''
+    return this.#laminas
   }
 
   get marca () {
-    return this.#marca ??= ''
+    return this.#marca
   }
 
   get modelo () {
-    return this.#modelo ??= ''
+    return this.#modelo
   }
 
   get slug () {
     return this.#slug ??= ''
   }
 
-  get tamanho () {
-    return this.#tamanho ??= ''
-  }
-
   get thumbnail () {
     return this.#thumbnail ??= ''
   }
 
-  constructor (descricao, laminas, marca, modelo, slug, tamanho, thumbnail) {
+  constructor (descricao, laminas, marca, modelo, slug, thumbnail) {
     this.#descricao = descricao
     this.#laminas = laminas
     this.#marca = marca
     this.#modelo = modelo
     this.#slug = slug
-    this.#tamanho = tamanho
     this.#thumbnail = thumbnail
   }
 
@@ -70,7 +63,6 @@ class Shape {
       Marca.create(data.marca),
       Modelo.create(data.modelo),
       data.slug,
-      Tamanho.create(data.tamanho),
       data.thumbnail
     )
   }

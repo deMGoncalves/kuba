@@ -1,6 +1,6 @@
 import h from '@kuba/h'
-import text from '@kuba/text'
+import link from '@kuba/link'
 import style from './style'
 
 export default (modelo) =>
-  <text.H1 className={style.modelo} master darker xxs medium>{modelo.valor}</text.H1>
+  <link.Master className={style.modelo} darker xxs medium>{modelo.valor}</link.Master>

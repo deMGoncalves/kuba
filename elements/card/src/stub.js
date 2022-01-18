@@ -3,7 +3,6 @@ import component from './component'
 import Laminas from './laminas'
 import Marca from './marca'
 import Modelo from './modelo'
-import Tamanho from './tamanho'
 
 @paint(component)
 class Stub {
@@ -12,7 +11,6 @@ class Stub {
   #marca
   #modelo
   #slug
-  #tamanho
   #thumbnail
 
   get descricao () {
@@ -33,10 +31,6 @@ class Stub {
 
   get slug () {
     return this.#slug ??= ''
-  }
-
-  get tamanho () {
-    return this.#tamanho ??= Tamanho.stub()
   }
 
   get thumbnail () {
