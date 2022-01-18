@@ -15,6 +15,7 @@ export default async function (request, response) {
       flag (*)
     `)
     .eq('marca.slug', slug)
+    .limit(24)
 
   response.setHeader('Cache-Control', 'public, max-age=86400')
   response.json({ data, error })
