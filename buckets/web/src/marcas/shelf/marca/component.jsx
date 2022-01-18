@@ -12,6 +12,6 @@ export default (marca) =>
       </Show>
     </Picture>
     <div className={style.marca__div}>
-      <text.Strong master dark xxxs regular>{marca.nome}</text.Strong>
+      <text.Strong master dark xxxs medium>{marca.nome}</text.Strong>
     </div>
   </section>

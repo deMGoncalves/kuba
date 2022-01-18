@@ -33,7 +33,7 @@ export default styled.style`
 
   .marca__div {
     align-items: center;
-    background-color: var(--color-master-lighter);
+    background-color: rgba(250, 250, 250, 0.618);
     border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
     bottom: 0;
     display: inline-flex;
