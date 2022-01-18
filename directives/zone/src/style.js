@@ -3,6 +3,6 @@ import styled from '@kuba/styled'
 export default styled.style`
   .zone {
     content-visibility: auto;
-    height: 88px;
+    height: 89px;
   }
 `
