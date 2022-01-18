@@ -11,10 +11,10 @@ const style = styled.style`
     border-radius: var(--border-radius-circular);
     cursor: pointer;
     display: inline-flex;
-    height: 48px;
+    height: 42px;
     justify-content: center;
     user-select: none;
-    width: 48px;
+    width: 42px;
   }
 
   .button:hover {
