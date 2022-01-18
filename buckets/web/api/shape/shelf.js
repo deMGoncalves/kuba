@@ -13,6 +13,7 @@ export default async function (_request, response) {
       montagem (*),
       flag (*)
     `)
+    .limit(24)
 
   response.setHeader('Cache-Control', 'public, max-age=86400')
   response.json({ data, error })
