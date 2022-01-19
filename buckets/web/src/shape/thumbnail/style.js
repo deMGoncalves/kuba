@@ -17,4 +17,9 @@ export default styled.style`
     height: 35px;
     padding: 0 var(--spacing_inset-xs);
   }
+
+  .thumbnail__placeholder {
+    height: 100%;
+    width: 100%;
+  }
 `
