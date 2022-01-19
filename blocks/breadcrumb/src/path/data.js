@@ -2,7 +2,7 @@ import * as f from '@kuba/f'
 import * as settings from '@kuba/settings'
 import { urlFor } from '@kuba/router'
 
-export default f.once((path) =>
+export default (path) =>
   ({
     '@id': '#item',
     '@type': 'ListItem',
@@ -10,4 +10,3 @@ export default f.once((path) =>
     name: path.title,
     position: f.inc(path.index)
   })
-)
