@@ -7,6 +7,8 @@ class Nose {
 
   get valor () {
     return this.#valor
+      ? 'Sim'
+      : 'Nã0'
   }
 
   constructor (valor) {

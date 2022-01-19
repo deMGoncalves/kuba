@@ -7,6 +7,8 @@ class Tail {
 
   get valor () {
     return this.#valor
+      ? 'Sim'
+      : 'Não'
   }
 
   constructor (valor) {
