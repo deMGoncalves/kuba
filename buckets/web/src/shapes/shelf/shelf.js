@@ -9,7 +9,7 @@ class Shelf {
   #shapes
 
   get shapes () {
-    return this.#shapes ??= f.map(f.repeat({}, 24), Card.create)
+    return this.#shapes ??= f.map(f.repeat(null, 24), Card.stub)
   }
 
   @repaint
