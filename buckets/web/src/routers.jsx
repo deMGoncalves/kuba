@@ -4,10 +4,7 @@ import router from '@kuba/router'
 import render from './render'
 
 router('/', async function shapes () {
-  const { default: Shapes, getShapes } = await import('./shapes' /* webpackChunkName: "shapes" */)
-  const { data: shapes } = await getShapes()
-
-  setGlobal({ shapes })
+  const { default: Shapes } = await import('./shapes' /* webpackChunkName: "shapes" */)
   render(<Shapes />)
 })
 
