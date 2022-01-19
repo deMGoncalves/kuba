@@ -1,1 +1,1 @@
-export { default } from './shape'
+export { default } from './card'
