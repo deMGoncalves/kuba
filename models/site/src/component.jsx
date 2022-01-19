@@ -1,8 +1,8 @@
 import h, { Fragment } from '@kuba/h'
 import * as f from '@kuba/f'
 import Comparebar, { Compare } from '@kuba/comparebar'
-import Footer from '@kuba/footer'
 import Header, { Logo, Nav } from '@kuba/header'
+import Lazy from '@kuba/lazy'
 import Show from '@kuba/show'
 import Zone from '@kuba/zone'
 import style from './style'
@@ -28,5 +28,7 @@ export default (site, children) =>
         </Zone>
       </Show>
     </main>
-    <Footer />
+    <Zone>
+      <Lazy require={() => import('@kuba/footer' /* webpackChunkName: "footer" */)} />
+    </Zone>
   </>
