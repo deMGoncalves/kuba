@@ -11,7 +11,7 @@ import Stub from './stub'
 
 @paint(component)
 @jsonld(data)
-class Card {
+class Shape {
   #concave
   #descricao
   #laminas
@@ -115,7 +115,7 @@ class Card {
   }
 
   static create (data) {
-    return new Card(
+    return new Shape(
       data.concave,
       data.descricao,
       Laminas.create(data),
@@ -137,4 +137,4 @@ class Card {
   }
 }
 
-export default Card
+export default Shape
