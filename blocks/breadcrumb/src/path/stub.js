@@ -24,6 +24,10 @@ class Path {
     return this.#title ??= ''
   }
 
+  redirect () {
+    return this
+  }
+
   static create () {
     return new Path()
   }

@@ -1,5 +1,6 @@
 import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
+import { redirectTo, urlFor } from '@kuba/router'
 import component from './component'
 import data from './data'
 import Stub from './stub'
@@ -11,6 +12,10 @@ class Path {
   #page
   #params
   #title
+
+  get href () {
+    return urlFor(this.page, this.params)
+  }
 
   get index () {
     return this.#index
@@ -33,6 +38,11 @@ class Path {
     this.#page = page
     this.#params = params
     this.#title = title
+  }
+
+  redirect () {
+    redirectTo(this.page, this.params)
+    return this
   }
 
   static create (data, index) {
