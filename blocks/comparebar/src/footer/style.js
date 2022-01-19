@@ -2,10 +2,9 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .footer {
-    align-items: center;
     display: flex;
-    height: 89px;
     justify-content: center;
+    padding-bottom: var(--spacing_inset-xs);
   }
 
   .footer__link {
