@@ -1,4 +1,4 @@
-import h, { Fragment } from '@kuba/h'
+import h from '@kuba/h'
 import Picture from '@kuba/picture'
 import Show from '@kuba/show'
 import style from './style'
