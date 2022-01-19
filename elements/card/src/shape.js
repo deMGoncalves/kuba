@@ -81,7 +81,7 @@ class Shape {
 
   get tamanho () {
     return this.#tamanho
-      ? `${this.#tamanho}"`
+      ? `${this.#tamanho.valor}"`
       : undefined
   }
 
