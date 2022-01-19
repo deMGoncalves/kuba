@@ -3,6 +3,7 @@ import jsonld from '@kuba/jsonld'
 import { redirectTo, urlFor } from '@kuba/router'
 import component from './component'
 import data from './data'
+import event from './event'
 import Stub from './stub'
 
 @paint(component)
@@ -40,6 +41,7 @@ class Path {
     this.#title = title
   }
 
+  @event.redirect
   redirect () {
     redirectTo(this.page, this.params)
     return this
