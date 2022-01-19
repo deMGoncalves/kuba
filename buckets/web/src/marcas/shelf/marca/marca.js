@@ -3,6 +3,7 @@ import jsonld from '@kuba/jsonld'
 import { redirectTo } from '@kuba/router'
 import component from './component'
 import data from './data'
+import Stub from './stub'
 
 @paint(component)
 @jsonld(data)
@@ -13,19 +14,19 @@ class Marca {
   #slug
 
   get descricao () {
-    return this.#descricao ??= ''
+    return this.#descricao
   }
 
   get logo () {
-    return this.#logo ??= ''
+    return this.#logo
   }
 
   get nome () {
-    return this.#nome ??= ''
+    return this.#nome
   }
 
   get slug () {
-    return this.#slug ??= ''
+    return this.#slug
   }
 
   constructor (descricao, logo, nome, slug) {
@@ -47,6 +48,10 @@ class Marca {
       data.nome,
       data.slug
     )
+  }
+
+  static stub () {
+    return Stub.create()
   }
 }
 

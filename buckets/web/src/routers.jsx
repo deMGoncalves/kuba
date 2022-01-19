@@ -14,10 +14,7 @@ router('/comparar', async function comparar () {
 })
 
 router('/marcas', async function marcas () {
-  const { default: Marcas, getMarcas } = await import('./marcas' /* webpackChunkName: "marcas" */)
-  const { data: marcas } = await getMarcas()
-
-  setGlobal({ marcas })
+  const { default: Marcas } = await import('./marcas' /* webpackChunkName: "marcas" */)
   render(<Marcas />)
 })
 
