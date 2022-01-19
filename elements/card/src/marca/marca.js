@@ -21,8 +21,8 @@ class Marca {
 
   static create (data) {
     return new Marca(
-      data.nome,
-      data.slug
+      data.marca?.nome,
+      data.marca?.slug
     )
   }
 

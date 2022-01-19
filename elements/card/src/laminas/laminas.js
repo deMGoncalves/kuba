@@ -13,8 +13,8 @@ class Laminas {
     this.#valor = valor
   }
 
-  static create (valor) {
-    return new Laminas(valor)
+  static create (data) {
+    return new Laminas(data.laminas)
   }
 
   static stub () {

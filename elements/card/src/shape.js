@@ -59,9 +59,9 @@ class Shape {
   static create (data) {
     return new Shape(
       data.descricao,
-      Laminas.create(data.laminas),
-      Marca.create(data.marca),
-      Modelo.create(data.modelo),
+      Laminas.create(data),
+      Marca.create(data),
+      Modelo.create(data),
       data.slug,
       data.thumbnail
     )
