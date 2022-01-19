@@ -12,7 +12,6 @@ import Marca from './marca'
 import Material from './material'
 import Modelo from './modelo'
 import Origem from './origem'
-import Related from './related'
 import schema from './schema'
 import Thumbnail from './thumbnail'
 
@@ -29,7 +28,6 @@ class Shape {
   #material
   #modelo
   #origem
-  #related
   #thumbnail
 
   get breadcrumb () {
@@ -71,10 +69,6 @@ class Shape {
 
   get origem () {
     return this.#origem ??= Origem.create()
-  }
-
-  get related () {
-    return this.#related ??= Related.create()
   }
 
   get thumbnail () {

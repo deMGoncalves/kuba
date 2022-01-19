@@ -1,5 +1,6 @@
 import h, { Fragment } from '@kuba/h'
 import container from '@kuba/container'
+import Related from '@kuba/related'
 import Site from '@kuba/site'
 import story from '@kuba/story'
 import style from './style'
@@ -29,6 +30,6 @@ export default (shape) =>
       </story.Section>
     </Fragment>
     <Fragment slot='warm'>
-      {shape.related}
+      <Related />
     </Fragment>
   </Site>
