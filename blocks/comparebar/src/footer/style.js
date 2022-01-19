@@ -3,7 +3,7 @@ import styled from '@kuba/styled'
 export default styled.style`
   .footer {
     justify-content: center;
-    padding-bottom: var(--spacing_inset-xs);
+    padding-bottom: var(--spacing_inset-lg);
   }
 
   .footer[valid='false'] {
