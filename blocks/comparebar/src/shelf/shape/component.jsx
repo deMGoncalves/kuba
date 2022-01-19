@@ -8,10 +8,10 @@ export default (shape) =>
     <Picture className={style.shape__picture}>
       <source srcSet={shape.thumbnail} slot='sources' />
     </Picture>
-    <main className={style.shape__main}>
+    <div className={style.shape__div}>
       {shape.modelo}
       {shape.laminas}
-    </main>
+    </div>
     <button className={style.shape__button} onClick={() => shape.remove()}>
       <icon.Close onColor />
     </button>
