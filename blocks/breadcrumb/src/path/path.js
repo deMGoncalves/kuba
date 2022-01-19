@@ -1,6 +1,8 @@
 import { paint } from '@kuba/h'
+import * as f from '@kuba/f'
 import jsonld from '@kuba/jsonld'
 import { redirectTo, urlFor } from '@kuba/router'
+import * as settings from '@kuba/settings'
 import component from './component'
 import data from './data'
 import event from './event'
@@ -15,7 +17,7 @@ class Path {
   #title
 
   get href () {
-    return urlFor(this.page, this.params)
+    return f.add(settings.app.url, urlFor(this.page, this.params))
   }
 
   get index () {
