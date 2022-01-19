@@ -6,5 +6,5 @@ import style from './style'
 export default (props, children) =>
   <picture className={[style.picture, props.className]}>
     {children}
-    <img className={style.picture__img} loading='lazy' alt={f.or(props.alt, settings.app.name)} />
+    <img className={style.picture__img} loading='lazy' alt={f.or(props.alt, settings.app.name)} height={props.height} width={props.width} />
   </picture>

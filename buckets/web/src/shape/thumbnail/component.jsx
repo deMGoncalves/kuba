@@ -4,7 +4,7 @@ import text from '@kuba/text'
 import style from './style'
 
 export default (thumbnail) =>
-  <Figure className={style.thumbnail} alt={thumbnail.alt}>
+  <Figure className={style.thumbnail} alt={thumbnail.alt} height='920' width='736'>
     <Fragment slot='sources'>
       <source srcSet={thumbnail.src} />
     </Fragment>

@@ -7,7 +7,7 @@ class Material {
   #valor
 
   get valor () {
-    return this.#valor
+    return this.#valor ||= '-'
   }
 
   constructor (valor) {

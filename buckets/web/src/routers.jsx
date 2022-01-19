@@ -4,10 +4,7 @@ import router from '@kuba/router'
 import render from './render'
 
 router('/', async function shapes () {
-  const { default: Shapes, getShapes } = await import('./shapes' /* webpackChunkName: "shapes" */)
-  const { data: shapes } = await getShapes()
-
-  setGlobal({ shapes })
+  const { default: Shapes } = await import('./shapes' /* webpackChunkName: "shapes" */)
   render(<Shapes />)
 })
 
@@ -17,10 +14,7 @@ router('/comparar', async function comparar () {
 })
 
 router('/marcas', async function marcas () {
-  const { default: Marcas, getMarcas } = await import('./marcas' /* webpackChunkName: "marcas" */)
-  const { data: marcas } = await getMarcas()
-
-  setGlobal({ marcas })
+  const { default: Marcas } = await import('./marcas' /* webpackChunkName: "marcas" */)
   render(<Marcas />)
 })
 

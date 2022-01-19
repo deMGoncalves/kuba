@@ -4,7 +4,7 @@ export default styled.style`
   .shelf {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-lg);
+    gap: var(--spacing_inset-xs);
     padding: var(--spacing_inset-lg) var(--spacing_inset-xs) !important;
   }
 `

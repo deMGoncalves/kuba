@@ -1,4 +1,5 @@
 import { paint } from '@kuba/h'
+import Breadcrumb from '@kuba/breadcrumb'
 import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
 import Comparebutton from './comparebutton'
@@ -12,12 +13,14 @@ import Material from './material'
 import Modelo from './modelo'
 import Origem from './origem'
 import Related from './related'
+import schema from './schema'
 import Thumbnail from './thumbnail'
 
 @paint(component)
 @jsonld(data)
 @markup
 class Shape {
+  #breadcrumb
   #comparebutton
   #descricao
   #especificacao
@@ -28,6 +31,10 @@ class Shape {
   #origem
   #related
   #thumbnail
+
+  get breadcrumb () {
+    return this.#breadcrumb ??= Breadcrumb.create(schema().breadcrumb)
+  }
 
   get comparebutton () {
     return this.#comparebutton ??= Comparebutton.create()

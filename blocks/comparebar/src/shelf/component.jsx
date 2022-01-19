@@ -1,8 +1,7 @@
-import h, { Fragment } from '@kuba/h'
-import container from '@kuba/container'
+import h from '@kuba/h'
 import style from './style'
 
 export default (shelf) =>
-  <container.Section className={style.shelf}>
+  <main className={style.shelf}>
     {shelf.shapes}
-  </container.Section>
+  </main>

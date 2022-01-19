@@ -6,16 +6,10 @@ import Modelo from './modelo'
 
 @paint(component)
 class Stub {
-  #descricao
   #laminas
   #marca
   #modelo
-  #slug
   #thumbnail
-
-  get descricao () {
-    return this.#descricao ??= ''
-  }
 
   get laminas () {
     return this.#laminas ??= Laminas.stub()
@@ -29,12 +23,8 @@ class Stub {
     return this.#modelo ??= Modelo.stub()
   }
 
-  get slug () {
-    return this.#slug ??= ''
-  }
-
   get thumbnail () {
-    return this.#thumbnail ??= ''
+    return this.#thumbnail
   }
 
   redirect () {

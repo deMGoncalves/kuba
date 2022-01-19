@@ -14,7 +14,7 @@ class Shapes {
   }
 
   get title () {
-    return 'Shapes'
+    return 'kuba'
   }
 }
 
