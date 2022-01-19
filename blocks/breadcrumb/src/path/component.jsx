@@ -6,10 +6,10 @@ import Show from '@kuba/show'
 import text from '@kuba/text'
 import style from './style'
 
-export default (path, index) =>
+export default (path) =>
   <>
-    <Show when={f.isTruthy(index)}>
+    <Show when={f.isTruthy(path.index)}>
       <text.Span master xxxs bold>/</text.Span>
     </Show>
-    <link.Master className={style.breadcrumb__link} href={urlFor(path.page, path.params)} xxxs>{path.title}</link.Master>
+    <link.Master className={style.path} href={urlFor(path.page, path.params)} xxxs>{path.title}</link.Master>
   </>
