@@ -7,16 +7,19 @@ import merge from './merge'
 const style = styled.style`
   .avatar {
     border-radius: var(--border-radius-circular);
+    min-width: 40px !important;
     padding-top: 40px !important;
     width: 40px !important;
   }
 
   .avatar.small {
+    min-width: 24px !important;
     padding-top: 24px !important;
     width: 24px !important;
   }
 
   .avatar.large {
+    min-width: 64px !important;
     padding-top: 64px !important;
     width: 64px !important;
   }
