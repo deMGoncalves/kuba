@@ -2,7 +2,7 @@ import { paint } from '@kuba/h'
 import component from './component'
 
 @paint(component)
-class Path {
+class Stub {
   #index
   #page
   #params
@@ -12,25 +12,21 @@ class Path {
     return this.#index ??= ''
   }
 
-  get page () {
-    return this.#page ??= ''
-  }
-
-  get params () {
-    return this.params ??= {}
-  }
-
   get title () {
     return this.#title ??= ''
+  }
+
+  constructor (index) {
+    this.#index = index
   }
 
   redirect () {
     return this
   }
 
-  static create () {
-    return new Path()
+  static create (_data, index) {
+    return new Stub(index)
   }
 }
 
-export default Path
+export default Stub

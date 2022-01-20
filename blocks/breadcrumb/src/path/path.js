@@ -58,8 +58,8 @@ class Path {
     )
   }
 
-  static stub () {
-    return new Stub()
+  static stub (data, index) {
+    return new Stub(data, index)
   }
 }
 

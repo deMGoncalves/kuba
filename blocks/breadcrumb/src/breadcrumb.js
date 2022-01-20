@@ -4,7 +4,6 @@ import jsonld from '@kuba/jsonld'
 import component from './component'
 import data from './data'
 import Path from './path'
-import Stub from './stub'
 
 @paint(component)
 @jsonld(data)
@@ -21,10 +20,6 @@ class Breadcrumb {
 
   static create (paths) {
     return new Breadcrumb(f.map(paths, Path.create))
-  }
-
-  static stub (paths) {
-    return new Breadcrumb(f.map(paths, Stub.create))
   }
 }
 
