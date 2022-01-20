@@ -1,16 +1,25 @@
-import { paint } from '@kuba/h'
-import global from '@kuba/global'
+import { paint, repaint } from '@kuba/h'
 import component from './component'
+import effect from './effect'
 import * as mapper from './mapper'
 
 @paint(component)
+@effect
 class Origem {
+  #valor
+
   get url () {
     return mapper[this.valor]
   }
 
   get valor () {
-    return global.origem?.valor
+    return this.#valor
+  }
+
+  @repaint
+  changeValor (valor) {
+    this.#valor = valor
+    return this
   }
 }
 

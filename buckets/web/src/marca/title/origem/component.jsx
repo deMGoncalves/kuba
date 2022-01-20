@@ -4,7 +4,7 @@ import text from '@kuba/text'
 import style from './style'
 
 export default (origem) =>
-  <span className={style.origem}>
+  <span uid='origem' className={style.origem}>
     <Avatar small>
       <source srcSet={origem.url} />
     </Avatar>

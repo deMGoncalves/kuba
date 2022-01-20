@@ -1,28 +1,30 @@
-import { paint } from '@kuba/h'
-import Breadcrumb from '@kuba/breadcrumb'
-import global from '@kuba/global'
+import { didMount, paint } from '@kuba/h'
+import * as f from '@kuba/f'
+import { setGlobal } from '@kuba/global'
 import jsonld from '@kuba/jsonld'
 import markup from '@kuba/markup'
+import * as settings from '@kuba/settings'
 import component from './component'
 import data from './data'
-import schema from './schema'
+import getMarca from './getMarca'
 
 @paint(component)
 @jsonld(data)
 @markup
 class Marca {
-  #breadcrumb
-
-  get breadcrumb () {
-    return this.#breadcrumb ??= Breadcrumb.create(schema().breadcrumb)
-  }
-
   get description () {
-    return global.descricao
+    return settings.app.description
   }
 
   get title () {
-    return global.nome
+    return settings.app.name
+  }
+
+  @didMount
+  async mount () {
+    const { data: marca, error } = await getMarca()
+    f.not(error) && setGlobal({ marca })
+    return this
   }
 }
 

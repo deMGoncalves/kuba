@@ -1,15 +1,16 @@
 import h, { Fragment } from '@kuba/h'
 import Site from '@kuba/site'
+import Breadcrumb from './breadcrumb'
 import Shelf from './shelf'
 import Title from './title'
 
-export default (marcas) =>
+export default () =>
   <Site>
     <Fragment slot='hot'>
       <Title />
       <Shelf />
     </Fragment>
     <Fragment slot='footer'>
-      {marcas.breadcrumb}
+      <Breadcrumb />
     </Fragment>
   </Site>

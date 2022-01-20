@@ -19,10 +19,7 @@ router('/marcas', async function marcas () {
 })
 
 router('/:marca', async function marca () {
-  const { default: Marca, getMarca } = await import('./marca' /* webpackChunkName: "marca" */)
-  const { data } = await getMarca()
-
-  setGlobal(data)
+  const { default: Marca } = await import('./marca' /* webpackChunkName: "marca" */)
   render(<Marca />)
 })
 
