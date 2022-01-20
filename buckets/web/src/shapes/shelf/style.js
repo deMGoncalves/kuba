@@ -13,4 +13,10 @@ export default styled.style`
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  @media (min-width: 961px) {
+    .shelf {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 `
