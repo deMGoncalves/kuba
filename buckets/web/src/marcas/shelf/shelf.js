@@ -1,10 +1,11 @@
-import { didMount, paint, repaint } from '@kuba/h'
+import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import component from './component'
-import getMarcas from './getMarcas'
+import effect from './effect'
 import Marca from './marca'
 
 @paint(component)
+@effect
 class Shelf {
   #marcas
 
@@ -15,13 +16,6 @@ class Shelf {
   @repaint
   changeMarcas (marcas) {
     this.#marcas = f.map(marcas, Marca.create)
-    return this
-  }
-
-  @didMount
-  async mount () {
-    const { data: marcas } = await getMarcas()
-    this.changeMarcas(marcas)
     return this
   }
 }
