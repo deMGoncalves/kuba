@@ -1,8 +1,8 @@
 import h, { Fragment } from '@kuba/h'
 import * as f from '@kuba/f'
 import Comparebar, { Compare } from '@kuba/comparebar'
+import Footer from '@kuba/footer'
 import Header, { Logo, Nav } from '@kuba/header'
-import Lazy from '@kuba/lazy'
 import Show from '@kuba/show'
 import Zone from '@kuba/zone'
 import style from './style'
@@ -15,6 +15,7 @@ export default (site, children) =>
       <Compare className={style.site__compare} />
     </Header>
     <Comparebar />
+    {children.header}
     <main className={style.site__main}>
       {children.hot}
       <Show when={f.len(children.warm)}>
@@ -28,7 +29,6 @@ export default (site, children) =>
         </Zone>
       </Show>
     </main>
-    <Zone>
-      <Lazy require={() => import('@kuba/footer' /* webpackChunkName: "footer" */)} />
-    </Zone>
+    {children.footer}
+    <Footer />
   </>

@@ -1,7 +1,7 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .shelf__container {
+  .shelf {
     display: grid;
     grid-column-gap: var(--spacing_inset-xs);
     grid-row-gap: var(--spacing_inset-lg);
@@ -9,7 +9,7 @@ export default styled.style`
   }
 
   @media (min-width: 769px) {
-    .shelf__container {
+    .shelf {
       grid-template-columns: repeat(3, 1fr);
     }
   }

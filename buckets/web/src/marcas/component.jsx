@@ -6,8 +6,10 @@ import Title from './title'
 export default (marcas) =>
   <Site>
     <Fragment slot='hot'>
-      {marcas.breadcrumb}
       <Title />
       <Shelf />
+    </Fragment>
+    <Fragment slot='footer'>
+      {marcas.breadcrumb}
     </Fragment>
   </Site>
