@@ -1,7 +1,8 @@
 import h from '@kuba/h'
+import container from '@kuba/container'
 import style from './style'
 
 export default (shelf) =>
-  <div className={style.shelf}>
+  <container.Section className={style.shelf}>
     {shelf.shapes}
-  </div>
+  </container.Section>
