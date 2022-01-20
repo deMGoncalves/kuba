@@ -10,10 +10,6 @@ export default styled.style`
     transition: 0.3s all cubic-bezier(0.77, 0, 0.175, 1);
   }
 
-  .thumbnail:hover {
-    background-color: var(--color-primary-light);
-  }
-
   .thumbnail__picture {
     border-radius: var(--border-radius-sm);
     box-shadow: var(--shadow-level-1) rgba(0, 0, 0, var(--opacity-level-light));
@@ -32,7 +28,7 @@ export default styled.style`
 
   .thumbnail__div {
     align-items: center;
-    background-color: rgba(250, 250, 250, 0.618);
+    background-color: var(--color-master-lighter);
     border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
     bottom: 0;
     display: inline-flex;

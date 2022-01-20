@@ -21,10 +21,6 @@ export default styled.style`
     z-index: 1;
   }
 
-  .marca:hover {
-    background-color: var(--color-primary-light);
-  }
-
   .marca__picture img {
     background-color: #fff;
     object-fit: contain;
@@ -33,7 +29,7 @@ export default styled.style`
 
   .marca__div {
     align-items: center;
-    background-color: rgba(250, 250, 250, 0.618);
+    background-color: var(--color-master-lighter);
     border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
     bottom: 0;
     display: inline-flex;
