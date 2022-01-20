@@ -1,8 +1,8 @@
 import h from '@kuba/h'
-import container from '@kuba/container'
+import Shelf from '@kuba/shelf'
 import style from './style'
 
 export default (shelf) =>
-  <container.Section className={style.shelf}>
+  <Shelf clasName={style.shelf}>
     {shelf.marcas}
-  </container.Section>
+  </Shelf>
