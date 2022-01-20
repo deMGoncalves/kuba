@@ -17,7 +17,7 @@ export default async function (request, response) {
     .neq('slug', slug)
     .eq('tamanho', tamanho)
     .in('material.id', material)
-    .limit(3)
+    .limit(4)
 
   response.setHeader('Cache-Control', 'public, max-age=86400')
   response.json({ data, error })
