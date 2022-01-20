@@ -1,9 +1,14 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .title {
-    height: 0;
-    opacity: 0;
-    width: 0;
+  .title__div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-quarck);
+  }
+
+  .title__span,
+  .title__h1 {
+    line-height: var(--line-height-md);
   }
 `
