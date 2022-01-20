@@ -8,20 +8,24 @@ import getShapes from './getShapes'
 class Related {
   #shapes
 
+  get empty () {
+    return f.equal(f.len(this.shapes), 0)
+  }
+
   get shapes () {
-    return this.#shapes ??= f.map(f.repeat({}, 4), Card.stub)
+    return this.#shapes ??= f.map(f.repeat(null, 4), Card.stub)
   }
 
   @repaint
-  changeShapes (data) {
-    this.#shapes = f.map(data, Card.create)
+  changeShapes (shapes) {
+    this.#shapes = f.map(shapes, Card.create)
     return this
   }
 
   @didMount
   async mount () {
-    const { data, error } = await getShapes()
-    f.not(error) && this.changeShapes(data)
+    const { data: shapes, error } = await getShapes()
+    f.not(error) && this.changeShapes(shapes)
     return this
   }
 
