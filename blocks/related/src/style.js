@@ -11,9 +11,9 @@ export default styled.style`
     background-color: #fff;
     border-radius: var(--border-radius-sm);
     cursor: pointer;
-    min-width: 75%;
+    min-width: calc(66.66% - 10.66px);
     position: relative;
-    width: 75%;
+    width: calc(66.66% - 10.66px);
   }
 
   @media (min-width: 426px) {
