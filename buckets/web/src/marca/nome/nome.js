@@ -4,7 +4,7 @@ import effect from './effect'
 
 @paint(component)
 @effect
-class Title {
+class Nome {
   #valor
 
   get valor () {
@@ -18,4 +18,4 @@ class Title {
   }
 }
 
-export default Title
+export default Nome
