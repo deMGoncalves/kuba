@@ -2,4 +2,4 @@ import h from '@kuba/h'
 import text from '@kuba/text'
 
 export default (marca) =>
-  <text.Strong master darker xxxs medium>{marca.nome}</text.Strong>
+  <text.Strong uid='marca' master darker xxxs medium>{marca.valor}</text.Strong>

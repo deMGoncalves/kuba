@@ -3,6 +3,23 @@ import styled from '@kuba/styled'
 export default styled.style`
   .material {
     display: flex;
+    flex-direction: column;
+    grid-area: material;
+    gap: var(--spacing_inset-lg);
+  }
+
+  .material__hgroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-quarck);
+  }
+
+  .material__h2 {
+    line-height: var(--spacing_inset-md) !important;
+  }
+
+  .material__div {
+    display: flex;
     gap: var(--spacing_inset-xs);
   }
 

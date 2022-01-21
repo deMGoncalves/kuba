@@ -4,11 +4,11 @@ import Footer from '@kuba/footer'
 import Header from './header'
 import style from './style'
 
-export default (_site, children) =>
+export default (site, children) =>
   <>
     <Header />
     <Comparebar />
-    <main className={style.site__main}>
+    <main className={[style.site__main, site.className]}>
       {children.main}
     </main>
     {children.breadcrumb}

@@ -1,9 +1,10 @@
 import { paint } from '@kuba/h'
 import Compare from '@kuba/compare'
-import global from '@kuba/global'
 import component from './component'
+import effect from './effect'
 
 @paint(component)
+@effect
 class CompararButton {
   #shape
 
@@ -12,12 +13,9 @@ class CompararButton {
     return this
   }
 
-  constructor (shape) {
+  changeShape (shape) {
     this.#shape = shape
-  }
-
-  static create () {
-    return new CompararButton(global)
+    return this
   }
 }
 

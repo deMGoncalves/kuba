@@ -1,21 +1,20 @@
-import { paint } from '@kuba/h'
-import global from '@kuba/global'
+import { paint, repaint } from '@kuba/h'
+import * as f from '@kuba/f'
 import component from './component'
+import effect from './effect'
 
 @paint(component)
+@effect
 class Material {
   #valor
 
   get valor () {
-    return this.#valor
+    return this.#valor ??= f.repeat({}, 2)
   }
 
-  constructor (valor) {
+  @repaint
+  changeValor (valor) {
     this.#valor = valor
-  }
-
-  static create () {
-    return new Material(global.material)
   }
 }
 

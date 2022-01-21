@@ -1,8 +1,9 @@
-import { paint } from '@kuba/h'
-import global from '@kuba/global'
+import { paint, repaint } from '@kuba/h'
 import component from './component'
+import effect from './effect'
 
 @paint(component)
+@effect
 class Lixa {
   #valor
 
@@ -10,12 +11,10 @@ class Lixa {
     return this.#valor
   }
 
-  constructor (valor) {
+  @repaint
+  changeValor (valor) {
     this.#valor = valor
-  }
-
-  static create () {
-    return new Lixa(global.lixa)
+    return this
   }
 }
 

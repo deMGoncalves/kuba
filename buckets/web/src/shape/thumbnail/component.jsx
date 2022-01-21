@@ -1,14 +1,16 @@
-import h, { Fragment } from '@kuba/h'
+import h from '@kuba/h'
+import container from '@kuba/container'
 import Figure from '@kuba/figure'
-import text from '@kuba/text'
+import Show from '@kuba/show'
+import Compare from './compare'
 import style from './style'
 
 export default (thumbnail) =>
-  <Figure className={style.thumbnail} alt={thumbnail.alt} height='920' width='736'>
-    <Fragment slot='sources'>
-      <source srcSet={thumbnail.src} />
-    </Fragment>
-    <Fragment slot='caption'>
-      <text.Span master xxxs>Créditos para {thumbnail.creditos}</text.Span>
-    </Fragment>
-  </Figure>
+  <container.Section className={style.thumbnail}>
+    <Figure className={style.thumbnail__figure} alt={thumbnail.alt} height='920' width='736'>
+      <Show when={thumbnail.src}>
+        <source srcSet={thumbnail.src} slot='sources' />
+      </Show>
+      <Compare />
+    </Figure>
+  </container.Section>

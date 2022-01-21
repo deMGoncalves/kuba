@@ -1,37 +1,25 @@
-import { paint } from '@kuba/h'
-import global from '@kuba/global'
+import { paint, repaint } from '@kuba/h'
 import component from './component'
+import effect from './effect'
 
 @paint(component)
+@effect
 class Thumbnail {
   #alt
-  #creditos
   #src
 
   get alt () {
     return this.#alt
   }
 
-  get creditos () {
-    return this.#creditos
-  }
-
   get src () {
     return this.#src
   }
 
-  constructor (alt, creditos, src) {
+  @repaint
+  changeValor (alt, src) {
     this.#alt = alt
-    this.#creditos = creditos
     this.#src = src
-  }
-
-  static create () {
-    return new Thumbnail(
-      global.modelo,
-      global.marca?.nome,
-      global.thumbnail
-    )
   }
 }
 

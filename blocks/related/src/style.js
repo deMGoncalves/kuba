@@ -1,14 +1,12 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .related[empty] {
-    display: none;
+  .related {
+    grid-area: related;
   }
 
-  .related__container {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing_inset-lg);
+  .related[empty] {
+    display: none;
   }
 
   .related__metro section {

@@ -1,9 +1,10 @@
-import { paint } from '@kuba/h'
-import global from '@kuba/global'
+import { paint, repaint } from '@kuba/h'
 import component from './component'
+import effect from './effect'
 import * as mapper from './mapper'
 
 @paint(component)
+@effect
 class Origem {
   #valor
 
@@ -15,12 +16,10 @@ class Origem {
     return this.#valor
   }
 
-  constructor (valor) {
+  @repaint
+  changeValor (valor) {
     this.#valor = valor
-  }
-
-  static create () {
-    return new Origem(global.marca?.origem?.valor)
+    return this
   }
 }
 

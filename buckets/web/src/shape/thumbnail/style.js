@@ -2,24 +2,29 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .thumbnail {
-    background-color: #fff;
-    border-radius: var(--border-radius-sm);
+    grid-area: thumbnail;
   }
 
-  .thumbnail picture {
-    border-radius: inherit;
+  @media (min-width: 769px) {
+    .thumbnail {
+      padding-left: var(--spacing_inset-sm) !important;
+    }
+  }
+
+  .thumbnail__figure {
+    background-color: #fff;
+    border: var(--border-width-hairline) solid var(--color-master-light);
+    border-radius: var(--border-radius-sm);
+    gap: 0;
+  }
+
+  .thumbnail__figure picture {
+    border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
     padding-top: calc(5 / 4 * 100%) !important;
   }
 
-  .thumbnail figcaption {
-    align-items: center;
-    display: flex;
-    height: 35px;
-    padding: 0 var(--spacing_inset-xs);
-  }
-
-  .thumbnail__placeholder {
-    height: 100%;
-    width: 100%;
+  .thumbnail__figure figcaption {
+    border-top: var(--border-width-hairline) solid var(--color-master-light);
+    padding: var(--spacing_inset-xs);
   }
 `

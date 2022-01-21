@@ -4,11 +4,11 @@ import effect from './effect'
 
 @paint(component)
 @effect
-class Descricao {
+class Marca {
   #valor
 
   get valor () {
-    return this.#valor ??= ''
+    return this.#valor
   }
 
   @repaint
@@ -18,4 +18,4 @@ class Descricao {
   }
 }
 
-export default Descricao
+export default Marca
