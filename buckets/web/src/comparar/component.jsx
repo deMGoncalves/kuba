@@ -6,8 +6,8 @@ import schema from './schema.json'
 
 export default () =>
   <Site>
-    <Fragment slot='hot'>
-      <Breadcrumb paths={schema.breadcrumb} />
+    <Fragment slot='main'>
       <Shelf />
     </Fragment>
+    <Breadcrumb paths={schema.breadcrumb} />
   </Site>

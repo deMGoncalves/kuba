@@ -7,12 +7,10 @@ import Title from './title'
 
 export default () =>
   <Site>
-    <Fragment slot='hot'>
+    <Fragment slot='main'>
       <Title />
-      <Descricao />
       <Shelf />
+      <Descricao />
     </Fragment>
-    <Fragment slot='footer'>
-      <Breadcrumb />
-    </Fragment>
+    <Breadcrumb />
   </Site>

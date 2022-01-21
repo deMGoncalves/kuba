@@ -6,7 +6,7 @@ import style from './style'
 
 export default (shape) =>
   <Site>
-    <Fragment slot='hot'>
+    <Fragment slot='main'>
       <container.Div className={style.shape__div}>
         <section className={[style.shape__section, style.thumbnail]}>
           {shape.thumbnail}
@@ -24,11 +24,7 @@ export default (shape) =>
           {shape.material}
         </section>
       </container.Div>
-    </Fragment>
-    <Fragment slot='warm'>
       <Related />
     </Fragment>
-    <Fragment slot='footer'>
-      {shape.breadcrumb}
-    </Fragment>
+    {shape.breadcrumb}
   </Site>
