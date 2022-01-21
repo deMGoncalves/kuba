@@ -1,6 +1,6 @@
 export default {
   author: 'deMGoncalves <cleber.engineer@gmail.com>',
-  description: 'Aquele que substitui por ser melhor',
+  description: 'Escolha o melhor shape para seu setup',
   language: 'pt-BR',
   name: 'kuba',
   themeColor: '#fafafa',
