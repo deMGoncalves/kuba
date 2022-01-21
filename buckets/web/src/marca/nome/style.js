@@ -12,6 +12,7 @@ export default styled.style`
   }
 
   .title__div {
+    align-items: center;
     display: flex;
     gap: var(--spacing_inset-xs);
   }
