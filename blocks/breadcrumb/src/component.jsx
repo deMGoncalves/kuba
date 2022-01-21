@@ -4,7 +4,7 @@ import Metro from '@kuba/metro'
 import style from './style'
 
 export default (breadcrumb) =>
-  <container.Section className={style.breadcrumb}>
+  <container.Section className={style.breadcrumb} slot='breadcrumb'>
     <Metro>
       {breadcrumb.paths}
     </Metro>
