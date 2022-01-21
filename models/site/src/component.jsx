@@ -1,34 +1,16 @@
 import h, { Fragment } from '@kuba/h'
-import * as f from '@kuba/f'
-import Comparebar, { Compare } from '@kuba/comparebar'
+import Comparebar from '@kuba/comparebar'
 import Footer from '@kuba/footer'
-import Header, { Logo, Nav } from '@kuba/header'
-import Show from '@kuba/show'
-import Zone from '@kuba/zone'
+import Header from './header'
 import style from './style'
 
-export default (site, children) =>
+export default (_site, children) =>
   <>
-    <Header>
-      <Nav className={style.site__nav} />
-      <Logo className={style.site__logo} />
-      <Compare className={style.site__compare} />
-    </Header>
+    <Header />
     <Comparebar />
-    {children.header}
     <main className={style.site__main}>
-      {children.hot}
-      <Show when={f.len(children.warm)}>
-        <Zone>
-          {children.warm}
-        </Zone>
-      </Show>
-      <Show when={f.len(children.cold)}>
-        <Zone>
-          {children.cold}
-        </Zone>
-      </Show>
+      {children.main}
     </main>
-    {children.footer}
+    {children.breadcrumb}
     <Footer />
   </>
