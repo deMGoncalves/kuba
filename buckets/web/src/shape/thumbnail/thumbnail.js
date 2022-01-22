@@ -24,7 +24,7 @@ class Thumbnail {
   }
 
   zoom () {
-    echo.emit('zoom:open')
+    echo.emit('zoom:open', { src: this.src, alt: this.alt })
     return this
   }
 }
