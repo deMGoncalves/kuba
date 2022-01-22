@@ -1,10 +1,10 @@
 import h, { Fragment } from '@kuba/h'
-import Site from '@kuba/site'
+import View from '@kuba/view'
 import Shelf from './shelf'
 
 export default () =>
-  <Site>
+  <View>
     <Fragment slot='main'>
       <Shelf />
     </Fragment>
-  </Site>
+  </View>
