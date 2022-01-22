@@ -15,16 +15,12 @@ export default styled.style`
     background-color: #fff;
     border: var(--border-width-hairline) solid var(--color-master-light);
     border-radius: var(--border-radius-sm);
+    cursor: pointer;
     gap: 0;
   }
 
   .thumbnail__figure picture {
     border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
     padding-top: calc(5 / 4 * 100%) !important;
-  }
-
-  .thumbnail__figure figcaption {
-    border-top: var(--border-width-hairline) solid var(--color-master-light);
-    padding: var(--spacing_inset-xs);
   }
 `

@@ -4,7 +4,9 @@ import icon from '@kuba/icon'
 import style from './style'
 
 export default (comparar) =>
-  <button.naked.Master uid='compare' className={style.compare} onClick={() => comparar.add()} slot='caption' darker medium>
-    Comparar
-    <icon.Compare />
-  </button.naked.Master>
+  <div className={style.compare} uid='compare' slot='caption'>
+    <button.naked.Master className={style.compare__button} onClick={() => comparar.add()} darker medium>
+      Comparar
+      <icon.Compare />
+    </button.naked.Master>
+  </div>
