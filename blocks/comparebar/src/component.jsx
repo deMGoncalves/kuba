@@ -3,12 +3,13 @@ import Side from '@kuba/side'
 import Back from './back'
 import Footer from './footer'
 import Header from './header'
-import Shelf from './shelf'
+import Main from './main'
+import style from './style'
 
 export default (comparebar) =>
-  <Side onClose={() => comparebar.close()} opened={comparebar.opened}>
+  <Side className={style.comparebar} onClose={() => comparebar.close()} opened={comparebar.opened}>
     <Back onClick={() => comparebar.close()} />
     <Header />
-    <Shelf />
+    <Main />
     <Footer />
   </Side>

@@ -7,10 +7,10 @@ import Shape from './shape'
 
 @paint(component)
 @actions
-class Shelf {
+class Main {
   get shapes () {
     return f.map(Compare.shelf, Shape.create)
   }
 }
 
-export default Shelf
+export default Main

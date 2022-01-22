@@ -3,6 +3,6 @@ import button from '@kuba/button'
 import style from './style'
 
 export default (props) =>
-  <aside className={style.back}>
+  <section className={style.back}>
     <button.icon.ArrowLeft onClick={props.onClick} />
-  </aside>
+  </section>

@@ -1,5 +1,5 @@
-import h, { Fragment } from '@kuba/h'
-import icon from '@kuba/icon'
+import h from '@kuba/h'
+import button from '@kuba/button'
 import Picture from '@kuba/picture'
 import style from './style'
 
@@ -12,7 +12,5 @@ export default (shape) =>
       {shape.modelo}
       {shape.laminas}
     </div>
-    <button className={style.shape__button} onClick={() => shape.remove()}>
-      <icon.Close onColor />
-    </button>
+    <button.icon.Close className={style.shape__button} onClick={() => shape.remove()} />
   </section>
