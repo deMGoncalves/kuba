@@ -8,11 +8,11 @@ import style from './style'
 export default (site, children) =>
   <>
     <Header />
-    <Comparebar />
-    <Zoom />
     <main className={[style.site__main, site.className]}>
       {children.main}
     </main>
     {children.breadcrumb}
+    <Comparebar />
+    <Zoom />
     <Footer />
   </>
