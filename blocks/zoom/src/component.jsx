@@ -4,7 +4,7 @@ import button from '@kuba/button'
 import Picture from '@kuba/picture'
 
 export default (zoom) =>
-  <section className={style.zoom} opened={zoom.opened}>
+  <section className={style.zoom} opened:isTruthy={zoom.opened}>
     <header className={style.zoom__header}>
       <button.naked.Close className={style.zoom__close} onClick={() => zoom.close()}>X</button.naked.Close>
     </header>

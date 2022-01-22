@@ -12,7 +12,7 @@ export default styled.style`
     z-index: 2;
   }
 
-  .zoom[opened='true'] {
+  .zoom[opened] {
     display: block;
   }
 
