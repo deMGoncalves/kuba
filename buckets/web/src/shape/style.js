@@ -10,8 +10,7 @@ export default styled.style`
         'descricao thumbnail'
         'especificacao thumbnail'
         'material thumbnail'
-        'related related'
-        ;
+        'relacionado relacionado';
       grid-template-columns: calc(100% * 0.618) calc(100% * 0.382);
       margin: 0 auto;
       max-width: 987px;

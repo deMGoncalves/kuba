@@ -4,8 +4,8 @@ export default styled.style`
   .material {
     display: flex;
     flex-direction: column;
-    grid-area: material;
     gap: var(--spacing_inset-lg);
+    grid-area: material;
   }
 
   .material__hgroup {

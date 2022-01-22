@@ -1,11 +1,11 @@
 import h, { Fragment } from '@kuba/h'
-import Related from '@kuba/related'
 import Site from '@kuba/site'
 import Breadcrumb from './breadcrumb'
 import Descricao from './descricao'
 import Especificacao from './especificacao'
 import Material from './material'
 import Modelo from './modelo'
+import Relacionado from './relacionado'
 import style from './style'
 import Thumbnail from './thumbnail'
 
@@ -17,7 +17,7 @@ export default () =>
       <Descricao />
       <Especificacao />
       <Material />
-      <Related />
+      <Relacionado />
     </Fragment>
     <Breadcrumb />
   </Site>
