@@ -4,9 +4,12 @@ export default styled.style`
   .zoom {
     background-color: #fff;
     display: none;
-    height: 100%;
+    height: 100vh;
+    left: 0;
     position: absolute;
-    width: 100%;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
   }
 
   .zoom[opened='true'] {
