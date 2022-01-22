@@ -1,4 +1,4 @@
-import h from '@kuba/h'
+import h, { Fragment } from '@kuba/h'
 import Footer from '@kuba/footer'
 import Header from './header'
 import style from './style'
