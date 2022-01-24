@@ -7,13 +7,19 @@ export default styled.style`
     gap: var(--spacing_inset-xs);
   }
 
-  .shelf__section.especificacao {
+  .shelf__thumb {
+    align-items: center;
+    display: flex;
     gap: var(--spacing_inset-lg);
+    justify-content: center;
+  }
+
+  .shelf__section.especificacao {
     padding-top: var(--spacing_inset-lg);
   }
 
   .shelf__label {
-    border-bottom: 1px solid var(--color-master-light);
+    align-items: center;
     display: flex;
     justify-content: center;
     padding-bottom: var(--spacing_inset-xs) !important;
@@ -21,14 +27,16 @@ export default styled.style`
 
   @media (min-width: 769px) {
     .shelf__label {
-      justify-content: flex-start;
+      justify-content: center;
     }
   }
 
   .shelf__div {
+    border-bottom: 1px solid var(--color-master-light);
     display: flex;
     font-size: var(--font-size-xs);
     gap: var(--spacing_inset-lg);
     justify-content: center;
+    padding-bottom: var(--spacing_inset-lg) !important;
   }
 `

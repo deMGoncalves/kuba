@@ -7,10 +7,10 @@ import style from './style'
 export default (shelf) =>
   <story.Section>
     <section className={style.shelf__section}>
-      <container.Div className={style.shelf__div}>
+      <container.Div className={style.shelf__thumb}>
         {shelf.thumbnail}
       </container.Div>
-      <container.Div className={style.shelf__div}>
+      <container.Div className={style.shelf__thumb}>
         {shelf.descricao}
       </container.Div>
     </section>
