@@ -10,7 +10,7 @@ export default styled.style`
   .thumbnail__caption {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-xs);
+    gap: var(--spacing_inset-sm);
     padding: var(--spacing_inset-xs) 0;
   }
 

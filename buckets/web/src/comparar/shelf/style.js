@@ -24,8 +24,18 @@ export default styled.style`
   .shelf__label {
     align-items: center;
     display: flex;
+    gap: var(--spacing_inset-xs);
     justify-content: center;
     padding-bottom: var(--spacing_inset-xs) !important;
+  }
+
+  .shelf__helper {
+    align-items: center;
+    border: 1px solid var(--color-master-darker);
+    border-radius: var(--border-radius-pill);
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing_inset-quarck) var(--spacing_inset-nano);
   }
 
   .shelf__div {
