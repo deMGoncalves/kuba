@@ -26,10 +26,10 @@ export default styled.style`
 
   .shelf__div {
     border-bottom: 1px solid var(--color-master-light);
-    display: flex;
+    display: grid;
     font-size: var(--font-size-xs);
     gap: var(--spacing_inset-lg);
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     padding-bottom: var(--spacing_inset-lg) !important;
   }
 
