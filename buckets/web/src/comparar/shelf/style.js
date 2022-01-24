@@ -29,6 +29,6 @@ export default styled.style`
     display: flex;
     font-size: var(--font-size-xs);
     gap: var(--spacing_inset-lg);
-    justify-content: space-evenly;
+    justify-content: center;
   }
 `
