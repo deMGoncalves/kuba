@@ -12,10 +12,23 @@ export default styled.style`
     padding-top: var(--spacing_inset-lg);
   }
 
+  .shelf__label {
+    border-bottom: 1px solid var(--color-master-light);
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--spacing_inset-xs) !important;
+  }
+
+  @media (min-width: 769px) {
+    .shelf__label {
+      justify-content: flex-start;
+    }
+  }
+
   .shelf__div {
-    display: grid;
-    grid-column-gap: var(--spacing_inset-lg);
-    grid-row-gap: var(--spacing_inset-nano);
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    font-size: var(--font-size-xs);
+    gap: var(--spacing_inset-lg);
+    justify-content: space-evenly;
   }
 `

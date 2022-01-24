@@ -4,6 +4,5 @@ import style from './style'
 
 export default (material) =>
   <text.Strong className={style.material} master darker xs medium>
-    Material<br />
-    <text.Span className={style.material__span} master xxxs>{material.valor}</text.Span>
+    <text.Span className={style.material__span} master darker medium xs>{material.valor}</text.Span>
   </text.Strong>

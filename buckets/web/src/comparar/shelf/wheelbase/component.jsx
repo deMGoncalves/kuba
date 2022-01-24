@@ -4,6 +4,5 @@ import style from './style'
 
 export default (wheelbase) =>
   <text.Strong className={style.wheelbase} master darker xs medium>
-    {wheelbase.valor}<br />
-    <text.Span master xxxs>Wheelbase</text.Span>
+    <text.Span master darker medium xs>{wheelbase.valor}</text.Span>
   </text.Strong>
