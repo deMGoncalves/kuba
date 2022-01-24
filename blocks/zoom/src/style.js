@@ -4,13 +4,15 @@ export default styled.style`
   .zoom {
     background-color: #fff;
     display: none;
-    height: 100%;
-    position: absolute;
-    width: 100%;
   }
 
   .zoom[opened='true'] {
     display: block;
+    height: calc(100% * 2);
+    position: absolute;
+    top: -90px;
+    width: 100%;
+    z-index: 4;
   }
 
   .zoom__header {
