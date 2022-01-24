@@ -13,6 +13,10 @@ export default styled.style`
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .shelf__thumb > figure:nth-child(1) {
+    text-align: right;
+  }
+
   .shelf__section.especificacao {
     padding-top: var(--spacing_inset-lg);
   }
