@@ -1,4 +1,4 @@
-import styled from '@kuba/styled'
+import styled from '@start/styled'
 
 export default styled.style`
   .metro {
@@ -16,8 +16,8 @@ export default styled.style`
   .metro__container {
     display: inline-flex;
     gap: var(--spacing_inset-xs);
+    min-width: 100%;
     text-align: inherit;
     white-space: nowrap;
-    width: 100%;
   }
 `
