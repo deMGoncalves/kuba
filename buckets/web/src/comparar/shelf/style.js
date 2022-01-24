@@ -25,12 +25,6 @@ export default styled.style`
     padding-bottom: var(--spacing_inset-xs) !important;
   }
 
-  @media (min-width: 769px) {
-    .shelf__label {
-      justify-content: center;
-    }
-  }
-
   .shelf__div {
     border-bottom: 1px solid var(--color-master-light);
     display: flex;
