@@ -1,6 +1,7 @@
 import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
 import Compare from '@kuba/compare'
+import { redirectTo } from '@kuba/router'
 import actions from './actions'
 import component from './component'
 
@@ -13,6 +14,11 @@ class Footer {
       .pipe(f.len)
       .pipe(f.equal(2))
       .done()
+  }
+
+  redirect () {
+    redirectTo('comparar')
+    return this
   }
 }
 

@@ -1,4 +1,5 @@
 import { paint, repaint } from '@kuba/h'
+import echo from '@kuba/echo'
 import component from './component'
 import effect from './effect'
 
@@ -20,6 +21,11 @@ class Thumbnail {
   changeValor (alt, src) {
     this.#alt = alt
     this.#src = src
+  }
+
+  zoom () {
+    echo.emit('zoom:open', { src: this.src, alt: this.alt })
+    return this
   }
 }
 

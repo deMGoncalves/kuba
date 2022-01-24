@@ -8,7 +8,6 @@ import Modelo from './modelo'
 import Relacionado from './relacionado'
 import style from './style'
 import Thumbnail from './thumbnail'
-import Zoom from '@kuba/zoom'
 
 export default () =>
   <Site className={style.shape__main}>
@@ -19,7 +18,6 @@ export default () =>
       <Especificacao />
       <Material />
       <Relacionado />
-      <Zoom />
     </Fragment>
     <Breadcrumb />
   </Site>

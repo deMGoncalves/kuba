@@ -14,7 +14,8 @@ export default styled.style`
   .thumbnail__figure {
     background-color: #fff;
     border: var(--border-width-hairline) solid var(--color-master-light);
-    border-radius: var(--border-radius-sm);
+    border-bottom: none;
+    border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
     cursor: pointer;
     gap: 0;
   }

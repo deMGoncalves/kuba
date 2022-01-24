@@ -1,14 +1,19 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import component from './component'
-import echo from '@kuba/echo'
-import effect from './effect'
+import events from './events'
+import scroll from './scroll'
 
 @paint(component)
-@effect
+@events
 class Zoom {
+  #alt
   #opened
   #src
+
+  get alt () {
+    return this.#alt ??= ''
+  }
 
   get opened () {
     return this.#opened ??= f.F()
@@ -18,24 +23,19 @@ class Zoom {
     return this.#src ??= ''
   }
 
-  constructor () {
-    echo.on('zoom:open', () => this.open())
-  }
-
   @repaint
+  @scroll.unlock
   close () {
     this.#opened = f.F()
     return this
   }
 
   @repaint
-  open () {
-    this.#opened = f.not(this.opened)
-    return this
-  }
-
-  async change (snapshot) {
-    this.#src = await snapshot
+  @scroll.lock
+  open (src, alt) {
+    this.#alt = alt
+    this.#src = src
+    this.#opened = f.T()
     return this
   }
 }

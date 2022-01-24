@@ -2,30 +2,33 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .zoom {
+    align-items: center;
     background-color: #fff;
     display: none;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
   }
 
-  .zoom[opened='true'] {
-    display: block;
-    height: calc(100% * 2);
-    position: absolute;
-    top: -90px;
-    width: 100%;
-    z-index: 4;
-  }
-
-  .zoom__header {
+  .zoom[opened] {
     display: flex;
-    justify-content: flex-end;
-    padding: var(--spacing_inset-xs);
   }
 
-  .zoom__close {
-    border-radius: var(--border-radius-pill) !important;
+  .zoom__button {
+    position: fixed;
+    right: var(--spacing-xxxs);
+    top: var(--spacing-xxxs);
   }
 
-  .zoom__main picture > img {
+  .zoom__img {
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
     object-fit: contain;
+    object-position: center;
   }
 `

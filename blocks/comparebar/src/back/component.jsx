@@ -3,6 +3,6 @@ import button from '@kuba/button'
 import style from './style'
 
 export default (props) =>
-  <div className={style.back} fixed>
+  <section className={style.back}>
     <button.icon.ArrowLeft onClick={props.onClick} />
-  </div>
+  </section>

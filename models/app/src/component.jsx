@@ -6,7 +6,7 @@ import style from './style'
 export default (app, children) =>
   <>
     <Sidebar />
-    <main className={style.app__main}>
+    <main className={[style.app__main, app.className]}>
       <Header fixed>
         <Menu />
         <Logo />
