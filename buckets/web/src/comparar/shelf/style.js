@@ -32,4 +32,8 @@ export default styled.style`
     justify-content: center;
     padding-bottom: var(--spacing_inset-lg) !important;
   }
+
+  .shelf__div:last-child {
+    border-bottom: none;
+  }
 `
