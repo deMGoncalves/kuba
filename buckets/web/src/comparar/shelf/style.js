@@ -8,10 +8,9 @@ export default styled.style`
   }
 
   .shelf__thumb {
-    align-items: center;
-    display: flex;
+    display: grid;
     gap: var(--spacing_inset-lg);
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .shelf__section.especificacao {

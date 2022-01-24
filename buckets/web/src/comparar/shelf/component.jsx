@@ -10,9 +10,6 @@ export default (shelf) =>
       <container.Div className={style.shelf__thumb}>
         {shelf.thumbnail}
       </container.Div>
-      <container.Div className={style.shelf__thumb}>
-        {shelf.descricao}
-      </container.Div>
     </section>
     <section className={[style.shelf__section, style.especificacao]}>
       <container.Div className={style.shelf__label}>

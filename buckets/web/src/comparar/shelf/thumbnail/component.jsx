@@ -11,5 +11,6 @@ export default (thumbnail) =>
     <figcaption className={style.thumbnail__caption}>
       <text.Span xs>{thumbnail.marca}</text.Span>
       <text.Strong master darker medium sm>{thumbnail.alt}</text.Strong>
+      <text.P>{thumbnail.desc}</text.P>
     </figcaption>
   </figure>
