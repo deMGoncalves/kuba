@@ -4,7 +4,7 @@ export default styled.style`
   .shelf__section {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-xs);
+    gap: var(--spacing_inset-lg);
   }
 
   .shelf__thumb {
@@ -24,7 +24,7 @@ export default styled.style`
   .shelf__label {
     align-items: center;
     display: flex;
-    gap: var(--spacing_inset-quarck);
+    gap: var(--spacing_inset-nano);
     justify-content: center;
   }
 
@@ -34,7 +34,7 @@ export default styled.style`
     font-size: var(--font-size-xs);
     gap: var(--spacing_inset-lg);
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: var(--spacing_inset-lg) !important;
+    padding-bottom: var(--spacing_inset-xs) !important;
   }
 
   .shelf__div:last-child {
