@@ -22,14 +22,21 @@ export default styled.style`
     background-color: black;
     border-radius: var(--border-radius-sm);
     color: #fff;
-    left: var(--spacing-xs);
+    left: -145px;
     padding: var(--spacing_inset-nano);
     position: absolute;
     text-align: center;
-    top: -5px;
+    top: var(--spacing-xs);
     visibility: hidden;
     width: 250px;
     z-index: 1;
+  }
+
+  @media (min-width: 769px) {
+    .helper__span {
+      left: var(--spacing-xs);
+      top: -5px;
+    }
   }
 
   .helper__tooltip:hover .helper__span {
