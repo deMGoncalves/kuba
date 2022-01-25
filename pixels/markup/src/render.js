@@ -1,3 +1,4 @@
-import { render } from '@kuba/h'
+import h, { render } from '@kuba/h'
+import Component from './component'
 
-export default render(document.head)
+render(document.head, <Component />)
