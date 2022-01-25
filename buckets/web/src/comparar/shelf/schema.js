@@ -1,6 +1,6 @@
 export default {
   tamanho: 'O tamanho dos shapes naturalmente são medidos por polegadas (por exemplo: 7.75")',
-  wheelbase: 'É a distância entro os eixos do seu skate',
+  wheelbase: 'É a distância entre os eixos do seu skate',
   nose: 'É o nariz do skate, ou seja, a parte mais acentuada localizada na frente do skate',
   tail: 'É a calda do skate, ou seja, o lado de trás que é menos acentuado',
   concave: 'É a curvatura presente em alguns skate, que começa do meio do shape e se estende até as laterais',
