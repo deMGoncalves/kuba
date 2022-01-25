@@ -1,28 +1,24 @@
 import { didMount, paint } from '@kuba/h'
+import * as f from '@kuba/f'
 import { setGlobal } from '@kuba/global'
 import jsonld from '@kuba/jsonld'
-import markup from '@kuba/markup'
-import * as settings from '@kuba/settings'
+import { setTitle } from '@kuba/markup'
 import component from './component'
 import data from './data'
 import getMarcas from './getMarcas'
 
 @paint(component)
 @jsonld(data)
-@markup
 class Marcas {
-  get description () {
-    return settings.app.description
-  }
-
-  get title () {
-    return 'Marcas'
-  }
-
   @didMount
   async mount () {
-    const { data: marcas } = await getMarcas()
-    setGlobal({ marcas })
+    const { data: marcas, error } = await getMarcas()
+
+    f.not(error) && (
+      setTitle('Marcas'),
+      setGlobal({ marcas })
+    )
+
     return this
   }
 }
