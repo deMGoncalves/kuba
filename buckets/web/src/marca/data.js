@@ -1,17 +1,17 @@
 import * as settings from '@kuba/settings'
 
-export default (page) =>
+export default (schema) =>
   ({
     '@id': '#webpage',
     '@type': 'WebPage',
     breadcrumb: {
       '@id': '#breadcrumb'
     },
-    description: page.description,
+    description: schema.descricao,
     inLanguage: settings.app.language,
     isPartOf: {
       '@id': '#website'
     },
-    name: page.title,
+    name: schema.nome,
     url: settings.app.url
   })
