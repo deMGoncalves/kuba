@@ -23,49 +23,49 @@ export default (shelf) =>
       </container.Div>
       <container.Div className={style.shelf__label}>
         <text.Span master darkest medium sm>Wheelbase</text.Span>
-        <Help text={schema.tamanho} />
+        <Help text={schema.wheelbase} />
       </container.Div>
       <container.Div className={style.shelf__div}>
         {shelf.wheelbase}
       </container.Div>
       <container.Div className={style.shelf__label}>
         <text.Span master darkest medium sm>Nose</text.Span>
-        <Help text={schema.tamanho} />
+        <Help text={schema.nose} />
       </container.Div>
       <container.Div className={style.shelf__div}>
         {shelf.nose}
       </container.Div>
       <container.Div className={style.shelf__label}>
         <text.Span master darkest medium sm>Tail</text.Span>
-        <Help text={schema.tamanho} />
+        <Help text={schema.tail} />
       </container.Div>
       <container.Div className={style.shelf__div}>
         {shelf.tail}
       </container.Div>
       <container.Div className={style.shelf__label}>
         <text.Span master darkest medium sm>Concave</text.Span>
-        <Help text={schema.tamanho} />
+        <Help text={schema.concave} />
       </container.Div>
       <container.Div className={style.shelf__div}>
         {shelf.concave}
       </container.Div>
       <container.Div className={style.shelf__label}>
         <text.Span master darkest medium sm>Lixa</text.Span>
-        <Help text={schema.tamanho} />
+        <Help text={schema.lixa} />
       </container.Div>
       <container.Div className={style.shelf__div}>
         {shelf.lixa}
       </container.Div>
       <container.Div className={style.shelf__label}>
         <text.Span master darkest medium sm>Laminas</text.Span>
-        <Help text={schema.tamanho} />
+        <Help text={schema.laminas} />
       </container.Div>
       <container.Div className={style.shelf__div}>
         {shelf.laminas}
       </container.Div>
       <container.Div className={style.shelf__label}>
         <text.Span master darkest medium sm>Material</text.Span>
-        <Help text={schema.tamanho} />
+        <Help text={schema.material} />
       </container.Div>
       <container.Div className={style.shelf__div}>
         {shelf.material}

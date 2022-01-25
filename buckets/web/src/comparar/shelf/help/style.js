@@ -10,7 +10,7 @@ export default styled.style`
     border: var(--border-width-thin) solid var(--color-master-dark);
     border-radius: var(--border-radius-pill);
     cursor: pointer;
-    padding: 3px var(--spacing_inset-nano);
+    padding: 0 var(--spacing_inset-quarck);
   }
 
   .helper__icon:hover {
@@ -20,10 +20,10 @@ export default styled.style`
 
   .helper__span {
     background-color: black;
-    border-radius: 6px;
+    border-radius: var(--border-radius-sm);
     color: #fff;
-    left: 105%;
-    padding: 5px 0;
+    left: var(--spacing-xs);
+    padding: var(--spacing_inset-nano);
     position: absolute;
     text-align: center;
     top: -5px;
