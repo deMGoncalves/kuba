@@ -1,11 +1,14 @@
 import { paint } from '@kuba/h'
+import * as f from '@kuba/f'
 import component from './component'
+import media from '@kuba/media'
 
 @paint(component)
 class Thumbnail {
   #alt
   #desc
   #marca
+  #opened
   #src
 
   get alt () {
@@ -20,6 +23,10 @@ class Thumbnail {
     return this.#marca
   }
 
+  get opened () {
+    return this.#opened ??= f.F()
+  }
+
   get src () {
     return this.#src
   }
@@ -29,6 +36,14 @@ class Thumbnail {
     this.#desc = desc
     this.#marca = marca
     this.#src = src
+    this.media()
+  }
+
+  media () {
+    media('(min-width: 769px)') 
+      .in(() => console.log('olá'))
+      .out(() => console.log('tchau'))
+    return this
   }
 
   static create (data) {

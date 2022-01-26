@@ -1,6 +1,6 @@
 import h, { Fragment } from '@kuba/h'
 import container from '@kuba/container'
-import Help from './help'
+import Help from '@kuba/help'
 import story from '@kuba/story'
 import text from '@kuba/text'
 import schema from './schema'
