@@ -18,19 +18,7 @@ export default styled.style`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 426px) {
-    .variacao__div {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
   @media (min-width: 769px) {
-    .variacao__div {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (min-width: 961px) {
     .variacao__div {
       grid-template-columns: repeat(3, 1fr);
     }
