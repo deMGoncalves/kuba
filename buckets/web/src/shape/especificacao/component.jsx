@@ -10,8 +10,8 @@ export default () =>
   <container.Section className={style.especificacao}>
     <text.H2 className={style.especificacao__h2} master darker xs medium>Especificação</text.H2>
     <div className={style.especificacao__div}>
+      <Nose />
       <Tail />
       <Concave />
-      <Nose />
     </div>
   </container.Section>

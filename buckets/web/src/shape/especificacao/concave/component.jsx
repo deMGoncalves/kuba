@@ -8,15 +8,14 @@ export default (concave) =>
   <>
     <Show when={concave.valor}>
       <div className={style.concave}>
-        <text.Strong master darker xs medium>Concave</text.Strong>
-        <text.Span master xxxs>Sim</text.Span>
+        <text.Strong className={style.concave__text} master darker xxs bold>Concave</text.Strong>
+        <text.Span className={style.concave__text} master xxxs>Inclinação simétrica das laterais do shape no sentido de seu comprimento total</text.Span>
       </div>
     </Show>
     <Hide when={concave.valor}>
       <div className={style.concave}>
-        <text.Strong master light xs medium>Concave</text.Strong>
-        <text.Span master light xxxs>Não</text.Span>
+        <text.Strong className={style.concave__text} master darker xxs bold/>
+        <text.Span className={style.concave__text} master xxxs />
       </div>
     </Hide>
-
   </>
