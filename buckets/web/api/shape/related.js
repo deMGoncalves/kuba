@@ -14,7 +14,7 @@ export default async function (request, response) {
       montagem (*),
       flag (*)
     `)
-    .eq('tamanho.id', tamanho)
+    .eq('tamanho', tamanho)
     .in('material.id', material)
     .limit(4)
 
