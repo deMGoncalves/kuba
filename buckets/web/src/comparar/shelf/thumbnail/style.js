@@ -14,7 +14,16 @@ export default styled.style`
     padding: var(--spacing_inset-xs) 0;
   }
 
+  .thumbnail__caption > span {
+    font-size: var(--font-size-xxxs) !important;
+  }
+
+  .thumbnail__caption > strong {
+    font-size: var(--font-size-xs) !important;
+  }
+
   .thumbnail__caption > p {
+    font-size: var(--font-size-xxxs) !important;
     line-height: var(--line-height-lg) !important;
   }
 `
