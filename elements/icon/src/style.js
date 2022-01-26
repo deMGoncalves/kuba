@@ -2,8 +2,8 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .icon {
-    height: 24px;
-    width: 24px;
+    height: 21px;
+    width: 21px;
   }
 
   .icon[small] {
@@ -12,7 +12,7 @@ export default styled.style`
   }
 
   .icon[large] {
-    height: 32px;
-    width: 32px;
+    height: 26px;
+    width: 26px;
   }
 `
