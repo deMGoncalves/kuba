@@ -3,20 +3,20 @@ import data from './data'
 
 @jsonld(data)
 class Schema {
-  #descricao
-  #nome
+  #description
+  #name
 
-  get descricao () {
-    return this.#descricao
+  get description () {
+    return this.#description
   }
 
-  get nome () {
-    return this.#nome
+  get name () {
+    return this.#name
   }
 
-  constructor (descricao, nome) {
-    this.#descricao = descricao
-    this.#nome = nome
+  constructor (description, name) {
+    this.#description = description
+    this.#name = name
   }
 
   static create (marca) {

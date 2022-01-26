@@ -7,11 +7,11 @@ export default (schema) =>
     breadcrumb: {
       '@id': '#breadcrumb'
     },
-    description: schema.descricao,
+    description: schema.description,
     inLanguage: settings.app.language,
     isPartOf: {
       '@id': '#website'
     },
-    name: schema.nome,
+    name: schema.name,
     url: settings.app.url
   })
