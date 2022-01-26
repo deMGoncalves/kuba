@@ -8,6 +8,7 @@ import Modelo from './modelo'
 import Relacionado from './relacionado'
 import style from './style'
 import Thumbnail from './thumbnail'
+import Variacao from './variacao'
 
 export default () =>
   <Site className={style.shape__main}>
@@ -15,6 +16,7 @@ export default () =>
       <Modelo />
       <Thumbnail />
       <Descricao />
+      <Variacao />
       <Especificacao />
       <Material />
       <Relacionado />

@@ -7,6 +7,7 @@ export default async function (_request, response) {
       *,
       tipo (*),
       marca (*, origem (*)),
+      cor (*),
       tamanho (*),
       material (*),
       wheelbase (*),

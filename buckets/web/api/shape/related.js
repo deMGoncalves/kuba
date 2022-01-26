@@ -1,7 +1,7 @@
 import supabase from '@kuba/supabase'
 
 export default async function (request, response) {
-  const { material, slug, tamanho } = JSON.parse(request.body)
+  const { material, tamanho } = JSON.parse(request.body)
   const { data, error } = await supabase
     .from('shape')
     .select(`
@@ -14,8 +14,7 @@ export default async function (request, response) {
       montagem (*),
       flag (*)
     `)
-    .neq('slug', slug)
-    .eq('tamanho', tamanho)
+    .eq('tamanho.id', tamanho)
     .in('material.id', material)
     .limit(4)
 
