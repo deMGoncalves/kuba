@@ -9,7 +9,7 @@ export default (concave) =>
     <Show when={concave.valor}>
       <div className={style.concave}>
         <text.Strong className={style.concave__text} master darker xxs bold>Concave</text.Strong>
-        <text.Span className={style.concave__text} master xxxs>Inclinação simétrica das laterais do shape no sentido de seu comprimento total</text.Span>
+        <text.Span className={style.concave__text} master xxxs>Inclinação simétrica das laterais do shape</text.Span>
       </div>
     </Show>
     <Hide when={concave.valor}>

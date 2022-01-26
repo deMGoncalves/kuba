@@ -7,7 +7,7 @@ export default styled.style`
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-quarck);
-    height: 178px;
+    height: 110px;
     padding: var(--spacing_inset-xs);
   }
 
