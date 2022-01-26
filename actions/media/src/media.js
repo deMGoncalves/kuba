@@ -16,7 +16,7 @@ export default function (query) {
     },
 
     out (listener) {
-      listeners.ou = listener
+      listeners.out = listener
       return this
     }
   }
