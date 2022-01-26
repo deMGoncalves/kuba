@@ -26,4 +26,18 @@ export default styled.style`
     font-size: var(--font-size-xxxs) !important;
     line-height: var(--line-height-lg) !important;
   }
+
+  .thumbnail__mobile {
+    align-items: center;
+    display: flex;
+    gap: var(--spacing_inset-quarck);
+  }
+
+  .thumbnail__helper > span {
+    left: -137px !important;
+  }
+
+  .thumbnail:last-child .thumbnail__helper > span {
+    left: -210px !important;
+  }
 `

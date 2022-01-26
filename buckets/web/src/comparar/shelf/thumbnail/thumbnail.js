@@ -1,4 +1,4 @@
-import { paint } from '@kuba/h'
+import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import component from './component'
 import media from '@kuba/media'
@@ -40,9 +40,21 @@ class Thumbnail {
   }
 
   media () {
-    media('(min-width: 769px)') 
-      .in(() => console.log('olá'))
-      .out(() => console.log('tchau'))
+    media('(min-width: 769px)')
+      .in(() => this.closeDesc())
+      .out(() => this.openDesc())
+    return this
+  }
+
+  @repaint
+  closeDesc () {
+    this.#opened = f.F()
+    return this
+  }
+
+  @repaint
+  openDesc () {
+    this.#opened = f.not(this.opened)
     return this
   }
 
