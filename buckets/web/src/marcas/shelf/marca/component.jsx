@@ -1,7 +1,7 @@
 import h from '@kuba/h'
+import link from '@kuba/link'
 import Picture from '@kuba/picture'
 import Show from '@kuba/show'
-import text from '@kuba/text'
 import style from './style'
 
 export default (marca) =>
@@ -12,6 +12,6 @@ export default (marca) =>
       </Show>
     </Picture>
     <div className={style.marca__div}>
-      <text.Strong master dark xxxs medium>{marca.nome}</text.Strong>
+      <link.Master className={style.marca__link} href={marca.href} darker xxxs medium>{marca.nome}</link.Master>
     </div>
   </section>

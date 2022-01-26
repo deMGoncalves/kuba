@@ -40,4 +40,8 @@ export default styled.style`
     position: absolute;
     width: 100%;
   }
+
+  .marca__link {
+    text-decoration: none;
+  }
 `
