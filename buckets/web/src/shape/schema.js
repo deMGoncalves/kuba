@@ -38,6 +38,8 @@ class Schema {
 
   get size () {
     return this.#size
+      ? `${this.#size.valor}"`
+      : undefined
   }
 
   constructor (description, id, image, material, name, size) {
