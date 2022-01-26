@@ -1,14 +1,12 @@
 import { didMount, paint } from '@kuba/h'
 import * as f from '@kuba/f'
-import jsonld from '@kuba/jsonld'
 import { setGlobal } from '@kuba/global'
 import { setDescription, setTitle } from '@kuba/markup'
 import component from './component'
-import data from './data'
 import getShape from './getShape'
+import Schema from './schema'
 
 @paint(component)
-@jsonld(data)
 class Shape {
   @didMount
   async mount () {
@@ -17,6 +15,7 @@ class Shape {
     f.not(error) && (
       setTitle(shape.modelo),
       setDescription(shape.descricao),
+      Schema.create(shape),
       setGlobal({ shape })
     )
 

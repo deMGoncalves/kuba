@@ -1,11 +1,30 @@
-import global from '@kuba/global'
+import jsonld from '@kuba/jsonld'
+import data from './data'
 
-export default () => (
-  {
-    breadcrumb: [
-      { page: 'shapes', title: 'Home' },
-      { page: 'marca', params: { marca: global.marca.slug }, title: global.marca.nome },
-      { page: 'shape', params: { marca: global.marca.slug, shape: global.slug }, title: global.modelo }
-    ]
+@jsonld(data)
+class Schema {
+  #description
+  #name
+
+  get description () {
+    return this.#description
   }
-)
+
+  get name () {
+    return this.#name
+  }
+
+  constructor (description, name) {
+    this.#description = description
+    this.#name = name
+  }
+
+  static create (shape) {
+    return new Schema(
+      shape.descricao,
+      shape.modelo
+    )
+  }
+}
+
+export default Schema
