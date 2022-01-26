@@ -170,7 +170,9 @@ class Tag {
   }
 
   setClassName (value) {
-    this.element.className = value
+    f.not(f.isEmpty(value)) && (
+      this.element.className = value
+    )
     return this
   }
 
