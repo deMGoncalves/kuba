@@ -3,7 +3,7 @@ import * as settings from '@kuba/settings'
 
 export default () =>
   fetch(
-    `${settings.api.url}/shape/slug`,
+    `${settings.api.url}/shape`,
     {
       body: JSON.stringify({ slug: params.shape }),
       method: 'POST'
