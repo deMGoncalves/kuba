@@ -14,6 +14,16 @@ export default styled.style`
   }
 
   .footer__link {
+    align-items: center;
+    border-radius: var(--border-radius-pill);
+    display: inline-flex;
+    height: 34px;
+    justify-content: center;
     text-decoration: none;
+    width: 298px;
+  }
+
+  .footer__link:hover {
+    background-color: var(--color-master-lighter);
   }
 `
