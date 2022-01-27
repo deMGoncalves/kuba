@@ -15,7 +15,9 @@ class ClassName {
   }
 
   paint () {
-    this.#target.setClassName(this.value)
+    this.value && (
+      this.#target.setClassName(this.value)
+    )
     return this
   }
 
