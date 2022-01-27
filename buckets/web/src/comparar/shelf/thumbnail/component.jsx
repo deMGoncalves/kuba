@@ -12,8 +12,6 @@ export default (thumbnail) =>
       <source srcSet={thumbnail.src} />
     </Picture>
     <figcaption className={style.thumbnail__caption}>
-      <text.Span xs>{thumbnail.marca}</text.Span>
-      <text.Strong master darker medium sm>{thumbnail.alt}</text.Strong>
       <Show when={thumbnail.opened}>
         <text.Span className={style.thumbnail__mobile} master darker medium>
           Descrição do produto:
@@ -21,7 +19,7 @@ export default (thumbnail) =>
         </text.Span>
       </Show>
       <Hide when={thumbnail.opened}>
-        <text.P>{thumbnail.desc}</text.P>
+        <text.P className={style.thumbnail__desc}>{thumbnail.desc}</text.P>
       </Hide>
     </figcaption>
   </figure>

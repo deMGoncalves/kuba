@@ -8,9 +8,10 @@ export default styled.style`
   }
 
   .shelf__thumb {
+    column-gap: var(--spacing_inset-lg);
     display: grid;
-    gap: var(--spacing_inset-lg);
     grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--spacing_inset-nano);
   }
 
   .shelf__thumb > figure:nth-child(1) {

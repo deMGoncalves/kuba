@@ -10,6 +10,8 @@ export default (shelf) =>
   <story.Section>
     <section className={style.shelf__section}>
       <container.Div className={style.shelf__thumb}>
+        {shelf.marca}
+        {shelf.modelo}
         {shelf.thumbnail}
       </container.Div>
     </section>

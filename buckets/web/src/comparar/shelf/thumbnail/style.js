@@ -14,23 +14,20 @@ export default styled.style`
     padding: var(--spacing_inset-xs) 0;
   }
 
-  .thumbnail__caption > span {
-    font-size: var(--font-size-xxxs) !important;
-  }
-
-  .thumbnail__caption > strong {
-    font-size: var(--font-size-xs) !important;
-  }
-
   .thumbnail__caption > p {
     font-size: var(--font-size-xxxs) !important;
     line-height: var(--line-height-lg) !important;
+  }
+
+  .thumbnail:nth-child(odd) p {
+    text-align: right;
   }
 
   .thumbnail__mobile {
     align-items: center;
     display: flex;
     gap: var(--spacing_inset-quarck);
+    justify-content: center;
   }
 
   .thumbnail__helper > span {
