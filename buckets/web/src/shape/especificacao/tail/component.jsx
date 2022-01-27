@@ -1,5 +1,4 @@
 import h, { Fragment } from '@kuba/h'
-import Hide from '@kuba/hide'
 import Show from '@kuba/show'
 import text from '@kuba/text'
 import style from './style'
@@ -12,10 +11,10 @@ export default (tail) =>
         <text.Span className={style.tail__text} master xxxs>Parte traseira inclinada do shape</text.Span>
       </div>
     </Show>
-    <Hide when={tail.valor}>
+    <Show when={tail.pristine}>
       <div className={style.tail}>
         <text.Strong className={style.tail__text} master darker xs bold/>
         <text.Span className={style.tail__text} master xxxs />
       </div>
-    </Hide>
+    </Show>
   </>
