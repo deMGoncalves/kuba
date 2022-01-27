@@ -2,9 +2,25 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .shelf__section {
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-lg);
+    position: relative;
+  }
+
+  .shelf__vs {
+    display: flex;
+    justify-content: center;
+    position: absolute !important;
+    top: calc(100% / 2);
+    z-index: 1;
+  }
+
+  .shelf__vs > span {
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-pill);
+    padding: var(--spacing_inset-xs);
   }
 
   .shelf__thumb {

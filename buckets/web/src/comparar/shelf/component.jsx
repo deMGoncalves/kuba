@@ -9,6 +9,9 @@ import style from './style'
 export default (shelf) =>
   <story.Section>
     <section className={style.shelf__section}>
+      <container.Div className={style.shelf__vs}>
+        <text.Span lightest>VS</text.Span>
+      </container.Div>
       <container.Div className={style.shelf__thumb}>
         {shelf.marca}
         {shelf.modelo}
