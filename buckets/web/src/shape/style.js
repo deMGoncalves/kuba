@@ -8,6 +8,7 @@ export default styled.style`
       grid-template-areas:
         'modelo thumbnail'
         'descricao thumbnail'
+        'variacao thumbnail'
         'especificacao thumbnail'
         'material thumbnail'
         'relacionado relacionado';

@@ -8,14 +8,14 @@ export default (nose) =>
   <>
     <Show when={nose.valor}>
       <div className={style.nose}>
-        <text.Strong master darker xs medium>Nose</text.Strong>
-        <text.Span master xxxs>Sim</text.Span>
+        <text.Strong className={style.nose__text} master darker xs bold>Nose</text.Strong>
+        <text.Span className={style.nose__text} master xxxs>Parte frontal inclinada do shape</text.Span>
       </div>
     </Show>
     <Hide when={nose.valor}>
       <div className={style.nose}>
-        <text.Strong master light xs medium>Nose</text.Strong>
-        <text.Span master light xxxs>Não</text.Span>
+        <text.Strong className={style.nose__text} master darker xs bold/>
+        <text.Span className={style.nose__text} master xxxs />
       </div>
     </Hide>
   </>

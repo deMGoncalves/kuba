@@ -44,7 +44,7 @@ export default styled.style`
       align-items: center;
       border-radius: var(--border-radius-pill);
       display: inline-flex;
-      height: 35px;
+      height: 34px;
       justify-content: center;
       width: 298px;
     }

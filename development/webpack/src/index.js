@@ -10,7 +10,6 @@ const webpack = require('webpack')
 
 module.exports = (dirname) => ({
   context: path.resolve(dirname, 'src'),
-  devtool: 'inline-source-map',
   devServer: {
     static: {
       directory: path.join(__dirname, 'public'),

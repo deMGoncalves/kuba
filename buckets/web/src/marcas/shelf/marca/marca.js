@@ -1,6 +1,6 @@
 import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
-import { redirectTo } from '@kuba/router'
+import { redirectTo, urlFor } from '@kuba/router'
 import component from './component'
 import data from './data'
 import Stub from './stub'
@@ -15,6 +15,10 @@ class Marca {
 
   get descricao () {
     return this.#descricao
+  }
+
+  get href () {
+    return urlFor('marca', { marca: this.slug })
   }
 
   get logo () {
