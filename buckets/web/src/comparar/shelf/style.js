@@ -13,12 +13,18 @@ export default styled.style`
     display: flex;
     justify-content: center;
     position: absolute !important;
-    top: calc(100% / 2);
+    top: calc(100% / 4);
     z-index: 1;
   }
 
+  @media (min-width: 769px) {
+    .shelf__vs {
+      top: calc(100% / 2);
+    }
+  }
+
   .shelf__vs > span {
-    background-color: var(--color-primary);
+    background-color: var(--color-master-darker);
     border-radius: var(--border-radius-pill);
     padding: var(--spacing_inset-xs);
   }
