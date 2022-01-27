@@ -7,7 +7,11 @@ export default () =>
     `${settings.api.url}/shape/related`,
     {
       body: JSON.stringify({
-        material: f.map(global.shape.material, f.prop('id')),
+        material: f
+          .from(global.shape.material)
+          .pipe(f.or(f.__, []))
+          .pipe(f.map(f.__, f.prop('id')))
+          .done(),
         tamanho: global.shape.tamanho.id
       }),
       method: 'POST'

@@ -2,11 +2,18 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .relacionado {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-lg);
     grid-area: relacionado;
   }
 
   .relacionado[empty] {
     display: none;
+  }
+
+  .relacionado__h3 {
+    line-height: var(--line-height-md) !important;
   }
 
   .relacionado__metro section {
