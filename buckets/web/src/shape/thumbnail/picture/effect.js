@@ -1,8 +1,8 @@
 import global, { useEffect } from '@kuba/global'
 import middleware from '@kuba/middleware'
 
-const effect = (thumbnail) => (
-  useEffect(() => thumbnail.changeValor(
+const effect = (picture) => (
+  useEffect(() => picture.changeValor(
     global.shape.modelo,
     global.shape.thumbnail
   ))

@@ -2,6 +2,9 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .thumbnail {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-lg);
     grid-area: thumbnail;
   }
 
@@ -9,19 +12,5 @@ export default styled.style`
     .thumbnail {
       padding-left: var(--spacing_inset-sm) !important;
     }
-  }
-
-  .thumbnail__figure {
-    background-color: #fff;
-    border: var(--border-width-hairline) solid var(--color-master-light);
-    border-bottom: none;
-    border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
-    cursor: pointer;
-    gap: 0;
-  }
-
-  .thumbnail__figure picture {
-    border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
-    padding-top: calc(5 / 4 * 100%) !important;
   }
 `

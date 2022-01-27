@@ -5,7 +5,7 @@ import effect from './effect'
 
 @paint(component)
 @effect
-class Thumbnail {
+class Picture {
   #alt
   #src
 
@@ -29,4 +29,4 @@ class Thumbnail {
   }
 }
 
-export default Thumbnail
+export default Picture
