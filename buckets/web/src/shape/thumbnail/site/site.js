@@ -1,30 +1,33 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
-import Compare from '@kuba/compare'
 import component from './component'
 import effect from './effect'
 
 @paint(component)
 @effect
-class CompareButton {
+class Site {
   #pristine
-  #shape
+  #url
 
   get pristine () {
     return this.#pristine ??= f.T()
   }
 
-  add () {
-    Compare.add(this.#shape)
+  get url () {
+    return this.#url ??= ''
+  }
+
+  redirect () {
+    window.open(this.url, '_blank')
     return this
   }
 
   @repaint
-  changeShape (shape) {
+  changeValor (url) {
     this.#pristine = f.F()
-    this.#shape = shape
+    this.#url = url
     return this
   }
 }
 
-export default CompareButton
+export default Site

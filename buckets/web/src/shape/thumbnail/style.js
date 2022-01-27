@@ -13,4 +13,9 @@ export default styled.style`
       padding-left: var(--spacing_inset-sm) !important;
     }
   }
+
+  .thumbnail__div {
+    display: flex;
+    gap: var(--spacing_inset-xs);
+  }
 `
