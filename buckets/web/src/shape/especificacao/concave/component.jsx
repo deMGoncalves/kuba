@@ -6,15 +6,15 @@ import style from './style'
 export default (concave) =>
   <>
     <Show when={concave.valor}>
-      <div className={style.concave}>
-        <text.Strong className={style.concave__text} master darker xs bold>Concave</text.Strong>
-        <text.Span className={style.concave__text} master xxxs>Inclinação simétrica das laterais do shape</text.Span>
-      </div>
+      <dl className={style.concave}>
+        <text.Dt className={style.concave__text} master darker xs bold>Concave</text.Dt>
+        <text.Dd className={style.concave__text} master xxxs>Inclinação simétrica das laterais do shape</text.Dd>
+      </dl>
     </Show>
     <Show when={concave.pristine}>
-      <div className={style.concave}>
-        <text.Strong className={style.concave__text} master darker xs bold/>
-        <text.Span className={style.concave__text} master xxxs />
-      </div>
+      <dl className={style.concave}>
+        <text.Dt className={style.concave__text} master darker xs bold/>
+        <text.Dd className={style.concave__text} master xxxs />
+      </dl>
     </Show>
   </>

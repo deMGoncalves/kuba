@@ -6,15 +6,15 @@ import style from './style'
 export default (tail) =>
   <>
     <Show when={tail.valor}>
-      <div className={style.tail}>
-        <text.Strong className={style.tail__text} master darker xs bold>Tail</text.Strong>
-        <text.Span className={style.tail__text} master xxxs>Parte traseira inclinada do shape</text.Span>
-      </div>
+      <dl className={style.tail}>
+        <text.Dt className={style.tail__text} master darker xs bold>Tail</text.Dt>
+        <text.Dd className={style.tail__text} master xxxs>Parte traseira inclinada do shape</text.Dd>
+      </dl>
     </Show>
     <Show when={tail.pristine}>
-      <div className={style.tail}>
-        <text.Strong className={style.tail__text} master darker xs bold/>
-        <text.Span className={style.tail__text} master xxxs />
-      </div>
+      <dl className={style.tail}>
+        <text.Dt className={style.tail__text} master darker xs bold/>
+        <text.Dd className={style.tail__text} master xxxs />
+      </dl>
     </Show>
   </>

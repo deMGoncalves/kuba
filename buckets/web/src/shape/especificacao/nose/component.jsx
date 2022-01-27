@@ -6,15 +6,15 @@ import style from './style'
 export default (nose) =>
   <>
     <Show when={nose.valor}>
-      <div className={style.nose}>
-        <text.Strong className={style.nose__text} master darker xs bold>Nose</text.Strong>
-        <text.Span className={style.nose__text} master xxxs>Parte frontal inclinada do shape</text.Span>
-      </div>
+      <dl className={style.nose}>
+        <text.Dt className={style.nose__text} master darker xs bold>Nose</text.Dt>
+        <text.Dd className={style.nose__text} master xxxs>Parte frontal inclinada do shape</text.Dd>
+      </dl>
     </Show>
     <Show when={nose.pristine}>
-      <div className={style.nose}>
-        <text.Strong className={style.nose__text} master darker xs bold/>
-        <text.Span className={style.nose__text} master xxxs />
-      </div>
+      <dl className={style.nose}>
+        <text.Dt className={style.nose__text} master darker xs bold/>
+        <text.Dd className={style.nose__text} master xxxs />
+      </dl>
     </Show>
   </>

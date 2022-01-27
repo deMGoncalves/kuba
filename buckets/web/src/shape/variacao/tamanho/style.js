@@ -11,7 +11,7 @@ export default styled.style`
     padding: var(--spacing_inset-xs);
   }
 
-  .tamanho__span {
+  .tamanho__dl {
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-quarck);
