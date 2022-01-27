@@ -8,13 +8,13 @@ export default (concave) =>
   <>
     <Show when={concave.valor}>
       <div className={style.concave}>
-        <text.Strong className={style.concave__text} master darker xxs bold>Concave</text.Strong>
+        <text.Strong className={style.concave__text} master darker xs bold>Concave</text.Strong>
         <text.Span className={style.concave__text} master xxxs>Inclinação simétrica das laterais do shape</text.Span>
       </div>
     </Show>
     <Hide when={concave.valor}>
       <div className={style.concave}>
-        <text.Strong className={style.concave__text} master darker xxs bold/>
+        <text.Strong className={style.concave__text} master darker xs bold/>
         <text.Span className={style.concave__text} master xxxs />
       </div>
     </Hide>
