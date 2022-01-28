@@ -1,1 +1,1 @@
-export { default } from './comparar'
+export { default } from './component'
