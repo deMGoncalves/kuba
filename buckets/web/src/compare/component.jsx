@@ -2,6 +2,7 @@ import h from '@kuba/h'
 import container from '@kuba/container'
 import text from '@kuba/text'
 import View from '@kuba/view'
+import Concave from './concave'
 import Descricao from './descricao'
 import Modelo from './modelo'
 import Nose from './nose'
@@ -44,5 +45,11 @@ export default () =>
       </hgroup>
       <Tail master />
       <Tail />
+      <hgroup className={style.compare__hgroup}>
+        <text.H2 className={style.compare__h2} master darker xs bold>Concave</text.H2>
+        <text.P className={style.compare__p} master xxxs>Inclinação simétrica das laterais do shape</text.P>
+      </hgroup>
+      <Concave master />
+      <Concave />
     </container.Div>
   </View>
