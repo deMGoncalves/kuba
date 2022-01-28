@@ -3,10 +3,10 @@ import Footer from '@kuba/footer'
 import Header from './header'
 import style from './style'
 
-export default (site, children) =>
+export default (view, children) =>
   <>
     <Header />
-    <main className={[style.site__main, site.className]}>
+    <main className={[style.view__main, view.className]}>
       {children.main}
     </main>
     <Footer />

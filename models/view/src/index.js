@@ -1,1 +1,1 @@
-export { default } from './site'
+export { default } from './view'

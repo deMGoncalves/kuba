@@ -8,7 +8,11 @@ import data from './data'
 @paint(component)
 @jsonld(data)
 @props
-class Site {
+class View {
+  get description () {
+    return settings.app.description
+  }
+
   get name () {
     return settings.app.name
   }
@@ -18,4 +22,4 @@ class Site {
   }
 }
 
-export default Site
+export default View

@@ -1,8 +1,9 @@
-export default (site) =>
+export default (view) =>
   ({
-    '@id': '#website',
+    '@id': '#webview',
     '@type': 'WebSite',
-    name: site.name,
+    description: view.description,
+    name: view.name,
     /*
     potentialAction: {
       '@id': '#searchaction'
@@ -11,5 +12,5 @@ export default (site) =>
     publisher: {
       '@id': '#organization'
     },
-    url: site.url
+    url: view.url
   })
