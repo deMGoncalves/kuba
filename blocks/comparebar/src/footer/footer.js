@@ -9,7 +9,7 @@ import component from './component'
 @actions
 class Footer {
   get href () {
-    return urlFor('comparar')
+    return urlFor('compare')
   }
 
   get valid () {
@@ -21,7 +21,7 @@ class Footer {
   }
 
   redirect () {
-    redirectTo('comparar')
+    redirectTo('compare')
     return this
   }
 }
