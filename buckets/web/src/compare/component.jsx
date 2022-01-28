@@ -6,6 +6,7 @@ import Descricao from './descricao'
 import Modelo from './modelo'
 import Nose from './nose'
 import style from './style'
+import Tail from './tail'
 import Tamanho from './tamanho'
 import Thumbnail from './thumbnail'
 import Wheelbase from './wheelbase'
@@ -37,5 +38,11 @@ export default () =>
       </hgroup>
       <Nose master />
       <Nose />
+      <hgroup className={style.compare__hgroup}>
+        <text.H2 className={style.compare__h2} master darker xs bold>Tail</text.H2>
+        <text.P className={style.compare__p} master xxxs>Parte traseira inclinada do shape</text.P>
+      </hgroup>
+      <Tail master />
+      <Tail />
     </container.Div>
   </View>
