@@ -2,6 +2,7 @@ export default (site) =>
   ({
     '@id': '#website',
     '@type': 'WebSite',
+    description: site.description,
     name: site.name,
     /*
     potentialAction: {

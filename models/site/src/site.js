@@ -9,6 +9,10 @@ import data from './data'
 @jsonld(data)
 @props
 class Site {
+  get description () {
+    return settings.app.description
+  }
+
   get name () {
     return settings.app.name
   }
