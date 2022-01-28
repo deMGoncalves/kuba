@@ -7,8 +7,8 @@ router('/', async function shapes () {
   render(<Shapes />)
 })
 
-router('/comparar', async function comparar () {
-  const { default: Comparar } = await import('./comparar' /* webpackChunkName: "comparar" */)
+router('/comparar', async function compare () {
+  const { default: Comparar } = await import('./compare' /* webpackChunkName: "compare" */)
   render(<Comparar />)
 })
 
