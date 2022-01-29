@@ -8,6 +8,6 @@ export default (wheelbase) =>
       <text.H2 className={style.wheelbase__h2} master darker xs bold>Wheelbase</text.H2>
       <text.P className={style.wheelbase__p} master xxxs>Menor distância entre os trucks do shape</text.P>
     </hgroup>
-    <text.Data className={[style.wheelbase__data, style.master]} master xs bold>{wheelbase.master}</text.Data>
-    <text.Data className={style.wheelbase__data} master xs bold>{wheelbase.slave}</text.Data>
+    <text.Data className={[style.wheelbase__data, style.master]} master xxs bold>{wheelbase.master}</text.Data>
+    <text.Data className={style.wheelbase__data} master xxs bold>{wheelbase.slave}</text.Data>
   </>
