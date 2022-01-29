@@ -15,7 +15,6 @@ import Wheelbase from './wheelbase'
 export default () =>
   <View>
     <container.Div className={style.compare__div} slot='main'>
-      <Modelo master />
       <Modelo />
       <Thumbnail />
       <Descricao />

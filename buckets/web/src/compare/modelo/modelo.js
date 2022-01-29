@@ -1,4 +1,5 @@
 import { paint } from '@kuba/h'
+import * as f from '@kuba/f'
 import Compare from '@kuba/compare'
 import props from '@kuba/props'
 import component from './component'
@@ -6,15 +7,12 @@ import component from './component'
 @paint(component)
 @props
 class Modelo {
-  #index
-  #valor
-
-  get valor () {
-    return this.#valor ??= Compare.shelf[this.#index].modelo
+  get master () {
+    return f.first(Compare.shelf).modelo
   }
 
-  constructor (props) {
-    this.#index = props.master ? 0 : 1
+  get slave () {
+    return f.last(Compare.shelf).modelo
   }
 }
 
