@@ -20,7 +20,6 @@ export default () =>
       <Modelo />
       <Thumbnail master />
       <Thumbnail />
-      <Descricao master />
       <Descricao />
       <Tamanho />
       <hgroup className={style.compare__hgroup}>
