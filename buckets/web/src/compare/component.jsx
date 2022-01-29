@@ -1,6 +1,5 @@
 import h from '@kuba/h'
 import container from '@kuba/container'
-import text from '@kuba/text'
 import View from '@kuba/view'
 import Concave from './concave'
 import Descricao from './descricao'
@@ -25,10 +24,6 @@ export default () =>
       <Nose />
       <Tail />
       <Concave />
-      <hgroup className={style.compare__hgroup}>
-        <text.H2 className={style.compare__h2} master darker xs bold>Material</text.H2>
-      </hgroup>
-      <Material master />
       <Material />
     </container.Div>
   </View>
