@@ -51,5 +51,8 @@ export default () =>
       </hgroup>
       <Concave master />
       <Concave />
+      <hgroup className={style.compare__hgroup}>
+        <text.H2 className={style.compare__h2} master darker xs bold>Material</text.H2>
+      </hgroup>
     </container.Div>
   </View>
