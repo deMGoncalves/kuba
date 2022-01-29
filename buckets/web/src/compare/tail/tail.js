@@ -1,20 +1,20 @@
 import { paint } from '@kuba/h'
+import * as f from '@kuba/f'
 import Compare from '@kuba/compare'
 import component from './component'
 
 @paint(component)
 class Tail {
-  #index
-  #valor
-
-  get valor () {
-    return this.#valor ??= Compare.shelf[this.#index].tail
+  get master () {
+    return f.first(Compare.shelf).tail
       ? 'Sim'
       : 'Não'
   }
 
-  constructor (props) {
-    this.#index = props.master ? 0 : 1
+  get slave () {
+    return f.last(Compare.shelf).tail
+      ? 'Sim'
+      : 'Não'
   }
 }
 

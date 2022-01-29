@@ -23,11 +23,6 @@ export default () =>
       <Tamanho />
       <Wheelbase />
       <Nose />
-      <hgroup className={style.compare__hgroup}>
-        <text.H2 className={style.compare__h2} master darker xs bold>Tail</text.H2>
-        <text.P className={style.compare__p} master xxxs>Parte traseira inclinada do shape</text.P>
-      </hgroup>
-      <Tail master />
       <Tail />
       <hgroup className={style.compare__hgroup}>
         <text.H2 className={style.compare__h2} master darker xs bold>Concave</text.H2>
