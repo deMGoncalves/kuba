@@ -18,7 +18,6 @@ export default () =>
     <container.Div className={style.compare__div} slot='main'>
       <Modelo master />
       <Modelo />
-      <Thumbnail master />
       <Thumbnail />
       <Descricao />
       <Tamanho />
