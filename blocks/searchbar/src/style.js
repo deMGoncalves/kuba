@@ -2,10 +2,8 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .inner__container {
-    align-items: center;
     display: flex;
     flex-grow: 1;
-    gap: var(--spacing_inset-xs);
     width: unset !important;
   }
 
@@ -32,19 +30,14 @@ export default styled.style`
     width: 100%;
   }
 
-  @media print {
-    .out__container {
-      display: none;
-    }
-  }
-
   .input__container {
     align-items: center;
     border: solid var(--border-width-thin) var(--color-master-dark);
-    border-radius: var(--border-radius-lg);
+    border-radius: 100px;
     display: flex;
     flex-grow: 1;
     height: 48px;
+    margin-right: var(--spacing-xxxs);
     padding: 0 var(--spacing-xxxs);
   }
 
@@ -53,7 +46,14 @@ export default styled.style`
     border: none;
     flex-grow: 1;
     font-size: var(--font-size-xs);
-    margin: 0 var(--spacing_inset-xs);
+    margin: 0 var(--spacing-xxxs);
+  }
+
+  .input__container input:-webkit-autofill,
+  .input__container input:-webkit-autofill:hover,
+  .input__container input:-webkit-autofill:focus,
+  .input__container input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
   }
 
   .input__container button {
@@ -75,10 +75,7 @@ export default styled.style`
     border-radius: var(--border-radius-circular);
     cursor: pointer;
     display: flex;
-    height: 40px;
     justify-content: center;
-    padding: var(--spacing_inset-xs);
-    width: 40px;
   }
 
   @media (max-width: 769px) {

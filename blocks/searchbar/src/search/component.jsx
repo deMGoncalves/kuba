@@ -1,8 +1,9 @@
 import h from '@kuba/h'
 import style from './style'
-import icon from '@kuba/icon'
+import button from '@kuba/button'
 
 export default (search) =>
-  <button className={style.button} onClick={() => search.openSearch()}>
-    <icon.Search />
-  </button>
+  <button.icon.Search
+    className={style.button}
+    onClick={() => search.openSearch()}
+  />
