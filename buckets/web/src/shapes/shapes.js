@@ -3,12 +3,14 @@ import * as f from '@kuba/f'
 import global, { setGlobal } from '@kuba/global'
 import jsonld from '@kuba/jsonld'
 import { setDescription, setTitle } from '@kuba/markup'
+import action from './action'
 import component from './component'
 import data from './data'
 import getShapes from './getShapes'
 
 @paint(component)
 @jsonld(data)
+@action
 class Shapes {
   #page = 0
 
@@ -22,23 +24,13 @@ class Shapes {
 
   @didMount
   async mount () {
-    const { data: shapes, error } = await getShapes(this.#page)
+    const { data: shapes, error } = await getShapes(++this.#page)
 
     f.not(error) && (
       setTitle(this.title),
       setDescription(this.description),
-      setGlobal({ shapes })
-    )
-
-    return this
-  }
-
-  async more () {
-    const { data: shapes, error } = await getShapes(++this.#page)
-
-    f.not(error) && (
       setGlobal({
-        shapes: [...global.shapes, ...shapes]
+        shapes: [...global.shapes ?? [], ...shapes]
       })
     )
 

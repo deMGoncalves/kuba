@@ -6,8 +6,13 @@ export default styled.style`
     border: none;
     border-radius: var(--border-radius-pill);
     cursor: pointer;
+    display: none;
     height: 34px;
     margin: 0 auto;
     width: 178px;
+  }
+
+  .more[visible=true] {
+    display: inline;
   }
 `
