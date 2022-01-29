@@ -24,11 +24,6 @@ export default () =>
       <Wheelbase />
       <Nose />
       <Tail />
-      <hgroup className={style.compare__hgroup}>
-        <text.H2 className={style.compare__h2} master darker xs bold>Concave</text.H2>
-        <text.P className={style.compare__p} master xxxs>Inclinação simétrica das laterais do shape</text.P>
-      </hgroup>
-      <Concave master />
       <Concave />
       <hgroup className={style.compare__hgroup}>
         <text.H2 className={style.compare__h2} master darker xs bold>Material</text.H2>
