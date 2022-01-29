@@ -8,14 +8,14 @@ export default (modelo) =>
   <>
     <setion className={style.modelo}>
       <Marca master />
-      <text.H1 className={style.modelo__h1} master darker sm bold>{modelo.master}</text.H1>
+      <text.H1 className={style.modelo__h1} master darker xxs bold>{modelo.master}</text.H1>
       <div className={style.modelo__div}>
         <Origem master />
       </div>
     </setion>
     <setion className={style.modelo}>
       <Marca />
-      <text.H1 className={style.modelo__h1} master darker sm bold>{modelo.slave}</text.H1>
+      <text.H1 className={style.modelo__h1} master darker xxs bold>{modelo.slave}</text.H1>
       <div className={style.modelo__div}>
         <Origem />
       </div>
