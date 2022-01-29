@@ -1,6 +1,6 @@
 import h from '@kuba/h'
 import container from '@kuba/container'
-import View from '@kuba/view'
+import Site from '@kuba/site'
 import Concave from './concave'
 import Descricao from './descricao'
 import Material from './material'
@@ -13,7 +13,7 @@ import Thumbnail from './thumbnail'
 import Wheelbase from './wheelbase'
 
 export default () =>
-  <View>
+  <Site>
     <container.Div className={style.compare__div} slot='main'>
       <Modelo />
       <Thumbnail />
@@ -25,4 +25,4 @@ export default () =>
       <Concave />
       <Material />
     </container.Div>
-  </View>
+  </Site>
