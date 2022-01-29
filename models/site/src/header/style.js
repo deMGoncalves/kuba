@@ -11,6 +11,10 @@ export default styled.style`
     }
 
     .header__compare {
+      order: 4;
+    }
+
+    .header__search {
       order: 3;
     }
   }
