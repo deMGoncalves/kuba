@@ -1,18 +1,16 @@
 import { paint } from '@kuba/h'
+import * as f from '@kuba/f'
 import Compare from '@kuba/compare'
 import component from './component'
 
 @paint(component)
 class Tamanho {
-  #index
-  #valor
-
-  get valor () {
-    return `${this.#valor ??= Compare.shelf[this.#index].tamanho.valor}"`
+  get master () {
+    return `${f.first(Compare.shelf).tamanho.valor}"`
   }
 
-  constructor (props) {
-    this.#index = props.master ? 0 : 1
+  get slave () {
+    return `${f.last(Compare.shelf).tamanho.valor}"`
   }
 }
 
