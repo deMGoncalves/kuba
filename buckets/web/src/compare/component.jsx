@@ -21,11 +21,6 @@ export default () =>
       <Thumbnail />
       <Descricao />
       <Tamanho />
-      <hgroup className={style.compare__hgroup}>
-        <text.H2 className={style.compare__h2} master darker xs bold>Wheelbase</text.H2>
-        <text.P className={style.compare__p} master xxxs>Menor distância entre os trucks do shape</text.P>
-      </hgroup>
-      <Wheelbase master />
       <Wheelbase />
       <hgroup className={style.compare__hgroup}>
         <text.H2 className={style.compare__h2} master darker xs bold>Nose</text.H2>
