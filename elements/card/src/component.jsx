@@ -8,7 +8,7 @@ export default (shape) =>
     <header className={style.shape__header}>
       {shape.marca}
     </header>
-    <Picture className={style.shape__picture} height='920' width='736'>
+    <Picture className={style.shape__picture} alt={shape.modelo.valor} height='920' width='736'>
       <Show when={shape.thumbnail}>
         <source srcSet={shape.thumbnail} slot='sources' />
       </Show>
