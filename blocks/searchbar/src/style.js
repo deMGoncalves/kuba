@@ -7,7 +7,7 @@ export default styled.style`
     width: unset !important;
   }
 
-  .main {
+  .searchbar {
     align-items: flex-start;
     background-color: transparent;
     display: flex;
@@ -64,7 +64,7 @@ export default styled.style`
     display: flex;
   }
 
-  .main[opened] {
+  .searchbar[opened] {
     top: 0;
   }
 
