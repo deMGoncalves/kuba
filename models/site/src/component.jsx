@@ -9,11 +9,11 @@ import style from './style'
 export default (site, children) =>
   <>
     <Header />
-    <Searchbar />
     <main className={[style.site__main, site.className]}>
       {children.main}
     </main>
     {children.breadcrumb}
+    <Searchbar />
     <Comparebar />
     <Zoom />
     <Footer />

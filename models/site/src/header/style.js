@@ -10,11 +10,8 @@ export default styled.style`
       order: 1;
     }
 
-    .header__compare {
-      order: 4;
-    }
-
-    .header__search {
+    .header__tools {
+      flex-grow: 0;
       order: 3;
     }
   }
