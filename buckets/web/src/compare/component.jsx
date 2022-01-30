@@ -1,6 +1,7 @@
 import h from '@kuba/h'
 import container from '@kuba/container'
 import Site from '@kuba/site'
+import Breadcrumb from './breadcrumb'
 import Concave from './concave'
 import Descricao from './descricao'
 import Material from './material'
@@ -25,4 +26,5 @@ export default () =>
       <Concave />
       <Material />
     </container.Div>
+    <Breadcrumb />
   </Site>
