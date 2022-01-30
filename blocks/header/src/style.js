@@ -16,7 +16,7 @@ export default styled.style`
   .header__container {
     align-items: center;
     display: flex;
-    gap: var(--spacing_inset-md);
+    gap: var(--spacing_inset-xs);
     height: 100%;
     justify-content: space-between;
   }
