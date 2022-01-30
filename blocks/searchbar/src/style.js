@@ -41,6 +41,7 @@ export default styled.style`
     border: var(--border-width-thin) solid var(--color-master-darkest);
     border-radius: var(--border-radius-pill);
     color: var(--color-master-darker);
+    font-size: var(--font-size-xxs);
     font-weight: var(--font-weight-regular);
     height: 42px;
     padding: 0 var(--spacing_inset-sm);
