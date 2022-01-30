@@ -1,2 +1,2 @@
 export { default } from './searchbar'
-export { default as SearchButton } from './search'
+export { default as Search } from './search'
