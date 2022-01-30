@@ -4,12 +4,17 @@ import data from './data'
 
 @jsonld(data)
 class Schema {
+  #brand
   #description
   #id
   #image
   #material
   #name
   #size
+
+  get brand () {
+    return this.#brand
+  }
 
   get description () {
     return this.#description
@@ -42,7 +47,8 @@ class Schema {
       : undefined
   }
 
-  constructor (description, id, image, material, name, size) {
+  constructor (brand, description, id, image, material, name, size) {
+    this.#brand = brand
     this.#description = description
     this.#id = id
     this.#image = image
@@ -53,6 +59,7 @@ class Schema {
 
   static create (shape) {
     return new Schema(
+      shape.marca,
       shape.descricao,
       shape.slug,
       shape.thumbnail,

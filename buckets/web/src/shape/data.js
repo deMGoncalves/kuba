@@ -8,7 +8,11 @@ export default (schema) =>
       '@id': '#propertyvalue'
     },
     brand: {
-      '@id': '#brand'
+      '@id': `#${schema.brand.slug}`,
+      '@type': 'Brand',
+      description: schema.brand.descricao,
+      logo: schema.brand.logo,
+      name: schema.brand.nome
     },
     description: schema.description,
     image: schema.image,
