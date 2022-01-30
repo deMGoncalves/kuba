@@ -13,6 +13,10 @@ class Search {
     return this.#opened ??= f.F()
   }
 
+  get placeholder () {
+    return 'Procure pelo melhor shape...'
+  }
+
   @repaint
   @scroll.unlock
   close () {
