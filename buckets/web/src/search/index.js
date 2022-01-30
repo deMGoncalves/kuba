@@ -1,1 +1,1 @@
-export { default } from './shapes'
+export { default } from './search'

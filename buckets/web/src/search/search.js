@@ -11,11 +11,11 @@ import getShapes from './getShapes'
 @paint(component)
 @jsonld(data)
 @action
-class Shapes {
+class Search {
   #page = 0
 
   get description () {
-    return 'Seja bem vindo! Escolha o melhor shape para o seu setup'
+    return 'Resultado de busca! Escolha o melhor shape para o seu setup'
   }
 
   get title () {
@@ -38,4 +38,4 @@ class Shapes {
   }
 }
 
-export default Shapes
+export default Search
