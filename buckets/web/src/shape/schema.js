@@ -94,6 +94,7 @@ class Schema {
       shape.descricao,
       shape.slug,
       shape.thumbnail,
+      shape.lixa,
       shape.material,
       shape.modelo,
       shape.nose,
