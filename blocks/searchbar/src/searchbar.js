@@ -1,11 +1,14 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import jsonld from '@kuba/jsonld'
 import { urlFor } from '@kuba/router'
 import action from './action'
 import component from './component'
+import data from './data'
 import scroll from './scroll'
 
 @paint(component)
+@jsonld(data)
 @action
 class Search {
   #opened
