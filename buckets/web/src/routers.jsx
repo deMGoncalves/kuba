@@ -12,6 +12,11 @@ router('/comparar', async function compare () {
   render(<Comparar />)
 })
 
+router('/busca', async function search () {
+  const { default: Search } = await import('./search' /* webpackChunkName: "search" */)
+  render(<Search />)
+})
+
 router('/marcas', async function marcas () {
   const { default: Marcas } = await import('./marcas' /* webpackChunkName: "marcas" */)
   render(<Marcas />)
