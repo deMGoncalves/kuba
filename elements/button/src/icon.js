@@ -13,6 +13,8 @@ const style = styled.style`
     display: inline-flex;
     height: 42px;
     justify-content: center;
+    min-height: 42px;
+    min-width: 42px;
     user-select: none;
     width: 42px;
   }
