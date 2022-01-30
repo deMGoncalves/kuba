@@ -7,18 +7,18 @@ export default styled.style`
     width: unset !important;
   }
 
-  .searchbar {
-    align-items: flex-start;
-    background-color: transparent;
-    display: flex;
+  .searchbar__overlayer {
+    display: none;
     height: 100vh;
-    justify-content: center;
     left: 0;
     position: fixed;
-    top: -100vh;
-    transition: top 618ms cubic-bezier(0.77, 0, 0.175, 1);
+    top: 0;
     width: 100vw;
-    z-index: 2000;
+    z-index: 1;
+  }
+
+  .searchbar__overlayer[opened] {
+    display: block;
   }
 
   .out__container {
@@ -62,10 +62,6 @@ export default styled.style`
     border: none;
     cursor: pointer;
     display: flex;
-  }
-
-  .searchbar[opened] {
-    top: 0;
   }
 
   .close {
