@@ -64,7 +64,7 @@ export default styled.style`
     display: flex;
   }
 
-  .show {
+  .main[opened] {
     top: 0;
   }
 

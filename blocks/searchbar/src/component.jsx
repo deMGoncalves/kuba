@@ -6,8 +6,7 @@ import { urlFor } from '@kuba/router'
 import style from './style'
 
 export default (search) =>
-  <div onClick={() => search.close()}
-    className={[style.main, search.opened && style.show]}>
+  <div className={style.main} onClick={() => search.close()} opened:isTruthy={search.opened}>
     <div onClick={e => e.stopPropagation()} className={style.out__container}>
       <container.Div className={style.inner__container}>
         <form method='GET' action={urlFor('trends.search')} className={style.input__container}>
