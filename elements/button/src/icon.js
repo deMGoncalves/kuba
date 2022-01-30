@@ -28,7 +28,7 @@ const button = () =>
   new Proxy({}, {
     get: (_, name) =>
       (props) =>
-        h('button', { className: [style.button, props.className], onClick: props.onClick }, icon[name]({ ...props, className: undefined }))
+        h('button', { ...props, className: [style.button, props.className] }, icon[name]({ ...props, className: undefined }))
   })
 
 f.assign(button, {
