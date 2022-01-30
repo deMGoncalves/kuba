@@ -4,11 +4,9 @@ export default (site) =>
     '@type': 'WebSite',
     description: site.description,
     name: site.name,
-    /*
     potentialAction: {
       '@id': '#searchaction'
     },
-    */
     publisher: {
       '@id': '#organization'
     },
