@@ -1,9 +1,9 @@
 import * as settings from '@kuba/settings'
 
-export default (page) =>
-  fetch(`${settings.api.url}/shape/shelf`,
+export default (q) =>
+  fetch(`${settings.api.url}/shape/search`,
     {
-      body: JSON.stringify({ page }),
+      body: JSON.stringify({ q }),
       method: 'POST'
     }
   )
