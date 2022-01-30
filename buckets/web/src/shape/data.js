@@ -4,9 +4,33 @@ export default (schema) =>
   ({
     '@id': `#${schema.id}`,
     '@type': 'Product',
-    additionalProperty: {
-      '@id': '#propertyvalue'
-    },
+    additionalProperty: [
+      {
+        '@type': 'PropertyValue',
+        name: 'Concave',
+        value: schema.concave
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Lixa',
+        value: schema.lixa
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Nose',
+        value: schema.nose
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Tail',
+        value: schema.tail
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Wheelbase',
+        value: schema.wheelbase
+      }
+    ],
     brand: {
       '@id': `#${schema.brand.slug}`,
       '@type': 'Brand',

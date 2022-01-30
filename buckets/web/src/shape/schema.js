@@ -5,15 +5,24 @@ import data from './data'
 @jsonld(data)
 class Schema {
   #brand
+  #concave
   #description
   #id
   #image
+  #lixa
   #material
   #name
+  #nose
   #size
+  #tail
+  #wheelbase
 
   get brand () {
     return this.#brand
+  }
+
+  get concave () {
+    return this.#concave
   }
 
   get description () {
@@ -26,6 +35,10 @@ class Schema {
 
   get image () {
     return this.#image
+  }
+
+  get lixa () {
+    return this.#lixa
   }
 
   get material () {
@@ -41,31 +54,52 @@ class Schema {
     return this.#name
   }
 
+  get nose () {
+    return this.#nose
+  }
+
   get size () {
     return this.#size
       ? `${this.#size.valor}"`
       : undefined
   }
 
-  constructor (brand, description, id, image, material, name, size) {
+  get tail () {
+    return this.#tail
+  }
+
+  get wheelbase () {
+    return this.#wheelbase
+  }
+
+  constructor (brand, concave, description, id, image, lixa, material, name, nose, size, tail, wheelbase) {
     this.#brand = brand
+    this.#concave = concave
     this.#description = description
     this.#id = id
     this.#image = image
+    this.#lixa = lixa
     this.#material = material
     this.#name = name
+    this.#nose = nose
     this.#size = size
+    this.#tail = tail
+    this.#wheelbase = wheelbase
   }
 
   static create (shape) {
     return new Schema(
       shape.marca,
+      shape.concave,
       shape.descricao,
       shape.slug,
       shape.thumbnail,
       shape.material,
       shape.modelo,
-      shape.tamanho
+      shape.nose,
+      shape.tamanho,
+      shape.tail,
+      shape.wheelbase
     )
   }
 }
