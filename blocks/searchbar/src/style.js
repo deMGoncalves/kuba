@@ -21,13 +21,11 @@ export default styled.style`
     display: block;
   }
 
-  .out__container {
+  .searchbar {
     align-items: center;
-    background-color: white;
+    background-color: var(--color-master-lightest);
     display: flex;
-    height: 87px;
-    padding-left: 88px;
-    width: 100%;
+    height: 89px;
   }
 
   .input__container {

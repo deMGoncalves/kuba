@@ -7,7 +7,7 @@ import style from './style'
 
 export default (search) =>
   <section className={style.searchbar__overlayer} onClick={() => search.close()} opened:isTruthy={search.opened}>
-    <div className={style.out__container} onClick:stop={() => null}>
+    <div className={style.searchbar} onClick:stop={() => null}>
       <container.Div className={style.inner__container}>
         <form method='GET' action={urlFor('trends.search')} className={style.input__container}>
           <icon.Search small />
