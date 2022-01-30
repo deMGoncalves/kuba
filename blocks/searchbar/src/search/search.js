@@ -1,10 +1,10 @@
 import { paint } from '@kuba/h'
-import component from './component'
 import echo from '@kuba/echo'
+import component from './component'
 
 @paint(component)
 class Search {
-  openSearch () {
+  open () {
     echo.emit('search:open')
     return this
   }
