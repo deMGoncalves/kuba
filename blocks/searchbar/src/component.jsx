@@ -1,9 +1,9 @@
 import h from '@kuba/h'
+import button from '@kuba/button'
 import container from '@kuba/container'
 import icon from '@kuba/icon'
-import style from './style'
 import { urlFor } from '@kuba/router'
-import button from '@kuba/button'
+import style from './style'
 
 export default (search) =>
   <div onClick={() => search.hideSearch()}
