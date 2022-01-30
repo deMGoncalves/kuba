@@ -1,4 +1,5 @@
 import { paint, repaint } from '@kuba/h'
+import * as f from '@kuba/f'
 import echo from '@kuba/echo'
 import component from './component'
 import scroll from './scroll'
@@ -8,7 +9,7 @@ class Search {
   #opened
 
   get opened () {
-    return this.#opened ??= false
+    return this.#opened ??= f.F()
   }
 
   constructor () {
@@ -18,14 +19,14 @@ class Search {
   @repaint
   @scroll.unlock
   hideSearch () {
-    this.#opened = false
+    this.#opened = f.F()
     return this
   }
 
   @repaint
   @scroll.lock
   openSearch () {
-    this.#opened = true
+    this.#opened = f.T()
     return this
   }
 }
