@@ -24,10 +24,14 @@ export default styled.style`
     transform: translate(0, 0);
   }
 
-  .searchbar__form {
+  .searchbar__div {
     align-items: center;
     display: flex;
     gap: var(--spacing_inset-xs);
+  }
+
+  .searchbar__form {
+    width: 100%;
   }
 
   .searchbar__input {
