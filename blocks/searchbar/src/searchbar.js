@@ -5,10 +5,10 @@ import scroll from './scroll'
 
 @paint(component)
 class Search {
-  #show
+  #opened
 
-  get show () {
-    return this.#show ??= false
+  get opened () {
+    return this.#opened ??= false
   }
 
   constructor () {
@@ -18,14 +18,14 @@ class Search {
   @repaint
   @scroll.unlock
   hideSearch () {
-    this.#show = false
+    this.#opened = false
     return this
   }
 
   @repaint
   @scroll.lock
   openSearch () {
-    this.#show = true
+    this.#opened = true
     return this
   }
 }
