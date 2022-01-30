@@ -2,6 +2,7 @@ import { didMount, paint } from '@kuba/h'
 import * as f from '@kuba/f'
 import { setGlobal } from '@kuba/global'
 import { setDescription, setTitle } from '@kuba/markup'
+import { redirectTo } from '@kuba/router'
 import component from './component'
 import getShape from './getShape'
 import Schema from './schema'
@@ -18,6 +19,8 @@ class Shape {
       Schema.create(shape),
       setGlobal({ shape })
     )
+
+    error && redirectTo('shapes')
 
     return this
   }
