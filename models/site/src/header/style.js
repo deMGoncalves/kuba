@@ -11,7 +11,7 @@ export default styled.style`
     }
 
     .header__tools {
-      flex-grow: 0;
+      flex-grow: 0 !important;
       order: 3;
     }
   }
