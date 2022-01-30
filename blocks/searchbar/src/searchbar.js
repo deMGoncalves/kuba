@@ -13,19 +13,19 @@ class Search {
   }
 
   constructor () {
-    echo.on('search:open', () => this.openSearch())
+    echo.on('search:open', () => this.open())
   }
 
   @repaint
   @scroll.unlock
-  hideSearch () {
+  close () {
     this.#opened = f.F()
     return this
   }
 
   @repaint
   @scroll.lock
-  openSearch () {
+  open () {
     this.#opened = f.T()
     return this
   }

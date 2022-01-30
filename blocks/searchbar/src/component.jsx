@@ -6,7 +6,7 @@ import { urlFor } from '@kuba/router'
 import style from './style'
 
 export default (search) =>
-  <div onClick={() => search.hideSearch()}
+  <div onClick={() => search.close()}
     className={[style.main, search.show && style.show]}>
     <div onClick={e => e.stopPropagation()} className={style.out__container}>
       <container.Div className={style.inner__container}>
@@ -22,7 +22,7 @@ export default (search) =>
             <icon.Close small />
           </button>
         </form>
-        <button.icon.Close onClick={() => search.hideSearch()} className={style.close}>
+        <button.icon.Close onClick={() => search.close()} className={style.close}>
           <icon.Close />
         </button.icon.Close>
       </container.Div>
