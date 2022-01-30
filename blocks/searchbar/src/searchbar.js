@@ -1,5 +1,6 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import { urlFor } from '@kuba/router'
 import action from './action'
 import component from './component'
 import scroll from './scroll'
@@ -8,6 +9,10 @@ import scroll from './scroll'
 @action
 class Search {
   #opened
+
+  get action () {
+    return urlFor('search')
+  }
 
   get opened () {
     return this.#opened ??= f.F()
