@@ -7,7 +7,7 @@ import style from './style'
 
 export default (search) =>
   <div onClick={() => search.close()}
-    className={[style.main, search.show && style.show]}>
+    className={[style.main, search.opened && style.show]}>
     <div onClick={e => e.stopPropagation()} className={style.out__container}>
       <container.Div className={style.inner__container}>
         <form method='GET' action={urlFor('trends.search')} className={style.input__container}>

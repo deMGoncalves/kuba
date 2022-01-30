@@ -1,19 +1,16 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
-import echo from '@kuba/echo'
+import action from './action'
 import component from './component'
 import scroll from './scroll'
 
 @paint(component)
+@action
 class Search {
   #opened
 
   get opened () {
     return this.#opened ??= f.F()
-  }
-
-  constructor () {
-    echo.on('search:open', () => this.open())
   }
 
   @repaint
