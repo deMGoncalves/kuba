@@ -1,6 +1,6 @@
 import { paint, repaint } from '@kuba/h'
-import component from './component'
 import echo from '@kuba/echo'
+import component from './component'
 import scroll from './scroll'
 
 @paint(component)
