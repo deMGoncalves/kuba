@@ -34,7 +34,7 @@ class More {
   }
 
   @repaint
-  mount (shapes) {
+  [effect.onChange] (shapes) {
     this.#content = More.active
     this.#visible = f.not(f.mod(f.len(shapes), 2))
     return this

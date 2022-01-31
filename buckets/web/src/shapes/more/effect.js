@@ -1,8 +1,15 @@
+import * as f from '@kuba/f'
 import global, { useEffect } from '@kuba/global'
 import middleware from '@kuba/middleware'
 
-const effect = (more) => (
-  useEffect(() => more.mount(global.shapes))
-)
+const onChange = f.dunder.onChange
 
-export default middleware(effect)
+const effect = middleware((target) => (
+  useEffect(() => target[onChange](global.shapes))
+))
+
+f.assign(effect, {
+  onChange
+})
+
+export default effect
