@@ -14,7 +14,7 @@ class Shelf {
   }
 
   @repaint
-  changeShapes (shapes) {
+  [effect.onChange] (shapes) {
     this.#shapes = f.map(shapes, Card.create)
     return this
   }
