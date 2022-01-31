@@ -15,7 +15,7 @@ export default async function (request, response) {
       flag (*)
     `)
     .textSearch(
-      'modelo',
+      'text',
       q
         .split(' ')
         .map(w => `'${w}'`)
