@@ -1,6 +1,6 @@
 import { paint, repaint } from '@kuba/h'
 import component from './component'
-import effect from './effect'
+import effect, { onChange } from './effect'
 import * as mapper from './mapper'
 
 @paint(component)
@@ -17,7 +17,7 @@ class Origem {
   }
 
   @repaint
-  changeValor (valor) {
+  [onChange] (valor) {
     this.#valor = valor
     return this
   }
