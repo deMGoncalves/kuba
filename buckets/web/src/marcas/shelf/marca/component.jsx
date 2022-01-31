@@ -6,7 +6,7 @@ import style from './style'
 
 export default (marca) =>
   <section className={style.marca} onClick={() => marca.redirect()}>
-    <Picture className={style.marca__picture}>
+    <Picture className={style.marca__picture} alt={marca.nome}>
       <Show when={marca.logo}>
         <source srcSet={marca.logo} />
       </Show>
