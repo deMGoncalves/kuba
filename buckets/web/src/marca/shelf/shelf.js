@@ -1,10 +1,11 @@
-import { didMount, paint, repaint } from '@kuba/h'
+import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import Card from '@kuba/card'
 import component from './component'
-import getShapes from './getShapes'
+import storage from './storage'
 
 @paint(component)
+@storage
 class Shelf {
   #shapes
 
@@ -13,15 +14,8 @@ class Shelf {
   }
 
   @repaint
-  changeShapes (shapes) {
+  [storage.onChange] (shapes) {
     this.#shapes = f.map(shapes, Card.create)
-    return this
-  }
-
-  @didMount
-  async mount () {
-    const { data: shapes, error } = await getShapes()
-    f.not(error) && this.changeShapes(shapes)
     return this
   }
 }
