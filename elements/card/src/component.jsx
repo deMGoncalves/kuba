@@ -4,7 +4,7 @@ import Show from '@kuba/show'
 import style from './style'
 
 export default (shape) =>
-  <section className={style.shape} onClick={() => shape.redirect()}>
+  <section uid={shape.slug} className={style.shape} onClick={() => shape.redirect()}>
     <header className={style.shape__header}>
       {shape.marca}
     </header>
