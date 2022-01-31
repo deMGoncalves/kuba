@@ -12,7 +12,6 @@ const effect = (target) => (
 )
 
 export default middleware(effect)
-
 export {
   onChange
 }
