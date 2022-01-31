@@ -1,8 +1,14 @@
+import * as f from '@kuba/f'
 import global, { useEffect } from '@kuba/global'
 import middleware from '@kuba/middleware'
 
-const effect = (descricao) => (
-  useEffect(() => descricao.changeValor(global.marca.descricao))
+const onChange = f.dunder.onChange
+
+const effect = (target) => (
+  useEffect(() => target[onChange](global.marca.descricao))
 )
 
 export default middleware(effect)
+export {
+  onChange
+}
