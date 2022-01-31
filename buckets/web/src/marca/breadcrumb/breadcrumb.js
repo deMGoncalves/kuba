@@ -2,7 +2,7 @@ import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import { component, data, Path } from '@kuba/breadcrumb'
 import jsonld from '@kuba/jsonld'
-import effect, { onChange } from './effect'
+import effect from './effect'
 
 @paint(component)
 @jsonld(data)
@@ -15,7 +15,7 @@ class Breadcrumb {
   }
 
   @repaint
-  [onChange] (paths) {
+  [effect.onChange] (paths) {
     this.#paths = f.map(paths, Path.create)
     return this
   }
