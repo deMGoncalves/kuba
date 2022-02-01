@@ -1,14 +1,14 @@
 import { didMount, paint } from '@kuba/h'
 import * as f from '@kuba/f'
-import { setGlobal } from '@kuba/global'
 import jsonld from '@kuba/jsonld'
 import { setDescription, setTitle } from '@kuba/markup'
 import component from './component'
 import data from './data'
-import getMarcas from './getMarcas'
+import storage from './storage'
 
 @paint(component)
 @jsonld(data)
+@storage
 class Marcas {
   get description () {
     return 'Está com dúvidas? Descubra novas marcas no kuba'
@@ -19,15 +19,9 @@ class Marcas {
   }
 
   @didMount
-  async mount () {
-    const { data: marcas, error } = await getMarcas()
-
-    f.not(error) && (
-      setTitle(this.title),
-      setDescription(this.description),
-      setGlobal({ marcas })
-    )
-
+  [f.dunder.mount] () {
+    setTitle(this.title)
+    setDescription(this.description)
     return this
   }
 }
