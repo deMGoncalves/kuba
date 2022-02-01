@@ -3,7 +3,7 @@ import { setGlobal } from '@kuba/global'
 import { setDescription, setTitle } from '@kuba/markup'
 import { redirectTo } from '@kuba/router'
 import component from './component'
-import Schema from './schema'
+import setData from './setData'
 import storage from './storage'
 
 @paint(component)
@@ -18,7 +18,7 @@ class Marca {
     setTitle(marca.nome)
     setDescription(marca.descricao)
     setGlobal({ marca })
-    Schema.create(marca)
+    setData(marca)
     return this
   }
 }
