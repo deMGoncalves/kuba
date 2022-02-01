@@ -5,10 +5,7 @@ import middleware from '@kuba/middleware'
 const onChange = f.dunder.onChange
 
 const effect = middleware((target) => (
-  useEffect(() => target[onChange]([
-    { page: 'shapes', title: 'Home' },
-    { page: 'marca', params: { marca: global.marca?.slug }, title: global.marca?.nome }
-  ]))
+  useEffect(() => target[onChange](global.shapes))
 ))
 
 f.assign(effect, {
