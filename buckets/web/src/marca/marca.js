@@ -1,27 +1,24 @@
-import { didMount, paint } from '@kuba/h'
-import * as f from '@kuba/f'
+import { paint } from '@kuba/h'
 import { setGlobal } from '@kuba/global'
 import { setDescription, setTitle } from '@kuba/markup'
 import { redirectTo } from '@kuba/router'
 import component from './component'
-import getMarca from './getMarca'
 import Schema from './schema'
+import storage from './storage'
 
 @paint(component)
+@storage
 class Marca {
-  @didMount
-  async mount () {
-    const { data: marca, error } = await getMarca()
+  [storage.onError] () {
+    redirectTo('marcas')
+    return this
+  }
 
-    f.not(error) && (
-      setTitle(marca.nome),
-      setDescription(marca.descricao),
-      Schema.create(marca),
-      setGlobal({ marca })
-    )
-
-    error && redirectTo('marcas')
-
+  [storage.onResponse] (marca) {
+    setTitle(marca.nome)
+    setDescription(marca.descricao)
+    setGlobal({ marca })
+    Schema.create(marca)
     return this
   }
 }
