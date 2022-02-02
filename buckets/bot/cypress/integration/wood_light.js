@@ -5,10 +5,7 @@ describe('Wood Light', () => {
     let index = 0
     const { data } = await supabase
       .from('shape')
-      .select(`
-        *,
-        marca!inner(*)
-      `)
+      .select(`*, marca!inner(*)`)
       .eq('marca.slug', 'wood-light')
 
     const next = () =>
