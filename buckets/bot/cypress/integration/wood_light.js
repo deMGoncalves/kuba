@@ -1,16 +1,7 @@
-import { createClient } from '@supabase/supabase-js'
+import { supabase } from '@kuba/bot'
 
 describe('Wood Light', () => {
-  let supabase
-
-  before(() => {
-    supabase = createClient(
-      Cypress.env('API_URL'),
-      Cypress.env('API_KEY')
-    )
-  })
-
-  it('Fetch shapes', async () => {
+  it('Update price', async () => {
     let index = 0
     const { data } = await supabase
       .from('shape')
