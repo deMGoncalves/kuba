@@ -14,7 +14,6 @@ describe('Wood Light', () => {
     let index = 0
     const { data } = await supabase
       .from('shape')
-      .select('*')
       .select(`
         *,
         marca!inner(*)
@@ -33,8 +32,13 @@ describe('Wood Light', () => {
           .then(() => {
             cy.get('.preco-produto')
               .invoke('attr', 'content')
-              .then((content) => {
-                assert.isOk(content, content)
+              .then(async (content) => {
+                const { error } = await supabase
+                  .from('shape')
+                  .update({ preco: parseFloat(content) })
+                  .match({ id: shape.id })
+
+                assert.isNull(error, 'Update price')
                 cy.wait(20000)
                 update(next())
               })
@@ -44,12 +48,4 @@ describe('Wood Light', () => {
 
     update(next())
   })
-
-  /*
-  cy.get('.preco-produto')
-    .invoke('attr', 'content')
-    .then((content) => {
-      expect(content).to.be('139.90')
-    })
-  */
 })
