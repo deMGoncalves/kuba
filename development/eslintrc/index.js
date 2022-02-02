@@ -31,7 +31,7 @@ module.exports = {
     'cypress/no-force': 'warn',
     'cypress/no-pause': 'error',
     'cypress/no-unnecessary-waiting': 'off',
-    'jext/expect-expect': 'off',
+    'jest/expect-expect': 'off',
     'jest/no-disabled-tests': 'warn',
     'jest/no-focused-tests': 'error',
     'jest/no-identical-title': 'error',
