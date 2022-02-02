@@ -1,17 +1,13 @@
-import { supabase } from '@kuba/bot'
+import { iterator, supabase } from '@kuba/bot'
 
 describe('Wood Light', () => {
   it('Update price', async () => {
-    let index = 0
     const { data } = await supabase
       .from('shape')
-      .select(`*, marca!inner(*)`)
+      .select('*, marca!inner(*)')
       .eq('marca.slug', 'wood-light')
 
-    const next = () =>
-      (index < data.length)
-        ? ({ done: false, shape: data[index++] })
-        : ({ done: true })
+    const shapes = iterator(data)
 
     const update = ({ done, shape }) => {
       if (!done) {
@@ -28,12 +24,12 @@ describe('Wood Light', () => {
 
                 assert.isNull(error, 'Update price')
                 cy.wait(20000)
-                update(next())
+                update(shapes.next())
               })
           })
       }
     }
 
-    update(next())
+    update(shapes.next())
   })
 })
