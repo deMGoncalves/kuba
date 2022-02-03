@@ -1,6 +1,9 @@
 import supabase from '@kuba/supabase'
 
 export default async function (_request, response) {
+  const yesterday = new Date(Date.now() - 60 * 60 * 24 * 1000)
+  const lastmod = yesterday.toISOString().slice(0, 10)
+
   const { data } = await supabase
     .from('marca')
     .select('slug')
@@ -14,6 +17,7 @@ export default async function (_request, response) {
           .map((marca) => `
             <url>
               <loc>https://www.kuba.ink/${marca.slug}</loc>
+              <lastmod>${lastmod}</lastmod>
             </url>
           `)
           .join('')
