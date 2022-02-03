@@ -1,18 +1,18 @@
 import { paint } from '@kuba/h'
-import Compare from '@kuba/compare'
+import { Shape } from '@kuba/web/src/compare'
 import component from './component'
 
 @paint(component)
 class Marca {
-  #index
+  #position
   #valor
 
   get valor () {
-    return this.#valor ??= Compare.shelf[this.#index].marca.nome
+    return this.#valor ??= Shape[this.#position]?.marca?.nome
   }
 
   constructor (props) {
-    this.#index = props.master ? 0 : 1
+    this.#position = props.master ? 'master' : 'slave'
   }
 }
 

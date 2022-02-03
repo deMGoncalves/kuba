@@ -1,18 +1,17 @@
 import { paint } from '@kuba/h'
-import * as f from '@kuba/f'
-import Compare from '@kuba/compare'
+import { Shape } from '@kuba/web/src/compare'
 import component from './component'
 
 @paint(component)
 class Concave {
   get master () {
-    return f.first(Compare.shelf).concave
+    return Shape.master?.concave
       ? 'Sim'
       : 'Não'
   }
 
   get slave () {
-    return f.last(Compare.shelf).concave
+    return Shape.slave?.concave
       ? 'Sim'
       : 'Não'
   }

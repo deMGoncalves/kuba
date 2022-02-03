@@ -1,11 +1,11 @@
 import { paint } from '@kuba/h'
-import Compare from '@kuba/compare'
+import { Shape } from '@kuba/web/src/compare'
 import component from './component'
 import * as mapper from './mapper'
 
 @paint(component)
 class Origem {
-  #index
+  #position
   #valor
 
   get url () {
@@ -13,11 +13,11 @@ class Origem {
   }
 
   get valor () {
-    return this.#valor ??= Compare.shelf[this.#index].marca.origem.valor
+    return this.#valor ??= Shape[this.#position]?.marca?.origem?.valor
   }
 
   constructor (props) {
-    this.#index = props.master ? 0 : 1
+    this.#position = props.master ? 'master' : 'slave'
   }
 }
 

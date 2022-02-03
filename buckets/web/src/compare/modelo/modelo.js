@@ -1,18 +1,15 @@
 import { paint } from '@kuba/h'
-import * as f from '@kuba/f'
-import Compare from '@kuba/compare'
-import props from '@kuba/props'
+import { Shape } from '@kuba/web/src/compare'
 import component from './component'
 
 @paint(component)
-@props
 class Modelo {
   get master () {
-    return f.first(Compare.shelf).modelo
+    return Shape.master?.modelo
   }
 
   get slave () {
-    return f.last(Compare.shelf).modelo
+    return Shape.slave?.modelo
   }
 }
 

@@ -1,16 +1,15 @@
 import { paint } from '@kuba/h'
-import * as f from '@kuba/f'
-import Compare from '@kuba/compare'
+import { Shape } from '@kuba/web/src/compare'
 import component from './component'
 
 @paint(component)
 class Material {
   get master () {
-    return f.first(Compare.shelf).laminas
+    return Shape.master?.laminas
   }
 
   get slave () {
-    return f.last(Compare.shelf).laminas
+    return Shape.slave?.laminas
   }
 }
 

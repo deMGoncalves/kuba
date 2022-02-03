@@ -1,18 +1,17 @@
 import { paint } from '@kuba/h'
-import * as f from '@kuba/f'
-import Compare from '@kuba/compare'
+import { Shape } from '@kuba/web/src/compare'
 import component from './component'
 
 @paint(component)
 class Tail {
   get master () {
-    return f.first(Compare.shelf).tail
+    return Shape.master?.tail
       ? 'Sim'
       : 'Não'
   }
 
   get slave () {
-    return f.last(Compare.shelf).tail
+    return Shape.slave?.tail
       ? 'Sim'
       : 'Não'
   }
