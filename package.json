@@ -23,7 +23,6 @@
       "buckets/*",
       "directives/*",
       "development/*",
-      "domain/*",
       "elements/*",
       "filters/*",
       "infra/*",
