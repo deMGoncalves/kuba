@@ -8,10 +8,10 @@ import style from './style'
 export default (site) =>
   <>
     <Hide when={site.pristine}>
-      <button.naked.Master className={style.site} onClick={() => site.redirect()} darker medium>
+      <a className={style.site} href={site.url} onClick:prevent={() => site.redirect()} target='_blank'>
         Comprar
         <icon.Share />
-      </button.naked.Master>
+      </a>
     </Hide>
     <Show when={site.pristine}>
       <button.naked.Master className={style.site} darker medium />
