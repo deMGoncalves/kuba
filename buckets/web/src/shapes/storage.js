@@ -1,15 +1,25 @@
 import * as f from '@kuba/f'
-import { setGlobal } from '@kuba/global'
 import http from '@kuba/http'
 import middleware from '@kuba/middleware'
 import * as settings from '@kuba/settings'
 
-const storage = () =>
+const onError = f.dunder.onError
+const onResponse = f.dunder.onResponse
+
+const storage = middleware((target) =>
   http
     .post(`${settings.api.url}/shape/shelf`, { page: 1 })
     .then(response => response.json())
-    .then(({ data: shapes, error }) => (
-      f.not(error) && setGlobal({ shapes })
+    .then(({ data, error }) => (
+      error
+        ? target[onError]()
+        : target[onResponse](data)
     ))
+)
 
-export default middleware(storage)
+f.assign(storage, {
+  onError,
+  onResponse
+})
+
+export default storage
