@@ -1,8 +1,8 @@
 import h from '@kuba/h'
 import container from '@kuba/container'
 import Compare from './compare'
-import Thumbnail from './thumbnail'
 import Site from './site'
+import Thumbnail from './thumbnail'
 import style from './style'
 
 export default () =>
