@@ -9,7 +9,7 @@ const onResponse = f.dunder.onResponse
 
 const storage = middleware((target) =>
   http
-    .post(`${settings.api.url}/shape/search`, { q: args.q })
+    .post(`${settings.api.url}/shape/search`, { page: 1, q: args.q })
     .then(response => response.json())
     .then(({ data, error }) => (
       error
