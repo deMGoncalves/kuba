@@ -13,7 +13,7 @@ class Material {
   }
 
   @repaint
-  changeValor (valor) {
+  [effect.onChange] (valor) {
     this.#valor = valor
   }
 }
