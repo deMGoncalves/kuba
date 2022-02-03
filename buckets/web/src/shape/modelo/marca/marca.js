@@ -12,7 +12,7 @@ class Marca {
   }
 
   @repaint
-  changeValor (valor) {
+  [effect.onChange] (valor) {
     this.#valor = valor
     return this
   }
