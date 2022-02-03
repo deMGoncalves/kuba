@@ -5,7 +5,7 @@ import effect from './effect'
 
 @paint(component)
 @effect
-class Picture {
+class Thumbnail {
   #alt
   #src
 
@@ -17,16 +17,17 @@ class Picture {
     return this.#src
   }
 
-  @repaint
-  changeValor (alt, src) {
-    this.#alt = alt
-    this.#src = src
-  }
-
   zoom () {
     echo.emit('zoom:open', { src: this.src, alt: this.alt })
     return this
   }
+
+  @repaint
+  [effect.onChange] (alt, src) {
+    this.#alt = alt
+    this.#src = src
+    return this
+  }
 }
 
-export default Picture
+export default Thumbnail
