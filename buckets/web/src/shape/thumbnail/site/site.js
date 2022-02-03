@@ -23,7 +23,7 @@ class Site {
   }
 
   @repaint
-  changeValor (url) {
+  [effect.onChange] (url) {
     this.#pristine = f.F()
     this.#url = url
     return this

@@ -9,6 +9,7 @@ export default (site) =>
   <>
     <Hide when={site.pristine}>
       <button.naked.Master className={style.site} onClick={() => site.redirect()} darker medium>
+        Comprar
         <icon.Share />
       </button.naked.Master>
     </Hide>
