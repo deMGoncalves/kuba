@@ -10,8 +10,8 @@ export default () =>
     <div className={style.thumbnail__div}>
       <Picture />
       <menu className={style.thumbnail__menu}>
-        <Compare />
         <Site />
+        <Compare />
       </menu>
     </div>
   </container.Section>

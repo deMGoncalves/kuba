@@ -37,7 +37,7 @@ class Compare {
   }
 
   @repaint
-  changeShape (shape) {
+  [effect.onChange] (shape) {
     this.#pristine = f.F()
     this.#shape = shape
     return this

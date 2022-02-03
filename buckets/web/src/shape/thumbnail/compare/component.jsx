@@ -9,7 +9,6 @@ export default (compare) =>
   <>
     <Hide when={compare.pristine}>
       <button.naked.Master className={style.compare} onClick={() => compare.add()} darker medium>
-        Adicionar
         <icon.Compare />
       </button.naked.Master>
     </Hide>
