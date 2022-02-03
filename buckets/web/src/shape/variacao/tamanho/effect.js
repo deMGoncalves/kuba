@@ -1,8 +1,15 @@
+import * as f from '@kuba/f'
 import global, { useEffect } from '@kuba/global'
 import middleware from '@kuba/middleware'
 
-const effect = (tamanho) => (
-  useEffect(() => tamanho.changeValor(global.shape.tamanho.valor))
-)
+const onChange = f.dunder.onChange
 
-export default middleware(effect)
+const effect = middleware((target) => (
+  useEffect(() => target[onChange](global.shape.tamanho.valor))
+))
+
+f.assign(effect, {
+  onChange
+})
+
+export default effect
