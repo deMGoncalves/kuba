@@ -18,7 +18,7 @@ class Tail {
   }
 
   @repaint
-  changeValor (valor) {
+  [effect.onChange] (valor) {
     this.#pristine = f.F()
     this.#valor = valor
     return this
