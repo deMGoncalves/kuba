@@ -2,11 +2,10 @@ import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import Card from '@kuba/card'
 import component from './component'
-import effect from './effect'
-import getShapes from './getShapes'
+import storage from './storage'
 
 @paint(component)
-@effect
+@storage
 class Related {
   #shapes
 
@@ -19,14 +18,14 @@ class Related {
   }
 
   @repaint
-  changeShapes (shapes) {
-    this.#shapes = f.map(shapes, Card.create)
+  [storage.onError] () {
+    this.#shapes = []
     return this
   }
 
-  async mount () {
-    const { data: shapes, error } = await getShapes()
-    f.not(error) && this.changeShapes(shapes)
+  @repaint
+  [storage.onResponse] (shapes) {
+    this.#shapes = f.map(shapes, Card.create)
     return this
   }
 
