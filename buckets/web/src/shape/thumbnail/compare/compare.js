@@ -1,12 +1,12 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
-import Compare from '@kuba/compare'
+import actions from './actions'
 import component from './component'
 import effect from './effect'
 
 @paint(component)
 @effect
-class CompareButton {
+class Compare {
   #pristine
   #shape
 
@@ -14,8 +14,25 @@ class CompareButton {
     return this.#pristine ??= f.T()
   }
 
+  @actions.add
   add () {
-    Compare.add(this.#shape)
+    const shapes = f
+      .from(localStorage.getItem('_kuba.compare'))
+      .pipe(f.or(f.__, '[]'))
+      .pipe(JSON.parse)
+      .pipe(f.slice(f.__, -2))
+      .done()
+
+    const contains = f
+      .from(shapes)
+      .pipe(f.find(f.__, f.compose(f.equal(this.#shape.id), f.prop('id'))))
+      .done()
+
+    f.not(contains) && (
+      f.push(shapes, this.#shape),
+      localStorage.setItem('_kuba.compare', JSON.stringify(shapes))
+    )
+
     return this
   }
 
@@ -27,4 +44,4 @@ class CompareButton {
   }
 }
 
-export default CompareButton
+export default Compare
