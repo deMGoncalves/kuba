@@ -5,10 +5,10 @@
   "name": "kuba",
 	"scope" : "/",
 	"display" : "standalone",
-	"start_url" : "/?source=pwa",
+	"start_url" : "/?utm_source=pwa",
 	"short_name" : "kuba",
 	"theme_color" : "#fafafa",
-  "description": "Aquele que substitui por ser melhor",
+  "description": "Escolha o melhor shape para seu setup",
   "orientation" : "portrait",
 	"background_color" : "#fafafa",
 	"related_applications" : [],
@@ -57,7 +57,7 @@
     {
       "name": "Home",
       "short_name": "Home",
-      "description": "kuba é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o produto",
+      "description": "Escolha o melhor shape para seu setup",
       "url": "/?utm_source=pwa",
       "icons": [
         {
