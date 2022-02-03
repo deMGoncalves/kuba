@@ -1,20 +1,20 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .thumbnail {
+  .hero {
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-lg);
-    grid-area: thumbnail;
+    grid-area: hero;
   }
 
   @media (min-width: 769px) {
-    .thumbnail {
+    .hero {
       padding-left: var(--spacing_inset-sm) !important;
     }
   }
 
-  .thumbnail__div {
+  .hero__div {
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-lg);
@@ -22,7 +22,7 @@ export default styled.style`
     top: var(--spacing-sm);
   }
 
-  .thumbnail__menu {
+  .hero__menu {
     display: flex;
     gap: var(--spacing_inset-xs);
   }
