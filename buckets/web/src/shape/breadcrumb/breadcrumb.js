@@ -15,7 +15,7 @@ class Breadcrumb {
   }
 
   @repaint
-  changePaths (paths) {
+  [effect.onChange] (paths) {
     this.#paths = f.map(paths, Path.create)
     return this
   }
