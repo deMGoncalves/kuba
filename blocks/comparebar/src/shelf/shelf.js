@@ -1,31 +1,21 @@
 import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
-import { redirectTo, urlFor } from '@kuba/router'
 import actions from './actions'
 import component from './component'
+import Shape from './shape'
 
 @paint(component)
 @actions
-class Footer {
-  get href () {
-    return urlFor('compare')
-  }
-
-  get valid () {
+class Shelf {
+  get shapes () {
     return f
       .from(localStorage.getItem('_kuba.compare'))
       .pipe(f.or(f.__, '[]'))
       .pipe(JSON.parse)
       .pipe(f.slice(f.__, -2))
-      .pipe(f.len)
-      .pipe(f.equal(2))
+      .pipe(f.map(f.__, Shape.create))
       .done()
-  }
-
-  redirect () {
-    redirectTo('compare')
-    return this
   }
 }
 
-export default Footer
+export default Shelf

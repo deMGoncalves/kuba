@@ -1,5 +1,6 @@
 import { paint } from '@kuba/h'
-import Compare from '@kuba/compare'
+import * as f from '@kuba/f'
+import actions from './actions'
 import component from './component'
 import Laminas from './laminas'
 import Modelo from './modelo'
@@ -8,16 +9,11 @@ import Modelo from './modelo'
 class Shape {
   #id
   #laminas
-  #marca
   #modelo
   #thumbnail
 
   get laminas () {
     return this.#laminas
-  }
-
-  get marca () {
-    return this.#marca
   }
 
   get modelo () {
@@ -28,16 +24,24 @@ class Shape {
     return this.#thumbnail
   }
 
-  constructor (id, laminas, marca, modelo, thumbnail) {
+  constructor (id, laminas, modelo, thumbnail) {
     this.#id = id
     this.#laminas = laminas
-    this.#marca = marca
     this.#modelo = modelo
     this.#thumbnail = thumbnail
   }
 
+  @actions.remove
   remove () {
-    Compare.remove({ id: this.#id })
+    const shapes = f
+      .from(localStorage.getItem('_kuba.compare'))
+      .pipe(f.or(f.__, '[]'))
+      .pipe(JSON.parse)
+      .pipe(f.slice(f.__, -2))
+      .pipe(f.filter(f.__, f.compose(f.different(this.#id), f.prop('id'))))
+      .done()
+
+    localStorage.setItem('_kuba.compare', JSON.stringify(shapes))
     return this
   }
 
@@ -45,7 +49,6 @@ class Shape {
     return new Shape(
       data.id,
       Laminas.create(data.laminas),
-      data.marca,
       Modelo.create(data.modelo),
       data.thumbnail
     )
