@@ -12,7 +12,7 @@ class Descricao {
   }
 
   @repaint
-  changeValor (valor) {
+  [effect.onChange] (valor) {
     this.#valor = valor
     return this
   }
