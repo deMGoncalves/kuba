@@ -10,7 +10,6 @@ export default styled.style`
 
   @media (min-width: 769px) {
     .thumbnail {
-      height: 100%;
       padding-left: var(--spacing_inset-sm) !important;
     }
   }
