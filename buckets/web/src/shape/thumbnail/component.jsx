@@ -7,9 +7,11 @@ import style from './style'
 
 export default () =>
   <container.Section className={style.thumbnail}>
-    <Picture />
     <div className={style.thumbnail__div}>
-      <Compare />
-      <Site />
+      <Picture />
+      <menu className={style.thumbnail__menu}>
+        <Compare />
+        <Site />
+      </menu>
     </div>
   </container.Section>

@@ -10,11 +10,20 @@ export default styled.style`
 
   @media (min-width: 769px) {
     .thumbnail {
+      height: 100%;
       padding-left: var(--spacing_inset-sm) !important;
     }
   }
 
   .thumbnail__div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-lg);
+    position: sticky;
+    top: var(--spacing-sm);
+  }
+
+  .thumbnail__menu {
     display: flex;
     gap: var(--spacing_inset-xs);
   }
