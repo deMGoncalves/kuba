@@ -3,13 +3,14 @@ import * as f from '@kuba/f'
 import { setGlobal } from '@kuba/global'
 import jsonld from '@kuba/jsonld'
 import { setDescription, setTitle } from '@kuba/markup'
-import { args } from '@kuba/router'
+import { redirectTo } from '@kuba/router'
 import component from './component'
 import data from './data'
-import getShapes from './getShapes'
+import storage from './storage'
 
 @paint(component)
 @jsonld(data)
+@storage
 class Search {
   get description () {
     return 'Resultado de busca! Escolha o melhor shape para o seu setup'
@@ -20,15 +21,19 @@ class Search {
   }
 
   @didMount
-  async mount () {
-    const { data: shapes, error } = await getShapes(args.q)
+  [f.dunder.mount] () {
+    setTitle(this.title)
+    setDescription(this.description)
+    return this
+  }
 
-    f.not(error) && (
-      setTitle(this.title),
-      setDescription(this.description),
-      setGlobal({ shapes })
-    )
+  [storage.onError] () {
+    redirectTo('shapes')
+    return this
+  }
 
+  [storage.onResponse] (shapes) {
+    setGlobal({ shapes })
     return this
   }
 }
