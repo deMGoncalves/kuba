@@ -1,27 +1,24 @@
-import { didMount, paint } from '@kuba/h'
-import * as f from '@kuba/f'
+import { paint } from '@kuba/h'
 import { setGlobal } from '@kuba/global'
 import { setDescription, setTitle } from '@kuba/markup'
 import { params, redirectTo } from '@kuba/router'
 import component from './component'
-import getShape from './getShape'
 import Schema from './schema'
+import storage from './storage'
 
 @paint(component)
+@storage
 class Shape {
-  @didMount
-  async mount () {
-    const { data: shape, error } = await getShape()
+  [storage.onError] () {
+    redirectTo('marca', { marca: params.marca })
+    return this
+  }
 
-    f.not(error) && (
-      setTitle(shape.modelo),
-      setDescription(shape.descricao),
-      Schema.create(shape),
-      setGlobal({ shape })
-    )
-
-    error && redirectTo('marca', { marca: params.marca })
-
+  [storage.onResponse] (shape) {
+    setTitle(shape.modelo)
+    setDescription(shape.descricao)
+    Schema.create(shape)
+    setGlobal({ shape })
     return this
   }
 }
