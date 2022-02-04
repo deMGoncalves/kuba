@@ -15,6 +15,6 @@ export default (shape) =>
     </Picture>
     <main className={style.shape__main}>
       {shape.modelo}
-      {shape.laminas}
+      {shape.tamanho}
     </main>
   </section>

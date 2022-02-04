@@ -21,7 +21,7 @@ export default styled.style`
   .shape__main {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-quarck);
+    gap: var(--spacing_inset-nano);
     padding: var(--spacing_inset-xs);
   }
 `

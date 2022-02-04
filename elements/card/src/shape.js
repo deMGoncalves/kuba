@@ -4,17 +4,16 @@ import jsonld from '@kuba/jsonld'
 import { redirectTo } from '@kuba/router'
 import component from './component'
 import data from './data'
-import Laminas from './laminas'
 import Marca from './marca'
 import Modelo from './modelo'
 import Stub from './stub'
+import Tamanho from './tamanho'
 
 @paint(component)
 @jsonld(data)
 class Shape {
   #concave
   #descricao
-  #laminas
   #lixa
   #marca
   #material
@@ -34,10 +33,6 @@ class Shape {
 
   get descricao () {
     return this.#descricao ??= ''
-  }
-
-  get laminas () {
-    return this.#laminas
   }
 
   get lixa () {
@@ -81,8 +76,6 @@ class Shape {
 
   get tamanho () {
     return this.#tamanho
-      ? `${this.#tamanho.valor}"`
-      : undefined
   }
 
   get thumbnail () {
@@ -93,11 +86,10 @@ class Shape {
     return this.#wheelbase
   }
 
-  constructor (concave, descricao, laminas, lixa, marca, material, modelo, nose, slug, tail, tamanho, thumbnail, wheelbase) {
+  constructor (concave, descricao, lixa, marca, material, modelo, nose, slug, tail, tamanho, thumbnail, wheelbase) {
     this.#concave = concave
     this.#descricao = descricao
     this.#lixa = lixa
-    this.#laminas = laminas
     this.#marca = marca
     this.#material = material
     this.#modelo = modelo
@@ -118,7 +110,6 @@ class Shape {
     return new Shape(
       data.concave,
       data.descricao,
-      Laminas.create(data),
       data.lixa,
       Marca.create(data),
       data.material,
@@ -126,7 +117,7 @@ class Shape {
       data.nose,
       data.slug,
       data.tail,
-      data.tamanho,
+      Tamanho.create(data),
       data.thumbnail,
       data.wheelbase
     )
