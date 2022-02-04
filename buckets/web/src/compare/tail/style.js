@@ -1,22 +1,27 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .tail__hgroup {
+  .tail {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing_inset-quarck);
+    gap: var(--spacing_inset-xs);
     grid-column: 1 / 3;
   }
 
-  .tail__h2 {
+  .tail__dl {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-quarck);
+    width: 50%;
+  }
+
+  .tail__text {
     line-height: var(--line-height-md) !important;
+    text-align: center;
   }
 
-  .tail__p {
-    line-height: var(--line-height-lg) !important;
-  }
-
-  .tail__data.master {
-    text-align: right;
+  .tail__data {
+    text-align: center;
+    width: 25%;
   }
 `
