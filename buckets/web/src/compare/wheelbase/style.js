@@ -4,7 +4,7 @@ export default styled.style`
   .wheelbase {
     align-items: center;
     display: flex;
-    gap: var(--spacing_inset-lg);
+    gap: var(--spacing_inset-xs);
     grid-column: 1 / 3;
   }
 
@@ -21,10 +21,7 @@ export default styled.style`
   }
 
   .wheelbase__data {
+    text-align: center;
     width: 25%;
-  }
-
-  .wheelbase__data.master {
-    text-align: right;
   }
 `

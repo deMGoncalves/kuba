@@ -4,7 +4,7 @@ export default styled.style`
   .tamanho {
     align-items: center;
     display: flex;
-    gap: var(--spacing_inset-lg);
+    gap: var(--spacing_inset-xs);
     grid-column: 1 / 3;
   }
 
@@ -21,10 +21,7 @@ export default styled.style`
   }
 
   .tamanho__data {
+    text-align: center;
     width: 25%;
-  }
-
-  .tamanho__data.master {
-    text-align: right;
   }
 `
