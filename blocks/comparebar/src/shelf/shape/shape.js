@@ -45,12 +45,12 @@ class Shape {
     return this
   }
 
-  static create (data) {
+  static create (shape) {
     return new Shape(
-      data.id,
-      Laminas.create(data.laminas),
-      Modelo.create(data.modelo),
-      data.thumbnail
+      shape.id,
+      Laminas.create(shape.laminas),
+      Modelo.create(shape.modelo),
+      shape.thumbnail
     )
   }
 }

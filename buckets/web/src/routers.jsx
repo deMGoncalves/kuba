@@ -22,6 +22,11 @@ router('/marcas', async function marcas () {
   render(<Marcas />)
 })
 
+router('/politica-de-privacidade', async function privacy () {
+  const { default: Privacy } = await import('./privacy' /* webpackChunkName: "privacy" */)
+  render(<Privacy />)
+})
+
 router('/:marca', async function marca () {
   const { default: Marca } = await import('./marca' /* webpackChunkName: "marca" */)
   render(<Marca />)
