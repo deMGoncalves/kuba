@@ -3,7 +3,6 @@ import styled from '@kuba/styled'
 export default styled.style`
   .shape {
     background-color: #fff;
-    border: var(--border-width-hairline) solid var(--color-master-light);
     border-radius: var(--border-radius-sm);
     cursor: pointer;
     position: relative;
