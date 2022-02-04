@@ -7,8 +7,12 @@ class Marca {
   #position
   #valor
 
+  get position () {
+    return this.#position
+  }
+
   get valor () {
-    return this.#valor ??= Shape[this.#position]?.marca?.nome
+    return this.#valor ??= Shape[this.position]?.marca?.nome
   }
 
   constructor (props) {

@@ -11,6 +11,10 @@ export default styled.style`
     line-height: var(--line-height-md) !important;
   }
 
+  .modelo__h1.slave {
+    text-align: right;
+  }
+
   .modelo__div {
     align-items: center;
     display: flex;
