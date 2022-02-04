@@ -3,7 +3,6 @@ import container from '@kuba/container'
 import Site from '@kuba/site'
 import Breadcrumb from './breadcrumb'
 import Concave from './concave'
-import Descricao from './descricao'
 import Material from './material'
 import Modelo from './modelo'
 import Nose from './nose'
@@ -18,13 +17,12 @@ export default () =>
     <container.Div className={style.compare__div} slot='main'>
       <Modelo />
       <Thumbnail />
-      <Descricao />
+      <Material />
       <Tamanho />
       <Wheelbase />
       <Nose />
       <Tail />
       <Concave />
-      <Material />
     </container.Div>
     <Breadcrumb />
   </Site>
