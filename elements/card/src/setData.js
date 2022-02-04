@@ -1,6 +1,10 @@
+import * as f from '@kuba/f'
+import { push } from '@kuba/jsonld'
+import * as settings from '@kuba/settings'
+
 export default (shape) =>
-  ({
-    '@id': `#${shape.slug}`,
+  push({
+    '@id': `#${shape.id}`,
     '@type': 'Product',
     additionalProperty: [
       {
@@ -26,7 +30,7 @@ export default (shape) =>
       {
         '@type': 'PropertyValue',
         name: 'Wheelbase',
-        value: shape.wheelbase
+        value: shape.wheelbase.valor
       }
     ],
     brand: {
@@ -37,8 +41,27 @@ export default (shape) =>
       name: shape.marca.nome
     },
     description: shape.descricao,
-    image: shape.thumbnail,
-    material: shape.material,
-    name: shape.modelo.valor,
-    size: shape.tamanho
+    image: shape.thumbnnail,
+    mainEntityOfPage: {
+      '@id': '#webpage',
+      '@type': 'WebPage',
+      breadcrumb: {
+        '@id': '#breadcrumb'
+      },
+      description: shape.descricao,
+      inLanguage: settings.app.language,
+      isPartOf: {
+        '@id': '#website'
+      },
+      name: shape.modelo,
+      url: settings.app.url
+    },
+    material: f
+      .from(shape.material)
+      .pipe(f.or(f.__, []))
+      .pipe(f.map(f.__, f.prop('valor')))
+      .pipe(f.join(f.__, ', '))
+      .done(),
+    name: shape.modelo,
+    size: `${shape.tamanho.valor}"`
   })

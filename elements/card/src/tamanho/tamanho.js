@@ -23,10 +23,10 @@ class Tamanho {
     this.#wheelbase = wheelbase
   }
 
-  static create (data) {
+  static create (shape) {
     return new Tamanho(
-      data.tamanho.valor,
-      data.wheelbase.valor
+      shape.tamanho.valor,
+      shape.wheelbase.valor
     )
   }
 

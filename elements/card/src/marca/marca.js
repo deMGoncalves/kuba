@@ -19,10 +19,10 @@ class Marca {
     this.#slug = slug
   }
 
-  static create (data) {
+  static create (shape) {
     return new Marca(
-      data.marca?.nome,
-      data.marca?.slug
+      shape.marca?.nome,
+      shape.marca?.slug
     )
   }
 

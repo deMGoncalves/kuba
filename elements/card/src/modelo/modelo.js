@@ -22,11 +22,11 @@ class Modelo {
     this.#valor = valor
   }
 
-  static create (data) {
+  static create (shape) {
     return new Modelo(
-      data.marca?.slug,
-      data.slug,
-      data.modelo
+      shape.marca?.slug,
+      shape.slug,
+      shape.modelo
     )
   }
 
