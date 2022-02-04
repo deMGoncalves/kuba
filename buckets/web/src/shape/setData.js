@@ -1,60 +1,67 @@
+import * as f from '@kuba/f'
+import { push } from '@kuba/jsonld'
 import * as settings from '@kuba/settings'
 
-export default (schema) =>
-  ({
-    '@id': `#${schema.id}`,
+export default (shape) =>
+  push({
+    '@id': `#${shape.id}`,
     '@type': 'Product',
     additionalProperty: [
       {
         '@type': 'PropertyValue',
         name: 'Concave',
-        value: schema.concave
+        value: shape.concave
       },
       {
         '@type': 'PropertyValue',
         name: 'Lixa',
-        value: schema.lixa
+        value: shape.lixa
       },
       {
         '@type': 'PropertyValue',
         name: 'Nose',
-        value: schema.nose
+        value: shape.nose
       },
       {
         '@type': 'PropertyValue',
         name: 'Tail',
-        value: schema.tail
+        value: shape.tail
       },
       {
         '@type': 'PropertyValue',
         name: 'Wheelbase',
-        value: schema.wheelbase
+        value: shape.wheelbase.valor
       }
     ],
     brand: {
-      '@id': `#${schema.brand.slug}`,
+      '@id': `#${shape.marca.slug}`,
       '@type': 'Brand',
-      description: schema.brand.descricao,
-      logo: schema.brand.logo,
-      name: schema.brand.nome
+      description: shape.marca.descricao,
+      logo: shape.marca.logo,
+      name: shape.marca.nome
     },
-    description: schema.description,
-    image: schema.image,
+    description: shape.descricao,
+    image: shape.thumbnnail,
     mainEntityOfPage: {
       '@id': '#webpage',
       '@type': 'WebPage',
       breadcrumb: {
         '@id': '#breadcrumb'
       },
-      description: schema.description,
+      description: shape.descricao,
       inLanguage: settings.app.language,
       isPartOf: {
         '@id': '#website'
       },
-      name: schema.name,
+      name: shape.modelo,
       url: settings.app.url
     },
-    material: schema.material,
-    name: schema.name,
-    size: schema.size
+    material: f
+      .from(shape.material)
+      .pipe(f.or(f.__, []))
+      .pipe(f.map(f.__, f.prop('valor')))
+      .pipe(f.join(f.__, ', '))
+      .done(),
+    name: shape.modelo,
+    size: `${shape.tamanho.valor}"`
   })

@@ -3,7 +3,7 @@ import { setGlobal } from '@kuba/global'
 import { setDescription, setTitle } from '@kuba/markup'
 import { params, redirectTo } from '@kuba/router'
 import component from './component'
-import Schema from './schema'
+import setData from './setData'
 import storage from './storage'
 
 @paint(component)
@@ -17,7 +17,7 @@ class Shape {
   [storage.onResponse] (shape) {
     setTitle(shape.modelo)
     setDescription(shape.descricao)
-    Schema.create(shape)
+    setData(shape)
     setGlobal({ shape })
     return this
   }
