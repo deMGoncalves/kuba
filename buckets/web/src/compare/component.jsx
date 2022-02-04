@@ -3,6 +3,7 @@ import container from '@kuba/container'
 import Site from '@kuba/site'
 import Breadcrumb from './breadcrumb'
 import Concave from './concave'
+import Descricao from './descricao'
 import Material from './material'
 import Modelo from './modelo'
 import Nose from './nose'
@@ -23,6 +24,7 @@ export default () =>
       <Nose />
       <Tail />
       <Concave />
+      <Descricao />
     </container.Div>
     <Breadcrumb />
   </Site>
