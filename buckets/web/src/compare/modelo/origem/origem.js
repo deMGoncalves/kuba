@@ -8,12 +8,16 @@ class Origem {
   #position
   #valor
 
+  get position () {
+    return this.#position
+  }
+
   get url () {
     return mapper[this.valor]
   }
 
   get valor () {
-    return this.#valor ??= Shape[this.#position]?.marca?.origem?.valor
+    return this.#valor ??= Shape[this.position]?.marca?.origem?.valor
   }
 
   constructor (props) {

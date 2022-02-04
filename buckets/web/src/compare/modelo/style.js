@@ -20,4 +20,8 @@ export default styled.style`
     display: flex;
     gap: var(--spacing_inset-xs);
   }
+
+  .modelo__div.slave {
+    justify-content: flex-end;
+  }
 `

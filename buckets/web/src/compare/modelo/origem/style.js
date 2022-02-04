@@ -6,4 +6,8 @@ export default styled.style`
     display: flex;
     gap: var(--spacing_inset-nano);
   }
+
+  .origem.slave {
+    flex-direction: row-reverse;
+  }
 `
