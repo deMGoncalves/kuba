@@ -3,11 +3,11 @@ import text from '@kuba/text'
 import style from './style'
 
 export default (concave) =>
-  <>
-    <hgroup className={style.concave__hgroup}>
-      <text.H2 className={style.concave__h2} master darker xs bold>Concave</text.H2>
-      <text.P className={style.concave__p} master xxxs>Inclinação simétrica das laterais do shape</text.P>
-    </hgroup>
-    <text.Data className={[style.concave__data, style.master]} master xxxs bold>{concave.master}</text.Data>
-    <text.Data className={style.concave__data} master xxxs bold>{concave.slave}</text.Data>
-  </>
+  <section className={style.concave}>
+    <text.Data className={style.concave__data} master darker sm bold>{concave.master}</text.Data>
+    <dl className={style.concave__dl}>
+      <text.Dt className={style.concave__text} master darker xxs medium>Concave</text.Dt>
+      <text.Dd className={style.concave__text} master xxxs>Inclinação simétrica das laterais do shape</text.Dd>
+    </dl>
+    <text.Data className={style.concave__data} master darker sm bold>{concave.slave}</text.Data>
+  </section>
