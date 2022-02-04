@@ -17,7 +17,7 @@ class Origem {
   }
 
   constructor (props) {
-    this.#position = props.master ? 'master' : 'slave'
+    this.#position = props.slave ? 'slave' : 'master'
   }
 }
 
