@@ -1,19 +1,27 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .wheelbase__hgroup {
+  .wheelbase {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing_inset-quarck);
+    gap: var(--spacing_inset-lg);
     grid-column: 1 / 3;
   }
 
-  .wheelbase__h2 {
-    line-height: var(--line-height-md) !important;
+  .wheelbase__dl {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-quarck);
+    width: 50%;
   }
 
-  .wheelbase__p {
-    line-height: var(--line-height-lg) !important;
+  .wheelbase__text {
+    line-height: var(--line-height-md) !important;
+    text-align: center;
+  }
+
+  .wheelbase__data {
+    width: 25%;
   }
 
   .wheelbase__data.master {
