@@ -1,19 +1,27 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .tamanho__hgroup {
+  .tamanho {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing_inset-quarck);
+    gap: var(--spacing_inset-lg);
     grid-column: 1 / 3;
   }
 
-  .tamanho__h2 {
-    line-height: var(--line-height-md) !important;
+  .tamanho__dl {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-quarck);
+    width: 50%;
   }
 
-  .tamanho__p {
-    line-height: var(--line-height-lg) !important;
+  .tamanho__text {
+    line-height: var(--line-height-md) !important;
+    text-align: center;
+  }
+
+  .tamanho__data {
+    width: 25%;
   }
 
   .tamanho__data.master {

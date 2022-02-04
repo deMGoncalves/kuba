@@ -3,11 +3,11 @@ import text from '@kuba/text'
 import style from './style'
 
 export default (tamanho) =>
-  <>
-    <hgroup className={style.tamanho__hgroup}>
-      <text.H2 className={style.tamanho__h2} master darker xs bold>Tamanho</text.H2>
-      <text.P className={style.tamanho__p} master xxxs>Medida em polegadas do comprimento de desenvolvido do shape</text.P>
-    </hgroup>
-    <text.Data className={[style.tamanho__data, style.master]} master xxs bold>{tamanho.master}</text.Data>
-    <text.Data className={style.tamanho__data} master xxs bold>{tamanho.slave}</text.Data>
-  </>
+  <section className={style.tamanho}>
+    <text.Data className={[style.tamanho__data, style.master]} master darker sm bold>{tamanho.master}</text.Data>
+    <dl className={style.tamanho__dl}>
+      <text.Dt className={style.tamanho__text} master darker xxs medium>Tamanho</text.Dt>
+      <text.Dd className={style.tamanho__text} master xxxs>Medida do comprimento de desenvolvido do shape</text.Dd>
+    </dl>
+    <text.Data className={style.tamanho__data} master darker sm bold>{tamanho.slave}</text.Data>
+  </section>
