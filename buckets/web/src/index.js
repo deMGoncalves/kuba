@@ -7,6 +7,7 @@ import '@kuba/istruthy'
 import '@kuba/prevent'
 import '@kuba/stop'
 
+import '@kuba/adopt'
 import '@kuba/adsense'
 import '@kuba/boma'
 import '@kuba/gtm'
