@@ -30,7 +30,7 @@ export default (cookies) =>
         <P>Os cookies de desempenho ou cookies analíticos são utilizados para obter informações anonimizadas acerca dos perfis dos usuários que visitam o nosso site.  É por meio deles que conseguimos medir a experiência dos visitantes, a fim de melhorar o desempenho e navegabilidade do nosso site. Se você não permitir a utilização desses cookies, não saberemos quando você visitou nosso site, nem, tampouco, de que maneira o utilizou.</P>
       </Block>
       <Block>
-        <H2>Cookies de publicidade (1)</H2>
+        <H2>Cookies de publicidade (0)</H2>
         <P>Os cookies de publicidade são utilizados para se criar um perfil dos visitantes e de suas preferências. É por meio dessas informações que conseguimos identificar as suas escolhas e utilizá-las em campanhas de marketing ou em outros serviços similares. Podem ser usados, também, por terceiras partes para construir um perfil sobre os seus interesses e mostrar-lhe anúncios relevantes em outros websites. Sem a utilização desses cookies, não conseguiremos ser mais assertivos no oferecimento de produtos e serviços constantes em nosso site.</P>
       </Block>
       <Block>
