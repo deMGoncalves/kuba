@@ -1,3 +1,4 @@
+export { default as adOpt } from './adOpt'
 export { default as adSense } from './adSense'
 export { default as api } from './api'
 export { default as app } from './app'
