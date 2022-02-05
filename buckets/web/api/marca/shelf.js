@@ -7,6 +7,9 @@ export default async function (_request, response) {
       *,
       origem (*)
     `)
+    .order('nome', {
+      ascending: true
+    })
 
   response.setHeader('Cache-Control', 'public, max-age=86400')
   response.json({ data, error })
