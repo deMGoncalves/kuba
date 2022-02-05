@@ -30,7 +30,7 @@ export default (shape) =>
       {
         '@type': 'PropertyValue',
         name: 'Wheelbase',
-        value: shape.wheelbase?.valor
+        value: `${shape.wheelbase?.valor}"`
       }
     ],
     brand: {
