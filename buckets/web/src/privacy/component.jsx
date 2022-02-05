@@ -4,10 +4,10 @@ import Site from '@kuba/site'
 import text from '@kuba/text'
 import Block from './block'
 import Breadcrumb from './breadcrumb'
-import Email from './email'
+import Contato from './contato'
+import Cookies from './cookies'
 import H2 from './h2'
 import Lei from './lei'
-import Link from './link'
 import P from './p'
 import style from './style'
 
@@ -37,15 +37,15 @@ export default (privacy) =>
       </Block>
       <Block>
         <H2>Com quem compartilhamos os seus dados pessoais</H2>
-        <P>Os dados pessoais dos usuários podem ser compartilhados com terceiros, especialmente, por meio da instalação de cookies de terceira parte. Atualmente, identificamos o compartilhamento de dados pessoais para as seguintes partes interessadas: Google Analytics. Para saber mais, acesse nossa <Link />.</P>
+        <P>Os dados pessoais dos usuários podem ser compartilhados com terceiros, especialmente, por meio da instalação de cookies de terceira parte. Atualmente, identificamos o compartilhamento de dados pessoais para as seguintes partes interessadas: Google Analytics. Para saber mais, acesse nossa <Cookies />.</P>
       </Block>
       <Block>
         <H2>Direitos dos usuários</H2>
-        <P>Todos os usuários têm direito a obter da Kuba, a qualquer momento, sem o pagamento de qualquer taxa, mediante simples requisição, por meio do e-mail <Email /> informações acerca do tratamento de seus dados pessoais, especialmente, no que diz respeito à confirmação da existência de tratamento, ao acesso, à correção de dados incompletos, inexatos ou desatualizados, à anonimização, ao bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com o disposto em regulamentações legais, à portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa, de acordo com a regulamentação da autoridade nacional, observados os segredos comercial e industrial, à eliminação dos dados pessoais tratados com o consentimento do titular, à informação das entidades públicas e privadas com as quais o controlador realizou uso compartilhado de dados, à informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa e à revogação do consentimento, nos moldes da <Lei />.</P>
+        <P>Todos os usuários têm direito a obter da Kuba, a qualquer momento, sem o pagamento de qualquer taxa, mediante simples requisição, por meio do e-mail <Contato /> informações acerca do tratamento de seus dados pessoais, especialmente, no que diz respeito à confirmação da existência de tratamento, ao acesso, à correção de dados incompletos, inexatos ou desatualizados, à anonimização, ao bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com o disposto em regulamentações legais, à portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa, de acordo com a regulamentação da autoridade nacional, observados os segredos comercial e industrial, à eliminação dos dados pessoais tratados com o consentimento do titular, à informação das entidades públicas e privadas com as quais o controlador realizou uso compartilhado de dados, à informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa e à revogação do consentimento, nos moldes da <Lei />.</P>
       </Block>
       <Block>
         <H2>Cookies</H2>
-        <P>Para que possamos proporcionar uma melhor experiência aos usuários do nosso site, utilizamos pequenos arquivos de texto chamados de cookies. Para saber mais acesse a nossa <Link />.</P>
+        <P>Para que possamos proporcionar uma melhor experiência aos usuários do nosso site, utilizamos pequenos arquivos de texto chamados de cookies. Para saber mais acesse a nossa <Cookies />.</P>
       </Block>
     </container.Article>
     <Breadcrumb />

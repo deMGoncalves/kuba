@@ -7,13 +7,13 @@ import data from './data'
 
 @paint(component)
 @jsonld(data)
-class Privacy {
+class Cookies {
   get description () {
     return 'Nós utilizamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de acordo com o seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento'
   }
 
   get title () {
-    return 'Política de Privacidade'
+    return 'Política de Cookies'
   }
 
   @didMount
@@ -24,4 +24,4 @@ class Privacy {
   }
 }
 
-export default Privacy
+export default Cookies

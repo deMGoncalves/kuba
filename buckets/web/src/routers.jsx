@@ -27,6 +27,11 @@ router('/politica-de-privacidade', async function privacy () {
   render(<Privacy />)
 })
 
+router('/politica-de-cookies', async function cookies () {
+  const { default: Cookies } = await import('./cookies' /* webpackChunkName: "cookies" */)
+  render(<Cookies />)
+})
+
 router('/:marca', async function marca () {
   const { default: Marca } = await import('./marca' /* webpackChunkName: "marca" */)
   render(<Marca />)
