@@ -30,15 +30,15 @@ export default (shape) =>
       {
         '@type': 'PropertyValue',
         name: 'Wheelbase',
-        value: shape.wheelbase.valor
+        value: `${shape.wheelbase?.valor}"`
       }
     ],
     brand: {
-      '@id': `#${shape.marca.slug}`,
+      '@id': `#${shape.marca?.slug}`,
       '@type': 'Brand',
-      description: shape.marca.descricao,
-      logo: shape.marca.logo,
-      name: shape.marca.nome
+      description: shape.marca?.descricao,
+      logo: shape.marca?.logo,
+      name: shape.marca?.nome
     },
     description: shape.descricao,
     image: shape.thumbnnail,
@@ -63,5 +63,5 @@ export default (shape) =>
       .pipe(f.join(f.__, ', '))
       .done(),
     name: shape.modelo,
-    size: `${shape.tamanho.valor}"`
+    size: `${shape.tamanho?.valor}"`
   })
