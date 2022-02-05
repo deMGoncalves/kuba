@@ -25,8 +25,8 @@ class Tamanho {
 
   static create (shape) {
     return new Tamanho(
-      shape.tamanho.valor,
-      shape.wheelbase.valor
+      shape.tamanho?.valor,
+      shape.wheelbase?.valor
     )
   }
 
