@@ -13,12 +13,8 @@ class Modelo {
     this.#valor = valor
   }
 
-  static create (valor) {
-    return new Modelo(valor)
-  }
-
-  static stub () {
-    return new Modelo()
+  static create (shape) {
+    return new Modelo(shape.modelo)
   }
 }
 

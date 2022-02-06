@@ -17,7 +17,7 @@ export default styled.style`
   .shape__div {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-quarck);
+    gap: var(--spacing_inset-nano);
     padding: var(--spacing_inset-xs);
     padding-right: 58px;
     width: 61.8%;

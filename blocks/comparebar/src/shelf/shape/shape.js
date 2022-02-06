@@ -2,32 +2,39 @@ import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
 import actions from './actions'
 import component from './component'
-import Laminas from './laminas'
+import Marca from './marca'
 import Modelo from './modelo'
+import Tamanho from './tamanho'
 
 @paint(component)
 class Shape {
   #id
-  #laminas
+  #marca
   #modelo
+  #tamanho
   #thumbnail
 
-  get laminas () {
-    return this.#laminas
+  get marca () {
+    return this.#marca
   }
 
   get modelo () {
     return this.#modelo
   }
 
+  get tamanho () {
+    return this.#tamanho
+  }
+
   get thumbnail () {
     return this.#thumbnail
   }
 
-  constructor (id, laminas, modelo, thumbnail) {
+  constructor (id, marca, modelo, tamanho, thumbnail) {
     this.#id = id
-    this.#laminas = laminas
+    this.#marca = marca
     this.#modelo = modelo
+    this.#tamanho = tamanho
     this.#thumbnail = thumbnail
   }
 
@@ -48,8 +55,9 @@ class Shape {
   static create (shape) {
     return new Shape(
       shape.id,
-      Laminas.create(shape.laminas),
-      Modelo.create(shape.modelo),
+      Marca.create(shape),
+      Modelo.create(shape),
+      Tamanho.create(shape),
       shape.thumbnail
     )
   }

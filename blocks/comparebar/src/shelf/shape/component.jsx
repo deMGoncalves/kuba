@@ -9,8 +9,9 @@ export default (shape) =>
       <source srcSet={shape.thumbnail} slot='sources' />
     </Picture>
     <div className={style.shape__div}>
+      {shape.marca}
       {shape.modelo}
-      {shape.laminas}
+      {shape.tamanho}
     </div>
     <button.icon.Close className={style.shape__button} onClick={() => shape.remove()} />
   </section>
