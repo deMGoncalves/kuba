@@ -1,4 +1,4 @@
-import { paint, repaint } from '@kuba/h'
+import { didUpdate, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import jsonld from '@kuba/jsonld'
 import { urlFor } from '@kuba/router'
@@ -36,6 +36,14 @@ class Search {
   @scroll.lock
   open () {
     this.#opened = f.T()
+    return this
+  }
+
+  @didUpdate
+  [f.dunder.update] () {
+    this.opened && (
+      f.first(this[f.dunder.tag].children.list).element.querySelector('input').focus()
+    )
     return this
   }
 }
