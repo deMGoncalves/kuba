@@ -37,8 +37,8 @@ export default styled.style`
   .searchbar__input {
     -webkit-appearance: none;
     appearance: none;
-    background-color: transparent;
-    border: var(--border-width-thin) solid var(--color-master-darkest);
+    background-color: var(--color-master-lighter);
+    border: var(--border-width-hairline) solid var(--color-master-light);
     border-radius: var(--border-radius-pill);
     color: var(--color-master-darker);
     font-size: var(--font-size-xxs);
