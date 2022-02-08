@@ -20,6 +20,7 @@ export default styled.style`
 
   .material__div {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing_inset-xs);
   }
 
