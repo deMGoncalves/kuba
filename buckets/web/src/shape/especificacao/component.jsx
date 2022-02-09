@@ -2,6 +2,7 @@ import h from '@kuba/h'
 import container from '@kuba/container'
 import text from '@kuba/text'
 import Concave from './concave'
+import Lixa from './lixa'
 import Nose from './nose'
 import style from './style'
 import Tail from './tail'
@@ -13,5 +14,6 @@ export default () =>
       <Nose />
       <Tail />
       <Concave />
+      <Lixa />
     </div>
   </container.Section>
