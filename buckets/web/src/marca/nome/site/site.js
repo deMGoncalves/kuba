@@ -1,5 +1,4 @@
 import { paint, repaint } from '@kuba/h'
-import * as f from '@kuba/f'
 import component from './component'
 import effect from './effect'
 
@@ -8,17 +7,8 @@ import effect from './effect'
 class Site {
   #valor
 
-  get href () {
-    return this.#valor
-  }
-
   get valor () {
-    return f
-      .from(this.#valor)
-      .pipe(f.or(f.__, ''))
-      .pipe(f.replace(f.__, /https:\/\//, ''))
-      .pipe(f.replace(f.__, /\//, ''))
-      .done()
+    return this.#valor ??= ''
   }
 
   @repaint
