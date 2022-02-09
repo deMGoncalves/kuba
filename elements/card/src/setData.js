@@ -41,7 +41,7 @@ export default (shape) =>
       name: shape.marca?.nome
     },
     description: shape.descricao,
-    image: shape.thumbnnail,
+    image: shape.thumbnail,
     mainEntityOfPage: {
       '@id': '#webpage',
       '@type': 'WebPage',
