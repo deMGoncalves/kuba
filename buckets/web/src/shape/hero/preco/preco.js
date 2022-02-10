@@ -2,7 +2,7 @@ import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import component from './component'
 import effect from './effect'
-import real from './real'
+import moeda from './moeda'
 
 @paint(component)
 @effect
@@ -19,9 +19,11 @@ class Preco {
   }
 
   @repaint
-  [effect.onChange] (valor) {
-    this.#empty = f.isFalsy(valor)
-    this.#valor = real.format(valor)
+  [effect.onChange] (valor, origem) {
+    valor && (
+      this.#empty = f.isFalsy(valor),
+      this.#valor = moeda(origem)?.format(valor)
+    )
     return this
   }
 }
