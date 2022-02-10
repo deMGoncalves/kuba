@@ -1,4 +1,5 @@
 import { paint } from '@kuba/h'
+import * as f from '@kuba/f'
 import component from './component'
 
 @paint(component)
@@ -11,12 +12,20 @@ class Tamanho {
   }
 
   get wheelbase () {
-    return `${this.#wheelbase}"`
+    return this.#wheelbase
+      ? f.add(this.#wheelbase, this[f.dunder.medida](this.#wheelbase))
+      : ''
   }
 
   constructor (valor, wheelbase) {
     this.#valor = valor
     this.#wheelbase = wheelbase
+  }
+
+  [f.dunder.medida] (value) {
+    return f.test(/N\/D/, value)
+      ? ''
+      : '"'
   }
 
   static create (shape) {
