@@ -6,6 +6,7 @@ import Lixa from './lixa'
 import Nose from './nose'
 import style from './style'
 import Tail from './tail'
+import Wells from './wells'
 
 export default () =>
   <container.Section className={style.especificacao}>
@@ -14,6 +15,7 @@ export default () =>
       <Nose />
       <Tail />
       <Concave />
+      <Wells />
       <Lixa />
     </div>
   </container.Section>
