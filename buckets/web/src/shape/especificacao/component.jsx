@@ -4,6 +4,7 @@ import text from '@kuba/text'
 import Concave from './concave'
 import Flares from './flares'
 import Lixa from './lixa'
+import Recortes from './recortes'
 import Nose from './nose'
 import style from './style'
 import Tail from './tail'
@@ -18,6 +19,7 @@ export default () =>
       <Concave />
       <Wells />
       <Flares />
+      <Recortes />
       <Lixa />
     </div>
   </container.Section>
