@@ -5,6 +5,7 @@ import Concave from './concave'
 import Flares from './flares'
 import Lixa from './lixa'
 import Recortes from './recortes'
+import Montagem from './montagem'
 import Nose from './nose'
 import style from './style'
 import Tail from './tail'
@@ -20,6 +21,7 @@ export default () =>
       <Wells />
       <Flares />
       <Recortes />
+      <Montagem />
       <Lixa />
     </div>
   </container.Section>
