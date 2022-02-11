@@ -6,33 +6,9 @@ export default (shape) =>
   push({
     '@id': `#${shape.id}`,
     '@type': 'Product',
-    additionalProperty: [
-      {
-        '@type': 'PropertyValue',
-        name: 'Concave',
-        value: shape.concave
-      },
-      {
-        '@type': 'PropertyValue',
-        name: 'Lixa',
-        value: shape.lixa
-      },
-      {
-        '@type': 'PropertyValue',
-        name: 'Nose',
-        value: shape.nose
-      },
-      {
-        '@type': 'PropertyValue',
-        name: 'Tail',
-        value: shape.tail
-      },
-      {
-        '@type': 'PropertyValue',
-        name: 'Wheelbase',
-        value: `${shape.wheelbase?.valor}"`
-      }
-    ],
+    additionalProperty: {
+      '@id': '#additionalproperty'
+    },
     brand: {
       '@id': `#${shape.marca?.slug}`,
       '@type': 'Brand',
