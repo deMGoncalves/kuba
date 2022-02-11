@@ -6,13 +6,14 @@ export default async function (request, response) {
     .from('shape')
     .select(`
       *,
-      tipo (*),
+      flag (*),
       marca (*, origem (*)),
-      tamanho (*),
       material (*),
-      wheelbase (*),
+      moeda(*),
       montagem (*),
-      flag (*)
+      tamanho (*),
+      tipo (*),
+      wheelbase (*)
     `)
     .eq('tamanho', tamanho)
     .in('material.id', material)
