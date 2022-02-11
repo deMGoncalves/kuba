@@ -6,6 +6,6 @@ export default (value) =>
       '@id': '#additionalproperty',
       '@type': 'PropertyValue',
       name: 'Concave',
-      value
+      value: 'Sim'
     })
   )

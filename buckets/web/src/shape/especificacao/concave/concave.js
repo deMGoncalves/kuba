@@ -22,7 +22,7 @@ class Concave {
   [effect.onChange] (valor) {
     this.#pristine = f.F()
     this.#valor = valor
-    f.isTruthy(valor) && setData(valor)
+    setData(valor)
     return this
   }
 }
