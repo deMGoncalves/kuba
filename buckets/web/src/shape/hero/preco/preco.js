@@ -3,6 +3,7 @@ import * as f from '@kuba/f'
 import component from './component'
 import effect from './effect'
 import moeda from './moeda'
+import setData from './setData'
 
 @paint(component)
 @effect
@@ -19,11 +20,10 @@ class Preco {
   }
 
   @repaint
-  [effect.onChange] (valor, origem) {
-    valor && (
-      this.#empty = f.isFalsy(valor),
-      this.#valor = moeda(origem)?.format(valor)
-    )
+  [effect.onChange] (valor, origem, site) {
+    this.#empty = f.isFalsy(valor)
+    this.#valor = moeda(origem)?.format(valor)
+    setData(valor, origem, site)
     return this
   }
 }
