@@ -8,6 +8,7 @@ import Lixa from './lixa'
 import Recortes from './recortes'
 import Montagem from './montagem'
 import Nose from './nose'
+import Simetrico from './simetrico'
 import style from './style'
 import Tail from './tail'
 import Wells from './wells'
@@ -24,6 +25,7 @@ export default () =>
       <Recortes />
       <Montagem />
       <Flex />
+      <Simetrico />
       <Lixa />
     </div>
   </container.Section>
