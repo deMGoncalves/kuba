@@ -3,7 +3,6 @@ import { redirectTo } from '@kuba/router'
 import component from './component'
 import Marca from './marca'
 import Modelo from './modelo'
-import setData from './setData'
 import Stub from './stub'
 import Tamanho from './tamanho'
 
@@ -45,7 +44,6 @@ class Shape {
   }
 
   static create (shape) {
-    setData(shape)
     return new Shape(
       Marca.create(shape),
       Modelo.create(shape),
