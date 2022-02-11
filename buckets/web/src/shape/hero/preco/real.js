@@ -6,7 +6,7 @@ const real = new Intl.NumberFormat('pt-BR', {
 })
 
 f.assign(real, {
-  is: f.equal('pt-BR')
+  is: f.equal('BRL')
 })
 
 export default real

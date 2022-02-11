@@ -39,5 +39,8 @@ export default (shape) =>
       .pipe(f.join(f.__, ', '))
       .done(),
     name: shape.modelo,
+    offers: {
+      '@id': '#offers'
+    },
     size: `${shape.tamanho?.valor}"`
   })

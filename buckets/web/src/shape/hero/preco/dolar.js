@@ -6,7 +6,7 @@ const dolar = new Intl.NumberFormat('en-US', {
 })
 
 f.assign(dolar, {
-  is: f.equal('en-US')
+  is: f.equal('USD')
 })
 
 export default dolar
