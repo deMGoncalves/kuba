@@ -3,6 +3,7 @@ import container from '@kuba/container'
 import text from '@kuba/text'
 import Concave from './concave'
 import Flares from './flares'
+import Flex from './flex'
 import Lixa from './lixa'
 import Recortes from './recortes'
 import Montagem from './montagem'
@@ -22,6 +23,7 @@ export default () =>
       <Flares />
       <Recortes />
       <Montagem />
+      <Flex />
       <Lixa />
     </div>
   </container.Section>
