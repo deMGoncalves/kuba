@@ -5,13 +5,13 @@ import component from './component'
 @paint(component)
 class Falres {
   get master () {
-    return Shape.master?.flares
+    return Shape.master?.wheel_flares
       ? 'Sim'
       : 'Não'
   }
 
   get slave () {
-    return Shape.slave?.flares
+    return Shape.slave?.wheel_flares
       ? 'Sim'
       : 'Não'
   }
