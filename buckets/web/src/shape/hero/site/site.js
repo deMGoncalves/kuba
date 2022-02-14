@@ -6,8 +6,15 @@ import effect from './effect'
 @paint(component)
 @effect
 class Site {
+  #preco
   #pristine
   #url
+
+  get content () {
+    return this.#preco
+      ? Site.comPreco
+      : Site.semPreco
+  }
 
   get pristine () {
     return this.#pristine ??= f.T()
@@ -17,13 +24,22 @@ class Site {
     return this.#url ??= ''
   }
 
+  static get comPreco () {
+    return 'Comprar'
+  }
+
+  static get semPreco () {
+    return 'Ver mais'
+  }
+
   redirect () {
     window.open(this.url, '_blank')
     return this
   }
 
   @repaint
-  [effect.onChange] (url) {
+  [effect.onChange] (url, preco) {
+    this.#preco = f.isTruthy(preco)
     this.#pristine = f.F()
     this.#url = url
     return this

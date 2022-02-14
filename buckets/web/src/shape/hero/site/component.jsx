@@ -9,8 +9,8 @@ export default (site) =>
   <>
     <Hide when={site.pristine}>
       <a className={style.site} href={site.url} onClick:prevent={() => site.redirect()} target='_blank'>
-        Comprar
-        <icon.Share />
+        {site.content}
+        <icon.Share onColor />
       </a>
     </Hide>
     <Show when={site.pristine}>
