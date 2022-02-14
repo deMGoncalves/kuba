@@ -3,7 +3,7 @@ import { Shape } from '@kuba/web/src/compare'
 import component from './component'
 
 @paint(component)
-class Falres {
+class Flares {
   get master () {
     return Shape.master?.wheel_flares
       ? 'Sim'
@@ -17,4 +17,4 @@ class Falres {
   }
 }
 
-export default Falres
+export default Flares
