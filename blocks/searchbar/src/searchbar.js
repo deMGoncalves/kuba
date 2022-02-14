@@ -22,7 +22,7 @@ class Search {
   }
 
   get placeholder () {
-    return 'Procure pelo melhor shape...'
+    return 'O que você está procurando?'
   }
 
   @repaint
