@@ -5,13 +5,13 @@ import component from './component'
 @paint(component)
 class Wells {
   get master () {
-    return Shape.master?.concave
+    return Shape.master?.wheel_wells
       ? 'Sim'
       : 'Não'
   }
 
   get slave () {
-    return Shape.slave?.concave
+    return Shape.slave?.wheel_wells
       ? 'Sim'
       : 'Não'
   }
