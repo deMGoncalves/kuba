@@ -11,6 +11,7 @@ import style from './style'
 import Tail from './tail'
 import Tamanho from './tamanho'
 import Thumbnail from './thumbnail'
+import Wells from './wells'
 import Wheelbase from './wheelbase'
 
 export default () =>
@@ -24,6 +25,7 @@ export default () =>
       <Nose />
       <Tail />
       <Concave />
+      <Wells />
       <Descricao />
     </container.Div>
     <Breadcrumb />
