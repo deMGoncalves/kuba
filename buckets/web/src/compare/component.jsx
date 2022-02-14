@@ -4,6 +4,7 @@ import Site from '@kuba/site'
 import Breadcrumb from './breadcrumb'
 import Concave from './concave'
 import Descricao from './descricao'
+import Flares from './flares'
 import Material from './material'
 import Modelo from './modelo'
 import Nose from './nose'
@@ -26,6 +27,7 @@ export default () =>
       <Tail />
       <Concave />
       <Wells />
+      <Flares />
       <Descricao />
     </container.Div>
     <Breadcrumb />
