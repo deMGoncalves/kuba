@@ -3,7 +3,7 @@ import styled from '@kuba/styled'
 export default styled.style`
   .vs {
     align-items: center;
-    background-color: var(--color-master-darker);
+    background-color: var(--color-primary);
     border-radius: var(--border-radius-circular);
     display: flex;
     height: 68px;
