@@ -1,4 +1,5 @@
 import h, { Fragment } from '@kuba/h'
+import Cookiebar from '@kuba/cookiebar'
 import Comparebar from '@kuba/comparebar'
 import Footer from '@kuba/footer'
 import Searchbar from '@kuba/searchbar'
@@ -15,6 +16,7 @@ export default (site, children) =>
     </main>
     <Searchbar />
     <Comparebar />
+    <Cookiebar />
     <Zoom />
     <Footer />
   </>
