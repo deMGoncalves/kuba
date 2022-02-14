@@ -9,12 +9,11 @@ import events from './events'
 class Cookiebar {
   #opened
 
-  get aceite () {
-    return cookie.getItem(Cookiebar.key)
-  }
-
   get opened () {
-    return this.#opened ??= f.equal(this.aceite, undefined)
+    return this.#opened ??= f.equal(
+      cookie.getItem(Cookiebar.key),
+      undefined
+    )
   }
 
   static get key () {
