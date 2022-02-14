@@ -15,15 +15,13 @@ export default styled.style`
 
   .footer__link {
     align-items: center;
+    background-color: var(--color-master-lighter);
     border-radius: var(--border-radius-pill);
     display: inline-flex;
     height: 34px;
     justify-content: center;
     text-decoration: none;
+    text-transform: uppercase;
     width: 298px;
-  }
-
-  .footer__link:hover {
-    background-color: var(--color-master-lighter);
   }
 `
