@@ -7,13 +7,13 @@ class Flares {
   get master () {
     return Shape.master?.wheel_flares
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 
   get slave () {
     return Shape.slave?.wheel_flares
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 }
 

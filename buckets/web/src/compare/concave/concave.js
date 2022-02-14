@@ -7,13 +7,13 @@ class Concave {
   get master () {
     return Shape.master?.concave
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 
   get slave () {
     return Shape.slave?.concave
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 }
 

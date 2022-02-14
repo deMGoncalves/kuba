@@ -7,13 +7,13 @@ class Wells {
   get master () {
     return Shape.master?.wheel_wells
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 
   get slave () {
     return Shape.slave?.wheel_wells
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 }
 

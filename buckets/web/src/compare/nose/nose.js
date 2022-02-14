@@ -7,13 +7,13 @@ class Nose {
   get master () {
     return Shape.master?.nose
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 
   get slave () {
     return Shape.slave?.nose
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 }
 

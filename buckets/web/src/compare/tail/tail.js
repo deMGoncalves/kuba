@@ -7,13 +7,13 @@ class Tail {
   get master () {
     return Shape.master?.tail
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 
   get slave () {
     return Shape.slave?.tail
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 }
 

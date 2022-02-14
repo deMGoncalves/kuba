@@ -7,13 +7,13 @@ class Recortes {
   get master () {
     return Shape.master?.cut_outs
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 
   get slave () {
     return Shape.slave?.cut_outs
       ? 'Sim'
-      : 'Não'
+      : '-'
   }
 }
 
