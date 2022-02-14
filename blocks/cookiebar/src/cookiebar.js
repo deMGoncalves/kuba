@@ -1,6 +1,5 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
-import cookie from '@kuba/cookie'
 import component from './component'
 import events from './events'
 
@@ -11,8 +10,8 @@ class Cookiebar {
 
   get opened () {
     return this.#opened ??= f.equal(
-      cookie.getItem(Cookiebar.key),
-      undefined
+      localStorage.getItem(Cookiebar.key),
+      null
     )
   }
 
@@ -22,14 +21,14 @@ class Cookiebar {
 
   @repaint
   aceitar () {
-    cookie.setItem(Cookiebar.key, 'yes')
+    localStorage.setItem(Cookiebar.key, 'yes')
     this.#opened = f.F()
     return this
   }
 
   @repaint
   recusar () {
-    cookie.setItem(Cookiebar.key, 'no')
+    localStorage.setItem(Cookiebar.key, 'no')
     this.#opened = f.F()
     return this
   }
