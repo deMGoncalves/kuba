@@ -37,6 +37,7 @@ export default styled.style`
 
   .nav__link {
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   @media (max-width: 768px) {
