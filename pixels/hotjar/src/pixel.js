@@ -3,8 +3,9 @@ import * as f from '@kuba/f'
 import agent from '@kuba/agent'
 import env from '@kuba/env'
 import { hotjar } from '@kuba/settings'
+import accepted from './accepted'
 
-f.and(agent.isUser, env.isProd) && (
+f.and(agent.isUser, env.isProd, accepted) && (
   window._hjSettings = hotjar,
 
   render(
