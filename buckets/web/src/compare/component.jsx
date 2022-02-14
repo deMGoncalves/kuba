@@ -8,6 +8,7 @@ import Flares from './flares'
 import Material from './material'
 import Modelo from './modelo'
 import Nose from './nose'
+import Recortes from './recortes'
 import style from './style'
 import Tail from './tail'
 import Tamanho from './tamanho'
@@ -28,6 +29,7 @@ export default () =>
       <Concave />
       <Wells />
       <Flares />
+      <Recortes />
       <Descricao />
     </container.Div>
     <Breadcrumb />
