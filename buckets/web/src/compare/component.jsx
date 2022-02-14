@@ -7,6 +7,7 @@ import Descricao from './descricao'
 import Flares from './flares'
 import Material from './material'
 import Modelo from './modelo'
+import Montagem from './montagem'
 import Nose from './nose'
 import Recortes from './recortes'
 import style from './style'
@@ -30,6 +31,7 @@ export default () =>
       <Wells />
       <Flares />
       <Recortes />
+      <Montagem />
       <Descricao />
     </container.Div>
     <Breadcrumb />
