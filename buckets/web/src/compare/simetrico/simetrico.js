@@ -6,14 +6,10 @@ import component from './component'
 class Simetrico {
   get master () {
     return Shape.master?.simetrico
-      ? 'Sim'
-      : '-'
   }
 
   get slave () {
     return Shape.slave?.simetrico
-      ? 'Sim'
-      : '-'
   }
 }
 
