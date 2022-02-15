@@ -1,8 +1,8 @@
-import { Show } from '@kuba/h'
+import Show from '@kuba/show'
 import env from '@kuba/env'
 
 export default new Proxy({}, {
   get: (_, ambient) =>
     (_, children) =>
-      Show({ if: env[`is${ambient}`] }, children)
+      Show({ when: env[`is${ambient}`] }, children)
 })
