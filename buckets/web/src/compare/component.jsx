@@ -11,6 +11,7 @@ import Modelo from './modelo'
 import Montagem from './montagem'
 import Nose from './nose'
 import Recortes from './recortes'
+import Simetrico from './simetrico'
 import style from './style'
 import Tail from './tail'
 import Tamanho from './tamanho'
@@ -34,9 +35,7 @@ export default () =>
       <Recortes />
       <Montagem />
       <Flex />
-      {/*
       <Simetrico />
-      */}
       <Descricao />
     </container.Div>
     <Breadcrumb />
