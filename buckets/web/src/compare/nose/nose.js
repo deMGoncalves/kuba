@@ -6,14 +6,10 @@ import component from './component'
 class Nose {
   get master () {
     return Shape.master?.nose
-      ? 'Sim'
-      : '-'
   }
 
   get slave () {
     return Shape.slave?.nose
-      ? 'Sim'
-      : '-'
   }
 }
 
