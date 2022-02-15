@@ -6,14 +6,10 @@ import component from './component'
 class Tail {
   get master () {
     return Shape.master?.tail
-      ? 'Sim'
-      : '-'
   }
 
   get slave () {
     return Shape.slave?.tail
-      ? 'Sim'
-      : '-'
   }
 }
 
