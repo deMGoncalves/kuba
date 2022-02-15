@@ -1,6 +1,7 @@
 export { default as ArrowLeft } from './assets/arrow-left.svg'
 export { default as ArrowLongRight } from './assets/arrow-long-right.svg'
 export { default as Bars } from './assets/bars.svg'
+export { default as Check } from './assets/check.svg'
 export { default as Close } from './assets/close.svg'
 export { default as CloseOnColor } from './assets/close_onColor.svg'
 export { default as Compare } from './assets/compare.svg'
