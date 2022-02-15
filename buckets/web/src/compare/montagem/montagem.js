@@ -5,11 +5,11 @@ import component from './component'
 @paint(component)
 class Montagem {
   get master () {
-    return Shape.master?.montagem?.valor ?? '-'
+    return Shape.master?.montagem?.valor
   }
 
   get slave () {
-    return Shape.slave?.montagem?.valor ?? '-'
+    return Shape.slave?.montagem?.valor
   }
 }
 
