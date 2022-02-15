@@ -1,5 +1,10 @@
 import h from '@kuba/h'
-import style from './style'
+import container from '@kuba/container'
+import Metro from '@kuba/metro'
 
-export default (filter) =>
-  <div className={style.filter}>{filter.name}</div>
+export default () =>
+  <container.Section>
+    <Metro>
+      filtro
+    </Metro>
+  </container.Section>
