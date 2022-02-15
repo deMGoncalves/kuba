@@ -6,14 +6,10 @@ import component from './component'
 class Concave {
   get master () {
     return Shape.master?.concave
-      ? 'Sim'
-      : '-'
   }
 
   get slave () {
     return Shape.slave?.concave
-      ? 'Sim'
-      : '-'
   }
 }
 

@@ -21,4 +21,9 @@ export default styled.style`
   .compare__p {
     line-height: var(--line-height-lg) !important;
   }
+
+  .compare__data {
+    text-align: center;
+    width: 25%;
+  }
 `
