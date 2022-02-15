@@ -5,6 +5,7 @@ import Breadcrumb from './breadcrumb'
 import Concave from './concave'
 import Descricao from './descricao'
 import Flares from './flares'
+import Flex from './flex'
 import Material from './material'
 import Modelo from './modelo'
 import Montagem from './montagem'
@@ -32,6 +33,10 @@ export default () =>
       <Flares />
       <Recortes />
       <Montagem />
+      <Flex />
+      {/*
+      <Simetrico />
+      */}
       <Descricao />
     </container.Div>
     <Breadcrumb />
