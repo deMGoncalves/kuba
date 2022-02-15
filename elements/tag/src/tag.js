@@ -12,10 +12,10 @@ export default styled.button`
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-base);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xxxs);
   font-weight: ${weight};
   gap: var(--spacing_inset-nano);
-  height: 26px;
+  height: 34px;
   justify-content: center;
   letter-spacing: 0.618px;
   padding: 0 var(--spacing_inset-sm);
