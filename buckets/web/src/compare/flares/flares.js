@@ -6,14 +6,10 @@ import component from './component'
 class Flares {
   get master () {
     return Shape.master?.wheel_flares
-      ? 'Sim'
-      : '-'
   }
 
   get slave () {
     return Shape.slave?.wheel_flares
-      ? 'Sim'
-      : '-'
   }
 }
 
