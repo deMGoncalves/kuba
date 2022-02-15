@@ -5,11 +5,11 @@ import component from './component'
 @paint(component)
 class Flex {
   get master () {
-    return Shape.master?.flex?.valor ?? '-'
+    return Shape.master?.flex?.valor
   }
 
   get slave () {
-    return Shape.slave?.flex?.valor ?? '-'
+    return Shape.slave?.flex?.valor
   }
 }
 
