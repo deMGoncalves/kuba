@@ -6,14 +6,10 @@ import component from './component'
 class Wells {
   get master () {
     return Shape.master?.wheel_wells
-      ? 'Sim'
-      : '-'
   }
 
   get slave () {
     return Shape.slave?.wheel_wells
-      ? 'Sim'
-      : '-'
   }
 }
 
