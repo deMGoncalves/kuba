@@ -6,6 +6,7 @@ import * as mapper from './mapper'
 @paint(component)
 class Origem {
   #selected
+  #target
   #valor
 
   get selected () {
@@ -20,18 +21,24 @@ class Origem {
     return this.#valor
   }
 
-  constructor (valor) {
+  static get onChange () {
+    return f.dunder.onChange
+  }
+
+  constructor (valor, target) {
+    this.#target = target
     this.#valor = valor
   }
 
   @repaint
   toggle () {
     this.#selected = f.not(this.selected)
+    this.#target[Origem.onChange]()
     return this
   }
 
-  static create (valor) {
-    return new Origem(valor)
+  static create (target) {
+    return (valor) => new Origem(valor, target)
   }
 }
 
