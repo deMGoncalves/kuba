@@ -1,15 +1,6 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .origem {
-    background-color: var(--color-master-lighter) !important;
-    border-color: var(--color-master-lighter) !important;
-  }
-
-  .origem[len] {
-    border-color: var(--color-master-darker) !important;
-  }
-
   .origem__select {
     display: flex;
     flex-direction: column;
