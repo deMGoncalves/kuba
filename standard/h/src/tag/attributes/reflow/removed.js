@@ -7,7 +7,7 @@ class Removed {
   }
 
   static is (current, attribute) {
-    return f.and(current, f.not(attribute?.value))
+    return f.and(current, f.not(attribute))
   }
 }
 
