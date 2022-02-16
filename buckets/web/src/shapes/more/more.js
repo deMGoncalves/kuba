@@ -8,15 +8,10 @@ import effect from './effect'
 @effect
 class More {
   #content
-  #page
   #visible
 
   get content () {
     return this.#content ??= More.active
-  }
-
-  get page () {
-    return this.#page ??= 1
   }
 
   get visible () {
@@ -35,17 +30,13 @@ class More {
   @action.next
   next () {
     this.#content = More.disable
-    this.#page = f.inc(this.page)
     return this
   }
 
   @repaint
-  [effect.onChange] (shapes) {
+  [effect.onChange] (shapes, page) {
     this.#content = More.active
-    this.#visible = f.equal(
-      f.multiply(this.page, 24),
-      f.len(shapes)
-    )
+    this.#visible = f.equal(f.multiply(page, 24), f.len(shapes))
     return this
   }
 }

@@ -1,25 +1,30 @@
 import * as f from '@kuba/f'
 import http from '@kuba/http'
-import middleware from '@kuba/middleware'
+import middleware, { after } from '@kuba/middleware'
 import * as settings from '@kuba/settings'
 
 const onError = f.dunder.onError
 const onResponse = f.dunder.onResponse
+const storage = middleware(request)
+const pull = after(request)
 
-const storage = middleware((target) =>
+function request (target) {
   http
-    .post(`${settings.api.url}/shape/shelf`, { page: 1 })
+    .post(`${settings.api.url}/shape/shelf`, { page: target.page })
     .then(response => response.json())
     .then(({ data, error }) => (
       error
         ? target[onError]()
         : target[onResponse](data)
     ))
-)
+
+  return target
+}
 
 f.assign(storage, {
   onError,
-  onResponse
+  onResponse,
+  pull
 })
 
 export default storage
