@@ -1,5 +1,4 @@
 import h, { Fragment } from '@kuba/h'
-import ambient from '@kuba/ambient'
 import Filter from '@kuba/filter'
 import Site from '@kuba/site'
 import More from './more'
@@ -10,9 +9,7 @@ export default () =>
   <Site>
     <Fragment slot='main'>
       <Title />
-      <ambient.Dev>
-        <Filter />
-      </ambient.Dev>
+      <Filter />
       <Shelf />
       <More />
     </Fragment>
