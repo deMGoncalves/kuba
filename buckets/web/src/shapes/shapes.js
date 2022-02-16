@@ -14,10 +14,15 @@ import storage from './storage'
 @storage
 @actions
 class Shapes {
+  #filter
   #page
 
   get description () {
     return 'Seja bem vindo! Escolha o melhor shape para o seu setup'
+  }
+
+  get filter () {
+    return this.#filter ??= {}
   }
 
   get page () {
@@ -40,6 +45,13 @@ class Shapes {
       page: this.page,
       shapes: merge(shapes, this)
     })
+    return this
+  }
+
+  @storage.pull
+  [actions.onFilter] (key, value) {
+    this.#page = 1
+    this.#filter = f.assign(this.filter, { [key]: value })
     return this
   }
 
