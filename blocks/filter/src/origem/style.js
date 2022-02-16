@@ -6,6 +6,10 @@ export default styled.style`
     border-color: var(--color-master-lighter) !important;
   }
 
+  .origem[len] {
+    border-color: var(--color-master-darker) !important;
+  }
+
   .origem__select {
     display: flex;
     flex-direction: column;
