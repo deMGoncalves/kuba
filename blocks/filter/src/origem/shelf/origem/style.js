@@ -8,7 +8,7 @@ export default styled.style`
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-nano);
+    gap: var(--spacing_inset-xs);
     padding: var(--spacing_inset-xs);
   }
 
