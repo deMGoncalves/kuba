@@ -41,19 +41,6 @@ class Shapes {
     return this
   }
 
-  [storage.onError] () {
-    redirectTo('shapes')
-    return this
-  }
-
-  [storage.onResponse] (shapes) {
-    setGlobal({
-      page: this.page,
-      shapes: merge(shapes, this)
-    })
-    return this
-  }
-
   @storage.pull
   [actions.onFilter] (key, value) {
     this.#page = 1
@@ -64,6 +51,19 @@ class Shapes {
   @storage.pull
   [actions.onMore] () {
     this.#page = f.inc(this.page)
+    return this
+  }
+
+  [storage.onError] () {
+    redirectTo('shapes')
+    return this
+  }
+
+  [storage.onResponse] (shapes) {
+    setGlobal({
+      page: this.page,
+      shapes: merge(shapes, this)
+    })
     return this
   }
 }
