@@ -3,6 +3,7 @@ import * as f from '@kuba/f'
 import jsonld from '@kuba/jsonld'
 import { setGlobal } from '@kuba/global'
 import { setDescription, setTitle } from '@kuba/markup'
+import { redirectTo } from '@kuba/router'
 import actions from './actions'
 import component from './component'
 import data from './data'
@@ -37,6 +38,11 @@ class Shapes {
   [f.dunder.mount] () {
     setTitle(this.title)
     setDescription(this.description)
+    return this
+  }
+
+  [storage.onError] () {
+    redirectTo('shapes')
     return this
   }
 
