@@ -5,9 +5,9 @@ import text from '@kuba/text'
 import style from './style'
 
 export default (props) =>
-  <tag.Master className={style.tag} onClick={props.onClick} len={props.len} darker medium>
+  <tag.Primary className={style.tag} onClick={props.onClick} len={props.len} darker medium>
     Origem
     <Show when={props.len}>
-      <text.Span master darker xxxs bold>+{props.len}</text.Span>
+      <text.Span primary darker xxxs medium>+{props.len}</text.Span>
     </Show>
-  </tag.Master>
+  </tag.Primary>
