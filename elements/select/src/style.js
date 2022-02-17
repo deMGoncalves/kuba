@@ -21,7 +21,7 @@ export default styled.style`
     z-index: 1;
   }
 
-  .select[opened=true] {
+  .select[opened] {
     opacity: 1;
     transform: translate(0, calc(100vh - 466px));
   }
@@ -35,7 +35,7 @@ export default styled.style`
       width: 377px;
     }
 
-    .select[opened=true] {
+    .select[opened] {
       transform: translate(0, 0);
     }
   }
@@ -50,7 +50,7 @@ export default styled.style`
     z-index: 1;
   }
 
-  .select__overlayer[opened=true] {
+  .select__overlayer[opened] {
     display: block;
   }
 
