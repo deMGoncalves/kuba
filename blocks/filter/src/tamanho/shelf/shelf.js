@@ -1,11 +1,13 @@
 import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
 import echo from '@kuba/echo'
+import props from '@kuba/props'
 import component from './component'
 import Tamanho from './tamanho'
 import schema from './schema.json'
 
 @paint(component)
+@props
 class Shelf {
   #tamanhos
 

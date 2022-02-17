@@ -12,6 +12,6 @@ export default (tamanho) =>
     <Select className={style.tamanho__select} onClose={() => tamanho.close()} opened={tamanho.opened}>
       <Back onClick={() => tamanho.close()} />
       <Header />
-      <Shelf />
+      <Shelf className={style.tamanho__shelf} />
     </Select>
   </>
