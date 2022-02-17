@@ -5,7 +5,7 @@ import text from '@kuba/text'
 import style from './style'
 
 export default (props) =>
-  <tag.Master className={style.tag} onClick={props.onClick} len={props.len} darker medium>
+  <tag.Master className={style.tag} onClick={props.onClick} len:isTruthy={props.len} darker medium>
     Tamanho
     <Show when={props.len}>
       <text.Span master darker xxxs medium>+{props.len}</text.Span>
