@@ -7,36 +7,33 @@ export default styled.style`
     bottom: 0;
     box-shadow: 0 -10px 37px 0 rgba(0, 0, 0, 0.15);
     content-visibility: auto;
-    height: 100vh;
+    height: 466px;
     left: 0;
     opacity: 0;
     -ms-overflow-style: none;
     overflow-y: auto;
     position: fixed;
-    transform: translate(0, calc(100vh + 466px));
+    transform: translate(0, 466px);
     transition:
       opacity 618ms cubic-bezier(0.77, 0, 0.175, 1),
       transform 618ms cubic-bezier(0.77, 0, 0.175, 1);
-    width: 100%;
+    width: 100vw;
     z-index: 1;
   }
 
   .select[opened] {
     opacity: 1;
-    transform: translate(0, calc(100vh - 466px));
+    transform: translate(0, 0);
   }
 
   @media (min-width: 769px) {
     .select {
       bottom: auto;
       box-shadow: 0 10px 37px 0 rgba(0, 0, 0, 0.15);
+      height: 100vh;
       top: 0;
       transform: translate(-377px, 0);
       width: 377px;
-    }
-
-    .select[opened] {
-      transform: translate(0, 0);
     }
   }
 
