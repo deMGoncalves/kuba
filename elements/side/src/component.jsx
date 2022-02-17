@@ -6,5 +6,5 @@ export default (props, children) =>
     <aside className={[style.side, props.className]} opened:isTruthy={props.opened}>
       {children}
     </aside>
-    <div className={style.side__overlayer} opened:isTruthy={props.opened} onClick={props.onClose} />
+    <div className={style.side__overlayer} onClick={props.onClose} opened:isTruthy={props.opened} />
   </>
