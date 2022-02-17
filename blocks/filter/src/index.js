@@ -1,1 +1,1 @@
-export { default } from './filter'
+export { default } from './component'
