@@ -6,7 +6,7 @@ import style from './style'
 
 export default (props) =>
   <tag.Master className={style.tag} onClick={props.onClick} len={props.len} darker medium>
-    Origem
+    Tamanho
     <Show when={props.len}>
       <text.Span master darker xxxs medium>+{props.len}</text.Span>
     </Show>
