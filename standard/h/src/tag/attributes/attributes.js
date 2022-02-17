@@ -18,27 +18,28 @@ class Attributes {
   }
 
   paint () {
-    f.forEach(this.list, ({ key, value }) =>
-      this.#target.setAttribute(...filter(key, value)))
+    f
+      .from(this.list)
+      .pipe(f.filter(f.__, f.prop('value')))
+      .pipe(f.map(f.__, ({ key, value }) => filter(key, value)))
+      .pipe(f.forEach(f.__, (args) => this.#target.setAttribute(...args)))
     return this
   }
 
-  reflow (attributes) {
-    reflow(this, attributes)
+  reflow (vAttributes) {
+    reflow(this, vAttributes)
     return this
   }
 
-  removeAttribute (...args) {
-    const [key] = filter(...args)
+  removeAttribute (key, value) {
     this.#map.delete(key)
-    this.#target.removeAttribute(key)
+    this.#target.removeAttribute(...filter(key, value))
     return this
   }
 
-  setAttribute (...args) {
-    const [key, value] = filter(...args)
+  setAttribute (key, value) {
     this.#map.set(key, value),
-    this.#target.setAttribute(key, value)
+    this.#target.setAttribute(...filter(key, value))
     return this
   }
 
