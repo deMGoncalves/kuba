@@ -6,5 +6,5 @@ export default (props, children) =>
     <aside className={[style.select, props.className]} opened={props.opened}>
       {children}
     </aside>
-    <div className={style.select__overlayer} opened={props.opened} onClick={props.onClose} />
+    <div className={style.select__overlayer} onClick={props.onClose} opened={props.opened} />
   </>
