@@ -6,7 +6,7 @@ export default styled.button`
 
   align-items: center;
   background-color: transparent;
-  border: var(--border-width-thin) solid var(--color);
+  border: var(--border-width-hairline) solid var(--color);
   border-radius: var(--border-radius-pill);
   color: var(--color);
   cursor: pointer;
