@@ -2,6 +2,7 @@ import h from '@kuba/h'
 import container from '@kuba/container'
 import Metro from '@kuba/metro'
 import Especificacao from './especificacao'
+import Concave from './concave'
 import Material from './material'
 import Nose from './nose'
 import Origem from './origem'
@@ -17,6 +18,7 @@ export default () =>
       <Especificacao>
         <Nose />
         <Tail />
+        <Concave />
       </Especificacao>
     </Metro>
   </container.Section>
