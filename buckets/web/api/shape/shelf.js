@@ -1,7 +1,7 @@
 import supabase from '@kuba/supabase'
 
 export default async function (request, response) {
-  const { concave, material, nose, origem, page, size = 24, tail, tamanho } = JSON.parse(request.body)
+  const { concave, material, nose, origem, page, size = 24, tail, tamanho, wells } = JSON.parse(request.body)
   let query = supabase
     .from('shape')
     .select(`
@@ -25,6 +25,7 @@ export default async function (request, response) {
   if (origem?.length) { query = query.in('marca.origem.valor', origem) }
   if (tail) { query = query.eq('tail', true) }
   if (tamanho?.length) { query = query.in('tamanho.valor', tamanho) }
+  if (wells) { query = query.eq('wheel_wells', true) }
 
   const { data, error } = await query
 
