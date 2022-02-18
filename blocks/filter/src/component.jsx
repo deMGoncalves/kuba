@@ -8,6 +8,7 @@ import Nose from './nose'
 import Origem from './origem'
 import Tail from './tail'
 import Tamanho from './tamanho'
+import Wells from './wells'
 
 export default () =>
   <container.Section>
@@ -19,6 +20,7 @@ export default () =>
         <Nose />
         <Tail />
         <Concave />
+        <Wells />
       </Especificacao>
     </Metro>
   </container.Section>
