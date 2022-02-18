@@ -7,13 +7,13 @@ export default styled.style`
     bottom: 0;
     box-shadow: 0 -10px 37px 0 rgba(0, 0, 0, 0.15);
     content-visibility: auto;
-    height: 466px;
+    height: 610px;
     left: 0;
     opacity: 0;
     -ms-overflow-style: none;
     overflow-y: auto;
     position: fixed;
-    transform: translate(0, 466px);
+    transform: translate(0, 610px);
     transition:
       opacity 618ms cubic-bezier(0.77, 0, 0.175, 1),
       transform 618ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -39,7 +39,7 @@ export default styled.style`
 
   .select__overlayer {
     display: none;
-    height: calc(100vh - 466px);
+    height: calc(100vh - 610px);
     position: fixed;
     right: 0;
     top: 0;
