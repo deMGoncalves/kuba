@@ -7,6 +7,7 @@ import Flares from './flares'
 import Material from './material'
 import Nose from './nose'
 import Origem from './origem'
+import Pro from './pro'
 import Tail from './tail'
 import Tamanho from './tamanho'
 import Wells from './wells'
@@ -18,6 +19,7 @@ export default () =>
       <Tamanho />
       <Material />
       <Especificacao>
+        <Pro />
         <Nose />
         <Tail />
         <Concave />
