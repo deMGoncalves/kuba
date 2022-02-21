@@ -8,6 +8,7 @@ import Material from './material'
 import Nose from './nose'
 import Origem from './origem'
 import Pro from './pro'
+import Recorte from './recorte'
 import Tail from './tail'
 import Tamanho from './tamanho'
 import Wells from './wells'
@@ -25,6 +26,7 @@ export default () =>
         <Concave />
         <Wells />
         <Flares />
+        <Recorte />
       </Especificacao>
     </Metro>
   </container.Section>
