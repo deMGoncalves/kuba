@@ -1,7 +1,7 @@
 import supabase from '@kuba/supabase'
 
 export default async function (request, response) {
-  const { concave, flares, flex, material, montagem, nose, origem, page, pro, recorte, simetrico, size = 24, tail, tamanho, wells } = JSON.parse(request.body)
+  const { concave, flares, flex, material, montagem, nose, origem, page, pro, recorte, simetrico, size = 24, tail, tamanho, tipo, wells } = JSON.parse(request.body)
   let query = supabase
     .from('shape')
     .select(`
@@ -12,7 +12,7 @@ export default async function (request, response) {
       ${material?.length ? 'material!inner(*)' : 'material (*)'},
       ${montagem?.length ? 'montagem!inner(*)' : 'montagem (*)'},
       ${tamanho?.length ? 'tamanho!inner(*)' : 'tamanho (*)'},
-      tipo (*),
+      ${tipo?.length ? 'tipo!inner(*)' : 'tipo (*)'},
       wheelbase (*)
     `)
     .range(
@@ -34,6 +34,7 @@ export default async function (request, response) {
   if (montagem?.length) { query = query.in('montagem.valor', montagem) }
   if (origem?.length) { query = query.in('marca.origem.valor', origem) }
   if (tamanho?.length) { query = query.in('tamanho.valor', tamanho) }
+  if (tipo?.length) { query = query.in('tipo.valor', tipo) }
 
   const { data, error } = await query
 
