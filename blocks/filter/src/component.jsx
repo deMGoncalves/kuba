@@ -9,6 +9,7 @@ import Nose from './nose'
 import Origem from './origem'
 import Pro from './pro'
 import Recorte from './recorte'
+import Simetrico from './simetrico'
 import Tail from './tail'
 import Tamanho from './tamanho'
 import Wells from './wells'
@@ -27,6 +28,7 @@ export default () =>
         <Wells />
         <Flares />
         <Recorte />
+        <Simetrico />
       </Especificacao>
     </Metro>
   </container.Section>
