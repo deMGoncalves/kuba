@@ -4,6 +4,7 @@ import Metro from '@kuba/metro'
 import Especificacao from './especificacao'
 import Concave from './concave'
 import Flares from './flares'
+import Flex from './flex'
 import Material from './material'
 import Nose from './nose'
 import Origem from './origem'
@@ -20,6 +21,7 @@ export default () =>
       <Origem />
       <Tamanho />
       <Material />
+      <Flex />
       <Especificacao>
         <Pro />
         <Nose />
