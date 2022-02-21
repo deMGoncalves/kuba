@@ -6,6 +6,7 @@ import Concave from './concave'
 import Flares from './flares'
 import Flex from './flex'
 import Material from './material'
+import Montagem from './montagem'
 import Nose from './nose'
 import Origem from './origem'
 import Pro from './pro'
@@ -22,6 +23,7 @@ export default () =>
       <Tamanho />
       <Material />
       <Flex />
+      <Montagem />
       <Especificacao>
         <Pro />
         <Nose />
