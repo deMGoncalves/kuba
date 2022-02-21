@@ -14,11 +14,13 @@ import Recorte from './recorte'
 import Simetrico from './simetrico'
 import Tail from './tail'
 import Tamanho from './tamanho'
+import Tipo from './tipo'
 import Wells from './wells'
 
 export default () =>
   <container.Section>
     <Metro>
+      <Tipo />
       <Origem />
       <Tamanho />
       <Material />
