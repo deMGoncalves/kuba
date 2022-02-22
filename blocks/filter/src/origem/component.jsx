@@ -6,12 +6,14 @@ import Shelf from './shelf'
 import style from './style'
 import Tag from './tag'
 
-export default (origem) =>
+export default (material) =>
   <>
-    <Tag onClick={() => origem.open()} len={origem.len} />
-    <Select className={style.origem__select} onClose={() => origem.close()} opened={origem.opened}>
-      <Back onClick={() => origem.close()} />
+    <Tag onClick={() => material.open()} len={material.len} />
+    <Select className={style.material__select} onClose={() => material.close()} opened={material.opened}>
+      <Back onClick={() => material.close()} />
       <Header />
-      <Shelf />
+      <Shelf>
+        {material.options}
+      </Shelf>
     </Select>
   </>

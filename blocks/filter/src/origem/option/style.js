@@ -1,7 +1,7 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .origem {
+  .option {
     align-items: center;
     border: var(--border-width-hairline) solid var(--color-master-light);
     border-radius: var(--border-radius-sm);
@@ -12,7 +12,7 @@ export default styled.style`
     padding: var(--spacing_inset-xs);
   }
 
-  .origem[selected] {
+  .option[selected] {
     border: var(--border-width-hairline) solid var(--color-primary);
   }
 `

@@ -1,10 +1,12 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import component from './component'
+import events from './events'
 import * as mapper from './mapper'
 
 @paint(component)
-class Origem {
+@events
+class Option {
   #selected
   #target
   #valor
@@ -33,13 +35,20 @@ class Origem {
   @repaint
   toggle () {
     this.#selected = f.not(this.selected)
-    this.#target[Origem.onChange]()
+    this.#target[Option.onChange]()
+    return this
+  }
+
+  @repaint
+  [events.onRemove] () {
+    this.#selected = f.F()
+    this.#target[Option.onChange]()
     return this
   }
 
   static create (target) {
-    return (valor) => new Origem(valor, target)
+    return (valor) => new Option(valor, target)
   }
 }
 
-export default Origem
+export default Option
