@@ -1,21 +1,31 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import echo from '@kuba/echo'
 import component from './component'
-import effect from './effect'
+import Option from './option'
+import schema from './schema.json'
 import scroll from './scroll'
 
 @paint(component)
-@effect
-class Montagem {
+class Tipo {
   #len
   #opened
+  #options
 
   get len () {
-    return this.#len ??= 0
+    return f
+      .from(this.options)
+      .pipe(f.filter(f.__, f.prop('selected')))
+      .pipe(f.len)
+      .done()
   }
 
   get opened () {
     return this.#opened ??= f.F()
+  }
+
+  get options () {
+    return this.#options ??= f.map(schema, Option.create(this))
   }
 
   @repaint
@@ -33,10 +43,17 @@ class Montagem {
   }
 
   @repaint
-  [effect.onChange] (len) {
-    this.#len = len
+  [Option.onChange] () {
+    echo.emit('filter:change', {
+      key: 'tipo',
+      value: f
+        .from(this.options)
+        .pipe(f.filter(f.__, f.prop('selected')))
+        .pipe(f.map(f.__, f.prop('valor')))
+        .done()
+    })
     return this
   }
 }
 
-export default Montagem
+export default Tipo

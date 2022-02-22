@@ -6,12 +6,14 @@ import Shelf from './shelf'
 import style from './style'
 import Tag from './tag'
 
-export default (tipo) =>
+export default (material) =>
   <>
-    <Tag onClick={() => tipo.open()} len={tipo.len} />
-    <Select className={style.tipo__select} onClose={() => tipo.close()} opened={tipo.opened}>
-      <Back onClick={() => tipo.close()} />
+    <Tag onClick={() => material.open()} len={material.len} />
+    <Select className={style.material__select} onClose={() => material.close()} opened={material.opened}>
+      <Back onClick={() => material.close()} />
       <Header />
-      <Shelf className={style.tipo__shelf} />
+      <Shelf>
+        {material.options}
+      </Shelf>
     </Select>
   </>

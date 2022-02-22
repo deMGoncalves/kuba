@@ -1,9 +1,11 @@
 import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import component from './component'
+import events from './events'
 
 @paint(component)
-class Tipo {
+@events
+class Option {
   #selected
   #target
   #valor
@@ -28,13 +30,20 @@ class Tipo {
   @repaint
   toggle () {
     this.#selected = f.not(this.selected)
-    this.#target[Tipo.onChange]()
+    this.#target[Option.onChange]()
+    return this
+  }
+
+  @repaint
+  [events.onRemove] () {
+    this.#selected = f.F()
+    this.#target[Option.onChange]()
     return this
   }
 
   static create (target) {
-    return (valor) => new Tipo(valor, target)
+    return (valor) => new Option(valor, target)
   }
 }
 
-export default Tipo
+export default Option
