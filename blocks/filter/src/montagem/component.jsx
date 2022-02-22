@@ -6,12 +6,14 @@ import Shelf from './shelf'
 import style from './style'
 import Tag from './tag'
 
-export default (montagem) =>
+export default (material) =>
   <>
-    <Tag onClick={() => montagem.open()} len={montagem.len} />
-    <Select className={style.montagem__select} onClose={() => montagem.close()} opened={montagem.opened}>
-      <Back onClick={() => montagem.close()} />
+    <Tag onClick={() => material.open()} len={material.len} />
+    <Select className={style.material__select} onClose={() => material.close()} opened={material.opened}>
+      <Back onClick={() => material.close()} />
       <Header />
-      <Shelf className={style.montagem__shelf} />
+      <Shelf>
+        {material.options}
+      </Shelf>
     </Select>
   </>
