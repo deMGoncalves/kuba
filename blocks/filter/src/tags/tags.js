@@ -20,6 +20,10 @@ class Tags {
       .done()
   }
 
+  get len () {
+    return f.len(this.filters)
+  }
+
   @repaint
   [effect.onChange] (key, value) {
     f.assign(this.#filter, { [key]: value })
