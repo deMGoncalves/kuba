@@ -1,17 +1,15 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .tamanho {
-    align-items: center;
+  .option {
     border: var(--border-width-hairline) solid var(--color-master-light);
     border-radius: var(--border-radius-sm);
     cursor: pointer;
-    display: flex;
-    height: 68px;
-    justify-content: center;
+    padding: var(--spacing_inset-xs);
+    text-align: center;
   }
 
-  .tamanho[selected] {
+  .option[selected] {
     border: var(--border-width-hairline) solid var(--color-primary);
   }
 `

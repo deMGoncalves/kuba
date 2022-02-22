@@ -1,4 +1,5 @@
 import { paint } from '@kuba/h'
+import * as f from '@kuba/f'
 import echo from '@kuba/echo'
 import component from './component'
 
@@ -8,7 +9,9 @@ class Tag {
   #value
 
   get value () {
-    return this.#value
+    return f.equal(this.#key, 'tamanho')
+      ? `${this.#value}"`
+      : this.#value
   }
 
   constructor (key, value) {
@@ -17,7 +20,7 @@ class Tag {
   }
 
   remove () {
-    echo.emit(`${this.#key}:remove`, this.value)
+    echo.emit(`${this.#key}:remove`, this.#value)
     return this
   }
 
