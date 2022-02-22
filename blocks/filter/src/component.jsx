@@ -12,13 +12,15 @@ import Origem from './origem'
 import Pro from './pro'
 import Recorte from './recorte'
 import Simetrico from './simetrico'
+import Tags from './tags'
 import Tail from './tail'
 import Tamanho from './tamanho'
 import Tipo from './tipo'
 import Wells from './wells'
+import style from './style'
 
 export default () =>
-  <container.Section>
+  <container.Section className={style.filter}>
     <Metro>
       <Tipo />
       <Origem />
@@ -37,4 +39,5 @@ export default () =>
         <Simetrico />
       </Especificacao>
     </Metro>
+    <Tags />
   </container.Section>

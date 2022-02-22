@@ -12,6 +12,8 @@ export default (material) =>
     <Select className={style.material__select} onClose={() => material.close()} opened={material.opened}>
       <Back onClick={() => material.close()} />
       <Header />
-      <Shelf className={style.material__shelf} />
+      <Shelf>
+        {material.options}
+      </Shelf>
     </Select>
   </>

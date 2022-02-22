@@ -1,9 +1,9 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .filter {
+  .tags {
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing_inset-lg);
+    flex-wrap: wrap;
+    gap: var(--spacing_inset-nano);
   }
 `

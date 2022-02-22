@@ -6,7 +6,7 @@ const onChange = f.dunder.onChange
 
 const effect = middleware((target) => (
   echo.on('filter:change', ({ key, value }) => (
-    f.equal(key, 'material') && target[onChange](f.len(value))
+    target[onChange](key, value)
   ))
 ))
 
