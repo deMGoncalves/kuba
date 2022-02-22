@@ -1,7 +1,7 @@
 import styled from '@kuba/styled'
 
 export default styled.style`
-  .flex__select {
+  .material__select {
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-lg);
@@ -9,13 +9,13 @@ export default styled.style`
   }
 
   @media (max-width: 768px) {
-    .flex__select {
+    .material__select {
       overflow: hidden;
     }
   }
 
   @media (max-width: 768px) {
-    .flex__shelf {
+    .material__shelf {
       overflow: auto;
     }
   }

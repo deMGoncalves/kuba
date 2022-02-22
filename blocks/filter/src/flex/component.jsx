@@ -6,12 +6,14 @@ import Shelf from './shelf'
 import style from './style'
 import Tag from './tag'
 
-export default (flex) =>
+export default (material) =>
   <>
-    <Tag onClick={() => flex.open()} len={flex.len} />
-    <Select className={style.flex__select} onClose={() => flex.close()} opened={flex.opened}>
-      <Back onClick={() => flex.close()} />
+    <Tag onClick={() => material.open()} len={material.len} />
+    <Select className={style.material__select} onClose={() => material.close()} opened={material.opened}>
+      <Back onClick={() => material.close()} />
       <Header />
-      <Shelf className={style.flex__shelf} />
+      <Shelf>
+        {material.options}
+      </Shelf>
     </Select>
   </>

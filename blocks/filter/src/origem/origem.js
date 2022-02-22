@@ -7,7 +7,7 @@ import schema from './schema.json'
 import scroll from './scroll'
 
 @paint(component)
-class Tipo {
+class Origem {
   #len
   #opened
   #options
@@ -56,4 +56,4 @@ class Tipo {
   }
 }
 
-export default Tipo
+export default Origem

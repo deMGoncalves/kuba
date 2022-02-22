@@ -7,7 +7,7 @@ import schema from './schema.json'
 import scroll from './scroll'
 
 @paint(component)
-class Material {
+class Tamanho {
   #len
   #opened
   #options
@@ -56,4 +56,4 @@ class Material {
   }
 }
 
-export default Material
+export default Tamanho
