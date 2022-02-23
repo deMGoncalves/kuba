@@ -15,6 +15,7 @@ export default async function (request, response) {
       ${tipo?.length ? 'tipo!inner(*)' : 'tipo (*)'},
       wheelbase (*)
     `)
+    .order('views', { ascending: false })
     .range(
       page * size - size,
       page * size - 1
