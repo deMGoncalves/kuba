@@ -9,7 +9,7 @@ export default styled.style`
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing_inset-xs);
+    gap: var(--spacing_inset-lg);
     height: 100%;
     justify-content: center;
     padding: var(--spacing_inset-lg) var(--spacing_inset-xs) !important;
@@ -21,7 +21,25 @@ export default styled.style`
     }
   }
 
+  .footer__section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-xs);
+  }
+
+  @media (min-width: 426px) {
+    .footer__section {
+      flex-direction: row;
+    }
+  }
+
   .footer__text {
     line-height: var(--line-height-md) !important;
+  }
+
+  .footer__nav {
+    display: flex;
+    gap: var(--spacing_inset-xs);
   }
 `
