@@ -7,6 +7,7 @@ export default async function (request, response) {
     .select(`
       *,
       flag (*),
+      flex (*),
       marca (*, origem (*)),
       material (*),
       moeda(*),

@@ -6,13 +6,15 @@ export default async function (request, response) {
     .from('shape')
     .select(`
       *,
-      tipo (*),
+      flag (*),
+      flex (*),
       marca (*, origem (*)),
-      tamanho (*),
       material (*),
-      wheelbase (*),
+      moeda(*),
       montagem (*),
-      flag (*)
+      tamanho (*),
+      tipo (*),
+      wheelbase (*)
     `)
     .textSearch(
       'text',
