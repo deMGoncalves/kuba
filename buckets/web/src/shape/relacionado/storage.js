@@ -10,13 +10,15 @@ const onResponse = f.dunder.onResponse
 const effect = middleware((target) => (
   useEffect(() => (
     http
-      .post(`${settings.api.url}/shape/related`, {
+      .post(`${settings.api.url}/shape/shelf`, {
         material: f
           .from(global.shape.material)
           .pipe(f.or(f.__, []))
-          .pipe(f.map(f.__, f.prop('id')))
+          .pipe(f.map(f.__, f.prop('valor')))
           .done(),
-        tamanho: global.shape.tamanho.id
+        tamanho: [global.shape.tamanho.valor],
+        size: 4,
+        page: 1
       })
       .then(response => response.json())
       .then(({ data, error }) => (
