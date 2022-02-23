@@ -17,7 +17,6 @@ export default async function (request, response) {
       wheelbase (*)
     `)
     .eq('slug', slug)
-    .limit(1)
     .single()
 
   response.setHeader('Cache-Control', 'public, max-age=86400')

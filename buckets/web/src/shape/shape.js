@@ -3,6 +3,7 @@ import { setGlobal } from '@kuba/global'
 import { setDescription, setTitle } from '@kuba/markup'
 import { params, redirectTo } from '@kuba/router'
 import component from './component'
+import events from './events'
 import setData from './setData'
 import storage from './storage'
 
@@ -14,6 +15,7 @@ class Shape {
     return this
   }
 
+  @events.onView
   [storage.onResponse] (shape) {
     setTitle(shape.modelo)
     setDescription(shape.descricao)
