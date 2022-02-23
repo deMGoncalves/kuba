@@ -14,6 +14,7 @@ export default (shape) =>
       </Show>
     </Picture>
     <main className={style.shape__main}>
+      {shape.pro}
       {shape.modelo}
       {shape.tamanho}
     </main>

@@ -3,6 +3,7 @@ import { redirectTo } from '@kuba/router'
 import component from './component'
 import Marca from './marca'
 import Modelo from './modelo'
+import Pro from './pro'
 import Stub from './stub'
 import Tamanho from './tamanho'
 
@@ -10,6 +11,7 @@ import Tamanho from './tamanho'
 class Shape {
   #marca
   #modelo
+  #pro
   #slug
   #tamanho
   #thumbnail
@@ -22,6 +24,10 @@ class Shape {
     return this.#modelo
   }
 
+  get pro () {
+    return this.#pro
+  }
+
   get tamanho () {
     return this.#tamanho
   }
@@ -30,9 +36,10 @@ class Shape {
     return this.#thumbnail
   }
 
-  constructor (marca, modelo, slug, tamanho, thumbnail) {
+  constructor (marca, modelo, pro, slug, tamanho, thumbnail) {
     this.#marca = marca
     this.#modelo = modelo
+    this.#pro = pro
     this.#slug = slug
     this.#tamanho = tamanho
     this.#thumbnail = thumbnail
@@ -47,6 +54,7 @@ class Shape {
     return new Shape(
       Marca.create(shape),
       Modelo.create(shape),
+      Pro.create(shape),
       shape.slug,
       Tamanho.create(shape),
       shape.thumbnail
