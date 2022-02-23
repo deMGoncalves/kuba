@@ -9,8 +9,6 @@ class View {
 
   get len () {
     return this.#len
-      ? `${this.#len} visualizações`
-      : ''
   }
 
   @repaint
