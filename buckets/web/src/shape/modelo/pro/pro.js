@@ -1,21 +1,22 @@
 import { paint, repaint } from '@kuba/h'
+import * as f from '@kuba/f'
 import component from './component'
 import effect from './effect'
 
 @paint(component)
 @effect
-class Marca {
-  #valor
+class Pro {
+  #are
 
-  get valor () {
-    return this.#valor
+  get are () {
+    return this.#are ??= f.F()
   }
 
   @repaint
-  [effect.onChange] (valor) {
-    this.#valor = valor
+  [effect.onChange] (are) {
+    this.#are = are
     return this
   }
 }
 
-export default Marca
+export default Pro
