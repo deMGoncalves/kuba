@@ -6,15 +6,18 @@ export default async function (request, response) {
     .from('shape')
     .select(`
       *,
-      tipo (*),
+      flag (*),
+      flex (*),
       marca!inner(*, origem (*)),
-      tamanho (*),
       material (*),
-      wheelbase (*),
+      moeda(*),
       montagem (*),
-      flag (*)
+      tamanho (*),
+      tipo (*),
+      wheelbase (*)
     `)
     .eq('marca.slug', slug)
+    .order('views', { ascending: false })
     .range(
       page * size - size,
       page * size - 1
