@@ -18,7 +18,7 @@ class Shapes {
   #page
 
   get description () {
-    return 'Seja bem vindo! Escolha o melhor shape para o seu setup'
+    return 'Escolha o melhor shape para o seu setup'
   }
 
   get filter () {
@@ -30,7 +30,7 @@ class Shapes {
   }
 
   get title () {
-    return 'Kuba'
+    return 'Shapes'
   }
 
   @didMount

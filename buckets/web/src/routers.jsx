@@ -2,7 +2,12 @@ import h from '@kuba/h'
 import router from '@kuba/router'
 import render from './render'
 
-router('/', async function shapes () {
+router('/', async function home () {
+  const { default: Home } = await import('./home' /* webpackChunkName: "home" */)
+  render(<Home />)
+})
+
+router('/shapes', async function shapes () {
   const { default: Shapes } = await import('./shapes' /* webpackChunkName: "shapes" */)
   render(<Shapes />)
 })

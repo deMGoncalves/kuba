@@ -21,6 +21,7 @@ import Wheelbase from './wheelbase'
 
 export default () =>
   <Site>
+    <Breadcrumb />
     <container.Div className={style.compare__div} slot='main'>
       <Modelo />
       <Thumbnail />
@@ -38,5 +39,4 @@ export default () =>
       <Simetrico />
       <Descricao />
     </container.Div>
-    <Breadcrumb />
   </Site>

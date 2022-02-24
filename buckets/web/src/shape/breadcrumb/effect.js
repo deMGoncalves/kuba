@@ -6,7 +6,7 @@ const onChange = f.dunder.onChange
 
 const effect = middleware((target) => (
   useEffect(() => target[onChange]([
-    { page: 'shapes', title: 'Home' },
+    { page: 'home', title: 'Home' },
     { page: 'marca', params: { marca: global.shape.marca.slug }, title: global.shape.marca.nome },
     { page: 'shape', params: { marca: global.shape.slug }, title: global.shape.modelo }
   ]))

@@ -4,18 +4,19 @@ import jsonld from '@kuba/jsonld'
 import { setDescription, setTitle } from '@kuba/markup'
 import component from './component'
 import data from './data'
-import storage from './storage'
 
 @paint(component)
 @jsonld(data)
-@storage
-class Marcas {
+class Shapes {
+  #filter
+  #page
+
   get description () {
-    return 'Descubra novas possibilidades no kuba'
+    return 'Seja bem vindo! Descubra novas possibilidades para o seu role'
   }
 
   get title () {
-    return 'Marcas'
+    return 'Kuba'
   }
 
   @didMount
@@ -26,4 +27,4 @@ class Marcas {
   }
 }
 
-export default Marcas
+export default Shapes

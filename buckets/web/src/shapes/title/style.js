@@ -7,8 +7,11 @@ export default styled.style`
     gap: var(--spacing_inset-quarck);
   }
 
-  .title__span,
+  .title__span {
+    line-height: var(--line-height-lg) !important;
+  }
+
   .title__h1 {
-    line-height: var(--line-height-md);
+    line-height: var(--line-height-md) !important;
   }
 `

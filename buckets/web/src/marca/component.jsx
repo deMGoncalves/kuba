@@ -8,11 +8,11 @@ import Shelf from './shelf'
 
 export default () =>
   <Site>
+    <Breadcrumb />
     <Fragment slot='main'>
       <Nome />
       <Shelf />
       <More />
       <Descricao />
     </Fragment>
-    <Breadcrumb />
   </Site>

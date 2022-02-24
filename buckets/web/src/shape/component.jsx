@@ -12,6 +12,7 @@ import Variacao from './variacao'
 
 export default () =>
   <Site className={style.shape__main}>
+    <Breadcrumb />
     <Fragment slot='main'>
       <Modelo />
       <Hero />
@@ -21,5 +22,4 @@ export default () =>
       <Material />
       <Relacionado />
     </Fragment>
-    <Breadcrumb />
   </Site>
