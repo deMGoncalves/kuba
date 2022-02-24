@@ -3,6 +3,7 @@ import { setGlobal } from '@kuba/global'
 import { setDescription, setTitle } from '@kuba/markup'
 import { redirectTo } from '@kuba/router'
 import component from './component'
+import events from './events'
 import setData from './setData'
 import storage from './storage'
 
@@ -14,6 +15,7 @@ class Marca {
     return this
   }
 
+  @events.onView
   [storage.onResponse] (marca) {
     setTitle(marca.nome)
     setDescription(marca.descricao)
