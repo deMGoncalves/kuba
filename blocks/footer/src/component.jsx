@@ -11,10 +11,11 @@ export default (footer) =>
   <footer className={style.footer}>
     <container.Div className={style.footer__container}>
       <section className={style.footer__section}>
-        <Logo onClick={() => footer.redirectTo('shapes')} symbol />
+        <Logo onClick={() => footer.redirectTo('home')} symbol />
         <text.P className={style.footer__text} master dark xxxs>{footer.description}</text.P>
       </section>
       <nav className={style.footer__nav}>
+        <link.Master href={urlFor('home')} dark xxxs medium>Home</link.Master>
         <link.Master href={urlFor('shapes')} dark xxxs medium>Shapes</link.Master>
         <link.Master href={urlFor('marcas')} dark xxxs medium>Marcas</link.Master>
         <Cookie />
