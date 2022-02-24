@@ -4,6 +4,7 @@ import text from '@kuba/text'
 import Origem from './origem'
 import Site from './site'
 import style from './style'
+import View from './view'
 
 export default (title) =>
   <container.Section className={style.title}>
@@ -11,5 +12,6 @@ export default (title) =>
     <div className={style.title__div}>
       <Origem />
       <Site />
+      <View />
     </div>
   </container.Section>
