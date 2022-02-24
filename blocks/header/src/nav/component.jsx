@@ -9,6 +9,7 @@ import style from './style'
 export default (nav) =>
   <>
     <nav className={[style.nav, nav.className]} opened:isTruthy={nav.opened}>
+      <link.Master className={style.nav__link} href={urlFor('home')} onClick:prevent={() => nav.redirectTo('home')} darker xxxs bold>Home</link.Master>
       <link.Master className={style.nav__link} href={urlFor('shapes')} onClick:prevent={() => nav.redirectTo('shapes')} darker xxxs bold>Shapes</link.Master>
       <link.Master className={style.nav__link} href={urlFor('marcas')} onClick:prevent={() => nav.redirectTo('marcas')} darker xxxs bold>Marcas</link.Master>
     </nav>
