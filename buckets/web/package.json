@@ -29,8 +29,8 @@
   "name": "@kuba/web",
   "private": true,
   "scripts": {
-    "build": "yarn run webpack --config webpack.config.js --mode production",
-    "start": "yarn run wrangler pages dev ./public",
+    "build": "yarn run webpack --config webpack.config.js --mode development",
+    "start": "yarn run wrangler pages dev ./public --binding API_URL=\"https://wbfsnickkamdoyzndmec.supabase.co\" API_KEY=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMDA3MjI1MiwiZXhwIjoxOTQ1NjQ4MjUyfQ.qAPu3W_iYO085QTDhZTMoz-lCFovfJcstEAki9l1_ps\"",
     "test": "jest --passWithNoTests"
   },
   "version": "1.0.0"
