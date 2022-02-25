@@ -29,8 +29,8 @@
   "name": "@kuba/web",
   "private": true,
   "scripts": {
-    "build": "yarn run webpack --config webpack.config.js --mode development",
-    "start": "yarn run wrangler pages dev ./public --binding",
+    "build": "yarn run webpack --config webpack.config.js --mode production",
+    "start": "yarn run wrangler pages dev ./public",
     "test": "jest --passWithNoTests"
   },
   "version": "1.0.0"
