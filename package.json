@@ -6,6 +6,9 @@
     "lint-staged": "^11.1.2",
     "pinst": "^2.1.6"
   },
+  "engines": {
+    "node": ">=16.7.0"
+  },
   "name": "kuba",
   "private": true,
   "scripts": {
@@ -32,8 +35,5 @@
       "pixels/*",
       "standard/*"
     ]
-  },
-  "dependencies": {
-    "vercel": "^23.1.2"
   }
 }
