@@ -10,24 +10,6 @@ const webpack = require('webpack')
 
 module.exports = (dirname) => ({
   context: path.resolve(dirname, 'src'),
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-      serveIndex: true
-    },
-    historyApiFallback: true,
-    hot: true,
-    port: process.env.PORT,
-    proxy: {
-      '/api/*': {
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api/': '/'
-        },
-        target: 'http://localhost:3000/api'
-      }
-    }
-  },
   entry: {
     app: './index.js'
   },
