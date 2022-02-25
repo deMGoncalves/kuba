@@ -1,0 +1,3 @@
+[vars]
+API_URL = "https://wbfsnickkamdoyzndmec.supabase.co"
+API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMDA3MjI1MiwiZXhwIjoxOTQ1NjQ4MjUyfQ.qAPu3W_iYO085QTDhZTMoz-lCFovfJcstEAki9l1_ps"
