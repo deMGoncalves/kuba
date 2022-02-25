@@ -3,10 +3,28 @@ import { createClient } from '@supabase/supabase-js'
 export async function onRequestPost (context) {
   const supabase = createClient(
     context.env.API_URL,
-    context.env.API_KEY,
-    {}
+    context.env.API_KEY
   )
-  const { concave, flares, flex, material, montagem, nose, origem, page = 1, pro, recorte, simetrico, size = 24, tail, tamanho, tipo, wells } = await context.request.json()
+
+  const {
+    concave,
+    flares,
+    flex,
+    material,
+    montagem,
+    nose,
+    origem,
+    page = 1,
+    pro,
+    recorte,
+    simetrico,
+    size = 24,
+    tail,
+    tamanho,
+    tipo,
+    wells
+  } = await context.request.json()
+
   let query = supabase
     .from('shape')
     .select(`
@@ -43,9 +61,6 @@ export async function onRequestPost (context) {
   if (tipo?.length) { query = query.in('tipo.valor', tipo) }
 
   const { data, error } = await query
-
-  // response.setHeader('Cache-Control', 'public, max-age=86400')
-  // response.json({ data, error })
 
   return new Response(JSON.stringify({ data, error }))
 }

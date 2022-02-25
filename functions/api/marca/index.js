@@ -1,7 +1,15 @@
-import supabase from '@kuba/supabase'
+import { createClient } from '@supabase/supabase-js'
 
-export default async function (request, response) {
-  const { slug } = JSON.parse(request.body)
+export async function onRequestPost (context) {
+  const supabase = createClient(
+    context.env.API_URL,
+    context.env.API_KEY
+  )
+
+  const {
+    slug
+  } = await context.request.json()
+
   const { data, error } = await supabase
     .from('marca')
     .select(`
@@ -9,9 +17,7 @@ export default async function (request, response) {
       origem (*)
     `)
     .eq('slug', slug)
-    .limit(1)
     .single()
 
-  response.setHeader('Cache-Control', 'public, max-age=86400')
-  response.json({ data, error })
+  return new Response(JSON.stringify({ data, error }))
 }

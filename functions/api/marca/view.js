@@ -1,7 +1,15 @@
-import supabase from '@kuba/supabase'
+import { createClient } from '@supabase/supabase-js'
 
-export default async function (request, response) {
-  const { slug } = JSON.parse(request.body)
+export async function onRequestPost (context) {
+  const supabase = createClient(
+    context.env.API_URL,
+    context.env.API_KEY
+  )
+
+  const {
+    slug
+  } = await context.request.json()
+
   const { data } = await supabase
     .from('marca')
     .select('views')
@@ -13,5 +21,5 @@ export default async function (request, response) {
     .update({ views: data.views + 1 })
     .eq('slug', slug)
 
-  response.json({ error })
+  return new Response(JSON.stringify({ error }))
 }
