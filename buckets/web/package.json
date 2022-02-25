@@ -16,6 +16,7 @@
     "stylelint-processor-styled-components": "^1.10.0",
     "ts-jest": "^26.5.1",
     "typescript": "^4.3.5",
+    "webpack": "^5.69.1",
     "webpack-cli": "^4.9.1"
   },
   "lint-staged": {
@@ -28,8 +29,8 @@
   "name": "@kuba/web",
   "private": true,
   "scripts": {
-    "build": "yarn run webpack --config webpack.config.js --mode development",
-    "start": "wrangler pages dev ./public --binding API_URL=\"https://wbfsnickkamdoyzndmec.supabase.co\" API_KEY=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMDA3MjI1MiwiZXhwIjoxOTQ1NjQ4MjUyfQ.qAPu3W_iYO085QTDhZTMoz-lCFovfJcstEAki9l1_ps\"",
+    "build": "yarn run webpack --config webpack.config.js --mode production",
+    "start": "yarn run webpack --config webpack.config.js --mode development --watch",
     "test": "jest --passWithNoTests"
   },
   "version": "1.0.0"
