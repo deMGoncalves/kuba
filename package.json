@@ -7,7 +7,7 @@
     "pinst": "^2.1.6"
   },
   "engines": {
-    "node": ">=16.7.0"
+    "node": "12.18.x"
   },
   "name": "kuba",
   "private": true,
