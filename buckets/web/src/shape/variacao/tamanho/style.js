@@ -3,7 +3,7 @@ import styled from '@kuba/styled'
 export default styled.style`
   .tamanho {
     align-items: flex-start;
-    border: var(--border-width-hairline) solid var(--color-master-light);
+    background-color: #fff;
     border-radius: var(--border-radius-sm);
     display: flex;
     flex-direction: column;
