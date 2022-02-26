@@ -2,14 +2,11 @@ import styled from '@kuba/styled'
 
 export default styled.style`
   .footer {
+    display: none;
     justify-content: center;
   }
 
-  .footer[valid='false'] {
-    display: none;
-  }
-
-  .footer[valid='true'] {
+  .footer[valid] {
     display: flex;
   }
 
