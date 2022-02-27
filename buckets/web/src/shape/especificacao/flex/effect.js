@@ -5,7 +5,7 @@ import middleware from '@kuba/middleware'
 const onChange = f.dunder.onChange
 
 const effect = middleware((target) => (
-  useEffect(() => target[onChange](global.shape.flex))
+  useEffect(() => target[onChange](global.shape.flex.valor))
 ))
 
 f.assign(effect, {
