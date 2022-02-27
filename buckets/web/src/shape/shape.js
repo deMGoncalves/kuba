@@ -4,6 +4,7 @@ import { setDescription, setTitle } from '@kuba/markup'
 import { params, redirectTo } from '@kuba/router'
 import component from './component'
 import events from './events'
+import ml from './ml'
 import setData from './setData'
 import storage from './storage'
 
@@ -16,6 +17,7 @@ class Shape {
   }
 
   @events.onView
+  @ml.onView
   [storage.onResponse] (shape) {
     setTitle(shape.modelo)
     setDescription(shape.descricao)
