@@ -10,6 +10,7 @@ export async function onRequestPost (context) {
     concave,
     flares,
     flex,
+    marca,
     material,
     montagem,
     nose,
@@ -31,7 +32,7 @@ export async function onRequestPost (context) {
       *,
       flag (*),
       ${flex?.length ? 'flex!inner(*)' : 'flex (*)'},
-      ${origem?.length ? 'marca!inner(*, origem!inner(*))' : 'marca (*, origem (*))'},
+      ${origem?.length ? 'marca!inner(*, origem!inner(*))' : marca?.length ? 'marca!inner(*, origem (*))' : 'marca (*, origem (*))'},
       ${material?.length ? 'material!inner(*)' : 'material (*)'},
       ${montagem?.length ? 'montagem!inner(*)' : 'montagem (*)'},
       ${tamanho?.length ? 'tamanho!inner(*)' : 'tamanho (*)'},
@@ -54,6 +55,7 @@ export async function onRequestPost (context) {
   if (wells) { query = query.eq('wheel_wells', true) }
 
   if (flex?.length) { query = query.in('flex.valor', flex) }
+  if (marca?.length) { query = query.in('marca.nome', marca) }
   if (material?.length) { query = query.in('material.valor', material) }
   if (montagem?.length) { query = query.in('montagem.valor', montagem) }
   if (origem?.length) { query = query.in('marca.origem.valor', origem) }
