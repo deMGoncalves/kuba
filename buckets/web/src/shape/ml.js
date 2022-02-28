@@ -17,7 +17,7 @@ const onView = before(function (shape) {
   ))
 
   f.assign(ml, {
-    [champion]: f.add(f.or(ml[champion], 0), 3)
+    [champion]: f.min(f.add(f.or(ml[champion], 0), 3), 9)
   })
 
   localStorage.setItem('_ml.tamanho', JSON.stringify(ml))
