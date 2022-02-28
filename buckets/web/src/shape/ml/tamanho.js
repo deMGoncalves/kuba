@@ -1,9 +1,7 @@
 import * as f from '@kuba/f'
-import { before } from '@kuba/middleware'
 
-const ml = JSON.parse(f.or(localStorage.getItem('_ml.tamanho'), '{}'))
-
-const onView = before(function (shape) {
+export default (shape) => {
+  const ml = JSON.parse(f.or(localStorage.getItem('_ml.tamanho'), '{}'))
   const champion = shape.tamanho.valor
   const losers = f
     .from(ml)
@@ -22,10 +20,4 @@ const onView = before(function (shape) {
   })
 
   localStorage.setItem('_ml.tamanho', JSON.stringify(ml))
-
-  return [shape]
-})
-
-export default {
-  onView
 }
