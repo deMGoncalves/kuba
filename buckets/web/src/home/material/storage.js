@@ -11,7 +11,7 @@ const tamanho = JSON.parse(f.or(localStorage.getItem('_ml.tamanho'), '{}'))
 const effect = middleware((target) => (
   http
     .post(`${settings.api.url}/shape/shelf`, {
-      material: ['Maple Norte Americano'],
+      material: ['Maple Canadense'],
       tamanho: f
         .from(tamanho)
         .pipe(f.entries)
