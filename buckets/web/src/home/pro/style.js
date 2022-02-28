@@ -8,6 +8,10 @@ export default styled.style`
     grid-area: pro;
   }
 
+  .pro[empty] {
+    display: none;
+  }
+
   .pro__h2 {
     line-height: var(--line-height-md) !important;
   }
