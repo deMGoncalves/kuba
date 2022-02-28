@@ -17,6 +17,18 @@ class Material {
     return this.#shapes ??= f.map(f.repeat(null, 4), Card.stub)
   }
 
+  get valor () {
+    const material = JSON.parse(f.or(localStorage.getItem('_ml.material'), '{}'))
+
+    return f
+      .from(material)
+      .pipe(f.entries)
+      .pipe(f.reduce(f.__, (x, y) => f.gte(x[1], y[1]) ? x : y, []))
+      .pipe(f.prop('[0]'))
+      .pipe(f.or(f.__, 'Maple Canadense'))
+      .done()
+  }
+
   @repaint
   [storage.onError] () {
     this.#shapes = []

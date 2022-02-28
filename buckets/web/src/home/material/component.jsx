@@ -6,7 +6,7 @@ import style from './style'
 
 export default (material) =>
   <container.Section className={style.material}>
-    <text.H2 className={style.material__h2} master darker md bold>Maple Canadense</text.H2>
+    <text.H2 className={style.material__h2} master darker md bold>{material.valor}</text.H2>
     <Metro className={style.material__metro}>
       {material.shapes}
     </Metro>
