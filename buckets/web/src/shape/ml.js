@@ -1,8 +1,9 @@
 import * as f from '@kuba/f'
 import { before } from '@kuba/middleware'
 
+const ml = JSON.parse(f.or(localStorage.getItem('_ml.tamanho'), '{}'))
+
 const onView = before(function (shape) {
-  const ml = JSON.parse(f.or(localStorage.getItem('_ml.tamanho'), '{}'))
   const champion = shape.tamanho.valor
   const losers = f
     .from(ml)
