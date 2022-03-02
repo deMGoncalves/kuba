@@ -17,11 +17,6 @@ router('/busca', async function search () {
   render(<Search />)
 })
 
-router('/marcas', async function marcas () {
-  const { default: Marcas } = await import('./marcas' /* webpackChunkName: "marcas" */)
-  render(<Marcas />)
-})
-
 router('/:marca', async function marca () {
   const { default: Marca } = await import('./marca' /* webpackChunkName: "marca" */)
   render(<Marca />)
