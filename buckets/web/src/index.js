@@ -14,4 +14,5 @@ import '@kuba/hotjar'
 import '@kuba/markup'
 import '@kuba/sw'
 
+import '@kuba/shapes'
 import './routers'
