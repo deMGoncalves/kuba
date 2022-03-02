@@ -16,7 +16,7 @@ export default (footer) =>
       </section>
       <nav className={style.footer__nav}>
         <link.Master href={urlFor('home')} dark xxxs medium>Home</link.Master>
-        <link.Master href={urlFor('shapes')} dark xxxs medium>Shapes</link.Master>
+        <link.Master href={urlFor('shapes.home')} dark xxxs medium>Shapes</link.Master>
         <link.Master href={urlFor('marcas')} dark xxxs medium>Marcas</link.Master>
         <Cookie />
       </nav>
