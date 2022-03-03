@@ -11,7 +11,7 @@ import storage from './storage'
 @paint(component)
 @jsonld(data)
 @storage
-class Search {
+class Busca {
   get description () {
     return 'Resultado de busca! Escolha o melhor shape para o seu setup'
   }
@@ -38,4 +38,4 @@ class Search {
   }
 }
 
-export default Search
+export default Busca
