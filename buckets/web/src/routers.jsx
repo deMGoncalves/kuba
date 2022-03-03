@@ -8,7 +8,7 @@ router('/', async function home () {
 })
 
 router('/comparar', async function compare () {
-  const { default: Comparar } = await import('./compare' /* webpackChunkName: "compare" */)
+  const { default: Comparar } = await import('@kuba/comparar' /* webpackChunkName: "comparar" */)
   render(<Comparar />)
 })
 
