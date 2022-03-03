@@ -13,8 +13,8 @@ router('/comparar', async function compare () {
 })
 
 router('/busca', async function search () {
-  const { default: Search } = await import('./search' /* webpackChunkName: "search" */)
-  render(<Search />)
+  const { default: Busca } = await import('@kuba/busca' /* webpackChunkName: "busca" */)
+  render(<Busca />)
 })
 
 router('/:marca', async function marca () {
