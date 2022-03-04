@@ -9,7 +9,7 @@ export async function onRequestPost (context) {
   const {
     page = 1,
     q,
-    size = 24,
+    size = 24
   } = await context.request.json()
 
   const { data, error } = await supabase

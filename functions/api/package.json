@@ -21,8 +21,8 @@
     "typescript": "^4.3.5"
   },
   "lint-staged": {
-    "v1/**/*.{js}": [
-      "yarn run eslint v1/**/*.{js}"
+    "v1/**/*.js": [
+      "yarn run eslint v1/**/*.js"
     ]
   },
   "main": "v1/index.js",
