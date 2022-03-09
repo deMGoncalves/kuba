@@ -1,3 +1,4 @@
+import { eager } from '@kuba/h'
 import * as f from '@kuba/f'
 import Attributes from './attributes'
 import Children from './children'
@@ -197,8 +198,8 @@ class Tag {
     return f.F()
   }
 
-  static create (tagName, props, children) {
-    return new Tag(tagName, props, children)
+  static create (...args) {
+    return eager(Tag, ...args)
   }
 
   static is (target) {

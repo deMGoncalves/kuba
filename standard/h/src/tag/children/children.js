@@ -1,3 +1,4 @@
+import { eager } from '@kuba/h'
 import * as f from '@kuba/f'
 import mapper from './mapper'
 import reflow from './reflow'
@@ -14,8 +15,8 @@ class Children {
     return this.#list
   }
 
-  constructor (list, parent) {
-    this.#list = list
+  constructor (children, parent) {
+    this.#list = mapper(children)
     this.#parent = parent
   }
 
@@ -52,8 +53,8 @@ class Children {
     return this
   }
 
-  static create (list, parent) {
-    return new Children(mapper(list), parent)
+  static create (...args) {
+    return eager(Children, ...args)
   }
 }
 

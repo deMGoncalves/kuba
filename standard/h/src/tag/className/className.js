@@ -1,3 +1,4 @@
+import { eager } from '@kuba/h'
 import * as f from '@kuba/f'
 import flatten from './flatten'
 
@@ -9,9 +10,9 @@ class ClassName {
     return this.#value ??= ''
   }
 
-  constructor (value, target) {
+  constructor (props, target) {
     this.#target = target
-    this.#value = value
+    this.#value = flatten(props)
   }
 
   paint () {
@@ -33,8 +34,8 @@ class ClassName {
     return this.value
   }
 
-  static create (props, target) {
-    return new ClassName(flatten(props), target)
+  static create (...args) {
+    return eager(ClassName, ...args)
   }
 }
 

@@ -1,3 +1,4 @@
+import { eager } from '@kuba/h'
 import * as f from '@kuba/f'
 import filter from './filter'
 import mapper from './mapper'
@@ -12,8 +13,8 @@ class Attributes {
     return toList(this.#map)
   }
 
-  constructor (map, target) {
-    this.#map = map
+  constructor (props, target) {
+    this.#map = mapper(props)
     this.#target = target
   }
 
@@ -43,8 +44,8 @@ class Attributes {
     return this
   }
 
-  static create (props, target) {
-    return new Attributes(mapper(props), target)
+  static create (...args) {
+    return eager(Attributes, ...args)
   }
 }
 

@@ -1,3 +1,4 @@
+import { eager } from '@kuba/h'
 import * as f from '@kuba/f'
 import Children from './children'
 
@@ -132,8 +133,8 @@ class Fragment {
     return f.F()
   }
 
-  static execute (props, children) {
-    return new Fragment(props, children)
+  static execute (...args) {
+    return eager(Fragment, ...args)
   }
 }
 
