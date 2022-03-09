@@ -1,8 +1,7 @@
 import h, { Fragment } from '@kuba/h'
+import Lazy from '@kuba/lazy'
 import Site from '@kuba/site'
-import Marca from './marca'
 import Material from './material'
-import Pro from './pro'
 import Relevantes from './relevantes'
 
 export default () =>
@@ -10,7 +9,7 @@ export default () =>
     <Fragment slot='main'>
       <Relevantes />
       <Material />
-      <Marca />
-      <Pro />
+      <Lazy require={() => import('./marca' /* webpackChunkName: 'marca' */)} />
+      <Lazy require={() => import('./pro' /* webpackChunkName: 'pro' */)} />
     </Fragment>
   </Site>
