@@ -1,9 +1,7 @@
 import h, { Fragment } from '@kuba/h'
-import Cookiebar from '@kuba/cookiebar'
-import Comparebar from '@kuba/comparebar'
 import Footer from '@kuba/footer'
-import Searchbar from '@kuba/searchbar'
-import Zoom from '@kuba/zoom'
+import Lazy from '@kuba/lazy'
+import Zone from '@kuba/zone'
 import Header from './header'
 import style from './style'
 
@@ -14,9 +12,11 @@ export default (site, children) =>
     <main className={[style.site__main, site.className]}>
       {children.main}
     </main>
-    <Searchbar />
-    <Comparebar />
-    <Cookiebar />
-    <Zoom />
-    <Footer />
+    <Zone>
+      <Footer />
+    </Zone>
+    <Lazy require={() => import('@kuba/searchbar' /* webpackChunkName: 'searchbar' */)} />
+    <Lazy require={() => import('@kuba/comparebar' /* webpackChunkName: 'comparebar' */)} />
+    <Lazy require={() => import('@kuba/cookiebar' /* webpackChunkName: 'cookiebar' */)} />
+    <Lazy require={() => import('@kuba/zoom' /* webpackChunkName: 'zoom' */)} />
   </>
