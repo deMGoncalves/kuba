@@ -1,4 +1,7 @@
-import h from '@kuba/h'
+import h, { Fragment } from '@kuba/h'
 
 export default () =>
-  <div>Hello Web Worker</div>
+  <>
+    <div>Hello Web Worker</div>
+    <div>:@</div>
+  </>
