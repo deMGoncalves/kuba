@@ -4,6 +4,6 @@ import Show from '@kuba/show'
 
 export default (sandbox) =>
   <>
-    <Show when={sandbox.component}><sandbox.component /></Show>
+    <Show when={sandbox.component}>{sandbox.component}</Show>
     <Hide when={sandbox.component}><div /></Hide>
   </>

@@ -1,24 +1,23 @@
-import h, { render } from '@kuba/h'
+import h from '@kuba/h'
 import * as f from '@kuba/f'
-import schedule from '@kuba/schedule'
+import middleware from '@kuba/middleware'
 
 const connect = function (sandbox) {
-  const worker = sandbox.connect()
-  const paint = (node) =>
-    f.equal(node.type, 3)
-      ? node.content
-      : h(node.name, node.props, ...f.map(node.children, paint))
+  const worker = sandbox.require()
 
-  worker.addEventListener('message', ({ data: { action, payload } }) => {
-    f.equal('render', action) && (
-      render(document[payload.element], ...f.map(payload.children, paint))
+  const paint = (tag) =>
+    f.equal(tag.type, 3)
+      ? tag.content
+      : h(tag.name, tag.props, ...f.map(tag.children, paint))
+
+  worker.addEventListener('message', function (event) {
+    f.and(
+      f.equal('render', event.data?.action),
+      f.equal('self', event.data?.payload?.element)
+    ) && (
+      sandbox.render(...f.map(event.data?.payload?.children, paint))
     )
-  })
-
-  worker.postMessage({
-    action: 'render',
-    payload: sandbox.props
   })
 }
 
-export default schedule(connect)
+export default middleware(connect)
