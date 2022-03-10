@@ -1,14 +1,15 @@
-import h from '@kuba/h'
+import h, { Fragment } from '@kuba/h'
 import * as f from '@kuba/f'
 import middleware from '@kuba/middleware'
 
 const connect = function (sandbox) {
   const worker = sandbox.require()
 
-  const paint = (tag) =>
-    f.equal(tag.type, 3)
-      ? tag.content
-      : h(tag.name, tag.props, ...f.map(tag.children, paint))
+  const paint = function (tag) {
+    if (f.equal(tag.type, 1)) return h(tag.name, tag.props, ...f.map(tag.children, paint))
+    if (f.equal(tag.type, 3)) return tag.content
+    if (f.equal(tag.type, 11)) return h(Fragment, {}, ...f.map(tag.children, paint))
+  }
 
   worker.addEventListener('message', function (event) {
     f.and(
