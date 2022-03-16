@@ -49,6 +49,11 @@ class Text {
     return this
   }
 
+  replace (vTag) {
+    this.element.parentNode.replaceChild(vTag.paint(), this.element)
+    return this
+  }
+
   [f.dunder.different] () {
     return this.content
   }
