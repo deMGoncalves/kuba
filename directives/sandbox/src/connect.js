@@ -1,4 +1,3 @@
-import h from '@kuba/h'
 import middleware from '@kuba/middleware'
 import render from './render'
 
