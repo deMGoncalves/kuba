@@ -24,16 +24,6 @@ class Tag {
     }
   }
 
-  removeAttribute (key) {
-    delete this.#attributes[key]
-    return this
-  }
-
-  setAttribute (key, value) {
-    this.attributes[key] = value
-    return this
-  }
-
   static create (name, { is }) {
     return new Tag(name, is)
   }
