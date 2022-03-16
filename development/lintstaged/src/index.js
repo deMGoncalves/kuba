@@ -26,7 +26,7 @@ function lintstaged (dirname) {
 
   const mapper = workspaces
     .reduce((object, workspace, index) =>
-      (packages[index].forEach(pkg => object[listener(workspace, pkg)] = command(pkg)), object), {})
+      (packages[index].forEach(pkg => (object[listener(workspace, pkg)] = command(pkg))), object), {})
 
   return mapper
 }
