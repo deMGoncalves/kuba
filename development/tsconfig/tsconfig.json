@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "allowImportExportEverywhere": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "jsx": "react",
@@ -10,6 +11,7 @@
     "module": "esnext",
     "resolveJsonModule": true,
     "sourceMap": false,
+    "sourceType": "module",
     "strict": true,
     "target": "es2015"
   }
