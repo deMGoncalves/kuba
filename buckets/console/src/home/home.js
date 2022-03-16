@@ -1,8 +1,21 @@
-import { paint } from '@kuba/h'
+import { paint, repaint } from '@kuba/h'
 import component from './component'
+import events from './events'
 
 @paint(component)
-class Shapes {
+@events
+class Home {
+  #target
+
+  get target () {
+    return this.#target ??= ''
+  }
+
+  @repaint
+  [events.onEvent] () {
+    this.#target = new Home()
+    return this
+  }
 }
 
-export default Shapes
+export default Home
