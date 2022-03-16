@@ -1,5 +1,5 @@
-import { render } from '@kuba/h'
 import * as f from '@kuba/f'
+import { render } from '@kuba/h'
 import { paint } from '@kuba/sandbox'
 
 export default {
