@@ -1,4 +1,4 @@
-import h, { Fragment } from '@kuba/h'
+import h from '@kuba/h'
 import middleware from '@kuba/middleware'
 import render from './render'
 
