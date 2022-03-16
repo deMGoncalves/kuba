@@ -6,7 +6,7 @@ export default {
   is (event) {
     return f.and(
       f.equal('render', event.data?.action),
-      f.of(
+      f.or(
         f.equal('head', event.data?.payload?.element),
         f.equal('body', event.data?.payload?.element)
       )
