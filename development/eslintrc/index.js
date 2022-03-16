@@ -49,6 +49,17 @@ module.exports = {
         varsIgnorePattern: '^(h|Fragment)$',
         argsIgnorePattern: '^_'
       }
+    ],
+    'sort-imports': [
+      'error',
+      {
+        memberSyntaxSortOrder: [
+          'all',
+          'multiple',
+          'single',
+          'none'
+        ]
+      }
     ]
   },
   settings: {
