@@ -17,7 +17,6 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     allowImportExportEverywhere: true,
-    ecmaVersion: 12,
     sourceType: 'module'
   },
   plugins: [
