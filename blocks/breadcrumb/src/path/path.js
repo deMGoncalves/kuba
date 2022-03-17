@@ -1,11 +1,11 @@
-import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
-import jsonld from '@kuba/jsonld'
-import { redirectTo, urlFor } from '@kuba/router'
 import * as settings from '@kuba/settings'
+import { paint } from '@kuba/h'
+import { redirectTo, urlFor } from '@kuba/router'
 import component from './component'
 import data from './data'
 import event from './event'
+import jsonld from '@kuba/jsonld'
 import Stub from './stub'
 
 @paint(component)
