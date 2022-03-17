@@ -2,7 +2,7 @@ import * as f from '@kuba/f'
 import echo from '@kuba/echo'
 import middleware from '@kuba/middleware'
 
-const onShow = f.dunder.onShow
+const { onShow } = f.dunder
 
 const events = middleware((target) =>
   echo.on('cookie:open', () => target[onShow]())
