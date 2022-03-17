@@ -1,7 +1,7 @@
 import * as f from '@kuba/f'
-import middleware from '@kuba/middleware'
-import { urlFor } from '@kuba/router'
 import * as settings from '@kuba/settings'
+import { urlFor } from '@kuba/router'
+import middleware from '@kuba/middleware'
 import headers from './headers'
 
 const authRequired = () =>
