@@ -1,6 +1,6 @@
-import h from '@kuba/h'
 import * as f from '@kuba/f'
 import evalutate from './evalutate'
+import h from '@kuba/h'
 
 export default (url, name) =>
   fetch(url)
