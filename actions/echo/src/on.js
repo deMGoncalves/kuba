@@ -2,7 +2,7 @@ import * as f from '@kuba/f'
 import worker from './worker'
 
 const on = (channel, listener) =>
-  worker.addEventListener('message', (e) =>
-    f.equal(channel, f.prop('data.channel', e)) && listener(f.prop('data.message', e)))
+  worker.addEventListener('message', (event) =>
+    f.equal(channel, event.data?.channel) && listener(event.data?.message))
 
 export default f.curry(on)
