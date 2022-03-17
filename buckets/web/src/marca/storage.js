@@ -8,7 +8,8 @@ const { onError, onResponse } = f.dunder
 
 const storage = middleware((target) =>
   http
-    .post(`${settings.api.url}/marca`, { slug: params.marca })
+    .post(`${settings.api.url}/marca`)
+    .body({ slug: params.marca })
     .then(response => response.json())
     .then(({ data, error }) => (
       error
