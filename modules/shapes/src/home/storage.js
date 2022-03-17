@@ -10,7 +10,8 @@ const pull = after(request)
 
 function request (target) {
   http
-    .post(`${settings.api.url}/shape/shelf`, { page: target.page, ...target.filter })
+    .post(`${settings.api.url}/shape/shelf`)
+    .body({ page: target.page, ...target.filter })
     .then(response => response.json())
     .then(({ data, error }) => (
       error
