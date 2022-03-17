@@ -8,7 +8,7 @@ import style from './style'
 export default (site) =>
   <>
     <Hide when={site.pristine}>
-      <a className={style.site} href={site.url} onClick:prevent={() => site.redirect()} target='_blank'>
+      <a className={style.site} href={site.url} onClick:prevent={() => site.redirect()} target='_blank' rel='noreferrer'>
         {site.content}
         <icon.Share onColor />
       </a>

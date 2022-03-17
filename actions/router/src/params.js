@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 
-var params = {}
+const params = {}
 
 export default new Proxy(
   f.assign(params),

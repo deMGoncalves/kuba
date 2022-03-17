@@ -13,7 +13,7 @@ export default (lixa) =>
     </Show>
     <Show when={lixa.pristine}>
       <dl className={style.lixa}>
-        <text.Dt className={style.lixa__text} master darker xs bold/>
+        <text.Dt className={style.lixa__text} master darker xs bold />
         <text.Dd className={style.lixa__text} master xxxs />
       </dl>
     </Show>

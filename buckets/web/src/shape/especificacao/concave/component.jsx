@@ -13,7 +13,7 @@ export default (concave) =>
     </Show>
     <Show when={concave.pristine}>
       <dl className={style.concave}>
-        <text.Dt className={style.concave__text} master darker xs bold/>
+        <text.Dt className={style.concave__text} master darker xs bold />
         <text.Dd className={style.concave__text} master xxxs />
       </dl>
     </Show>
