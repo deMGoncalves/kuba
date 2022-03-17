@@ -1,7 +1,7 @@
 import h from '@kuba/h'
 import icon from '@kuba/icon'
-import text from '@kuba/text'
 import style from './style'
+import text from '@kuba/text'
 
 export default (tamanho) =>
   <div className={style.tamanho}>
