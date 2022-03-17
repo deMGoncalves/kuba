@@ -1,8 +1,8 @@
 import { paint } from '@kuba/h'
-import echo from '@kuba/echo'
-import props from '@kuba/props'
 import component from './component'
+import echo from '@kuba/echo'
 import event from './event'
+import props from '@kuba/props'
 
 @paint(component)
 @props
