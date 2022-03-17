@@ -1,13 +1,10 @@
-class Body {
-  static lock () {
-    document.body.style = 'overflow: hidden;'
-    return this
-  }
+const lock = () =>
+  document.body.style = 'overflow: hidden;'
 
-  static unlock () {
-    document.body.removeAttribute('style')
-    return this
-  }
+const unlock = () =>
+  document.body.removeAttribute('style')
+
+export default {
+  lock,
+  unlock
 }
-
-export default Body
