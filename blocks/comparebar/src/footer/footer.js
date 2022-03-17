@@ -1,5 +1,5 @@
-import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
+import { paint } from '@kuba/h'
 import { redirectTo, urlFor } from '@kuba/router'
 import actions from './actions'
 import component from './component'
