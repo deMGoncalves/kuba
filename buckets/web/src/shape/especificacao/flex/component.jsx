@@ -13,7 +13,7 @@ export default (flex) =>
     </Show>
     <Show when={flex.pristine}>
       <dl className={style.flex}>
-        <text.Dt className={style.flex__text} master darker xs bold/>
+        <text.Dt className={style.flex__text} master darker xs bold />
         <text.Dd className={style.flex__text} master xxxs />
       </dl>
     </Show>

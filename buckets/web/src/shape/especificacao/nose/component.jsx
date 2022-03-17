@@ -13,7 +13,7 @@ export default (nose) =>
     </Show>
     <Show when={nose.pristine}>
       <dl className={style.nose}>
-        <text.Dt className={style.nose__text} master darker xs bold/>
+        <text.Dt className={style.nose__text} master darker xs bold />
         <text.Dd className={style.nose__text} master xxxs />
       </dl>
     </Show>

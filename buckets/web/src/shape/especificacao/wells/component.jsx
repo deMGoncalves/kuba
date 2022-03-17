@@ -13,7 +13,7 @@ export default (wells) =>
     </Show>
     <Show when={wells.pristine}>
       <dl className={style.wells}>
-        <text.Dt className={style.wells__text} master darker xs bold/>
+        <text.Dt className={style.wells__text} master darker xs bold />
         <text.Dd className={style.wells__text} master xxxs />
       </dl>
     </Show>
