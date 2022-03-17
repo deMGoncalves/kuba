@@ -1,9 +1,9 @@
-import h, { Fragment } from '@kuba/h'
 import * as f from '@kuba/f'
+import h, { Fragment } from '@kuba/h'
 import link from '@kuba/link'
 import Show from '@kuba/show'
-import text from '@kuba/text'
 import style from './style'
+import text from '@kuba/text'
 
 export default (path) =>
   <>
