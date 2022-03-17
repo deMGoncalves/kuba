@@ -1,9 +1,11 @@
 import * as f from '@kuba/f'
 import evalutate from './evalutate'
 import h from '@kuba/h'
+import http from '@kuba/http'
 
 export default (url, name) =>
-  fetch(url)
+  http
+    .get(url)
     .then(response => response.blob())
     .then(blob => URL.createObjectURL(blob))
     .then(href => h('a', { href, download: f.or(name, evalutate(url)) }))
