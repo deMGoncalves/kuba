@@ -4,8 +4,7 @@ import { params } from '@kuba/router'
 import http from '@kuba/http'
 import middleware from '@kuba/middleware'
 
-const onError = f.dunder.onError
-const onResponse = f.dunder.onResponse
+const { onError, onResponse } = f.dunder
 
 const storage = middleware((target) =>
   http
