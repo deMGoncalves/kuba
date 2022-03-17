@@ -1,10 +1,7 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@kuba/supabase'
 
 export async function onRequestPost (context) {
-  const supabase = createClient(
-    context.env.API_URL,
-    context.env.API_KEY
-  )
+  const supabase = createClient(context)
 
   const {
     page = 1,
