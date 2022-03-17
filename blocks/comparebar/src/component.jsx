@@ -1,9 +1,9 @@
-import h from '@kuba/h'
-import Side from '@kuba/side'
 import Back from './back'
 import Footer from './footer'
+import h from '@kuba/h'
 import Header from './header'
 import Shelf from './shelf'
+import Side from '@kuba/side'
 import style from './style'
 
 export default (comparebar) =>
