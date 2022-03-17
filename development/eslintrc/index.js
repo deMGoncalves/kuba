@@ -6,6 +6,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    node: true,
     'jest/globals': true,
     'cypress/globals': true
   },
@@ -17,6 +18,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     allowImportExportEverywhere: true,
+    ecmaVersion: 2021,
     sourceType: 'module'
   },
   plugins: [
