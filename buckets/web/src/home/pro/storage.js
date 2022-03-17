@@ -8,7 +8,8 @@ const tamanho = JSON.parse(f.or(localStorage.getItem('_ml.tamanho'), '{}'))
 
 const effect = middleware((target) => (
   http
-    .post(`${settings.api.url}/shape/shelf`, {
+    .post(`${settings.api.url}/shape/shelf`)
+    .body({
       pro: true,
       tamanho: f
         .from(tamanho)
