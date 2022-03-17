@@ -1,10 +1,7 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@kuba/supabase'
 
 export async function onRequestGet (context) {
-  const supabase = createClient(
-    context.env.API_URL,
-    context.env.API_KEY
-  )
+  const supabase = createClient(context)
 
   const yesterday = new Date(Date.now() - 60 * 60 * 24 * 1000)
   const lastmod = yesterday.toISOString().slice(0, 10)
