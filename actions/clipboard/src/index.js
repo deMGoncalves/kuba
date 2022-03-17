@@ -1,2 +1,1 @@
-export default (value) =>
-  navigator.clipboard.writeText(value)
+export { default } from './clipboard'
