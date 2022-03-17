@@ -1,5 +1,5 @@
-import h from '@kuba/h'
 import button from '@kuba/button'
+import h from '@kuba/h'
 import Picture from '@kuba/picture'
 import style from './style'
 
