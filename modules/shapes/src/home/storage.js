@@ -3,8 +3,8 @@ import * as settings from '@kuba/settings'
 import http from '@kuba/http'
 import middleware, { after } from '@kuba/middleware'
 
-const onError = f.dunder.onError
-const onResponse = f.dunder.onResponse
+const { onError, onResponse } = f.dunder
+
 const storage = middleware(request)
 const pull = after(request)
 
