@@ -1,8 +1,8 @@
 import * as f from '@kuba/f'
 import * as settings from '@kuba/settings'
 import { urlFor } from '@kuba/router'
-import middleware from '@kuba/middleware'
 import headers from './headers'
+import middleware from '@kuba/middleware'
 
 const authRequired = () =>
   fetch(`${settings.api.url}/auth/user`, { headers })
