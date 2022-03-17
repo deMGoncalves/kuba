@@ -9,7 +9,8 @@ const { onError, onResponse } = f.dunder
 const effect = middleware((target) => (
   useEffect(() => (
     http
-      .post(`${settings.api.url}/shape/shelf`, {
+      .post(`${settings.api.url}/shape/shelf`)
+      .body({
         material: f
           .from(global.shape.material)
           .pipe(f.or(f.__, []))
