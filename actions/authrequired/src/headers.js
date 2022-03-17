@@ -1,5 +1,5 @@
 import cookie from '@kuba/cookie'
 
-export default new Headers({
+export default {
   Authorization: cookie.getItem('access_token')
-})
+}
