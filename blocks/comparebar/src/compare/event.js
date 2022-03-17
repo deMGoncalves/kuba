@@ -1,5 +1,5 @@
-import { dataLayer } from '@kuba/gtm'
 import { after } from '@kuba/middleware'
+import { dataLayer } from '@kuba/gtm'
 
 const open = after(function (output) {
   dataLayer.push({
