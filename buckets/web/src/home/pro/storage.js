@@ -1,7 +1,7 @@
 import * as f from '@kuba/f'
+import * as settings from '@kuba/settings'
 import http from '@kuba/http'
 import middleware from '@kuba/middleware'
-import * as settings from '@kuba/settings'
 
 const onError = f.dunder.onError
 const onResponse = f.dunder.onResponse
