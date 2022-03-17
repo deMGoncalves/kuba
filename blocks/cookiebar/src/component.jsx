@@ -1,7 +1,7 @@
-import h from '@kuba/h'
 import button from '@kuba/button'
-import text from '@kuba/text'
+import h from '@kuba/h'
 import style from './style'
+import text from '@kuba/text'
 
 export default (cookiebar) =>
   <aside className={style.cookiebar} opened:isTruthy={cookiebar.opened}>
