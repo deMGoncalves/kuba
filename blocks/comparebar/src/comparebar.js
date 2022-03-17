@@ -1,8 +1,8 @@
-import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import { paint, repaint } from '@kuba/h'
+import actions from './actions'
 import component from './component'
 import scroll from './scroll'
-import actions from './actions'
 
 @paint(component)
 @actions
