@@ -1,5 +1,5 @@
-import middleware from '@kuba/middleware'
 import echo from '@kuba/echo'
+import middleware from '@kuba/middleware'
 
 const connected = (lazy) => (
   echo.on(`lazy:${lazy.channel}`, async () => {

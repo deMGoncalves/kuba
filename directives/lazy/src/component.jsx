@@ -1,7 +1,7 @@
+import './cron'
 import h, { Fragment } from '@kuba/h'
 import Hide from '@kuba/hide'
 import Show from '@kuba/show'
-import './cron'
 
 export default (lazy) =>
   <>
