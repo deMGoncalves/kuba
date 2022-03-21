@@ -1,8 +1,8 @@
-import h from '@kuba/h'
 import Avatar from '@kuba/avatar'
+import h from '@kuba/h'
 import Show from '@kuba/show'
-import text from '@kuba/text'
 import style from './style'
+import text from '@kuba/text'
 
 export default (origem) =>
   <span uid='origem' className={style.origem}>

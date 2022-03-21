@@ -1,5 +1,5 @@
-import { push } from '@kuba/jsonld'
 import * as settings from '@kuba/settings'
+import { push } from '@kuba/jsonld'
 
 export default (marca) =>
   push({

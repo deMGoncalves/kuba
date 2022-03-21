@@ -1,10 +1,10 @@
-import h, { Fragment } from '@kuba/h'
-import Site from '@kuba/site'
 import Breadcrumb from './breadcrumb'
+import h, { Fragment } from '@kuba/h'
 import Descricao from './descricao'
 import More from './more'
 import Nome from './nome'
 import Shelf from './shelf'
+import Site from '@kuba/site'
 
 export default () =>
   <Site>

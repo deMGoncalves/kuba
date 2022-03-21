@@ -1,7 +1,7 @@
+import * as mapper from './mapper'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
 import effect from './effect'
-import * as mapper from './mapper'
 
 @paint(component)
 @effect

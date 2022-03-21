@@ -1,9 +1,9 @@
-import h from '@kuba/h'
 import container from '@kuba/container'
-import text from '@kuba/text'
+import h from '@kuba/h'
 import Origem from './origem'
 import Site from './site'
 import style from './style'
+import text from '@kuba/text'
 import View from './view'
 
 export default (title) =>
