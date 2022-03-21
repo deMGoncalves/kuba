@@ -1,8 +1,8 @@
-import h from '@kuba/h'
 import container from '@kuba/container'
+import h from '@kuba/h'
 import Metro from '@kuba/metro'
-import text from '@kuba/text'
 import style from './style'
+import text from '@kuba/text'
 
 export default (material) =>
   <container.Section className={style.material} empty:isTruthy={material.empty}>
