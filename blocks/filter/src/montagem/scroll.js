@@ -1,5 +1,5 @@
-import echo from '@kuba/echo'
 import { after } from '@kuba/middleware'
+import echo from '@kuba/echo'
 
 const lock = after(function (output) {
   echo.emit('overlayer:open')
