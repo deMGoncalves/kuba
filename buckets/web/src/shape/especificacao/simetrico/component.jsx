@@ -13,7 +13,7 @@ export default (simetrico) =>
     </Show>
     <Show when={simetrico.pristine}>
       <dl className={style.simetrico}>
-        <text.Dt className={style.simetrico__text} master darker xs bold/>
+        <text.Dt className={style.simetrico__text} master darker xs bold />
         <text.Dd className={style.simetrico__text} master xxxs />
       </dl>
     </Show>

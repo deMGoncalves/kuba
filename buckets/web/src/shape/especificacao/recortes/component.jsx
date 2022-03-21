@@ -13,7 +13,7 @@ export default (recortes) =>
     </Show>
     <Show when={recortes.pristine}>
       <dl className={style.recortes}>
-        <text.Dt className={style.recortes__text} master darker xs bold/>
+        <text.Dt className={style.recortes__text} master darker xs bold />
         <text.Dd className={style.recortes__text} master xxxs />
       </dl>
     </Show>
