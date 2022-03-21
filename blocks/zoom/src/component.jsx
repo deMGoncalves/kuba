@@ -1,6 +1,6 @@
+import button from '@kuba/button'
 import h from '@kuba/h'
 import style from './style'
-import button from '@kuba/button'
 
 export default (zoom) =>
   <section className={style.zoom} opened:isTruthy={zoom.opened}>

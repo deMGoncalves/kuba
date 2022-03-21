@@ -1,5 +1,5 @@
-import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import { paint, repaint } from '@kuba/h'
 import component from './component'
 import events from './events'
 import scroll from './scroll'
