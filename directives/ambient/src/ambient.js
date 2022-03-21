@@ -1,5 +1,5 @@
-import Show from '@kuba/show'
 import env from '@kuba/env'
+import Show from '@kuba/show'
 
 export default new Proxy({}, {
   get: (_, ambient) =>
