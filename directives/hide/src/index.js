@@ -1,4 +1,1 @@
-export default (props, children) =>
-  props.when
-    ? []
-    : children
+export { default } from './hide'
