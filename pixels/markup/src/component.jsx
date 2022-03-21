@@ -17,21 +17,21 @@ import Url from './url'
 import Viewport from './viewport'
 
 export default () =>
-<>
-  <Alternate />
-  <Author />
-  <Base />
-  <Canonical />
-  <Card />
-  <Charset />
-  <Cps />
-  <Description />
-  <Icon />
-  <Image />
-  <Robots />
-  <ThemeColor />
-  <Title />
-  <Type />
-  <Url />
-  <Viewport />
-</>
+  <>
+    <Alternate />
+    <Author />
+    <Base />
+    <Canonical />
+    <Card />
+    <Charset />
+    <Cps />
+    <Description />
+    <Icon />
+    <Image />
+    <Robots />
+    <ThemeColor />
+    <Title />
+    <Type />
+    <Url />
+    <Viewport />
+  </>
