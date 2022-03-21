@@ -1,5 +1,5 @@
-import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
+import { paint, repaint } from '@kuba/h'
 import echo from '@kuba/echo'
 import component from './component'
 import Option from './option'
