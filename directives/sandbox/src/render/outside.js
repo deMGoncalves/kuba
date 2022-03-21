@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
-import { render } from '@kuba/h'
 import { paint } from '@kuba/sandbox'
+import { render } from '@kuba/h'
 
 export default {
   is (event) {
