@@ -1,7 +1,7 @@
 import h from '@kuba/h'
+import render from './render'
 import router from '@kuba/router'
 import Sandbox from '@kuba/sandbox'
-import render from './render'
 
 router('/', async function home () {
   render(
