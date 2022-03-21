@@ -13,7 +13,7 @@ export default (montagem) =>
     </Show>
     <Show when={montagem.pristine}>
       <dl className={style.montagem}>
-        <text.Dt className={style.montagem__text} master darker xs bold/>
+        <text.Dt className={style.montagem__text} master darker xs bold />
         <text.Dd className={style.montagem__text} master xxxs />
       </dl>
     </Show>

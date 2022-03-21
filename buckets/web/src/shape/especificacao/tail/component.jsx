@@ -13,7 +13,7 @@ export default (tail) =>
     </Show>
     <Show when={tail.pristine}>
       <dl className={style.tail}>
-        <text.Dt className={style.tail__text} master darker xs bold/>
+        <text.Dt className={style.tail__text} master darker xs bold />
         <text.Dd className={style.tail__text} master xxxs />
       </dl>
     </Show>

@@ -13,7 +13,7 @@ export default (flares) =>
     </Show>
     <Show when={flares.pristine}>
       <dl className={style.flares}>
-        <text.Dt className={style.flares__text} master darker xs bold/>
+        <text.Dt className={style.flares__text} master darker xs bold />
         <text.Dd className={style.flares__text} master xxxs />
       </dl>
     </Show>
