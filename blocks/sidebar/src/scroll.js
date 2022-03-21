@@ -1,7 +1,7 @@
 import * as f from '@kuba/f'
+import { after } from '@kuba/middleware'
 import echo from '@kuba/echo'
 import media from '@kuba/media'
-import { after } from '@kuba/middleware'
 
 let mobile = f.T()
 

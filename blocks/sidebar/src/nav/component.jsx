@@ -1,6 +1,6 @@
 import h from '@kuba/h'
-import Repeat from '@kuba/repeat'
 import Link from './link'
+import Repeat from '@kuba/repeat'
 import schema from './schema.json'
 import style from './style'
 

@@ -1,8 +1,8 @@
-import h from '@kuba/h'
 import * as f from '@kuba/f'
+import { urlFor } from '@kuba/router'
+import h from '@kuba/h'
 import icon from '@kuba/icon'
 import link from '@kuba/link'
-import { urlFor } from '@kuba/router'
 import style from './style'
 
 export default (props, index) =>
