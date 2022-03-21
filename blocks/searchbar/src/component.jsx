@@ -1,6 +1,6 @@
-import h, { Fragment } from '@kuba/h'
 import button from '@kuba/button'
 import container from '@kuba/container'
+import h, { Fragment } from '@kuba/h'
 import style from './style'
 
 export default (searchbar) =>

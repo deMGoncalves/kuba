@@ -1,10 +1,10 @@
-import { didUpdate, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
-import jsonld from '@kuba/jsonld'
+import { didUpdate, paint, repaint } from '@kuba/h'
 import { urlFor } from '@kuba/router'
 import action from './action'
 import component from './component'
 import data from './data'
+import jsonld from '@kuba/jsonld'
 import scroll from './scroll'
 
 @paint(component)

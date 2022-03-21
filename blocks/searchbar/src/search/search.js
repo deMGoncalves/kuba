@@ -1,6 +1,6 @@
 import { paint } from '@kuba/h'
-import echo from '@kuba/echo'
 import component from './component'
+import echo from '@kuba/echo'
 
 @paint(component)
 class Search {
