@@ -1,7 +1,7 @@
-import h from '@kuba/h'
 import Avatar from '@kuba/avatar'
-import text from '@kuba/text'
+import h from '@kuba/h'
 import style from './style'
+import text from '@kuba/text'
 
 export default (option) =>
   <div className={style.option} onClick={() => option.toggle()} selected:isTruthy={option.selected}>
