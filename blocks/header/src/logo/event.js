@@ -1,5 +1,5 @@
-import { dataLayer } from '@kuba/gtm'
 import { before } from '@kuba/middleware'
+import { dataLayer } from '@kuba/gtm'
 
 const redirect = before(function (page) {
   dataLayer.push({

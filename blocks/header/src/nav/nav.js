@@ -1,9 +1,9 @@
-import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
-import props from '@kuba/props'
+import { paint, repaint } from '@kuba/h'
 import { urlFor } from '@kuba/router'
 import component from './component'
 import event from './event'
+import props from '@kuba/props'
 import resize from './resize'
 import scroll from './scroll'
 

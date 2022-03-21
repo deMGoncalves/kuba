@@ -1,8 +1,8 @@
-import h, { Fragment } from '@kuba/h'
+import { urlFor } from '@kuba/router'
 import button from '@kuba/button'
+import h, { Fragment } from '@kuba/h'
 import Hide from '@kuba/hide'
 import link from '@kuba/link'
-import { urlFor } from '@kuba/router'
 import Show from '@kuba/show'
 import style from './style'
 

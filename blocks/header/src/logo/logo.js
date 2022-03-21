@@ -1,8 +1,8 @@
 import { paint } from '@kuba/h'
-import props from '@kuba/props'
 import { urlFor } from '@kuba/router'
 import component from './component'
 import event from './event'
+import props from '@kuba/props'
 
 @paint(component)
 @props
