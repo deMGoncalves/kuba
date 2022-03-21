@@ -1,7 +1,7 @@
-import { didMount, paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
-import onScreen from '@kuba/onscreen'
+import { didMount, paint, repaint } from '@kuba/h'
 import component from './component'
+import onScreen from '@kuba/onscreen'
 
 @paint(component)
 class Zone {
