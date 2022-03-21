@@ -1,18 +1,16 @@
 import * as f from '@kuba/f'
-import { color, weight } from '@kuba/polished'
+import { blend, color, weight } from '@kuba/polished'
 import has from './has'
 import merge from './merge'
 import skeleton from '@kuba/skeleton'
 import styled from '@kuba/styled'
 
 const component = styled.button`
-  --color: ${color};
-
   align-items: center;
-  background-color: transparent;
-  border: var(--border-width-thin) solid var(--color);
+  background-color: ${color};
+  border: none;
   border-radius: var(--border-radius-sm);
-  color: var(--color);
+  color: ${blend};
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-base);
@@ -26,17 +24,14 @@ const component = styled.button`
   user-select: none;
 `
 
-const button = () =>
-  new Proxy({}, {
-    get: (_, type) =>
-      (props, children) =>
-        has(children)
-          ? component(merge(props, type), children)
-          : skeleton.button(props)
-  })
+const master = (type) =>
+  (props, children) =>
+    has(children)
+      ? component(merge(props, type), children)
+      : skeleton.button(props)
 
-f.assign(button, {
-  is: f.equal('naked')
+f.assign(master, {
+  is: f.T
 })
 
-export default button
+export default master

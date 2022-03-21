@@ -1,7 +1,7 @@
-import h from '@kuba/h'
 import * as f from '@kuba/f'
-import styled from '@kuba/styled'
+import h from '@kuba/h'
 import icon from '@kuba/icon'
+import styled from '@kuba/styled'
 
 const style = styled.style`
   .button {
