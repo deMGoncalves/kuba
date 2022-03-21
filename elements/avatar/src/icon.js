@@ -1,7 +1,7 @@
 import h from '@kuba/h'
 import icon from '@kuba/icon'
-import styled from '@kuba/styled'
 import merge from './merge'
+import styled from '@kuba/styled'
 
 const style = styled.style`
   .avatar {

@@ -1,8 +1,8 @@
+import has from './has'
+import merge from './merge'
 import picture from '@kuba/picture'
 import skeleton from '@kuba/skeleton'
 import styled from '@kuba/styled'
-import has from './has'
-import merge from './merge'
 
 const style = styled.style`
   .avatar {
