@@ -1,11 +1,11 @@
-import h from '@kuba/h'
-import container from '@kuba/container'
 import { Cookie } from '@kuba/cookiebar'
+import { urlFor } from '@kuba/router'
+import container from '@kuba/container'
+import h from '@kuba/h'
 import link from '@kuba/link'
 import Logo from '@kuba/logo'
-import { urlFor } from '@kuba/router'
-import text from '@kuba/text'
 import style from './style'
+import text from '@kuba/text'
 
 export default (footer) =>
   <footer className={style.footer}>

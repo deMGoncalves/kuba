@@ -1,6 +1,6 @@
+import * as settings from '@kuba/settings'
 import { paint } from '@kuba/h'
 import { urlFor } from '@kuba/router'
-import * as settings from '@kuba/settings'
 import component from './component'
 import event from './event'
 
