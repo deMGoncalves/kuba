@@ -1,7 +1,7 @@
-import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
-import echo from '@kuba/echo'
+import { paint } from '@kuba/h'
 import component from './component'
+import echo from '@kuba/echo'
 
 @paint(component)
 class Tag {
