@@ -1,10 +1,10 @@
-import h from '@kuba/h'
 import container from '@kuba/container'
-import Repeat from '@kuba/repeat'
-import text from '@kuba/text'
+import h from '@kuba/h'
 import Laminas from './laminas'
-import Tag from './tag'
+import Repeat from '@kuba/repeat'
 import style from './style'
+import Tag from './tag'
+import text from '@kuba/text'
 
 export default (material) =>
   <container.Section className={style.material}>

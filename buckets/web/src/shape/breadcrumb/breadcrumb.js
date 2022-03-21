@@ -1,8 +1,8 @@
-import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import { component, data, Path } from '@kuba/breadcrumb'
-import jsonld from '@kuba/jsonld'
+import { paint, repaint } from '@kuba/h'
 import effect from './effect'
+import jsonld from '@kuba/jsonld'
 
 @paint(component)
 @jsonld(data)

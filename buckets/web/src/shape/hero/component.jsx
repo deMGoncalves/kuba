@@ -1,10 +1,10 @@
-import h from '@kuba/h'
-import container from '@kuba/container'
 import Compare from './compare'
+import container from '@kuba/container'
+import h from '@kuba/h'
 import Preco from './preco'
 import Site from './site'
-import Thumbnail from './thumbnail'
 import style from './style'
+import Thumbnail from './thumbnail'
 
 export default () =>
   <container.Section className={style.hero}>

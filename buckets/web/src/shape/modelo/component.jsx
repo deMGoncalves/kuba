@@ -1,10 +1,10 @@
-import h from '@kuba/h'
 import container from '@kuba/container'
-import text from '@kuba/text'
-import Origem from './origem'
+import h from '@kuba/h'
 import Marca from './marca'
+import Origem from './origem'
 import Pro from './pro'
 import style from './style'
+import text from '@kuba/text'
 import View from './view'
 
 export default (modelo) =>

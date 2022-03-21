@@ -1,8 +1,8 @@
-import h from '@kuba/h'
 import container from '@kuba/container'
-import text from '@kuba/text'
+import h from '@kuba/h'
 import style from './style'
 import Tamanho from './tamanho'
+import text from '@kuba/text'
 import Wheelbase from './wheelbase'
 
 export default () =>

@@ -1,7 +1,7 @@
 import h, { Fragment } from '@kuba/h'
 import Hide from '@kuba/hide'
-import text from '@kuba/text'
 import style from './style'
+import text from '@kuba/text'
 
 export default (preco) =>
   <>

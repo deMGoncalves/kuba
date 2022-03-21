@@ -1,5 +1,5 @@
-import h, { Fragment } from '@kuba/h'
 import button from '@kuba/button'
+import h, { Fragment } from '@kuba/h'
 import Hide from '@kuba/hide'
 import icon from '@kuba/icon'
 import Show from '@kuba/show'

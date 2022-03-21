@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
-import real from './real'
 import dolar from './dolar'
+import real from './real'
 
 export default f.cond(
   [real.is, f.always(real)],

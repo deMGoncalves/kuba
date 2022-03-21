@@ -1,8 +1,8 @@
 import * as f from '@kuba/f'
-import http from '@kuba/http'
+import * as settings from '@kuba/settings'
 import { after } from '@kuba/middleware'
 import { params } from '@kuba/router'
-import * as settings from '@kuba/settings'
+import http from '@kuba/http'
 
 const views = JSON.parse(f.or(sessionStorage.getItem('_kuba.views'), '{}'))
 

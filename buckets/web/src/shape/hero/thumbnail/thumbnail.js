@@ -1,6 +1,6 @@
 import { paint, repaint } from '@kuba/h'
-import echo from '@kuba/echo'
 import component from './component'
+import echo from '@kuba/echo'
 import effect from './effect'
 
 @paint(component)
