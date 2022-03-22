@@ -1,16 +1,12 @@
-import { color, family, size, weight } from '@kuba/polished'
-import styled from '@kuba/styled'
+import component from './component'
+import has from './has'
+import merge from './merge'
+import skeleton from '@kuba/skeleton'
 
-export default styled.a`
-  align-items: center;
-  color: ${color};
-  cursor: pointer;
-  display: inline-flex;
-  font-family: ${family};
-  font-size: ${size};
-  font-weight: ${weight};
-  gap: var(--spacing_inset-xs);
-  letter-spacing: 0.618px;
-  line-height: var(--line-height-default);
-  user-select: none;
-`
+export default new Proxy({}, {
+  get: (_, type) =>
+    (props, children) =>
+      has(children)
+        ? component(merge(props, type), children)
+        : skeleton.link(props)
+})
