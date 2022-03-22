@@ -1,6 +1,5 @@
 import * as f from '@kuba/f'
-import * as settings from '@kuba/settings'
-import http from '@kuba/http'
+import http, { api } from '@kuba/http'
 import middleware from '@kuba/middleware'
 
 const { onError, onResponse } = f.dunder
@@ -8,7 +7,7 @@ const tamanho = JSON.parse(f.or(localStorage.getItem('_ml.tamanho'), '{}'))
 
 const effect = middleware((target) => (
   http
-    .post(`${settings.api.url}/shape/shelf`)
+    .post(`${api.url}/shape/shelf`)
     .body({
       marca: [target.valor],
       tamanho: f
