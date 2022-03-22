@@ -1,22 +1,18 @@
-import { didMount, paint } from '@kuba/h'
 import * as f from '@kuba/f'
+import { didMount, paint } from '@kuba/h'
 import component from './component'
+import props from '@kuba/props'
 
 @paint(component)
+@props
 class Metro {
-  #className
   #current
   #isShortClick
   #isDragging
   #listeners
-  #props
   #scrollLeft
   #start
   #target
-
-  get className () {
-    return this.#className
-  }
 
   get isDragging () {
     return this.#isDragging ??= f.F()
@@ -26,15 +22,9 @@ class Metro {
     return this.#isShortClick ??= f.F()
   }
 
-  get props () {
-    return this.#props
-  }
-
-  constructor (props) {
-    this.#className = props.className
+  constructor () {
     this.#current = { x: 0, y: 0 }
     this.#start = { x: 0, y: 0 }
-    this.#props = props
     this.#listeners = [
       { event: 'mousemove', listener: e => this.isDragging && this.scrollMove(e) },
       { event: 'mousedown', listener: e => this.startDragging(e) },
