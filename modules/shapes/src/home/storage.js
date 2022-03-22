@@ -11,7 +11,7 @@ function request (target) {
   http
     .post(`${api.url}/shape/shelf`)
     .body({ page: target.page, ...target.filter })
-    .josn(({ data, error }) => (
+    .json(({ data, error }) => (
       error
         ? target[onError]()
         : target[onResponse](data)
