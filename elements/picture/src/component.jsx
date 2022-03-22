@@ -1,6 +1,6 @@
-import h from '@kuba/h'
 import * as f from '@kuba/f'
 import * as settings from '@kuba/settings'
+import h from '@kuba/h'
 import style from './style'
 
 export default (props, children) =>
