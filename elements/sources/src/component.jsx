@@ -1,5 +1,5 @@
-import h, { Fragment } from '@kuba/h'
 import * as f from '@kuba/f'
+import h, { Fragment } from '@kuba/h'
 
 export default ({ thumbnails: [mobile, tablet, desktop] = [], slot }) =>
   <Fragment slot={slot}>
