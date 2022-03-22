@@ -1,23 +1,12 @@
-import { color, weight } from '@kuba/polished'
-import styled from '@kuba/styled'
+import component from './component'
+import has from './has'
+import merge from './merge'
+import skeleton from '@kuba/skeleton'
 
-export default styled.button`
-  --color: ${color};
-
-  align-items: center;
-  background-color: transparent;
-  border: var(--border-width-hairline) solid var(--color);
-  border-radius: var(--border-radius-pill);
-  color: var(--color);
-  cursor: pointer;
-  display: inline-flex;
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-xxxs);
-  font-weight: ${weight};
-  gap: var(--spacing_inset-nano);
-  height: 34px;
-  justify-content: center;
-  letter-spacing: 0.618px;
-  padding: 0 var(--spacing_inset-sm);
-  user-select: none;
-`
+export default new Proxy({}, {
+  get: (_, type) =>
+    (props, children) =>
+      has(children)
+        ? component(merge(props, type), children)
+        : skeleton.tag(props)
+})
