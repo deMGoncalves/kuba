@@ -8,6 +8,12 @@ export default new Proxy({}, {
       }
 
       return {
+        blob (target) {
+          return this
+            .then(response => response.blob())
+            .then(target)
+        },
+
         body (target) {
           f.assign(init, {
             body: JSON.stringify(target)
@@ -22,8 +28,15 @@ export default new Proxy({}, {
           return this
         },
 
-        then (callback) {
-          return fetch(url, init).then(callback)
+        json (target) {
+          return this
+            .then(response => response.json())
+            .then(target)
+        },
+
+        then (target) {
+          return fetch(url, init)
+            .then(target)
         },
 
         mode (target) {
