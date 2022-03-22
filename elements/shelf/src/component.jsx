@@ -1,5 +1,5 @@
-import h from '@kuba/h'
 import container from '@kuba/container'
+import h from '@kuba/h'
 import style from './style'
 
 export default (props, children) =>
