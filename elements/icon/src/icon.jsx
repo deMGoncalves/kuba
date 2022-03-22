@@ -1,7 +1,7 @@
-import h from '@kuba/h'
 import * as f from '@kuba/f'
-import * as settings from '@kuba/settings'
 import * as mapper from './mapper'
+import * as settings from '@kuba/settings'
+import h from '@kuba/h'
 import merge from './merge'
 import style from './style'
 
