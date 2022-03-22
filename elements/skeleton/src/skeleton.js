@@ -1,5 +1,5 @@
-import h from '@kuba/h'
 import * as f from '@kuba/f'
+import h from '@kuba/h'
 import mapper from './mapper'
 import style from './style'
 

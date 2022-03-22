@@ -1,4 +1,3 @@
-import h from '@kuba/h'
 import styled from '@kuba/styled'
 
 export default styled.picture`
