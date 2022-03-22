@@ -1,7 +1,6 @@
 import * as f from '@kuba/f'
-import * as settings from '@kuba/settings'
 import global, { useEffect } from '@kuba/global'
-import http from '@kuba/http'
+import http, { api } from '@kuba/http'
 import middleware from '@kuba/middleware'
 
 const { onError, onResponse } = f.dunder
@@ -9,7 +8,7 @@ const { onError, onResponse } = f.dunder
 const effect = middleware((target) => (
   useEffect(() => (
     http
-      .post(`${settings.api.url}/shape/shelf`)
+      .post(`${api.url}/shape/shelf`)
       .body({
         material: f
           .from(global.shape.material)
@@ -20,8 +19,7 @@ const effect = middleware((target) => (
         size: 4,
         page: 1
       })
-      .then(response => response.json())
-      .then(({ data, error }) => (
+      .json(({ data, error }) => (
         error
           ? target[onError]()
           : target[onResponse](data)
