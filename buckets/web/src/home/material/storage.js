@@ -19,8 +19,7 @@ const effect = middleware((target) => (
       size: 4,
       page: 1
     })
-    .then(response => response.json())
-    .then(({ data, error }) => (
+    .json(({ data, error }) => (
       error
         ? target[onError]()
         : target[onResponse](data)
