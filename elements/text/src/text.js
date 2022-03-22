@@ -1,14 +1,11 @@
-import { color, family, size, weight } from '@kuba/polished'
-import styled from '@kuba/styled'
+import component from './component'
+import has from './has'
+import skeleton from '@kuba/skeleton'
 
 export default new Proxy({}, {
   get: (_, tag) =>
-    styled[tag]`
-      color: ${color};
-      font-family: ${family};
-      font-size: ${size};
-      font-weight: ${weight};
-      letter-spacing: 0.618px;
-      line-height: var(--line-height-default);
-    `
+    (props, children) =>
+      has(children)
+        ? component[tag](props, children)
+        : skeleton.text(props)
 })
