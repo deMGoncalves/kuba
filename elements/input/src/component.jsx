@@ -1,6 +1,6 @@
 import h from '@kuba/h'
-import text from '@kuba/text'
 import style from './style'
+import text from '@kuba/text'
 
 export default (props, children) =>
   <div className={style.input__div} oncolor={props.onColor}>
