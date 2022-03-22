@@ -1,6 +1,5 @@
 import * as f from '@kuba/f'
-import * as settings from '@kuba/settings'
-import http from '@kuba/http'
+import http, { api } from '@kuba/http'
 import middleware, { after } from '@kuba/middleware'
 
 const { onError, onResponse } = f.dunder
@@ -10,10 +9,9 @@ const pull = after(request)
 
 function request (target) {
   http
-    .post(`${settings.api.url}/shape/shelf`)
+    .post(`${api.url}/shape/shelf`)
     .body({ page: target.page, ...target.filter })
-    .then(response => response.json())
-    .then(({ data, error }) => (
+    .josn(({ data, error }) => (
       error
         ? target[onError]()
         : target[onResponse](data)
