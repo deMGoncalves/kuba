@@ -1,11 +1,11 @@
-import { didMount, paint } from '@kuba/h'
 import * as f from '@kuba/f'
-import { setGlobal } from '@kuba/global'
-import jsonld from '@kuba/jsonld'
-import { setDescription, setTitle } from '@kuba/markup'
+import { didMount, paint } from '@kuba/h'
 import { redirectTo } from '@kuba/router'
+import { setGlobal } from '@kuba/global'
+import { setDescription, setTitle } from '@kuba/markup'
 import component from './component'
 import data from './data'
+import jsonld from '@kuba/jsonld'
 import storage from './storage'
 
 @paint(component)

@@ -1,8 +1,8 @@
-import h from '@kuba/h'
-import container from '@kuba/container'
 import { args } from '@kuba/router'
-import text from '@kuba/text'
+import container from '@kuba/container'
+import h from '@kuba/h'
 import style from './style'
+import text from '@kuba/text'
 
 export default () =>
   <container.Section className={style.title}>
