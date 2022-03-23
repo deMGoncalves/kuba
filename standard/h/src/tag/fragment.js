@@ -1,5 +1,5 @@
-import { eager } from '@kuba/h'
 import * as f from '@kuba/f'
+import { eager } from '@kuba/h'
 import Children from './children'
 
 class Fragment {

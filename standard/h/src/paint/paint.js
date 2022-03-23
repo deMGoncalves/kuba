@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
-import execute from './execute'
 import create from './create'
+import execute from './execute'
 
 export default (component) =>
   (Klass) =>

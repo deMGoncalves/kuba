@@ -1,5 +1,5 @@
-import { eager } from '@kuba/h'
 import * as f from '@kuba/f'
+import { eager } from '@kuba/h'
 import Attributes from './attributes'
 import Children from './children'
 import ClassName from './className'

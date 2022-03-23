@@ -1,5 +1,5 @@
-import { eager } from '@kuba/h'
 import * as f from '@kuba/f'
+import { eager } from '@kuba/h'
 import filter from './filter'
 import mapper from './mapper'
 import reflow from './reflow'
