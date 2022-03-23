@@ -1,5 +1,5 @@
-import h from '@kuba/h'
 import { blueprint } from '@kuba/router'
+import h from '@kuba/h'
 import render from './render'
 
 const router = blueprint('marcas', '/marcas')
