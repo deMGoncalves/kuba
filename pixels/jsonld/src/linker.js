@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
-import middleware from '@kuba/middleware'
 import graph from './graph'
+import middleware from '@kuba/middleware'
 import render from './render'
 
 export default (schema) =>

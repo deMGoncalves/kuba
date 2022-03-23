@@ -1,6 +1,6 @@
-import h, { render } from '@kuba/h'
 import * as f from '@kuba/f'
 import graph from './graph'
+import h, { render } from '@kuba/h'
 
 const jsonld = () =>
   render(
