@@ -1,8 +1,8 @@
 import h, { Fragment } from '@kuba/h'
-import Lazy from '@kuba/lazy'
-import Zone from '@kuba/zone'
 import Header from './header'
+import Lazy from '@kuba/lazy'
 import style from './style'
+import Zone from '@kuba/zone'
 
 export default (site, children) =>
   <>

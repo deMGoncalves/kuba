@@ -1,7 +1,7 @@
-import h from '@kuba/h'
 import { Compare } from '@kuba/comparebar'
-import Header, { Logo, Nav } from '@kuba/header'
 import { Search } from '@kuba/searchbar'
+import h from '@kuba/h'
+import Header, { Logo, Nav } from '@kuba/header'
 import style from './style'
 import Tools from './tools'
 
