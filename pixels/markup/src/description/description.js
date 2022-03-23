@@ -1,5 +1,5 @@
-import { paint, repaint } from '@kuba/h'
 import * as settings from '@kuba/settings'
+import { paint, repaint } from '@kuba/h'
 import component from './component'
 import effect from './effect'
 

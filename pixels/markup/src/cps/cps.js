@@ -1,5 +1,5 @@
-import { paint } from '@kuba/h'
 import * as settings from '@kuba/settings'
+import { paint } from '@kuba/h'
 import component from './component'
 
 @paint(component)
