@@ -1,15 +1,26 @@
-import h, { render } from '@kuba/h'
 import * as f from '@kuba/f'
+import { hotjar } from '@kuba/settings'
+import h, { render } from '@kuba/h'
+import accepted from './accepted'
 import agent from '@kuba/agent'
 import env from '@kuba/env'
-import { hotjar } from '@kuba/settings'
-import accepted from './accepted'
+import schema from './schema.json'
 
-f.and(agent.isUser, env.isProd, accepted) && (
-  window._hjSettings = hotjar,
+const settings = f.idle(() =>
+  window._hjSettings = hotjar
+)
 
+const pixel = f.idle(() =>
   render(
     document.head,
-    <script src={`https://static.hotjar.com/c/hotjar-${hotjar.hjid}.js?sv=6`} async />
+    <script src={schema.src} async />
   )
+)
+
+f.and(
+  agent.isUser,
+  env.isProd,
+  accepted) && (
+  settings(),
+  pixel()
 )
