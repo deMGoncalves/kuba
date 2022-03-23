@@ -1,6 +1,6 @@
-import { paint, repaint } from '@kuba/h'
 import * as f from '@kuba/f'
 import * as action from './action'
+import { paint, repaint } from '@kuba/h'
 import component from './component'
 import effect from './effect'
 
