@@ -40,12 +40,7 @@ module.exports = {
     'no-console': 'error',
     'no-implied-eval': 'off',
     'no-return-assign': 'off',
-    'no-sequences': [
-      'error'
-      {
-        allowInParentheses: true,
-      }
-    ],
+    'no-sequences': 'off',
     'no-unused-expressions': 'off',
     'no-unused-vars': [
       'error',
