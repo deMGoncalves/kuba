@@ -1,12 +1,18 @@
-import h, { render } from '@kuba/h'
 import * as f from '@kuba/f'
 import agent from '@kuba/agent'
 import env from '@kuba/env'
-import * as settings from '@kuba/settings'
+import h, { render } from '@kuba/h'
+import schema from './schema.json'
 
-f.and(agent.isUser, env.isProd) && (
+const pixel = f.idle(() =>
   render(
     document.head,
-    <meta name='lomadee-verification' content={settings.lomadee.code} />
+    <meta name='lomadee-verification' content={schema.code} />
   )
+)
+
+f.and(
+  agent.isUser,
+  env.isProd) && (
+  pixel()
 )
