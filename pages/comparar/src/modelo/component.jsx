@@ -1,8 +1,8 @@
 import h, { Fragment } from '@kuba/h'
-import text from '@kuba/text'
-import Origem from './origem'
 import Marca from './marca'
+import Origem from './origem'
 import style from './style'
+import text from '@kuba/text'
 
 export default (modelo) =>
   <>

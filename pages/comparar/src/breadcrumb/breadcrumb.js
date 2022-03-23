@@ -1,6 +1,6 @@
-import { paint } from '@kuba/h'
 import * as f from '@kuba/f'
 import { component, data, Path } from '@kuba/breadcrumb'
+import { paint } from '@kuba/h'
 import jsonld from '@kuba/jsonld'
 import schema from './schema.json'
 

@@ -2,8 +2,8 @@ import h, { Fragment } from '@kuba/h'
 import Hide from '@kuba/hide'
 import icon from '@kuba/icon'
 import Show from '@kuba/show'
-import text from '@kuba/text'
 import style from './style'
+import text from '@kuba/text'
 
 export default (tail) =>
   <section className={style.tail}>

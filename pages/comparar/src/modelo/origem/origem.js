@@ -1,7 +1,7 @@
+import * as mapper from './mapper'
 import { paint } from '@kuba/h'
 import { Shape } from '@kuba/comparar'
 import component from './component'
-import * as mapper from './mapper'
 
 @paint(component)
 class Origem {
