@@ -1,6 +1,6 @@
+import { isGap } from '@kuba/f/src/gap'
 import oneParameter from './oneParameter'
 import twoParameters from './twoParameters'
-import { isGap } from '@kuba/f/src/gap'
 
 export default (func) =>
   function callback (a, b, c) {
