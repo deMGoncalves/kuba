@@ -2,7 +2,7 @@ import * as f from '@kuba/f'
 import echo from '@kuba/echo'
 import middleware from '@kuba/middleware'
 
-const onRemove = f.dunder.onRemove
+const { onRemove } = f.dunder
 
 const events = middleware((target) => (
   echo.on('material:remove', (value) => (
