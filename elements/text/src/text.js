@@ -4,8 +4,9 @@ import skeleton from '@kuba/skeleton'
 
 export default new Proxy({}, {
   get: (_, tag) =>
-    (props, children) =>
+    (props, children) => (
       has(children)
         ? component[tag](props, children)
         : skeleton.text(props)
+    )
 })
