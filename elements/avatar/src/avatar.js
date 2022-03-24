@@ -25,7 +25,10 @@ const style = styled.style`
   }
 `
 
-export default (props, children) =>
+const avatar = (props, children) => (
   has(children)
     ? picture(merge(props, style), children)
     : skeleton.picture(merge(props, style))
+)
+
+export default avatar
