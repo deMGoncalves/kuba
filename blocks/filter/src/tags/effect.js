@@ -2,7 +2,7 @@ import * as f from '@kuba/f'
 import echo from '@kuba/echo'
 import middleware from '@kuba/middleware'
 
-const onChange = f.dunder.onChange
+const { onChange } = f.dunder
 
 const effect = middleware((target) => (
   echo.on('filter:change', ({ key, value }) => (
