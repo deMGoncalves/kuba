@@ -16,8 +16,8 @@ const unlock = after(function (output) {
 })
 
 media('(min-width: 769px)')
-  .in(() => mobile = f.F())
-  .out(() => mobile = f.T())
+  .in(() => (mobile = f.F()))
+  .out(() => (mobile = f.T()))
 
 export default {
   lock,
