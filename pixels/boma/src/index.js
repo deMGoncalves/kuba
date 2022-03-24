@@ -1,1 +1,1 @@
-export { default } from './pixel'
+import './pixel'
