@@ -6,7 +6,7 @@ import env from '@kuba/env'
 import schema from './schema.json'
 
 const settings = f.idle(() =>
-  window._hjSettings = schema
+  (window._hjSettings = schema)
 )
 
 const pixel = f.idle(() =>
