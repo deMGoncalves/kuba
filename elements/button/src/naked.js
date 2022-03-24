@@ -29,10 +29,11 @@ const component = styled.button`
 const button = () =>
   new Proxy({}, {
     get: (_, type) =>
-      (props, children) =>
+      (props, children) => (
         has(children)
           ? component(merge(props, type), children)
           : skeleton.button(props)
+      )
   })
 
 f.assign(button, {
