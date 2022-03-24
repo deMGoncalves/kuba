@@ -25,10 +25,11 @@ const component = styled.button`
 `
 
 const master = (type) =>
-  (props, children) =>
+  (props, children) => (
     has(children)
       ? component(merge(props, type), children)
       : skeleton.button(props)
+  )
 
 f.assign(master, {
   is: f.T
