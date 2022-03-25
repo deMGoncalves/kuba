@@ -23,6 +23,6 @@ router('/:marca', async function marca () {
 })
 
 router('/:marca/:shape', async function shape () {
-  const { default: Shape } = await import('./shape' /* webpackChunkName: "shape" */)
+  const { default: Shape } = await import('@kuba/shape' /* webpackChunkName: "shape" */)
   render(<Shape />)
 })
