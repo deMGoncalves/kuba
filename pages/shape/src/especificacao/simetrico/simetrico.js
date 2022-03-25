@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
-import component from './component'
+import component from '@kuba/shape/src/especificacao/template'
 import effect from './effect'
 import setData from './setData'
 
@@ -10,12 +10,20 @@ class Simetrico {
   #pristine
   #valor
 
+  get descricao () {
+    return 'Shape simétrico é mesmo em ambas as extremidades'
+  }
+
+  get nome () {
+    return 'Simétrico'
+  }
+
   get pristine () {
     return this.#pristine ??= f.T()
   }
 
   get valor () {
-    return this.#valor
+    return this.#valor ??= ''
   }
 
   @repaint
