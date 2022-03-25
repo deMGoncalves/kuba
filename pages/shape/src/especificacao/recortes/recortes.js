@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
-import component from './component'
+import component from '@kuba/shape/src/especificacao/template'
 import effect from './effect'
 import setData from './setData'
 
@@ -10,12 +10,20 @@ class Recortes {
   #pristine
   #valor
 
+  get descricao () {
+    return 'Recorte ao redor das rodas do shape'
+  }
+
+  get nome () {
+    return 'Cut-outs'
+  }
+
   get pristine () {
     return this.#pristine ??= f.T()
   }
 
   get valor () {
-    return this.#valor
+    return this.#valor ??= ''
   }
 
   @repaint
