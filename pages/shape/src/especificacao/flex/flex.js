@@ -23,7 +23,7 @@ class Flex {
   }
 
   get valor () {
-    return this.#valor
+    return this.#valor ??= ''
   }
 
   @repaint
