@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
-import component from './component'
+import component from '@kuba/shape/src/especificacao/template'
 import effect from './effect'
 import setData from './setData'
 
@@ -10,12 +10,20 @@ class Tail {
   #pristine
   #valor
 
+  get descricao () {
+    return 'Parte traseira inclinada do shape'
+  }
+
+  get nome () {
+    return 'Tail'
+  }
+
   get pristine () {
     return this.#pristine ??= f.T()
   }
 
   get valor () {
-    return this.#valor
+    return this.#valor ??= ''
   }
 
   @repaint
