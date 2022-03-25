@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
-import component from './component'
+import component from '@kuba/shape/src/especificacao/template'
 import effect from './effect'
 import setData from './setData'
 
@@ -9,6 +9,14 @@ import setData from './setData'
 class Concave {
   #pristine
   #valor
+
+  get descricao () {
+    return 'Inclinação simétrica das laterais do shape'
+  }
+
+  get nome () {
+    return 'Concave'
+  }
 
   get pristine () {
     return this.#pristine ??= f.T()
