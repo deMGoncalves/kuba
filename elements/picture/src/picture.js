@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
-import skeleton from '@kuba/skeleton'
 import component from './component'
+import skeleton from '@kuba/skeleton'
 
 export default (props, children) => (
   f.len([...children])
