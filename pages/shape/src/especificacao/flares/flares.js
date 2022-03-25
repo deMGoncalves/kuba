@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
-import component from './component'
+import component from '@kuba/shape/src/especificacao/template'
 import effect from './effect'
 import setData from './setData'
 
@@ -9,6 +9,14 @@ import setData from './setData'
 class Flares {
   #pristine
   #valor
+
+  get descricao () {
+    return 'Onda no shape acima da roda para evitar que encostem'
+  }
+
+  get nome () {
+    return 'Wheel Flares'
+  }
 
   get pristine () {
     return this.#pristine ??= f.T()
