@@ -13,6 +13,7 @@ export default styled.style`
     line-height: var(--line-height-default);
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
