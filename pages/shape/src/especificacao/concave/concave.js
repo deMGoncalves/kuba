@@ -23,7 +23,7 @@ class Concave {
   }
 
   get valor () {
-    return this.#valor ??= f.F()
+    return this.#valor ??= ''
   }
 
   @repaint

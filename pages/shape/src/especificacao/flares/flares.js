@@ -23,7 +23,7 @@ class Flares {
   }
 
   get valor () {
-    return this.#valor
+    return this.#valor ??= ''
   }
 
   @repaint

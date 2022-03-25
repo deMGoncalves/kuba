@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
-import component from './component'
+import component from '@kuba/shape/src/especificacao/template'
 import effect from './effect'
 import setData from './setData'
 
@@ -10,12 +10,20 @@ class Montagem {
   #pristine
   #valor
 
+  get descricao () {
+    return 'A maneira como o truck é anexado ao shape'
+  }
+
+  get nome () {
+    return this.valor
+  }
+
   get pristine () {
     return this.#pristine ??= f.T()
   }
 
   get valor () {
-    return this.#valor
+    return this.#valor ??= ''
   }
 
   @repaint
