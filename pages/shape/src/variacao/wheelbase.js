@@ -30,7 +30,7 @@ class Wheelbase {
 
   @repaint
   [effect.onChange] (shape) {
-    this.#valor = shape.wheelbase.valor
+    this.#valor = shape.wheelbase?.valor
     return this
   }
 }

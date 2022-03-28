@@ -23,7 +23,7 @@ class Tamanho {
 
   @repaint
   [effect.onChange] (shape) {
-    this.#valor = shape.tamanho.valor
+    this.#valor = shape.tamanho?.valor
     return this
   }
 }
