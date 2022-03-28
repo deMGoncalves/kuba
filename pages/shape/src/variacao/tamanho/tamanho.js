@@ -7,6 +7,14 @@ import effect from './effect'
 class Tamanho {
   #valor
 
+  get descricao () {
+    return 'Medida em polegadas do comprimento de desenvolvido do shape'
+  }
+
+  get nome () {
+    return 'Tamanho'
+  }
+
   get valor () {
     return this.#valor
       ? `${this.#valor}"`
