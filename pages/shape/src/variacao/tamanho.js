@@ -1,6 +1,6 @@
 import { paint, repaint } from '@kuba/h'
-import template from './template'
 import effect from './effect'
+import template from './template'
 
 @paint(template)
 @effect
