@@ -1,10 +1,10 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
-import component from '@kuba/shape/src/especificacao/template'
 import effect from './effect'
 import setData from './setData'
+import template from './template'
 
-@paint(component)
+@paint(template)
 @effect
 class Lixa {
   #pristine
@@ -27,10 +27,10 @@ class Lixa {
   }
 
   @repaint
-  [effect.onChange] (valor) {
+  [effect.onChange] (shape) {
     this.#pristine = f.F()
-    this.#valor = valor
-    setData(valor)
+    this.#valor = shape.lixa
+    setData(this)
     return this
   }
 }
