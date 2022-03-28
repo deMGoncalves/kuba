@@ -1,5 +1,5 @@
 import { paint, repaint } from '@kuba/h'
-import component from './component'
+import component from '@kuba/shape/src/variacao/template'
 import effect from './effect'
 
 @paint(component)
