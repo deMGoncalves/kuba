@@ -14,10 +14,9 @@ import Simetrico from './simetrico'
 import Site from '@kuba/site'
 import style from './style'
 import Tail from './tail'
-import Tamanho from './tamanho'
 import Thumbnail from './thumbnail'
+import Variacao from './variacao'
 import Wells from './wells'
-import Wheelbase from './wheelbase'
 
 export default () =>
   <Site>
@@ -26,8 +25,7 @@ export default () =>
       <Modelo />
       <Thumbnail />
       <Material />
-      <Tamanho />
-      <Wheelbase />
+      <Variacao />
       <Nose />
       <Tail />
       <Concave />
