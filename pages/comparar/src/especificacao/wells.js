@@ -1,11 +1,19 @@
 import { paint } from '@kuba/h'
 import { Shape } from '@kuba/comparar'
-import component from './component'
+import template from './template'
 
-@paint(component)
+@paint(template)
 class Wells {
+  get descricao () {
+    return 'Poço para as rodas não encostar no shape'
+  }
+
   get master () {
     return Shape.master?.wheel_wells
+  }
+
+  get nome () {
+    return 'Wheel Wells'
   }
 
   get slave () {

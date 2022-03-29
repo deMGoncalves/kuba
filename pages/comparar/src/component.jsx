@@ -14,7 +14,6 @@ import Site from '@kuba/site'
 import style from './style'
 import Thumbnail from './thumbnail'
 import Variacao from './variacao'
-import Wells from './wells'
 
 export default () =>
   <Site>
@@ -25,7 +24,6 @@ export default () =>
       <Material />
       <Variacao />
       <Especificacao />
-      <Wells />
       <Flares />
       <Recortes />
       <Montagem />
