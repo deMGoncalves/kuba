@@ -1,36 +1,22 @@
-import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
 import effect from './effect'
-import setData from './setData'
+import Especificacao from './especificacao'
 import template from './template'
 
 @paint(template)
 @effect
-class Montagem {
-  #pristine
-  #valor
-
+class Montagem extends Especificacao {
   get descricao () {
     return 'A maneira como o truck é anexado ao shape'
   }
 
   get nome () {
-    return this.valor
-  }
-
-  get pristine () {
-    return this.#pristine ??= f.T()
-  }
-
-  get valor () {
-    return this.#valor ??= ''
+    return super.valor
   }
 
   @repaint
   [effect.onChange] (shape) {
-    this.#pristine = f.F()
-    this.#valor = shape.montagem?.valor
-    setData(this)
+    super[effect.onChange](shape.montagem?.valor)
     return this
   }
 }
