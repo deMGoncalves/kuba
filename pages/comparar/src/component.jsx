@@ -2,7 +2,6 @@ import Breadcrumb from './breadcrumb'
 import container from '@kuba/container'
 import Descricao from './descricao'
 import Especificacao from './especificacao'
-import Flex from './flex'
 import h from '@kuba/h'
 import Material from './material'
 import Modelo from './modelo'
@@ -21,7 +20,6 @@ export default () =>
       <Material />
       <Variacao />
       <Especificacao />
-      <Flex />
       <Simetrico />
       <Descricao />
     </container.Div>

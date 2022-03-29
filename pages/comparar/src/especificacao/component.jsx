@@ -1,6 +1,7 @@
-import h, { Fragment } from '@kuba/h'
 import Concave from './concave'
 import Flares from './flares'
+import Flex from './flex'
+import h, { Fragment } from '@kuba/h'
 import Montagem from './montagem'
 import Nose from './nose'
 import Recortes from './recortes'
@@ -16,4 +17,5 @@ export default () =>
     <Flares />
     <Recortes />
     <Montagem />
+    <Flex />
   </>
