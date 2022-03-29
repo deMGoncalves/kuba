@@ -1,3 +1,4 @@
+import * as f from '@kuba/f'
 import { createClient } from '@kuba/supabase'
 
 export async function onRequestPost (context) {
@@ -15,7 +16,7 @@ export async function onRequestPost (context) {
 
   const { error } = await supabase
     .from('shape')
-    .update({ views: data.views + 1 })
+    .update({ views: f.inc(data.views) })
     .eq('slug', slug)
 
   return new Response(JSON.stringify({ error }))
