@@ -1,15 +1,11 @@
-import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
 import effect from './effect'
-import setData from './setData'
+import Especificacao from './especificacao'
 import template from './template'
 
 @paint(template)
 @effect
-class Wells {
-  #pristine
-  #valor
-
+class Wells extends Especificacao {
   get descricao () {
     return 'Poço para as rodas não encostar no shape'
   }
@@ -18,19 +14,9 @@ class Wells {
     return 'Wheel Wells'
   }
 
-  get pristine () {
-    return this.#pristine ??= f.T()
-  }
-
-  get valor () {
-    return this.#valor ??= ''
-  }
-
   @repaint
   [effect.onChange] (shape) {
-    this.#pristine = f.F()
-    this.#valor = shape.wheel_wells
-    setData(this)
+    super[effect.onChange](shape.wheel_wells)
     return this
   }
 }
