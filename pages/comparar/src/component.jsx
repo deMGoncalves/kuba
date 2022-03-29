@@ -2,7 +2,6 @@ import Breadcrumb from './breadcrumb'
 import container from '@kuba/container'
 import Descricao from './descricao'
 import Especificacao from './especificacao'
-import Flares from './flares'
 import Flex from './flex'
 import h from '@kuba/h'
 import Material from './material'
@@ -24,7 +23,6 @@ export default () =>
       <Material />
       <Variacao />
       <Especificacao />
-      <Flares />
       <Recortes />
       <Montagem />
       <Flex />
