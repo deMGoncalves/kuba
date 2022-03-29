@@ -2,6 +2,7 @@ import Breadcrumb from './breadcrumb'
 import Concave from './concave'
 import container from '@kuba/container'
 import Descricao from './descricao'
+import Especificacao from './especificacao'
 import Flares from './flares'
 import Flex from './flex'
 import h from '@kuba/h'
@@ -26,6 +27,7 @@ export default () =>
       <Thumbnail />
       <Material />
       <Variacao />
+      <Especificacao />
       <Nose />
       <Tail />
       <Concave />
