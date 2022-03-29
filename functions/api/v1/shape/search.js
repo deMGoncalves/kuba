@@ -1,13 +1,9 @@
 import { createClient } from '@kuba/supabase'
+import pagination from './pagination'
 
 export async function onRequestPost (context) {
   const supabase = createClient(context)
-
-  const {
-    page = 1,
-    q,
-    size = 24
-  } = await context.request.json()
+  const params = await context.request.json()
 
   const { data, error } = await supabase
     .from('shape')
@@ -25,15 +21,12 @@ export async function onRequestPost (context) {
     `)
     .textSearch(
       'text',
-      q
+      params.q
         .split(' ')
         .map(w => `'${w}'`)
         .join(' | ')
     )
-    .range(
-      page * size - size,
-      page * size - 1
-    )
+    .range(...pagination(params))
 
   return new Response(JSON.stringify({ data, error }))
 }
