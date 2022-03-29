@@ -8,12 +8,10 @@ import h from '@kuba/h'
 import Material from './material'
 import Modelo from './modelo'
 import Montagem from './montagem'
-import Nose from './nose'
 import Recortes from './recortes'
 import Simetrico from './simetrico'
 import Site from '@kuba/site'
 import style from './style'
-import Tail from './tail'
 import Thumbnail from './thumbnail'
 import Variacao from './variacao'
 import Wells from './wells'
@@ -27,8 +25,6 @@ export default () =>
       <Material />
       <Variacao />
       <Especificacao />
-      <Nose />
-      <Tail />
       <Wells />
       <Flares />
       <Recortes />
