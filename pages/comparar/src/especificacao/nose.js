@@ -1,11 +1,19 @@
 import { paint } from '@kuba/h'
 import { Shape } from '@kuba/comparar'
-import component from './component'
+import template from './template'
 
-@paint(component)
+@paint(template)
 class Nose {
+  get descricao () {
+    return 'Parte frontal inclinada do shape'
+  }
+
   get master () {
     return Shape.master?.nose
+  }
+
+  get nome () {
+    return 'Nose'
   }
 
   get slave () {
