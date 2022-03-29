@@ -1,13 +1,9 @@
 import { createClient } from '@kuba/supabase'
+import pagination from './pagination'
 
 export async function onRequestPost (context) {
   const supabase = createClient(context)
-
-  const {
-    page = 1,
-    size = 24,
-    slug
-  } = await context.request.json()
+  const params = await context.request.json()
 
   const { data, error } = await supabase
     .from('shape')
@@ -23,12 +19,9 @@ export async function onRequestPost (context) {
       tipo (*),
       wheelbase (*)
     `)
-    .eq('marca.slug', slug)
+    .eq('marca.slug', params.slug)
     .order('views', { ascending: false })
-    .range(
-      page * size - size,
-      page * size - 1
-    )
+    .range(...pagination(params))
 
   return new Response(JSON.stringify({ data, error }))
 }
