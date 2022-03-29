@@ -1,15 +1,11 @@
-import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
 import effect from './effect'
-import setData from './setData'
+import Especificacao from './especificacao'
 import template from './template'
 
 @paint(template)
 @effect
-class Nose {
-  #pristine
-  #valor
-
+class Nose extends Especificacao {
   get descricao () {
     return 'Parte frontal inclinada do shape'
   }
@@ -18,19 +14,9 @@ class Nose {
     return 'Nose'
   }
 
-  get pristine () {
-    return this.#pristine ??= f.T()
-  }
-
-  get valor () {
-    return this.#valor ??= ''
-  }
-
   @repaint
   [effect.onChange] (shape) {
-    this.#pristine = f.F()
-    this.#valor = shape.nose
-    setData(this)
+    super[effect.onChange](shape.nose)
     return this
   }
 }
