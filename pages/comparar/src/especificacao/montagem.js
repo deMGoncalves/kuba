@@ -1,11 +1,19 @@
 import { paint } from '@kuba/h'
 import { Shape } from '@kuba/comparar'
-import component from './component'
+import template from './template'
 
-@paint(component)
+@paint(template)
 class Montagem {
+  get descricao () {
+    return 'A maneira como o truck é anexado ao shape'
+  }
+
   get master () {
     return Shape.master?.montagem?.valor
+  }
+
+  get nome () {
+    return 'Montagem'
   }
 
   get slave () {

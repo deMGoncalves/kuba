@@ -1,6 +1,7 @@
 import h, { Fragment } from '@kuba/h'
 import Concave from './concave'
 import Flares from './flares'
+import Montagem from './montagem'
 import Nose from './nose'
 import Recortes from './recortes'
 import Tail from './tail'
@@ -14,4 +15,5 @@ export default () =>
     <Wells />
     <Flares />
     <Recortes />
+    <Montagem />
   </>
