@@ -11,7 +11,7 @@ class Flex extends Especificacao {
   }
 
   get nome () {
-    return this.valor
+    return super.valor
   }
 
   @repaint
