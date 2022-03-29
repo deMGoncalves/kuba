@@ -2,10 +2,7 @@ import { createClient } from '@kuba/supabase'
 
 export async function onRequestPost (context) {
   const supabase = createClient(context)
-
-  const {
-    slug
-  } = await context.request.json()
+  const params = await context.request.json()
 
   const { data, error } = await supabase
     .from('shape')
@@ -21,7 +18,7 @@ export async function onRequestPost (context) {
       tipo (*),
       wheelbase (*)
     `)
-    .eq('slug', slug)
+    .eq('slug', params.slug)
     .single()
 
   return new Response(JSON.stringify({ data, error }))
