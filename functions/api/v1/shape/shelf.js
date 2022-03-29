@@ -1,63 +1,42 @@
 import { createClient } from '@kuba/supabase'
+import pagination from './pagination'
 
 export async function onRequestPost (context) {
   const supabase = createClient(context)
-
-  const {
-    concave,
-    flares,
-    flex,
-    marca,
-    material,
-    montagem,
-    nose,
-    origem,
-    page = 1,
-    pro,
-    recorte,
-    simetrico,
-    size = 24,
-    tail,
-    tamanho,
-    tipo,
-    wells
-  } = await context.request.json()
+  const params = await context.request.json()
 
   let query = supabase
     .from('shape')
     .select(`
       *,
       flag (*),
-      ${flex?.length ? 'flex!inner(*)' : 'flex (*)'},
-      ${origem?.length ? 'marca!inner(*, origem!inner(*))' : marca?.length ? 'marca!inner(*, origem (*))' : 'marca (*, origem (*))'},
-      ${material?.length ? 'material!inner(*)' : 'material (*)'},
-      ${montagem?.length ? 'montagem!inner(*)' : 'montagem (*)'},
-      ${tamanho?.length ? 'tamanho!inner(*)' : 'tamanho (*)'},
-      ${tipo?.length ? 'tipo!inner(*)' : 'tipo (*)'},
+      ${params.flex?.length ? 'flex!inner(*)' : 'flex (*)'},
+      ${params.origem?.length ? 'marca!inner(*, origem!inner(*))' : params.marca?.length ? 'marca!inner(*, origem (*))' : 'marca (*, origem (*))'},
+      ${params.material?.length ? 'material!inner(*)' : 'material (*)'},
+      ${params.montagem?.length ? 'montagem!inner(*)' : 'montagem (*)'},
+      ${params.tamanho?.length ? 'tamanho!inner(*)' : 'tamanho (*)'},
+      ${params.tipo?.length ? 'tipo!inner(*)' : 'tipo (*)'},
       wheelbase (*)
     `)
     .order('views', { ascending: false })
-    .range(
-      page * size - size,
-      page * size - 1
-    )
+    .range(...pagination(params))
 
-  if (concave) { query = query.eq('concave', true) }
-  if (flares) { query = query.eq('wheel_flares', true) }
-  if (nose) { query = query.eq('nose', true) }
-  if (pro) { query = query.eq('pro_model', true) }
-  if (recorte) { query = query.eq('cut_outs', true) }
-  if (simetrico) { query = query.eq('simetrico', true) }
-  if (tail) { query = query.eq('tail', true) }
-  if (wells) { query = query.eq('wheel_wells', true) }
+  if (params.concave) { query = query.eq('concave', true) }
+  if (params.flares) { query = query.eq('wheel_flares', true) }
+  if (params.nose) { query = query.eq('nose', true) }
+  if (params.pro) { query = query.eq('pro_model', true) }
+  if (params.recorte) { query = query.eq('cut_outs', true) }
+  if (params.simetrico) { query = query.eq('simetrico', true) }
+  if (params.tail) { query = query.eq('tail', true) }
+  if (params.wells) { query = query.eq('wheel_wells', true) }
 
-  if (flex?.length) { query = query.in('flex.valor', flex) }
-  if (marca?.length) { query = query.in('marca.nome', marca) }
-  if (material?.length) { query = query.in('material.valor', material) }
-  if (montagem?.length) { query = query.in('montagem.valor', montagem) }
-  if (origem?.length) { query = query.in('marca.origem.valor', origem) }
-  if (tamanho?.length) { query = query.in('tamanho.valor', tamanho) }
-  if (tipo?.length) { query = query.in('tipo.valor', tipo) }
+  if (params.flex?.length) { query = query.in('flex.valor', params.flex) }
+  if (params.marca?.length) { query = query.in('marca.nome', params.marca) }
+  if (params.material?.length) { query = query.in('material.valor', params.material) }
+  if (params.montagem?.length) { query = query.in('montagem.valor', params.montagem) }
+  if (params.origem?.length) { query = query.in('marca.origem.valor', params.origem) }
+  if (params.tamanho?.length) { query = query.in('tamanho.valor', params.tamanho) }
+  if (params.tipo?.length) { query = query.in('tipo.valor', params.tipo) }
 
   const { data, error } = await query
 
