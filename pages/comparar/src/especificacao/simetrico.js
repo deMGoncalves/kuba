@@ -1,11 +1,19 @@
 import { paint } from '@kuba/h'
 import { Shape } from '@kuba/comparar'
-import component from './component'
+import template from './template'
 
-@paint(component)
+@paint(template)
 class Simetrico {
+  get descricao () {
+    return 'Shape simétrico é mesmo em ambas as extremidades'
+  }
+
   get master () {
     return Shape.master?.simetrico
+  }
+
+  get nome () {
+    return 'Simétrico'
   }
 
   get slave () {

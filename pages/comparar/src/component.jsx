@@ -5,7 +5,6 @@ import Especificacao from './especificacao'
 import h from '@kuba/h'
 import Material from './material'
 import Modelo from './modelo'
-import Simetrico from './simetrico'
 import Site from '@kuba/site'
 import style from './style'
 import Thumbnail from './thumbnail'
@@ -20,7 +19,6 @@ export default () =>
       <Material />
       <Variacao />
       <Especificacao />
-      <Simetrico />
       <Descricao />
     </container.Div>
   </Site>

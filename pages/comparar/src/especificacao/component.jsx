@@ -5,6 +5,7 @@ import h, { Fragment } from '@kuba/h'
 import Montagem from './montagem'
 import Nose from './nose'
 import Recortes from './recortes'
+import Simetrico from './simetrico'
 import Tail from './tail'
 import Wells from './wells'
 
@@ -18,4 +19,5 @@ export default () =>
     <Recortes />
     <Montagem />
     <Flex />
+    <Simetrico />
   </>
