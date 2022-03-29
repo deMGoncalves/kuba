@@ -1,5 +1,4 @@
 import Breadcrumb from './breadcrumb'
-import Concave from './concave'
 import container from '@kuba/container'
 import Descricao from './descricao'
 import Especificacao from './especificacao'
@@ -30,7 +29,6 @@ export default () =>
       <Especificacao />
       <Nose />
       <Tail />
-      <Concave />
       <Wells />
       <Flares />
       <Recortes />
