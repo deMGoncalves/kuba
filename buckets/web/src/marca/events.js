@@ -8,7 +8,8 @@ const views = JSON.parse(f.or(sessionStorage.getItem('_kuba.views'), '{}'))
 const onView = after(function (output) {
   f.isFalsy(views[params.marca]) && (
     http
-      .post(`${api.url}/marca/view`, { slug: params.marca })
+      .post(`${api.url}/marca/view`)
+      .body({ slug: params.marca })
       .json(({ error }) => (
         f.isNil(error) && (
           f.assign(views, { [params.marca]: f.T() }),
