@@ -1,10 +1,10 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
-import component from '@kuba/shape/src/especificacao/template'
 import effect from './effect'
 import setData from './setData'
+import template from './template'
 
-@paint(component)
+@paint(template)
 @effect
 class Nose {
   #pristine
@@ -27,10 +27,10 @@ class Nose {
   }
 
   @repaint
-  [effect.onChange] (valor) {
+  [effect.onChange] (shape) {
     this.#pristine = f.F()
-    this.#valor = valor
-    setData(valor)
+    this.#valor = shape.nose
+    setData(this)
     return this
   }
 }
