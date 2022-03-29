@@ -8,6 +8,7 @@ export async function onRequestPost (context) {
 
   const query = f
     .from(params.q)
+    .pipe(f.or(f.__, ''))
     .pipe(f.split(f.__, ' '))
     .pipe(f.map(f.__, w => `'${w}'`))
     .pipe(f.join(f.__, ' | '))
