@@ -7,7 +7,6 @@ import h from '@kuba/h'
 import Material from './material'
 import Modelo from './modelo'
 import Montagem from './montagem'
-import Recortes from './recortes'
 import Simetrico from './simetrico'
 import Site from '@kuba/site'
 import style from './style'
@@ -23,7 +22,6 @@ export default () =>
       <Material />
       <Variacao />
       <Especificacao />
-      <Recortes />
       <Montagem />
       <Flex />
       <Simetrico />
