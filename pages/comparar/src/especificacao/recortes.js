@@ -1,11 +1,19 @@
 import { paint } from '@kuba/h'
 import { Shape } from '@kuba/comparar'
-import component from './component'
+import template from './template'
 
-@paint(component)
+@paint(template)
 class Recortes {
+  get descricao () {
+    return 'Recorte ao redor das rodas do shape'
+  }
+
   get master () {
     return Shape.master?.cut_outs
+  }
+
+  get nome () {
+    return 'Cut-outs'
   }
 
   get slave () {
