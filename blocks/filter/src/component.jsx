@@ -14,7 +14,6 @@ import Tags from './tags'
 import Tamanho from './tamanho'
 import Tipo from './tipo'
 import Toppings from './toppings'
-import Wells from './wells'
 
 export default () =>
   <container.Section className={style.filter}>
@@ -27,7 +26,6 @@ export default () =>
       <Montagem />
       <Toppings />
       <Especificacao>
-        <Wells />
         <Flares />
         <Recorte />
         <Simetrico />
