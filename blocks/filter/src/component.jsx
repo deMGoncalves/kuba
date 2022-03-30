@@ -9,7 +9,6 @@ import Metro from '@kuba/metro'
 import Montagem from './montagem'
 import Nose from './nose'
 import Origem from './origem'
-import Pro from './pro'
 import Recorte from './recorte'
 import Simetrico from './simetrico'
 import style from './style'
@@ -17,6 +16,7 @@ import Tags from './tags'
 import Tail from './tail'
 import Tamanho from './tamanho'
 import Tipo from './tipo'
+import Toppings from './toppings'
 import Wells from './wells'
 
 export default () =>
@@ -28,8 +28,8 @@ export default () =>
       <Material />
       <Flex />
       <Montagem />
+      <Toppings />
       <Especificacao>
-        <Pro />
         <Nose />
         <Tail />
         <Concave />
