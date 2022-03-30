@@ -12,7 +12,6 @@ import Recorte from './recorte'
 import Simetrico from './simetrico'
 import style from './style'
 import Tags from './tags'
-import Tail from './tail'
 import Tamanho from './tamanho'
 import Tipo from './tipo'
 import Toppings from './toppings'
@@ -29,7 +28,6 @@ export default () =>
       <Montagem />
       <Toppings />
       <Especificacao>
-        <Tail />
         <Concave />
         <Wells />
         <Flares />
