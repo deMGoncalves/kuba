@@ -1,4 +1,5 @@
 import Concave from './concave'
+import Flares from './flares'
 import h from '@kuba/h'
 import Nose from './nose'
 import Pro from './pro'
@@ -13,4 +14,5 @@ export default () =>
     <Tail />
     <Concave />
     <Wells />
+    <Flares />
   </div>

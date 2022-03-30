@@ -1,6 +1,5 @@
 import container from '@kuba/container'
 import Especificacao from './especificacao'
-import Flares from './flares'
 import Flex from './flex'
 import h from '@kuba/h'
 import Material from './material'
@@ -26,7 +25,6 @@ export default () =>
       <Montagem />
       <Toppings />
       <Especificacao>
-        <Flares />
         <Recorte />
         <Simetrico />
       </Especificacao>
