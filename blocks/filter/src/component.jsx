@@ -7,7 +7,6 @@ import h from '@kuba/h'
 import Material from './material'
 import Metro from '@kuba/metro'
 import Montagem from './montagem'
-import Nose from './nose'
 import Origem from './origem'
 import Recorte from './recorte'
 import Simetrico from './simetrico'
@@ -30,7 +29,6 @@ export default () =>
       <Montagem />
       <Toppings />
       <Especificacao>
-        <Nose />
         <Tail />
         <Concave />
         <Wells />

@@ -4,17 +4,17 @@ import template from './template'
 import Topping from './topping'
 
 @paint(template)
-class Pro extends Topping {
+class Nose extends Topping {
   get nome () {
-    return 'Pro Model'
+    return 'Nose'
   }
 
   @repaint
-  @actions.change('pro')
+  @actions.change('nose')
   toggle () {
     super.toggle()
     return this
   }
 }
 
-export default Pro
+export default Nose
