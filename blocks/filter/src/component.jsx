@@ -6,7 +6,6 @@ import Material from './material'
 import Metro from '@kuba/metro'
 import Montagem from './montagem'
 import Origem from './origem'
-import Recorte from './recorte'
 import Simetrico from './simetrico'
 import style from './style'
 import Tags from './tags'
@@ -25,7 +24,6 @@ export default () =>
       <Montagem />
       <Toppings />
       <Especificacao>
-        <Recorte />
         <Simetrico />
       </Especificacao>
     </Metro>
