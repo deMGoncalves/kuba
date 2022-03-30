@@ -1,3 +1,4 @@
+import Concave from './concave'
 import h from '@kuba/h'
 import Nose from './nose'
 import Pro from './pro'
@@ -9,4 +10,5 @@ export default () =>
     <Pro />
     <Nose />
     <Tail />
+    <Concave />
   </div>

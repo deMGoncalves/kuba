@@ -1,4 +1,3 @@
-import Concave from './concave'
 import container from '@kuba/container'
 import Especificacao from './especificacao'
 import Flares from './flares'
@@ -28,7 +27,6 @@ export default () =>
       <Montagem />
       <Toppings />
       <Especificacao>
-        <Concave />
         <Wells />
         <Flares />
         <Recorte />
