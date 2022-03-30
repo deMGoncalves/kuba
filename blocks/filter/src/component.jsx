@@ -1,12 +1,10 @@
 import container from '@kuba/container'
-import Especificacao from './especificacao'
 import Flex from './flex'
 import h from '@kuba/h'
 import Material from './material'
 import Metro from '@kuba/metro'
 import Montagem from './montagem'
 import Origem from './origem'
-import Simetrico from './simetrico'
 import style from './style'
 import Tags from './tags'
 import Tamanho from './tamanho'
@@ -23,9 +21,6 @@ export default () =>
       <Flex />
       <Montagem />
       <Toppings />
-      <Especificacao>
-        <Simetrico />
-      </Especificacao>
     </Metro>
     <Tags />
   </container.Section>
