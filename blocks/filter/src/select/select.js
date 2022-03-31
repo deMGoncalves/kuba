@@ -1,11 +1,16 @@
 import * as f from '@kuba/f'
 import echo from '@kuba/echo'
+import Option from './option'
 
 class Select {
   #len
   #opened
 
   get descricao () {
+    return ''
+  }
+
+  get key () {
     return ''
   }
 
@@ -39,9 +44,9 @@ class Select {
     return this
   }
 
-  [f.dunder.onChange] (key) {
+  [Option.onChange] () {
     echo.emit('filter:change', {
-      key,
+      key: this.key,
       value: f
         .from(this.options)
         .pipe(f.filter(f.__, f.prop('selected')))

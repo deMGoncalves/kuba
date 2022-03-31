@@ -14,6 +14,10 @@ class Option {
     return this.#selected ??= f.F()
   }
 
+  get key () {
+    return this.#target.key
+  }
+
   get valor () {
     return this.#valor ??= ''
   }

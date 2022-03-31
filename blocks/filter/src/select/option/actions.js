@@ -4,9 +4,9 @@ import middleware from '@kuba/middleware'
 
 const { onRemove } = f.dunder
 
-const actions = middleware((target) => (
-  echo.on('tipo:remove', (value) => (
-    f.equal(value, target.valor) && target[onRemove]()
+const actions = middleware((option) => (
+  echo.on(`${option.key}:remove`, (value) => (
+    f.equal(value, option.valor) && option[onRemove]()
   ))
 ))
 
