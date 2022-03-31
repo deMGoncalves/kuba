@@ -1,43 +1,41 @@
-import * as f from '@kuba/f'
+import { actions, Option as Base } from '@kuba/filter/src/select'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
-import events from './events'
 
 @paint(component)
-@events
+@actions
 class Option {
-  #selected
-  #target
-  #valor
+  #base
+
+  get key () {
+    return this.#base.key
+  }
 
   get selected () {
-    return this.#selected ??= f.F()
+    return this.#base.selected
   }
 
   get valor () {
-    return this.#valor
+    return this.#base.valor
   }
 
   static get onChange () {
-    return f.dunder.onChange
+    return Base.onChange
   }
 
   constructor (valor, target) {
-    this.#target = target
-    this.#valor = valor
+    this.#base = Base.create(target)(valor)
   }
 
   @repaint
   toggle () {
-    this.#selected = f.not(this.selected)
-    this.#target[Option.onChange]()
+    this.#base.toggle()
     return this
   }
 
   @repaint
-  [events.onRemove] () {
-    this.#selected = f.F()
-    this.#target[Option.onChange]()
+  [actions.onRemove] () {
+    this.#base[actions.onRemove]()
     return this
   }
 

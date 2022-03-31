@@ -7,6 +7,7 @@ export default styled.style`
     cursor: pointer;
     padding: var(--spacing_inset-xs);
     text-align: center;
+    width: calc(33% - 10.666px);
   }
 
   .option[selected] {
