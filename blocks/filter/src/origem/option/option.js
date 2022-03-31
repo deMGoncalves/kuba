@@ -1,15 +1,19 @@
 import * as f from '@kuba/f'
 import * as mapper from './mapper'
+import { actions } from '@kuba/filter/src/select'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
-import events from './events'
 
 @paint(component)
-@events
+@actions
 class Option {
   #selected
   #target
   #valor
+
+  get key () {
+    return this.#target.key
+  }
 
   get selected () {
     return this.#selected ??= f.F()
@@ -20,7 +24,7 @@ class Option {
   }
 
   get valor () {
-    return this.#valor
+    return this.#valor ??= ''
   }
 
   static get onChange () {
@@ -40,7 +44,7 @@ class Option {
   }
 
   @repaint
-  [events.onRemove] () {
+  [actions.onRemove] () {
     this.#selected = f.F()
     this.#target[Option.onChange]()
     return this

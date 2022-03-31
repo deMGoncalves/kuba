@@ -10,12 +10,12 @@ class Option {
   #target
   #valor
 
-  get selected () {
-    return this.#selected ??= f.F()
-  }
-
   get key () {
     return this.#target.key
+  }
+
+  get selected () {
+    return this.#selected ??= f.F()
   }
 
   get valor () {

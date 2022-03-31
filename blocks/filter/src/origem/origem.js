@@ -1,57 +1,46 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
-import echo from '@kuba/echo'
-import component from './component'
 import Option from './option'
 import schema from './schema.json'
-import scroll from './scroll'
+import Select, { component, scroll } from '@kuba/filter/src/select'
 
 @paint(component)
-class Origem {
-  #len
-  #opened
+class Origem extends Select {
   #options
 
-  get len () {
-    return f
-      .from(this.options)
-      .pipe(f.filter(f.__, f.prop('selected')))
-      .pipe(f.len)
-      .done()
+  get descricao () {
+    return 'Gringo ou Nacional, qual você prefere?'
   }
 
-  get opened () {
-    return this.#opened ??= f.F()
+  get key () {
+    return 'origem'
+  }
+
+  get nome () {
+    return 'Origem'
   }
 
   get options () {
-    return this.#options ??= f.map(schema, Option.create(this))
+    return this.#options ??= f.map(schema.origem, Option.create(this))
   }
 
   @repaint
   @scroll.unlock
   close () {
-    this.#opened = f.F()
+    super.close()
     return this
   }
 
   @repaint
   @scroll.lock
   open () {
-    this.#opened = f.T()
+    super.open()
     return this
   }
 
   @repaint
   [Option.onChange] () {
-    echo.emit('filter:change', {
-      key: 'origem',
-      value: f
-        .from(this.options)
-        .pipe(f.filter(f.__, f.prop('selected')))
-        .pipe(f.map(f.__, f.prop('valor')))
-        .done()
-    })
+    super[Option.onChange]()
     return this
   }
 }

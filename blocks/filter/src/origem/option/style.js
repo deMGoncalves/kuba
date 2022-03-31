@@ -10,6 +10,7 @@ export default styled.style`
     flex-direction: column;
     gap: var(--spacing_inset-xs);
     padding: var(--spacing_inset-xs);
+    width: calc(50% - 8px);
   }
 
   .option[selected] {
