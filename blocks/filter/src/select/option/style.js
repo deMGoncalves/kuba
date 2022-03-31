@@ -6,6 +6,7 @@ export default styled.style`
     border-radius: var(--border-radius-sm);
     cursor: pointer;
     padding: var(--spacing_inset-xs);
+    width: 100%;
   }
 
   .option[selected] {
