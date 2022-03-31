@@ -4,23 +4,23 @@ import schema from './schema.json'
 import Select, { component, Option, scroll } from './select'
 
 @paint(component)
-class Tipo extends Select {
+class Material extends Select {
   #options
 
   get descricao () {
-    return 'Que tipo de shape é você quer?'
+    return 'Escolha o melhor material para seu shape'
   }
 
   get key () {
-    return 'tipo'
+    return 'material'
   }
 
   get nome () {
-    return 'Tipo'
+    return 'Material'
   }
 
   get options () {
-    return this.#options ??= f.map(schema.tipo, Option.create(this))
+    return this.#options ??= f.map(schema.material, Option.create(this))
   }
 
   @repaint
@@ -44,4 +44,4 @@ class Tipo extends Select {
   }
 }
 
-export default Tipo
+export default Material
