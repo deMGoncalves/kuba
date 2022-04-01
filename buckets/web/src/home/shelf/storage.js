@@ -8,7 +8,7 @@ const effect = middleware((target) => (
   http
     .post(`${api.url}/shape/shelf`)
     .body({
-      ...target[query],
+      ...target[query](),
       size: 4,
       page: 1
     })
