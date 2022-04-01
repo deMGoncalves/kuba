@@ -4,14 +4,13 @@ import Shelf, { component, storage } from './shelf'
 
 @paint(component)
 @storage
-class Material extends Shelf {
+class Hero extends Shelf {
   get title () {
-    return ml.material
+    return 'Descubra novas possibilidades para o seu role'
   }
 
   [storage.query] () {
     return {
-      material: [ml.material],
       tamanho: ml.tamanho
     }
   }
@@ -29,4 +28,4 @@ class Material extends Shelf {
   }
 }
 
-export default Material
+export default Hero
