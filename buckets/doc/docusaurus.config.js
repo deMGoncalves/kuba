@@ -46,7 +46,7 @@ const config = {
         title: 'kuba',
         logo: {
           alt: 'kuba',
-          src: 'img/logo.svg',
+          src: 'img/logo.svg'
         },
         items: [
           {
@@ -101,12 +101,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/deMGoncalves/kuba',
-              },
-            ],
-          },
+                href: 'https://github.com/deMGoncalves/kuba'
+              }
+            ]
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Kuba, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Kuba, Inc. Built with Docusaurus.`
       },
       prism: {
         theme: lightCodeTheme,
