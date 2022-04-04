@@ -48,7 +48,7 @@ const config = {
           alt: 'kuba',
           src: 'img/logo.svg'
         },
-        items: [ 
+        items: [
           {
             type: 'doc',
             docId: 'intro',
