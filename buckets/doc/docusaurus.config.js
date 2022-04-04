@@ -50,12 +50,21 @@ const config = {
         },
         items: [
           {
+            label: 'Valores',
+            position: 'left',
+            to: '/valores'
+          },
+          {
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: 'Tutorial'
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            label: 'Blog',
+            position: 'left',
+            to: '/blog'
+          },
           {
             href: 'https://github.com/deMGoncalves/kuba',
             label: 'GitHub',
