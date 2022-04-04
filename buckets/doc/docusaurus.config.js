@@ -48,17 +48,22 @@ const config = {
           alt: 'kuba',
           src: 'img/logo.svg'
         },
-        items: [
-          {
-            label: 'Sobre',
-            position: 'left',
-            to: '/about'
-          },
+        items: [ 
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: 'Tutorial'
+          },
+          {
+            label: 'Experimente',
+            position: 'left',
+            to: '/getting-started'
+          },
+          {
+            label: 'Valores',
+            position: 'left',
+            to: '/about'
           },
           {
             label: 'Blog',

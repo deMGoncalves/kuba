@@ -1,5 +1,5 @@
 ---
-title: Sobre
+title: Valores
 description: Kuba é como uma folha em branco, a liberdade de programar do jeito que faça sentido para o produto!
 ---
 
