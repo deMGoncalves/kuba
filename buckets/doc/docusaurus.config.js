@@ -71,7 +71,7 @@ const config = {
             to: '/blog'
           },
           {
-            href: 'https://demo.kuba.engineer',
+            href: 'https://kuba.ink',
             label: 'Demo',
             position: 'right'
           },
