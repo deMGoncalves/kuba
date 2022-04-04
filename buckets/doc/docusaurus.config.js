@@ -46,7 +46,7 @@ const config = {
         title: 'kuba',
         logo: {
           alt: 'kuba',
-          src: 'img/logo.svg'
+          src: 'img/logo.png'
         },
         items: [ 
           {
