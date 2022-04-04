@@ -71,6 +71,16 @@ const config = {
             to: '/blog'
           },
           {
+            href: 'https://demo.kuba.engineer',
+            label: 'Demo',
+            position: 'right'
+          },
+          {
+            href: 'https://bundle.kuba.engineer/report.html',
+            label: 'Bundle',
+            position: 'right'
+          },
+          {
             href: 'https://github.com/deMGoncalves/kuba',
             label: 'GitHub',
             position: 'right'
