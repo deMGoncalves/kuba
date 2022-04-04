@@ -50,9 +50,9 @@ const config = {
         },
         items: [
           {
-            label: 'Valores',
+            label: 'Sobre',
             position: 'left',
-            to: '/valores'
+            to: '/about'
           },
           {
             type: 'doc',
