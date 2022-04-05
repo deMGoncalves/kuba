@@ -1,8 +1,8 @@
 {
   "lint-staged": {
-    "*": "exit 0"
+    "src/**/*.{js,jsx}": ""
   },
-  "main": "tsconfig.json",
+  "main": "src/tsconfig.json",
   "name": "@kuba/tsconfig",
   "private": true,
   "scripts": {
