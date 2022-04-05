@@ -6,13 +6,11 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    'jest/globals': true,
-    'cypress/globals': true
+    'jest/globals': true
   },
   extends: [
     'standard',
-    'plugin:jest/recommended',
-    'plugin:cypress/recommended'
+    'plugin:jest/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -21,16 +19,9 @@ module.exports = {
   },
   plugins: [
     '@typescript-eslint',
-    'jest',
-    'cypress'
+    'jest'
   ],
   rules: {
-    'cypress/assertion-before-screenshot': 'warn',
-    'cypress/no-assigning-return-values': 'error',
-    'cypress/no-async-tests': 'off',
-    'cypress/no-force': 'warn',
-    'cypress/no-pause': 'error',
-    'cypress/no-unnecessary-waiting': 'off',
     'jest/expect-expect': 'off',
     'jest/no-disabled-tests': 'warn',
     'jest/no-focused-tests': 'error',
