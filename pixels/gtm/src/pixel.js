@@ -15,7 +15,7 @@ const pixel = f.idle(() =>
 
 const event = f.idle(() =>
   dataLayer.push({
-    'gtm.kuba': new Date().getTime(),
+    'gtm.start': new Date().getTime(),
     event: 'gtm.js'
   })
 )
