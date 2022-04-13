@@ -1,8 +1,8 @@
 import * as f from '@kuba/f'
 import h, { render } from '@kuba/h'
-import accepted from './accepted'
 import agent from '@kuba/agent'
 import env from '@kuba/env'
+import policy from '@kuba/policy'
 import schema from './schema.json'
 
 const settings = f.idle(() =>
@@ -19,7 +19,7 @@ const pixel = f.idle(() =>
 f.and(
   agent.isUser,
   env.isProd,
-  accepted) && (
+  policy.accepted) && (
   settings(),
   pixel()
 )
