@@ -59,7 +59,7 @@ const config = {
             label: 'Blog',
             position: 'left',
             to: '/blog'
-          }, 
+          },
           {
             href: 'https://kuba.ink',
             label: 'Demo',
