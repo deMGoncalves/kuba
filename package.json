@@ -27,6 +27,7 @@
       "models/*",
       "modules/*",
       "pages/*",
+      "providers/*",
       "pixels/*",
       "standard/*"
     ]
