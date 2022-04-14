@@ -56,33 +56,13 @@ const config = {
             label: 'Tutorial'
           },
           {
-            label: 'Experimente',
-            position: 'left',
-            to: '/getting-started'
-          },
-          {
-            label: 'Valores',
-            position: 'left',
-            to: '/about'
-          },
-          {
             label: 'Blog',
             position: 'left',
             to: '/blog'
-          },
+          }, 
           {
             href: 'https://kuba.ink',
             label: 'Demo',
-            position: 'right'
-          },
-          {
-            href: 'https://bundle.kuba.engineer/report.html',
-            label: 'Bundle',
-            position: 'right'
-          },
-          {
-            href: 'https://github.com/deMGoncalves/kuba',
-            label: 'GitHub',
             position: 'right'
           }
         ]
@@ -103,6 +83,10 @@ const config = {
             title: 'Community',
             items: [
               {
+                label: 'GitHub',
+                href: 'https://github.com/deMGoncalves/kuba'
+              },
+              {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus'
               },
@@ -117,15 +101,28 @@ const config = {
             ]
           },
           {
+            title: 'Metrics',
+            items: [
+              {
+                href: 'https://bundle.kuba.engineer/report.html',
+                label: 'Bundle'
+              }
+            ]
+          },
+          {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog'
+                label: 'Experimente',
+                to: '/getting-started'
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/deMGoncalves/kuba'
+                label: 'Valores',
+                to: '/about'
+              },
+              {
+                label: 'Blog',
+                to: '/blog'
               }
             ]
           }
