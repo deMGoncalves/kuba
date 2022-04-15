@@ -6,9 +6,6 @@
     "lint-staged": "^11.1.2",
     "pinst": "^2.1.6"
   },
-  "engines": {
-    "node": ">=16.13.1"
-  },
   "name": "kuba",
   "private": true,
   "scripts": {
