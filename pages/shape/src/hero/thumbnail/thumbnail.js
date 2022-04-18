@@ -14,11 +14,11 @@ class Thumbnail {
   }
 
   get src () {
-    return this.#src
+    return `https://ik.imagekit.io/deMGoncalves/${this.#src}?tr=w-337.033,h-421.283`
   }
 
   zoom () {
-    echo.emit('zoom:open', { src: this.src, alt: this.alt })
+    echo.emit('zoom:open', { src: this.#src, alt: this.alt })
     return this
   }
 
