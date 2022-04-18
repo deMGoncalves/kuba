@@ -33,7 +33,7 @@ class Shape {
   }
 
   get thumbnail () {
-    return this.#thumbnail
+    return `https://ik.imagekit.io/deMGoncalves/${this.#thumbnail}?tr=w-226.75,h-283.433`
   }
 
   constructor (marca, modelo, pro, slug, tamanho, thumbnail) {
