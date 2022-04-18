@@ -9,6 +9,7 @@ import '@kuba/stop'
 
 import '@kuba/adsense'
 import '@kuba/boma'
+import '@kuba/console'
 import '@kuba/gtm'
 import '@kuba/hotjar'
 import '@kuba/markup'
