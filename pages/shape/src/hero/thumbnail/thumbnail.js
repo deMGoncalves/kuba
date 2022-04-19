@@ -14,7 +14,9 @@ class Thumbnail {
   }
 
   get src () {
-    return `https://ik.imagekit.io/deMGoncalves/${this.#src}?tr=w-337.033,h-421.283`
+    return this.#src
+      ? `https://ik.imagekit.io/deMGoncalves/${this.#src}?tr=w-337.033,h-421.283`
+      : ''
   }
 
   zoom () {
