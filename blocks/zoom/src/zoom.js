@@ -1,4 +1,5 @@
 import * as f from '@kuba/f'
+import * as settings from '@kuba/settings'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
 import events from './events'
@@ -21,7 +22,7 @@ class Zoom {
 
   get src () {
     return this.#src
-      ? `https://ik.imagekit.io/deMGoncalves/${this.#src}?tr=w-774.867,h-968`
+      ? `${settings.imagekit.host}/${this.#src}?tr=w-774.867,h-968`
       : ''
   }
 
