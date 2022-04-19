@@ -1,3 +1,4 @@
+import * as settings from '@kuba/settings'
 import { paint } from '@kuba/h'
 import { redirectTo } from '@kuba/router'
 import component from './component'
@@ -33,7 +34,7 @@ class Shape {
   }
 
   get thumbnail () {
-    return `https://ik.imagekit.io/deMGoncalves/${this.#thumbnail}?tr=w-226.75,h-283.433`
+    return `${settings.imagekit.host}/${this.#thumbnail}?tr=w-226.75,h-283.433`
   }
 
   constructor (marca, modelo, pro, slug, tamanho, thumbnail) {
