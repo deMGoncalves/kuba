@@ -1,4 +1,5 @@
 import * as f from '@kuba/f'
+import * as settings from '@kuba/settings'
 import { paint } from '@kuba/h'
 import actions from './actions'
 import component from './component'
@@ -27,7 +28,7 @@ class Shape {
   }
 
   get thumbnail () {
-    return `https://ik.imagekit.io/deMGoncalves/${this.#thumbnail}?tr=w-131.4,h-164.25`
+    return `${settings.imagekit.host}/${this.#thumbnail}?tr=w-131.4,h-164.25`
   }
 
   constructor (id, marca, modelo, tamanho, thumbnail) {
