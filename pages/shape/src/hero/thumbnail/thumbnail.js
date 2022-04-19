@@ -1,3 +1,4 @@
+import * as settings from '@kuba/settings'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
 import echo from '@kuba/echo'
@@ -15,7 +16,7 @@ class Thumbnail {
 
   get src () {
     return this.#src
-      ? `https://ik.imagekit.io/deMGoncalves/${this.#src}?tr=w-337.033,h-421.283`
+      ? `${settings.imagekit.host}/${this.#src}?tr=w-337.033,h-421.283`
       : ''
   }
 
