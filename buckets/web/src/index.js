@@ -13,6 +13,7 @@ import '@kuba/console'
 import '@kuba/gtm'
 import '@kuba/hotjar'
 import '@kuba/markup'
+import '@kuba/sentry'
 import '@kuba/sw'
 
 import '@kuba/marcas'
