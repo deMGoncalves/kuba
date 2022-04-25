@@ -1,11 +1,12 @@
 import * as f from '@kuba/f'
-import * as Sentry from '@sentry/browser'
-import { BrowserTracing } from '@sentry/tracing'
 import agent from '@kuba/agent'
 import env from '@kuba/env'
 import schema from './schema.json'
 
-const pixel = () => (
+const pixel = async () => {
+  const Sentry = await import('@sentry/browser' /* webpackChunkName: "sentry_browser" */)
+  const { BrowserTracing } = await import('@sentry/tracing' /* webpackChunkName: "sentry_tracing" */)
+
   Sentry.init({
     dsn: schema.src,
     integrations: [new BrowserTracing()],
@@ -15,7 +16,7 @@ const pixel = () => (
     // We recommend adjusting this value in production
     tracesSampleRate: schema.rate
   })
-)
+}
 
 f.and(
   agent.isUser,
