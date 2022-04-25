@@ -4,11 +4,13 @@ import { redirectTo } from '@kuba/router'
 import component from './component'
 import Marca from './marca'
 import Modelo from './modelo'
+import perf from './perf'
 import Pro from './pro'
 import Stub from './stub'
 import Tamanho from './tamanho'
 
 @paint(component)
+@perf
 class Shape {
   #marca
   #modelo
