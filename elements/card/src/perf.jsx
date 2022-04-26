@@ -1,4 +1,3 @@
-import * as f from '@kuba/f'
 import h, { render } from '@kuba/h'
 import middleware from '@kuba/middleware'
 
@@ -9,4 +8,4 @@ const perf = (target) => (
   )
 )
 
-export default middleware(f.idle(perf))
+export default middleware(perf)
