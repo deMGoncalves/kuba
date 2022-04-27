@@ -3,6 +3,7 @@ import { paint, repaint } from '@kuba/h'
 import component from './component'
 import echo from '@kuba/echo'
 import effect from './effect'
+import perf from './perf'
 
 @paint(component)
 @effect
@@ -26,6 +27,7 @@ class Thumbnail {
   }
 
   @repaint
+  @perf
   [effect.onChange] (alt, src) {
     this.#alt = alt
     this.#src = src
