@@ -18,7 +18,7 @@ router('/busca', async function search () {
 })
 
 router('/:marca', async function marca () {
-  const { default: Marca } = await import('./marca' /* webpackChunkName: "marca" */)
+  const { default: Marca } = await import('@kuba/marca' /* webpackChunkName: "marca" */)
   render(<Marca />)
 })
 
