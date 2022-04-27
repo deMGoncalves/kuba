@@ -9,6 +9,7 @@ import Description from './description'
 import h, { Fragment } from '@kuba/h'
 import Icon from './icon'
 import Image from './image'
+import Preconnect from './preconnect'
 import Robots from './robots'
 import ThemeColor from './themeColor'
 import Title from './title'
@@ -28,6 +29,7 @@ export default () =>
     <Description />
     <Icon />
     <Image />
+    <Preconnect />
     <Robots />
     <ThemeColor />
     <Title />
