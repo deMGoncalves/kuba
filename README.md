@@ -33,3 +33,38 @@
     <img src="https://img.shields.io/github/license/deMGoncalves/kuba" alt="GitHub license" />
   </a>
 </p>
+
+<br />
+<br />
+
+<p align="center">
+  <strong>
+    <a href="https://www.kuba.ink">Site</a> &nbsp;·&nbsp;
+    <a href="https://github.com/deMGoncalves/kuba">Repositório</a>
+  </strong>
+</p>
+
+<br />
+<br />
+
+<p align="center">
+  <strong>Contribuidores</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/deMGoncalves/start/graphs/contributors">
+    <img src="https://user-images.githubusercontent.com/35740192/130805795-8f7ffab2-21ee-46e8-83f7-f63f82e5c634.png" alt="Sponsor logos" width="198" />
+  </a>
+</p>
+
+
+<br />
+<br />
+
+<p align="center">
+  <strong>Antes de começar</strong>
+</p>
+
+<p align="center">
+  Kuba é um projeto de referência (Amálgama) a ser seguido e não um Framework e/ou Library que condiciona e obriga a uma situação de implementação! Ele deve ser estudado, entendido e adaptado as realidades do seu produto, de forma a garantir as condições de comportamento e estrutura.
+</p>
