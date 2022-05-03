@@ -45,10 +45,6 @@ Ninguém precisa ter muitas habilidades para desenvolver um software que funcion
 Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um software. As mudanças se tornam cirúrgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
 </p>
 
-<p align="center">
-Criei este projeto de referência como a única fonte da verdade para todos os processos e crenças. Como qualquer ferramenta ou metodologia, ela só funcionará corretamente quando usada da maneira certa. E o "certo" só pode ser determinado por meio de um processo de polimento e prática constantes.
-</p>
-
 <br />
 <br />
 
