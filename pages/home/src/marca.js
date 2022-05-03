@@ -1,18 +1,18 @@
 import { paint, repaint } from '@kuba/h'
-import ml from './ml'
+import discovery from '@kuba/discovery'
 import Shelf, { component, storage } from './shelf'
 
 @paint(component)
 @storage
 class Marca extends Shelf {
   get title () {
-    return ml.marca
+    return discovery.serie('marca').champion()
   }
 
   [storage.query] () {
     return {
-      marca: [ml.marca],
-      tamanho: ml.tamanho
+      marca: [discovery.serie('marca').champion()],
+      tamanho: [discovery.serie('tamanho').champion()]
     }
   }
 
