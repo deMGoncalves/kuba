@@ -1,2 +1,2 @@
 export default (serie, data) =>
-  localStorage.setItem(`_discovery.${serie}`, JSON.stringify(data))
+  localStorage.setItem(`_ml.${serie}`, JSON.stringify(data))
