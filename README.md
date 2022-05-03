@@ -63,6 +63,17 @@ Criei este projeto de referência como a única fonte da verdade para todos os p
 <br />
 
 <p align="center">
+  <strong>Objetivos</strong>
+</p>
+
+<p align="center">
+O Kuba não é uma vontade recente, o plano de ter uma Arquitetura criado a partir das minhas experiências e metodologias é um sonho que começou em Março de 2016. Uni essa vontade com o momento profissional que estou vivendo para unir o útil ao agradável. Por isso, este projeto acumula alguns objetivos bastante transparentes.
+</p>
+
+<br />
+<br />
+
+<p align="center">
   <strong>Contribuidores</strong>
 </p>
 
