@@ -10,9 +10,17 @@ class Material extends Shelf {
   }
 
   [storage.query] () {
+    const material = discovery
+      .serie('material')
+      .champion()
+
+    const tamanho = discovery
+      .serie('tamanho')
+      .champion()
+
     return {
-      material: [discovery.serie('material').champion()],
-      tamanho: [discovery.serie('tamanho').champion()]
+      material: material ? [material] : [],
+      tamanho: tamanho ? [tamanho] : []
     }
   }
 

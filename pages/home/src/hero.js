@@ -10,8 +10,12 @@ class Hero extends Shelf {
   }
 
   [storage.query] () {
+    const tamanho = discovery
+      .serie('tamanho')
+      .champion()
+
     return {
-      tamanho: [discovery.serie('tamanho').champion()]
+      tamanho: tamanho ? [tamanho] : []
     }
   }
 

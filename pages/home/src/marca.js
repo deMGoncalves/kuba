@@ -10,9 +10,17 @@ class Marca extends Shelf {
   }
 
   [storage.query] () {
+    const marca = discovery
+      .serie('marca')
+      .champion()
+
+    const tamanho = discovery
+      .serie('tamanho')
+      .champion()
+
     return {
-      marca: [discovery.serie('marca').champion()],
-      tamanho: [discovery.serie('tamanho').champion()]
+      marca: marca ? [marca] : [],
+      tamanho: tamanho ? [tamanho] : []
     }
   }
 

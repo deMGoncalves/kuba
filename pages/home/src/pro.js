@@ -11,9 +11,15 @@ class Pro extends Shelf {
   }
 
   [storage.query] () {
+    const pro = f.T()
+
+    const tamanho = discovery
+      .serie('tamanho')
+      .champion()
+
     return {
-      pro: f.T(),
-      tamanho: [discovery.serie('tamanho').champion()]
+      pro,
+      tamanho: tamanho ? [tamanho] : []
     }
   }
 
