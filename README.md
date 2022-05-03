@@ -38,8 +38,23 @@
 <br />
 
 <p align="center">
+Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outra história. Desenvolver um software de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem.
+</p>
+
+<p align="center">
+Quando focamos no domínio, minimizamos a quantidade de programadores para desenvolver e sustentar um software. As mudanças se tornam cirúrgicas, simples e fáceis. Deixamos de ser eficiente e nos tornamos eficazes. As funcionalidades e flexibilidades são maximizadas.
+</p>
+
+<p align="center">
+Criei este projeto de referência como a única fonte da verdade para todos os processos e crenças. Como qualquer ferramenta ou metodologia, ela só funcionará corretamente quando usada da maneira certa. E o "certo" só pode ser determinado por meio de um processo de polimento e prática constantes.
+</p>
+
+<br />
+<br />
+
+<p align="center">
   <strong>
-    <a href="https://www.kuba.ink">Site</a> &nbsp;·&nbsp;
+    <a href="https://www.kuba.ink">Demo</a> &nbsp;·&nbsp;
     <a href="https://github.com/deMGoncalves/kuba">Repositório</a>
   </strong>
 </p>
