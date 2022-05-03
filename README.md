@@ -104,3 +104,18 @@ Kuba é um projeto de referência (Amálgama) a ser seguido e não um Framework 
     <img src="https://user-images.githubusercontent.com/35740192/130805795-8f7ffab2-21ee-46e8-83f7-f63f82e5c634.png" alt="Sponsor logos" width="198" />
   </a>
 </p>
+
+<br />
+<br />
+
+<p align="center">
+  <strong>Um agradecimento à comunidade</strong>
+</p>
+
+<p align="center">
+Meus últimos 6 anos foram repletos de desafios. Ajudei algumas empresas, colaborei com alguns colegas, claro, aprendi muito com todos. E nada, mas nada mesmo, seria possível sem o carinho e reconhecimento que meus colegas tiveram com meu trabalho.
+</p>
+
+<p align="center">
+O Kuba é de vocês, para vocês! Aproveitem.
+</p>
