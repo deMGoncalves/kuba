@@ -1,5 +1,5 @@
 import { paint, repaint } from '@kuba/h'
-import ml from './ml'
+import discovery from '@kuba/discovery'
 import Shelf, { component, storage } from './shelf'
 
 @paint(component)
@@ -11,7 +11,7 @@ class Hero extends Shelf {
 
   [storage.query] () {
     return {
-      tamanho: ml.tamanho
+      tamanho: [discovery.serie('tamanho').champion()]
     }
   }
 
