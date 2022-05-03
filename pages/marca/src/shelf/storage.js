@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
-import { setGlobal } from '@kuba/global'
 import { params } from '@kuba/router'
+import { setGlobal } from '@kuba/global'
 import http, { api } from '@kuba/http'
 import middleware from '@kuba/middleware'
 
