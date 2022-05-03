@@ -1,6 +1,6 @@
 import Breadcrumb from './breadcrumb'
-import h, { Fragment } from '@kuba/h'
 import Descricao from './descricao'
+import h, { Fragment } from '@kuba/h'
 import More from './more'
 import Nome from './nome'
 import Shelf from './shelf'
