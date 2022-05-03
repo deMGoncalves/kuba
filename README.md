@@ -74,6 +74,17 @@ O Kuba não é uma vontade recente, o plano de ter uma Arquitetura criado a part
 <br />
 
 <p align="center">
+  <strong>Apoio ao aprendizado</strong>
+</p>
+
+<p align="center">
+O primeiro e, talvez maior, papel deste projeto é servir como apoio aos meus estudos, dos meus colegas de trabalho e de qualquer pessoa interessada, tornando nossos conceitos mais acessíveis e fáceis de compreender através de um exemplo prático.
+</p>
+
+<br />
+<br />
+
+<p align="center">
   <strong>Contribuidores</strong>
 </p>
 
