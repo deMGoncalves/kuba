@@ -4,6 +4,7 @@ export default styled.style`
   .nav {
     align-items: center;
     background-color: var(--color-master-lightest);
+    content-visibility: auto;
     display: none;
     flex-direction: column;
     gap: var(--spacing_inset-xs);
