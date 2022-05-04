@@ -6,7 +6,8 @@ import http from '@kuba/http'
 export default (url, name) =>
   http
     .get(url)
-    .blob(blob => URL.createObjectURL(blob))
+    .blob()
+    .then(blob => URL.createObjectURL(blob))
     .then(href => h('a', { href, download: f.or(name, evaluate(url)) }))
     .then(tag => tag.paint())
     .then(element => element.click())
