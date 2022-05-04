@@ -6,7 +6,8 @@ import middleware from '@kuba/middleware'
 const storage = () =>
   http
     .post(`${api.url}/marca/shelf`)
-    .json(({ data: marcas, error }) => (
+    .json()
+    .then(({ data: marcas, error }) => (
       f.not(error) && setGlobal({ marcas })
     ))
 
