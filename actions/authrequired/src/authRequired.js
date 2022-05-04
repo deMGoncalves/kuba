@@ -8,7 +8,8 @@ const authRequired = () =>
   http
     .post(`${api.url}/auth/user`)
     .headers(headers)
-    .json(f.prop('data.aud'))
+    .json()
+    .then(f.prop('data.aud'))
     .then(f.different('authenticated'))
     .then(anonymous => (anonymous && redirectTo('signin')))
 
