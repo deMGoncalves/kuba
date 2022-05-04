@@ -6,5 +6,5 @@ import style from './style'
 export default (zone, children) =>
   <>
     <Show when={zone.onView}>{children}</Show>
-    <Hide when={zone.onView}><div className={style.zone} /></Hide>
+    <Hide when={zone.onView}><div className={[style.zone, zone.className]} /></Hide>
   </>
