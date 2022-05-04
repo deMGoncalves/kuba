@@ -13,7 +13,8 @@ const storage = middleware((target) => (
         size: 4,
         page: 1
       })
-      .json(({ data, error }) => (
+      .json()
+      .then(({ data, error }) => (
         error
           ? target[onError]()
           : target[onResponse](data)
