@@ -4,6 +4,7 @@ export default styled.style`
   .zoom {
     align-items: center;
     background-color: #fff;
+    content-visibility: auto;
     display: none;
     height: 100vh;
     justify-content: center;
