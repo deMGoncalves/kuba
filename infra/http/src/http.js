@@ -34,16 +34,22 @@ export default new Proxy({}, {
             .then(target)
         },
 
-        then (target) {
-          return fetch(url, init)
-            .then(target)
-        },
-
         mode (target) {
           f.assign(init, {
             mode: target
           })
           return this
+        },
+
+        signal (target) {
+          f.assign(init, {
+            signal: target
+          })
+        },
+
+        then (target) {
+          return fetch(url, init)
+            .then(target)
         }
       }
     }
