@@ -9,7 +9,8 @@ const storage = middleware((target) =>
   http
     .post(`${api.url}/marca`)
     .body({ slug: params.marca })
-    .json(({ data, error }) => (
+    .json()
+    .then(({ data, error }) => (
       error
         ? target[onError]()
         : target[onResponse](data)
