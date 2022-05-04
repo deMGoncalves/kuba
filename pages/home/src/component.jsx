@@ -4,13 +4,21 @@ import Marca from './marca'
 import Material from './material'
 import Pro from './pro'
 import Site from '@kuba/site'
+import style from './style'
+import Zone from '@kuba/zone'
 
 export default () =>
   <Site>
     <Fragment slot='main'>
       <Hero />
-      <Material />
-      <Marca />
-      <Pro />
+      <Zone className={style.home__material}>
+        <Material />
+      </Zone>
+      <Zone className={style.home__marca}>
+        <Marca />
+      </Zone>
+      <Zone className={style.home__pro}>
+        <Pro />
+      </Zone>
     </Fragment>
   </Site>
