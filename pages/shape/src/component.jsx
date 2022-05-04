@@ -9,6 +9,7 @@ import Relacionado from './relacionado'
 import Site from '@kuba/site'
 import style from './style'
 import Variacao from './variacao'
+import Zone from '@kuba/zone'
 
 export default () =>
   <Site className={style.shape__main}>
@@ -20,6 +21,8 @@ export default () =>
       <Variacao />
       <Especificacao />
       <Material />
-      <Relacionado />
+      <Zone>
+        <Relacionado />
+      </Zone>
     </Fragment>
   </Site>
