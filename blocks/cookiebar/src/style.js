@@ -7,6 +7,7 @@ export default styled.style`
     border-radius: var(--border-radius-sm);
     bottom: var(--spacing-xxxs);
     box-shadow: var(--shadow-level-1) rgba(0, 0, 0, var(--opacity-level-light));
+    content-visibility: auto;
     display: none;
     flex-direction: column;
     gap: var(--spacing_inset-xs);
