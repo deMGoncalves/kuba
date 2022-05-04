@@ -34,6 +34,7 @@ export default styled.style`
   }
 
   .side__overlayer {
+    content-visibility: auto;
     display: none;
     height: 100vh;
     left: 0;
