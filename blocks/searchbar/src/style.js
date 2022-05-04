@@ -5,6 +5,7 @@ export default styled.style`
     align-items: center;
     background-color: var(--color-master-lightest);
     border-bottom: var(--border-width-hairline) solid var(--color-master-light);
+    content-visibility: auto;
     display: flex;
     height: 89px;
     left: 0;
@@ -41,6 +42,7 @@ export default styled.style`
     border: var(--border-width-hairline) solid var(--color-master-light);
     border-radius: var(--border-radius-pill);
     color: var(--color-master-darker);
+    content-visibility: auto;
     font-size: var(--font-size-xxs);
     font-weight: var(--font-weight-regular);
     height: 42px;
