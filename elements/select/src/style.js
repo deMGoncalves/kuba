@@ -38,6 +38,7 @@ export default styled.style`
   }
 
   .select__overlayer {
+    content-visibility: auto;
     display: none;
     height: calc(100vh - 610px);
     position: fixed;
