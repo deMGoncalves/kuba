@@ -5,7 +5,7 @@ import middleware from '@kuba/middleware'
 
 const { onError, onResponse } = f.dunder
 
-const effect = middleware((target) => (
+const storage = middleware((target) => (
   useEffect(() => (
     http
       .post(`${api.url}/shape/shelf`)
@@ -28,9 +28,9 @@ const effect = middleware((target) => (
   ))
 ))
 
-f.assign(effect, {
+f.assign(storage, {
   onError,
   onResponse
 })
 
-export default effect
+export default storage
