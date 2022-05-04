@@ -21,7 +21,7 @@ export default () =>
       <Variacao />
       <Especificacao />
       <Material />
-      <Zone>
+      <Zone className={style.shape__relacionado}>
         <Relacionado />
       </Zone>
     </Fragment>

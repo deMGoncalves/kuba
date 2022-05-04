@@ -19,4 +19,20 @@ export default styled.style`
       row-gap: var(--spacing_inset-lg);
     }
   }
+
+  .shape__relacionado {
+    height: 520.367px;
+  }
+
+  @media (min-width: 769px) {
+    .shape__relacionado {
+      height: 499.95px;
+    }
+  }
+
+  @media (min-width: 961px) {
+    .shape__relacionado {
+      height: 483.217px;
+    }
+  }
 `
