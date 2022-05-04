@@ -8,10 +8,9 @@ export default new Proxy({}, {
       }
 
       return {
-        blob (target) {
-          return this
+        blob () {
+          return fetch(url, init)
             .then(response => response.blob())
-            .then(target)
         },
 
         body (target) {
@@ -28,10 +27,9 @@ export default new Proxy({}, {
           return this
         },
 
-        json (target) {
-          return this
+        json () {
+          return fetch(url, init)
             .then(response => response.json())
-            .then(target)
         },
 
         mode (target) {
@@ -45,11 +43,6 @@ export default new Proxy({}, {
           f.assign(init, {
             signal: target
           })
-        },
-
-        then (target) {
-          return fetch(url, init)
-            .then(target)
         }
       }
     }
