@@ -1,5 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
+import agent from '@kuba/agent'
 import component from './component'
 import events from './events'
 import policy from '@kuba/policy'
@@ -10,7 +11,9 @@ class Cookiebar {
   #opened
 
   get opened () {
-    return this.#opened ??= policy.pristine
+    return agent.isUser
+      ? this.#opened ??= policy.pristine
+      : this.#opened ??= f.F()
   }
 
   @repaint
