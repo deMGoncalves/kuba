@@ -8,7 +8,8 @@ const storage = () =>
   http
     .post(`${api.url}/shape/marca`)
     .body({ slug: params.marca, page: 1 })
-    .json(({ data: shapes, error }) => (
+    .json()
+    .then(({ data: shapes, error }) => (
       f.not(error) && setGlobal({ shapes })
     ))
 
