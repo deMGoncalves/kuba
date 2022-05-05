@@ -11,13 +11,13 @@ export default () =>
   <Site>
     <Fragment slot='main'>
       <Hero />
-      <Zone className={style.home__material}>
+      <Zone className={style.home__shelf}>
         <Material />
       </Zone>
-      <Zone className={style.home__marca}>
+      <Zone className={style.home__shelf}>
         <Marca />
       </Zone>
-      <Zone className={style.home__pro}>
+      <Zone className={style.home__shelf}>
         <Pro />
       </Zone>
     </Fragment>
