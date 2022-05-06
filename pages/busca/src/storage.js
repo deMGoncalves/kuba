@@ -9,7 +9,8 @@ const storage = middleware((target) =>
   http
     .post(`${api.url}/shape/search`)
     .body({ page: 1, q: args.q })
-    .json(({ data, error }) => (
+    .json()
+    .then(({ data, error }) => (
       error
         ? target[onError]()
         : target[onResponse](data)
