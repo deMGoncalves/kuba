@@ -1,4 +1,4 @@
-import { args } from '@kuba/args'
+import { args } from '@kuba/router'
 import cookie from '@kuba/cookie'
 import hub from './hub'
 import key from './key'
