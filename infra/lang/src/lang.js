@@ -1,9 +1,11 @@
+import * as f from '@kuba/f'
 import changeTo from './changeTo'
-import getValue from './getValue'
+import evaluate from './evaluate'
+import getValues from './getValues'
 
 export default {
   get value () {
-    return getValue()
+    return f.find(getValues(), evaluate)
   },
 
   changeTo (value) {
