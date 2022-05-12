@@ -1,4 +1,7 @@
 {
+  "dependencies": {
+    "itty-router": "^2.6.1"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
@@ -14,7 +17,8 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "ts-jest": "^26.5.1",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "wrangler": "^2.0.2"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
@@ -29,9 +33,5 @@
     "start": "wrangler dev src/index.js",
     "test": "jest --passWithNoTests"
   },
-  "version": "1.0.0",
-  "dependencies": {
-    "itty-router": "^2.6.1",
-    "wrangler": "^2.0.2"
-  }
+  "version": "1.0.0"
 }
