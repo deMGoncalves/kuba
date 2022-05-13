@@ -1,10 +1,9 @@
 import { Router } from 'itty-router'
+import marca from './marca'
 
 const router = Router()
 
-router.get('/', () =>
-  new Response('Hello, world! This is the root page of your Worker template.')
-)
+router.get('/marca/:slug', marca)
 
 router.all('*', () =>
   new Response('404, not found!', { status: 404 })
