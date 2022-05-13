@@ -29,7 +29,7 @@
   "name": "@kuba/worker",
   "private": true,
   "scripts": {
-    "publish": "wrangler publish src/index.js",
+    "deploy": "wrangler publish src/index.js",
     "start": "wrangler dev src/index.js",
     "test": "jest --passWithNoTests"
   },
