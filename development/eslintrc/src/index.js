@@ -2,6 +2,8 @@
 
 module.exports = {
   globals: {
+    API_KEY: true,
+    API_URL: true
   },
   env: {
     browser: true,
