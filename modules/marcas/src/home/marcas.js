@@ -1,6 +1,6 @@
-import * as f from '@kuba/f'
 import { didMount, paint } from '@kuba/h'
 import { setDescription, setTitle } from '@kuba/markup'
+import { setGlobal } from '@kuba/global'
 import component from './component'
 import data from './data'
 import jsonld from '@kuba/jsonld'
@@ -18,10 +18,15 @@ class Marcas {
     return 'Marcas'
   }
 
+  [storage.onError] () {
+    return this
+  }
+
   @didMount
-  [f.dunder.mount] () {
+  [storage.onResponse] (marcas) {
     setTitle(this.title)
     setDescription(this.description)
+    setGlobal({ marcas })
     return this
   }
 }
