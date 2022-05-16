@@ -3,6 +3,7 @@ import marca from './marca'
 
 const router = Router()
 
+router.get('/marca/shelf', marca.shelf)
 router.get('/marca/:slug', marca)
 
 router.all('*', () =>

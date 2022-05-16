@@ -1,8 +1,6 @@
-import { createClient } from '@kuba/supabase'
+import supabase from '@kuba/supabase'
 
-export async function onRequestPost (context) {
-  const supabase = createClient(context)
-
+export default async function () {
   const { data, error } = await supabase
     .from('marca')
     .select('*')
