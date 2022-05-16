@@ -8,8 +8,17 @@ const path = require('path')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const webpack = require('webpack')
 
-module.exports = (dirname) => ({
-  context: path.resolve(dirname, 'src'),
+module.exports = ($dirname) => ({
+  context: path.resolve($dirname, 'src'),
+  devServer: {
+    static: {
+      directory: path.join($dirname, 'public'),
+      serveIndex: true
+    },
+    historyApiFallback: true,
+    hot: true,
+    port: process.env.PORT
+  },
   entry: {
     app: './index.js'
   },
@@ -46,7 +55,7 @@ module.exports = (dirname) => ({
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(dirname, 'assets'),
+          from: path.resolve($dirname, 'assets'),
           noErrorOnMissing: true,
           to: '.'
         }
@@ -54,7 +63,7 @@ module.exports = (dirname) => ({
     }),
     new HtmlWebpackPlugin({
       inject: 'body',
-      template: path.resolve(dirname, 'src/index.html')
+      template: path.resolve($dirname, 'src/index.html')
     }),
     new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/app/, /common/]),
     new BundleAnalyzerPlugin({
@@ -88,7 +97,7 @@ module.exports = (dirname) => ({
     clean: true,
     chunkFilename: '[name].[contenthash].js',
     filename: '[name].[contenthash].js',
-    path: path.resolve(dirname, 'public'),
+    path: path.resolve($dirname, 'public'),
     publicPath: '/'
   },
   performance: {
