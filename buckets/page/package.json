@@ -18,7 +18,8 @@
     "ts-loader": "^9.2.5",
     "typescript": "^4.3.5",
     "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.9.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
@@ -31,7 +32,7 @@
   "private": true,
   "scripts": {
     "build": "yarn run webpack --config webpack.config.js --mode production",
-    "start": "yarn run webpack --config webpack.config.js --mode development --watch",
+    "start": "yarn run webpack serve --config webpack.config.js --mode development --open",
     "test": "jest --passWithNoTests"
   },
   "version": "1.0.0"
