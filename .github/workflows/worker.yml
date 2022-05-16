@@ -34,7 +34,11 @@ jobs:
 
     - name: Run worker deploy
       env:
+        API_KEY: ${{ secrets.API_KEY }}
+        API_URL: ${{ secrets.API_URL }}
         CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       run: |
-        yarn workspace @kuba/worker deploy
+        wrangler secret put API_KEY
+        wrangler secret put API_URL
+        wrangler publish buckets/worker/src/index.js
