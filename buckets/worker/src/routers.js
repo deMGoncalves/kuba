@@ -4,6 +4,7 @@ import marca from './marca'
 const router = Router()
 
 router.get('/marca/shelf', marca.shelf)
+router.get('/marca/sitemap.xml', marca.sitemap)
 router.get('/marca/:slug', marca)
 
 router.all('*', () =>
