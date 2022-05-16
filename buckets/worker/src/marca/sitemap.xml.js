@@ -1,8 +1,6 @@
-import { createClient } from '@kuba/supabase'
+import supabase from '@kuba/supabase'
 
-export async function onRequestGet (context) {
-  const supabase = createClient(context)
-
+export default async function () {
   const yesterday = new Date(Date.now() - 60 * 60 * 24 * 1000)
   const lastmod = yesterday.toISOString().slice(0, 10)
 
