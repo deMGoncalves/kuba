@@ -1,5 +1,4 @@
 import supabase from '@kuba/supabase'
-import pagination from './pagination'
 
 export default async function (request) {
   const { slug } = await request.params
@@ -19,7 +18,6 @@ export default async function (request) {
     `)
     .eq('marca.slug', slug)
     .order('views', { ascending: false })
-    .range(...pagination(request.params))
 
   return new Response(JSON.stringify({ data, error }))
 }
