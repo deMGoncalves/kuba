@@ -10,6 +10,7 @@ router.get('/marca/:slug', marca)
 router.get('/marca/:slug/view', marca.view)
 
 router.get('/shape/:slug', shape)
+router.get('/shape/marca/:slug', shape.marca)
 
 router.all('*', () =>
   new Response('404, not found!', { status: 404 })
