@@ -1,20 +1,18 @@
 import * as f from '@kuba/f'
-import { createClient } from '@kuba/supabase'
+import supabase from '@kuba/supabase'
 
-export async function onRequestPost (context) {
-  const supabase = createClient(context)
-  const params = await context.request.json()
-
+export default async function (request) {
+  const { slug } = request.params
   const { data } = await supabase
     .from('marca')
     .select('views')
-    .eq('slug', params.slug)
+    .eq('slug', slug)
     .single()
 
   const { error } = await supabase
     .from('marca')
     .update({ views: f.inc(data.views) })
-    .eq('slug', params.slug)
+    .eq('slug', slug)
 
   return new Response(JSON.stringify({ error }))
 }
