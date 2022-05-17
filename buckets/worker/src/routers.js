@@ -9,8 +9,9 @@ router.get('/marca/sitemap.xml', marca.sitemap)
 router.get('/marca/:slug', marca)
 router.get('/marca/:slug/view', marca.view)
 
-router.get('/shape/:slug', shape)
 router.get('/shape/marca/:slug', shape.marca)
+router.get('/shape/search', shape.search)
+router.get('/shape/:slug', shape)
 
 router.all('*', () =>
   new Response('404, not found!', { status: 404 })
