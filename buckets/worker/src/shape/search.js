@@ -1,13 +1,10 @@
 import * as f from '@kuba/f'
-import { createClient } from '@kuba/supabase'
-import pagination from './pagination'
+import supabase from '@kuba/supabase'
 
-export async function onRequestPost (context) {
-  const supabase = createClient(context)
-  const params = await context.request.json()
-
+export default async function (request) {
+  const { q } = request.query
   const query = f
-    .from(params.q)
+    .from(q)
     .pipe(f.or(f.__, ''))
     .pipe(f.split(f.__, ' '))
     .pipe(f.map(f.__, w => `'${w}'`))
@@ -29,7 +26,7 @@ export async function onRequestPost (context) {
       wheelbase (*)
     `)
     .textSearch('text', query)
-    .range(...pagination(params))
+    .range(1, 24)
 
   return new Response(JSON.stringify({ data, error }))
 }

@@ -18,6 +18,7 @@ export default async function (request) {
     `)
     .eq('marca.slug', slug)
     .order('views', { ascending: false })
+    .range(1, 24)
 
   return new Response(JSON.stringify({ data, error }))
 }
