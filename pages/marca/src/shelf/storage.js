@@ -1,16 +1,24 @@
 import * as f from '@kuba/f'
 import { params } from '@kuba/router'
-import { setGlobal } from '@kuba/global'
 import http, { api } from '@kuba/http'
 import middleware from '@kuba/middleware'
 
-const storage = () =>
-  http
-    .post(`${api.url}/shape/marca`)
-    .body({ slug: params.marca, page: 1 })
-    .json()
-    .then(({ data: shapes, error }) => (
-      f.not(error) && setGlobal({ shapes })
-    ))
+const { onError, onResponse } = f.dunder
 
-export default middleware(storage)
+const storage = middleware((target) =>
+  http
+    .get(`${api.worker}/shape/marca/${params.marca}`)
+    .json()
+    .then(({ data, error }) => (
+      error
+        ? target[onError]()
+        : target[onResponse](data)
+    ))
+)
+
+f.assign(storage, {
+  onError,
+  onResponse
+})
+
+export default storage

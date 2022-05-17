@@ -2,12 +2,10 @@ import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
 import Card from '@kuba/card'
 import component from './component'
-import effect from './effect'
 import storage from './storage'
 
 @paint(component)
 @storage
-@effect
 class Shelf {
   #shapes
 
@@ -15,8 +13,12 @@ class Shelf {
     return this.#shapes ??= f.map(f.repeat(null, 24), Card.stub)
   }
 
+  [storage.onErro] () {
+    return this
+  }
+
   @repaint
-  [effect.onChange] (shapes) {
+  [storage.onResponse] (shapes) {
     this.#shapes = f.map(shapes, Card.create)
     return this
   }
