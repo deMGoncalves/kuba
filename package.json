@@ -22,7 +22,6 @@
       "development/*",
       "elements/*",
       "filters/*",
-      "functions/*",
       "infra/*",
       "models/*",
       "modules/*",
