@@ -8,9 +8,9 @@ const views = JSON.parse(f.or(sessionStorage.getItem('_kuba.views'), '{}'))
 const onView = after(function (output) {
   f.isFalsy(views[params.shape]) && (
     http
-      .post(`${api.url}/shape/view`)
-      .body({ slug: params.shape })
-      .json(({ error }) => (
+      .get(`${api.url}/shape/${params.shape}/view`)
+      .json()
+      .then(({ error }) => (
         f.isNil(error) && (
           f.assign(views, { [params.shape]: f.T() }),
           sessionStorage.setItem('_kuba.views', JSON.stringify(views))
