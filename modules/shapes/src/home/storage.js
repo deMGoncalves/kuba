@@ -9,7 +9,7 @@ const pull = after(request)
 
 function request (target) {
   http
-    .post(`${api.url}/shape/shelf`)
+    .post(`${api.worker}/shape/shelf`)
     .body({ page: target.page, ...target.filter })
     .json()
     .then(({ data, error }) => (
