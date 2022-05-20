@@ -7,8 +7,7 @@ const { onError, onResponse } = f.dunder
 
 const storage = middleware((target) =>
   http
-    .post(`${api.url}/shape`)
-    .body({ slug: params.shape })
+    .get(`${api.worker}/shape/${params.shape}`)
     .json()
     .then(({ data, error }) => (
       error
