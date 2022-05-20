@@ -8,7 +8,7 @@ const views = JSON.parse(f.or(sessionStorage.getItem('_kuba.views'), '{}'))
 const onView = after(function (output) {
   f.isFalsy(views[params.shape]) && (
     http
-      .get(`${api.url}/shape/${params.shape}/view`)
+      .get(`${api.worker}/shape/${params.shape}/view`)
       .json()
       .then(({ error }) => (
         f.isNil(error) && (
