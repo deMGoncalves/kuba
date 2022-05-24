@@ -1,6 +1,7 @@
 import * as f from '@kuba/f'
 import http, { api } from '@kuba/http'
 import middleware from '@kuba/middleware'
+import range from './range'
 
 const { didMount, onError, onResponse, query } = f.dunder
 
@@ -10,8 +11,7 @@ const storage = middleware((target) => (
       .post(`${api.worker}/shelf`)
       .body({
         ...target[query](),
-        size: 4,
-        page: 1
+        ...range
       })
       .json()
       .then(({ data, error }) => (
