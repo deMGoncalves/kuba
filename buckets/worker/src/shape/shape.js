@@ -19,13 +19,5 @@ export default async function (request) {
     .eq('slug', slug)
     .single()
 
-  return new Response(
-    JSON.stringify({ data, error }),
-    {
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS'
-      }
-    }
-  )
+  return new Response(JSON.stringify({ data, error }))
 }
