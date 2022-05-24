@@ -2,6 +2,7 @@ import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
 import Card from '@kuba/card'
 import component from './component'
+import discovery from '@kuba/discovery'
 import storage from './storage'
 
 @paint(component)
@@ -15,6 +16,21 @@ class Related {
 
   get shapes () {
     return this.#shapes ??= f.map(f.repeat(null, 4), Card.stub)
+  }
+
+  [storage.query] () {
+    const material = discovery
+      .serie('material')
+      .champion()
+
+    const tamanho = discovery
+      .serie('tamanho')
+      .champion()
+
+    return {
+      material: material ? [material] : [],
+      tamanho: tamanho ? [tamanho] : []
+    }
   }
 
   @repaint

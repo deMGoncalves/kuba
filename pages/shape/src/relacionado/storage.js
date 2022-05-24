@@ -1,9 +1,9 @@
 import * as f from '@kuba/f'
-import global, { useEffect } from '@kuba/global'
+import { useEffect } from '@kuba/global'
 import http, { api } from '@kuba/http'
 import middleware from '@kuba/middleware'
 
-const { didMount, onError, onResponse } = f.dunder
+const { didMount, onError, onResponse, query } = f.dunder
 
 const storage = middleware((target) => {
   const mount = new Promise((resolve) => (
@@ -20,12 +20,7 @@ const storage = middleware((target) => {
       http
         .post(`${api.worker}/shape/shelf`)
         .body({
-          material: f
-            .from(global.shape.material)
-            .pipe(f.or(f.__, []))
-            .pipe(f.map(f.__, f.prop('valor')))
-            .done(),
-          tamanho: [global.shape.tamanho.valor],
+          ...target[query](),
           size: 4,
           page: 1
         })
@@ -40,7 +35,8 @@ const storage = middleware((target) => {
 
 f.assign(storage, {
   onError,
-  onResponse
+  onResponse,
+  query
 })
 
 export default storage
