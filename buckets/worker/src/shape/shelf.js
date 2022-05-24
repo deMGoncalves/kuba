@@ -39,5 +39,13 @@ export default async function (request) {
 
   const { data, error } = await query
 
-  return new Response(JSON.stringify({ data, error }))
+  return new Response(
+    JSON.stringify({ data, error }),
+    {
+      headers: {
+        'Access-Control-Allow-Origin': 'https://kuba.ink',
+        'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS'
+      }
+    }
+  )
 }
