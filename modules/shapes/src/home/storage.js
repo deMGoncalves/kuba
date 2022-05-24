@@ -1,6 +1,7 @@
 import * as f from '@kuba/f'
 import http, { api } from '@kuba/http'
 import middleware, { after } from '@kuba/middleware'
+import range from './range'
 
 const { onError, onResponse } = f.dunder
 
@@ -12,7 +13,7 @@ function request (target) {
     .post(`${api.worker}/shelf`)
     .body({
       ...target.filter,
-      page: target.page
+      ...range(target)
     })
     .json()
     .then(({ data, error }) => (
