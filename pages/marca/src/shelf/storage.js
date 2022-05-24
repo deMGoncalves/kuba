@@ -1,24 +1,42 @@
 import * as f from '@kuba/f'
-import { params } from '@kuba/router'
+import { useEffect } from '@kuba/global'
 import http, { api } from '@kuba/http'
 import middleware from '@kuba/middleware'
+import range from './range'
 
-const { onError, onResponse } = f.dunder
+const { didMount, onError, onResponse, query } = f.dunder
 
-const storage = middleware((target) =>
-  http
-    .get(`${api.worker}/shape/marca/${params.marca}`)
-    .json()
-    .then(({ data, error }) => (
-      error
-        ? target[onError]()
-        : target[onResponse](data)
+const storage = middleware((target) => {
+  const mount = new Promise((resolve) => (
+    target[didMount] = resolve
+  ))
+
+  const effect = new Promise((resolve) =>
+    useEffect(resolve)
+  )
+
+  Promise
+    .all([mount, effect])
+    .then(() => (
+      http
+        .post(`${api.worker}/shelf`)
+        .body({
+          ...target[query](),
+          ...range
+        })
+        .json()
+        .then(({ data, error }) => (
+          error
+            ? target[onError]()
+            : target[onResponse](data)
+        ))
     ))
-)
+})
 
 f.assign(storage, {
   onError,
-  onResponse
+  onResponse,
+  query
 })
 
 export default storage
