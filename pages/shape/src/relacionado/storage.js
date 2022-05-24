@@ -19,7 +19,7 @@ const storage = middleware((target) => {
     .all([mount, effect])
     .then(() => (
       http
-        .post(`${api.worker}/shape/shelf`)
+        .post(`${api.worker}/shelf`)
         .body({
           ...target[query](),
           ...range
