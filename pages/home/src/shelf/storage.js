@@ -7,7 +7,7 @@ const { didMount, onError, onResponse, query } = f.dunder
 const storage = middleware((target) => (
   target[didMount] = () =>
     http
-      .post(`${api.worker}/shape/shelf`)
+      .post(`${api.worker}/shelf`)
       .body({
         ...target[query](),
         size: 4,
