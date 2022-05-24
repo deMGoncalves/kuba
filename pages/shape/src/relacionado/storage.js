@@ -2,6 +2,7 @@ import * as f from '@kuba/f'
 import { useEffect } from '@kuba/global'
 import http, { api } from '@kuba/http'
 import middleware from '@kuba/middleware'
+import range from './range'
 
 const { didMount, onError, onResponse, query } = f.dunder
 
@@ -21,8 +22,7 @@ const storage = middleware((target) => {
         .post(`${api.worker}/shape/shelf`)
         .body({
           ...target[query](),
-          size: 4,
-          page: 1
+          ...range
         })
         .json()
         .then(({ data, error }) => (
