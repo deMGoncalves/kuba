@@ -43,7 +43,7 @@ export default async function (request) {
     JSON.stringify({ data, error }),
     {
       headers: {
-        'Access-Control-Allow-Origin': 'https://kuba.ink',
+        'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS'
       }
     }
