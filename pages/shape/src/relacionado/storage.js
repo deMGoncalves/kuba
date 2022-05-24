@@ -18,7 +18,7 @@ const storage = middleware((target) => {
     .all([mount, effect])
     .then(() => (
       http
-        .post(`${api.url}/shape/shelf`)
+        .post(`${api.worker}/shape/shelf`)
         .body({
           material: f
             .from(global.shape.material)
