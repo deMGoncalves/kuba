@@ -9,8 +9,11 @@ const pull = after(request)
 
 function request (target) {
   http
-    .post(`${api.worker}/shape/shelf`)
-    .body({ page: target.page, ...target.filter })
+    .post(`${api.worker}/shelf`)
+    .body({
+      ...target.filter,
+      page: target.page
+    })
     .json()
     .then(({ data, error }) => (
       error
