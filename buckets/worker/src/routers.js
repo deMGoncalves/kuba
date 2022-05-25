@@ -2,6 +2,7 @@ import { Router } from 'itty-router'
 import marca from './marca'
 import shape from './shape'
 import shelf from './shelf'
+import view from './view'
 
 const router = Router()
 
@@ -16,6 +17,9 @@ router.get('/shape/:slug/view', shape.view)
 
 router.post('/shelf', shelf)
 router.post('/shelf/marca', shelf.marca)
+
+router.get('/view/:slug', view)
+router.get('/view/marca/:slug', view.marca)
 
 router.all('*', () =>
   new Response('404, not found!', { status: 404 })
