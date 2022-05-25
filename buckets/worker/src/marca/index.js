@@ -1,11 +1,9 @@
 import * as f from '@kuba/f'
 import marca from './marca'
 import sitemap from './sitemap.xml'
-import view from './view'
 
 f.assign(marca, {
-  sitemap,
-  view
+  sitemap
 })
 
 export default marca

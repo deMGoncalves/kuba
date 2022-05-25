@@ -8,12 +8,10 @@ const router = Router()
 
 router.get('/marca/sitemap.xml', marca.sitemap)
 router.get('/marca/:slug', marca)
-router.get('/marca/:slug/view', marca.view)
 
 router.get('/shape/search', shape.search)
 router.get('/shape/sitemap.xml', shape.sitemap)
 router.get('/shape/:slug', shape)
-router.get('/shape/:slug/view', shape.view)
 
 router.post('/shelf', shelf)
 router.post('/shelf/marca', shelf.marca)
