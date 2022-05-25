@@ -11,7 +11,6 @@ router.get('/marca/:slug/view', marca.view)
 
 router.get('/shape/search', shape.search)
 router.get('/shape/sitemap.xml', shape.sitemap)
-router.get('/shape/marca/:slug', shape.marca)
 router.get('/shape/:slug', shape)
 router.get('/shape/:slug/view', shape.view)
 
