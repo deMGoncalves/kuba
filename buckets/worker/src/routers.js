@@ -16,6 +16,7 @@ router.get('/shape/:slug', shape)
 router.get('/shape/:slug/view', shape.view)
 
 router.post('/shelf', shelf)
+router.post('/shelf/marca', shelf.marca)
 
 router.all('*', () =>
   new Response('404, not found!', { status: 404 })

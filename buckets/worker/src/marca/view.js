@@ -14,5 +14,13 @@ export default async function (request) {
     .update({ views: f.inc(data.views) })
     .eq('slug', slug)
 
-  return new Response(JSON.stringify({ error }))
+  return new Response(
+    JSON.stringify({ error }),
+    {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS'
+      }
+    }
+  )
 }
