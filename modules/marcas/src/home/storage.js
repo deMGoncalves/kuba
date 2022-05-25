@@ -1,12 +1,16 @@
 import * as f from '@kuba/f'
 import http, { api } from '@kuba/http'
 import middleware from '@kuba/middleware'
+import range from './range'
 
 const { onError, onResponse } = f.dunder
 
 const storage = middleware((target) =>
   http
-    .get(`${api.worker}/marca/shelf`)
+    .post(`${api.worker}/shelf/marca`)
+    .body({
+      ...range
+    })
     .json()
     .then(({ data, error }) => (
       error
