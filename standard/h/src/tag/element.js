@@ -123,7 +123,7 @@ class Element {
   async mount () {
     this.willMount()
     this.attributes.paint()
-    this.children.paint()
+    this.children.mount()
     this.className.paint()
     this.events.paint()
     this.didMount()

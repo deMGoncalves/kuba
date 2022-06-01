@@ -86,7 +86,7 @@ class Fragment {
 
   async mount () {
     this.willMount()
-    await this.children.paint()
+    await this.children.mount()
     this.didMount()
     return this.element
   }
