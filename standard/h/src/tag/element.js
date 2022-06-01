@@ -82,12 +82,12 @@ class Element {
   }
 
   append (...children) {
-    this.element.append(...f.map(children, c => c.paint()))
+    this.element.append(...f.map(children, c => c.mount()))
     return this
   }
 
   appendChild (child) {
-    this.element.appendChild(child.paint())
+    this.element.appendChild(child.mount())
     return this
   }
 
@@ -114,12 +114,12 @@ class Element {
   insertAdjacent (vElement) {
     f.forEach(
       vElement,
-      (c) => this.element.insertAdjacentElement('afterend', c.paint())
+      (c) => this.element.insertAdjacentElement('afterend', c.mount())
     )
     return this
   }
 
-  paint () {
+  mount () {
     this.willMount()
     this.attributes.paint()
     this.children.paint()
@@ -158,7 +158,7 @@ class Element {
 
   replace (vElement) {
     this.willUnmount()
-    this.element.parentNode.replaceChild(vElement.paint(), this.element)
+    this.element.parentNode.replaceChild(vElement.mount(), this.element)
     this.didUnmount()
     return this
   }

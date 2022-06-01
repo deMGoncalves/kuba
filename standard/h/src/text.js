@@ -29,7 +29,7 @@ class Text {
     this.#content = content
   }
 
-  paint () {
+  mount () {
     return this.element
   }
 
@@ -50,7 +50,7 @@ class Text {
   }
 
   replace (vTag) {
-    this.element.parentNode.replaceChild(vTag.paint(), this.element)
+    this.element.parentNode.replaceChild(vTag.mount(), this.element)
     return this
   }
 

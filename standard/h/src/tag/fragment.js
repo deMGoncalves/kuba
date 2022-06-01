@@ -48,7 +48,7 @@ class Fragment {
   }
 
   append (...children) {
-    this.element.append(...f.map(children, c => c.paint()))
+    this.element.append(...f.map(children, c => c.mount()))
     return this
   }
 
@@ -82,7 +82,7 @@ class Fragment {
     return this
   }
 
-  paint () {
+  mount () {
     this.willMount()
     this.children.paint()
     this.didMount()
