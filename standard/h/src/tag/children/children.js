@@ -31,8 +31,8 @@ class Children {
     return this
   }
 
-  paint () {
-    this.#parent.append(...this.list)
+  async paint () {
+    await this.#parent.append(...this.list)
     return this
   }
 

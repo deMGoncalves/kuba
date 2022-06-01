@@ -81,13 +81,15 @@ class Element {
     return this
   }
 
-  append (...children) {
-    this.element.append(...f.map(children, c => c.mount()))
+  async append (...children) {
+    Promise
+      .all(f.map(children, child => child.mount()))
+      .then(children => this.element.append(...children))
     return this
   }
 
-  appendChild (child) {
-    this.element.appendChild(child.mount())
+  async appendChild (child) {
+    this.element.appendChild(await child.mount())
     return this
   }
 
@@ -112,14 +114,13 @@ class Element {
   }
 
   insertAdjacent (vElement) {
-    f.forEach(
-      vElement,
-      (c) => this.element.insertAdjacentElement('afterend', c.mount())
-    )
+    Promise
+      .all(f.map(vElement[f.dunder.map](), child => child.mount()))
+      .then(child => this.element.insertAdjacentElement('afterend', child))
     return this
   }
 
-  mount () {
+  async mount () {
     this.willMount()
     this.attributes.paint()
     this.children.paint()
@@ -156,9 +157,9 @@ class Element {
     return this
   }
 
-  replace (vElement) {
+  async replace (vElement) {
     this.willUnmount()
-    this.element.parentNode.replaceChild(vElement.mount(), this.element)
+    this.element.parentNode.replaceChild(await vElement.mount(), this.element)
     this.didUnmount()
     return this
   }
@@ -191,6 +192,10 @@ class Element {
   }
 
   [f.dunder.forEach] () {
+    return [this]
+  }
+
+  [f.dunder.map] () {
     return [this]
   }
 

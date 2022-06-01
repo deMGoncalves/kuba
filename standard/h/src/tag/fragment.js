@@ -1,5 +1,5 @@
-import * as f from '@kuba/f'
 import { eager } from '@kuba/h'
+import * as f from '@kuba/f'
 import Children from './children'
 
 class Fragment {
@@ -47,8 +47,10 @@ class Fragment {
     this.#uid = props.uid
   }
 
-  append (...children) {
-    this.element.append(...f.map(children, c => c.mount()))
+  async append (...children) {
+    Promise
+      .all(f.map(children, child => child.mount()))
+      .then(children => this.element.append(...children))
     return this
   }
 
@@ -82,9 +84,9 @@ class Fragment {
     return this
   }
 
-  mount () {
+  async mount () {
     this.willMount()
-    this.children.paint()
+    await this.children.paint()
     this.didMount()
     return this.element
   }
@@ -126,6 +128,10 @@ class Fragment {
   }
 
   [f.dunder.forEach] () {
+    return this.children.list
+  }
+
+  [f.dunder.map] () {
     return this.children.list
   }
 

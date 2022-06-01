@@ -30,7 +30,7 @@ class Text {
   }
 
   mount () {
-    return this.element
+    return Promise.resolve(this.element)
   }
 
   reflow (vText) {
@@ -49,8 +49,8 @@ class Text {
     return this
   }
 
-  replace (vTag) {
-    this.element.parentNode.replaceChild(vTag.mount(), this.element)
+  async replace (vTag) {
+    this.element.parentNode.replaceChild(await vTag.mount(), this.element)
     return this
   }
 
