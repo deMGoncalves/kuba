@@ -1,7 +1,7 @@
 import * as f from '@kuba/f'
-import Tag from './tag'
+import Element from './element'
 
-class Custom extends Tag {
+class Custom extends Element {
   reflow (vCustom) {
     this.attributes.reflow(vCustom.attributes)
     this.className.reflow(vCustom.className)
