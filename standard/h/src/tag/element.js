@@ -113,10 +113,8 @@ class Element {
     return this
   }
 
-  insertAdjacent (vElement) {
-    Promise
-      .all(f.map(vElement[f.dunder.map](), child => child.mount()))
-      .then(child => this.element.insertAdjacentElement('afterend', child))
+  async insertAdjacent (child) {
+    this.element.insertAdjacentElement('afterend', await child.mount())
     return this
   }
 
@@ -130,12 +128,12 @@ class Element {
     return this.element
   }
 
-  reflow (vElement) {
+  reflow (element) {
     this.willUpdate()
-    this.attributes.reflow(vElement.attributes)
-    this.className.reflow(vElement.className)
-    this.events.reflow(vElement.events)
-    this.children.reflow(vElement.children)
+    this.attributes.reflow(element.attributes)
+    this.className.reflow(element.className)
+    this.events.reflow(element.events)
+    this.children.reflow(element.children)
     this.didUpdate()
     return this
   }
@@ -157,9 +155,9 @@ class Element {
     return this
   }
 
-  async replace (vElement) {
+  async replace (child) {
     this.willUnmount()
-    this.element.parentNode.replaceChild(await vElement.mount(), this.element)
+    this.element.parentNode.replaceChild(await child.mount(), this.element)
     this.didUnmount()
     return this
   }
@@ -191,20 +189,12 @@ class Element {
     return this
   }
 
-  [f.dunder.forEach] () {
-    return [this]
-  }
-
-  [f.dunder.map] () {
-    return [this]
-  }
-
   [f.dunder.isEmpty] () {
     return f.F()
   }
 
-  static create (...args) {
-    return eager(Element, ...args)
+  static create () {
+    return eager(Element, ...arguments)
   }
 
   static is (target) {

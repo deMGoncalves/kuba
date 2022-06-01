@@ -33,19 +33,16 @@ class Text {
     return Promise.resolve(this.element)
   }
 
-  reflow (vText) {
-    f.different(this, vText) && this.repaint(vText)
+  reflow (text) {
+    f.different(this, text) && (
+      (this.#content = text.content),
+      (this.element.textContent = this.content)
+    )
     return this
   }
 
   remove () {
     this.element.remove()
-    return this
-  }
-
-  repaint (vText) {
-    this.#content = vText.content
-    this.element.textContent = this.content
     return this
   }
 
@@ -58,12 +55,8 @@ class Text {
     return this.content
   }
 
-  [f.dunder.forEach] () {
-    return [this]
-  }
-
-  static create (...args) {
-    return eager(Text, ...args)
+  static create () {
+    return eager(Text, ...arguments)
   }
 
   static is (target) {

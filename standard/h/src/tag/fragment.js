@@ -1,5 +1,5 @@
-import { eager } from '@kuba/h'
 import * as f from '@kuba/f'
+import { eager } from '@kuba/h'
 import Children from './children'
 
 class Fragment {
@@ -48,14 +48,14 @@ class Fragment {
   }
 
   async append (...children) {
-    Promise
+    await Promise
       .all(f.map(children, child => child.mount()))
       .then(children => this.element.append(...children))
     return this
   }
 
-  appendChild (vTag) {
-    this.insertAdjacent(vTag)
+  appendChild (child) {
+    this.insertAdjacent(child)
     return this
   }
 
@@ -79,8 +79,8 @@ class Fragment {
     return this
   }
 
-  insertAdjacent (vTag) {
-    this.children.last.insertAdjacent(vTag)
+  insertAdjacent (child) {
+    this.children.last.insertAdjacent(child)
     return this
   }
 
@@ -91,9 +91,9 @@ class Fragment {
     return this.element
   }
 
-  reflow (vFragment) {
+  reflow (fragment) {
     this.willUpdate()
-    this.children.reflow(vFragment.children)
+    this.children.reflow(fragment.children)
     this.didUpdate()
     return this
   }
@@ -105,9 +105,9 @@ class Fragment {
     return this
   }
 
-  replace (vFragment) {
+  replace (fragment) {
     this.willUnmount()
-    this.reflow(vFragment)
+    this.reflow(fragment)
     this.didUnmount()
     return this
   }
@@ -125,14 +125,6 @@ class Fragment {
   willUpdate () {
     this?.entity?.[f.dunder.willUpdate]?.()
     return this
-  }
-
-  [f.dunder.forEach] () {
-    return this.children.list
-  }
-
-  [f.dunder.map] () {
-    return this.children.list
   }
 
   [f.dunder.isEmpty] () {
