@@ -3,7 +3,7 @@ import * as f from '@kuba/f'
 class Equal {
   static exec () {
     return (tag, vTag) =>
-      tag.reflow(vTag)
+      tag.update(vTag)
   }
 
   static is (tag, vTag) {

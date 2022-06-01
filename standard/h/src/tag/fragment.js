@@ -91,13 +91,6 @@ class Fragment {
     return this.element
   }
 
-  reflow (fragment) {
-    this.willUpdate()
-    this.children.reflow(fragment.children)
-    this.didUpdate()
-    return this
-  }
-
   remove () {
     this.willUnmount()
     this.children.drop()
@@ -109,6 +102,13 @@ class Fragment {
     this.willUnmount()
     this.reflow(fragment)
     this.didUnmount()
+    return this
+  }
+
+  async update (fragment) {
+    this.willUpdate()
+    await this.children.update(fragment.children)
+    this.didUpdate()
     return this
   }
 

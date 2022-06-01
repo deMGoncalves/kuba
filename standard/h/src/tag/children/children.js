@@ -42,8 +42,8 @@ class Children {
     return this
   }
 
-  reflow (vChildren) {
-    reflow(this, vChildren)
+  async update (vChildren) {
+    await reflow(this, vChildren)
     return this
   }
 

@@ -118,24 +118,14 @@ class Element {
     return this
   }
 
-  async mount () {
+  mount () {
     this.willMount()
     this.attributes.paint()
     this.children.mount()
     this.className.paint()
     this.events.paint()
     this.didMount()
-    return this.element
-  }
-
-  reflow (element) {
-    this.willUpdate()
-    this.attributes.reflow(element.attributes)
-    this.className.reflow(element.className)
-    this.events.reflow(element.events)
-    this.children.reflow(element.children)
-    this.didUpdate()
-    return this
+    return Promise.resolve(this.element)
   }
 
   remove () {
@@ -171,6 +161,16 @@ class Element {
 
   setClassName (value) {
     this.element.className = value
+    return this
+  }
+
+  async update (element) {
+    this.willUpdate()
+    this.attributes.reflow(element.attributes)
+    this.className.reflow(element.className)
+    this.events.reflow(element.events)
+    await this.children.update(element.children)
+    this.didUpdate()
     return this
   }
 

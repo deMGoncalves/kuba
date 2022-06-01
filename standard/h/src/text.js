@@ -33,22 +33,22 @@ class Text {
     return Promise.resolve(this.element)
   }
 
-  reflow (text) {
-    f.different(this, text) && (
-      (this.#content = text.content),
-      (this.element.textContent = this.content)
-    )
-    return this
-  }
-
   remove () {
     this.element.remove()
     return this
   }
 
-  async replace (vTag) {
-    this.element.parentNode.replaceChild(await vTag.mount(), this.element)
+  async replace (text) {
+    this.element.parentNode.replaceChild(await text.mount(), this.element)
     return this
+  }
+
+  update (text) {
+    f.different(this, text) && (
+      (this.#content = text.content),
+      (this.element.textContent = this.content)
+    )
+    return Promise.resolve(this)
   }
 
   [f.dunder.different] () {
