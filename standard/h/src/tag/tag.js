@@ -5,7 +5,7 @@ import Children from './children'
 import ClassName from './className'
 import Events from './events'
 
-class Tag {
+class Element {
   #attributes
   #children
   #className
@@ -111,9 +111,9 @@ class Tag {
     return this
   }
 
-  insertAdjacent (vTag) {
+  insertAdjacent (vElement) {
     f.forEach(
-      vTag,
+      vElement,
       (c) => this.element.insertAdjacentElement('afterend', c.paint())
     )
     return this
@@ -129,12 +129,12 @@ class Tag {
     return this.element
   }
 
-  reflow (vTag) {
+  reflow (vElement) {
     this.willUpdate()
-    this.attributes.reflow(vTag.attributes)
-    this.className.reflow(vTag.className)
-    this.events.reflow(vTag.events)
-    this.children.reflow(vTag.children)
+    this.attributes.reflow(vElement.attributes)
+    this.className.reflow(vElement.className)
+    this.events.reflow(vElement.events)
+    this.children.reflow(vElement.children)
     this.didUpdate()
     return this
   }
@@ -156,9 +156,9 @@ class Tag {
     return this
   }
 
-  replace (vTag) {
+  replace (vElement) {
     this.willUnmount()
-    this.element.parentNode.replaceChild(vTag.paint(), this.element)
+    this.element.parentNode.replaceChild(vElement.paint(), this.element)
     this.didUnmount()
     return this
   }
@@ -199,7 +199,7 @@ class Tag {
   }
 
   static create (...args) {
-    return eager(Tag, ...args)
+    return eager(Element, ...args)
   }
 
   static is (target) {
@@ -207,4 +207,4 @@ class Tag {
   }
 }
 
-export default Tag
+export default Element
