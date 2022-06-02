@@ -10,7 +10,7 @@ class Zone {
   #onView
 
   get element () {
-    return this[f.magic('tag')].children.list[0].element
+    return f.first(this[f.magic('tag')].children).element
   }
 
   get onView () {
