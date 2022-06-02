@@ -2,14 +2,14 @@ import * as f from '@kuba/f'
 
 class Equal {
   static exec () {
-    return (tag, vTag) =>
-      tag.update(vTag)
+    return (child, newChild) =>
+      child.update(newChild)
   }
 
-  static is (tag, vTag) {
+  static is (child, newChild) {
     return f.and(
-      f.equal(tag.type, vTag.type),
-      f.equal(tag.name, vTag.name)
+      f.equal(child.type, newChild.type),
+      f.equal(child.name, newChild.name)
     )
   }
 }

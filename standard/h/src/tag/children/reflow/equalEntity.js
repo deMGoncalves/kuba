@@ -5,11 +5,11 @@ class EqualEntity {
     return () => null
   }
 
-  static is (tag, vTag) {
+  static is (child, newChild) {
     return f.and(
-      f.not(f.isEmpty(tag.entity)),
-      f.not(f.isEmpty(vTag.entity)),
-      f.equal(tag.entity, vTag.entity)
+      f.not(f.isEmpty(child.entity)),
+      f.not(f.isEmpty(newChild.entity)),
+      f.equal(child.entity, newChild.entity)
     )
   }
 }

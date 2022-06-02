@@ -2,12 +2,12 @@ import * as f from '@kuba/f'
 
 class Removed {
   static exec (children) {
-    return (tag) =>
-      children.remove(tag)
+    return (child) =>
+      children.remove(child)
   }
 
-  static is (tag, vTag) {
-    return f.and(tag, f.not(vTag))
+  static is (child, newChild) {
+    return f.and(child, f.not(newChild))
   }
 }
 

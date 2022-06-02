@@ -2,12 +2,12 @@ import * as f from '@kuba/f'
 
 class DifferentEntity {
   static exec (children) {
-    return (tag, vTag) =>
-      children.replace(tag, vTag)
+    return (child, newChild) =>
+      children.replace(child, newChild)
   }
 
-  static is (tag, vTag) {
-    return f.different(tag.entity, vTag.entity)
+  static is (child, newChild) {
+    return f.different(child.entity, newChild.entity)
   }
 }
 

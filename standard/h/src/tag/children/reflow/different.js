@@ -2,14 +2,14 @@ import * as f from '@kuba/f'
 
 class Different {
   static exec (children) {
-    return (tag, vTag) =>
-      children.replace(tag, vTag)
+    return (child, newChild) =>
+      children.replace(child, newChild)
   }
 
-  static is (tag, vTag) {
+  static is (child, newChild) {
     return f.or(
-      f.different(tag.type, vTag.type),
-      f.different(tag.name, vTag.name)
+      f.different(child.type, newChild.type),
+      f.different(child.name, newChild.name)
     )
   }
 }
