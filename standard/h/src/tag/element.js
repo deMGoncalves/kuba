@@ -164,14 +164,14 @@ class Element {
     return this
   }
 
-  async update (element) {
+  update (element) {
     this.willUpdate()
     this.attributes.reflow(element.attributes)
     this.className.reflow(element.className)
     this.events.reflow(element.events)
-    await this.children.update(element.children)
+    this.children.update(element.children)
     this.didUpdate()
-    return this
+    return Promise.resolve(this)
   }
 
   willMount () {

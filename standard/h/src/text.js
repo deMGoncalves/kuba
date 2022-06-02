@@ -44,11 +44,14 @@ class Text {
   }
 
   update (text) {
-    f.different(this, text) && (
-      (this.#content = text.content),
-      (this.element.textContent = this.content)
-    )
-    return Promise.resolve(this)
+    return new Promise((resolve) => {
+      f.different(this, text) && (
+        (this.#content = text.content),
+        (this.element.textContent = this.content)
+      )
+
+      resolve(this)
+    })
   }
 
   [f.dunder.different] () {

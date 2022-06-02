@@ -105,11 +105,11 @@ class Fragment {
     return this
   }
 
-  async update (fragment) {
+  update (fragment) {
     this.willUpdate()
-    await this.children.update(fragment.children)
+    this.children.update(fragment.children)
     this.didUpdate()
-    return this
+    return Promise.resolve(this)
   }
 
   willMount () {
