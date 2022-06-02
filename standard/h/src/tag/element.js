@@ -140,8 +140,10 @@ class Element {
 
   remove () {
     this.willUnmount()
-    this.element.remove()
-    this.didUnmount()
+    requestAnimationFrame(() => (
+      this.element.remove(),
+      this.didUnmount()
+    ))
     return this
   }
 
@@ -155,10 +157,12 @@ class Element {
     return this
   }
 
-  async replace (child) {
+  replace (child) {
     this.willUnmount()
-    this.element.parentNode.replaceChild(await child.mount(), this.element)
-    this.didUnmount()
+    requestAnimationFrame(async () => (
+      this.element.parentNode.replaceChild(await child.mount(), this.element),
+      this.didUnmount()
+    ))
     return this
   }
 
