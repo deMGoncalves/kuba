@@ -18,18 +18,23 @@ class Attributes {
     this.#target = target
   }
 
-  paint () {
-    f
-      .from(this.list)
-      .pipe(f.filter(f.__, f.prop('value')))
-      .pipe(f.map(f.__, ({ key, value }) => filter(key, value)))
-      .pipe(f.forEach(f.__, (args) => this.#target.setAttribute(...args)))
-    return this
+  mount () {
+    return new Promise((resolve) => (
+      f
+        .from(this.list)
+        .pipe(f.filter(f.__, f.prop('value')))
+        .pipe(f.map(f.__, ({ key, value }) => filter(key, value)))
+        .pipe(f.forEach(f.__, (args) => this.#target.setAttribute(...args))),
+
+      resolve(this)
+    ))
   }
 
-  reflow (vAttributes) {
-    reflow(this, vAttributes)
-    return this
+  update (newAttributes) {
+    return new Promise((resolve) => (
+      reflow(this, newAttributes),
+      resolve(this)
+    ))
   }
 
   removeAttribute (key, value) {
@@ -44,8 +49,8 @@ class Attributes {
     return this
   }
 
-  static create (...args) {
-    return eager(Attributes, ...args)
+  static create () {
+    return eager(Attributes, ...arguments)
   }
 }
 

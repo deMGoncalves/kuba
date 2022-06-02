@@ -130,7 +130,7 @@ class Element {
 
   mount () {
     this.willMount()
-    this.attributes.paint()
+    this.attributes.mount()
     this.children.mount()
     this.className.paint()
     this.events.paint()
@@ -180,10 +180,10 @@ class Element {
 
   async update (element) {
     this.willUpdate()
-    this.attributes.reflow(element.attributes)
+    this.attributes.update(element.attributes)
+    await this.children.update(element.children)
     this.className.reflow(element.className)
     this.events.reflow(element.events)
-    await this.children.update(element.children)
     this.didUpdate()
     return this
   }
