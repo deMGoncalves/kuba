@@ -32,9 +32,9 @@ class Events {
     ))
   }
 
-  update (other) {
+  update (events) {
     return new Promise((resolve) => (
-      reflow(this, other),
+      reflow(this, events),
       resolve(this)
     ))
   }
@@ -45,8 +45,8 @@ class Events {
     return this
   }
 
-  static create (...args) {
-    return eager(Events, ...args)
+  static create () {
+    return eager(Events, ...arguments)
   }
 }
 
