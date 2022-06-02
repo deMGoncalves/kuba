@@ -24,15 +24,19 @@ class Events {
     return this
   }
 
-  paint () {
-    f.forEach(this.list, ({ name, listener }) =>
-      this.#target.addEventListener(...filter(name, listener)))
-    return this
+  mount () {
+    return new Promise((resolve) => (
+      f.forEach(this.list, ({ name, listener }) =>
+        this.#target.addEventListener(...filter(name, listener))),
+      resolve(this)
+    ))
   }
 
-  reflow (other) {
-    reflow(this, other)
-    return this
+  update (other) {
+    return new Promise((resolve) => (
+      reflow(this, other),
+      resolve(this)
+    ))
   }
 
   removeEventListener (name) {
