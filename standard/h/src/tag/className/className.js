@@ -24,10 +24,10 @@ class ClassName {
     ))
   }
 
-  update (vClassName) {
+  update (newClassName) {
     return new Promise((resolve) => (
-      f.different(this, vClassName) && (
-        this.#value = vClassName.value,
+      f.different(this, newClassName) && (
+        this.#value = newClassName.value,
         this.#target.setClassName(this.value)
       ),
       resolve(this)
