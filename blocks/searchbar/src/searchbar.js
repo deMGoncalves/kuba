@@ -42,7 +42,7 @@ class Search {
   @didUpdate
   [f.dunder.update] () {
     this.opened && (
-      f.first(this[f.dunder.tag].children.list).element.querySelector('input').focus()
+      f.first(this[f.dunder.tag].children).element.querySelector('input').focus()
     )
     return this
   }
