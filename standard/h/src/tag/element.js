@@ -88,8 +88,10 @@ class Element {
       .then(() => this)
   }
 
-  async appendChild (child) {
-    this.element.appendChild(await child.mount())
+  appendChild (child) {
+    requestAnimationFrame(async () => (
+      this.element.appendChild(await child.mount())
+    ))
     return this
   }
 
