@@ -7,10 +7,6 @@ class Children {
   #list
   #parent
 
-  get list () {
-    return this.#list
-  }
-
   constructor (children, parent) {
     this.#list = mapper(children)
     this.#parent = parent
@@ -49,8 +45,16 @@ class Children {
     return this
   }
 
+  [f.dunder.first] () {
+    return f.first(this.#list)
+  }
+
   [f.dunder.last] () {
     return f.last(this.#list)
+  }
+
+  [f.dunder.toArray] () {
+    return this.#list
   }
 
   static create () {

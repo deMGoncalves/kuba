@@ -9,7 +9,7 @@ import Removed from './removed'
 
 export default (children, vChildren) => (
   f.forEach(
-    f.zip(children.list, vChildren.list),
+    f.zip(f.toArray(children), f.toArray(vChildren)),
     f.apply(f.cond(
       [Added.is, Added.exec(children)],
       [Removed.is, Removed.exec(children)],
