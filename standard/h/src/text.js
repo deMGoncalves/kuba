@@ -38,20 +38,21 @@ class Text {
     return this
   }
 
-  async replace (text) {
-    this.element.parentNode.replaceChild(await text.mount(), this.element)
+  replace (text) {
+    requestAnimationFrame(async () => (
+      this.element.parentNode.replaceChild(await text.mount(), this.element)
+    ))
     return this
   }
 
   update (text) {
-    return new Promise((resolve) => {
+    requestAnimationFrame(() => (
       f.different(this, text) && (
         (this.#content = text.content),
         (this.element.textContent = this.content)
       )
-
-      resolve(this)
-    })
+    ))
+    return this
   }
 
   [f.dunder.different] () {
