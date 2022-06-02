@@ -47,11 +47,11 @@ class Fragment {
     this.#uid = props.uid
   }
 
-  async append (...children) {
-    await Promise
+  append (children) {
+    return Promise
       .all(f.map(children, child => child.mount()))
       .then(children => this.element.append(...children))
-    return this
+      .then(() => this)
   }
 
   appendChild (child) {
@@ -98,9 +98,9 @@ class Fragment {
     return this
   }
 
-  replace (fragment) {
+  async replace (fragment) {
     this.willUnmount()
-    this.reflow(fragment)
+    await this.children.update(fragment.children)
     this.didUnmount()
     return this
   }
@@ -131,8 +131,8 @@ class Fragment {
     return f.F()
   }
 
-  static execute (...args) {
-    return eager(Fragment, ...args)
+  static execute () {
+    return eager(Fragment, ...arguments)
   }
 }
 

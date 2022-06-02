@@ -22,8 +22,8 @@ class Children {
     return this
   }
 
-  mount () {
-    this.#parent.append(...this.#list)
+  async mount () {
+    await this.#parent.append(this.#list)
     return this
   }
 
@@ -38,8 +38,8 @@ class Children {
     return this
   }
 
-  update (children) {
-    reflow(this, children)
+  async update (children) {
+    await reflow(this, children)
     return this
   }
 
