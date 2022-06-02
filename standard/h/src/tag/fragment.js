@@ -80,7 +80,7 @@ class Fragment {
   }
 
   insertAdjacent (child) {
-    this.children.last.insertAdjacent(child)
+    f.last(this.children).insertAdjacent(child)
     return this
   }
 
@@ -93,7 +93,7 @@ class Fragment {
 
   remove () {
     this.willUnmount()
-    this.children.drop()
+    this.children.unmount()
     this.didUnmount()
     return this
   }
@@ -105,11 +105,11 @@ class Fragment {
     return this
   }
 
-  update (fragment) {
+  async update (fragment) {
     this.willUpdate()
-    this.children.update(fragment.children)
+    await this.children.update(fragment.children)
     this.didUpdate()
-    return Promise.resolve(this)
+    return this
   }
 
   willMount () {

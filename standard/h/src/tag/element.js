@@ -81,7 +81,7 @@ class Element {
     return this
   }
 
-  async append (...children) {
+  append (...children) {
     Promise
       .all(f.map(children, child => child.mount()))
       .then(children => this.element.append(...children))
@@ -164,14 +164,14 @@ class Element {
     return this
   }
 
-  update (element) {
+  async update (element) {
     this.willUpdate()
     this.attributes.reflow(element.attributes)
     this.className.reflow(element.className)
     this.events.reflow(element.events)
-    this.children.update(element.children)
+    await this.children.update(element.children)
     this.didUpdate()
-    return Promise.resolve(this)
+    return this
   }
 
   willMount () {

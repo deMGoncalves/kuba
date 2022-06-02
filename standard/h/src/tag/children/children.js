@@ -7,10 +7,6 @@ class Children {
   #list
   #parent
 
-  get last () {
-    return f.last(this.list)
-  }
-
   get list () {
     return this.#list
   }
@@ -20,41 +16,45 @@ class Children {
     this.#parent = parent
   }
 
-  append (vTag) {
-    this.#parent.appendChild(vTag)
-    f.push(this.list, vTag)
+  append (child) {
+    this.#parent.appendChild(child)
+    f.push(this.#list, child)
     return this
   }
 
-  drop () {
-    f.forEach(this.list, this.remove.bind(this))
+  mount () {
+    this.#parent.append(...this.#list)
     return this
   }
 
-  async mount () {
-    await this.#parent.append(...this.list)
+  replace (child, newChild) {
+    child.replace(newChild)
+    f.replace(this.#list, child, newChild)
     return this
   }
 
-  replace (tag, vTag) {
-    tag.replace(vTag)
-    f.replace(this.list, tag, vTag)
+  unmount () {
+    f.forEach(this.#list, this.remove.bind(this))
     return this
   }
 
-  async update (vChildren) {
-    await reflow(this, vChildren)
+  update (children) {
+    reflow(this, children)
     return this
   }
 
-  remove (tag) {
-    tag.remove()
-    f.remove(this.list, tag)
+  remove (child) {
+    child.remove()
+    f.remove(this.#list, child)
     return this
   }
 
-  static create (...args) {
-    return eager(Children, ...args)
+  [f.dunder.last] () {
+    return f.last(this.#list)
+  }
+
+  static create () {
+    return eager(Children, ...arguments)
   }
 }
 
