@@ -99,17 +99,23 @@ class Element {
   }
 
   didMount () {
-    this?.entity?.[f.dunder.didMount]?.()
+    requestIdleCallback(() => (
+      this?.entity?.[f.dunder.didMount]?.()
+    ))
     return this
   }
 
   didUnmount () {
-    this?.entity?.[f.dunder.didUnmount]?.()
+    requestIdleCallback(() => (
+      this?.entity?.[f.dunder.didUnmount]?.()
+    ))
     return this
   }
 
   didUpdate () {
-    this?.entity?.[f.dunder.didUpdate]?.()
+    requestIdleCallback(() => (
+      this?.entity?.[f.dunder.didUpdate]?.()
+    ))
     return this
   }
 
