@@ -121,8 +121,10 @@ class Element {
     return this
   }
 
-  async insertAdjacent (child) {
-    this.element.insertAdjacentElement('afterend', await child.mount())
+  insertAdjacent (child) {
+    requestAnimationFrame(async () => (
+      this.element.insertAdjacentElement('afterend', await child.mount())
+    ))
     return this
   }
 
