@@ -15,19 +15,23 @@ class ClassName {
     this.#value = flatten(props)
   }
 
-  paint () {
-    this.value && (
-      this.#target.setClassName(this.value)
-    )
-    return this
+  mount () {
+    return new Promise((resolve) => (
+      this.value && (
+        this.#target.setClassName(this.value)
+      ),
+      resolve(this)
+    ))
   }
 
-  reflow (vClassName) {
-    f.different(this, vClassName) && (
-      this.#value = vClassName.value,
-      this.#target.setClassName(this.value)
-    )
-    return this
+  update (vClassName) {
+    return new Promise((resolve) => (
+      f.different(this, vClassName) && (
+        this.#value = vClassName.value,
+        this.#target.setClassName(this.value)
+      ),
+      resolve(this)
+    ))
   }
 
   [f.dunder.different] () {

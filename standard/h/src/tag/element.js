@@ -132,7 +132,7 @@ class Element {
     this.willMount()
     this.attributes.mount()
     this.children.mount()
-    this.className.paint()
+    this.className.mount()
     this.events.paint()
     this.didMount()
     return Promise.resolve(this.element)
@@ -182,7 +182,7 @@ class Element {
     this.willUpdate()
     this.attributes.update(element.attributes)
     await this.children.update(element.children)
-    this.className.reflow(element.className)
+    this.className.update(element.className)
     this.events.reflow(element.events)
     this.didUpdate()
     return this
