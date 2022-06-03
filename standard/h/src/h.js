@@ -1,14 +1,14 @@
 import * as f from '@kuba/f'
 import Component from './component'
-import Tag, { Custom } from './tag'
+import Element, { Custom } from './element'
 
 /**
  * TODO: Porque o custom nao pode ficar dentro
- * do Tag.is e Tag.create
+ * do Element.is e Element.create
  */
 export default (target, props, ...children) =>
   f.cond(
-    [Tag.is, Tag.create],
+    [Element.is, Element.create],
     [Component.is, Component.execute],
     [Custom.is, Custom.create]
   )(target, { ...props }, f.flatten(children))
