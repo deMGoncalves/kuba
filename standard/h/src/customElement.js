@@ -1,14 +1,14 @@
 import * as f from '@kuba/f'
 import Element from './element'
 
-class Custom extends Element {
-  update (custom) {
+class CustomElement extends Element {
+  update (element) {
     super.willUpdate()
     Promise
       .all([
-        this.attributes.update(custom.attributes),
-        this.className.update(custom.className),
-        this.events.update(custom.events)
+        this.attributes.update(element.attributes),
+        this.className.update(element.className),
+        this.events.update(element.events)
       ])
       .then(() => super.didUpdate())
     return this
@@ -19,4 +19,4 @@ class Custom extends Element {
   }
 }
 
-export default Custom
+export default CustomElement

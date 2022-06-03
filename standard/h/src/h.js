@@ -1,14 +1,11 @@
 import * as f from '@kuba/f'
 import Component from './component'
-import Element, { Custom } from './element'
+import CustomElement from './customElement'
+import Element from './element'
 
-/**
- * TODO: Porque o custom nao pode ficar dentro
- * do Element.is e Element.create
- */
 export default (target, props, ...children) =>
   f.cond(
     [Element.is, Element.create],
     [Component.is, Component.execute],
-    [Custom.is, Custom.create]
+    [CustomElement.is, CustomElement.create]
   )(target, { ...props }, f.flatten(children))
