@@ -1,5 +1,3 @@
-import '@kuba/htmlparser'
-
 export { default } from './h'
 
 export { default as eager } from './eager'
