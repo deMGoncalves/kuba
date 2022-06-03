@@ -13,6 +13,11 @@ class Fragment {
     return this.#children
   }
 
+  /**
+   * TODO: Preciso mudar o attributo element para
+   * um nome que faca sentido
+   * ex: target
+   */
   get element () {
     return this.#element ??= document.createDocumentFragment()
   }
@@ -90,11 +95,14 @@ class Fragment {
     return this
   }
 
-  async mount () {
+  mount () {
     this.willMount()
-    await this.children.mount()
-    this.didMount()
-    return this.element
+    return Promise
+      .all([
+        this.children.mount()
+      ])
+      .then(() => this.didMount())
+      .then(() => this.element)
   }
 
   remove () {
@@ -104,17 +112,23 @@ class Fragment {
     return this
   }
 
-  async replace (fragment) {
+  replace (fragment) {
     this.willUnmount()
-    await this.children.update(fragment.children)
-    this.didUnmount()
+    Promise
+      .all([
+        this.children.update(fragment.children)
+      ])
+      .then(() => this.didUnmount())
     return this
   }
 
-  async update (fragment) {
+  update (fragment) {
     this.willUpdate()
-    await this.children.update(fragment.children)
-    this.didUpdate()
+    Promise
+      .all([
+        this.children.update(fragment.children)
+      ])
+      .then(() => this.didUpdate())
     return this
   }
 

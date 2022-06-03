@@ -29,6 +29,11 @@ class Element {
     return this.#className
   }
 
+  /**
+   * TODO: Preciso mudar o attributo element para
+   * um nome que faca sentido
+   * ex: target
+   */
   get element () {
     return this.#element ??= document.createElement(this.name, { is: this.is })
   }
@@ -130,12 +135,15 @@ class Element {
 
   mount () {
     this.willMount()
-    this.attributes.mount()
-    this.children.mount()
-    this.className.mount()
-    this.events.mount()
-    this.didMount()
-    return Promise.resolve(this.element)
+    Promise
+      .all([
+        this.attributes.mount(),
+        this.children.mount(),
+        this.className.mount(),
+        this.events.mount()
+      ])
+      .then(() => this.didMount())
+    return this.element
   }
 
   remove () {
@@ -178,13 +186,16 @@ class Element {
     return this
   }
 
-  async update (element) {
+  update (element) {
     this.willUpdate()
-    this.attributes.update(element.attributes)
-    await this.children.update(element.children)
-    this.className.update(element.className)
-    this.events.update(element.events)
-    this.didUpdate()
+    Promise
+      .all([
+        this.attributes.update(element.attributes),
+        this.children.update(element.children),
+        this.className.update(element.className),
+        this.events.update(element.events)
+      ])
+      .then(() => this.didUpdate())
     return this
   }
 

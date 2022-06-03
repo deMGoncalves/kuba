@@ -34,7 +34,9 @@ class Text {
   }
 
   remove () {
-    this.element.remove()
+    requestAnimationFrame(() => (
+      this.element.remove()
+    ))
     return this
   }
 

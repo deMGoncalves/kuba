@@ -2,10 +2,15 @@ import * as f from '@kuba/f'
 import Element from './element'
 
 class Custom extends Element {
-  reflow (vCustom) {
-    this.attributes.reflow(vCustom.attributes)
-    this.className.reflow(vCustom.className)
-    this.events.reflow(vCustom.events)
+  update (custom) {
+    super.willUpdate()
+    Promise
+      .all([
+        this.attributes.update(custom.attributes),
+        this.className.update(custom.className),
+        this.events.update(custom.events)
+      ])
+      .then(() => super.didUpdate())
     return this
   }
 
