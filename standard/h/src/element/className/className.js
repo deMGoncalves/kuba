@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import { eager } from '@kuba/h'
+import { lazy } from '@kuba/h'
 import flatten from './flatten'
 
 class ClassName {
@@ -39,7 +39,7 @@ class ClassName {
   }
 
   static create (...args) {
-    return eager(ClassName, ...args)
+    return lazy(ClassName, ...args)
   }
 }
 

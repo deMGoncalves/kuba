@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import { eager } from '@kuba/h'
+import { lazy } from '@kuba/h'
 import mapper from './mapper'
 import reflow from './reflow'
 
@@ -58,7 +58,7 @@ class Children {
   }
 
   static create () {
-    return eager(Children, ...arguments)
+    return lazy(Children, ...arguments)
   }
 }
 

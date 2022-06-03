@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import eager from './eager'
+import lazy from './lazy'
 
 class Text {
   #content
@@ -62,7 +62,7 @@ class Text {
   }
 
   static create () {
-    return eager(Text, ...arguments)
+    return lazy(Text, ...arguments)
   }
 
   static is (target) {

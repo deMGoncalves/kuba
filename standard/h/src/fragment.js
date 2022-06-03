@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 import { Children } from './element'
-import { eager } from '@kuba/h'
+import { lazy } from '@kuba/h'
 
 class Fragment {
   #children
@@ -152,7 +152,7 @@ class Fragment {
   }
 
   static execute () {
-    return eager(Fragment, ...arguments)
+    return lazy(Fragment, ...arguments)
   }
 }
 

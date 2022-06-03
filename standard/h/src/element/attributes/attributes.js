@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import { eager } from '@kuba/h'
+import { lazy } from '@kuba/h'
 import filter from './filter'
 import mapper from './mapper'
 import reflow from './reflow'
@@ -50,7 +50,7 @@ class Attributes {
   }
 
   static create () {
-    return eager(Attributes, ...arguments)
+    return lazy(Attributes, ...arguments)
   }
 }
 

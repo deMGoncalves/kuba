@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import { eager } from '@kuba/h'
+import { lazy } from '@kuba/h'
 import Attributes from './attributes'
 import Children from './children'
 import ClassName from './className'
@@ -219,7 +219,7 @@ class Element {
   }
 
   static create () {
-    return eager(Element, ...arguments)
+    return lazy(Element, ...arguments)
   }
 
   static is (target) {
