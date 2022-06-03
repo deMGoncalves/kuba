@@ -6,4 +6,4 @@ const render = (element, ...children) => {
     .then(children => element.append(...children))
 }
 
-export default f.curry(f.arity(2, f.frame(render)))
+export default f.curry(f.arity(2, render))
