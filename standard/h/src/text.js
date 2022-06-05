@@ -34,26 +34,26 @@ class Text {
   }
 
   remove () {
-    requestAnimationFrame(() => (
+    f.frame(() =>
       this.element.remove()
-    ))
+    )()
     return this
   }
 
   replace (text) {
-    requestAnimationFrame(async () => (
+    f.frame(async () =>
       this.element.parentNode.replaceChild(await text.mount(), this.element)
-    ))
+    )()
     return this
   }
 
   update (text) {
-    requestAnimationFrame(() => (
+    f.frame(() =>
       f.different(this, text) && (
         (this.#content = text.content),
         (this.element.textContent = this.content)
       )
-    ))
+    )()
     return this
   }
 
