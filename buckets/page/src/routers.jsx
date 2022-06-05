@@ -1,10 +1,9 @@
 import h from '@kuba/h'
-import Home from '@kuba/home'
 import render from './render'
 import router from '@kuba/router'
 
 router('/', async function home () {
-  // const { default: Home } = await import('@kuba/home' /* webpackChunkName: "home" */)
+  const { default: Home } = await import('@kuba/home' /* webpackChunkName: "home" */)
   render(<Home />)
 })
 
