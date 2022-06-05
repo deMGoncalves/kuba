@@ -6,7 +6,7 @@ import Removed from './removed'
 
 export default (that, attributes) => (
   f.forEach(
-    f.zip(that.list, attributes.list),
+    f.zip(f.toArray(that), f.toArray(attributes)),
     f.apply(f.cond(
       [Added.is, Added.exec(that)],
       [Removed.is, Removed.exec(that)],

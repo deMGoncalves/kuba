@@ -3,15 +3,10 @@ import { lazy } from '@kuba/h'
 import filter from './filter'
 import mapper from './mapper'
 import reflow from './reflow'
-import toList from './toList'
 
 class Attributes {
   #map
   #target
-
-  get list () {
-    return toList(this.#map)
-  }
 
   constructor (props, target) {
     this.#map = mapper(props)
@@ -21,7 +16,7 @@ class Attributes {
   mount () {
     return new Promise((resolve) => (
       f
-        .from(this.list)
+        .from(f.toArray(this))
         .pipe(f.filter(f.__, f.prop('value')))
         .pipe(f.map(f.__, ({ key, value }) => filter(key, value)))
         .pipe(f.forEach(f.__, (args) => this.#target.setAttribute(...args))),
@@ -47,6 +42,13 @@ class Attributes {
     this.#map.set(key, value),
     this.#target.setAttribute(...filter(key, value))
     return this
+  }
+
+  [f.dunder.toArray] () {
+    return f.map(
+      [...this.#map],
+      ([key, value]) => ({ key, value })
+    )
   }
 
   static create () {
