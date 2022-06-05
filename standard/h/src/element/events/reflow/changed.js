@@ -1,15 +1,15 @@
 import * as f from '@kuba/f'
 
 class Changed {
-  static exec (that) {
-    return (_, event) =>
-      that.addEventListener(event.name, event.listener)
+  static exec (events) {
+    return (_, newE) =>
+      events.addnewEListener(newE.name, newE.listener)
   }
 
-  static is (current, event) {
+  static is (e, newE) {
     return f.and(
-      f.equal(current.name, event.name),
-      f.different(current.listener, event.listener)
+      f.equal(e.name, newE.name),
+      f.different(e.listener, newE.listener)
     )
   }
 }

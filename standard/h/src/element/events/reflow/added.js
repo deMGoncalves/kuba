@@ -1,13 +1,13 @@
 import * as f from '@kuba/f'
 
 class Added {
-  static exec (that) {
-    return (_, event) =>
-      that.addEventListener(event.name, event.listener)
+  static exec (events) {
+    return (_, newE) =>
+      events.addnewEListener(newE.name, newE.listener)
   }
 
-  static is (current, event) {
-    return f.and(f.not(current), event)
+  static is (e, newE) {
+    return f.and(f.not(e), newE)
   }
 }
 

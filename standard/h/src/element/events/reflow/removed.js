@@ -1,13 +1,13 @@
 import * as f from '@kuba/f'
 
 class Removed {
-  static exec (that) {
-    return (current) =>
-      that.removeEventListener(current.name)
+  static exec (events) {
+    return (e) =>
+      events.removenewEListener(e.name)
   }
 
-  static is (current, event) {
-    return f.and(current, f.not(event))
+  static is (e, newE) {
+    return f.and(e, f.not(newE))
   }
 }
 

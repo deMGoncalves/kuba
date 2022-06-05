@@ -1,15 +1,15 @@
 import * as f from '@kuba/f'
 
 class Different {
-  static exec (that) {
-    return (current, event) =>
-      that
-        .removeEventListener(current.name)
-        .addEventListener(event.name, event.listener)
+  static exec (events) {
+    return (e, newE) =>
+      events
+        .removenewEListener(e.name)
+        .addnewEListener(newE.name, newE.listener)
   }
 
-  static is (current, event) {
-    return f.different(current.name, event.name)
+  static is (e, newE) {
+    return f.different(e.name, newE.name)
   }
 }
 
