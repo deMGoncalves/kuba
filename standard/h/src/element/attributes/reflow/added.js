@@ -1,13 +1,13 @@
 import * as f from '@kuba/f'
 
 class Added {
-  static exec (that) {
-    return (_, attribute) =>
-      that.setAttribute(attribute.key, attribute.value)
+  static exec (attributes) {
+    return (_, newAttr) =>
+      attributes.setAttribute(newAttr.key, newAttr.value)
   }
 
-  static is (current, attribute) {
-    return f.and(f.not(current), attribute)
+  static is (attr, newAttr) {
+    return f.and(f.not(attr), newAttr)
   }
 }
 

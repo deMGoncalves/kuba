@@ -1,15 +1,15 @@
 import * as f from '@kuba/f'
 
 class Different {
-  static exec (that) {
-    return (current, attribute = {}) =>
-      that
-        .removeAttribute(current.key)
-        .setAttribute(attribute.key, attribute.value)
+  static exec (attributes) {
+    return (attr, newAttr = {}) =>
+      attributes
+        .removenAttribute(attr.key)
+        .setAttribute(newAttr.key, newAttr.value)
   }
 
-  static is (current, attribute) {
-    return f.different(current.key, attribute.key)
+  static is (attr, newAttr) {
+    return f.different(attr.key, newAttr.key)
   }
 }
 

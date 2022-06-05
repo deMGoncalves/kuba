@@ -1,18 +1,18 @@
 import * as f from '@kuba/f'
 
 class Changed {
-  static exec (that) {
-    return (_, attribute) => (
-      f.isNil(attribute.value)
-        ? that.removeAttribute(attribute.key)
-        : that.setAttribute(attribute.key, attribute.value)
+  static exec (attributes) {
+    return (_, newAttr) => (
+      f.isNil(newAttr.value)
+        ? attributes.removeAttribute(newAttr.key)
+        : attributes.setAttribute(newAttr.key, newAttr.value)
     )
   }
 
-  static is (current, attribute) {
+  static is (attr, newAttr) {
     return f.and(
-      f.equal(current.key, attribute.key),
-      f.different(current.value, attribute.value)
+      f.equal(attr.key, newAttr.key),
+      f.different(attr.value, newAttr.value)
     )
   }
 }
