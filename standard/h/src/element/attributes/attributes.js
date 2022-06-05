@@ -15,12 +15,7 @@ class Attributes {
 
   mount () {
     return new Promise((resolve) => (
-      f
-        .from(f.toArray(this))
-        .pipe(f.filter(f.__, f.prop('value')))
-        .pipe(f.map(f.__, ({ key, value }) => filter(key, value)))
-        .pipe(f.forEach(f.__, (args) => this.#target.setAttribute(...args))),
-
+      f.forEach(this, (args) => this.#target.setAttribute(...args)),
       resolve(this)
     ))
   }
@@ -45,10 +40,19 @@ class Attributes {
   }
 
   [f.dunder.toArray] () {
-    return f.map(
-      [...this.#map],
-      ([key, value]) => ({ key, value })
-    )
+    return f
+      .from([...this.#map])
+      .pipe(f.map(f.__, ([key, value]) => ({ key, value })))
+      .done()
+  }
+
+  [f.dunder.forEach] () {
+    return f
+      .from(this)
+      .pipe(f.toArray)
+      .pipe(f.filter(f.__, f.prop('value')))
+      .pipe(f.map(f.__, ({ key, value }) => filter(key, value)))
+      .done()
   }
 
   static create () {
