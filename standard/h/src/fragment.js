@@ -70,23 +70,23 @@ class Fragment {
   }
 
   didMount () {
-    requestIdleCallback(() => (
+    f.idle(() =>
       this?.entity?.[f.dunder.didMount]?.()
-    ))
+    )()
     return this
   }
 
   didUnmount () {
-    requestIdleCallback(() => (
+    f.idle(() =>
       this?.entity?.[f.dunder.didUnmount]?.()
-    ))
+    )()
     return this
   }
 
   didUpdate () {
-    requestIdleCallback(() => (
+    f.idle(() =>
       this?.entity?.[f.dunder.didUpdate]?.()
-    ))
+    )()
     return this
   }
 
