@@ -94,9 +94,9 @@ class Element {
   }
 
   appendChild (child) {
-    requestAnimationFrame(async () => (
+    f.frame(async () =>
       this.element.appendChild(await child.mount())
-    ))
+    )()
     return this
   }
 
@@ -106,30 +106,30 @@ class Element {
   }
 
   didMount () {
-    requestIdleCallback(() => (
+    f.idle(() =>
       this?.entity?.[f.dunder.didMount]?.()
-    ))
+    )()
     return this
   }
 
   didUnmount () {
-    requestIdleCallback(() => (
+    f.idle(() =>
       this?.entity?.[f.dunder.didUnmount]?.()
-    ))
+    )()
     return this
   }
 
   didUpdate () {
-    requestIdleCallback(() => (
+    f.idle(() =>
       this?.entity?.[f.dunder.didUpdate]?.()
-    ))
+    )()
     return this
   }
 
   insertAdjacent (child) {
-    requestAnimationFrame(async () => (
+    f.frame(async () =>
       this.element.insertAdjacentElement('afterend', await child.mount())
-    ))
+    )()
     return this
   }
 
@@ -148,10 +148,10 @@ class Element {
 
   remove () {
     this.willUnmount()
-    requestAnimationFrame(() => (
+    f.frame(() => (
       this.element.remove(),
       this.didUnmount()
-    ))
+    ))()
     return this
   }
 
@@ -167,10 +167,10 @@ class Element {
 
   replace (child) {
     this.willUnmount()
-    requestAnimationFrame(async () => (
+    f.frame(async () => (
       this.element.parentNode.replaceChild(await child.mount(), this.element),
       this.didUnmount()
-    ))
+    ))()
     return this
   }
 
