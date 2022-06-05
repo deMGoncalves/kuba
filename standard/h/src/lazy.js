@@ -4,12 +4,12 @@ export default function (Klass, ...args) {
   let target
 
   return new Proxy({}, {
-    get (_, method) {
+    get (_, key) {
       target ??= new Klass(...args)
 
-      return f.is(Function, target[method])
-        ? target[method].bind(target)
-        : target[method]
+      return f.is(Function, target[key])
+        ? target[key].bind(target)
+        : target[key]
     }
   })
 }
