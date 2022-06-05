@@ -1,16 +1,14 @@
 import * as f from '@kuba/f'
-import Added from './added'
-import Changed from './changed'
-import Different from './different'
-import Removed from './removed'
+import evaluate from './evaluate'
 
-export default (that, events) =>
-  f.forEach(
-    f.zip(that.list, events.list),
-    f.apply(f.cond(
-      [Added.is, Added.exec(that)],
-      [Removed.is, Removed.exec(that)],
-      [Changed.is, Changed.exec(that)],
-      [Different.is, Different.exec(that)]
-    ))
-  )
+export default (events, newEvents) =>
+  new Promise((resolve) => (
+    f
+      .from([events, newEvents])
+      .pipe(f.map(f.__, f.toArray))
+      .pipe(f.apply(f.zip))
+      .pipe(f.forEach(f.__, f.apply(evaluate(events))))
+      .done(),
+
+    resolve()
+  ))

@@ -3,15 +3,10 @@ import { lazy } from '@kuba/h'
 import filter from './filter'
 import mapper from './mapper'
 import reflow from './reflow'
-import toList from './toList'
 
 class Events {
   #map
   #target
-
-  get list () {
-    return toList(this.#map)
-  }
 
   constructor (props, target) {
     this.#map = mapper(props)
@@ -26,8 +21,7 @@ class Events {
 
   mount () {
     return new Promise((resolve) => (
-      f.forEach(this.list, ({ name, listener }) =>
-        this.#target.addEventListener(...filter(name, listener))),
+      f.forEach(this, (args) => this.#target.addEventListener(...args)),
       resolve(this)
     ))
   }
@@ -43,6 +37,21 @@ class Events {
     this.#map.delete(name)
     this.#target.removeEventListener(...filter(name))
     return this
+  }
+
+  [f.dunder.forEach] () {
+    return f
+      .from(this)
+      .pipe(f.toArray)
+      .pipe(f.map(f.__, ({ name, listener }) => filter(name, listener)))
+      .done()
+  }
+
+  [f.dunder.toArray] () {
+    return f
+      .from([...this.#map])
+      .pipe(f.map(f.__, ([name, listener]) => ({ name, listener })))
+      .done()
   }
 
   static create () {

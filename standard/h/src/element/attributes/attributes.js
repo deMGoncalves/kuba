@@ -39,19 +39,19 @@ class Attributes {
     return this
   }
 
-  [f.dunder.toArray] () {
-    return f
-      .from([...this.#map])
-      .pipe(f.map(f.__, ([key, value]) => ({ key, value })))
-      .done()
-  }
-
   [f.dunder.forEach] () {
     return f
       .from(this)
       .pipe(f.toArray)
       .pipe(f.filter(f.__, f.prop('value')))
       .pipe(f.map(f.__, ({ key, value }) => filter(key, value)))
+      .done()
+  }
+
+  [f.dunder.toArray] () {
+    return f
+      .from([...this.#map])
+      .pipe(f.map(f.__, ([key, value]) => ({ key, value })))
       .done()
   }
 
