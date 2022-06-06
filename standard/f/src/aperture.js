@@ -3,12 +3,12 @@ import len from './len'
 import push from './push'
 import splice from './splice'
 
-const aperture = (n, array) => {
+const aperture = (n, target) => {
   const result = []
-  array = [...array]
+  target = [...target]
 
-  while (len(array)) {
-    push(result, splice(array, 0, n))
+  while (len(target)) {
+    push(result, splice(target, 0, n))
   }
 
   return result
