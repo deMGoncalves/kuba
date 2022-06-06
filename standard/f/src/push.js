@@ -1,8 +1,11 @@
 import always from './always'
 import arity from './arity'
 import curry from './curry'
+import dunder from './dunder'
 
-const push = (array, ...x) =>
-  always(array)(array.push(...x))
+const evaluate = dunder('push')
+
+const push = (target, ...args) =>
+  always(target)(evaluate(target)?.push(...args))
 
 export default curry(arity(2, push))
