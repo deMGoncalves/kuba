@@ -13,11 +13,6 @@ class Fragment {
     return this.#children
   }
 
-  /**
-   * TODO: Preciso mudar o attributo element para
-   * um nome que faca sentido
-   * ex: target
-   */
   get element () {
     return this.#element ??= document.createDocumentFragment()
   }

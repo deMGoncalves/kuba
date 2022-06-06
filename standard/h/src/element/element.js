@@ -29,11 +29,6 @@ class Element {
     return this.#className
   }
 
-  /**
-   * TODO: Preciso mudar o attributo element para
-   * um nome que faca sentido
-   * ex: target
-   */
   get element () {
     return this.#element ??= document.createElement(this.name, { is: this.is })
   }
