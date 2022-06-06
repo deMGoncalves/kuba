@@ -19,7 +19,7 @@ class Children {
   }
 
   async mount () {
-    await this.#parent.append(this.#list)
+    await this.#parent.append(this)
     return this
   }
 
@@ -34,8 +34,8 @@ class Children {
     return this
   }
 
-  async update (children) {
-    await reflow(this, children)
+  async update (newChildren) {
+    await reflow(this, newChildren)
     return this
   }
 
@@ -55,6 +55,10 @@ class Children {
 
   [f.dunder.last] () {
     return f.last(this.#list)
+  }
+
+  [f.dunder.map] () {
+    return this.#list
   }
 
   [f.dunder.push] () {
