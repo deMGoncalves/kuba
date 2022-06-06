@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
-import { Text } from '@kuba/h'
 import Entity from './entity'
+import Text from './text'
 
 export default (children) =>
   f.map(children, f.cond(

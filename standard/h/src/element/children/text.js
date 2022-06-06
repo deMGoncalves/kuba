@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import lazy from './lazy'
+import { lazy } from '@kuba/h'
 
 class Text {
   #content
