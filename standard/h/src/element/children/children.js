@@ -14,7 +14,7 @@ class Children {
 
   append (child) {
     this.#parent.appendChild(child)
-    f.push(this.#list, child)
+    f.push(this, child)
     return this
   }
 
@@ -55,6 +55,10 @@ class Children {
 
   [f.dunder.last] () {
     return f.last(this.#list)
+  }
+
+  [f.dunder.push] () {
+    return this.#list
   }
 
   [f.dunder.toArray] () {
