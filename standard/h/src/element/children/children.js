@@ -30,7 +30,7 @@ class Children {
   }
 
   unmount () {
-    f.forEach(this.#list, this.remove.bind(this))
+    f.forEach(this, this.remove.bind(this))
     return this
   }
 
@@ -47,6 +47,10 @@ class Children {
 
   [f.dunder.first] () {
     return f.first(this.#list)
+  }
+
+  [f.dunder.forEach] () {
+    return this.#list
   }
 
   [f.dunder.last] () {
