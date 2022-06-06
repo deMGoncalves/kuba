@@ -1,12 +1,16 @@
 import curry from './curry'
+import dunder from './dunder'
 import indexOf from './indexOf'
 import is from './is'
 import splice from './splice'
 
-const replace = (literal, x, y) => (
-  is(String, literal)
-    ? literal.replace(x, y)
-    : splice(literal, indexOf(literal, x), 1, y)
-)
+const evaluate = dunder('replace')
+
+const replace = (target, x, y) =>
+  ((value) => (
+    is(String, value)
+      ? value.replace(x, y)
+      : splice(value, indexOf(value, x), 1, y)
+  ))(evaluate(target))
 
 export default curry(replace)
