@@ -25,7 +25,7 @@ class Children {
 
   replace (child, newChild) {
     child.replace(newChild)
-    f.replace(this.#list, child, newChild)
+    f.replace(this, child, newChild)
     return this
   }
 
@@ -41,7 +41,7 @@ class Children {
 
   remove (child) {
     child.remove()
-    f.remove(this.#list, child)
+    f.remove(this, child)
     return this
   }
 
@@ -58,6 +58,14 @@ class Children {
   }
 
   [f.dunder.push] () {
+    return this.#list
+  }
+
+  [f.dunder.remove] () {
+    return this.#list
+  }
+
+  [f.dunder.replace] () {
     return this.#list
   }
 
