@@ -4,8 +4,8 @@ class Different {
   static exec (events) {
     return (e, newE) =>
       events
-        .removenewEListener(e.name)
-        .addnewEListener(newE.name, newE.listener)
+        .removeEventListener(e.name)
+        .addEventListener(newE.name, newE.listener)
   }
 
   static is (e, newE) {

@@ -26,9 +26,9 @@ class Events {
     ))
   }
 
-  update (events) {
+  update (newEvents) {
     return new Promise((resolve) => (
-      reflow(this, events),
+      reflow(this, newEvents),
       resolve(this)
     ))
   }

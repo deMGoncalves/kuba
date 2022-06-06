@@ -3,7 +3,7 @@ import * as f from '@kuba/f'
 class Added {
   static exec (events) {
     return (_, newE) =>
-      events.addnewEListener(newE.name, newE.listener)
+      events.addEventListener(newE.name, newE.listener)
   }
 
   static is (e, newE) {
