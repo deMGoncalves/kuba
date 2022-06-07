@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 
-const mapper = [
+const modifiers = [
   'bold',
   'medium',
   'regular'
@@ -11,7 +11,7 @@ const weight = (props) => (
     f.chain(
       f.always('var(--font-weight-'),
       f.cond(
-        ...f.map(mapper, (token) => [f.has(token), f.always(token)]),
+        ...f.map(modifiers, (token) => [f.has(token), f.always(token)]),
         [f.T, f.always('regular')]
       ),
       f.always(')')
