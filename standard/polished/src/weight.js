@@ -1,5 +1,4 @@
 import * as f from '@kuba/f'
-import cleaner from './cleaner'
 
 const mapper = [
   'bold',
@@ -7,7 +6,7 @@ const mapper = [
   'regular'
 ]
 
-const weight = (props) =>
+const weight = (props) => (
   f.join(
     f.chain(
       f.always('var(--font-weight-'),
@@ -19,5 +18,6 @@ const weight = (props) =>
     )(props),
     ''
   )
+)
 
-export default cleaner(weight, mapper)
+export default f.memoize(weight)

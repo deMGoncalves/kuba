@@ -1,5 +1,4 @@
 import * as f from '@kuba/f'
-import cleaner from './cleaner'
 
 const mapper = [
   'highlight',
@@ -7,7 +6,7 @@ const mapper = [
   'mono'
 ]
 
-const weight = (props) =>
+const family = (props) => (
   f.join(
     f.chain(
       f.always('var(--font-family-'),
@@ -19,5 +18,6 @@ const weight = (props) =>
     )(props),
     ''
   )
+)
 
-export default cleaner(weight, mapper)
+export default f.memoize(family)

@@ -1,15 +1,4 @@
 import * as f from '@kuba/f'
-import cleaner from './cleaner'
-
-const colors = [
-  'complete',
-  'danger',
-  'info',
-  'master',
-  'primary',
-  'success',
-  'warning'
-]
 
 const modifiers = [
   'darkest',
@@ -20,7 +9,7 @@ const modifiers = [
   'lightest'
 ]
 
-const blend = (props) =>
+const blend = (props) => (
   f.join(
     f.chain(
       f.always('var(--color-master-'),
@@ -32,5 +21,6 @@ const blend = (props) =>
     )(props),
     ''
   )
+)
 
-export default cleaner(blend, [...colors, ...modifiers])
+export default f.memoize(blend)

@@ -1,5 +1,4 @@
 import * as f from '@kuba/f'
-import cleaner from './cleaner'
 
 const mapper = [
   'xxxs',
@@ -15,7 +14,7 @@ const mapper = [
   'giant'
 ]
 
-const size = (props) =>
+const size = (props) => (
   f.join(
     f.chain(
       f.always('var(--font-size-'),
@@ -27,5 +26,6 @@ const size = (props) =>
     )(props),
     ''
   )
+)
 
-export default cleaner(size, mapper)
+export default f.memoize(size)
