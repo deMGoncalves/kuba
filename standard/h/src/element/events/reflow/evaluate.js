@@ -5,9 +5,14 @@ import Different from './different'
 import Removed from './removed'
 
 export default (events) =>
-  f.cond(
-    [Added.is, Added.exec(events)],
-    [Removed.is, Removed.exec(events)],
-    [Changed.is, Changed.exec(events)],
-    [Different.is, Different.exec(events)]
-  )
+  (...args) =>
+    new Promise((resolve) => (
+      f.cond(
+        [Added.is, Added.exec(events)],
+        [Removed.is, Removed.exec(events)],
+        [Changed.is, Changed.exec(events)],
+        [Different.is, Different.exec(events)]
+      )(...args),
+
+      resolve()
+    ))
