@@ -1,6 +1,4 @@
-import * as f from '@kuba/f'
-
-const merge = (props, style) => ({
+export default (props, style) => ({
   ...props,
   className: [
     style.avatar,
@@ -9,5 +7,3 @@ const merge = (props, style) => ({
     props.className
   ]
 })
-
-export default f.memoize(merge)
