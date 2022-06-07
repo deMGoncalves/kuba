@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 
-export default (textContent) =>
+const minify = (textContent) => (
   f
     .from(textContent)
     .pipe(f.replace(f.__, /\r?\n|\r/g, ''))
@@ -8,3 +8,6 @@ export default (textContent) =>
     .pipe(f.replace(f.__, / +/g, ' '))
     .pipe(f.trim)
     .done()
+)
+
+export default f.memoize(minify)

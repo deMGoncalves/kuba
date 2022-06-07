@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 
-export default (props) =>
+const flatten = (props) => (
   f
     .from(props.className)
     .pipe(f.or(f.__, []))
@@ -9,3 +9,6 @@ export default (props) =>
     .pipe(f.flatten)
     .pipe(f.join(f.__, ' '))
     .done()
+)
+
+export default f.memoize(flatten)

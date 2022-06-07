@@ -1,5 +1,4 @@
 import * as f from '@kuba/f'
-
 import style from './style'
 import tag from './tag'
 

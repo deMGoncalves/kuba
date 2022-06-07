@@ -1,7 +1,6 @@
 import * as f from '@kuba/f'
-import cleaner from './cleaner'
 
-const mapper = [
+const modifiers = [
   'xxxs',
   'xxs',
   'xs',
@@ -15,17 +14,18 @@ const mapper = [
   'giant'
 ]
 
-const size = (props) =>
+const size = (props) => (
   f.join(
     f.chain(
       f.always('var(--font-size-'),
       f.cond(
-        ...f.map(mapper, (token) => [f.has(token), f.always(token)]),
+        ...f.map(modifiers, (token) => [f.has(token), f.always(token)]),
         [f.T, f.always('xs')]
       ),
       f.always(')')
     )(props),
     ''
   )
+)
 
-export default cleaner(size, mapper)
+export default f.memoize(size)
