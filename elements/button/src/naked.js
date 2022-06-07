@@ -6,13 +6,11 @@ import skeleton from '@kuba/skeleton'
 import styled from '@kuba/styled'
 
 const component = styled.button`
-  --color: ${color};
-
   align-items: center;
   background-color: transparent;
-  border: var(--border-width-thin) solid var(--color);
+  border: var(--border-width-thin) solid ${color};
   border-radius: var(--border-radius-sm);
-  color: var(--color);
+  color: ${color};
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-base);
