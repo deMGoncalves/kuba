@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const falsy = (target) =>
+const falsy = (target) => (
   !target
+)
 
 export default curry(falsy)
