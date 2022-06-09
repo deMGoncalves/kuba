@@ -1,4 +1,5 @@
 import arity from './arity'
+import curry from './curry'
 
 const memoize = (target, map = new Map()) =>
   (...args) =>
@@ -8,4 +9,4 @@ const memoize = (target, map = new Map()) =>
         : (map.set(key, target(...args)), map.get(key))
     ))(JSON.stringify(args))
 
-export default arity(1, memoize)
+export default curry(arity(1, memoize))
