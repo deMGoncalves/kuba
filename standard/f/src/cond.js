@@ -1,12 +1,12 @@
 import some from './some'
 import T from './T'
 
-export default (...array) =>
+export default (...targets) =>
   (...args) => {
-    let result
+    let output
 
-    some(array, ([can, process]) =>
-      can(...args) && T(result = process(...args)))
+    some(targets, ([can, process]) =>
+      can(...args) && T(output = process(...args)))
 
-    return result
+    return output
   }
