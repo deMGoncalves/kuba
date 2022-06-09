@@ -1,7 +1,7 @@
 import * as f from '@kuba/f'
 
 export default (handler) =>
-  function (target, method, descriptor) {
+  (target, method, descriptor) => {
     const spy = f.magic(f.random())
 
     handler(function (...args) {
