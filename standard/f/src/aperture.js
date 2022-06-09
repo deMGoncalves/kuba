@@ -3,15 +3,15 @@ import len from './len'
 import push from './push'
 import splice from './splice'
 
-const aperture = (n, array) => {
-  const result = []
-  array = [...array]
+const aperture = (n, target) => {
+  const output = []
+  target = [...target]
 
-  while (len(array)) {
-    push(result, splice(array, 0, n))
+  while (len(target)) {
+    push(output, splice(target, 0, n))
   }
 
-  return result
+  return output
 }
 
 export default curry(aperture)
