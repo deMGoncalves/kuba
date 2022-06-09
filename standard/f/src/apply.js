@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const apply = (predicate, args) =>
-  predicate(...args)
+const apply = (target, args) =>
+  target(...args)
 
 export default curry(apply)
