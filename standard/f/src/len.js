@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const len = (x) =>
-  Object.keys(x).length
+const len = (target) => (
+  Object.keys(target).length
+)
 
 export default curry(len)
