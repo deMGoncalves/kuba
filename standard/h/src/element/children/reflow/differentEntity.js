@@ -7,7 +7,11 @@ class DifferentEntity {
   }
 
   static is (child, newChild) {
-    return f.different(child.entity, newChild.entity)
+    return f.and(
+      f.not(f.isEmpty(child)),
+      f.not(f.isEmpty(newChild)),
+      f.different(child.entity, newChild.entity)
+    )
   }
 }
 

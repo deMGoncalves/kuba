@@ -210,7 +210,7 @@ class Element {
   }
 
   [f.dunder.isEmpty] () {
-    return f.F()
+    return f.isFalsy(this.entity)
   }
 
   static create () {

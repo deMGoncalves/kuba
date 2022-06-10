@@ -2,13 +2,13 @@ import * as f from '@kuba/f'
 
 class EqualEntity {
   static exec () {
-    return () => null
+    return f.always(null)
   }
 
   static is (child, newChild) {
     return f.and(
-      f.not(f.isEmpty(child.entity)),
-      f.not(f.isEmpty(newChild.entity)),
+      f.not(f.isEmpty(child)),
+      f.not(f.isEmpty(newChild)),
       f.equal(child.entity, newChild.entity)
     )
   }

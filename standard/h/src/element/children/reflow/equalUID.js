@@ -2,7 +2,7 @@ import * as f from '@kuba/f'
 
 class EqualUID {
   static exec () {
-    return () => null
+    return f.always(null)
   }
 
   static is (child, newChild) {
