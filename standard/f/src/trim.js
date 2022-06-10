@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const trim = (value) =>
-  value.trim()
+const trim = (target) => (
+  target.trim()
+)
 
 export default curry(trim)
