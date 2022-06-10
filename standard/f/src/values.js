@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const values = (x) =>
-  Object.values(x)
+const values = (target) => (
+  Object.values(target)
+)
 
 export default curry(values)
