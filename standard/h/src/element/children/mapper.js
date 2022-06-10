@@ -6,5 +6,5 @@ export default (children) =>
   f.map(children, f.cond(
     [Entity.is, Entity.parse],
     [Text.is, Text.create],
-    [f.T, (c) => c]
+    [f.T, f.repass]
   ))
