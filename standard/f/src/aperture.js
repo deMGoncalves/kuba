@@ -4,14 +4,14 @@ import push from './push'
 import splice from './splice'
 
 const aperture = (n, target) => {
-  const result = []
+  const output = []
   target = [...target]
 
   while (len(target)) {
-    push(result, splice(target, 0, n))
+    push(output, splice(target, 0, n))
   }
 
-  return result
+  return output
 }
 
 export default curry(aperture)

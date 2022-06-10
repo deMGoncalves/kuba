@@ -1,9 +1,9 @@
-export default (value) => (
+export default (target) => (
   {
-    done: () => value,
+    done: () => target,
 
-    pipe (func) {
-      value = func(value)
+    pipe (predicate) {
+      target = predicate(target)
       return this
     }
   }

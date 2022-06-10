@@ -1,5 +1,5 @@
 import equal from './equal'
 import or from './or'
 
-export default (value) =>
-  or(equal(value, null), equal(value, undefined))
+export default (target) =>
+  or(equal(target, null), equal(target, undefined))

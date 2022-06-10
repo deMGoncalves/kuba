@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const inc = (x) =>
-  ++x
+const inc = (target) =>
+  ++target
 
 export default curry(inc)

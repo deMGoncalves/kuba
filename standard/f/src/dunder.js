@@ -1,12 +1,12 @@
 import curry from './curry'
 import magic from './magic'
 
-const evaluate = (name, target) => (
-  target?.[magic(name)]?.() ?? target
-)
+const evaluate = curry((key, target) => (
+  target?.[magic(key)]?.() ?? target
+))
 
-const dunder = new Proxy(curry(evaluate), {
-  get: (_target, method) => magic(method)
+const dunder = new Proxy(evaluate, {
+  get: (_, key) => magic(key)
 })
 
 export default dunder

@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const indexOf = (array, x) =>
-  array.indexOf(x)
+const indexOf = (target, x) =>
+  target?.indexOf?.(x)
 
 export default curry(indexOf)

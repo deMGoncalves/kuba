@@ -5,7 +5,9 @@ import len from './len'
 
 const evaluate = dunder('last')
 
-const last = (target) =>
-  evaluate(target)[dec(len(target))]
-
+const last = (target) => (
+  ((value) => (
+    value?.[dec(len(value))]
+  ))(evaluate(target))
+)
 export default curry(last)

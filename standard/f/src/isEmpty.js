@@ -8,8 +8,9 @@ import len from './len'
 import not from './not'
 import T from './T'
 
-const evaluate = (target) =>
+const evaluate = (target) => (
   target[dunder.isEmpty]?.() ?? not(len(target))
+)
 
 const isEmpty = cond(
   [isNil, T],

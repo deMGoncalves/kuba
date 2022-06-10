@@ -3,8 +3,8 @@ import dunder from './dunder'
 
 const evaluate = dunder('map')
 
-const map = (target, func) => (
-  evaluate(target)?.map(func)
+const map = (target, predicate) => (
+  evaluate(target)?.map?.(predicate)
 )
 
 export default curry(map)

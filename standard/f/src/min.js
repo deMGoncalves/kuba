@@ -1,7 +1,8 @@
 import arity from './arity'
 import curry from './curry'
 
-const max = (...args) =>
+const min = (...args) => (
   Math.min(...args)
+)
 
-export default curry(arity(2, max))
+export default curry(arity(2, min))

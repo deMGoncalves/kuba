@@ -1,9 +1,11 @@
+import apply from './apply'
 import arity from './arity'
 import curry from './curry'
 import map from './map'
+import __ from './gap'
 
-const chain = (...target) =>
+const chain = (...targets) =>
   (...args) =>
-    map(target, (func) => func(...args))
+    map(targets, apply(__, args))
 
 export default curry(arity(1, chain))

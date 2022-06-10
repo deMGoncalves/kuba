@@ -1,6 +1,6 @@
 import curry from './curry'
 
-const every = (array, func) =>
-  array.every(func)
+const every = (targets, predicate) =>
+  targets?.every?.(predicate)
 
 export default curry(every)

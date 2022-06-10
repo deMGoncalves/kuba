@@ -4,7 +4,6 @@ export default styled.style`
   .shape {
     background-color: #fff;
     border-radius: var(--border-radius-sm);
-    content-visibility: auto;
     cursor: pointer;
     position: relative;
   }

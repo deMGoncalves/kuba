@@ -1,6 +1,8 @@
 const gap = Symbol('__')
-const isGap = (value) =>
-  gap === value
+
+const isGap = (target) => (
+  gap === target
+)
 
 export default gap
 export {

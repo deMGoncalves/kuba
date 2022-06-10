@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const join = (array, separator) =>
-  array.join(separator)
+const join = (target, separator) => (
+  target?.join?.(separator)
+)
 
 export default curry(join)
