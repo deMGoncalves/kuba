@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const test = (regex, x) =>
-  regex.test(x)
+const test = (regex, target) => (
+  regex?.test?.(target)
+)
 
 export default curry(test)
