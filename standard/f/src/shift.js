@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const shift = (array) =>
-  array.shift()
+const shift = (target) => (
+  target?.shift?.()
+)
 
 export default curry(shift)
