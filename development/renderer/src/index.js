@@ -1,4 +1,5 @@
 'use strict'
 
-export default (node) =>
-  node.paint()
+export default (element) => (
+  element.mount()
+)
