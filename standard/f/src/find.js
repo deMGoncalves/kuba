@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const find = (targets, predicate) =>
-  targets?.find?.(predicate)
+const find = (target, predicate) => (
+  target?.find?.(predicate)
+)
 
 export default curry(find)

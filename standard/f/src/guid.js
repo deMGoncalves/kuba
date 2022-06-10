@@ -1,4 +1,7 @@
 import random from './random'
 
-export default () =>
+const guid = () => (
   random().toString(32)
+)
+
+export default guid

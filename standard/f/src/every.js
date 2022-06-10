@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const every = (targets, predicate) =>
-  targets?.every?.(predicate)
+const every = (target, predicate) => (
+  target?.every?.(predicate)
+)
 
 export default curry(every)

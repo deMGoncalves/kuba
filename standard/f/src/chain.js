@@ -5,7 +5,8 @@ import map from './map'
 import __ from './gap'
 
 const chain = (...targets) =>
-  (...args) =>
+  (...args) => (
     map(targets, apply(__, args))
+  )
 
 export default curry(arity(1, chain))
