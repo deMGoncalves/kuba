@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const split = (x, y) =>
-  String(x).split(y)
+const split = (target, separator) => (
+  String(target).split(separator)
+)
 
 export default curry(split)
