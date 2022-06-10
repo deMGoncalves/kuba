@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const reduce = (array, func, x) =>
-  array.reduce(func, x)
+const reduce = (target, predicate, x) => (
+  target?.reduce?.(predicate, x)
+)
 
 export default curry(reduce)

@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const repass = (value) =>
-  value
+const repass = (target) => (
+  target
+)
 
 export default curry(repass)
