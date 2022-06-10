@@ -7,8 +7,8 @@ class EqualEntity {
 
   static is (child, newChild) {
     return f.and(
-      f.not(f.isEmpty(child)),
-      f.not(f.isEmpty(newChild)),
+      f.not(f.isEmpty(child.entity)),
+      f.not(f.isEmpty(newChild.entity)),
       f.equal(child.entity, newChild.entity)
     )
   }

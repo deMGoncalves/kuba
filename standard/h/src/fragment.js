@@ -143,7 +143,7 @@ class Fragment {
   }
 
   [f.dunder.isEmpty] () {
-    return f.isFalsy(this.entity)
+    return f.F()
   }
 
   static execute () {
