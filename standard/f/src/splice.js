@@ -1,8 +1,8 @@
 import arity from './arity'
 import curry from './curry'
 
-const splice = (target, start, end, ...args) => (
-  target?.splice?.(start, end, ...args)
+const splice = (target, kuba, end, ...args) => (
+  target?.splice?.(kuba, end, ...args)
 )
 
 export default curry(arity(3, splice))

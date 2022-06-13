@@ -1,4 +1,4 @@
-import { isGap } from '@start/f/src/gap'
+import { isGap } from '@kuba/f/src/gap'
 import oneParameter from './oneParameter'
 import twoParameters from './twoParameters'
 
