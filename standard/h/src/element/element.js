@@ -30,7 +30,7 @@ class Element {
   }
 
   get element () {
-    return this.#element ??= parser(this.name, this.is)
+    return this.#element ??= parser.createElement(this.name, this.is)
   }
 
   get entity () {

@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import { lazy } from '@kuba/h'
+import { lazy, parser } from '@kuba/h'
 
 class Text {
   #content
@@ -10,7 +10,7 @@ class Text {
   }
 
   get element () {
-    return this.#element ??= document.createTextNode(this.content)
+    return this.#element ??= parser.createTextNode(this.content)
   }
 
   get isNode () {
