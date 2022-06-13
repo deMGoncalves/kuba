@@ -6,7 +6,7 @@ import middleware from '@kuba/middleware'
 
 const authRequired = () =>
   http
-    .post(`${api.url}/auth/user`)
+    .post(`${api.worker}/auth/user`)
     .headers(headers)
     .json()
     .then(f.prop('data.aud'))
