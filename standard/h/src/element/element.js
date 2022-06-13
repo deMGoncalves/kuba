@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import { lazy } from '@kuba/h'
+import { lazy, parser } from '@kuba/h'
 import Attributes from './attributes'
 import Children from './children'
 import ClassName from './className'
@@ -30,7 +30,7 @@ class Element {
   }
 
   get element () {
-    return this.#element ??= document.createElement(this.name, { is: this.is })
+    return this.#element ??= parser(this.name, this.is)
   }
 
   get entity () {
@@ -50,7 +50,7 @@ class Element {
   }
 
   get name () {
-    return this.#name
+    return f.toLower(this.#name)
   }
 
   get slot () {
