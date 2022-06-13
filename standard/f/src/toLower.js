@@ -1,2 +1,2 @@
 export default (string) =>
-  string.toLowerCase()
+  string?.toLowerCase?.()

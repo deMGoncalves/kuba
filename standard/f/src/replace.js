@@ -9,7 +9,7 @@ const evaluate = dunder('replace')
 const replace = (target, x, y) =>
   ((value) => (
     is(String, value)
-      ? value.replace(x, y)
+      ? value?.replace?.(x, y)
       : splice(value, indexOf(value, x), 1, y)
   ))(evaluate(target))
 
