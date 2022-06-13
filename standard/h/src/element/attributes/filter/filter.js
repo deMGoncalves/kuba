@@ -2,7 +2,7 @@ import * as f from '@kuba/f'
 import decorate from './decorate'
 import mapper from './mapper'
 
-export default (key, value) => {
+const filter = (key, value) => {
   const [attribute, handler] = mapper(key)
 
   return [
@@ -10,3 +10,5 @@ export default (key, value) => {
     decorate(handler, value)
   ]
 }
+
+export default f.arity(1, f.apply(f.memoize(filter)))
