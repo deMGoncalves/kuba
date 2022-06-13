@@ -1,6 +1,6 @@
 import * as f from '@kuba/f'
 import { Children } from './element'
-import { lazy } from '@kuba/h'
+import { lazy, parser } from '@kuba/h'
 
 class Fragment {
   #children
@@ -14,7 +14,7 @@ class Fragment {
   }
 
   get element () {
-    return this.#element ??= document.createDocumentFragment()
+    return this.#element ??= parser.createDocumentFragment()
   }
 
   get entity () {
