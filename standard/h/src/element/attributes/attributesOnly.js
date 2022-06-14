@@ -6,4 +6,4 @@ const attributesOnly = f.compose(
   f.prop('[0]')
 )
 
-export default f.arity(1, f.memoize(attributesOnly))
+export default f.memoize(attributesOnly)

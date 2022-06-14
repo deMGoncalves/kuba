@@ -11,4 +11,4 @@ const filter = (key, value) => {
   ]
 }
 
-export default f.arity(1, f.apply(f.memoize(filter)))
+export default f.apply(f.memoize(filter))
