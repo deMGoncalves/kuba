@@ -1,4 +1,4 @@
-import { didMount, paint } from '@kuba/h'
+import { paint } from '@kuba/h'
 import { setDescription, setTitle } from '@kuba/markup'
 import { setGlobal } from '@kuba/global'
 import component from './component'
@@ -22,7 +22,6 @@ class Marcas {
     return this
   }
 
-  @didMount
   [storage.onResponse] (marcas) {
     setTitle(this.title)
     setDescription(this.description)

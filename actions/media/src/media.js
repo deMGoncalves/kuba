@@ -1,22 +1,30 @@
 import * as f from '@kuba/f'
 
 export default function (query) {
-  const listeners = { in () {}, out () {} }
+  const listeners = {
+    in () {},
+    out () {}
+  }
 
-  const match = () =>
+  const match = f.debounce(() => (
     listeners[window.matchMedia(query).matches ? 'in' : 'out']()
+  ))
 
-  window.addEventListener('resize', f.debounce(match), 0)
+  window.addEventListener('resize', match, f.F())
   window.setTimeout(match, 0)
 
   return {
-    in (listener) {
-      listeners.in = listener
+    in (target) {
+      f.assign(listeners, {
+        in: target
+      })
       return this
     },
 
-    out (listener) {
-      listeners.out = listener
+    out (target) {
+      f.assign(listeners, {
+        out: target
+      })
       return this
     }
   }
