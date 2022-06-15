@@ -1,13 +1,10 @@
 const maybe = new Proxy({}, {
   get: (_, target) =>
-    function (...args) {
-      return {
-        case (chain) {
-          chain?.[target]?.(...args)
-          return this
-        }
-      }
-    }
+    (...args) => ({
+      case: (chain) => (
+        chain?.[target]?.(...args)
+      )
+    })
 })
 
 export default maybe
