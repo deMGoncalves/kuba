@@ -1,6 +1,6 @@
 import has from './has'
 
-const maybe = new Proxy({}, {
+const option = new Proxy({}, {
   get: (_, target) =>
     (...args) => ({
       case: (chain) => (
@@ -11,4 +11,4 @@ const maybe = new Proxy({}, {
     })
 })
 
-export default maybe
+export default option
