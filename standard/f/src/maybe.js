@@ -1,8 +1,12 @@
+import has from './has'
+
 const maybe = new Proxy({}, {
   get: (_, target) =>
     (...args) => ({
       case: (chain) => (
-        chain?.[target]?.(...args)
+        has(target, chain)
+          ? chain?.[target]?.(...args)
+          : chain?._?.()
       )
     })
 })
