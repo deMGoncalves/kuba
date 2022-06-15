@@ -17,19 +17,7 @@ class Path {
   #title
 
   get href () {
-    return f.add(settings.app.url, urlFor(this.page, this.params))
-  }
-
-  get index () {
-    return this.#index
-  }
-
-  get page () {
-    return this.#page
-  }
-
-  get params () {
-    return this.#params
+    return f.add(settings.app.url, urlFor(this.#page, this.#params))
   }
 
   get title () {
@@ -45,8 +33,16 @@ class Path {
 
   @event.redirect
   redirect () {
-    redirectTo(this.page, this.params)
+    redirectTo(this.page, this.#params)
     return this
+  }
+
+  [component.showPrefix] () {
+    return f.isTruthy(this.#index)
+  }
+
+  [data.index] () {
+    return f.inc(this.#index)
   }
 
   static create (data, index) {
