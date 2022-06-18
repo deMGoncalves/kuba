@@ -2,9 +2,10 @@ import curry from './curry'
 import dunder from './dunder'
 import is from './is'
 
-const toJSON = (target) =>
+const toJSON = (target) => (
   is(String, target)
     ? JSON.parse(target)
     : dunder('toJSON', target)
+)
 
 export default curry(toJSON)

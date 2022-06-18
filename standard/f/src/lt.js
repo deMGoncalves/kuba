@@ -1,6 +1,7 @@
 import curry from './curry'
 
-const lt = (value, delimiter) =>
-  value < delimiter
+const lt = (x, y) => (
+  x < y
+)
 
 export default curry(lt)
