@@ -41,9 +41,8 @@ class Events {
 
   [f.dunder.forEach] () {
     return f
-      .from(this)
-      .pipe(f.toArray)
-      .pipe(f.map(f.__, ({ name, listener }) => filter(name, listener)))
+      .from([...this.#map])
+      .pipe(f.map(f.__, (args) => filter(...args)))
       .done()
   }
 

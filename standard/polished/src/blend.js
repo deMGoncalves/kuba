@@ -14,7 +14,7 @@ const blend = (props) => (
     f.chain(
       f.always('var(--color-master-'),
       f.cond(
-        ...f.map(modifiers, (token, index) => [f.has(token), f.always(f.gte(index, 3) ? 'darkest' : 'lightest')]),
+        ...f.i(f.map)(modifiers, (token, i) => [f.has(token), f.always(f.gte(i, 3) ? 'darkest' : 'lightest')]),
         [f.T, f.always('lightest')]
       ),
       f.always(')')

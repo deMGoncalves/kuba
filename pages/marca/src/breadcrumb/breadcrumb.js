@@ -11,12 +11,12 @@ class Breadcrumb {
   #paths
 
   get paths () {
-    return this.#paths ??= f.map(f.repeat(null, 2), Path.stub)
+    return this.#paths ??= f.i(f.map)(f.repeat(null, 2), Path.stub)
   }
 
   @repaint
   [effect.onChange] (paths) {
-    this.#paths = f.map(paths, Path.create)
+    this.#paths = f.i(f.map)(paths, Path.create)
     return this
   }
 }

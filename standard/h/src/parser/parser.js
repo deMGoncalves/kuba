@@ -1,7 +1,9 @@
-import memoize from './memoize'
+import createDocumentFragment from './createDocumentFragment'
+import createElement from './createElement'
+import createTextNode from './createTextNode'
 
-const parser = (tagName, is) => (
-  document.createElement(tagName, { is })
-)
-
-export default memoize(parser)
+export default {
+  createDocumentFragment,
+  createElement,
+  createTextNode
+}

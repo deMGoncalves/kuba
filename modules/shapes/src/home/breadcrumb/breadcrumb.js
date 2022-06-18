@@ -10,7 +10,7 @@ class Breadcrumb {
   #paths
 
   get paths () {
-    return this.#paths ??= f.map(schema, Path.create)
+    return this.#paths ??= f.i(f.map)(schema, Path.create)
   }
 }
 

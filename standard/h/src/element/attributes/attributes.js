@@ -1,6 +1,5 @@
 import * as f from '@kuba/f'
 import { lazy } from '@kuba/h'
-import filter from './filter'
 import mapper from './mapper'
 import reflow from './reflow'
 
@@ -29,22 +28,19 @@ class Attributes {
 
   removeAttribute (key, value) {
     this.#map.delete(key)
-    this.#target.removeAttribute(...filter(key, value))
+    this.#target.removeAttribute(key, value)
     return this
   }
 
   setAttribute (key, value) {
     this.#map.set(key, value),
-    this.#target.setAttribute(...filter(key, value))
+    this.#target.setAttribute(key, value)
     return this
   }
 
   [f.dunder.forEach] () {
     return f
-      .from(this)
-      .pipe(f.toArray)
-      .pipe(f.filter(f.__, f.prop('value')))
-      .pipe(f.map(f.__, ({ key, value }) => filter(key, value)))
+      .from([...this.#map])
       .done()
   }
 

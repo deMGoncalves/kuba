@@ -1,10 +1,14 @@
 import * as f from '@kuba/f'
+import attributesOnly from './attributesOnly'
+import filter from './filter'
 
 const mapper = f.memoize((props) => (
-  f.filter(
-    f.entries(props),
-    f.compose(f.not, f.test(/^(?<attributes>className|is|slot|uid|on[A-Z].+)$/), f.prop('[0]'))
-  )
+  f
+    .from(props)
+    .pipe(f.entries)
+    .pipe(f.filter(f.__, attributesOnly))
+    .pipe(f.map(f.__, filter))
+    .done()
 ))
 
 export default (props) => (

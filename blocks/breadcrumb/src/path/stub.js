@@ -1,19 +1,17 @@
+import * as f from '@kuba/f'
 import { paint } from '@kuba/h'
 import component from './component'
 
 @paint(component)
 class Stub {
   #index
-  #page
-  #params
-  #title
 
-  get index () {
-    return this.#index ??= ''
+  get path () {
+    return '#'
   }
 
   get title () {
-    return this.#title ??= ''
+    return ''
   }
 
   constructor (index) {
@@ -22,6 +20,10 @@ class Stub {
 
   redirect () {
     return this
+  }
+
+  [component.showPrefix] () {
+    return f.isTruthy(this.#index)
   }
 
   static create (_data, index) {

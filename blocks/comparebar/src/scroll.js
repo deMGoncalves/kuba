@@ -1,15 +1,15 @@
 import { after } from '@kuba/middleware'
 import echo from '@kuba/echo'
 
-const lock = after(function (output) {
-  echo.emit('overlayer:open')
-  return output
-})
+const lock = after((output) => (
+  echo.emit('overlayer:open'),
+  output
+))
 
-const unlock = after(function (output) {
-  echo.emit('overlayer:close')
-  return output
-})
+const unlock = after((output) => (
+  echo.emit('overlayer:close'),
+  output
+))
 
 export default {
   lock,
