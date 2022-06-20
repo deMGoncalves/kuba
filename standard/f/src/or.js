@@ -1,9 +1,5 @@
-import arity from './arity'
+import arity from './internal/arity'
 import curry from './curry'
-import reduce from './reduce'
-
-const or = (x, ...args) => (
-  reduce(args, (a, b) => a || b, x)
-)
+import or from './internal/or'
 
 export default curry(arity(2, or))

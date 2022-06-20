@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const exec = (regex, target) => (
-  regex?.exec?.(target)
-)
+import exec from './internal/exec'
 
 export default curry(exec)

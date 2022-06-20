@@ -1,3 +1,3 @@
-import always from './always'
+import T from './internal/T'
 
-export default always(true)
+export default T

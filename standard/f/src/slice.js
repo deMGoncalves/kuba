@@ -1,8 +1,5 @@
-import arity from './arity'
+import arity from './internal/arity'
 import curry from './curry'
-
-const slice = (target, start, end) => (
-  target?.slice?.(start, end)
-)
+import slice from './internal/slice'
 
 export default curry(arity(2, slice))

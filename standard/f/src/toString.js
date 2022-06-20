@@ -1,11 +1,5 @@
-import arity from './arity'
+import arity from './internal/arity'
 import curry from './curry'
-import dunder from './dunder'
-
-const evaluate = dunder('toString')
-
-const toString = (target, radix) => (
-  evaluate(target)?.toString?.(radix)
-)
+import toString from './internal/toString'
 
 export default curry(arity(1, toString))

@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const split = (target, separator) => (
-  String(target)?.split?.(separator)
-)
+import split from './internal/split'
 
 export default curry(split)

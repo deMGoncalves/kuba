@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const not = (target) => (
-  !target
-)
+import not from './internal/not'
 
 export default curry(not)

@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const gt = (x, y) => (
-  x > y
-)
+import gt from './internal/gt'
 
 export default curry(gt)

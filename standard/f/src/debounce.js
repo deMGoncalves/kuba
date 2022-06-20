@@ -1,10 +1,5 @@
-import arity from './arity'
+import arity from './internal/arity'
 import curry from './curry'
-
-const debounce = (target, wait = 250, timeoutID) =>
-  (...args) => (
-    (timeoutID = clearTimeout(timeoutID)),
-    (timeoutID = setTimeout(() => target(...args), wait))
-  )
+import debounce from './internal/debounce'
 
 export default curry(arity(1, debounce))

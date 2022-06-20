@@ -1,4 +1,3 @@
-const queue = (target, ...args) =>
-  target?.(() => queue(...args))
+import queue from './internal/queue'
 
 export default queue

@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const shift = (target) => (
-  target?.shift?.()
-)
+import shift from './internal/shift'
 
 export default curry(shift)

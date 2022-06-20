@@ -1,7 +1,3 @@
-import random from './random'
-
-const guid = () => (
-  random().toString?.(32)
-)
+import guid from './internal/guid'
 
 export default guid

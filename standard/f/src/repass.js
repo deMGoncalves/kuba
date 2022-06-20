@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const repass = (target) => (
-  target
-)
+import repass from './internal/repass'
 
 export default curry(repass)

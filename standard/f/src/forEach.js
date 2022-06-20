@@ -1,10 +1,4 @@
 import curry from './curry'
-import dunder from './dunder'
-
-const evaluate = dunder('forEach')
-
-const forEach = (target, predicate) => (
-  evaluate(target)?.forEach?.((x) => predicate(x))
-)
+import forEach from './internal/forEach'
 
 export default curry(forEach)

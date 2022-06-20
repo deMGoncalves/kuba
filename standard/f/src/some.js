@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const some = (target, predicate) => (
-  target?.some?.((x) => predicate(x))
-)
+import some from './internal/some'
 
 export default curry(some)

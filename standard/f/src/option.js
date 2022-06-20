@@ -1,14 +1,3 @@
-import has from './has'
-
-const option = new Proxy({}, {
-  get: (_, target) =>
-    (...args) => ({
-      case: (chain) => (
-        has(target, chain)
-          ? chain?.[target]?.(...args)
-          : chain?._?.()
-      )
-    })
-})
+import option from './internal/option'
 
 export default option

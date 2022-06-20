@@ -1,8 +1,4 @@
-const gap = Symbol('__')
-
-const isGap = (target) => (
-  gap === target
-)
+import gap, { isGap } from './internal/gap'
 
 export default gap
 export {

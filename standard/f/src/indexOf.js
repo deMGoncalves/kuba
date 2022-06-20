@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const indexOf = (target, x) => (
-  target?.indexOf?.(x)
-)
+import indexOf from './internal/indexOf'
 
 export default curry(indexOf)

@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const gte = (x, y) => (
-  x >= y
-)
+import gte from './internal/gte'
 
 export default curry(gte)

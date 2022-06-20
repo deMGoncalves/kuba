@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const mod = (x, y) => (
-  x % y
-)
+import mod from './internal/mod'
 
 export default curry(mod)

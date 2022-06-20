@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const filter = (target, predicate) => (
-  target?.filter?.((x) => predicate(x))
-)
+import filter from './internal/filter'
 
 export default curry(filter)

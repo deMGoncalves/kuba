@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const test = (regex, target) => (
-  regex?.test?.(target)
-)
+import test from './internal/test'
 
 export default curry(test)

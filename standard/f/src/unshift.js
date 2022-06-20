@@ -1,9 +1,5 @@
-import always from './always'
-import arity from './arity'
+import arity from './internal/arity'
 import curry from './curry'
-
-const unshift = (target, ...args) => (
-  always(target)(target?.unshift?.(...args))
-)
+import unshift from './internal/unshift'
 
 export default curry(arity(2, unshift))

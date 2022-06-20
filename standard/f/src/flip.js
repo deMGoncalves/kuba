@@ -1,7 +1,4 @@
 import curry from './curry'
-import reverse from './reverse'
-
-const flip = (target) =>
-  (...args) => target(...reverse(args))
+import flip from './internal/flip'
 
 export default curry(flip)

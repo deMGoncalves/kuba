@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const pop = (target) => (
-  target?.pop?.()
-)
+import pop from './internal/pop'
 
 export default curry(pop)

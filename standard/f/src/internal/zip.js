@@ -1,0 +1,11 @@
+import i from './i'
+import len from './len'
+import map from './map'
+import max from './max'
+import repeat from './repeat'
+
+const zip = (x, y) => (
+  i(map)(repeat(null, max(len(x), len(y))), (_, i) => [x[i], y[i]])
+)
+
+export default zip

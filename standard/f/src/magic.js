@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const magic = (key) => (
-  (magic[key] ??= Symbol(key))
-)
+import magic from './internal/magic'
 
 export default curry(magic)

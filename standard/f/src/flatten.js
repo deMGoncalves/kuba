@@ -1,8 +1,5 @@
-import arity from './arity'
+import arity from './internal/arity'
 import curry from './curry'
-
-const flatten = (target, depth = Infinity) => (
-  target?.flat?.(depth)
-)
+import flatten from './internal/flatten'
 
 export default curry(arity(1, flatten))

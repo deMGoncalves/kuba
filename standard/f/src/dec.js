@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const dec = (target) => (
-  --target
-)
+import dec from './internal/dec'
 
 export default curry(dec)

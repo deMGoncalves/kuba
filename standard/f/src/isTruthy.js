@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const isTruthy = (target) => (
-  !!target
-)
+import isTruthy from './internal/isTruthy'
 
 export default curry(isTruthy)

@@ -1,9 +1,4 @@
-import always from './always'
 import curry from './curry'
-
-const once = (target) =>
-  (...args) => (
-    always(target(...args))(target = always(undefined))
-  )
+import once from './internal/once'
 
 export default curry(once)

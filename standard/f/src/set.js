@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const set = (key, value, target) => (
-  target[key] = value
-)
+import set from './internal/set'
 
 export default curry(set)

@@ -1,8 +1,5 @@
-import arity from './arity'
+import arity from './internal/arity'
 import curry from './curry'
-
-const min = (...args) => (
-  Math.min(...args)
-)
+import min from './internal/min'
 
 export default curry(arity(2, min))

@@ -1,10 +1,4 @@
 import curry from './curry'
-import dunder from './dunder'
-
-const evaluate = dunder('map')
-
-const map = (target, predicate) => (
-  evaluate(target)?.map?.((x) => predicate(x))
-)
+import map from './internal/map'
 
 export default curry(map)

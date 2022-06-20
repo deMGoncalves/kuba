@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const typeOf = (target) => (
-  typeof target
-)
+import typeOf from './internal/typeOf'
 
 export default curry(typeOf)

@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const lt = (x, y) => (
-  x < y
-)
+import lt from './internal/lt'
 
 export default curry(lt)

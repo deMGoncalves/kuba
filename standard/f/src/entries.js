@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const entries = (target) => (
-  Object.entries(target)
-)
+import entries from './internal/entries'
 
 export default curry(entries)

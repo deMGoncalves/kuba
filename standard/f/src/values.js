@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const values = (target) => (
-  Object.values(target)
-)
+import values from './internal/values'
 
 export default curry(values)

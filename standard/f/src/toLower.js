@@ -1,3 +1,4 @@
-export default (string) => (
-  string?.toLowerCase?.()
-)
+import curry from './curry'
+import toLower from './internal/toLower'
+
+export default curry(toLower)

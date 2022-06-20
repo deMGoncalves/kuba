@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const multiply = (x, y) => (
-  x * y
-)
+import multiply from './internal/multiply'
 
 export default curry(multiply)

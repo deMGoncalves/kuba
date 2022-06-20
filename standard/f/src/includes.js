@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const includes = (target, x) => (
-  target?.includes?.(x)
-)
+import includes from './internal/includes'
 
 export default curry(includes)

@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const reverse = (target) => (
-  target?.reverse?.()
-)
+import reverse from './internal/reverse'
 
 export default curry(reverse)

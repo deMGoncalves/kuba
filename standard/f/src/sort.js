@@ -1,7 +1,4 @@
 import curry from './curry'
-
-const sort = (target, predicate) => (
-  target?.sort?.(predicate)
-)
+import sort from './internal/sort'
 
 export default curry(sort)
