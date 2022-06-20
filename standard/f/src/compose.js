@@ -1,4 +1,4 @@
-import arity from './internal/arity'
+import arity from './arity'
 import compose from './internal/compose'
 import curry from './curry'
 

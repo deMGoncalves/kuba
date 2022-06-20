@@ -1,4 +1,4 @@
-import arity from './internal/arity'
+import arity from './arity'
 import curry from './curry'
 import dunder from './dunder'
 import _toString from './internal/toString'

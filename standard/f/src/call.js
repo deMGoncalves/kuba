@@ -1,4 +1,4 @@
-import arity from './internal/arity'
+import arity from './arity'
 import call from './internal/call'
 import curry from './curry'
 
