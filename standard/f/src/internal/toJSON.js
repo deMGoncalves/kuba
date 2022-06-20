@@ -1,10 +1,5 @@
-import dunder from '../dunder'
-import is from './is'
-
 const toJSON = (target) => (
-  is(String, target)
-    ? JSON.parse(target)
-    : dunder('toJSON', target)
+  JSON.parse(target)
 )
 
 export default toJSON
