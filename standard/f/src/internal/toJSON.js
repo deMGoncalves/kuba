@@ -1,5 +1,5 @@
 import dunder from '../dunder'
-import is from '../is'
+import is from './is'
 
 const toJSON = (target) => (
   is(String, target)
