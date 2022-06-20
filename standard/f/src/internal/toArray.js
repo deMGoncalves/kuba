@@ -1,6 +1,6 @@
 import dunder from '../dunder'
 import has from '../has'
-import magic from '../magic'
+import magic from './magic'
 
 const containsDunderToArray = has(magic('toArray'))
 const evaluate = dunder('toArray')

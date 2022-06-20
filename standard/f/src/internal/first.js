@@ -1,6 +1,6 @@
 import dunder from '../dunder'
 import has from '../has'
-import magic from '../magic'
+import magic from './magic'
 
 const containsDunderFirstIn = has(magic('first'))
 const evaluate = dunder('first')

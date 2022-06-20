@@ -1,6 +1,6 @@
 import dunder from '../dunder'
 import has from '../has'
-import magic from '../magic'
+import magic from './magic'
 
 const containsDunderJoin = has(magic('join'))
 const evaluate = dunder('join')
