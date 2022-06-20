@@ -1,13 +1,13 @@
 import { after } from '@kuba/middleware'
 import { dataLayer } from '@kuba/gtm'
 
-const open = after(function (output) {
+const open = after((output) => (
   dataLayer.push({
     event: 'header',
     header_compare: 'open'
-  })
-  return output
-})
+  }),
+  output
+))
 
 export default {
   open
