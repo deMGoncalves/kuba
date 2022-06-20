@@ -4,7 +4,7 @@ class Different {
   static exec (attributes) {
     return (attr, newAttr = {}) =>
       attributes
-        .removenAttribute(attr.key)
+        .removeAttribute(attr.key)
         .setAttribute(newAttr.key, newAttr.value)
   }
 
