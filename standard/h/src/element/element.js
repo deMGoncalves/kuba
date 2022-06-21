@@ -30,7 +30,7 @@ class Element {
   }
 
   get element () {
-    return this.#element ??= parser.createElement(this.name, this.is)
+    return this.#element ??= parser.mount(this)
   }
 
   get entity () {
@@ -130,15 +130,15 @@ class Element {
 
   mount () {
     this.willMount()
-    Promise
+    return Promise
       .all([
-        this.attributes.mount(),
+        // this.attributes.mount(),
         this.children.mount(),
-        this.className.mount(),
+        // this.className.mount(),
         this.events.mount()
       ])
       .then(() => this.didMount())
-    return this.element
+      .then(() => this.element)
   }
 
   remove () {

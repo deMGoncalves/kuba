@@ -1,7 +1,15 @@
-import memoize from './memoize'
+import * as f from '@kuba/f'
 
-const createTextNode = (content) => (
+const createTextNode = f.memoize((content) => (
   document.createTextNode(content)
-)
+))
 
-export default memoize(createTextNode)
+f.assign(createTextNode, {
+  exec: (text) => (
+    createTextNode(text.content)
+  ),
+
+  is: f.compose(f.equal(3), f.prop('type'))
+})
+
+export default createTextNode

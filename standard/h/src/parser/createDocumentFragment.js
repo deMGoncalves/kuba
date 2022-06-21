@@ -1,9 +1,15 @@
 import * as f from '@kuba/f'
 
-const fragment = document.createDocumentFragment()
+const createDocumentFragment = f.memoize(() => (
+  document.createDocumentFragment()
+))
 
-const createDocumentFragment = () => (
-  fragment.cloneNode(f.F())
-)
+f.assign(createDocumentFragment, {
+  exec: () => (
+    createDocumentFragment()
+  ),
+
+  is: f.compose(f.equal(11), f.prop('type'))
+})
 
 export default createDocumentFragment

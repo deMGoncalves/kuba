@@ -14,7 +14,7 @@ class Fragment {
   }
 
   get element () {
-    return this.#element ??= parser.createDocumentFragment()
+    return this.#element ??= parser.mount(this)
   }
 
   get entity () {
