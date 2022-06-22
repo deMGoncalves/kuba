@@ -9,8 +9,8 @@ const evaluate = f.cond(
   [createDocumentFragment.is, createDocumentFragment.exec]
 )
 
-const mount = (ast) => (
-  evaluate(ast).cloneNode(f.T())
+const create = (element) => (
+  evaluate(element).cloneNode()
 )
 
-export default mount
+export default create

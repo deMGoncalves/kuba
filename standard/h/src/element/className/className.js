@@ -38,10 +38,6 @@ class ClassName {
     return this.value
   }
 
-  [f.dunder.toString] () {
-    return this.value
-  }
-
   static create (...args) {
     return lazy(ClassName, ...args)
   }

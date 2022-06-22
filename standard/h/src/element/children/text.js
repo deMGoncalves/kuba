@@ -10,7 +10,7 @@ class Text {
   }
 
   get element () {
-    return this.#element ??= parser.mount(this)
+    return this.#element ??= parser.create(this)
   }
 
   get isNode () {

@@ -1,11 +1,5 @@
-import createDocumentFragment from './createDocumentFragment'
-import createElement from './createElement'
-import createTextNode from './createTextNode'
-import mount from './mount'
+import create from './create'
 
 export default {
-  createDocumentFragment,
-  createElement,
-  createTextNode,
-  mount
+  create
 }
