@@ -81,11 +81,9 @@ class Element {
     return this
   }
 
-  append (children) {
-    return Promise
-      .all(f.map(children, child => child.mount()))
-      .then(children => this.element.append(...children))
-      .then(() => this)
+  async append (children) {
+    await parser.append(this, children)
+    return this
   }
 
   appendChild (child) {
