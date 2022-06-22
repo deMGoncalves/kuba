@@ -77,7 +77,7 @@ class Element {
   }
 
   addEventListener (name, listener) {
-    this.element[name] = listener
+    parser.addEventListener(this, name, listener)
     return this
   }
 
