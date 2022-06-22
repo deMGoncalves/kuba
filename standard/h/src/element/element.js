@@ -96,21 +96,21 @@ class Element {
     return this
   }
 
-  didMount () {
+  #didMount () {
     f.idle(() =>
       this?.entity?.[f.dunder.didMount]?.()
     )()
     return this
   }
 
-  didUnmount () {
+  #didUnmount () {
     f.idle(() =>
       this?.entity?.[f.dunder.didUnmount]?.()
     )()
     return this
   }
 
-  didUpdate () {
+  #didUpdate () {
     f.idle(() =>
       this?.entity?.[f.dunder.didUpdate]?.()
     )()
@@ -123,7 +123,7 @@ class Element {
   }
 
   mount () {
-    this.willMount()
+    this.#willMount()
     Promise
       .all([
         this.attributes.mount(),
@@ -131,15 +131,15 @@ class Element {
         this.className.mount(),
         this.events.mount()
       ])
-      .then(() => this.didMount())
+      .then(() => this.#didMount())
     return this.element
   }
 
   remove () {
-    this.willUnmount()
+    this.#willUnmount()
     f.frame(() => (
       this.element.remove(),
-      this.didUnmount()
+      this.#didUnmount()
     ))()
     return this
   }
@@ -155,12 +155,12 @@ class Element {
   }
 
   replace (child) {
-    this.willUnmount()
+    this.#willUnmount()
     Promise
       .all([
         parser.replaceChild(this, child)
       ])
-      .then(() => this.didUnmount())
+      .then(() => this.#didUnmount())
     return this
   }
 
@@ -175,7 +175,7 @@ class Element {
   }
 
   update (element) {
-    this.willUpdate()
+    this.#willUpdate()
     Promise
       .all([
         this.attributes.update(element.attributes),
@@ -183,21 +183,21 @@ class Element {
         this.className.update(element.className),
         this.events.update(element.events)
       ])
-      .then(() => this.didUpdate())
+      .then(() => this.#didUpdate())
     return this
   }
 
-  willMount () {
+  #willMount () {
     this?.entity?.[f.dunder.willMount]?.()
     return this
   }
 
-  willUnmount () {
+  #willUnmount () {
     this?.ntity?.[f.dunder.willUnmount]?.()
     return this
   }
 
-  willUpdate () {
+  #willUpdate () {
     this?.entity?.[f.dunder.willUpdate]?.()
     return this
   }
