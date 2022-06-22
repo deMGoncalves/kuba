@@ -87,9 +87,7 @@ class Element {
   }
 
   appendChild (child) {
-    f.frame(async () =>
-      this.element.appendChild(await child.mount())
-    )()
+    parser.appendChild(this, child)
     return this
   }
 
