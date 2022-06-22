@@ -118,9 +118,7 @@ class Element {
   }
 
   insertAdjacent (child) {
-    f.frame(async () =>
-      this.element.insertAdjacentElement('afterend', await child.mount())
-    )()
+    parser.insertAdjacent(this, child)
     return this
   }
 
