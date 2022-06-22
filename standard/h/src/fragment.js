@@ -62,21 +62,21 @@ class Fragment {
     return this
   }
 
-  didMount () {
+  #didMount () {
     f.idle(() =>
       this?.entity?.[f.dunder.didMount]?.()
     )()
     return this
   }
 
-  didUnmount () {
+  #didUnmount () {
     f.idle(() =>
       this?.entity?.[f.dunder.didUnmount]?.()
     )()
     return this
   }
 
-  didUpdate () {
+  #didUpdate () {
     f.idle(() =>
       this?.entity?.[f.dunder.didUpdate]?.()
     )()
@@ -89,53 +89,53 @@ class Fragment {
   }
 
   mount () {
-    this.willMount()
+    this.#willMount()
     return Promise
       .all([
         this.children.mount()
       ])
-      .then(() => this.didMount())
+      .then(() => this.#didMount())
       .then(() => this.element)
   }
 
   remove () {
-    this.willUnmount()
+    this.#willUnmount()
     this.children.unmount()
-    this.didUnmount()
+    this.#didUnmount()
     return this
   }
 
   replace (fragment) {
-    this.willUnmount()
+    this.#willUnmount()
     Promise
       .all([
         this.children.update(fragment.children)
       ])
-      .then(() => this.didUnmount())
+      .then(() => this.#didUnmount())
     return this
   }
 
   update (fragment) {
-    this.willUpdate()
+    this.#willUpdate()
     Promise
       .all([
         this.children.update(fragment.children)
       ])
-      .then(() => this.didUpdate())
+      .then(() => this.#didUpdate())
     return this
   }
 
-  willMount () {
+  #willMount () {
     this?.entity?.[f.dunder.willMount]?.()
     return this
   }
 
-  willUnmount () {
+  #willUnmount () {
     this?.entity?.[f.dunder.willUnmount]?.()
     return this
   }
 
-  willUpdate () {
+  #willUpdate () {
     this?.entity?.[f.dunder.willUpdate]?.()
     return this
   }
