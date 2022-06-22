@@ -3,11 +3,21 @@ import append from './append'
 import appendChild from './appendChild'
 import create from './create'
 import insertAdjacent from './insertAdjacent'
+import removeAttribute from './removeAttribute'
+import removeEventListener from './removeEventListener'
+import replaceChild from './replaceChild'
+import setAttribute from './setAttribute'
+import setClassName from './setClassName'
 
 export default {
   addEventListener,
   append,
   appendChild,
   create,
-  insertAdjacent
+  insertAdjacent,
+  removeAttribute,
+  removeEventListener,
+  replaceChild,
+  setAttribute,
+  setClassName
 }

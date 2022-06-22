@@ -145,33 +145,32 @@ class Element {
   }
 
   removeAttribute (key) {
-    this.element.removeAttribute(key)
+    parser.removeAttribute(this, key)
     return this
   }
 
   removeEventListener (name) {
-    this.element[name] = undefined
+    parser.removeEventListener(this, name)
     return this
   }
 
   replace (child) {
     this.willUnmount()
-    f.frame(async () => (
-      this.element.parentNode.replaceChild(await child.mount(), this.element),
-      this.didUnmount()
-    ))()
+    Promise
+      .all([
+        parser.replaceChild(this, child)
+      ])
+      .then(() => this.didUnmount())
     return this
   }
 
   setAttribute (key, value) {
-    value
-      ? this.element.setAttribute(key, value)
-      : this.element.removeAttribute(key)
+    parser.setAttribute(this, key, value)
     return this
   }
 
   setClassName (value) {
-    this.element.className = value
+    parser.setClassName(this, value)
     return this
   }
 
