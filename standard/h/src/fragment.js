@@ -64,75 +64,45 @@ class Fragment {
     return this
   }
 
-  #didMount () {
-    lifeCycle.dispatch(this, event.DID_MOUNT)
-    return this
-  }
-
-  #didUnmount () {
-    lifeCycle.dispatch(this, event.DID_UNMOUNT)
-    return this
-  }
-
-  #didUpdate () {
-    lifeCycle.dispatch(this, event.DID_UPDATE)
-    return this
-  }
-
   insertAdjacent (child) {
     f.last(this.children).insertAdjacent(child)
     return this
   }
 
   mount () {
-    this.#willMount()
+    lifeCycle.dispatch(this, event.WILL_MOUNT)
     return Promise
       .all([
         this.children.mount()
       ])
-      .then(() => this.#didMount())
+      .then(() => lifeCycle.dispatch(this, event.DID_MOUNT))
       .then(() => this.element)
   }
 
   remove () {
-    this.#willUnmount()
+    lifeCycle.dispatch(this, event.WILL_UNMOUNT)
     this.children.unmount()
-    this.#didUnmount()
+    lifeCycle.dispatch(this, event.DID_UNMOUNT)
     return this
   }
 
   replace (fragment) {
-    this.#willUnmount()
+    lifeCycle.dispatch(this, event.WILL_UNMOUNT)
     Promise
       .all([
         this.children.update(fragment.children)
       ])
-      .then(() => this.#didUnmount())
+      .then(() => lifeCycle.dispatch(this, event.DID_UNMOUNT))
     return this
   }
 
   update (fragment) {
-    this.#willUpdate()
+    lifeCycle.dispatch(this, event.WILL_UPDATE)
     Promise
       .all([
         this.children.update(fragment.children)
       ])
-      .then(() => this.#didUpdate())
-    return this
-  }
-
-  #willMount () {
-    lifeCycle.dispatch(this, event.WILL_MOUNT)
-    return this
-  }
-
-  #willUnmount () {
-    lifeCycle.dispatch(this, event.WILL_UNMOUNT)
-    return this
-  }
-
-  #willUpdate () {
-    lifeCycle.dispatch(this, event.WILL_UPDATE)
+      .then(() => lifeCycle.dispatch(this, event.DID_UPDATE))
     return this
   }
 
