@@ -34,16 +34,12 @@ class Text {
   }
 
   remove () {
-    f.frame(() =>
-      this.element.remove()
-    )()
+    parser.remove(this)
     return this
   }
 
   replace (text) {
-    f.frame(async () =>
-      this.element.parentNode.replaceChild(await text.mount(), this.element)
-    )()
+    parser.replace(this, text)
     return this
   }
 

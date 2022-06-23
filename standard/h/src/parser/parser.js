@@ -3,6 +3,7 @@ import append from './append'
 import appendChild from './appendChild'
 import create from './create'
 import insertAdjacent from './insertAdjacent'
+import remove from './remove'
 import removeAttribute from './removeAttribute'
 import removeEventListener from './removeEventListener'
 import replaceChild from './replaceChild'
@@ -15,6 +16,7 @@ export default {
   appendChild,
   create,
   insertAdjacent,
+  remove,
   removeAttribute,
   removeEventListener,
   replaceChild,

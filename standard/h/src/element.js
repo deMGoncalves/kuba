@@ -138,10 +138,11 @@ class Element {
 
   remove () {
     this.#willUnmount()
-    f.frame(() => (
-      this.element.remove(),
-      this.#didUnmount()
-    ))()
+    Promise
+      .all([
+        parser.remove(this)
+      ])
+      .then(() => this.#didUnmount())
     return this
   }
 
