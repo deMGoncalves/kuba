@@ -8,4 +8,4 @@ export { default as parser } from './parser'
 export { default as render } from './render'
 export { default as repaint } from './repaint'
 
-export { dispatch, event, didMount, didUnmount, didUpdate, willMount, willUnmount, willUpdate } from './lifeCycle'
+export { didMount, didUnmount, didUpdate, willMount, willUnmount, willUpdate } from './lifeCycle'

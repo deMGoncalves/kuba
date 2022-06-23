@@ -1,7 +1,7 @@
 import * as f from '@kuba/f'
 import { Children } from './element'
-import { dispatch, event } from './lifeCycle'
 import lazy from './lazy'
+import lifeCycle, { event } from './lifeCycle'
 import parser from './parser'
 
 class Fragment {
@@ -65,17 +65,17 @@ class Fragment {
   }
 
   #didMount () {
-    dispatch(this, event.DID_MOUNT)
+    lifeCycle.dispatch(this, event.DID_MOUNT)
     return this
   }
 
   #didUnmount () {
-    dispatch(this, event.DID_UNMOUNT)
+    lifeCycle.dispatch(this, event.DID_UNMOUNT)
     return this
   }
 
   #didUpdate () {
-    dispatch(this, event.DID_UPDATE)
+    lifeCycle.dispatch(this, event.DID_UPDATE)
     return this
   }
 
@@ -122,17 +122,17 @@ class Fragment {
   }
 
   #willMount () {
-    dispatch(this, event.WILL_MOUNT)
+    lifeCycle.dispatch(this, event.WILL_MOUNT)
     return this
   }
 
   #willUnmount () {
-    dispatch(this, event.WILL_UNMOUNT)
+    lifeCycle.dispatch(this, event.WILL_UNMOUNT)
     return this
   }
 
   #willUpdate () {
-    dispatch(this, event.WILL_UPDATE)
+    lifeCycle.dispatch(this, event.WILL_UPDATE)
     return this
   }
 
