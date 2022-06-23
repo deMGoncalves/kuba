@@ -1,6 +1,8 @@
 import * as f from '@kuba/f'
 import { Children } from './element'
-import { lazy, parser } from '@kuba/h'
+import { dispatch, event } from './lifeCycle'
+import lazy from './lazy'
+import parser from './parser'
 
 class Fragment {
   #children
@@ -63,23 +65,17 @@ class Fragment {
   }
 
   #didMount () {
-    f.idle(() =>
-      this?.entity?.[f.dunder.didMount]?.()
-    )()
+    dispatch(this, event.DID_MOUNT)
     return this
   }
 
   #didUnmount () {
-    f.idle(() =>
-      this?.entity?.[f.dunder.didUnmount]?.()
-    )()
+    dispatch(this, event.DID_UNMOUNT)
     return this
   }
 
   #didUpdate () {
-    f.idle(() =>
-      this?.entity?.[f.dunder.didUpdate]?.()
-    )()
+    dispatch(this, event.DID_UPDATE)
     return this
   }
 
@@ -126,17 +122,17 @@ class Fragment {
   }
 
   #willMount () {
-    this?.entity?.[f.dunder.willMount]?.()
+    dispatch(this, event.WILL_MOUNT)
     return this
   }
 
   #willUnmount () {
-    this?.entity?.[f.dunder.willUnmount]?.()
+    dispatch(this, event.WILL_UNMOUNT)
     return this
   }
 
   #willUpdate () {
-    this?.entity?.[f.dunder.willUpdate]?.()
+    dispatch(this, event.WILL_UPDATE)
     return this
   }
 
