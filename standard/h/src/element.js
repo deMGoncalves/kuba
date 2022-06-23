@@ -3,6 +3,7 @@ import Attributes from './attributes'
 import Children from './children'
 import ClassName from './className'
 import Events from './events'
+import lifeCycle, { event } from './lifeCycle'
 import lazy from './lazy'
 import parser from './parser'
 
@@ -97,34 +98,13 @@ class Element {
     return this
   }
 
-  #didMount () {
-    f.idle(() =>
-      this?.entity?.[f.dunder.didMount]?.()
-    )()
-    return this
-  }
-
-  #didUnmount () {
-    f.idle(() =>
-      this?.entity?.[f.dunder.didUnmount]?.()
-    )()
-    return this
-  }
-
-  #didUpdate () {
-    f.idle(() =>
-      this?.entity?.[f.dunder.didUpdate]?.()
-    )()
-    return this
-  }
-
   insertAdjacent (child) {
     parser.insertAdjacent(this, child)
     return this
   }
 
   mount () {
-    this.#willMount()
+    lifeCycle.dispatch(this, event.WILL_MOUNT)
     Promise
       .all([
         this.attributes.mount(),
@@ -132,17 +112,17 @@ class Element {
         this.className.mount(),
         this.events.mount()
       ])
-      .then(() => this.#didMount())
+      .then(() => lifeCycle.dispatch(this, event.DID_MOUNT))
     return this.element
   }
 
   remove () {
-    this.#willUnmount()
+    lifeCycle.dispatch(this, event.WILL_UNMOUNT)
     Promise
       .all([
         parser.remove(this)
       ])
-      .then(() => this.#didUnmount())
+      .then(() => lifeCycle.dispatch(this, event.DID_UNMOUNT))
     return this
   }
 
@@ -157,12 +137,12 @@ class Element {
   }
 
   replace (child) {
-    this.#willUnmount()
+    lifeCycle.dispatch(this, event.WILL_UNMOUNT)
     Promise
       .all([
         parser.replaceChild(this, child)
       ])
-      .then(() => this.#didUnmount())
+      .then(() => lifeCycle.dispatch(this, event.DID_UNMOUNT))
     return this
   }
 
@@ -177,7 +157,7 @@ class Element {
   }
 
   update (element) {
-    this.#willUpdate()
+    lifeCycle.dispatch(this, event.WILL_UPDATE)
     Promise
       .all([
         this.attributes.update(element.attributes),
@@ -185,22 +165,7 @@ class Element {
         this.className.update(element.className),
         this.events.update(element.events)
       ])
-      .then(() => this.#didUpdate())
-    return this
-  }
-
-  #willMount () {
-    this?.entity?.[f.dunder.willMount]?.()
-    return this
-  }
-
-  #willUnmount () {
-    this?.ntity?.[f.dunder.willUnmount]?.()
-    return this
-  }
-
-  #willUpdate () {
-    this?.entity?.[f.dunder.willUpdate]?.()
+      .then(() => lifeCycle.dispatch(this, event.DID_UPDATE))
     return this
   }
 
