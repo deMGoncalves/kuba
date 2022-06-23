@@ -1,16 +1,17 @@
 import * as f from '@kuba/f'
 import Element from './element'
+import lifeCycle, { event } from './lifeCycle'
 
 class CustomElement extends Element {
   update (element) {
-    super.willUpdate()
+    lifeCycle.dispatch(this, event.WILL_UPDATE)
     Promise
       .all([
         this.attributes.update(element.attributes),
         this.className.update(element.className),
         this.events.update(element.events)
       ])
-      .then(() => super.didUpdate())
+      .then(() => lifeCycle.dispatch(this, event.DID_UPDATE))
     return this
   }
 
