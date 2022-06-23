@@ -1,5 +1,5 @@
 import * as f from '@kuba/f'
-import { Children } from './element'
+import Children from './children'
 import lazy from './lazy'
 import lifeCycle, { event } from './lifeCycle'
 import parser from './parser'

@@ -1,9 +1,10 @@
 import * as f from '@kuba/f'
-import { lazy, parser } from '@kuba/h'
 import Attributes from './attributes'
 import Children from './children'
 import ClassName from './className'
 import Events from './events'
+import lazy from './lazy'
+import parser from './parser'
 
 class Element {
   #attributes
