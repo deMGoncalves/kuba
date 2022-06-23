@@ -81,8 +81,11 @@ class Fragment {
 
   remove () {
     lifeCycle.dispatch(this, event.WILL_UNMOUNT)
-    this.children.unmount()
-    lifeCycle.dispatch(this, event.DID_UNMOUNT)
+    Promise
+      .all([
+        this.children.unmount()
+      ])
+      .then(() => lifeCycle.dispatch(this, event.DID_UNMOUNT))
     return this
   }
 
