@@ -39,7 +39,7 @@ class Text {
   }
 
   replace (text) {
-    parser.replace(this, text)
+    parser.replaceChild(this, text)
     return this
   }
 
