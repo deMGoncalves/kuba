@@ -20,8 +20,8 @@ export default (select) =>
         <button.icon.ArrowLeft onClick={() => select.close()} />
       </section>
       <header className={style.select__header}>
-        <text.Strong className={style.select__strong} master darker xxxs medium>Tipo</text.Strong>
-        <text.P className={style.select__p} master darker xs bold>Que tipo de shape é você quer?</text.P>
+        <text.Strong className={style.select__strong} master darker xxxs medium>{select.nome}</text.Strong>
+        <text.P className={style.select__p} master darker xs bold>{select.descricao}</text.P>
       </header>
       <Shelf>
         {select.options}
