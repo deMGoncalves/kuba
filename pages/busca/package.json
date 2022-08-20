@@ -9,7 +9,6 @@
   "name": "@kuba/busca",
   "private": true,
   "scripts": {
-    "start": "node src/index.js",
     "test": "jest --passWithNoTests"
   },
   "version": "1.0.0" 
