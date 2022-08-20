@@ -9,10 +9,6 @@ import scroll from './scroll'
 class Comparebar {
   #opened
 
-  get opened () {
-    return this.#opened ??= f.F()
-  }
-
   @repaint
   @scroll.unlock
   close () {
@@ -25,6 +21,10 @@ class Comparebar {
   open () {
     this.#opened = f.T()
     return this
+  }
+
+  [component.opened] () {
+    return this.#opened ??= f.F()
   }
 }
 
