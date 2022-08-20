@@ -1861,7 +1861,7 @@ camelcase-keys@^6.2.2:
     map-obj "^4.0.0"
     quick-lru "^4.0.1"
 
-camelcase@6.3.0, camelcase@^6.0.0, camelcase@^6.2.0:
+camelcase@6.3.0, camelcase@^6.0.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
@@ -4400,15 +4400,6 @@ jest-config@^26.6.3:
     jest-validate "^26.6.2"
     micromatch "^4.0.2"
     pretty-format "^26.6.2"
-
-jest-css-modules-transform@^4.2.1:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/jest-css-modules-transform/-/jest-css-modules-transform-4.3.0.tgz#e3599b6b9326230f9c127953aca99f91d9286ab1"
-  integrity sha512-0ACv/lpFK3oUdNkCZTJ6t5X4jUzGw2YnqBQz2fd+RwrGex+C92e0KSkkWmGUdG9wJ8emapi1Xm1IIqUqdkN3/g==
-  dependencies:
-    camelcase "^6.2.0"
-    postcss "^7.0.30 || ^8.0.0"
-    postcss-nested "^4.2.1 || ^5.0.0"
 
 jest-css-modules-transform@^4.4.2:
   version "4.4.2"
