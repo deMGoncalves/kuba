@@ -5,7 +5,7 @@ import component from './component'
 import event from './event'
 import props from '@kuba/props'
 import resize from './resize'
-import scroll from './scroll'
+import scroll from '@kuba/scroll'
 
 @paint(component)
 @props
