@@ -2,7 +2,8 @@ import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
 import Option from './option'
 import schema from './schema.json'
-import Select, { component, scroll } from '@kuba/filter/src/select'
+import scroll from '@kuba/scroll'
+import Select, { component } from '@kuba/filter/src/select'
 
 @paint(component)
 class Origem extends Select {
