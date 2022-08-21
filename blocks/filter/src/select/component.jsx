@@ -1,3 +1,4 @@
+import * as f from '@kuba/f'
 import button from '@kuba/button'
 import h, { Fragment } from '@kuba/h'
 import Select from '@kuba/select'
@@ -7,15 +8,18 @@ import style from './style'
 import tag from '@kuba/tag'
 import text from '@kuba/text'
 
-export default (select) =>
+const len = f.dunder('len')
+const opened = f.dunder('opened')
+
+const component = (select) =>
   <>
-    <tag.Master className={style.select__tag} onClick={() => select.open()} len:isTruthy={select.len} darker medium>
+    <tag.Master className={style.select__tag} onClick={() => select.open()} len:isTruthy={len(select)} darker medium>
       {select.nome}
-      <Show when={select.len}>
-        <text.Span master darker xxxs medium>+{select.len}</text.Span>
+      <Show when={len(select)}>
+        <text.Span master darker xxxs medium>+{len(select)}</text.Span>
       </Show>
     </tag.Master>
-    <Select className={style.select} onClose={() => select.close()} opened={select.opened}>
+    <Select className={style.select} onClose={() => select.close()} opened={opened(select)}>
       <section className={style.select__section}>
         <button.icon.ArrowLeft onClick={() => select.close()} />
       </section>
@@ -28,3 +32,10 @@ export default (select) =>
       </Shelf>
     </Select>
   </>
+
+f.assign(component, {
+  len: f.dunder.len,
+  opened: f.dunder.opened
+})
+
+export default component

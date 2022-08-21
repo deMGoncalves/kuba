@@ -1,9 +1,9 @@
 import * as f from '@kuba/f'
 import echo from '@kuba/echo'
 import Option from './option'
+import component from './component'
 
 class Select {
-  #len
   #opened
 
   get descricao () {
@@ -14,20 +14,8 @@ class Select {
     return ''
   }
 
-  get len () {
-    return f
-      .from(this.options)
-      .pipe(f.filter(f.__, f.prop('selected')))
-      .pipe(f.len)
-      .done()
-  }
-
   get nome () {
     return ''
-  }
-
-  get opened () {
-    return this.#opened ??= f.F()
   }
 
   get options () {
@@ -42,6 +30,18 @@ class Select {
   open () {
     this.#opened = f.T()
     return this
+  }
+
+  [component.len] () {
+    return f
+      .from(this.options)
+      .pipe(f.filter(f.__, f.prop('selected')))
+      .pipe(f.len)
+      .done()
+  }
+
+  [component.opened] () {
+    return this.#opened ??= f.F()
   }
 
   [Option.onChange] () {
