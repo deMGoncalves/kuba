@@ -1,7 +1,8 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
 import schema from './schema.json'
-import Select, { component, Option, scroll } from './select'
+import scroll from '@kuba/scroll'
+import Select, { component, Option } from './select'
 
 @paint(component)
 class Montagem extends Select {
