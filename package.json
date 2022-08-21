@@ -32,11 +32,15 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.10.0"
   },
+  "installConfig": {
+    "pnp": true
+  },
   "name": "kuba",
   "private": true,
   "scripts": {
-    "postinstall": "husky install",
-    "generate": "yarn workspace @kuba/scripts start"
+    "generate": "yarn workspace @kuba/scripts start",
+    "page": "NODE_OPTIONS=\"--require $(pwd)/.pnp.js\" yarn workspace @kuba/page start",
+    "postinstall": "husky install"
   },
   "version": "1.0.0",
   "workspaces": {
