@@ -3,7 +3,7 @@ import * as settings from '@kuba/settings'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
 import events from './events'
-import scroll from './scroll'
+import scroll from '@kuba/scroll'
 
 @paint(component)
 @events
