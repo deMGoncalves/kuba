@@ -26,14 +26,6 @@ import '@kuba/shapes'
 import './routers'
 
 /**
- * Actions
- *
- * Acoes comuns da aplicacao que sera executado
- * independente do contexto
- */
-import '@kuba/scrolllock'
-
-/**
  * Filtro
  *
  * Funcoes auxiliares para o funcionamento
