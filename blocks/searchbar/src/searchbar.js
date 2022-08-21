@@ -5,7 +5,7 @@ import action from './action'
 import component from './component'
 import data from './data'
 import jsonld from '@kuba/jsonld'
-import scroll from './scroll'
+import scroll from '@kuba/scroll'
 
 @paint(component)
 @jsonld(data)
