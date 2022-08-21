@@ -1,13 +1,21 @@
 import * as f from '@kuba/f'
 import { after } from '@kuba/middleware'
 
+const addStyle = f.frame(() => (
+  document.body.style = 'overflow: hidden;'
+))
+
+const removeStyle = f.frame(() => (
+  document.body.removeAttribute('style')
+))
+
 const lock = after((output) => (
-  f.frame(document.body.style = 'overflow: hidden;')(),
+  addStyle(),
   output
 ))
 
 const unlock = after((output) => (
-  f.frame(document.body.removeAttribute('style'))(),
+  removeStyle(),
   output
 ))
 
