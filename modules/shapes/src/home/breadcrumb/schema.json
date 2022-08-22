@@ -1,4 +1,4 @@
 [
   { "page": "home", "title": "Home" },
-  { "page": "shapes", "title": "Shapes" }
+  { "page": "shapes.home", "title": "Shapes" }
 ]
