@@ -11,7 +11,12 @@ class Footer {
     return urlFor('compare')
   }
 
-  get valid () {
+  redirect () {
+    redirectTo('compare')
+    return this
+  }
+
+  [component.valid] () {
     return f
       .from(localStorage.getItem('_kuba.compare'))
       .pipe(f.or(f.__, '[]'))
@@ -20,11 +25,6 @@ class Footer {
       .pipe(f.len)
       .pipe(f.equal(2))
       .done()
-  }
-
-  redirect () {
-    redirectTo('compare')
-    return this
   }
 }
 

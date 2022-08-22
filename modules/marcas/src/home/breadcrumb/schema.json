@@ -1,4 +1,4 @@
 [
   { "page": "home", "title": "Home" },
-  { "page": "marcas", "title": "Marcas" }
+  { "page": "marcas.home", "title": "Marcas" }
 ]
