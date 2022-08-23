@@ -1,5 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
+import { urlFor } from '@kuba/router'
 import component from './component'
 import effect from './effect'
 
@@ -10,6 +11,10 @@ class Pro {
 
   get are () {
     return this.#are ??= f.F()
+  }
+
+  get href () {
+    return urlFor('shapes.pro', {})
   }
 
   @repaint

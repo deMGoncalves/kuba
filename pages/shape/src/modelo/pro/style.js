@@ -9,6 +9,7 @@ export default styled.style`
     gap: var(--spacing_inset-nano);
     justify-content: center;
     padding: var(--spacing_inset-quarck) var(--spacing_inset-xs);
+    text-decoration: none;
   }
 
   .pro[are] {
