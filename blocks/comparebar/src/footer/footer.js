@@ -7,13 +7,13 @@ import component from './component'
 @paint(component)
 @actions
 class Footer {
-  get href () {
-    return urlFor('compare')
-  }
-
   redirect () {
     redirectTo('compare')
     return this
+  }
+
+  [component.href] () {
+    return urlFor('compare')
   }
 
   [component.valid] () {
