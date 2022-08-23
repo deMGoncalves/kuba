@@ -1,12 +1,14 @@
+import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
 import discovery from '@kuba/discovery'
+import schema from './schema.json'
 import Shelf, { component, storage } from './shelf'
 
 @paint(component)
 @storage
 class Marca extends Shelf {
   get title () {
-    return discovery.serie('marca').champion()
+    return f.or(discovery.serie('marca').champion(), schema.fallback.marca)
   }
 
   [storage.query] () {
@@ -19,7 +21,7 @@ class Marca extends Shelf {
       .champion()
 
     return {
-      marca: marca ? [marca] : [],
+      marca: marca ? [marca] : [schema.fallback.marca],
       tamanho: tamanho ? [tamanho] : []
     }
   }
