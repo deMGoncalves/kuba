@@ -6,6 +6,6 @@ import key from './key'
 export default () => [
   cookie.getItem(key),
   args.lang,
-  navigator.language,
+  // navigator.language,
   hub.FALLBACK
 ]
