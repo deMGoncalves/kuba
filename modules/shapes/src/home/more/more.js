@@ -3,6 +3,7 @@ import * as action from './action'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
 import effect from './effect'
+import i18n from './i18n'
 
 @paint(component)
 @effect
@@ -19,7 +20,7 @@ class More {
   }
 
   static get active () {
-    return 'Ver mais'
+    return i18n.content
   }
 
   static get disable () {
