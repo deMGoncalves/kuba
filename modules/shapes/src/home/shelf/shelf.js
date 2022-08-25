@@ -9,7 +9,7 @@ import effect from './effect'
 class Shelf {
   #shapes
 
-  get shapes () {
+  [component.shapes] () {
     return this.#shapes ??= f.map(f.repeat(null, 24), Card.stub)
   }
 
