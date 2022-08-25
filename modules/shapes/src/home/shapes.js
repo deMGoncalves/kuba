@@ -17,20 +17,12 @@ class Shapes {
   #filter
   #page
 
-  get description () {
-    return 'Escolha o melhor shape para o seu setup'
-  }
-
   get filter () {
     return this.#filter ??= {}
   }
 
   get page () {
     return this.#page ??= 1
-  }
-
-  get title () {
-    return 'Shapes'
   }
 
   @didMount
