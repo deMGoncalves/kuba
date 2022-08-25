@@ -1,15 +1,16 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
+import i18n from './i18n'
 import schema from './schema.json'
 import scroll from '@kuba/scroll'
-import Select, { component, Option } from './select'
+import Select, { component, Option } from '../select'
 
 @paint(component)
 class Tipo extends Select {
   #options
 
   get descricao () {
-    return 'Que tipo de shape é você quer?'
+    return i18n.descricao
   }
 
   get key () {
@@ -17,11 +18,11 @@ class Tipo extends Select {
   }
 
   get nome () {
-    return 'Tipo'
+    return i18n.nome
   }
 
   get options () {
-    return this.#options ??= f.map(schema.tipo, Option.create(this))
+    return this.#options ??= f.map(schema, Option.create(this))
   }
 
   @repaint
