@@ -3,16 +3,16 @@ import http, { api } from '@kuba/http'
 import middleware, { after } from '@kuba/middleware'
 import range from './range'
 
-const { onError, onResponse } = f.dunder
+const { filter, onError, onResponse } = f.dunder
 
 const storage = middleware(request)
-const pull = after(request)
+const pull = after(f.debounce(request, 0))
 
 function request (target) {
   http
     .post(`${api.worker}/shelf`)
     .body({
-      ...target.filter,
+      ...target[filter](),
       ...range(target)
     })
     .json()
@@ -26,6 +26,7 @@ function request (target) {
 }
 
 f.assign(storage, {
+  filter,
   onError,
   onResponse,
   pull

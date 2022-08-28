@@ -14,19 +14,11 @@ import storage from './storage'
 @storage
 @actions
 class Shapes {
-  #filter
-  #page
+  #filter = {}
+  #page = 1
 
   get description () {
     return 'Escolha o melhor shape para o seu setup'
-  }
-
-  get filter () {
-    return this.#filter ??= {}
-  }
-
-  get page () {
-    return this.#page ??= 1
   }
 
   get title () {
@@ -43,14 +35,22 @@ class Shapes {
   @storage.pull
   [actions.onFilter] (key, value) {
     this.#page = 1
-    this.#filter = f.assign(this.filter, { [key]: value })
+    this.#filter = f.assign(this.#filter, { [key]: value })
     return this
   }
 
   @storage.pull
   [actions.onMore] () {
-    this.#page = f.inc(this.page)
+    this.#page = f.inc(this.#page)
     return this
+  }
+
+  [f.dunder.page] () {
+    return this.#page ?? 1
+  }
+
+  [storage.filter] () {
+    return this.#filter ?? {}
   }
 
   [storage.onError] () {
@@ -59,7 +59,7 @@ class Shapes {
 
   [storage.onResponse] (shapes) {
     setGlobal({
-      page: this.page,
+      page: this.#page,
       shapes: merge(shapes, this)
     })
     return this
