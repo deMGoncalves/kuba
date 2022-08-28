@@ -13,7 +13,8 @@ const component = (more) =>
     master
     darker
     xxxs
-    bold>
+    bold
+  >
     {more.text}
   </text.Button>
 
