@@ -12,31 +12,23 @@ class More {
   #visible
 
   get content () {
-    return this.#content ??= More.active
+    return this.#content ??= i18n.active
   }
 
   get visible () {
     return this.#visible ??= f.F()
   }
 
-  static get active () {
-    return i18n.content
-  }
-
-  static get disable () {
-    return '• • •'
-  }
-
   @repaint
   @action.next
   next () {
-    this.#content = More.disable
+    this.#content = i18n.disable
     return this
   }
 
   @repaint
   [effect.onChange] (shapes, page) {
-    this.#content = More.active
+    this.#content = i18n.active
     this.#visible = f.equal(f.multiply(page, 24), f.len(shapes))
     return this
   }
