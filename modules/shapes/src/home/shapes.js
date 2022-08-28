@@ -5,6 +5,7 @@ import { setGlobal } from '@kuba/global'
 import actions from './actions'
 import component from './component'
 import data from './data'
+import i18n from './i18n'
 import jsonld from '@kuba/jsonld'
 import merge from './merge'
 import storage from './storage'
@@ -18,11 +19,11 @@ class Shapes {
   #page = 1
 
   get description () {
-    return 'Escolha o melhor shape para o seu setup'
+    return i18n.description
   }
 
   get title () {
-    return 'Shapes'
+    return i18n.title
   }
 
   @didMount
