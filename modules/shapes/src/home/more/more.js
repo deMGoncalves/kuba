@@ -8,27 +8,27 @@ import i18n from './i18n'
 @paint(component)
 @effect
 class More {
-  #content
+  #text
   #visible
 
-  get content () {
-    return this.#content ??= i18n.active
-  }
-
-  get visible () {
-    return this.#visible ??= f.F()
+  get text () {
+    return this.#text ??= i18n.active
   }
 
   @repaint
   @action.next
-  next () {
-    this.#content = i18n.disable
+  onClick () {
+    this.#text = i18n.disable
     return this
+  }
+
+  [component.visible] () {
+    return this.#visible ??= f.F()
   }
 
   @repaint
   [effect.onChange] (shapes, page) {
-    this.#content = i18n.active
+    this.#text = i18n.active
     this.#visible = f.equal(f.multiply(page, 24), f.len(shapes))
     return this
   }
