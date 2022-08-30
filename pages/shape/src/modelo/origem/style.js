@@ -5,5 +5,6 @@ export default styled.style`
     align-items: center;
     display: flex;
     gap: var(--spacing_inset-nano);
+    text-decoration: none;
   }
 `
