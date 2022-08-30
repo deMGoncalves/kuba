@@ -5,6 +5,7 @@ import { setGlobal } from '@kuba/global'
 import actions from './actions'
 import component from './component'
 import data from './data'
+import i18n from './i18n'
 import jsonld from '@kuba/jsonld'
 import merge from './merge'
 import storage from './storage'
@@ -14,8 +15,8 @@ import storage from './storage'
 @storage
 @actions
 class Shapes {
-  #filter
-  #page
+  #filter = {}
+  #page = 1
 
   get filter () {
     return this.#filter ??= {}
@@ -23,6 +24,14 @@ class Shapes {
 
   get page () {
     return this.#page ??= 1
+  }
+
+  get description () {
+    return i18n.description
+  }
+
+  get title () {
+    return i18n.title
   }
 
   @didMount
@@ -35,14 +44,22 @@ class Shapes {
   @storage.pull
   [actions.onFilter] (key, value) {
     this.#page = 1
-    this.#filter = f.assign(this.filter, { [key]: value })
+    this.#filter = f.assign(this.#filter, { [key]: value })
     return this
   }
 
   @storage.pull
   [actions.onMore] () {
-    this.#page = f.inc(this.page)
+    this.#page = f.inc(this.#page)
     return this
+  }
+
+  [f.dunder.page] () {
+    return this.#page ?? 1
+  }
+
+  [storage.filter] () {
+    return this.#filter ?? {}
   }
 
   [storage.onError] () {
@@ -51,7 +68,7 @@ class Shapes {
 
   [storage.onResponse] (shapes) {
     setGlobal({
-      page: this.page,
+      page: this.#page,
       shapes: merge(shapes, this)
     })
     return this
