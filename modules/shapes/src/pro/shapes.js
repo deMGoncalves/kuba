@@ -4,6 +4,7 @@ import { didMount, paint } from '@kuba/h'
 import { setDescription, setTitle } from '@kuba/markup'
 import { setGlobal } from '@kuba/global'
 import component from './component'
+import i18n from './i18n'
 import jsonld from '@kuba/jsonld'
 
 @paint(component)
@@ -15,11 +16,11 @@ class Shapes {
   #page = 1
 
   get description () {
-    return 'Escolha o melhor shape para o seu setup'
+    return i18n.description
   }
 
   get title () {
-    return 'Pro Model'
+    return i18n.title
   }
 
   @didMount
