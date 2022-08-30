@@ -1,31 +1,21 @@
 import * as f from '@kuba/f'
-import { actions, data } from '../home'
+import { actions, data, storage, merge } from '../home'
 import { didMount, paint } from '@kuba/h'
 import { setDescription, setTitle } from '@kuba/markup'
 import { setGlobal } from '@kuba/global'
 import component from './component'
 import jsonld from '@kuba/jsonld'
-import merge from './merge'
-import storage from './storage'
 
 @paint(component)
 @jsonld(data)
 @storage
 @actions
 class Shapes {
-  #filter
+  #filter = { pro: true }
   #page
 
   get description () {
     return 'Escolha o melhor shape para o seu setup'
-  }
-
-  get filter () {
-    return this.#filter ??= { pro: true }
-  }
-
-  get page () {
-    return this.#page ??= 1
   }
 
   get title () {
@@ -43,6 +33,14 @@ class Shapes {
   [actions.onMore] () {
     this.#page = f.inc(this.page)
     return this
+  }
+
+  [f.dunder.page] () {
+    return this.#page ?? 1
+  }
+
+  [storage.filter] () {
+    return this.#filter ?? {}
   }
 
   [storage.onError] () {
