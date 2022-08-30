@@ -25,7 +25,7 @@ class Shapes {
 
   @storage.pull
   [actions.onMore] () {
-    this.#page = f.inc(this.page)
+    this.#page = f.inc(this.#page)
     return this
   }
 
@@ -50,7 +50,7 @@ class Shapes {
 
   [storage.onResponse] (shapes) {
     setGlobal({
-      page: this.page,
+      page: this.#page,
       shapes: merge(shapes, this)
     })
     return this
