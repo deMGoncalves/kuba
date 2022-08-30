@@ -1,14 +1,16 @@
 import Breadcrumb from './breadcrumb'
 import h, { Fragment } from '@kuba/h'
-import { Shelf, More } from '../home'
+import { Shelf, More, Title } from '../home'
 import Site from '@kuba/site'
-import Title from './title'
 
-export default () =>
+export default (shapes) =>
   <Site>
     <Breadcrumb />
     <Fragment slot='main'>
-      <Title />
+      <Title>
+        <Fragment slot='title'>{shapes.title}</Fragment>
+        <Fragment slot='description'>{shapes.description}</Fragment>
+      </Title>
       <Shelf />
       <More />
     </Fragment>
