@@ -12,7 +12,7 @@ import jsonld from '@kuba/jsonld'
 @actions
 class Shapes {
   #filter = { pro: true }
-  #page
+  #page = 1
 
   get description () {
     return 'Escolha o melhor shape para o seu setup'
