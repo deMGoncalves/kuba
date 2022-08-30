@@ -26,13 +26,6 @@ class Shapes {
     return i18n.title
   }
 
-  @didMount
-  [f.dunder.mount] () {
-    setTitle(this.title)
-    setDescription(this.description)
-    return this
-  }
-
   @storage.pull
   [actions.onFilter] (key, value) {
     this.#page = 1
@@ -43,6 +36,13 @@ class Shapes {
   @storage.pull
   [actions.onMore] () {
     this.#page = f.inc(this.#page)
+    return this
+  }
+
+  @didMount
+  [f.dunder.mount] () {
+    setTitle(this.title)
+    setDescription(this.description)
     return this
   }
 
