@@ -65,7 +65,7 @@ module.exports = ($dirname) => ({
       inject: 'body',
       template: path.resolve($dirname, 'src/index.html')
     }),
-    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/app/, /common/]),
+    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/(app)/]),
     new BundleAnalyzerPlugin({
       analyzerMode: process.env.ANALYZER_MODE
     })
@@ -81,17 +81,7 @@ module.exports = ($dirname) => ({
           safari10: true
         }
       })
-    ],
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          chunks: 'async',
-          name: 'vendor',
-          test: /[\\/]node_modules[\\/]/
-        }
-      },
-      name: 'common'
-    }
+    ]
   },
   output: {
     clean: true,
