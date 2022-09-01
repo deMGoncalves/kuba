@@ -45,6 +45,7 @@ export default new Proxy({}, {
           f.assign(init, {
             signal: target
           })
+          return this
         }
       }
     }
