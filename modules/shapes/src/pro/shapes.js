@@ -15,6 +15,14 @@ class Shapes {
   #filter = { pro: true }
   #page = 1
 
+  get filter () {
+    return this.#filter ??= { pro: true }
+  }
+
+  get page () {
+    return this.#page ??= 1
+  }
+
   get description () {
     return i18n.description
   }
