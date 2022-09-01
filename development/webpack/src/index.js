@@ -85,7 +85,7 @@ module.exports = ($dirname) => ({
     splitChunks: {
       cacheGroups: {
         vendor: {
-          chunks: 'all',
+          chunks: 'async',
           name: 'vendor',
           test: /[\\/]node_modules[\\/]/
         }
