@@ -1,5 +1,6 @@
 import * as mapper from './mapper'
 import { paint, repaint } from '@kuba/h'
+import { urlFor } from '@kuba/router'
 import component from './component'
 import effect from './effect'
 
@@ -7,6 +8,10 @@ import effect from './effect'
 @effect
 class Origem {
   #valor
+
+  get href () {
+    return urlFor('shapes.origem', { origem: this.valor })
+  }
 
   get url () {
     return mapper[this.valor]

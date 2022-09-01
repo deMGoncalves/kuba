@@ -1,21 +1,19 @@
 import * as f from '@kuba/f'
+import { actions, data, storage, merge } from '../home'
 import { didMount, paint } from '@kuba/h'
 import { setDescription, setTitle } from '@kuba/markup'
 import { setGlobal } from '@kuba/global'
-import actions from './actions'
 import component from './component'
-import data from './data'
+import i18n from './i18n'
 import jsonld from '@kuba/jsonld'
-import merge from './merge'
-import storage from './storage'
 
 @paint(component)
 @jsonld(data)
 @storage
 @actions
 class Shapes {
-  #filter
-  #page
+  #filter = { pro: true }
+  #page = 1
 
   get filter () {
     return this.#filter ??= { pro: true }
@@ -25,6 +23,20 @@ class Shapes {
     return this.#page ??= 1
   }
 
+  get description () {
+    return i18n.description
+  }
+
+  get title () {
+    return i18n.title
+  }
+
+  @storage.pull
+  [actions.onMore] () {
+    this.#page = f.inc(this.#page)
+    return this
+  }
+
   @didMount
   [f.dunder.mount] () {
     setTitle(this.title)
@@ -32,10 +44,12 @@ class Shapes {
     return this
   }
 
-  @storage.pull
-  [actions.onMore] () {
-    this.#page = f.inc(this.page)
-    return this
+  [f.dunder.page] () {
+    return this.#page ?? 1
+  }
+
+  [storage.filter] () {
+    return this.#filter ?? {}
   }
 
   [storage.onError] () {
@@ -44,7 +58,7 @@ class Shapes {
 
   [storage.onResponse] (shapes) {
     setGlobal({
-      page: this.page,
+      page: this.#page,
       shapes: merge(shapes, this)
     })
     return this

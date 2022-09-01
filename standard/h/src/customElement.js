@@ -7,9 +7,9 @@ class CustomElement extends Element {
     lifeCycle.dispatch(this, event.WILL_UPDATE)
     Promise
       .all([
+        this.events.update(element.events),
         this.attributes.update(element.attributes),
-        this.className.update(element.className),
-        this.events.update(element.events)
+        this.className.update(element.className)
       ])
       .then(() => lifeCycle.dispatch(this, event.DID_UPDATE))
     return this
