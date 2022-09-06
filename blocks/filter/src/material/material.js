@@ -1,5 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
+import i18n from './i18n'
 import schema from './schema.json'
 import scroll from '@kuba/scroll'
 import Select, { component, Option } from '../select'
@@ -9,7 +10,7 @@ class Material extends Select {
   #options
 
   get descricao () {
-    return 'Escolha o melhor material para seu shape'
+    return i18n.descricao
   }
 
   get key () {
@@ -17,7 +18,7 @@ class Material extends Select {
   }
 
   get nome () {
-    return 'Material'
+    return i18n.nome
   }
 
   get options () {
