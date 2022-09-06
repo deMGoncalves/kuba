@@ -1,5 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
+import i18n from './i18n'
 import schema from './schema.json'
 import scroll from '@kuba/scroll'
 import Select, { component, Option } from '../select'
@@ -9,7 +10,7 @@ class Flex extends Select {
   #options
 
   get descricao () {
-    return 'Qual nível de flexibilidade você prefere?'
+    return i18n.descricao
   }
 
   get key () {
@@ -17,7 +18,7 @@ class Flex extends Select {
   }
 
   get nome () {
-    return 'Flex'
+    return i18n.nome
   }
 
   get options () {
