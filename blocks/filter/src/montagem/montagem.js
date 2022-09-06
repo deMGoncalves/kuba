@@ -2,7 +2,7 @@ import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
 import schema from './schema.json'
 import scroll from '@kuba/scroll'
-import Select, { component, Option } from './select'
+import Select, { component, Option } from '../select'
 
 @paint(component)
 class Montagem extends Select {
@@ -21,7 +21,7 @@ class Montagem extends Select {
   }
 
   get options () {
-    return this.#options ??= f.map(schema.montagem, Option.create(this))
+    return this.#options ??= f.map(schema, Option.create(this))
   }
 
   @repaint
