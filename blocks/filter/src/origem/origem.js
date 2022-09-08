@@ -13,10 +13,6 @@ class Origem extends Select {
     return 'Gringo ou Nacional, qual você prefere?'
   }
 
-  get key () {
-    return 'origem'
-  }
-
   get nome () {
     return 'Origem'
   }
