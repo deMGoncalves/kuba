@@ -44,6 +44,10 @@ class Montagem extends Select {
     super[Option.onChange]()
     return this
   }
+
+  [Select.key] () {
+    return 'montagem'
+  }
 }
 
 export default Montagem
