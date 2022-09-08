@@ -1,5 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
+import i18n from './i18n'
 import Option from './option'
 import schema from './schema.json'
 import scroll from '@kuba/scroll'
@@ -10,7 +11,7 @@ class Tamanho extends Select {
   #options
 
   get descricao () {
-    return 'Qual tamanho de shape você prefere?'
+    return i18n.descricao
   }
 
   get key () {
@@ -18,7 +19,7 @@ class Tamanho extends Select {
   }
 
   get nome () {
-    return 'Tamanho'
+    return i18n.nome
   }
 
   get options () {
