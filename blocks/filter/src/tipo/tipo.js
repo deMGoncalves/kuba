@@ -44,6 +44,10 @@ class Tipo extends Select {
     super[Option.onChange]()
     return this
   }
+
+  [Select.key] () {
+    return 'tipo'
+  }
 }
 
 export default Tipo
