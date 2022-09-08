@@ -44,6 +44,10 @@ class Flex extends Select {
     super[Option.onChange]()
     return this
   }
+
+  [Select.key] () {
+    return 'flex'
+  }
 }
 
 export default Flex
