@@ -13,10 +13,6 @@ class Montagem extends Select {
     return i18n.descricao
   }
 
-  get key () {
-    return 'montagem'
-  }
-
   get nome () {
     return i18n.nome
   }
