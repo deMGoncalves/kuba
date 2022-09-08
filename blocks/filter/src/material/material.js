@@ -44,6 +44,10 @@ class Material extends Select {
     super[Option.onChange]()
     return this
   }
+
+  [Select.key] () {
+    return 'material'
+  }
 }
 
 export default Material
