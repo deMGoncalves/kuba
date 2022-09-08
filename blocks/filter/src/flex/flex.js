@@ -13,10 +13,6 @@ class Flex extends Select {
     return i18n.descricao
   }
 
-  get key () {
-    return 'flex'
-  }
-
   get nome () {
     return i18n.nome
   }
