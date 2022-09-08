@@ -13,10 +13,6 @@ class Material extends Select {
     return i18n.descricao
   }
 
-  get key () {
-    return 'material'
-  }
-
   get nome () {
     return i18n.nome
   }
