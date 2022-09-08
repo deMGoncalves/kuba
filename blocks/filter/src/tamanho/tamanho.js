@@ -45,6 +45,10 @@ class Tamanho extends Select {
     super[Option.onChange]()
     return this
   }
+
+  [Select.key] () {
+    return 'tamanho'
+  }
 }
 
 export default Tamanho
