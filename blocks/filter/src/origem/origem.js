@@ -44,6 +44,10 @@ class Origem extends Select {
     super[Option.onChange]()
     return this
   }
+
+  [Select.key] () {
+    return 'origem'
+  }
 }
 
 export default Origem
