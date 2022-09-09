@@ -20,7 +20,7 @@ class Tags {
       .done()
   }
 
-  get len () {
+  [component.len] () {
     return f.len(this.filters)
   }
 
