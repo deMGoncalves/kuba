@@ -23,7 +23,7 @@ class Tamanho extends Select {
   }
 
   get options () {
-    return this.#options ??= f.map(schema.tamanho, Option.create(this))
+    return this.#options ??= f.map(schema, Option.create(this))
   }
 
   @repaint
