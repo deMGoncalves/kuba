@@ -1,5 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
+import i18n from './i18n'
 import Option from './option'
 import schema from './schema.json'
 import scroll from '@kuba/scroll'
@@ -10,11 +11,11 @@ class Origem extends Select {
   #options
 
   get descricao () {
-    return 'Gringo ou Nacional, qual você prefere?'
+    return i18n.descricao
   }
 
   get nome () {
-    return 'Origem'
+    return i18n.nome
   }
 
   get options () {
