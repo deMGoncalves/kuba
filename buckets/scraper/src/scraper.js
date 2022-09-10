@@ -5,11 +5,11 @@ class Scraper {
     this.#pagina = pagina
   }
 
-  baixaHtml () {
+  baixarHtml () {
     return this
   }
 
-  tiraScreenshot () {
+  tirarScreenshot () {
     return this
   }
 
