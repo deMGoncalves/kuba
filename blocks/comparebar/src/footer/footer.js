@@ -1,4 +1,5 @@
 import * as f from '@kuba/f'
+import { filters } from '@kuba/marionette'
 import { paint } from '@kuba/h'
 import { redirectTo, urlFor } from '@kuba/router'
 import actions from './actions'
@@ -16,6 +17,7 @@ class Footer {
     return urlFor('compare')
   }
 
+  @filters.isTruthy
   [component.valid] () {
     return f
       .from(localStorage.getItem('_kuba.compare'))

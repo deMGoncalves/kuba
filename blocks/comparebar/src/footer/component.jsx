@@ -9,7 +9,7 @@ const href = f.dunder('href')
 const valid = f.dunder('valid')
 
 const component = (footer) =>
-  <footer className={style.footer} valid:isTruthy={valid(footer)}>
+  <footer className={style.footer} valid={valid(footer)}>
     <link.Master className={style.footer__link} href={href(footer)} onClick={() => footer.redirect()} darker xxxs bold>
       {i18n.text}
       <icon.ArrowLongRight />
