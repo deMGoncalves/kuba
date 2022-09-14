@@ -1,1 +1,1 @@
-export { default } from './marionette'
+export { default as filters } from './filters'
