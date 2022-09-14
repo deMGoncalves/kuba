@@ -8,7 +8,7 @@ import text from '@kuba/text'
 const opened = f.dunder('opened')
 
 const component = (cookiebar) =>
-  <aside className={style.cookiebar} opened:isTruthy={opened(cookiebar)}>
+  <aside className={style.cookiebar} opened={opened(cookiebar)}>
     <text.Strong className={style.cookiebar__strong} master darker xs bold>{i18n.title}</text.Strong>
     <text.P className={style.cookiebar__p} master xxxs>{i18n.description}</text.P>
     <button.Primary className={style.cookiebar__button} onClick={() => cookiebar.aceitar()} bold>{i18n.allow}</button.Primary>
