@@ -9,10 +9,6 @@ import policy from '@kuba/policy'
 class Cookiebar {
   #opened
 
-  get opened () {
-    return this.#opened ??= policy.pristine
-  }
-
   @repaint
   aceitar () {
     policy.accept()
@@ -25,6 +21,10 @@ class Cookiebar {
     policy.decline()
     this.#opened = f.F()
     return this
+  }
+
+  [component.opened] () {
+    return this.#opened ??= policy.pristine
   }
 
   @repaint
