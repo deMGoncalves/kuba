@@ -8,7 +8,9 @@ export default (component) =>
           get: (_, key) => (
             f.has(f.dunder[key], props)
               ? f.dunder(key, props)
-              : props[key]
+              : f.is(Function, props[key])
+                ? props[key].bind(props)
+                : props[key]
           )
         }),
         children
