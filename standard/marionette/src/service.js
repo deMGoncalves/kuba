@@ -5,13 +5,12 @@ export default (callback) =>
   new Proxy(
     middleware((target) => (
       callback(new Proxy({}, {
-        get: (_, key) => (
-          f.has(f.dunder[key], target)
-            ? f.dunder(key, target)
-            : f.is(Function, target[key])
-              ? target[key].bind(target)
-              : target[key]
-        )
+        get: (_, key) => {
+          const method = (target[f.magic(key)] ?? target[key])
+          return f.is(Function, method)
+            ? method.bind(target)
+            : method
+        }
       }))
     )),
     {

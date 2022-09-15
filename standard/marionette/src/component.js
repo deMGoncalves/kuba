@@ -5,13 +5,12 @@ export default (component) =>
     (props, children) => (
       component(
         new Proxy({}, {
-          get: (_, key) => (
-            f.has(f.dunder[key], props)
-              ? f.dunder(key, props)
-              : f.is(Function, props[key])
-                ? props[key].bind(props)
-                : props[key]
-          )
+          get: (_, key) => {
+            const method = (props[f.magic(key)] ?? props[key])
+            return f.is(Function, method)
+              ? method.bind(props)
+              : method
+          }
         }),
         children
       )
