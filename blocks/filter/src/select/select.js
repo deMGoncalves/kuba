@@ -10,16 +10,16 @@ class Select {
     return ''
   }
 
-  get key () {
-    return ''
-  }
-
   get nome () {
     return ''
   }
 
   get options () {
     return []
+  }
+
+  static get key () {
+    return f.dunder.key
   }
 
   close () {
@@ -46,7 +46,7 @@ class Select {
 
   [Option.onChange] () {
     echo.emit('filter:change', {
-      key: this.key,
+      key: f.dunder('key', this),
       value: f
         .from(this.options)
         .pipe(f.filter(f.__, f.prop('selected')))

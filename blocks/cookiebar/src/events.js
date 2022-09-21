@@ -1,15 +1,6 @@
-import * as f from '@kuba/f'
+import { service } from '@kuba/marionette'
 import echo from '@kuba/echo'
-import middleware from '@kuba/middleware'
 
-const { onShow } = f.dunder
-
-const events = middleware((target) =>
-  echo.on('cookie:open', () => target[onShow]())
-)
-
-f.assign(events, {
-  onShow
-})
-
-export default events
+export default service((target) => (
+  echo.on('cookie:open', () => target.onShow())
+))

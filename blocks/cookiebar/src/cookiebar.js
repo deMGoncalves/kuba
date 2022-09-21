@@ -1,4 +1,5 @@
 import * as f from '@kuba/f'
+import { filter } from '@kuba/marionette'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
 import events from './events'
@@ -8,10 +9,6 @@ import policy from '@kuba/policy'
 @events
 class Cookiebar {
   #opened
-
-  get opened () {
-    return this.#opened ??= policy.pristine
-  }
 
   @repaint
   aceitar () {
@@ -25,6 +22,11 @@ class Cookiebar {
     policy.decline()
     this.#opened = f.F()
     return this
+  }
+
+  @filter.isTruthy
+  [component.opened] () {
+    return this.#opened ??= policy.pristine
   }
 
   @repaint

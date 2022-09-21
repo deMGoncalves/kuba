@@ -6,11 +6,14 @@ import Shelf from './shelf'
 import Site from '@kuba/site'
 import Title from './title'
 
-export default () =>
+export default (shapes) =>
   <Site>
     <Breadcrumb />
     <Fragment slot='main'>
-      <Title />
+      <Title>
+        <Fragment slot='title'>{shapes.title}</Fragment>
+        <Fragment slot='description'>{shapes.description}</Fragment>
+      </Title>
       <Filter />
       <Shelf />
       <More />

@@ -1,18 +1,11 @@
-import * as f from '@kuba/f'
+import { service } from '@kuba/marionette'
 
-const { index } = f.dunder
-
-const data = (path) =>
-  ({
+export default service((path) => (
+  {
     '@id': '#item',
     '@type': 'ListItem',
     item: path.href,
     name: path.title,
-    position: path[index]()
-  })
-
-f.assign(data, {
-  index
-})
-
-export default data
+    position: path.index()
+  }
+))

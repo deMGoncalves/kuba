@@ -1,9 +1,7 @@
+import { service } from '@kuba/marionette'
 import echo from '@kuba/echo'
-import middleware from '@kuba/middleware'
 
-const actions = (comparebar) => (
+export default service((comparebar) => (
   echo.on('compare:add', () => comparebar.open()),
   echo.on('compare:open', () => comparebar.open())
-)
-
-export default middleware(actions)
+))

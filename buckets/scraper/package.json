@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "puppeteer": "^17.1.3"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "yarn run eslint src/**/*.{js,jsx}",
+      "yarn run stylelint src/**/*.{js,jsx} --allow-empty-input"
+    ]
+  },
+  "main": "src/index.js",
+  "name": "@kuba/scraper",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --passWithNoTests"
+  },
+  "version": "1.0.0"
+}

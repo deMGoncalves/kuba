@@ -107,10 +107,10 @@ class Element {
     lifeCycle.dispatch(this, event.WILL_MOUNT)
     Promise
       .all([
-        this.attributes.mount(),
         this.children.mount(),
-        this.className.mount(),
-        this.events.mount()
+        this.events.mount(),
+        this.attributes.mount(),
+        this.className.mount()
       ])
       .then(() => lifeCycle.dispatch(this, event.DID_MOUNT))
     return this.element

@@ -1,1 +1,8 @@
 export { default } from './shapes'
+export { default as actions } from './actions'
+export { default as data } from './data'
+export { default as merge } from './merge'
+export { default as More } from './more'
+export { default as Shelf } from './shelf'
+export { default as storage } from './storage'
+export { default as Title } from './title'
