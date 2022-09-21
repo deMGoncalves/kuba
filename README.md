@@ -64,7 +64,7 @@ Quando focamos no domínio, minimizamos a quantidade de programadores para desen
 <br />
 
 <p align="center">
-  <strong>Start</strong>
+  <strong>Get start</strong>
 </p>
 
 ```bash
