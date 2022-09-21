@@ -1,9 +1,11 @@
 import * as f from '@kuba/f'
+import cache from './cache'
 
 export default new Proxy({}, {
   get (_, method) {
     return function (url) {
       const init = {
+        cache,
         method
       }
 
@@ -43,6 +45,7 @@ export default new Proxy({}, {
           f.assign(init, {
             signal: target
           })
+          return this
         }
       }
     }

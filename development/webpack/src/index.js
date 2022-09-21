@@ -65,7 +65,7 @@ module.exports = ($dirname) => ({
       inject: 'body',
       template: path.resolve($dirname, 'src/index.html')
     }),
-    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/app/, /common/]),
+    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/(app|common)/]),
     new BundleAnalyzerPlugin({
       analyzerMode: process.env.ANALYZER_MODE
     })

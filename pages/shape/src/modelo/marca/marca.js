@@ -1,19 +1,26 @@
 import { paint, repaint } from '@kuba/h'
+import { urlFor } from '@kuba/router'
 import component from './component'
 import effect from './effect'
 
 @paint(component)
 @effect
 class Marca {
-  #valor
+  #nome
+  #slug
 
-  get valor () {
-    return this.#valor
+  get href () {
+    return urlFor('marca', { marca: this.#slug })
+  }
+
+  get nome () {
+    return this.#nome
   }
 
   @repaint
-  [effect.onChange] (valor) {
-    this.#valor = valor
+  [effect.onChange] (nome, slug) {
+    this.#nome = nome
+    this.#slug = slug
     return this
   }
 }

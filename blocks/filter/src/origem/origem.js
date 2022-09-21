@@ -1,5 +1,6 @@
 import * as f from '@kuba/f'
 import { paint, repaint } from '@kuba/h'
+import i18n from './i18n'
 import Option from './option'
 import schema from './schema.json'
 import scroll from '@kuba/scroll'
@@ -10,19 +11,15 @@ class Origem extends Select {
   #options
 
   get descricao () {
-    return 'Gringo ou Nacional, qual você prefere?'
-  }
-
-  get key () {
-    return 'origem'
+    return i18n.descricao
   }
 
   get nome () {
-    return 'Origem'
+    return i18n.nome
   }
 
   get options () {
-    return this.#options ??= f.map(schema.origem, Option.create(this))
+    return this.#options ??= f.map(schema, Option.create(this))
   }
 
   @repaint
@@ -43,6 +40,10 @@ class Origem extends Select {
   [Option.onChange] () {
     super[Option.onChange]()
     return this
+  }
+
+  [Select.key] () {
+    return 'origem'
   }
 }
 

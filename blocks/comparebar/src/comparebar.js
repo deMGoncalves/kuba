@@ -18,7 +18,7 @@ class Comparebar {
 
   @repaint
   @scroll.lock
-  open () {
+  [actions.open] () {
     this.#opened = f.T()
     return this
   }

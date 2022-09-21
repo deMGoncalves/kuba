@@ -1,0 +1,15 @@
+{
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "yarn run eslint src/**/*.{js,jsx}",
+      "yarn run stylelint src/**/*.{js,jsx} --allow-empty-input"
+    ]
+  },
+  "main": "src/index.js",
+  "name": "@kuba/marionette",
+  "private": true,
+  "scripts": {
+    "test": "jest --passWithNoTests"
+  },
+  "version": "1.0.0" 
+}

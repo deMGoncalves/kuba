@@ -5,7 +5,10 @@ import middleware from '@kuba/middleware'
 const { onChange } = f.dunder
 
 const effect = middleware((target) => (
-  useEffect(() => target[onChange](global.shape.marca.nome))
+  useEffect(() => target[onChange](
+    global.shape.marca.nome,
+    global.shape.marca.slug
+  ))
 ))
 
 f.assign(effect, {

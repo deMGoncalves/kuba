@@ -48,12 +48,29 @@ Quando focamos no domínio, minimizamos a quantidade de programadores para desen
 <br />
 <br />
 
+![Component 3](https://user-images.githubusercontent.com/35740192/189503334-79ffcb22-507c-4bde-bc91-684ec714a121.png)
+
+<br />
+<br />
+
 <p align="center">
   <strong>
     <a href="https://www.kuba.ink">Demo</a> &nbsp;·&nbsp;
     <a href="https://github.com/deMGoncalves/kuba">Repositório</a>
   </strong>
 </p>
+
+<br />
+<br />
+
+<p align="center">
+  <strong>Get start</strong>
+</p>
+
+```bash
+yarn install
+yarn workspace @kuba/page start
+```
 
 <br />
 <br />
