@@ -1,10 +1,10 @@
 import { after } from '@kuba/middleware'
 import echo from '@kuba/echo'
 
-const remove = after(function (output) {
-  echo.emit('compare:remove')
-  return output
-})
+const remove = after((output) => (
+  echo.emit('compare:remove'),
+  output
+))
 
 export default {
   remove

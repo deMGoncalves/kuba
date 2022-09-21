@@ -1,19 +1,21 @@
 const puppeteer = require('puppeteer')
 
 class Pagina {
+  #init
   #shape
 
-  constructor (shape) {
+  constructor (shape, init) {
+    this.#init = init
     this.#shape = shape
   }
 
   static async do (shape) {
-    const _browser = await puppeteer.launch({ headless: false })
-    const _page = await browser.newPage()
+    const browser = await puppeteer.launch({ headless: false })
+    const page = await browser.newPage()
 
-    await _page.goto(shape.url)
+    await page.goto(shape.url)
 
-    return new Pagina(shape, _browser, _page)
+    return new Pagina(shape, { browser, page })
   }
 }
 

@@ -5,15 +5,15 @@ class Scraper {
     this.#pagina = pagina
   }
 
-  baixarHtml () {
+  async baixarHtml () {
     return this
   }
 
-  tirarScreenshot () {
+  async tirarScreenshot () {
     return this
   }
 
-  static acessa (pagina) {
+  static async acessa (pagina) {
     return new Scraper(pagina)
   }
 }
