@@ -64,6 +64,18 @@ Quando focamos no domínio, minimizamos a quantidade de programadores para desen
 <br />
 
 <p align="center">
+  <strong>Start</strong>
+</p>
+
+```bash
+yarn install
+yarn workspace @kuba/page start
+```
+
+<br />
+<br />
+
+<p align="center">
   <strong>Objetivos</strong>
 </p>
 
