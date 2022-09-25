@@ -1,12 +1,12 @@
 import * as f from '@kuba/f'
 import { filter } from '@kuba/marionette'
 import { paint, repaint } from '@kuba/h'
+import action from './action'
 import component from './component'
-import events from './events'
 import policy from '@kuba/policy'
 
 @paint(component)
-@events
+@action
 class Cookiebar {
   #opened
 
@@ -30,7 +30,7 @@ class Cookiebar {
   }
 
   @repaint
-  [events.onShow] () {
+  [action.onShow] () {
     this.#opened = f.T()
     return this
   }
