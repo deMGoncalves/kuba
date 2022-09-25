@@ -24,15 +24,15 @@ class Cookiebar {
     return this
   }
 
-  @filter.isTruthy
-  [component.opened] () {
-    return this.#opened ??= policy.pristine
-  }
-
   @repaint
   [action.onShow] () {
     this.#opened = f.T()
     return this
+  }
+
+  @filter.isTruthy
+  [component.opened] () {
+    return this.#opened ??= policy.pristine
   }
 }
 
