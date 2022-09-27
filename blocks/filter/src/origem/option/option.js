@@ -1,5 +1,6 @@
 import * as mapper from './mapper'
 import { actions, Option as Base } from '@kuba/filter/src/select'
+import { filter } from '@kuba/marionette'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
 
@@ -12,6 +13,7 @@ class Option {
     return this.#base.key
   }
 
+  @filter.isTruthy
   get selected () {
     return this.#base.selected
   }
