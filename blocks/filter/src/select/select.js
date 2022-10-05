@@ -19,10 +19,6 @@ class Select {
     return []
   }
 
-  static get key () {
-    return f.dunder.key
-  }
-
   close () {
     this.#opened = f.F()
     return this
