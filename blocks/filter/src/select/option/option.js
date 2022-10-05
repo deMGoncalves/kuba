@@ -10,10 +10,6 @@ class Option {
   #target
   #valor
 
-  get key () {
-    return f.dunder('key', this.#target)
-  }
-
   get selected () {
     return this.#selected ??= f.F()
   }
@@ -36,6 +32,10 @@ class Option {
     this.#selected = f.not(this.selected)
     this.#target[Option.onChange]()
     return this
+  }
+
+  [actions.key] () {
+    return f.dunder('key', this.#target)
   }
 
   @repaint
