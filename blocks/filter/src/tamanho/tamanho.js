@@ -14,10 +14,6 @@ class Tamanho extends Select {
     return i18n.descricao
   }
 
-  get key () {
-    return 'tamanho'
-  }
-
   get nome () {
     return i18n.nome
   }
