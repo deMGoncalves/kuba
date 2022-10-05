@@ -7,10 +7,6 @@ import component from './component'
 class Option {
   #base
 
-  get key () {
-    return this.#base.key
-  }
-
   get selected () {
     return this.#base.selected
   }
@@ -31,6 +27,10 @@ class Option {
   toggle () {
     this.#base.toggle()
     return this
+  }
+
+  [actions.key] () {
+    return this.#base[actions.key]()
   }
 
   @repaint
