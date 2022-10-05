@@ -11,7 +11,7 @@ class Option {
   #valor
 
   get key () {
-    return this.#target.key
+    return f.dunder('key', this.#target)
   }
 
   get selected () {
