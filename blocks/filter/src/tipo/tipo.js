@@ -13,10 +13,6 @@ class Tipo extends Select {
     return i18n.descricao
   }
 
-  get key () {
-    return 'tipo'
-  }
-
   get nome () {
     return i18n.nome
   }
