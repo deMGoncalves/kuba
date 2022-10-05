@@ -1,4 +1,5 @@
 import * as f from '@kuba/f'
+import { filter } from '@kuba/marionette'
 import echo from '@kuba/echo'
 import Option from './option'
 import component from './component'
@@ -42,6 +43,14 @@ class Select {
 
   [component.opened] () {
     return this.#opened ??= f.F()
+  }
+
+  @filter.isTruthy
+  [component.selected] () {
+    return f
+      .from(this.options)
+      .pipe(f.some(f.__, f.prop('selected')))
+      .done()
   }
 
   [Option.onChange] () {
