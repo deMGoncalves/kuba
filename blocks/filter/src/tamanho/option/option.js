@@ -1,4 +1,5 @@
 import * as f from '@kuba/f'
+import { filter } from '@kuba/marionette'
 import { actions, Option as Base } from '@kuba/filter/src/select'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
@@ -8,6 +9,7 @@ import component from './component'
 class Option {
   #base
 
+  @filter.isTruthy
   get selected () {
     return this.#base.selected
   }
