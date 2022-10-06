@@ -1,3 +1,4 @@
+import * as f from '@kuba/f'
 import * as mapper from './mapper'
 import { actions, Option as Base } from '@kuba/filter/src/select'
 import { filter } from '@kuba/marionette'
@@ -44,6 +45,10 @@ class Option {
   [actions.onRemove] () {
     this.#base[actions.onRemove]()
     return this
+  }
+
+  [f.dunder.equal] () {
+    return this.valor
   }
 
   static create (target) {

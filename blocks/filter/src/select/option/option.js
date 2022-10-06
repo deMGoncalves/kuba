@@ -45,6 +45,10 @@ class Option {
     return this
   }
 
+  [f.dunder.equal] () {
+    return this.valor
+  }
+
   static create (target) {
     return (valor) => new Option(valor, target)
   }

@@ -1,3 +1,4 @@
+import * as f from '@kuba/f'
 import { actions, Option as Base } from '@kuba/filter/src/select'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
@@ -37,6 +38,10 @@ class Option {
   [actions.onRemove] () {
     this.#base[actions.onRemove]()
     return this
+  }
+
+  [f.dunder.equal] () {
+    return this.valor
   }
 
   static create (target) {
