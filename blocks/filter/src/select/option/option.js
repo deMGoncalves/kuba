@@ -1,4 +1,5 @@
 import * as f from '@kuba/f'
+import { filter } from '@kuba/marionette'
 import { paint, repaint } from '@kuba/h'
 import actions from './actions'
 import component from './component'
@@ -9,6 +10,11 @@ class Option {
   #selected
   #target
   #valor
+
+  @filter.isTruthy
+  get selected () {
+    return this.#selected ??= f.F()
+  }
 
   get valor () {
     return this.#valor ??= ''
@@ -39,10 +45,6 @@ class Option {
     this.#selected = f.F()
     this.#target[Option.onChange]()
     return this
-  }
-
-  [component.selected] () {
-    return this.#selected ??= f.F()
   }
 
   [f.dunder.equal] () {
