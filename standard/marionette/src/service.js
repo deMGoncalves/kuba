@@ -6,7 +6,10 @@ export default (callback) =>
     middleware((target) => (
       callback(new Proxy({}, {
         get: (_, key) => {
-          const method = (target[f.magic(key)] ?? target[key])
+          const method = f.is(Symbol, key)
+            ? target[key]
+            : (target[f.magic(key)] ?? target[key])
+
           return f.is(Function, method)
             ? method.bind(target)
             : method
