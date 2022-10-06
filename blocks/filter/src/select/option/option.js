@@ -10,10 +10,6 @@ class Option {
   #target
   #valor
 
-  get selected () {
-    return this.#selected ??= f.F()
-  }
-
   get valor () {
     return this.#valor ??= ''
   }
@@ -43,6 +39,10 @@ class Option {
     this.#selected = f.F()
     this.#target[Option.onChange]()
     return this
+  }
+
+  [component.selected] () {
+    return this.#selected ??= f.F()
   }
 
   [f.dunder.equal] () {
