@@ -1,4 +1,5 @@
 import * as f from '@kuba/f'
+import { filter } from '@kuba/marionette'
 
 class Topping {
   #selected
@@ -7,6 +8,7 @@ class Topping {
     return ''
   }
 
+  @filter.isTruthy
   get selected () {
     return this.#selected ??= f.F()
   }
