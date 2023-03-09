@@ -12,6 +12,12 @@
 
 No mundo do desenvolvimento de software, a complexidade excessiva pode ser um obstáculo para alcançar resultados eficazes. O Kuba surge como uma solução para simplificar o processo de desenvolvimento, focando no domínio do negócio e na eficácia das funcionalidades entregues.
 
+## O Manifesto
+
+Nós acreditamos que a simplicidade é um pré-requisito para a eficácia. Desenvolver um software de maneira correta é um desafio que requer maturidade e conhecimentos que a maioria dos programadores ainda não tem. Ao focar no domínio, minimizamos a quantidade de programadores necessários para desenvolver e sustentar um software, tornando as mudanças mais simples e fáceis.
+
+Nossos entregáveis são simples, pequenos e imperfeitos. A visão do Kuba está além da programação, buscando oferecer uma solução que maximize as funcionalidades e flexibilidades, sem perder de vista a simplicidade e eficácia.
+
 ## Como usar
 
 Para começar a usar o Kuba, siga os seguintes passos:
