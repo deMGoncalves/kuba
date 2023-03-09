@@ -94,7 +94,7 @@ Se você deseja contribuir com o projeto Kuba, siga os passos abaixo:
 1. Faça um fork deste repositório clicando no botão "Fork" no topo da página.
 2. Clone o repositório para sua máquina local:
 ```bash
-git clone https://github.com/seu-usuario/kuba.git
+git clone https://github.com/deMGoncalves/kuba.git
 ```
 
 3. Crie uma branch com a feature que deseja adicionar ou corrigir:
