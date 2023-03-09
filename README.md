@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://kuba.ink" target="_blank" rel="noopener">
-    <img width="300" src="https://user-images.githubusercontent.com/35740192/147132766-ad6e25c3-22c0-4b19-acd7-be87bfc5870e.png" alt="kuba">
+    <img width="300" src="https://user-images.githubusercontent.com/35740192/223883874-63a15774-2608-418f-bbd5-70c7d3c91f12.png" alt="kuba">
   </a>
 </p>
 
