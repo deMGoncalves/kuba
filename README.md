@@ -30,6 +30,17 @@ As unidades construtivas do Kuba são:
     - **State**: Responsável por gerenciar o estado da aplicação.
 3. **Advice**: Responsável por gerenciar aspectos transversais da aplicação, como logs, métricas e segurança.
 
+## Como funciona
+
+O Kuba é uma ferramenta para desenvolvimento web que oferece um conjunto de recursos e funcionalidades para facilitar o processo de criação de aplicativos. Ele oferece uma arquitetura simples e eficiente, permitindo que os desenvolvedores possam focar na implementação da lógica de negócio, sem se preocupar tanto com detalhes técnicos.
+
+## Características
+
+- Leve e de fácil utilização
+- Personalizável e adaptável para diversos projetos
+- Suporta as principais tecnologias do mercado
+- Contribuição de desenvolvedores em todo o mundo
+
 ## Benefícios
 
 O Kuba traz diversos benefícios para a construção de aplicações web, como:
@@ -44,9 +55,9 @@ O Kuba traz diversos benefícios para a construção de aplicações web, como:
 
 Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em seu ambiente de desenvolvimento:
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/)
-* [Yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
 
 ## Experimente
 
@@ -76,19 +87,42 @@ yarn start
 
 Para mais informações sobre como usar o Kuba, consulte a documentação completa na [Wiki]([http://localhost:3000/](https://github.com/deMGoncalves/kuba/wiki)) do projeto.
 
-## Contribua
+## Contribuindo
 
-O Kuba é um projeto open source, e todas as contribuições são bem-vindas. Se você quer ajudar a melhorar o projeto, siga os seguintes passos:
+Se você deseja contribuir com o projeto Kuba, siga os passos abaixo:
 
-1. Faça um fork do repositório
-2. Clone o fork para o seu ambiente local
-3. Instale as dependências do projeto com yarn install
-4. Crie uma branch para a sua contribuição com git checkout -b minha-contribuicao
-5. Faça as mudanças no código e escreva testes para elas
-6. Execute os testes com yarn test
-7. Faça o commit das suas mudanças com uma mensagem clara e concisa
-8. Envie um pull request para o repositório original.
+1. Faça um fork deste repositório clicando no botão "Fork" no topo da página.
+2. Clone o repositório para sua máquina local:
+```bash
+git clone https://github.com/seu-usuario/kuba.git
+```
+
+3. Crie uma branch com a feature que deseja adicionar ou corrigir:
+```bash
+git checkout -b minha-feature
+```
+
+4. Faça as alterações necessárias e adicione ao stage do Git:
+```bash
+git add .
+```
+
+5. Faça um commit com suas alterações:
+```bash
+git commit -m "Minha feature: descrição breve"
+```
+
+6. Faça um push da sua branch para o GitHub:
+```bash
+git push origin minha-feature
+```
+
+7. Abra um Pull Request para a branch "main" deste repositório.
 
 ## Licença
 
-O Kuba é um projeto open source licenciado sob a licença MIT. Veja o arquivo LICENSE para mais informações.
+O Kuba é um projeto de código aberto licenciado sob a licença MIT. Isso significa que você pode utilizá-lo livremente em seus projetos pessoais ou comerciais, desde que mantenha a atribuição do autor original.
+
+## Contato
+
+Caso você tenha alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato com **Cleber** através do email cleber.engineer@gmail.com.
