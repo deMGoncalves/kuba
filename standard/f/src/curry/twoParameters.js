@@ -1,22 +1,29 @@
-import { isGap } from '@kuba/f/src/gap'
+import __ from './__'
 import oneParameter from './oneParameter'
 
-export default (func) =>
-  function callback (a, b) {
+function twoParameters (functionRef) {
+  return function evaluate (a, b) {
     switch (arguments.length) {
       case 0:
-        return callback
+        return evaluate
       case 1:
-        return isGap(a)
-          ? callback
-          : oneParameter((...args) => func(a, ...args))
+        return __.is(a)
+          ? evaluate
+          : oneParameter((...args) => functionRef(a, ...args))
       default:
-        return isGap(a) && isGap(b)
-          ? callback
-          : isGap(a)
-            ? oneParameter((_a, ...args) => func(_a, b, ...args))
-            : isGap(b)
-              ? oneParameter((...args) => func(a, ...args))
-              : func(...arguments)
+        return __.is(a) && __.is(b)
+          ? evaluate
+          : __.is(a)
+            ? oneParameter((_a, ...args) => functionRef(_a, b, ...args))
+            : __.is(b)
+              ? oneParameter((...args) => functionRef(a, ...args))
+              : functionRef(...arguments)
     }
   }
+}
+
+Object.assign(twoParameters, {
+  is: (functionRef) => functionRef.length === 2
+})
+
+export default twoParameters

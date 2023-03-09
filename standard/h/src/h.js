@@ -1,11 +1,8 @@
-import * as f from '@kuba/f'
 import Component from './component'
-import CustomElement from './customElement'
 import Element from './element'
 
-export default (target, props, ...children) =>
-  f.cond(
-    [Element.is, Element.create],
-    [Component.is, Component.execute],
-    [CustomElement.is, CustomElement.create]
-  )(target, { ...props }, f.flatten(children))
+export default (nodeName, attrs, ...children) => {
+  attrs ??= {}
+  if (Element.is(nodeName)) return Element.create(nodeName, attrs, children)
+  if (Component.is(nodeName)) return Component.execute(nodeName, attrs, children)
+}

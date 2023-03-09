@@ -1,23 +1,33 @@
-import * as f from '@kuba/f'
 import Attributes from './attributes'
 import Children from './children'
 import ClassName from './className'
+import didMount from './didMount'
+import didUpdate from './didUpdate'
+import didUnmount from './didUnmount'
 import Events from './events'
-import lifeCycle, { event } from './lifeCycle'
-import lazy from './lazy'
-import parser from './parser'
+import Is from './is'
+import Key from './key'
+import paint from './paint'
+import reflow from './reflow'
+import render from './render'
+import repaint from './repaint'
+import revoke from '@kuba/revoke'
+import Slot from './slot'
+import willMount from './willMount'
+import willUpdate from './willUpdate'
+import willUnmount from './willUnmount'
 
+@revoke
 class Element {
   #attributes
   #children
   #className
-  #element
-  #entity
   #events
   #is
-  #name
+  #key
+  #node
+  #nodeName
   #slot
-  #uid
 
   get attributes () {
     return this.#attributes
@@ -31,154 +41,130 @@ class Element {
     return this.#className
   }
 
-  get element () {
-    return this.#element ??= parser.create(this)
-  }
-
-  get entity () {
-    return this.#entity
-  }
-
   get events () {
     return this.#events
   }
 
   get is () {
-    return this.#is
+    return this.#is.value
   }
 
-  get isNode () {
-    return f.T()
+  get key () {
+    return this.#key.value
   }
 
-  get name () {
-    return f.toLower(this.#name)
+  get nodeName () {
+    return this.#nodeName
   }
 
   get slot () {
-    return this.#slot
+    return this.#slot.value
   }
 
-  get type () {
-    return 1
+  get __node__ () {
+    return this.#node
   }
 
-  get uid () {
-    return this.#uid
-  }
-
-  constructor (tagName, props, children) {
-    this.#attributes = Attributes.create(props, this)
+  constructor (nodeName, attrs, children) {
+    this.#nodeName = nodeName
+    this.#attributes = Attributes.create(attrs, this)
     this.#children = Children.create(children, this)
-    this.#className = ClassName.create(props, this)
-    this.#events = Events.create(props, this)
-    this.#is = props.is
-    this.#name = tagName
-    this.#slot = props.slot
-    this.#uid = props.uid
+    this.#className = ClassName.create(attrs, this)
+    this.#events = Events.create(attrs, this)
+    this.#is = Is.create(attrs)
+    this.#key = Key.create(attrs)
+    this.#slot = Slot.create(attrs)
   }
 
-  addEventListener (name, listener) {
-    parser.addEventListener(this, name, listener)
+  addEventListener (event) {
+    Reflect.set(this.#node, ...event)
     return this
   }
 
-  async append (children) {
-    await parser.append(this, children)
+  after (child) {
+    const node = child[render.flow]()
+    this.#node.after(node)
+    return this
+  }
+
+  append (childList) {
+    const nodeList = childList.map((child) => child[render.flow]())
+    this.#node.append(...nodeList)
     return this
   }
 
   appendChild (child) {
-    parser.appendChild(this, child)
+    const node = child[render.flow]()
+    this.#node.appendChild(node)
     return this
   }
 
-  connect (entity) {
-    this.#entity = entity
-    return this
-  }
-
-  insertAdjacent (child) {
-    parser.insertAdjacent(this, child)
-    return this
-  }
-
-  mount () {
-    lifeCycle.dispatch(this, event.WILL_MOUNT)
-    Promise
-      .all([
-        this.children.mount(),
-        this.events.mount(),
-        this.attributes.mount(),
-        this.className.mount()
-      ])
-      .then(() => lifeCycle.dispatch(this, event.DID_MOUNT))
-    return this.element
-  }
-
+  @didUnmount
+  @willUnmount
   remove () {
-    lifeCycle.dispatch(this, event.WILL_UNMOUNT)
-    Promise
-      .all([
-        parser.remove(this)
-      ])
-      .then(() => lifeCycle.dispatch(this, event.DID_UNMOUNT))
+    this.#node.remove()
     return this
   }
 
-  removeAttribute (key) {
-    parser.removeAttribute(this, key)
+  removeAttribute (attr) {
+    this.#node.removeAttribute(attr.key)
     return this
   }
 
-  removeEventListener (name) {
-    parser.removeEventListener(this, name)
+  removeEventListener (event) {
+    delete this.#node[event.name]
     return this
   }
 
-  replace (child) {
-    lifeCycle.dispatch(this, event.WILL_UNMOUNT)
-    Promise
-      .all([
-        parser.replaceChild(this, child)
-      ])
-      .then(() => lifeCycle.dispatch(this, event.DID_UNMOUNT))
+  replace (child, nChild) {
+    child.after(nChild)
+    child.remove()
     return this
   }
 
-  setAttribute (key, value) {
-    parser.setAttribute(this, key, value)
+  setAttribute (attr) {
+    this.#node.setAttribute(...attr)
     return this
   }
 
-  setClassName (value) {
-    parser.setClassName(this, value)
+  [reflow.different] (nElement) {
+    return (
+      this[paint.instance]?.() !== nElement[paint.instance]?.() ||
+      this.nodeName !== nElement.nodeName ||
+      this.is !== nElement.is ||
+      this.key !== nElement.key
+    )
+  }
+
+  @didMount
+  @willMount
+  [render.flow] () {
+    this.#node ??= document.createElement(this.nodeName, { is: this.is })
+    this.events[render.flow]()
+    this.attributes[render.flow]()
+    this.className[render.flow]()
+    this.children[render.flow]()
+    return this.#node
+  }
+
+  @didUpdate
+  @willUpdate
+  [repaint.reflow] (nElement) {
+    this.events[repaint.reflow](nElement.events)
+    this.attributes[repaint.reflow](nElement.attributes)
+    this.className[repaint.reflow](nElement.className)
+    this.children[repaint.reflow](nElement.children)
     return this
   }
 
-  update (element) {
-    lifeCycle.dispatch(this, event.WILL_UPDATE)
-    Promise
-      .all([
-        this.attributes.update(element.attributes),
-        this.children.update(element.children),
-        this.className.update(element.className),
-        this.events.update(element.events)
-      ])
-      .then(() => lifeCycle.dispatch(this, event.DID_UPDATE))
-    return this
+  static create (nodeName, attrs, children) {
+    attrs = Object.entries(attrs)
+    children = children.flat(Infinity)
+    return new Element(nodeName, attrs, children)
   }
 
-  [f.dunder.isEmpty] () {
-    return f.F()
-  }
-
-  static create () {
-    return lazy(Element, ...arguments)
-  }
-
-  static is (target) {
-    return f.test(/^\w+$/, target)
+  static is (nodeName) {
+    return typeof nodeName === 'string'
   }
 }
 

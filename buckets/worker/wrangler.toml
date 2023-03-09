@@ -1,6 +1,0 @@
-name = "kuba"
-compatibility_date = "2022-05-11"
-
-[vars]
-API_KEY = ""
-API_URL = ""

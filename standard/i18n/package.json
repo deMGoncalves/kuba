@@ -1,0 +1,6 @@
+{
+  "main": "src/index.js",
+  "name": "@kuba/i18n",
+  "private": true,
+  "version": "1.0.0"
+}

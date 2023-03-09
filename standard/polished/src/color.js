@@ -1,5 +1,3 @@
-import * as f from '@kuba/f'
-
 const colors = [
   'complete',
   'danger',
@@ -20,22 +18,10 @@ const modifiers = [
   'lightest'
 ]
 
-const color = (props) => (
-  f.join(
-    f.chain(
-      f.always('var(--color-'),
-      f.cond(
-        ...f.map(colors, (token) => [f.has(token), f.always(token)]),
-        [f.T, f.always('master')]
-      ),
-      f.cond(
-        ...f.map(modifiers, (token) => [f.has(token), f.always(`-${token}`)]),
-        [f.T, f.always('')]
-      ),
-      f.always(')')
-    )(props),
-    ''
-  )
-)
+function color (props) {
+  const color = colors.find((color) => props[color]) ?? 'master'
+  const modifier = modifiers.find((modifier) => props[modifier])
+  return `var(--color-${[color, modifier].filter(Boolean).join('-')})`
+}
 
-export default f.memoize(color)
+export default color

@@ -1,5 +1,3 @@
-import * as f from '@kuba/f'
-
 const modifiers = [
   'xxxs',
   'xxs',
@@ -14,18 +12,9 @@ const modifiers = [
   'giant'
 ]
 
-const size = (props) => (
-  f.join(
-    f.chain(
-      f.always('var(--font-size-'),
-      f.cond(
-        ...f.map(modifiers, (token) => [f.has(token), f.always(token)]),
-        [f.T, f.always('xs')]
-      ),
-      f.always(')')
-    )(props),
-    ''
-  )
-)
+function size (props) {
+  const modifier = modifiers.find((modifier) => props[modifier]) ?? 'xs'
+  return `var(--font-size-${modifier})`
+}
 
-export default f.memoize(size)
+export default size

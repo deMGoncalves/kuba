@@ -1,7 +1,14 @@
-import { isGap } from '@kuba/f/src/gap'
+import __ from './__'
 
-export default (func) =>
-  function callback (a) {
-    if (arguments.length === 0 || isGap(a)) return callback
-    return func(...arguments)
+function oneParameter (functionRef) {
+  return function evaluate (a) {
+    if (arguments.length === 0 || __.is(a)) return evaluate
+    return functionRef(...arguments)
   }
+}
+
+Object.assign(oneParameter, {
+  is: (functionRef) => functionRef.length === 1
+})
+
+export default oneParameter

@@ -1,9 +1,11 @@
-import * as f from '@kuba/f'
+import magic from '@kuba/magic'
 
-const render = (element, ...children) => (
-  Promise
-    .all(f.map(children, child => child.mount()))
-    .then(f.frame(children => element.append(...children)))
-)
+function render (node, element) {
+  node.append(element[render.flow]())
+}
 
-export default f.curry(f.arity(2, render))
+Object.assign(render, {
+  flow: magic.render_flow
+})
+
+export default render

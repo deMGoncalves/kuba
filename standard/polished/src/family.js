@@ -1,23 +1,11 @@
-import * as f from '@kuba/f'
-
 const modifiers = [
-  'highlight',
   'base',
-  'mono'
+  'highlight'
 ]
 
-const family = (props) => (
-  f.join(
-    f.chain(
-      f.always('var(--font-family-'),
-      f.cond(
-        ...f.map(modifiers, (token) => [f.has(token), f.always(token)]),
-        [f.T, f.always('base')]
-      ),
-      f.always(')')
-    )(props),
-    ''
-  )
-)
+function family (props) {
+  const modifier = modifiers.find((modifier) => props[modifier]) ?? 'base'
+  return `var(--font-family-${modifier})`
+}
 
-export default f.memoize(family)
+export default family

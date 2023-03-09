@@ -1,0 +1,6 @@
+{
+  "main": "src/index.js",
+  "name": "@kuba/passwordconfirm",
+  "private": true,
+  "version": "1.0.0"
+}

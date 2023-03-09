@@ -1,23 +1,12 @@
-import * as f from '@kuba/f'
-
 const modifiers = [
   'bold',
   'medium',
   'regular'
 ]
 
-const weight = (props) => (
-  f.join(
-    f.chain(
-      f.always('var(--font-weight-'),
-      f.cond(
-        ...f.map(modifiers, (token) => [f.has(token), f.always(token)]),
-        [f.T, f.always('regular')]
-      ),
-      f.always(')')
-    )(props),
-    ''
-  )
-)
+function weight (props) {
+  const modifier = modifiers.find((modifier) => props[modifier]) ?? 'regular'
+  return `var(--font-weight-${modifier})`
+}
 
-export default f.memoize(weight)
+export default weight

@@ -1,120 +1,100 @@
-import * as f from '@kuba/f'
 import Children from './children'
-import lazy from './lazy'
-import lifeCycle, { event } from './lifeCycle'
-import parser from './parser'
+import didMount from './didMount'
+import didUpdate from './didUpdate'
+import didUnmount from './didUnmount'
+import Key from './key'
+import overload from '@kuba/overload'
+import paint from './paint'
+import reflow from './reflow'
+import render from './render'
+import repaint from './repaint'
+import revoke from '@kuba/revoke'
+import Slot from './slot'
+import willMount from './willMount'
+import willUpdate from './willUpdate'
+import willUnmount from './willUnmount'
 
+@revoke
 class Fragment {
   #children
-  #element
-  #entity
+  #key
+  #node
   #slot
-  #uid
 
   get children () {
     return this.#children
   }
 
-  get element () {
-    return this.#element ??= parser.create(this)
-  }
-
-  get entity () {
-    return this.#entity
-  }
-
-  get isNode () {
-    return f.T()
-  }
-
-  get name () {
-    return '#fragment'
+  get key () {
+    return this.#key.value
   }
 
   get slot () {
-    return this.#slot
+    return this.#slot.value
   }
 
-  get type () {
-    return 11
-  }
-
-  get uid () {
-    return this.#uid
-  }
-
-  constructor (props, children) {
+  constructor (attrs, children) {
     this.#children = Children.create(children, this)
-    this.#slot = props.slot
-    this.#uid = props.uid
+    this.#key = Key.create(attrs)
+    this.#slot = Slot.create(attrs)
   }
 
-  async append (children) {
-    await parser.append(this, children)
+  @overload(
+    'appendChild'
+  )
+  after (child) {
+    const [...childList] = this.#children
+    const lastChild = childList.pop()
+    lastChild.after(child)
     return this
   }
 
-  appendChild (child) {
-    this.insertAdjacent(child)
+  append (childList) {
+    const nodeList = childList.map((child) => child[render.flow]())
+    this.#node.append(...nodeList)
     return this
   }
 
-  connect (entity) {
-    this.#entity = entity
-    return this
-  }
-
-  insertAdjacent (child) {
-    f.last(this.children).insertAdjacent(child)
-    return this
-  }
-
-  mount () {
-    lifeCycle.dispatch(this, event.WILL_MOUNT)
-    return Promise
-      .all([
-        this.children.mount()
-      ])
-      .then(() => lifeCycle.dispatch(this, event.DID_MOUNT))
-      .then(() => this.element)
-  }
-
+  @didUnmount
+  @willUnmount
   remove () {
-    lifeCycle.dispatch(this, event.WILL_UNMOUNT)
-    Promise
-      .all([
-        this.children.unmount()
-      ])
-      .then(() => lifeCycle.dispatch(this, event.DID_UNMOUNT))
+    const [...childList] = this.#children
+    childList.forEach((child) => child.remove())
     return this
   }
 
-  replace (fragment) {
-    lifeCycle.dispatch(this, event.WILL_UNMOUNT)
-    Promise
-      .all([
-        this.children.update(fragment.children)
-      ])
-      .then(() => lifeCycle.dispatch(this, event.DID_UNMOUNT))
+  replace (child, nChild) {
+    child.after(nChild)
+    child.remove()
     return this
   }
 
-  update (fragment) {
-    lifeCycle.dispatch(this, event.WILL_UPDATE)
-    Promise
-      .all([
-        this.children.update(fragment.children)
-      ])
-      .then(() => lifeCycle.dispatch(this, event.DID_UPDATE))
+  [reflow.different] (nFragment) {
+    return (
+      this[paint.instance]?.() !== nFragment[paint.instance]?.() ||
+      this.key !== nFragment.key
+    )
+  }
+
+  @didMount
+  @willMount
+  [render.flow] () {
+    this.#node ??= document.createDocumentFragment()
+    this.children[render.flow]()
+    return this.#node
+  }
+
+  @didUpdate
+  @willUpdate
+  [repaint.reflow] (fragment) {
+    this.children[repaint.reflow](fragment.children)
     return this
   }
 
-  [f.dunder.isEmpty] () {
-    return f.F()
-  }
-
-  static execute () {
-    return lazy(Fragment, ...arguments)
+  static execute (attrs, children) {
+    attrs = Object.entries(attrs)
+    children = children.flat(Infinity)
+    return new Fragment(attrs, children)
   }
 }
 

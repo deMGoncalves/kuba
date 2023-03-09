@@ -1,11 +1,11 @@
 export { default } from './h'
-
-export { default as filters } from './filters'
+export { hook as didMount } from './didMount'
+export { hook as didUnmount } from './didUnmount'
+export { hook as didUpdate } from './didUpdate'
 export { default as Fragment } from './fragment'
-export { default as lazy } from './lazy'
 export { default as paint } from './paint'
-export { default as parser } from './parser'
 export { default as render } from './render'
 export { default as repaint } from './repaint'
-
-export { didMount, didUnmount, didUpdate, willMount, willUnmount, willUpdate } from './lifeCycle'
+export { hook as willMount } from './willMount'
+export { hook as willUnmount } from './willUnmount'
+export { hook as willUpdate } from './willUpdate'

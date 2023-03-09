@@ -1,11 +1,4 @@
-import * as f from '@kuba/f'
-import style from './style'
-import tag from './tag'
+import inline from './inline'
+import internal from './internal'
 
-export default new Proxy({}, {
-  get: (_, tagName) => (
-    f.equal(tagName, 'style')
-      ? style
-      : tag(tagName)
-  )
-})
+export default new Proxy(internal, inline)

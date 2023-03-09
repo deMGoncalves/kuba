@@ -1,0 +1,69 @@
+{
+  "name": "kuba",
+	"short_name" : "kuba",
+  "description": "O melhor sistema online para oficinas mecânicas, funilaria, estética automotiva e lava-rápido",
+	"display" : "standalone",
+  "display_override": ["window-control-overlay", "minimal-ui"],
+  "orientation" : "portrait",
+	"url" : "https://www.kuba.autos",
+	"scope" : "/",
+  "id": "/?source=pwa",
+	"start_url" : "/?utm_source=pwa",
+	"theme_color" : "#ffffff",
+	"background_color" : "#ffffff",
+	"icons" : [
+    {
+      "src": "kuba_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "kuba_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "kuba_144x144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "kuba_96x96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "kuba_72x72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "kuba_48x48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots" : [],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "O melhor sistema online para oficinas mecânicas, funilaria, estética automotiva e lava-rápido",
+      "url": "/?utm_source=pwa",
+      "icons": [
+        {
+          "src": "kuba_144x144.png",
+          "type": "image/png",
+          "sizes": "144x144",
+          "purpose": "any maskable"
+        }
+      ]
+    }
+  ]
+}

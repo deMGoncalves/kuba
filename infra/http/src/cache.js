@@ -1,1 +1,0 @@
-export default 'force-cache'

@@ -1,9 +1,18 @@
-import * as f from '@kuba/f'
-import { after } from '@kuba/middleware'
+import magic from '@kuba/magic'
 
-function repaint (output) {
-  this[f.dunder.reflow]?.()
-  return output
+function repaint (_target, _prop, descriptor) {
+  const next = descriptor.value
+
+  Object.assign(descriptor, {
+    value () {
+      setImmediate(() => this[repaint.reflow]())
+      return Reflect.apply(next, this, arguments)
+    }
+  })
 }
 
-export default after(repaint)
+Object.assign(repaint, {
+  reflow: magic.repaint_reflow
+})
+
+export default repaint

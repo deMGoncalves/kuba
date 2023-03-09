@@ -1,0 +1,5 @@
+**/.husky/**
+**/.yarn/**
+**/coverage/**
+**/node_modules/**
+**/public/**

@@ -1,4 +1,3 @@
-export { default as blend } from './blend'
 export { default as color } from './color'
 export { default as family } from './family'
 export { default as size } from './size'

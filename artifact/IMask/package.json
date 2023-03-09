@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "imask": "^6.4.3"
+  },
+  "main": "src/index.js",
+  "name": "@kuba/imask",
+  "private": true,
+  "version": "1.0.0"
+}

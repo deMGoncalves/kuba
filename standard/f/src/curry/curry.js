@@ -4,5 +4,14 @@ import throwParameters from './throwParameters'
 import twoParameters from './twoParameters'
 import zeroParameter from './zeroParameter'
 
-export default (target) =>
-  ([zeroParameter, oneParameter, twoParameters, threeParameters][target.length] || throwParameters)(target)
+const evaluates = [
+  zeroParameter,
+  oneParameter,
+  twoParameters,
+  threeParameters,
+  throwParameters
+]
+
+export default (functionRef) => (
+  evaluates.find((evaluate) => evaluate.is(functionRef))(functionRef)
+)
