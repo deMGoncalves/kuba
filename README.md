@@ -4,6 +4,9 @@
   </a>
 </p>
 
+<br />
+<br />
+
 <p align="center">
   <a href="https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge}" target="_blank">
     <img src="https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=active+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26" alt="DeepSource" />
@@ -38,7 +41,7 @@
 <br />
 
 <p align="center">
-Ninguém precisa ter muitas habilidades para desenvolver um software que funcione, fazer direito é outra história. Desenvolver um software de maneira correta é um desafio que deixo lançado. Requer maturidade e conhecimentos que a maioria dos programadores ainda não tem.
+No mundo do desenvolvimento de software, a complexidade excessiva pode ser um obstáculo para alcançar resultados eficazes. O Kuba surge como uma solução para simplificar o processo de desenvolvimento, focando no domínio do negócio e na eficácia das funcionalidades entregues.
 </p>
 
 <p align="center">
