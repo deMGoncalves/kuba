@@ -62,16 +62,36 @@ Nossos entregáveis são simples, pequenos e imperfeitos. A visão do Kuba está
 <br />
 <br />
 
-![Component 3](https://user-images.githubusercontent.com/35740192/189503334-79ffcb22-507c-4bde-bc91-684ec714a121.png)
+<p align="center">
+  <strong>Unidades construtivas</strong>
+</p>
 
 <br />
 <br />
 
 <p align="center">
-  <strong>
-    <a href="https://www.kuba.ink">Demo</a> &nbsp;·&nbsp;
-    <a href="https://github.com/deMGoncalves/kuba">Repositório</a>
-  </strong>
+  <a href="https://kuba.ink" target="_blank" rel="noopener">
+    <img width="auto" src="https://user-images.githubusercontent.com/35740192/223884761-b4015f7e-1edb-4628-8a02-2d9b7734fda0.png" alt="kuba">
+  </a>
+</p>
+
+<p align="center">
+O Kuba utiliza cinco unidades construtivas para desenvolver web components:
+</p>
+<p align="center">
+Root Agregate: é a raiz do componente, responsável por gerenciar o estado e as operações do componente.
+</p>
+<p align="center">
+View: responsável por renderizar o componente na interface gráfica.
+</p>
+<p align="center">
+Action: os métodos do Root Agregate que serão acionados pelo usuário através da View.
+</p>
+<p align="center">
+State: getters do Root Agregate que permitem acessar o estado do componente.
+</p>
+<p align="center">
+Advice: funciona como uma camada de programação orientada a aspectos, permitindo adicionar funcionalidades ao componente sem modificar seu código.
 </p>
 
 <br />
