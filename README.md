@@ -10,7 +10,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/deMGoncalves/kuba) ](https://github.com/deMGoncalves/kuba/stargazers)
 [![GitHub license](https://img.shields.io/github/license/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba)
 
-Kuba é uma abordagem para construir aplicativos web modernos que permite a liberdade de programar do jeito que faz sentido para o produto. O Kuba permite que os desenvolvedores construam aplicativos mais eficientes e de alta qualidade, tornando o processo de desenvolvimento mais fácil e rápido.
+No mundo do desenvolvimento de software, a complexidade excessiva pode ser um obstáculo para alcançar resultados eficazes. O Kuba surge como uma solução para simplificar o processo de desenvolvimento, focando no domínio do negócio e na eficácia das funcionalidades entregues.
 
 ## Como usar
 
