@@ -12,40 +12,83 @@
 
 No mundo do desenvolvimento de software, a complexidade excessiva pode ser um obstáculo para alcançar resultados eficazes. O Kuba surge como uma solução para simplificar o processo de desenvolvimento, focando no domínio do negócio e na eficácia das funcionalidades entregues.
 
-## O Manifesto
+## Manifesto
 
-Nós acreditamos que a simplicidade é um pré-requisito para a eficácia. Desenvolver um software de maneira correta é um desafio que requer maturidade e conhecimentos que a maioria dos programadores ainda não tem. Ao focar no domínio, minimizamos a quantidade de programadores necessários para desenvolver e sustentar um software, tornando as mudanças mais simples e fáceis.
+O manifesto Kuba é uma declaração de princípios que guiam o desenvolvimento do projeto:
 
-Nossos entregáveis são simples, pequenos e imperfeitos. A visão do Kuba está além da programação, buscando oferecer uma solução que maximize as funcionalidades e flexibilidades, sem perder de vista a simplicidade e eficácia.
+1. Simplicidade é a chave para a escalabilidade
+2. Pequeno é belo
+3. Imperfeito é humano
 
-## Como usar
+## Unidades construtivas
+
+As unidades construtivas do Kuba são:
+
+1. **View**: Responsável pela renderização do HTML, CSS e JavaScript da aplicação.
+2. **Root Aggregate**: Responsável pela modelagem do domínio da aplicação.
+  	- **Action**: Responsável por receber e manipular a entrada do usuário.
+    - **State**: Responsável por gerenciar o estado da aplicação.
+3. **Advice**: Responsável por gerenciar aspectos transversais da aplicação, como logs, métricas e segurança.
+
+## Benefícios
+
+O Kuba traz diversos benefícios para a construção de aplicações web, como:
+
+- Código simples e fácil de manter
+- Escalabilidade e flexibilidade para acomodar mudanças no futuro
+- Modularidade e reutilização de código
+- Alta qualidade de código, seguindo os princípios do manifesto Kuba
+- Facilidade de teste e depuração
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em seu ambiente de desenvolvimento:
+
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/)
+* [Yarn](https://yarnpkg.com/)
+
+## Experimente
 
 Para começar a usar o Kuba, siga os seguintes passos:
 
-1. Instale o Node.js em seu computador, se ainda não estiver instalado. Você pode baixar o instalador do Node.js a partir do site oficial.
-
-2. Instale o gerenciador de pacotes Yarn ou NPM. Para instalar o Yarn, você pode seguir as instruções do site oficial. Para instalar o NPM, basta instalar o Node.js, pois o NPM é instalado automaticamente junto com o Node.js.
-
-3. Clone o repositório do Kuba em seu computador, usando o seguinte comando no terminal:
+1. Clone o repositório do Kuba em seu computador, usando o seguinte comando no terminal:
 ```bash
 git clone https://github.com/deMGoncalves/kuba.git
 ```
 
-4. Acesse o diretório do projeto usando o seguinte comando:
+2. Acesse o diretório do projeto usando o seguinte comando:
 ```bash
 cd kuba
 ```
 
-5. Instale as dependências do projeto usando o seguinte comando:
+3. Instale as dependências do projeto usando o seguinte comando:
 ```bash
 yarn install
 ```
 
-6. Inicie o servidor de desenvolvimento usando o seguinte comando:
+4. Inicie o servidor de desenvolvimento usando o seguinte comando:
 ```bash
 yarn start
 ```
 
-7. Agora, você pode acessar a aplicação em seu navegador, acessando a URL [![http://localhost:3000/]](http://localhost:3000/).
+5. Agora, você pode acessar a aplicação em seu navegador, acessando a URL [http://localhost:3000/](http://localhost:3000/).
 
-Para mais informações sobre como usar o Kuba, consulte a documentação completa na [![Wiki]]([http://localhost:3000/](https://github.com/deMGoncalves/kuba/wiki)) do projeto.
+Para mais informações sobre como usar o Kuba, consulte a documentação completa na [Wiki]([http://localhost:3000/](https://github.com/deMGoncalves/kuba/wiki)) do projeto.
+
+## Contribua
+
+O Kuba é um projeto open source, e todas as contribuições são bem-vindas. Se você quer ajudar a melhorar o projeto, siga os seguintes passos:
+
+1. Faça um fork do repositório
+2. Clone o fork para o seu ambiente local
+3. Instale as dependências do projeto com yarn install
+4. Crie uma branch para a sua contribuição com git checkout -b minha-contribuicao
+5. Faça as mudanças no código e escreva testes para elas
+6. Execute os testes com yarn test
+7. Faça o commit das suas mudanças com uma mensagem clara e concisa
+8. Envie um pull request para o repositório original.
+
+## Licença
+
+O Kuba é um projeto open source licenciado sob a licença MIT. Veja o arquivo LICENSE para mais informações.
