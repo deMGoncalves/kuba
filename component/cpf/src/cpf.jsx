@@ -2,7 +2,7 @@ import * as filter from '@kuba/filter'
 import * as validator from '@kuba/validator'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
-import imask from '@kuba/imask'
+import imask from '../../../.prelude/artifact/IMask/src'
 import pattern from './pattern'
 
 @paint(component)

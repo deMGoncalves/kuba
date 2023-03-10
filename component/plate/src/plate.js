@@ -3,7 +3,7 @@ import * as validator from '@kuba/validator'
 import { paint, repaint } from '@kuba/h'
 import component from './component'
 import global from '@kuba/global'
-import imask from '@kuba/imask'
+import imask from '../../../.prelude/artifact/IMask/src'
 import overload from '@kuba/overload'
 import storage from './storage'
 

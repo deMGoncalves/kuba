@@ -1002,9 +1002,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kuba/accordion@workspace:element/accordion":
+"@kuba/accordion@workspace:.prelude/element/accordion":
   version: 0.0.0-use.local
-  resolution: "@kuba/accordion@workspace:element/accordion"
+  resolution: "@kuba/accordion@workspace:.prelude/element/accordion"
   languageName: unknown
   linkType: soft
 
@@ -1044,9 +1044,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/button@workspace:element/button":
+"@kuba/button@workspace:.prelude/element/button":
   version: 0.0.0-use.local
-  resolution: "@kuba/button@workspace:element/button"
+  resolution: "@kuba/button@workspace:.prelude/element/button"
   languageName: unknown
   linkType: soft
 
@@ -1056,9 +1056,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/checkbox@workspace:element/checkbox":
+"@kuba/checkbox@workspace:.prelude/element/checkbox":
   version: 0.0.0-use.local
-  resolution: "@kuba/checkbox@workspace:element/checkbox"
+  resolution: "@kuba/checkbox@workspace:.prelude/element/checkbox"
   languageName: unknown
   linkType: soft
 
@@ -1068,9 +1068,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/choose@workspace:directive/choose":
+"@kuba/choose@workspace:.prelude/directive/choose":
   version: 0.0.0-use.local
-  resolution: "@kuba/choose@workspace:directive/choose"
+  resolution: "@kuba/choose@workspace:.prelude/directive/choose"
   languageName: unknown
   linkType: soft
 
@@ -1086,15 +1086,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/container@workspace:element/container":
+"@kuba/container@workspace:.prelude/element/container":
   version: 0.0.0-use.local
-  resolution: "@kuba/container@workspace:element/container"
+  resolution: "@kuba/container@workspace:.prelude/element/container"
   languageName: unknown
   linkType: soft
 
-"@kuba/cookie@workspace:standard/cookie":
+"@kuba/cookie@workspace:.prelude/standard/cookie":
   version: 0.0.0-use.local
-  resolution: "@kuba/cookie@workspace:standard/cookie"
+  resolution: "@kuba/cookie@workspace:.prelude/standard/cookie"
   languageName: unknown
   linkType: soft
 
@@ -1128,27 +1128,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/description@workspace:pixel/description":
+"@kuba/description@workspace:.prelude/pixel/description":
   version: 0.0.0-use.local
-  resolution: "@kuba/description@workspace:pixel/description"
+  resolution: "@kuba/description@workspace:.prelude/pixel/description"
   languageName: unknown
   linkType: soft
 
-"@kuba/divider@workspace:element/divider":
+"@kuba/divider@workspace:.prelude/element/divider":
   version: 0.0.0-use.local
-  resolution: "@kuba/divider@workspace:element/divider"
+  resolution: "@kuba/divider@workspace:.prelude/element/divider"
   languageName: unknown
   linkType: soft
 
-"@kuba/dropdown@workspace:element/dropdown":
+"@kuba/dropdown@workspace:.prelude/element/dropdown":
   version: 0.0.0-use.local
-  resolution: "@kuba/dropdown@workspace:element/dropdown"
+  resolution: "@kuba/dropdown@workspace:.prelude/element/dropdown"
   languageName: unknown
   linkType: soft
 
-"@kuba/echo@workspace:standard/echo":
+"@kuba/echo@workspace:.prelude/standard/echo":
   version: 0.0.0-use.local
-  resolution: "@kuba/echo@workspace:standard/echo"
+  resolution: "@kuba/echo@workspace:.prelude/standard/echo"
   languageName: unknown
   linkType: soft
 
@@ -1158,33 +1158,33 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/env@workspace:standard/env":
+"@kuba/env@workspace:.prelude/standard/env":
   version: 0.0.0-use.local
-  resolution: "@kuba/env@workspace:standard/env"
+  resolution: "@kuba/env@workspace:.prelude/standard/env"
   languageName: unknown
   linkType: soft
 
-"@kuba/f@workspace:standard/f":
+"@kuba/f@workspace:.prelude/standard/f":
   version: 0.0.0-use.local
-  resolution: "@kuba/f@workspace:standard/f"
+  resolution: "@kuba/f@workspace:.prelude/standard/f"
   languageName: unknown
   linkType: soft
 
-"@kuba/favicon@workspace:pixel/favicon":
+"@kuba/favicon@workspace:.prelude/pixel/favicon":
   version: 0.0.0-use.local
-  resolution: "@kuba/favicon@workspace:pixel/favicon"
+  resolution: "@kuba/favicon@workspace:.prelude/pixel/favicon"
   languageName: unknown
   linkType: soft
 
-"@kuba/filter@workspace:standard/filter":
+"@kuba/filter@workspace:.prelude/standard/filter":
   version: 0.0.0-use.local
-  resolution: "@kuba/filter@workspace:standard/filter"
+  resolution: "@kuba/filter@workspace:.prelude/standard/filter"
   languageName: unknown
   linkType: soft
 
-"@kuba/footer@workspace:element/footer":
+"@kuba/footer@workspace:.prelude/element/footer":
   version: 0.0.0-use.local
-  resolution: "@kuba/footer@workspace:element/footer"
+  resolution: "@kuba/footer@workspace:.prelude/element/footer"
   languageName: unknown
   linkType: soft
 
@@ -1194,9 +1194,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/form@workspace:element/form":
+"@kuba/form@workspace:.prelude/element/form":
   version: 0.0.0-use.local
-  resolution: "@kuba/form@workspace:element/form"
+  resolution: "@kuba/form@workspace:.prelude/element/form"
   languageName: unknown
   linkType: soft
 
@@ -1212,39 +1212,39 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/global@workspace:standard/global":
+"@kuba/global@workspace:.prelude/standard/global":
   version: 0.0.0-use.local
-  resolution: "@kuba/global@workspace:standard/global"
+  resolution: "@kuba/global@workspace:.prelude/standard/global"
   languageName: unknown
   linkType: soft
 
-"@kuba/group@workspace:polyfill/group":
+"@kuba/group@workspace:.prelude/polyfill/group":
   version: 0.0.0-use.local
-  resolution: "@kuba/group@workspace:polyfill/group"
+  resolution: "@kuba/group@workspace:.prelude/polyfill/group"
   languageName: unknown
   linkType: soft
 
-"@kuba/h@workspace:standard/h":
+"@kuba/h@workspace:.prelude/standard/h":
   version: 0.0.0-use.local
-  resolution: "@kuba/h@workspace:standard/h"
+  resolution: "@kuba/h@workspace:.prelude/standard/h"
   languageName: unknown
   linkType: soft
 
-"@kuba/header@workspace:element/header":
+"@kuba/header@workspace:.prelude/element/header":
   version: 0.0.0-use.local
-  resolution: "@kuba/header@workspace:element/header"
+  resolution: "@kuba/header@workspace:.prelude/element/header"
   languageName: unknown
   linkType: soft
 
-"@kuba/hgroup@workspace:element/hgroup":
+"@kuba/hgroup@workspace:.prelude/element/hgroup":
   version: 0.0.0-use.local
-  resolution: "@kuba/hgroup@workspace:element/hgroup"
+  resolution: "@kuba/hgroup@workspace:.prelude/element/hgroup"
   languageName: unknown
   linkType: soft
 
-"@kuba/hide@workspace:directive/hide":
+"@kuba/hide@workspace:.prelude/directive/hide":
   version: 0.0.0-use.local
-  resolution: "@kuba/hide@workspace:directive/hide"
+  resolution: "@kuba/hide@workspace:.prelude/directive/hide"
   languageName: unknown
   linkType: soft
 
@@ -1260,53 +1260,53 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/hook@workspace:standard/hook":
+"@kuba/hook@workspace:.prelude/standard/hook":
   version: 0.0.0-use.local
-  resolution: "@kuba/hook@workspace:standard/hook"
+  resolution: "@kuba/hook@workspace:.prelude/standard/hook"
   languageName: unknown
   linkType: soft
 
-"@kuba/http@workspace:standard/http":
+"@kuba/http@workspace:.prelude/standard/http":
   version: 0.0.0-use.local
-  resolution: "@kuba/http@workspace:standard/http"
+  resolution: "@kuba/http@workspace:.prelude/standard/http"
   languageName: unknown
   linkType: soft
 
-"@kuba/i18n@workspace:standard/i18n":
+"@kuba/i18n@workspace:.prelude/standard/i18n":
   version: 0.0.0-use.local
-  resolution: "@kuba/i18n@workspace:standard/i18n"
+  resolution: "@kuba/i18n@workspace:.prelude/standard/i18n"
   languageName: unknown
   linkType: soft
 
-"@kuba/icon@workspace:element/icon":
+"@kuba/icon@workspace:.prelude/element/icon":
   version: 0.0.0-use.local
-  resolution: "@kuba/icon@workspace:element/icon"
+  resolution: "@kuba/icon@workspace:.prelude/element/icon"
   languageName: unknown
   linkType: soft
 
-"@kuba/imask@workspace:artifact/IMask":
+"@kuba/imask@workspace:.prelude/artifact/IMask":
   version: 0.0.0-use.local
-  resolution: "@kuba/imask@workspace:artifact/IMask"
+  resolution: "@kuba/imask@workspace:.prelude/artifact/IMask"
   dependencies:
     imask: ^6.4.3
   languageName: unknown
   linkType: soft
 
-"@kuba/input@workspace:element/input":
+"@kuba/input@workspace:.prelude/element/input":
   version: 0.0.0-use.local
-  resolution: "@kuba/input@workspace:element/input"
+  resolution: "@kuba/input@workspace:.prelude/element/input"
   languageName: unknown
   linkType: soft
 
-"@kuba/interceptor@workspace:standard/interceptor":
+"@kuba/interceptor@workspace:.prelude/standard/interceptor":
   version: 0.0.0-use.local
-  resolution: "@kuba/interceptor@workspace:standard/interceptor"
+  resolution: "@kuba/interceptor@workspace:.prelude/standard/interceptor"
   languageName: unknown
   linkType: soft
 
-"@kuba/lang@workspace:standard/lang":
+"@kuba/lang@workspace:.prelude/standard/lang":
   version: 0.0.0-use.local
-  resolution: "@kuba/lang@workspace:standard/lang"
+  resolution: "@kuba/lang@workspace:.prelude/standard/lang"
   languageName: unknown
   linkType: soft
 
@@ -1316,15 +1316,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/lazy@workspace:directive/lazy":
+"@kuba/lazy@workspace:.prelude/directive/lazy":
   version: 0.0.0-use.local
-  resolution: "@kuba/lazy@workspace:directive/lazy"
+  resolution: "@kuba/lazy@workspace:.prelude/directive/lazy"
   languageName: unknown
   linkType: soft
 
-"@kuba/link@workspace:element/link":
+"@kuba/link@workspace:.prelude/element/link":
   version: 0.0.0-use.local
-  resolution: "@kuba/link@workspace:element/link"
+  resolution: "@kuba/link@workspace:.prelude/element/link"
   languageName: unknown
   linkType: soft
 
@@ -1346,27 +1346,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/magic@workspace:standard/magic":
+"@kuba/magic@workspace:.prelude/standard/magic":
   version: 0.0.0-use.local
-  resolution: "@kuba/magic@workspace:standard/magic"
+  resolution: "@kuba/magic@workspace:.prelude/standard/magic"
   languageName: unknown
   linkType: soft
 
-"@kuba/main@workspace:element/main":
+"@kuba/main@workspace:.prelude/element/main":
   version: 0.0.0-use.local
-  resolution: "@kuba/main@workspace:element/main"
+  resolution: "@kuba/main@workspace:.prelude/element/main"
   languageName: unknown
   linkType: soft
 
-"@kuba/manifest@workspace:pixel/manifest":
+"@kuba/manifest@workspace:.prelude/pixel/manifest":
   version: 0.0.0-use.local
-  resolution: "@kuba/manifest@workspace:pixel/manifest"
+  resolution: "@kuba/manifest@workspace:.prelude/pixel/manifest"
   languageName: unknown
   linkType: soft
 
-"@kuba/middleware@workspace:standard/middleware":
+"@kuba/middleware@workspace:.prelude/standard/middleware":
   version: 0.0.0-use.local
-  resolution: "@kuba/middleware@workspace:standard/middleware"
+  resolution: "@kuba/middleware@workspace:.prelude/standard/middleware"
   languageName: unknown
   linkType: soft
 
@@ -1394,23 +1394,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/nouislider@workspace:artifact/noUiSlider":
+"@kuba/nouislider@workspace:.prelude/artifact/noUiSlider":
   version: 0.0.0-use.local
-  resolution: "@kuba/nouislider@workspace:artifact/noUiSlider"
+  resolution: "@kuba/nouislider@workspace:.prelude/artifact/noUiSlider"
   dependencies:
     nouislider: ^15.7.0
   languageName: unknown
   linkType: soft
 
-"@kuba/overload@workspace:standard/overload":
+"@kuba/overload@workspace:.prelude/standard/overload":
   version: 0.0.0-use.local
-  resolution: "@kuba/overload@workspace:standard/overload"
+  resolution: "@kuba/overload@workspace:.prelude/standard/overload"
   languageName: unknown
   linkType: soft
 
-"@kuba/override@workspace:standard/override":
+"@kuba/override@workspace:.prelude/standard/override":
   version: 0.0.0-use.local
-  resolution: "@kuba/override@workspace:standard/override"
+  resolution: "@kuba/override@workspace:.prelude/standard/override"
   languageName: unknown
   linkType: soft
 
@@ -1444,45 +1444,45 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/polished@workspace:standard/polished":
+"@kuba/polished@workspace:.prelude/standard/polished":
   version: 0.0.0-use.local
-  resolution: "@kuba/polished@workspace:standard/polished"
+  resolution: "@kuba/polished@workspace:.prelude/standard/polished"
   languageName: unknown
   linkType: soft
 
-"@kuba/preconnect@workspace:pixel/preconnect":
+"@kuba/preconnect@workspace:.prelude/pixel/preconnect":
   version: 0.0.0-use.local
-  resolution: "@kuba/preconnect@workspace:pixel/preconnect"
+  resolution: "@kuba/preconnect@workspace:.prelude/pixel/preconnect"
   languageName: unknown
   linkType: soft
 
-"@kuba/props@workspace:standard/props":
+"@kuba/props@workspace:.prelude/standard/props":
   version: 0.0.0-use.local
-  resolution: "@kuba/props@workspace:standard/props"
+  resolution: "@kuba/props@workspace:.prelude/standard/props"
   languageName: unknown
   linkType: soft
 
-"@kuba/requestanimationframe@workspace:polyfill/requestAnimationFrame":
+"@kuba/requestanimationframe@workspace:.prelude/polyfill/requestAnimationFrame":
   version: 0.0.0-use.local
-  resolution: "@kuba/requestanimationframe@workspace:polyfill/requestAnimationFrame"
+  resolution: "@kuba/requestanimationframe@workspace:.prelude/polyfill/requestAnimationFrame"
   languageName: unknown
   linkType: soft
 
-"@kuba/reset@workspace:pixel/reset":
+"@kuba/reset@workspace:.prelude/pixel/reset":
   version: 0.0.0-use.local
-  resolution: "@kuba/reset@workspace:pixel/reset"
+  resolution: "@kuba/reset@workspace:.prelude/pixel/reset"
   languageName: unknown
   linkType: soft
 
-"@kuba/revoke@workspace:standard/revoke":
+"@kuba/revoke@workspace:.prelude/standard/revoke":
   version: 0.0.0-use.local
-  resolution: "@kuba/revoke@workspace:standard/revoke"
+  resolution: "@kuba/revoke@workspace:.prelude/standard/revoke"
   languageName: unknown
   linkType: soft
 
-"@kuba/router@workspace:standard/router":
+"@kuba/router@workspace:.prelude/standard/router":
   version: 0.0.0-use.local
-  resolution: "@kuba/router@workspace:standard/router"
+  resolution: "@kuba/router@workspace:.prelude/standard/router"
   languageName: unknown
   linkType: soft
 
@@ -1510,15 +1510,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/serviceworker@workspace:pixel/serviceWorker":
+"@kuba/serviceworker@workspace:.prelude/pixel/serviceWorker":
   version: 0.0.0-use.local
-  resolution: "@kuba/serviceworker@workspace:pixel/serviceWorker"
+  resolution: "@kuba/serviceworker@workspace:.prelude/pixel/serviceWorker"
   languageName: unknown
   linkType: soft
 
-"@kuba/setimmediate@workspace:polyfill/setImmediate":
+"@kuba/setimmediate@workspace:.prelude/polyfill/setImmediate":
   version: 0.0.0-use.local
-  resolution: "@kuba/setimmediate@workspace:polyfill/setImmediate"
+  resolution: "@kuba/setimmediate@workspace:.prelude/polyfill/setImmediate"
   languageName: unknown
   linkType: soft
 
@@ -1528,41 +1528,41 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/show@workspace:directive/show":
+"@kuba/show@workspace:.prelude/directive/show":
   version: 0.0.0-use.local
-  resolution: "@kuba/show@workspace:directive/show"
+  resolution: "@kuba/show@workspace:.prelude/directive/show"
   languageName: unknown
   linkType: soft
 
-"@kuba/signpost@workspace:element/signpost":
+"@kuba/signpost@workspace:.prelude/element/signpost":
   version: 0.0.0-use.local
-  resolution: "@kuba/signpost@workspace:element/signpost"
+  resolution: "@kuba/signpost@workspace:.prelude/element/signpost"
   languageName: unknown
   linkType: soft
 
-"@kuba/styled@workspace:standard/styled":
+"@kuba/styled@workspace:.prelude/standard/styled":
   version: 0.0.0-use.local
-  resolution: "@kuba/styled@workspace:standard/styled"
+  resolution: "@kuba/styled@workspace:.prelude/standard/styled"
   languageName: unknown
   linkType: soft
 
-"@kuba/stylesheet@workspace:pixel/stylesheet":
+"@kuba/stylesheet@workspace:.prelude/pixel/stylesheet":
   version: 0.0.0-use.local
-  resolution: "@kuba/stylesheet@workspace:pixel/stylesheet"
+  resolution: "@kuba/stylesheet@workspace:.prelude/pixel/stylesheet"
   languageName: unknown
   linkType: soft
 
-"@kuba/supabase@workspace:artifact/supabase":
+"@kuba/supabase@workspace:.prelude/artifact/supabase":
   version: 0.0.0-use.local
-  resolution: "@kuba/supabase@workspace:artifact/supabase"
+  resolution: "@kuba/supabase@workspace:.prelude/artifact/supabase"
   dependencies:
     "@supabase/supabase-js": ^2.7.1
   languageName: unknown
   linkType: soft
 
-"@kuba/tab@workspace:element/tab":
+"@kuba/tab@workspace:.prelude/element/tab":
   version: 0.0.0-use.local
-  resolution: "@kuba/tab@workspace:element/tab"
+  resolution: "@kuba/tab@workspace:.prelude/element/tab"
   languageName: unknown
   linkType: soft
 
@@ -1572,51 +1572,51 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/text@workspace:element/text":
+"@kuba/text@workspace:.prelude/element/text":
   version: 0.0.0-use.local
-  resolution: "@kuba/text@workspace:element/text"
+  resolution: "@kuba/text@workspace:.prelude/element/text"
   languageName: unknown
   linkType: soft
 
-"@kuba/textarea@workspace:element/textarea":
+"@kuba/textarea@workspace:.prelude/element/textarea":
   version: 0.0.0-use.local
-  resolution: "@kuba/textarea@workspace:element/textarea"
+  resolution: "@kuba/textarea@workspace:.prelude/element/textarea"
   languageName: unknown
   linkType: soft
 
-"@kuba/themecolor@workspace:pixel/themeColor":
+"@kuba/themecolor@workspace:.prelude/pixel/themeColor":
   version: 0.0.0-use.local
-  resolution: "@kuba/themecolor@workspace:pixel/themeColor"
+  resolution: "@kuba/themecolor@workspace:.prelude/pixel/themeColor"
   languageName: unknown
   linkType: soft
 
-"@kuba/title@workspace:pixel/title":
+"@kuba/title@workspace:.prelude/pixel/title":
   version: 0.0.0-use.local
-  resolution: "@kuba/title@workspace:pixel/title"
+  resolution: "@kuba/title@workspace:.prelude/pixel/title"
   languageName: unknown
   linkType: soft
 
-"@kuba/token@workspace:pixel/token":
+"@kuba/token@workspace:.prelude/pixel/token":
   version: 0.0.0-use.local
-  resolution: "@kuba/token@workspace:pixel/token"
+  resolution: "@kuba/token@workspace:.prelude/pixel/token"
   languageName: unknown
   linkType: soft
 
-"@kuba/topbar@workspace:element/topBar":
+"@kuba/topbar@workspace:.prelude/element/topBar":
   version: 0.0.0-use.local
-  resolution: "@kuba/topbar@workspace:element/topBar"
+  resolution: "@kuba/topbar@workspace:.prelude/element/topBar"
   languageName: unknown
   linkType: soft
 
-"@kuba/validator@workspace:standard/validator":
+"@kuba/validator@workspace:.prelude/standard/validator":
   version: 0.0.0-use.local
-  resolution: "@kuba/validator@workspace:standard/validator"
+  resolution: "@kuba/validator@workspace:.prelude/standard/validator"
   languageName: unknown
   linkType: soft
 
-"@kuba/viewport@workspace:pixel/viewport":
+"@kuba/viewport@workspace:.prelude/pixel/viewport":
   version: 0.0.0-use.local
-  resolution: "@kuba/viewport@workspace:pixel/viewport"
+  resolution: "@kuba/viewport@workspace:.prelude/pixel/viewport"
   languageName: unknown
   linkType: soft
 
@@ -1626,9 +1626,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/zone@workspace:directive/zone":
+"@kuba/zone@workspace:.prelude/directive/zone":
   version: 0.0.0-use.local
-  resolution: "@kuba/zone@workspace:directive/zone"
+  resolution: "@kuba/zone@workspace:.prelude/directive/zone"
   languageName: unknown
   linkType: soft
 

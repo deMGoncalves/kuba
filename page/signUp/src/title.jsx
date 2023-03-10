@@ -1,5 +1,5 @@
 import './style'
-import { setTitle } from '@kuba/title'
+import { setTitle } from '../../../.prelude/pixel/title/src'
 import h from '@kuba/h'
 import text from '@kuba/text'
 

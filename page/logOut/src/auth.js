@@ -1,7 +1,7 @@
 import { willMount, paint } from '@kuba/h'
 import { urlFor } from '@kuba/router'
 import component from './component'
-import supabase from '@kuba/supabase'
+import supabase from '../../../.prelude/artifact/supabase/src'
 
 @paint(component)
 class Auth {

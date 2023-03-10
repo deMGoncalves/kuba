@@ -1,7 +1,7 @@
 import { setGlobal } from '@kuba/global'
 import interceptor from '@kuba/interceptor'
 import magic from '@kuba/magic'
-import supabase from '@kuba/supabase'
+import supabase from '../../../.prelude/artifact/supabase/src'
 
 const storage = interceptor(function (args, next) {
   const [plate] = args

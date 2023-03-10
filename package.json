@@ -52,14 +52,14 @@
   "version": "1.0.0",
   "workspaces": {
     "packages": [
-      "artifact/*",
+      ".prelude/artifact/*",
+      ".prelude/directive/*",
+      ".prelude/element/*",
+      ".prelude/pixel/*",
+      ".prelude/polyfill/*",
+      ".prelude/standard/*",
       "component/*",
-      "directive/*",
-      "element/*",
-      "page/*",
-      "pixel/*",
-      "polyfill/*",
-      "standard/*"
+      "page/*"
     ]
   }
 }

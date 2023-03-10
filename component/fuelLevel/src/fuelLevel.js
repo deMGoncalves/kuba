@@ -1,6 +1,6 @@
 import { paint } from '@kuba/h'
 import component from './component'
-import noUiSlider from '@kuba/nouislider'
+import noUiSlider from '../../../.prelude/artifact/noUiSlider/src'
 
 @paint(component)
 @noUiSlider
