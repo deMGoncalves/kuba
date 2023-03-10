@@ -1050,21 +1050,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/changepassword@workspace:page/changePassword":
-  version: 0.0.0-use.local
-  resolution: "@kuba/changepassword@workspace:page/changePassword"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/checkbox@workspace:.prelude/element/checkbox":
   version: 0.0.0-use.local
   resolution: "@kuba/checkbox@workspace:.prelude/element/checkbox"
   languageName: unknown
   linkType: soft
 
-"@kuba/checkyouremail@workspace:page/checkYourEmail":
+"@kuba/checkyouremail@workspace:oauth/checkYourEmail":
   version: 0.0.0-use.local
-  resolution: "@kuba/checkyouremail@workspace:page/checkYourEmail"
+  resolution: "@kuba/checkyouremail@workspace:oauth/checkYourEmail"
   languageName: unknown
   linkType: soft
 
@@ -1104,9 +1098,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/createanaccount@workspace:page/signUp":
+"@kuba/createanaccount@workspace:oauth/signUp":
   version: 0.0.0-use.local
-  resolution: "@kuba/createanaccount@workspace:page/signUp"
+  resolution: "@kuba/createanaccount@workspace:oauth/signUp"
   languageName: unknown
   linkType: soft
 
@@ -1188,9 +1182,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/forgotpassword@workspace:page/forgotPassword":
+"@kuba/forgotpassword@workspace:oauth/forgotPassword":
   version: 0.0.0-use.local
-  resolution: "@kuba/forgotpassword@workspace:page/forgotPassword"
+  resolution: "@kuba/forgotpassword@workspace:oauth/forgotPassword"
   languageName: unknown
   linkType: soft
 
@@ -1254,9 +1248,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/home@workspace:page/home":
+"@kuba/home@workspace:site/home":
   version: 0.0.0-use.local
-  resolution: "@kuba/home@workspace:page/home"
+  resolution: "@kuba/home@workspace:site/home"
   languageName: unknown
   linkType: soft
 
@@ -1328,9 +1322,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/login@workspace:page/logIn":
+"@kuba/login@workspace:oauth/logIn":
   version: 0.0.0-use.local
-  resolution: "@kuba/login@workspace:page/logIn"
+  resolution: "@kuba/login@workspace:oauth/logIn"
   languageName: unknown
   linkType: soft
 
@@ -1340,9 +1334,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/logout@workspace:page/logOut":
+"@kuba/logout@workspace:oauth/logOut":
   version: 0.0.0-use.local
-  resolution: "@kuba/logout@workspace:page/logOut"
+  resolution: "@kuba/logout@workspace:oauth/logOut"
   languageName: unknown
   linkType: soft
 
@@ -1414,9 +1408,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/pagenotfound@workspace:page/pageNotFound":
+"@kuba/pagenotfound@workspace:site/pageNotFound":
   version: 0.0.0-use.local
-  resolution: "@kuba/pagenotfound@workspace:page/pageNotFound"
+  resolution: "@kuba/pagenotfound@workspace:site/pageNotFound"
   languageName: unknown
   linkType: soft
 
@@ -1432,9 +1426,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/passwordreset@workspace:page/passwordReset":
+"@kuba/passwordreset@workspace:oauth/passwordReset":
   version: 0.0.0-use.local
-  resolution: "@kuba/passwordreset@workspace:page/passwordReset"
+  resolution: "@kuba/passwordreset@workspace:oauth/passwordReset"
   languageName: unknown
   linkType: soft
 
@@ -1522,9 +1516,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/setnewpassword@workspace:page/setNewPassword":
+"@kuba/setnewpassword@workspace:oauth/setNewPassword":
   version: 0.0.0-use.local
-  resolution: "@kuba/setnewpassword@workspace:page/setNewPassword"
+  resolution: "@kuba/setnewpassword@workspace:oauth/setNewPassword"
   languageName: unknown
   linkType: soft
 

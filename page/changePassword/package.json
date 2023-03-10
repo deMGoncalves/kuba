@@ -1,6 +1,0 @@
-{
-  "main": "src/index.jsx",
-  "name": "@kuba/changepassword",
-  "private": true,
-  "version": "1.0.0"
-}

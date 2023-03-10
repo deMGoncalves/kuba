@@ -59,7 +59,8 @@
       ".prelude/polyfill/*",
       ".prelude/standard/*",
       "component/*",
-      "page/*"
+      "oauth/*",
+      "site/*"
     ]
   }
 }

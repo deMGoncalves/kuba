@@ -14,8 +14,6 @@ import '@kuba/title'
 import '@kuba/token'
 import '@kuba/viewport'
 
-import '@kuba/home'
-
 import '@kuba/checkyouremail'
 import '@kuba/createanaccount'
 import '@kuba/forgotpassword'
@@ -24,4 +22,5 @@ import '@kuba/logout'
 import '@kuba/passwordreset'
 import '@kuba/setnewpassword'
 
+import '@kuba/home'
 import '@kuba/pagenotfound'
