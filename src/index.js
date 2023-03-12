@@ -2,11 +2,10 @@ import '@kuba/group'
 import '@kuba/requestanimationframe'
 import '@kuba/setimmediate'
 
-import '@kuba/description'
-import '@kuba/reset'
-import '@kuba/serviceworker'
-import '@kuba/title'
 import '@kuba/token'
+import '@kuba/reset'
+import '@kuba/title'
+import '@kuba/description'
 
 import '@kuba/checkyouremail'
 import '@kuba/createanaccount'
@@ -18,3 +17,5 @@ import '@kuba/setnewpassword'
 
 import '@kuba/home'
 import '@kuba/pagenotfound'
+
+import '@kuba/serviceworker'
