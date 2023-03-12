@@ -1522,12 +1522,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/stylesheet@workspace:.prelude/pixel/stylesheet":
-  version: 0.0.0-use.local
-  resolution: "@kuba/stylesheet@workspace:.prelude/pixel/stylesheet"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/supabase@workspace:.prelude/artifact/supabase":
   version: 0.0.0-use.local
   resolution: "@kuba/supabase@workspace:.prelude/artifact/supabase"
