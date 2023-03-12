@@ -26,8 +26,8 @@ As unidades construtivas do Kuba são:
 
 1. **View**: Responsável pela renderização do HTML, CSS e JavaScript da aplicação.
 2. **Root Aggregate**: Responsável pela modelagem do domínio da aplicação.
-  	- **Action**: Responsável por receber e manipular a entrada do usuário.
-    - **State**: Responsável por gerenciar o estado da aplicação.
+    - **Action**: Responsável por manipular a entrada do usuário.
+    - **State**: Responsável por representar o estado da aplicação.
 3. **Advice**: Responsável por gerenciar aspectos transversais da aplicação, como logs, métricas e segurança.
 
 ## Como funciona
