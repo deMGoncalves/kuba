@@ -8,7 +8,6 @@ const TerserJSPlugin = require('terser-webpack-plugin')
 const webpack = require('webpack')
 
 module.exports = {
-  context: path.resolve(__dirname, 'src'),
   devServer: {
     static: {
       directory: path.join(__dirname, 'public'),
@@ -86,7 +85,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
-        { from: path.resolve(__dirname, 'assets'), to: '.' }
+        { from: path.resolve(__dirname, '.assets'), to: '.' }
       ]
     }),
     new HtmlWebpackPlugin({
