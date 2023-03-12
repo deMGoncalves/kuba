@@ -1,6 +1,0 @@
-{
-  "main": "src/index.js",
-  "name": "@kuba/themecolor",
-  "private": true,
-  "version": "1.0.0"
-}

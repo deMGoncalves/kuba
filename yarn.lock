@@ -1554,12 +1554,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/themecolor@workspace:.prelude/pixel/themeColor":
-  version: 0.0.0-use.local
-  resolution: "@kuba/themecolor@workspace:.prelude/pixel/themeColor"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/title@workspace:.prelude/pixel/title":
   version: 0.0.0-use.local
   resolution: "@kuba/title@workspace:.prelude/pixel/title"
