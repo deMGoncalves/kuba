@@ -7,7 +7,6 @@ import '@kuba/reset'
 import '@kuba/serviceworker'
 import '@kuba/title'
 import '@kuba/token'
-import '@kuba/viewport'
 
 import '@kuba/checkyouremail'
 import '@kuba/createanaccount'

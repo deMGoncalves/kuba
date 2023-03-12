@@ -1578,12 +1578,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/viewport@workspace:.prelude/pixel/viewport":
-  version: 0.0.0-use.local
-  resolution: "@kuba/viewport@workspace:.prelude/pixel/viewport"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/year@workspace:component/year":
   version: 0.0.0-use.local
   resolution: "@kuba/year@workspace:component/year"
