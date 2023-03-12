@@ -1164,12 +1164,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/favicon@workspace:.prelude/pixel/favicon":
-  version: 0.0.0-use.local
-  resolution: "@kuba/favicon@workspace:.prelude/pixel/favicon"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/filter@workspace:.prelude/standard/filter":
   version: 0.0.0-use.local
   resolution: "@kuba/filter@workspace:.prelude/standard/filter"
