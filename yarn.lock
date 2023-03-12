@@ -1346,12 +1346,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/manifest@workspace:.prelude/pixel/manifest":
-  version: 0.0.0-use.local
-  resolution: "@kuba/manifest@workspace:.prelude/pixel/manifest"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/middleware@workspace:.prelude/standard/middleware":
   version: 0.0.0-use.local
   resolution: "@kuba/middleware@workspace:.prelude/standard/middleware"
@@ -1435,12 +1429,6 @@ __metadata:
 "@kuba/polished@workspace:.prelude/standard/polished":
   version: 0.0.0-use.local
   resolution: "@kuba/polished@workspace:.prelude/standard/polished"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/preconnect@workspace:.prelude/pixel/preconnect":
-  version: 0.0.0-use.local
-  resolution: "@kuba/preconnect@workspace:.prelude/pixel/preconnect"
   languageName: unknown
   linkType: soft
 

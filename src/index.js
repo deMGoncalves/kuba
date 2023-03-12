@@ -3,7 +3,6 @@ import '@kuba/requestanimationframe'
 import '@kuba/setimmediate'
 
 import '@kuba/description'
-import '@kuba/preconnect'
 import '@kuba/reset'
 import '@kuba/serviceworker'
 import '@kuba/stylesheet'
