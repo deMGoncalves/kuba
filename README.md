@@ -20,11 +20,11 @@ O manifesto Kuba é uma declaração de princípios que guiam o desenvolvimento 
 
 As unidades construtivas do Kuba são:
 
-1. **View**: Responsável pela renderização do HTML, CSS e JavaScript da aplicação.
-2. **Root Aggregate**: Responsável pela modelagem do domínio da aplicação.
-    - **Action**: Responsável por manipular a entrada do usuário.
-    - **State**: Responsável por representar o estado da aplicação.
-3. **Advice**: Responsável por gerenciar aspectos transversais da aplicação, como logs, métricas e segurança.
+1.  **View**: Responsável pela renderização do HTML, CSS e JavaScript da aplicação.
+2.  **Root Aggregate**: Responsável pela modelagem do domínio da aplicação.
+    -  **Action**: Responsável por manipular a entrada do usuário.
+    -  **State**: Responsável por representar o estado da aplicação.
+3.  **Advice**: Responsável por gerenciar aspectos transversais da aplicação, como logs, métricas e segurança.
 
 ## Como funciona
 
@@ -32,28 +32,28 @@ O Kuba é uma ferramenta para desenvolvimento web que oferece um conjunto de rec
 
 ## Características
 
-- Leve e de fácil utilização
-- Personalizável e adaptável para diversos projetos
-- Suporta as principais tecnologias do mercado
-- Contribuição de desenvolvedores em todo o mundo
+-  Leve e de fácil utilização
+-  Personalizável e adaptável para diversos projetos
+-  Suporta as principais tecnologias do mercado
+-  Contribuição de desenvolvedores em todo o mundo
 
 ## Benefícios
 
 O Kuba traz diversos benefícios para a construção de aplicações web, como:
 
-- Código simples e fácil de manter
-- Escalabilidade e flexibilidade para acomodar mudanças no futuro
-- Modularidade e reutilização de código
-- Alta qualidade de código, seguindo os princípios do manifesto Kuba
-- Facilidade de teste e depuração
+-  Código simples e fácil de manter
+-  Escalabilidade e flexibilidade para acomodar mudanças no futuro
+-  Modularidade e reutilização de código
+-  Alta qualidade de código, seguindo os princípios do manifesto Kuba
+-  Facilidade de teste e depuração
 
 ## Pré-requisitos
 
 Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em seu ambiente de desenvolvimento:
 
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/)
-- [Yarn](https://yarnpkg.com/)
+-  [Git](https://git-scm.com/)
+-  [Node.js](https://nodejs.org/)
+-  [Yarn](https://yarnpkg.com/)
 
 ## Variáveis de ambiente
 
