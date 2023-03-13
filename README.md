@@ -78,7 +78,7 @@ export HINTS=warning
 export MAX_ASSET_SIZE=2000000
 export MAX_ENTRYPOINT_SIZE=2000000
 export ANALYZER_MODE=
-export PORT=8080
+export PORT=3000
 ```
 
 Alternativamente, você pode definir as variáveis em um arquivo .env na raiz do projeto, usando o formato NOME=VALOR. Lembre-se de adicionar o arquivo .env no seu .gitignore para que as informações confidenciais não sejam versionadas.
