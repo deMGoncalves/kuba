@@ -12,9 +12,9 @@ No mundo do desenvolvimento de software, a complexidade excessiva pode ser um ob
 
 O manifesto Kuba é uma declaração de princípios que guiam o desenvolvimento do projeto:
 
-1. Simplicidade é a chave para a escalabilidade
-2. Pequeno é belo
-3. Imperfeito é humano
+1.  Simplicidade é a chave para a escalabilidade
+2.  Pequeno é belo
+3.  Imperfeito é humano
 
 ## Unidades construtivas
 
