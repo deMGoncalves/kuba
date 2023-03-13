@@ -1,22 +1,10 @@
 # kuba
 
 [![DeepSource](https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=active+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26)](https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge})
-
 [![DeepSource](https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=resolved+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26)](https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge})
-
 [![Codeclimate](https://api.codeclimate.com/v1/badges/f000644462eae8e6b020/maintainability)](https://codeclimate.com/github/deMGoncalves/kuba/maintainability)
-
 [![Codacy](https://app.codacy.com/project/badge/Grade/8d2b7ccbd9d64b90bcccc515a1f61457)](https://www.codacy.com/gh/deMGoncalves/kuba/dashboard?utm_source=github.com&utm_medium=referral&utm_content=deMGoncalves/ku)
-
 [![JS Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
-
-[![GitHub issues](https://img.shields.io/github/issues/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/issues)
-
-[![GitHub forks](https://img.shields.io/github/forks/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/network)
-
-[![GitHub stars](https://img.shields.io/github/stars/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/stargazers)
-
-[![GitHub license](https://img.shields.io/github/license/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba)
 
 No mundo do desenvolvimento de software, a complexidade excessiva pode ser um obstáculo para alcançar resultados eficazes. O Kuba surge como uma solução para simplificar o processo de desenvolvimento, focando no domínio do negócio e na eficácia das funcionalidades entregues.
 
