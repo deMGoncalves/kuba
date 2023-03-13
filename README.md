@@ -1,13 +1,21 @@
 # kuba
 
 [![DeepSource](https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=active+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26)](https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge})
+
 [![DeepSource](https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=resolved+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26)](https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge})
+
 [![Codeclimate](https://api.codeclimate.com/v1/badges/f000644462eae8e6b020/maintainability)](https://codeclimate.com/github/deMGoncalves/kuba/maintainability)
+
 [![Codacy](https://app.codacy.com/project/badge/Grade/8d2b7ccbd9d64b90bcccc515a1f61457)](https://www.codacy.com/gh/deMGoncalves/kuba/dashboard?utm_source=github.com&utm_medium=referral&utm_content=deMGoncalves/ku)
+
 [![JS Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+
 [![GitHub issues](https://img.shields.io/github/issues/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/issues)
+
 [![GitHub forks](https://img.shields.io/github/forks/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/network)
+
 [![GitHub stars](https://img.shields.io/github/stars/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba/stargazers)
+
 [![GitHub license](https://img.shields.io/github/license/deMGoncalves/kuba)](https://github.com/deMGoncalves/kuba)
 
 No mundo do desenvolvimento de software, a complexidade excessiva pode ser um obstáculo para alcançar resultados eficazes. O Kuba surge como uma solução para simplificar o processo de desenvolvimento, focando no domínio do negócio e na eficácia das funcionalidades entregues.
@@ -58,6 +66,34 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em s
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/)
 - [Yarn](https://yarnpkg.com/)
+
+## Variáveis de ambiente
+
+O Kuba utiliza algumas variáveis de ambiente para configurar o comportamento da aplicação. Elas podem ser definidas no sistema operacional ou em um arquivo .env na raiz do projeto.
+
+Aqui estão as variáveis de ambiente utilizadas pelo Kuba:
+
+| Variável              | Descrição                                                              |
+| --------------------- | ---------------------------------------------------------------------- |
+| PUBLIC_PATH           | Define o caminho público para os arquivos da aplicação.                |
+| HINTS                 | Define o nível de detalhe dos avisos exibidos durante a compilação.    |
+| MAX_ASSET_SIZE        | Define o tamanho máximo (em bytes) permitido para um arquivo estático. |
+| MAX_ENTRYPOINT_SIZE   | Define o tamanho máximo (em bytes) permitido para um ponto de entrada. |
+| ANALYZER_MODE         | Define o modo de análise para o pacote webpack-bundle-analyzer.        |
+| PORT                  | Define a porta em que o servidor da aplicação será executado.          |
+
+Para definir essas variáveis, basta usar o comando export no terminal, seguido do nome da variável e seu valor:
+
+```bash
+export PUBLIC_PATH=/
+export HINTS=warning
+export MAX_ASSET_SIZE=2000000
+export MAX_ENTRYPOINT_SIZE=2000000
+export ANALYZER_MODE=
+export PORT=8080
+```
+
+Alternativamente, você pode definir as variáveis em um arquivo .env na raiz do projeto, usando o formato NOME=VALOR. Lembre-se de adicionar o arquivo .env no seu .gitignore para que as informações confidenciais não sejam versionadas.
 
 ## Experimente
 
@@ -125,4 +161,4 @@ O Kuba é um projeto de código aberto licenciado sob a licença MIT. Isso signi
 
 ## Contato
 
-Caso você tenha alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato com **Cleber** através do email cleber.engineer@gmail.com.
+Caso você tenha alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato com **deMGoncalves** através do email cleber.engineer@gmail.com.
