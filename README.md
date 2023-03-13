@@ -87,27 +87,27 @@ Alternativamente, você pode definir as variáveis em um arquivo .env na raiz do
 
 Para começar a usar o Kuba, siga os seguintes passos:
 
-1. Clone o repositório do Kuba em seu computador, usando o seguinte comando no terminal:
+1.  Clone o repositório do Kuba em seu computador, usando o seguinte comando no terminal:
 ```bash
 git clone https://github.com/deMGoncalves/kuba.git
 ```
 
-2. Acesse o diretório do projeto usando o seguinte comando:
+2.  Acesse o diretório do projeto usando o seguinte comando:
 ```bash
 cd kuba
 ```
 
-3. Instale as dependências do projeto usando o seguinte comando:
+3.  Instale as dependências do projeto usando o seguinte comando:
 ```bash
 yarn install
 ```
 
-4. Inicie o servidor de desenvolvimento usando o seguinte comando:
+4.  Inicie o servidor de desenvolvimento usando o seguinte comando:
 ```bash
 yarn start
 ```
 
-5. Agora, você pode acessar a aplicação em seu navegador, acessando a URL [http://localhost:3000/](http://localhost:3000/).
+5.  Agora, você pode acessar a aplicação em seu navegador, acessando a URL [http://localhost:3000/](http://localhost:3000/).
 
 Para mais informações sobre como usar o Kuba, consulte a documentação completa na [Wiki]([http://localhost:3000/](https://github.com/deMGoncalves/kuba/wiki)) do projeto.
 
@@ -115,33 +115,33 @@ Para mais informações sobre como usar o Kuba, consulte a documentação comple
 
 Se você deseja contribuir com o projeto Kuba, siga os passos abaixo:
 
-1. Faça um fork deste repositório clicando no botão "Fork" no topo da página.
-2. Clone o repositório para sua máquina local:
+1.  Faça um fork deste repositório clicando no botão "Fork" no topo da página.
+2.  Clone o repositório para sua máquina local:
 ```bash
 git clone https://github.com/deMGoncalves/kuba.git
 ```
 
-3. Crie uma branch com a feature que deseja adicionar ou corrigir:
+3.  Crie uma branch com a feature que deseja adicionar ou corrigir:
 ```bash
 git checkout -b minha-feature
 ```
 
-4. Faça as alterações necessárias e adicione ao stage do Git:
+4.  Faça as alterações necessárias e adicione ao stage do Git:
 ```bash
 git add .
 ```
 
-5. Faça um commit com suas alterações:
+5.  Faça um commit com suas alterações:
 ```bash
 git commit -m "Minha feature: descrição breve"
 ```
 
-6. Faça um push da sua branch para o GitHub:
+6.  Faça um push da sua branch para o GitHub:
 ```bash
 git push origin minha-feature
 ```
 
-7. Abra um Pull Request para a branch "main" deste repositório.
+7.  Abra um Pull Request para a branch "main" deste repositório.
 
 ## Licença
 
