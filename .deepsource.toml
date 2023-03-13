@@ -1,0 +1,9 @@
+ersion = 1
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+[[transformers]]
+name = "standardjs"
+enabled = true
