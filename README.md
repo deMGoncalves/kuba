@@ -121,7 +121,7 @@ Nossos artigos são escritos por desenvolvedores experientes e incluem exemplos 
 
 Confira nossos artigos abaixo:
 
--  [Components](https://dev.to/demgoncalves/components-469o)
+-  [Uma nova visão sobre modularidade e componentes javascript](https://dev.to/demgoncalves/components-469o)
 
 Esperamos que esses artigos ajudem você a aproveitar ao máximo o Kuba e criar aplicativos web incríveis e escaláveis!
 
