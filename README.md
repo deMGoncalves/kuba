@@ -111,6 +111,20 @@ yarn start
 
 Para mais informações sobre como usar o Kuba, consulte a documentação completa na [Wiki]([http://localhost:3000/](https://github.com/deMGoncalves/kuba/wiki)) do projeto.
 
+## Artigos
+
+Nesta seção, você encontrará uma lista de artigos escritos sobre o Kuba e como ele pode ser usado para criar aplicativos web modernos e escaláveis. Esses artigos abrangem vários tópicos, desde uma introdução ao Kuba até tutoriais mais avançados sobre como usar seus recursos para desenvolver aplicativos web de alta qualidade.
+
+Se você é novo no Kuba, recomendamos começar com os artigos introdutórios, que explicam os conceitos básicos e mostram como criar seus primeiros componentes. Depois de dominar esses conceitos, você pode avançar para artigos mais avançados, que cobrem tópicos como roteamento, gerenciamento de estado e implementação de componentes reutilizáveis.
+
+Nossos artigos são escritos por desenvolvedores experientes e incluem exemplos de código práticos, dicas úteis e soluções para problemas comuns de desenvolvimento web. Se você tiver alguma dúvida ou sugestão para novos artigos, sinta-se à vontade para entrar em contato conosco ou abrir uma issue em nosso repositório do GitHub.
+
+Confira nossos artigos abaixo:
+
+-  [Components](https://dev.to/demgoncalves/components-469o)
+
+Esperamos que esses artigos ajudem você a aproveitar ao máximo o Kuba e criar aplicativos web incríveis e escaláveis!
+
 ## Contribuindo
 
 Se você deseja contribuir com o projeto Kuba, siga os passos abaixo:
