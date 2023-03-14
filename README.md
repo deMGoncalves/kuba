@@ -155,7 +155,7 @@ git commit -m "Minha feature: descrição breve"
 git push origin minha-feature
 ```
 
-7.  Abra um Pull Request para a branch "main" deste repositório.
+7.  Abra um Pull Request para a branch "master" deste repositório.
 
 ## Licença
 
