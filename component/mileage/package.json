@@ -1,6 +1,0 @@
-{
-  "main": "src/index.js",
-  "name": "@kuba/mileage",
-  "private": true,
-  "version": "1.0.0"
-}

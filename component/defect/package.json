@@ -1,6 +1,0 @@
-{
-  "main": "src/index.js",
-  "name": "@kuba/defect",
-  "private": true,
-  "version": "1.0.0"
-}

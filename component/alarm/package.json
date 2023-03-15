@@ -1,6 +1,0 @@
-{
-  "main": "src/index.js",
-  "name": "@kuba/alarm",
-  "private": true,
-  "version": "1.0.0"
-}

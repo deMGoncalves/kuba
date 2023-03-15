@@ -122,6 +122,7 @@ Nossos artigos são escritos por desenvolvedores experientes e incluem exemplos 
 Confira nossos artigos abaixo:
 
 -  [Uma nova visão sobre modularidade e componentes javascript](https://dev.to/demgoncalves/components-469o)
+-  [Adeus, useState! Descubra como @paint & @repaint estão mudando a forma de desenvolver Componentes](https://dev.to/demgoncalves/adeus-usestate-descubra-como-paint-repaint-estao-mudando-a-forma-de-desenvolver-componentes-1ceh)
 
 Esperamos que esses artigos ajudem você a aproveitar ao máximo o Kuba e criar aplicativos web incríveis e escaláveis!
 
