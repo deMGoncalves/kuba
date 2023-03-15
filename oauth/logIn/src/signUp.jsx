@@ -6,7 +6,7 @@ import text from '@kuba/text'
 
 function component () {
   return (
-    <text.Span className='login__signUp' master xxs>Don't have an account? <Link href={urlFor('signUp')}>Sign up</Link></text.Span>
+    <text.Span className='login__signUp' master xxs>Don&apos;t have an account? <Link href={urlFor('signUp')}>Sign up</Link></text.Span>
   )
 }
 
