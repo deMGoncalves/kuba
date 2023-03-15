@@ -1,6 +1,6 @@
 import interceptor from '@kuba/interceptor'
 import magic from '@kuba/magic'
-import supabase from '../../../.prelude/artifact/supabase/src'
+import supabase from '@kuba/supabase'
 
 const { onAuthenticated, onInvalid } = magic
 

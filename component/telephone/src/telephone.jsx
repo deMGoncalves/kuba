@@ -1,6 +1,6 @@
 import { paint } from '@kuba/h'
 import component from './component'
-import imask from '../../../.prelude/artifact/IMask/src'
+import imask from '@kuba/imask'
 
 @paint(component)
 @imask
