@@ -73,6 +73,8 @@ Aqui estão as variáveis de ambiente utilizadas pelo Kuba:
 Para definir essas variáveis, basta usar o comando export no terminal, seguido do nome da variável e seu valor:
 
 ```bash
+export SUPABASE_URL=
+export SUPABASE_KEY=
 export PUBLIC_PATH=/
 export HINTS=warning
 export MAX_ASSET_SIZE=2000000
