@@ -5,7 +5,7 @@ import text from '@kuba/text'
 function component () {
   return (
     <text.P className='pageNotFound__sorry' master md>
-      Sorry, the page you are looking for doesn't exist. Here are some helpful links
+      Sorry, the page you are looking for doesn&apos;t exist. Here are some helpful links
     </text.P>
   )
 }
