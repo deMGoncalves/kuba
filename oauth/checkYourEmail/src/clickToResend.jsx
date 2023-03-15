@@ -6,7 +6,7 @@ import text from '@kuba/text'
 
 function component () {
   return (
-    <text.Span className='checkYourEmail__clickToResend' master dark xxs>Didn't receive the email? <Link href={urlFor('checkYourEmail')}>Click to resend</Link></text.Span>
+    <text.Span className='checkYourEmail__clickToResend' master dark xxs>Didn&apos;t receive the email? <Link href={urlFor('checkYourEmail')}>Click to resend</Link></text.Span>
   )
 }
 
