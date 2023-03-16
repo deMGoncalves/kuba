@@ -1,12 +1,18 @@
 # kuba
 
-[![DeepSource](https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=active+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26)](https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge})
-[![DeepSource](https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=resolved+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26)](https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge})
-[![Codeclimate](https://api.codeclimate.com/v1/badges/f000644462eae8e6b020/maintainability)](https://codeclimate.com/github/deMGoncalves/kuba/maintainability)
-[![Codacy](https://app.codacy.com/project/badge/Grade/8d2b7ccbd9d64b90bcccc515a1f61457)](https://www.codacy.com/gh/deMGoncalves/kuba/dashboard?utm_source=github.com&utm_medium=referral&utm_content=deMGoncalves/ku)
+[![DeepSource](https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=active+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26)](https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge})<br />
+[![DeepSource](https://deepsource.io/gh/deMGoncalves/kuba.svg/?label=resolved+issues&show_trend=true&token=gPCov7hvg2e88VASFwhXhR26)](https://deepsource.io/gh/deMGoncalves/kuba/?ref=repository-badge})<br />
+[![Codeclimate](https://api.codeclimate.com/v1/badges/f000644462eae8e6b020/maintainability)](https://codeclimate.com/github/deMGoncalves/kuba/maintainability)<br />
+[![Codacy](https://app.codacy.com/project/badge/Grade/8d2b7ccbd9d64b90bcccc515a1f61457)](https://www.codacy.com/gh/deMGoncalves/kuba/dashboard?utm_source=github.com&utm_medium=referral&utm_content=deMGoncalves/ku)<br />
 [![JS Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
-No mundo do desenvolvimento de software, a complexidade excessiva pode ser um obstáculo para alcançar resultados eficazes. O Kuba surge como uma solução para simplificar o processo de desenvolvimento, focando no domínio do negócio e na eficácia das funcionalidades entregues.
+kuba é um projeto que foi criada com a finalidade de simplificar a forma como desenvolvemos aplicações web. Como desenvolvedores, muitas vezes nos deparamos com problemas complexos que parecem não ter solução simples. Mas será que é realmente necessário complicar tanto as coisas?
+
+O objetivo do kuba é mostrar que é possível desenvolver aplicações web de forma mais simples, sem comprometer a qualidade e a eficiência do código. Para isso, a biblioteca utiliza conceitos modernos da linguagem JavaScript, como o uso de decorators para gerenciar o ciclo de vida dos componentes.
+
+Além disso, o kuba foi criado com uma filosofia que valoriza a simplicidade e a facilidade de uso. Acreditamos que um código limpo e organizado é fundamental para a manutenção e evolução de um projeto de software.
+
+Em resumo, o kuba é um projeto JavaScript que busca simplificar a forma como desenvolvemos aplicações web, valorizando a simplicidade, a eficiência e a colaboração entre desenvolvedores.
 
 ## Manifesto
 
