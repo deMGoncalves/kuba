@@ -1008,18 +1008,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/address@workspace:component/address":
-  version: 0.0.0-use.local
-  resolution: "@kuba/address@workspace:component/address"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/alarm@workspace:component/alarm":
-  version: 0.0.0-use.local
-  resolution: "@kuba/alarm@workspace:component/alarm"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/backtohome@workspace:component/backToHome":
   version: 0.0.0-use.local
   resolution: "@kuba/backtohome@workspace:component/backToHome"
@@ -1029,18 +1017,6 @@ __metadata:
 "@kuba/backtologin@workspace:component/backToLogIn":
   version: 0.0.0-use.local
   resolution: "@kuba/backtologin@workspace:component/backToLogIn"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/brand@workspace:component/brand":
-  version: 0.0.0-use.local
-  resolution: "@kuba/brand@workspace:component/brand"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/breakdowns@workspace:component/breakdowns":
-  version: 0.0.0-use.local
-  resolution: "@kuba/breakdowns@workspace:component/breakdowns"
   languageName: unknown
   linkType: soft
 
@@ -1068,12 +1044,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/complements@workspace:component/complements":
-  version: 0.0.0-use.local
-  resolution: "@kuba/complements@workspace:component/complements"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/confirmnewpassword@workspace:component/confirmNewPassword":
   version: 0.0.0-use.local
   resolution: "@kuba/confirmnewpassword@workspace:component/confirmNewPassword"
@@ -1092,12 +1062,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/cpf@workspace:component/cpf":
-  version: 0.0.0-use.local
-  resolution: "@kuba/cpf@workspace:component/cpf"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/createanaccount@workspace:oauth/signUp":
   version: 0.0.0-use.local
   resolution: "@kuba/createanaccount@workspace:oauth/signUp"
@@ -1107,18 +1071,6 @@ __metadata:
 "@kuba/currentpassword@workspace:component/currentPassword":
   version: 0.0.0-use.local
   resolution: "@kuba/currentpassword@workspace:component/currentPassword"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/cylindercapacity@workspace:component/cylinderCapacity":
-  version: 0.0.0-use.local
-  resolution: "@kuba/cylindercapacity@workspace:component/cylinderCapacity"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/defect@workspace:component/defect":
-  version: 0.0.0-use.local
-  resolution: "@kuba/defect@workspace:component/defect"
   languageName: unknown
   linkType: soft
 
@@ -1185,18 +1137,6 @@ __metadata:
 "@kuba/form@workspace:.prelude/element/form":
   version: 0.0.0-use.local
   resolution: "@kuba/form@workspace:.prelude/element/form"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/fuel@workspace:component/fuel":
-  version: 0.0.0-use.local
-  resolution: "@kuba/fuel@workspace:component/fuel"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/fuellevel@workspace:component/fuelLevel":
-  version: 0.0.0-use.local
-  resolution: "@kuba/fuellevel@workspace:component/fuelLevel"
   languageName: unknown
   linkType: soft
 
@@ -1298,12 +1238,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/language@workspace:component/language":
-  version: 0.0.0-use.local
-  resolution: "@kuba/language@workspace:component/language"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/lazy@workspace:.prelude/directive/lazy":
   version: 0.0.0-use.local
   resolution: "@kuba/lazy@workspace:.prelude/directive/lazy"
@@ -1349,18 +1283,6 @@ __metadata:
 "@kuba/middleware@workspace:.prelude/standard/middleware":
   version: 0.0.0-use.local
   resolution: "@kuba/middleware@workspace:.prelude/standard/middleware"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/mileage@workspace:component/mileage":
-  version: 0.0.0-use.local
-  resolution: "@kuba/mileage@workspace:component/mileage"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/model@workspace:component/model":
-  version: 0.0.0-use.local
-  resolution: "@kuba/model@workspace:component/model"
   languageName: unknown
   linkType: soft
 
@@ -1420,12 +1342,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/plate@workspace:component/plate":
-  version: 0.0.0-use.local
-  resolution: "@kuba/plate@workspace:component/plate"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/polished@workspace:.prelude/standard/polished":
   version: 0.0.0-use.local
   resolution: "@kuba/polished@workspace:.prelude/standard/polished"
@@ -1465,24 +1381,6 @@ __metadata:
 "@kuba/savechanges@workspace:component/saveChanges":
   version: 0.0.0-use.local
   resolution: "@kuba/savechanges@workspace:component/saveChanges"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/sendtonewserviceorder@workspace:component/sendToNewServiceOrder":
-  version: 0.0.0-use.local
-  resolution: "@kuba/sendtonewserviceorder@workspace:component/sendToNewServiceOrder"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/sendtoserviceorders@workspace:component/sendToServiceOrders":
-  version: 0.0.0-use.local
-  resolution: "@kuba/sendtoserviceorders@workspace:component/sendToServiceOrders"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/sendtosettings@workspace:component/sendToSettings":
-  version: 0.0.0-use.local
-  resolution: "@kuba/sendtosettings@workspace:component/sendToSettings"
   languageName: unknown
   linkType: soft
 
@@ -1575,12 +1473,6 @@ __metadata:
 "@kuba/validator@workspace:.prelude/standard/validator":
   version: 0.0.0-use.local
   resolution: "@kuba/validator@workspace:.prelude/standard/validator"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/year@workspace:component/year":
-  version: 0.0.0-use.local
-  resolution: "@kuba/year@workspace:component/year"
   languageName: unknown
   linkType: soft
 
