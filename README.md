@@ -129,7 +129,7 @@ Nossos artigos são escritos por desenvolvedores experientes e incluem exemplos 
 
 Confira nossos artigos abaixo:
 
--  [Manifesto: O que me levou a criar o kuba]()
+-  [Manifesto: O que me levou a criar o kuba](https://dev.to/demgoncalves/manifesto-o-que-me-levou-a-criar-o-kuba-5ble)
 -  [Uma nova visão sobre modularidade e componentes javascript](https://dev.to/demgoncalves/components-469o)
 -  [Adeus, useState! Descubra como @paint & @repaint estão mudando a forma de desenvolver Componentes](https://dev.to/demgoncalves/adeus-usestate-descubra-como-paint-repaint-estao-mudando-a-forma-de-desenvolver-componentes-1ceh)
 -  [Desacoplando o ciclo de vida: simplifique a gestão de componentes com @advices](https://dev.to/demgoncalves/desacoplando-o-ciclo-de-vida-simplifique-a-gestao-de-componentes-com-advices-4ii4)
