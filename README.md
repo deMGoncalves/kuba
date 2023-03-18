@@ -69,6 +69,8 @@ Aqui estão as variáveis de ambiente utilizadas pelo Kuba:
 
 | Variável              | Descrição                                                              |
 | --------------------- | ---------------------------------------------------------------------- |
+| SUPABASE_URL          |                                                                        |
+| SUPABASE_KEY          |                                                                        |
 | PUBLIC_PATH           | Define o caminho público para os arquivos da aplicação.                |
 | HINTS                 | Define o nível de detalhe dos avisos exibidos durante a compilação.    |
 | MAX_ASSET_SIZE        | Define o tamanho máximo (em bytes) permitido para um arquivo estático. |
