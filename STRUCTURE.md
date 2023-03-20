@@ -1,4 +1,4 @@
-## Structure
+## Estrutura
 
 A estrutura de um projeto é fundamental para o seu sucesso e eficiência. Quando se trata de estruturar um projeto de software, é essencial que a sua organização seja clara e que ela reflita o domínio do projeto. Afinal, o objetivo final de um projeto de software é resolver um problema específico, e isso requer um conhecimento profundo e uma estrutura que seja facilmente compreensível pelos desenvolvedores e usuários.
 
