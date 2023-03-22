@@ -8,7 +8,7 @@ A estrutura de um projeto de software deve ser projetada de forma que o domínio
 
 -  `.assets`: essa pasta contém arquivos estáticos, como imagens, ícones, fontes, entre outros. São arquivos de suporte para o projeto, mas que não fazem parte do domínio da aplicação em si.
 -  `.prelude`: essa pasta contém um conjunto de arquivos e pastas que implementam uma biblioteca de suporte ao desenvolvimento do projeto, incluindo:
-    -  `artifact`: contém as definições de componentes reutilizáveis que encapsulam o comportamento e aparência de um elemento ou conjunto de elementos, mas que não dependem do contexto em que são usados.
+    -  `artifact`: é onde concentramos as bibliotecas de terceiros utilizadas no projeto.
     -  `directive`: contém as definições de diretivas personalizadas, que adicionam comportamento a elementos HTML existentes.
     -  `element`: contém as definições de elementos personalizados, que encapsulam o comportamento e a aparência de um elemento HTML e dependem do contexto em que são usados.
     -  `pixel`: contém arquivos de estilo que definem as medidas em pixels usadas no projeto.
