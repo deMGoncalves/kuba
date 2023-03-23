@@ -7,6 +7,6 @@ export default {
       (props, children) => {
         const values = expressions.map((e) => e?.(props))
         const style = f.zip(strings, values).flat(Infinity).join('').trim()
-        return h(key, { ...props, style }, ...children)
+        return h(key, { style, ...props }, ...children)
       }
 }
