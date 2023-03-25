@@ -1002,18 +1002,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kuba/accordion@workspace:.prelude/element/accordion":
-  version: 0.0.0-use.local
-  resolution: "@kuba/accordion@workspace:.prelude/element/accordion"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/backtohome@workspace:component/backToHome":
-  version: 0.0.0-use.local
-  resolution: "@kuba/backtohome@workspace:component/backToHome"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/backtologin@workspace:component/backToLogIn":
   version: 0.0.0-use.local
   resolution: "@kuba/backtologin@workspace:component/backToLogIn"
@@ -1023,12 +1011,6 @@ __metadata:
 "@kuba/button@workspace:.prelude/element/button":
   version: 0.0.0-use.local
   resolution: "@kuba/button@workspace:.prelude/element/button"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/checkbox@workspace:.prelude/element/checkbox":
-  version: 0.0.0-use.local
-  resolution: "@kuba/checkbox@workspace:.prelude/element/checkbox"
   languageName: unknown
   linkType: soft
 
@@ -1173,12 +1155,6 @@ __metadata:
 "@kuba/hide@workspace:.prelude/directive/hide":
   version: 0.0.0-use.local
   resolution: "@kuba/hide@workspace:.prelude/directive/hide"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/historyback@workspace:component/historyBack":
-  version: 0.0.0-use.local
-  resolution: "@kuba/historyback@workspace:component/historyBack"
   languageName: unknown
   linkType: soft
 
@@ -1375,12 +1351,6 @@ __metadata:
 "@kuba/router@workspace:.prelude/standard/router":
   version: 0.0.0-use.local
   resolution: "@kuba/router@workspace:.prelude/standard/router"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/savechanges@workspace:component/saveChanges":
-  version: 0.0.0-use.local
-  resolution: "@kuba/savechanges@workspace:component/saveChanges"
   languageName: unknown
   linkType: soft
 
