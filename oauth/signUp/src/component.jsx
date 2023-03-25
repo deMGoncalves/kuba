@@ -1,7 +1,7 @@
 import './style'
 import Description from './description'
 import Email from '@kuba/email'
-import Footer from '@kuba/footer'
+import Footer from './footer'
 import Form from '@kuba/form'
 import GetStarted from './getStarted'
 import h from '@kuba/h'
