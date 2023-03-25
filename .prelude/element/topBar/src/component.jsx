@@ -6,7 +6,7 @@ import Show from '@kuba/show'
 
 function component (props, children) {
   return (
-    <header className='topBar'>
+    <header className={['topBar', props.className]}>
       <container.Div className='topBar__container'>
         {children.leading}
         <Hide when={props.large}>{children.headline}</Hide>

@@ -6,7 +6,7 @@ export default styled`
     display: flex;
     flex-direction: column;
     gap: var(--spacing_inset-xs);
-    padding: var(--spacing_inset-md) 0;
+    padding: var(--spacing_inset-xs) 0;
   }
 
   .topBar__container {
