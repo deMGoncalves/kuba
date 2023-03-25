@@ -1062,12 +1062,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/divider@workspace:.prelude/element/divider":
-  version: 0.0.0-use.local
-  resolution: "@kuba/divider@workspace:.prelude/element/divider"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/dropdown@workspace:.prelude/element/dropdown":
   version: 0.0.0-use.local
   resolution: "@kuba/dropdown@workspace:.prelude/element/dropdown"
