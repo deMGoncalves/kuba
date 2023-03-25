@@ -1062,12 +1062,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/dropdown@workspace:.prelude/element/dropdown":
-  version: 0.0.0-use.local
-  resolution: "@kuba/dropdown@workspace:.prelude/element/dropdown"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/echo@workspace:.prelude/standard/echo":
   version: 0.0.0-use.local
   resolution: "@kuba/echo@workspace:.prelude/standard/echo"
