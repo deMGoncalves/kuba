@@ -1,15 +1,14 @@
 import './style'
-import h from '@kuba/h'
-import Logomark from '@kuba/logomark'
-import TopBar, { Leading } from '@kuba/topbar'
+import h, { Fragment } from '@kuba/h'
+import Header from '@kuba/header'
+import Main from '@kuba/main'
 
 function component () {
   return (
-    <TopBar>
-      <Leading>
-        <Logomark />
-      </Leading>
-    </TopBar>
+    <>
+      <Header />
+      <Main />
+    </>
   )
 }
 
