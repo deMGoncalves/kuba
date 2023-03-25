@@ -1,16 +1,19 @@
 import './style'
+import container from '@kuba/container'
 import h from '@kuba/h'
 import Logomark from '@kuba/logomark'
-import TopBar, { Headline, Leading } from '@kuba/topbar'
 
 function component () {
   return (
-    <TopBar className='header' large>
-      <Leading>
-        <Logomark />
-      </Leading>
-      <Headline />
-    </TopBar>
+    <header className='header'>
+      <container.Div className='header__container'>
+        <div className='header__leading'>
+          <Logomark />
+        </div>
+        <div className='header__trailing' />
+      </container.Div>
+      <container.Div className='header__container' />
+    </header>
   )
 }
 
