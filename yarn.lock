@@ -1122,12 +1122,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/header@workspace:.prelude/element/header":
-  version: 0.0.0-use.local
-  resolution: "@kuba/header@workspace:.prelude/element/header"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/hgroup@workspace:.prelude/element/hgroup":
   version: 0.0.0-use.local
   resolution: "@kuba/hgroup@workspace:.prelude/element/hgroup"
