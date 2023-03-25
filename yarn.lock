@@ -1416,12 +1416,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/topbar@workspace:.prelude/element/topBar":
-  version: 0.0.0-use.local
-  resolution: "@kuba/topbar@workspace:.prelude/element/topBar"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/validator@workspace:.prelude/standard/validator":
   version: 0.0.0-use.local
   resolution: "@kuba/validator@workspace:.prelude/standard/validator"
