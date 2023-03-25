@@ -68,7 +68,7 @@ module.exports = {
     chunkFilename: '[name].[contenthash].js',
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'public'),
-    publicPath: '/'
+    publicPath: process.env.PUBLIC_PATH
   },
   performance: {
     hints: process.env.HINTS,
