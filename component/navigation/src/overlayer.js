@@ -6,6 +6,6 @@ export default styled.div`
   position: fixed;
   right: 0;
   top: 0;
-  width: calc(100vw - 298px);
+  width: calc(100vw - 418px);
   z-index: 1;
 `

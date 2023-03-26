@@ -7,6 +7,7 @@ export default styled`
     display: flex;
     height: 73px;
     justify-content: space-between;
+    padding: 0 var(--spacing_inset-xs);
     width: 100%;
   }
 
