@@ -1,6 +1,6 @@
 import styled from '@kuba/styled'
 
-export default styled.div`
+export default styled.section`
   background-color: var(--color-pure-white);
   box-shadow: var(--shadow-level-1) rgba(0, 0, 0, 0.382);
   display: flex;
@@ -9,7 +9,6 @@ export default styled.div`
   height: 100vh;
   left: 0;
   opacity: ${(props) => props.opened ? '1' : '0'};
-  padding: var(--spacin_inset-xs);
   position: fixed;
   top: 0;
   transform: ${(props) => props.opened ? 'translate(0, 0)' : 'translate(-298px, 0)'};
