@@ -5,6 +5,7 @@ export default styled`
     align-items: center;
     background-color: transparent;
     border: none;
+    cursor: pointer;
     display: flex;
     height: 40px;
     justify-content: center;
