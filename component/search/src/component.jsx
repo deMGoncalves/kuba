@@ -1,8 +1,14 @@
-import h from '@kuba/h'
+import './style'
+import Container from './container'
+import h, { Fragment } from '@kuba/h'
+import Overlayer from './overlayer'
 
-function component () {
+function component (search) {
   return (
-    <div />
+    <>
+      <Container opened={search.opened} />
+      <Overlayer opened={search.opened} onClick={() => search.close()} />
+    </>
   )
 }
 
