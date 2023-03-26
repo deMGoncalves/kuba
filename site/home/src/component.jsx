@@ -2,7 +2,7 @@ import './style'
 import h, { Fragment } from '@kuba/h'
 import Header from '@kuba/header'
 import Main from '@kuba/main'
-import Navigation from '@kuba/navigation'
+import Navigation from './navigation'
 
 function component () {
   return (
