@@ -2,16 +2,16 @@ import middleware from '@kuba/middleware'
 import magic from '@kuba/magic'
 import override from '@kuba/override'
 
-const request = middleware((instanceRef) => {
-  override(instanceRef, magic.didMount, async function () {
-    const { default: component } = await instanceRef[request.importer]()
+const request = middleware((lazy) => {
+  override(lazy, magic.didMount, async function () {
+    const { default: component } = await lazy[request.import]()
     const ast = component()
-    instanceRef[request.render](ast)
+    lazy[request.render](ast)
   })
 })
 
 Object.assign(request, {
-  importer: magic.request_importer,
+  import: magic.request_import,
   render: magic.request_render
 })
 

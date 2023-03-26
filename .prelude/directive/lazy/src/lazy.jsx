@@ -6,18 +6,19 @@ import request from './request'
 @request
 class Lazy {
   #ast
-  #importer
+  #import
 
-  constructor (props) {
-    this.#importer = props['data-importer']
-  }
-
-  [component.ast] () {
+  get ast () {
     return this.#ast
   }
 
-  [request.importer] () {
-    return this.#importer()
+  constructor (props) {
+    this.#import = props.import
+  }
+
+  [request.import] () {
+    return this.#import()
+    return this
   }
 
   @repaint
@@ -28,7 +29,7 @@ class Lazy {
 
   static create (functionRef) {
     return () => (
-      <Lazy data-importer={functionRef} />
+      <Lazy import={functionRef} />
     )
   }
 }
