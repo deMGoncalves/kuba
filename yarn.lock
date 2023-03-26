@@ -1342,6 +1342,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/search@workspace:component/search":
+  version: 0.0.0-use.local
+  resolution: "@kuba/search@workspace:component/search"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/serviceworker@workspace:.prelude/pixel/serviceWorker":
   version: 0.0.0-use.local
   resolution: "@kuba/serviceworker@workspace:.prelude/pixel/serviceWorker"
