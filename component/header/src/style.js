@@ -44,6 +44,7 @@ export default styled`
   }
 
   @media (min-width: 768px) {
+    .header__search,
     .header__menu {
       display: none !important;
     }
