@@ -34,13 +34,18 @@ export default styled`
     justify-content: flex-start;
   }
 
+  .header__headline {
+    justify-content: flex-start;
+  }
+
   .header__trailing {
     flex-grow: 1;
     justify-content: flex-end;
   }
 
-  .header__headline {
-    flex-grow: 2;
-    justify-content: flex-start;
+  @media (min-width: 768px) {
+    .header__menu {
+      display: none !important;
+    }
   }
 `

@@ -1,4 +1,5 @@
 import './style'
+import { Menu } from '@kuba/navigation'
 import container from '@kuba/container'
 import h from '@kuba/h'
 import Logomark from '@kuba/logomark'
@@ -10,7 +11,9 @@ function component () {
         <div className='header__leading'>
           <Logomark />
         </div>
-        <div className='header__trailing' />
+        <div className='header__trailing'>
+          <Menu className='header__menu' />
+        </div>
       </container.Div>
       <container.Div className='header__container' />
     </header>
