@@ -1250,6 +1250,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/navigation@workspace:component/navigation":
+  version: 0.0.0-use.local
+  resolution: "@kuba/navigation@workspace:component/navigation"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/newpassword@workspace:component/newPassword":
   version: 0.0.0-use.local
   resolution: "@kuba/newpassword@workspace:component/newPassword"
