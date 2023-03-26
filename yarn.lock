@@ -1026,6 +1026,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/close@workspace:component/close":
+  version: 0.0.0-use.local
+  resolution: "@kuba/close@workspace:component/close"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/confirmnewpassword@workspace:component/confirmNewPassword":
   version: 0.0.0-use.local
   resolution: "@kuba/confirmnewpassword@workspace:component/confirmNewPassword"
