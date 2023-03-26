@@ -2,8 +2,11 @@ import styled from '@kuba/styled'
 
 export default styled`
   .navigation__header {
+    align-items: center;
     border-bottom: var(--border-width-hairline) solid var(--color-master-light);
+    display: flex;
     height: 73px;
+    justify-content: space-between;
     width: 100%;
   }
 

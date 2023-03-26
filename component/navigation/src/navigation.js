@@ -19,9 +19,14 @@ class Navigation {
   }
 
   @repaint
-  [action.open] () {
-    this.#opened = true
+  [action.toggle] (opened) {
+    this.#opened = opened
     return this
+  }
+
+  static close () {
+    echo.emit('navigation:close')
+    return Navigation
   }
 
   static open () {
