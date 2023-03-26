@@ -1,6 +1,6 @@
 import styled from '@kuba/styled'
 
-export default styled.nav`
+export default styled.div`
   background-color: var(--color-pure-white);
   box-shadow: var(--shadow-level-1) rgba(0, 0, 0, 0.382);
   display: flex;
