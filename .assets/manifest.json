@@ -1,11 +1,11 @@
 {
   "name": "kuba",
 	"short_name" : "kuba",
-  "description": "O melhor sistema online para oficinas mecânicas, funilaria, estética automotiva e lava-rápido",
+  "description": "No mundo do desenvolvimento de software, a complexidade excessiva pode ser um obstáculo para alcançar resultados eficazes. O Kuba surge como uma solução para simplificar o processo de desenvolvimento, focando no domínio do negócio e na eficácia das funcionalidades entregues.",
 	"display" : "standalone",
   "display_override": ["window-control-overlay", "minimal-ui"],
   "orientation" : "portrait",
-	"url" : "https://www.kuba.autos",
+	"url" : "https://www.kuba.engineer",
 	"scope" : "/",
   "id": "/?source=pwa",
 	"start_url" : "/?utm_source=pwa",
@@ -54,7 +54,7 @@
     {
       "name": "Home",
       "short_name": "Home",
-      "description": "O melhor sistema online para oficinas mecânicas, funilaria, estética automotiva e lava-rápido",
+      "description": "No mundo do desenvolvimento de software, a complexidade excessiva pode ser um obstáculo para alcançar resultados eficazes. O Kuba surge como uma solução para simplificar o processo de desenvolvimento, focando no domínio do negócio e na eficácia das funcionalidades entregues.",
       "url": "/?utm_source=pwa",
       "icons": [
         {
