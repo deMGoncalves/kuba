@@ -56,4 +56,9 @@ export default styled`
       display: none !important;
     }
   }
+
+  .header__nav {
+    display: flex;
+    gap: var(--spacing_inset-xs);
+  }
 `

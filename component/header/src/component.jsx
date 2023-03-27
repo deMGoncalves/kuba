@@ -4,6 +4,7 @@ import { Menu } from '@kuba/navigation'
 import container from '@kuba/container'
 import h from '@kuba/h'
 import Logomark from '@kuba/logomark'
+import Nav from './nav'
 
 function component () {
   return (
@@ -20,7 +21,9 @@ function component () {
           <Menu className='header__menu' />
         </div>
       </container.Div>
-      <container.Div className='header__container' />
+      <container.Div className='header__container'>
+        <Nav />
+      </container.Div>
     </header>
   )
 }
