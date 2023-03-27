@@ -1,6 +1,6 @@
 import styled from '@kuba/styled'
 
-export default styled.form`
+export default styled.section`
   align-items: center;
   background-color: var(--color-pure-white);
   border-bottom: var(--border-width-hairline) solid var(--color-master-light);

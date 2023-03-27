@@ -11,6 +11,14 @@ export default styled`
     width: 40px;
   }
 
+  .search__form {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 480px;
+    width: 100%;
+  }
+
   .search__input {
     appearance: none;
     background-color: var(--color-pure-white);
