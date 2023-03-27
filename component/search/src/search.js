@@ -3,6 +3,7 @@ import action from './action'
 import component from './component'
 import echo from '@kuba/echo'
 import focus from './focus'
+import overload from '@kuba/overload'
 
 @paint(component)
 @action
@@ -14,6 +15,9 @@ class Search {
   }
 
   @repaint
+  @overload(
+    action.close
+  )
   close () {
     this.#opened = false
     return this
