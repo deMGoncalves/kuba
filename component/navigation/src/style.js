@@ -11,6 +11,19 @@ export default styled`
     width: 100%;
   }
 
+  .navigation__nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing_inset-nano);
+    padding: var(--spacing_inset-xs);
+  }
+
+  .navigation__link {
+    align-items: center;
+    display: flex;
+    height: 40px;
+  }
+
   .navigation__menu {
     align-items: center;
     background-color: transparent;
