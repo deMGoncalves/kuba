@@ -30,12 +30,6 @@ class Search {
     echo.emit('search:open')
     return Search
   }
-
-  [focus.element] () {
-    const [container] = this[paint.rootAST]().children
-    const input = container.__node__.querySelector('.search__input')
-    return input
-  }
 }
 
 export default Search
