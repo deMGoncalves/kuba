@@ -1,6 +1,6 @@
 import './style'
-import { Button as Search } from '@kuba/search'
-import { Menu as Navigation } from '@kuba/navigation'
+import { Button, Form } from '@kuba/search'
+import { Menu } from '@kuba/navigation'
 import container from '@kuba/container'
 import h from '@kuba/h'
 import Logomark from '@kuba/logomark'
@@ -12,9 +12,12 @@ function component () {
         <div className='header__leading'>
           <Logomark />
         </div>
+        <div className='header__headline'>
+          <Form className='header__form' />
+        </div>
         <div className='header__trailing'>
-          <Search className='header__search' />
-          <Navigation className='header__navigation' />
+          <Button className='header__button' />
+          <Menu className='header__menu' />
         </div>
       </container.Div>
       <container.Div className='header__container' />

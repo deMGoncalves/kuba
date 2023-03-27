@@ -35,17 +35,24 @@ export default styled`
   }
 
   .header__headline {
+    flex-grow: 1;
     justify-content: flex-start;
   }
 
   .header__trailing {
-    flex-grow: 1;
+    flex-grow: 0;
     justify-content: flex-end;
   }
 
+  @media (max-width: 767px) {
+    .header__form {
+      display: none !important;
+    }
+  }
+
   @media (min-width: 768px) {
-    .header__search,
-    .header__navigation {
+    .header__button,
+    .header__menu {
       display: none !important;
     }
   }
