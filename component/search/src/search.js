@@ -2,6 +2,7 @@ import { paint, repaint } from '@kuba/h'
 import action from './action'
 import component from './component'
 import echo from '@kuba/echo'
+import focus from './focus'
 
 @paint(component)
 @action
@@ -19,6 +20,7 @@ class Search {
   }
 
   @repaint
+  @focus
   [action.open] () {
     this.#opened = true
     return this
@@ -27,6 +29,12 @@ class Search {
   static open () {
     echo.emit('search:open')
     return Search
+  }
+
+  [focus.element] () {
+    const [container] = this[paint.rootAST]().children
+    const input = container.__node__.querySelector('.search__input')
+    return input
   }
 }
 
