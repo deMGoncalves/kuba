@@ -1244,12 +1244,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/main@workspace:.prelude/element/main":
-  version: 0.0.0-use.local
-  resolution: "@kuba/main@workspace:.prelude/element/main"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/media@workspace:.prelude/standard/media":
   version: 0.0.0-use.local
   resolution: "@kuba/media@workspace:.prelude/standard/media"
