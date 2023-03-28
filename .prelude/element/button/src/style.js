@@ -3,7 +3,7 @@ import styled from '@kuba/styled'
 export default styled`
   .button {
     align-items: center;
-    border-radius: var(--border-radius-sm);
+    border-radius: var(--border-radius-pill);
     font-family: var(--font-family-base);
     font-size: var(--font-size-xxs);
     font-weight: var(--font-weight-medium);
