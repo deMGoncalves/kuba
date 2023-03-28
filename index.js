@@ -16,6 +16,7 @@ import '@kuba/passwordreset'
 import '@kuba/setnewpassword'
 
 import '@kuba/home'
+import '@kuba/departament'
 import '@kuba/pagenotfound'
 
 import '@kuba/serviceworker'
