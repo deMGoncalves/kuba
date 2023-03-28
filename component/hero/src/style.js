@@ -5,7 +5,7 @@ export default styled`
     width: 100%;
   }
 
-  .hero__container {
+  .hero__banner {
     align-items: center;
     aspect-ratio: 3 / 4;
     background-color: var(--color-master-lightest);
@@ -14,23 +14,23 @@ export default styled`
     flex-direction: column;
     gap: var(--spacing_inset-md);
     justify-content: flex-end;
-    padding: var(--spacing_inset-md) var(--spacing_inset-xs) !important;
+    padding: var(--spacing_inset-md) 0;
   }
 
   @media (min-width: 481px) {
-    .hero__container {
+    .hero__banner {
       aspect-ratio: 5 / 4;
     }
   }
 
   @media (min-width: 769px) {
-    .hero__container {
+    .hero__banner {
       aspect-ratio: 16 / 9;
     }
   }
 
   @media (min-width: 961px) {
-    .hero__container {
+    .hero__banner {
       aspect-ratio: 21 / 9;
     }
   }

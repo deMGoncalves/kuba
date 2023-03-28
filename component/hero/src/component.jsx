@@ -7,9 +7,11 @@ import text from '@kuba/text'
 function component () {
   return (
     <section className='hero'>
-      <container.Div className='hero__container'>
-        <text.H1 className='hero__text' master dark md highlight bold>Iaculis nunc sed augue lacus viverra vitae</text.H1>
-        <Button.Secondary>Sed vulputate</Button.Secondary>
+      <container.Div>
+        <div className='hero__banner'>
+          <text.H1 className='hero__text' master dark md highlight bold>Iaculis nunc sed augue lacus viverra vitae</text.H1>
+          <Button.Secondary>Sed vulputate</Button.Secondary>
+        </div>
       </container.Div>
     </section>
   )

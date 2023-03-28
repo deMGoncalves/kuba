@@ -5,12 +5,14 @@ import Hero from '@kuba/hero'
 import Main from './main'
 import Navigation from './navigation'
 import Search from './search'
+import Title from './title'
 
 function component () {
   return (
     <>
       <Header />
       <Main>
+        <Title />
         <Hero />
       </Main>
       <Search />
