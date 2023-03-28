@@ -1134,6 +1134,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/hero@workspace:component/hero":
+  version: 0.0.0-use.local
+  resolution: "@kuba/hero@workspace:component/hero"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/hgroup@workspace:.prelude/element/hgroup":
   version: 0.0.0-use.local
   resolution: "@kuba/hgroup@workspace:.prelude/element/hgroup"
