@@ -1062,6 +1062,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/departament@workspace:site/departament":
+  version: 0.0.0-use.local
+  resolution: "@kuba/departament@workspace:site/departament"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/description@workspace:.prelude/pixel/description":
   version: 0.0.0-use.local
   resolution: "@kuba/description@workspace:.prelude/pixel/description"
