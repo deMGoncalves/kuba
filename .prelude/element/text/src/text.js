@@ -8,7 +8,7 @@ const text = new Proxy({}, {
       font-family: ${p.family};
       font-size: ${p.size};
       font-weight: ${p.weight};
-      line-height: var(--line-height-lg);
+      line-height: var(--line-height-md);
     `
   }
 })
