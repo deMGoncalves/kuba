@@ -27,11 +27,21 @@ export default styled`
     .hero__banner {
       aspect-ratio: 960 / 500;
     }
+
+    .hero__banner[half] {
+      aspect-ratio: 960 / 200;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   @media (min-width: 961px) {
     .hero__banner {
-      aspect-ratio: 1200 / 500;
+      aspect-ratio: 1200 / 450;
+    }
+
+    .hero__banner[half] {
+      aspect-ratio: 1200 / 200;
     }
   }
 `

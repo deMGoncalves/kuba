@@ -13,7 +13,7 @@ function component () {
       <Header />
       <Main>
         <Title />
-        <Hero />
+        <Hero half />
       </Main>
       <Search />
       <Navigation />
