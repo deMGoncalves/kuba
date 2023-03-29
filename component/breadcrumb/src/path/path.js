@@ -1,16 +1,14 @@
 import { paint } from '@kuba/h'
-import { urlFor } from '@kuba/router'
 import component from './component'
 
 @paint(component)
 class Path {
+  #href
   #index
-  #page
-  #params
   #title
 
   get href () {
-    return urlFor(this.#page, this.#params)
+    return (this.#href ??= '#')
   }
 
   get index () {
@@ -21,19 +19,17 @@ class Path {
     return (this.#title ??= '')
   }
 
-  constructor (index, page, params, title) {
+  constructor (title, href, index) {
+    this.#href = href
     this.#index = index
-    this.#page = page
-    this.#params = params
     this.#title = title
   }
 
   static create (data, index) {
     return new Path(
-      index,
-      data.page,
-      data.params,
-      data.title
+      data.title,
+      data.href,
+      index
     )
   }
 }
