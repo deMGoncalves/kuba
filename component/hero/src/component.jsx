@@ -9,7 +9,7 @@ function component () {
     <section className='hero'>
       <container.Div>
         <div className='hero__banner'>
-          <text.H1 className='hero__title' master dark md highlight bold>Iaculis nunc sed augue lacus viverra vitae</text.H1>
+          <text.H1 master dark md highlight bold center>Iaculis nunc sed augue lacus viverra vitae</text.H1>
           <Button.Secondary>Sed vulputate</Button.Secondary>
         </div>
       </container.Div>

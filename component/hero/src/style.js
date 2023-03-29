@@ -34,8 +34,4 @@ export default styled`
       aspect-ratio: 1200 / 500;
     }
   }
-
-  .hero__title{
-    text-align: center;
-  }
 `
