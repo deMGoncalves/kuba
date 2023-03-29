@@ -11,7 +11,7 @@ function component () {
       <Link className='navigation__link' href={urlFor('departament', { departament: 'maquiagem' })}>Maquiagem</Link>
       <Link className='navigation__link' href={urlFor('departament', { departament: 'skincare' })}>Skincare</Link>
       <Link className='navigation__link' href={urlFor('departament', { departament: 'cuidados-pessoais' })}>Cuidados Pessoais</Link>
-      <Link className='navigation__link' href={urlFor('departament', { departament: 'bem-estar-e-saude' })}>Bem-estar e Saúde</Link>
+      <Link className='navigation__link' href={urlFor('departament', { departament: 'bem-estar-e-saude' })}>Bem-Estar e Saúde</Link>
       <Link className='navigation__link' href={urlFor('departament', { departament: 'marcas' })}>Marcas</Link>
     </nav>
   )
