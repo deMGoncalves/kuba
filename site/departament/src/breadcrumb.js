@@ -1,13 +1,13 @@
 import { component, Path } from '@kuba/breadcrumb'
 import { paint } from '@kuba/h'
-import { params } from '@kuba/router'
+import { params, urlFor } from '@kuba/router'
 import Departament from './departament'
 
 @paint(component)
 class Breadcrumb {
   #paths = [
-    { title: 'Home', page: 'home' },
-    { title: Departament.title, page: 'departament', params }
+    { title: 'Home', href: urlFor('home') },
+    { title: Departament.title, href: urlFor('departament', params) }
   ]
 
   get paths () {
