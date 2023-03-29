@@ -39,7 +39,7 @@ export default styled`
   }
 
   .search__input::placeholder {
-    color: var(--color-master-light);
+    color: var(--color-master);
     font-weight: var(--font-weight-regular);
   }
 

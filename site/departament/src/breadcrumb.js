@@ -5,14 +5,13 @@ import Departament from './departament'
 
 @paint(component)
 class Breadcrumb {
-  #paths
+  #paths = [
+    { title: 'Home', page: 'home' },
+    { title: Departament.title, page: 'departament', params }
+  ]
 
   get paths () {
-    const schema = [
-      { title: 'Home', page: 'home' },
-      { title: Departament.title, page: 'departament', params }
-    ]
-    return (this.#paths ??= schema.map(Path.create))
+    return this.#paths.map(Path.create)
   }
 }
 
