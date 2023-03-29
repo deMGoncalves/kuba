@@ -9,6 +9,7 @@ const text = new Proxy({}, {
       font-size: ${p.size};
       font-weight: ${p.weight};
       line-height: var(--line-height-md);
+      text-align: ${p.align};
     `
   }
 })
