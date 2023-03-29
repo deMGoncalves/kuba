@@ -6,5 +6,5 @@ export default styled.main`
   flex-direction: column;
   gap: var(--spacing_inset-lg);
   justify-content: flex-start;
-  padding: var(--spacing_inset-xs) 0;
+  padding: var(--spacing_inset-nano) 0 var(--spacing_inset-xs) 0;
 `
