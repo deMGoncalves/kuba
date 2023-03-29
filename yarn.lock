@@ -1134,6 +1134,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/halfbanner@workspace:component/halfBanner":
+  version: 0.0.0-use.local
+  resolution: "@kuba/halfbanner@workspace:component/halfBanner"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/header@workspace:component/header":
   version: 0.0.0-use.local
   resolution: "@kuba/header@workspace:component/header"
