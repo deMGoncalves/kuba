@@ -1008,6 +1008,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/breadcrumb@workspace:component/breadcrumb":
+  version: 0.0.0-use.local
+  resolution: "@kuba/breadcrumb@workspace:component/breadcrumb"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/button@workspace:.prelude/element/button":
   version: 0.0.0-use.local
   resolution: "@kuba/button@workspace:.prelude/element/button"
