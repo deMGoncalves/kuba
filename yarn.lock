@@ -1110,6 +1110,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/footer@workspace:component/footer":
+  version: 0.0.0-use.local
+  resolution: "@kuba/footer@workspace:component/footer"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/forgotpassword@workspace:oauth/forgotPassword":
   version: 0.0.0-use.local
   resolution: "@kuba/forgotpassword@workspace:oauth/forgotPassword"
