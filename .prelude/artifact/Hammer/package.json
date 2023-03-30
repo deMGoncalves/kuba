@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "hammerjs": "^2.0.8"
+  },
+  "main": "src/index.js",
+  "name": "@kuba/hammer",
+  "private": true,
+  "version": "1.0.0"
+}

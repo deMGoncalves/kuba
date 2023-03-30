@@ -1146,6 +1146,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/hammer@workspace:.prelude/artifact/Hammer":
+  version: 0.0.0-use.local
+  resolution: "@kuba/hammer@workspace:.prelude/artifact/Hammer"
+  dependencies:
+    hammerjs: ^2.0.8
+  languageName: unknown
+  linkType: soft
+
 "@kuba/header@workspace:component/header":
   version: 0.0.0-use.local
   resolution: "@kuba/header@workspace:component/header"
@@ -5120,6 +5128,13 @@ __metadata:
   dependencies:
     duplexer: ^0.1.2
   checksum: 2df97f359696ad154fc171dcb55bc883fe6e833bca7a65e457b9358f3cb6312405ed70a8da24a77c1baac0639906cd52358dc0ce2ec1a937eaa631b934c94194
+  languageName: node
+  linkType: hard
+
+"hammerjs@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "hammerjs@npm:2.0.8"
+  checksum: b092da7d1565a165d7edb53ef0ce212837a8b11f897aa3cf81a7818b66686b0ab3f4747fbce8fc8a41d1376594639ce3a054b0fd4889ca8b5b136a29ca500e27
   languageName: node
   linkType: hard
 
