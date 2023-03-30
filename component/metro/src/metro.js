@@ -2,8 +2,8 @@ import { paint } from '@kuba/h'
 import component from './component'
 
 @paint(component)
-class Bubbles {
+class Metro {
 
 }
 
-export default Bubbles
+export default Metro

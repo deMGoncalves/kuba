@@ -1014,12 +1014,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/bubbles@workspace:component/bubbles":
-  version: 0.0.0-use.local
-  resolution: "@kuba/bubbles@workspace:component/bubbles"
-  languageName: unknown
-  linkType: soft
-
 "@kuba/button@workspace:.prelude/element/button":
   version: 0.0.0-use.local
   resolution: "@kuba/button@workspace:.prelude/element/button"
@@ -1277,6 +1271,12 @@ __metadata:
 "@kuba/media@workspace:.prelude/standard/media":
   version: 0.0.0-use.local
   resolution: "@kuba/media@workspace:.prelude/standard/media"
+  languageName: unknown
+  linkType: soft
+
+"@kuba/metro@workspace:component/metro":
+  version: 0.0.0-use.local
+  resolution: "@kuba/metro@workspace:component/metro"
   languageName: unknown
   linkType: soft
 
