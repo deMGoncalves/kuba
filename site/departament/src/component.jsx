@@ -1,6 +1,7 @@
 import './style'
 import Breadcrumb from './breadcrumb'
 import h, { Fragment } from '@kuba/h'
+import Footer from '@kuba/footer'
 import Header from '@kuba/header'
 import Hero from '@kuba/hero'
 import Main from './main'
@@ -12,11 +13,13 @@ function component () {
   return (
     <>
       <Header />
-      <Breadcrumb />
       <Main>
         <Title />
         <Hero half />
       </Main>
+      <Footer>
+        <Breadcrumb />
+      </Footer>
       <Search />
       <Navigation />
     </>
