@@ -1,4 +1,4 @@
-import './styled'
+import './style'
 import container from '@kuba/container'
 import h from '@kuba/h'
 
