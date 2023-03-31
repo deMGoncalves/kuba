@@ -1014,6 +1014,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/bubble@workspace:component/bubble":
+  version: 0.0.0-use.local
+  resolution: "@kuba/bubble@workspace:component/bubble"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/button@workspace:.prelude/element/button":
   version: 0.0.0-use.local
   resolution: "@kuba/button@workspace:.prelude/element/button"
