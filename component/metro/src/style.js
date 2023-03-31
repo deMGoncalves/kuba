@@ -13,6 +13,6 @@ export default styled`
   .metro__container {
     display: flex;
     gap: var(--spacing_inset-xs);
-    transform: translateX(0);
+    white-space: nowrap;
   }
 `
