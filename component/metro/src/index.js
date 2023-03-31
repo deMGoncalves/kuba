@@ -1,1 +1,1 @@
-export { default } from './metro'
+export { default } from './component'

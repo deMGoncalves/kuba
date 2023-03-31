@@ -4,7 +4,6 @@ export default styled`
   .metro {
     overflow: auto;
     scrollbar-width: none;
-    width: 100%;
   }
 
   .metro::-webkit-scrollbar {
@@ -14,5 +13,6 @@ export default styled`
   .metro__container {
     display: flex;
     gap: var(--spacing_inset-xs);
+    transform: translateX(0);
   }
 `
