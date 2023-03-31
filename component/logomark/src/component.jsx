@@ -5,7 +5,7 @@ import kuba from './kuba.svg'
 
 function component () {
   return (
-    <img slot='leading' className='logomark' src={kuba} alt='kuba autos' loading='auto' onClick={() => location.assign(urlFor('home'))} />
+    <img slot='leading' className='logomark' src={kuba} alt='kuba' loading='auto' onClick={() => location.assign(urlFor('home'))} />
   )
 }
 
