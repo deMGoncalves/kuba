@@ -1304,14 +1304,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kuba/nouislider@workspace:.prelude/artifact/noUiSlider":
-  version: 0.0.0-use.local
-  resolution: "@kuba/nouislider@workspace:.prelude/artifact/noUiSlider"
-  dependencies:
-    nouislider: ^15.7.0
-  languageName: unknown
-  linkType: soft
-
 "@kuba/overload@workspace:.prelude/standard/overload":
   version: 0.0.0-use.local
   resolution: "@kuba/overload@workspace:.prelude/standard/overload"
@@ -7401,13 +7393,6 @@ __metadata:
   version: 3.0.0
   resolution: "normalize-path@npm:3.0.0"
   checksum: 88eeb4da891e10b1318c4b2476b6e2ecbeb5ff97d946815ffea7794c31a89017c70d7f34b3c2ebf23ef4e9fc9fb99f7dffe36da22011b5b5c6ffa34f4873ec20
-  languageName: node
-  linkType: hard
-
-"nouislider@npm:^15.7.0":
-  version: 15.7.0
-  resolution: "nouislider@npm:15.7.0"
-  checksum: 188cc4e221cb5c6b33eadd1848e20e0b578b3a112182dbf5b9db55d7c55aa8567044a1a07e3388f4409f294259ccba17d04e79dac1aa6d32a41c54e49b65be4e
   languageName: node
   linkType: hard
 

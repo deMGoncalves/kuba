@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "nouislider": "^15.7.0"
-  },
-  "main": "src/index.js",
-  "name": "@kuba/nouislider",
-  "private": true,
-  "version": "1.0.0"
-}
