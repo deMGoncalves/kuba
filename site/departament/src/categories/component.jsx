@@ -1,5 +1,6 @@
 import './style'
 import Bubble from '@kuba/bubble'
+import Catalog from './catalog'
 import container from '@kuba/container'
 import h from '@kuba/h'
 import Metro from '@kuba/metro'
@@ -13,14 +14,9 @@ function component () {
       </container.Div>
       <container.Div>
         <Metro>
-          <Bubble className='categories__bubble'>Tortor condimentum</Bubble>
-          <Bubble className='categories__bubble'>Quam quisque</Bubble>
-          <Bubble className='categories__bubble'>Diam sit amet</Bubble>
-          <Bubble className='categories__bubble'>Nisl suscipit</Bubble>
-          <Bubble className='categories__bubble'>Non quam lacus</Bubble>
-          <Bubble className='categories__bubble'>Suspendisse faucibus</Bubble>
-          <Bubble className='categories__bubble'>Consectetur adipiscing</Bubble>
-          <Bubble className='categories__bubble'>Elit pellentesque</Bubble>
+          {Catalog.categoires.map((category) => (
+            <Bubble className='categories__bubble'>{category}</Bubble>
+          ))}
         </Metro>
       </container.Div>
     </section>
