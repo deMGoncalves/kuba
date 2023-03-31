@@ -44,14 +44,19 @@ export default styled`
     justify-content: flex-end;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 607px) {
     .header__form {
       display: none !important;
     }
   }
 
+  @media (min-width: 608px) {
+    .header__button {
+      display: none !important;
+    }
+  }
+
   @media (min-width: 793px) {
-    .header__button,
     .header__menu {
       display: none !important;
     }
