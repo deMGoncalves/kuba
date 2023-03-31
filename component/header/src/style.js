@@ -44,8 +44,14 @@ export default styled`
     justify-content: flex-end;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 688px) {
     .header__form {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 689px) {
+    .search__button {
       display: none !important;
     }
   }
