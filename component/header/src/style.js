@@ -15,7 +15,7 @@ export default styled`
     gap: var(--spacing_inset-xs);
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 792px) {
     .header__container:last-of-type {
       display: none;
     }
@@ -50,7 +50,7 @@ export default styled`
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 793px) {
     .header__button,
     .header__menu {
       display: none !important;
