@@ -1,6 +1,8 @@
 {
   "departaments": {
     "face": [],
+    "sobrancelhas": [],
+    "olhos": [],
     "labios": [
       "Primer Labial",
       "Lápis de Boca",
@@ -9,8 +11,6 @@
       "Gloss e Brilho",
       "Lip Balm"
     ],
-    "olhos": [],
-    "sobrancelhas": [],
     "kit-e-paletas": [],
     "acessorios": []
   }
