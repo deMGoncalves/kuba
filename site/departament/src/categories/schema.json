@@ -1,16 +1,17 @@
 {
   "departaments": {
-    "cabelos": [],
-    "perfumes-e-perfumaria": [
-      "Feminino",
-      "Masculino",
-      "Unissex",
-      "Infantil"
+    "face": [],
+    "labios": [
+      "Primer Labial",
+      "Lápis de Boca",
+      "Batom",
+      "Batom Líquido",
+      "Gloss e Brilho",
+      "Lip Balm"
     ],
-    "maquiagem": [],
-    "skincare": [],
-    "cuidados-pessoais": [],
-    "bem-estar-e-saude": [],
-    "marcas": []
+    "olhos": [],
+    "sobrancelhas": [],
+    "kit-e-paletas": [],
+    "acessorios": []
   }
 }
