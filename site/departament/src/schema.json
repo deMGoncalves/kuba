@@ -1,11 +1,10 @@
 {
   "departaments": {
-    "cabelos": "Cabelos",
-    "perfumes-e-perfumaria": "Perfumes e Perfumaria",
-    "maquiagem": "Maquiagem",
-    "skincare": "Skincare",
-    "cuidados-pessoais": "Cuidados Pessoais",
-    "bem-estar-e-saude": "Bem-Estar e Saúde",
-    "marcas": "Marcas"
+    "face": "Face",
+    "sobrancelhas": "Sobrancelhas",
+    "olhos": "Olhos",
+    "labios": "Lábios",
+    "kits-e-paletas": "Kit e Paletas",
+    "acessorios": "Acessórios"
   }
 }

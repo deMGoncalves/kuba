@@ -13,6 +13,7 @@ function component () {
       <Link href={urlFor('departament', { departament: 'labios' })}>Lábios</Link>
       <Link href={urlFor('departament', { departament: 'kits-e-paletas' })}>Kits e Paletas</Link>
       <Link href={urlFor('departament', { departament: 'acessorios' })}>Acessórios</Link>
+      <Link href={urlFor('home')}>Marcas</Link>
     </nav>
   )
 }
