@@ -6,7 +6,7 @@ import Link from '@kuba/link'
 function component () {
   return (
     <nav className='navigation__nav'>
-      <Link className="navigation__link" href={urlFor('home')}>Home</Link>
+      <Link className='navigation__link' href={urlFor('home')}>Home</Link>
       <Link className='navigation__link' href={urlFor('departament', { departament: 'face' })}>Face</Link>
       <Link className='navigation__link' href={urlFor('departament', { departament: 'sobrancelhas' })}>Sobrancelhas</Link>
       <Link className='navigation__link' href={urlFor('departament', { departament: 'olhos' })}>Olhos</Link>
