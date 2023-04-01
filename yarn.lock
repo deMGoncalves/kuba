@@ -1014,6 +1014,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/bubble@workspace:component/bubble":
+  version: 0.0.0-use.local
+  resolution: "@kuba/bubble@workspace:component/bubble"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/button@workspace:.prelude/element/button":
   version: 0.0.0-use.local
   resolution: "@kuba/button@workspace:.prelude/element/button"
@@ -1143,14 +1149,6 @@ __metadata:
 "@kuba/h@workspace:.prelude/standard/h":
   version: 0.0.0-use.local
   resolution: "@kuba/h@workspace:.prelude/standard/h"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/hammer@workspace:.prelude/artifact/Hammer":
-  version: 0.0.0-use.local
-  resolution: "@kuba/hammer@workspace:.prelude/artifact/Hammer"
-  dependencies:
-    hammerjs: ^2.0.8
   languageName: unknown
   linkType: soft
 
@@ -1309,14 +1307,6 @@ __metadata:
 "@kuba/newpassword@workspace:component/newPassword":
   version: 0.0.0-use.local
   resolution: "@kuba/newpassword@workspace:component/newPassword"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/nouislider@workspace:.prelude/artifact/noUiSlider":
-  version: 0.0.0-use.local
-  resolution: "@kuba/nouislider@workspace:.prelude/artifact/noUiSlider"
-  dependencies:
-    nouislider: ^15.7.0
   languageName: unknown
   linkType: soft
 
@@ -5131,13 +5121,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hammerjs@npm:^2.0.8":
-  version: 2.0.8
-  resolution: "hammerjs@npm:2.0.8"
-  checksum: b092da7d1565a165d7edb53ef0ce212837a8b11f897aa3cf81a7818b66686b0ab3f4747fbce8fc8a41d1376594639ce3a054b0fd4889ca8b5b136a29ca500e27
-  languageName: node
-  linkType: hard
-
 "handle-thing@npm:^2.0.0":
   version: 2.0.1
   resolution: "handle-thing@npm:2.0.1"
@@ -7416,13 +7399,6 @@ __metadata:
   version: 3.0.0
   resolution: "normalize-path@npm:3.0.0"
   checksum: 88eeb4da891e10b1318c4b2476b6e2ecbeb5ff97d946815ffea7794c31a89017c70d7f34b3c2ebf23ef4e9fc9fb99f7dffe36da22011b5b5c6ffa34f4873ec20
-  languageName: node
-  linkType: hard
-
-"nouislider@npm:^15.7.0":
-  version: 15.7.0
-  resolution: "nouislider@npm:15.7.0"
-  checksum: 188cc4e221cb5c6b33eadd1848e20e0b578b3a112182dbf5b9db55d7c55aa8567044a1a07e3388f4409f294259ccba17d04e79dac1aa6d32a41c54e49b65be4e
   languageName: node
   linkType: hard
 

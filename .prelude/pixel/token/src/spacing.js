@@ -21,5 +21,7 @@ export default styled`
     --spacing_inset-sm: 24px;
     --spacing_inset-md: 32px;
     --spacing_inset-lg: 40px;
+    --spacing_inset-huge: 48px;
+    --spacing_inset-giant: 56px;
   }
 `
