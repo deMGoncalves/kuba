@@ -13,6 +13,7 @@ function component () {
       <Link className='navigation__link' href={urlFor('departament', { departament: 'labios' })}>Lábios</Link>
       <Link className='navigation__link' href={urlFor('departament', { departament: 'kits-e-paletas' })}>Kits e Paletas</Link>
       <Link className='navigation__link' href={urlFor('departament', { departament: 'acessorios' })}>Acessórios</Link>
+      <Link className="navigation__link" href={urlFor('home')}>Marcas</Link>
     </nav>
   )
 }
