@@ -139,6 +139,7 @@ Confira nossos artigos abaixo:
 -  [Uma nova visão sobre modularidade e componentes javascript](https://dev.to/demgoncalves/components-469o)
 -  [Adeus, useState! Descubra como @paint & @repaint estão mudando a forma de desenvolver Componentes](https://dev.to/demgoncalves/adeus-usestate-descubra-como-paint-repaint-estao-mudando-a-forma-de-desenvolver-componentes-1ceh)
 -  [Desacoplando o ciclo de vida: simplifique a gestão de componentes com @advices](https://dev.to/demgoncalves/desacoplando-o-ciclo-de-vida-simplifique-a-gestao-de-componentes-com-advices-4ii4)
+-  [Desenvolvendo um input de <Telephone />: um exemplo de design de software eficiente](https://dev.to/demgoncalves/desenvolvendo-um-input-de-um-exemplo-de-design-de-software-eficiente-ed6)
 
 Esperamos que esses artigos ajudem você a aproveitar ao máximo o Kuba e criar aplicativos web incríveis e escaláveis!
 
