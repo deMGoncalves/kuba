@@ -15,7 +15,7 @@ export default styled`
     gap: var(--spacing_inset-xs);
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 792px) {
     .header__container:last-of-type {
       display: none;
     }
@@ -44,14 +44,19 @@ export default styled`
     justify-content: flex-end;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 607px) {
     .header__form {
       display: none !important;
     }
   }
 
-  @media (min-width: 768px) {
-    .header__button,
+  @media (min-width: 607px) {
+    .header__button {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 793px) {
     .header__menu {
       display: none !important;
     }

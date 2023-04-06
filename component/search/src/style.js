@@ -43,7 +43,7 @@ export default styled`
     font-weight: var(--font-weight-regular);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 607px) {
     .search__input {
       padding: 0 56px 0 var(--spacing_inset-xs);
     }
@@ -55,7 +55,7 @@ export default styled`
     top: 8;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 607px) {
     .search__icon {
       left: auto;
       right: 16px;

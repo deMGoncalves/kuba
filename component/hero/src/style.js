@@ -31,7 +31,6 @@ export default styled`
     .hero__banner[half] {
       aspect-ratio: 960 / 200;
       flex-direction: row;
-      justify-content: space-between;
     }
   }
 

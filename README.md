@@ -139,6 +139,8 @@ Confira nossos artigos abaixo:
 -  [Uma nova visão sobre modularidade e componentes javascript](https://dev.to/demgoncalves/components-469o)
 -  [Adeus, useState! Descubra como @paint & @repaint estão mudando a forma de desenvolver Componentes](https://dev.to/demgoncalves/adeus-usestate-descubra-como-paint-repaint-estao-mudando-a-forma-de-desenvolver-componentes-1ceh)
 -  [Desacoplando o ciclo de vida: simplifique a gestão de componentes com @advices](https://dev.to/demgoncalves/desacoplando-o-ciclo-de-vida-simplifique-a-gestao-de-componentes-com-advices-4ii4)
+-  [Desenvolvendo um input de Telephone: um exemplo de design de software eficiente](https://dev.to/demgoncalves/desenvolvendo-um-input-de-um-exemplo-de-design-de-software-eficiente-ed6)
+-  [Gerenciando estados globais de forma eficiente](https://dev.to/demgoncalves/gerenciando-estados-globais-de-forma-eficiente-3bkb)
 
 Esperamos que esses artigos ajudem você a aproveitar ao máximo o Kuba e criar aplicativos web incríveis e escaláveis!
 
@@ -147,6 +149,7 @@ Esperamos que esses artigos ajudem você a aproveitar ao máximo o Kuba e criar 
 Este bloco tem como objetivo apresentar uma visão além da programação, onde serão abordados diversos assuntos relacionados a carreira, desenvolvimento pessoal e profissional. Sabemos que, para além de habilidades técnicas, também é importante se desenvolver em outras áreas para se tornar um profissional completo e bem-sucedido. Por isso, preparamos uma lista de posts que abordam temas diversos como liderança, inteligência emocional, comunicação e muito mais. Acreditamos que a leitura destes materiais pode ser muito enriquecedora para todos os membros da equipe Kuba. Aproveite e boa leitura!
 
 -  [Apenas uma parte da programação é codificação. Os outros 90% é entendimento do código](https://dev.to/demgoncalves/apenas-uma-parte-da-programacao-e-codificacao-os-outros-90-e-entendimento-do-codigo-3j8n)
+-  [Simplicidade vs Padrões de Programação: Como encontrar um equilíbrio saudável](https://dev.to/demgoncalves/simplicidade-vs-padroes-de-programacao-como-encontrar-um-equilibrio-saudavel-2bk2)
 
 ## Contribuindo
 
