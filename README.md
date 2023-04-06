@@ -140,6 +140,7 @@ Confira nossos artigos abaixo:
 -  [Adeus, useState! Descubra como @paint & @repaint estão mudando a forma de desenvolver Componentes](https://dev.to/demgoncalves/adeus-usestate-descubra-como-paint-repaint-estao-mudando-a-forma-de-desenvolver-componentes-1ceh)
 -  [Desacoplando o ciclo de vida: simplifique a gestão de componentes com @advices](https://dev.to/demgoncalves/desacoplando-o-ciclo-de-vida-simplifique-a-gestao-de-componentes-com-advices-4ii4)
 -  [Desenvolvendo um input de Telephone: um exemplo de design de software eficiente](https://dev.to/demgoncalves/desenvolvendo-um-input-de-um-exemplo-de-design-de-software-eficiente-ed6)
+-  [Gerenciando estados globais de forma eficiente](https://dev.to/demgoncalves/gerenciando-estados-globais-de-forma-eficiente-3bkb)
 
 Esperamos que esses artigos ajudem você a aproveitar ao máximo o Kuba e criar aplicativos web incríveis e escaláveis!
 
