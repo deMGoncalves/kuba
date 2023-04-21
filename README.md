@@ -152,6 +152,7 @@ Este bloco tem como objetivo apresentar uma visão além da programação, onde 
 -  [K-Tech Assessment: como avaliar o conhecimento tecnológico da sua equipe e guiar investimentos estratégicos](https://www.linkedin.com/posts/demgoncalves_k-tech-assessment-como-avaliar-o-conhecimento-activity-7052626818129960960-2dBh)
 -  [Apenas uma parte da programação é codificação. Os outros 90% é entendimento do código](https://dev.to/demgoncalves/apenas-uma-parte-da-programacao-e-codificacao-os-outros-90-e-entendimento-do-codigo-3j8n)
 -  [Simplicidade vs Padrões de Programação: Como encontrar um equilíbrio saudável](https://dev.to/demgoncalves/simplicidade-vs-padroes-de-programacao-como-encontrar-um-equilibrio-saudavel-2bk2)
+-  [Evitando o desperdício de tempo: A importância de se concentrar em uma atividade por vez](https://dev.to/demgoncalves/evitando-o-desperdicio-de-tempo-a-importancia-de-se-concentrar-em-uma-atividade-por-vez-1dnh)
 
 ## Contribuindo
 
