@@ -8,7 +8,7 @@
 
 kuba é um projeto que foi criada com a finalidade de simplificar a forma como desenvolvemos aplicações web. Como desenvolvedores, muitas vezes nos deparamos com problemas complexos que parecem não ter solução simples. Mas será que é realmente necessário complicar tanto as coisas?
 
-O objetivo do kuba é mostrar que é possível desenvolver aplicações web de forma mais simples, sem comprometer a qualidade e a eficiência do código. Para isso, a biblioteca utiliza conceitos modernos da linguagem JavaScript, como o uso de decorators para gerenciar o ciclo de vida dos componentes.
+O objetivo do kuba é mostrar que é possível desenvolver aplicações web de forma mais simples, sem comprometer a qualidade e a eficiência do código. Para isso, o projeto utiliza conceitos modernos da linguagem JavaScript, como o uso de decorators para gerenciar o ciclo de vida dos componentes.
 
 Além disso, o kuba foi criado com uma filosofia que valoriza a simplicidade e a facilidade de uso. Acreditamos que um código limpo e organizado é fundamental para a manutenção e evolução de um projeto de software.
 
