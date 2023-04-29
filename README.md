@@ -149,6 +149,7 @@ Este bloco tem como objetivo apresentar uma visão além da programação, onde 
 -  [Apenas uma parte da programação é codificação. Os outros 90% é entendimento do código](https://dev.to/demgoncalves/apenas-uma-parte-da-programacao-e-codificacao-os-outros-90-e-entendimento-do-codigo-3j8n)
 -  [Simplicidade vs Padrões de Programação: Como encontrar um equilíbrio saudável](https://dev.to/demgoncalves/simplicidade-vs-padroes-de-programacao-como-encontrar-um-equilibrio-saudavel-2bk2)
 -  [Evitando o desperdício de tempo: A importância de se concentrar em uma atividade por vez](https://dev.to/demgoncalves/evitando-o-desperdicio-de-tempo-a-importancia-de-se-concentrar-em-uma-atividade-por-vez-1dnh)
+- [A Importância de Dizer Não: Quando a Ética de um Desenvolvedor é Prejudicada](https://dev.to/demgoncalves/a-importancia-de-dizer-nao-quando-a-etica-de-um-desenvolvedor-e-prejudicada-54l)
 
 ## Contribuindo
 
