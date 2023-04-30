@@ -1,3 +1,5 @@
+require('dotenv').config({ override: true })
+
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
