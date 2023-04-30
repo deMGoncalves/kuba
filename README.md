@@ -174,7 +174,7 @@ git add .
 
 5.  Faça um commit com suas alterações:
 ```bash
-git commit -m "Minha feature: descrição breve"
+git commit -m "chore(minha-feature): Minha feature: descrição breve"
 ```
 
 6.  Faça um push da sua branch para o GitHub:
