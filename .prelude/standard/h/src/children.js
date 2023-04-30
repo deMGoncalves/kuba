@@ -1,3 +1,4 @@
+import Instance from './instance'
 import magic from '@kuba/magic'
 import reflow from './reflow'
 import render from './render'
@@ -52,8 +53,9 @@ class Children {
   }
 
   static create (childList, parent) {
-    childList = Text.mapper(childList)
     childList = childList.filter(Boolean)
+    childList = Text.mapper(childList)
+    childList = Instance.mapper(childList)
     return new Children(childList, parent)
   }
 }

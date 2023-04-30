@@ -6,7 +6,6 @@ import didUpdate from './didUpdate'
 import didUnmount from './didUnmount'
 import Events from './events'
 import Is from './is'
-import Key from './key'
 import paint from './paint'
 import reflow from './reflow'
 import render from './render'
@@ -24,7 +23,6 @@ class Element {
   #className
   #events
   #is
-  #key
   #node
   #nodeName
   #slot
@@ -49,10 +47,6 @@ class Element {
     return this.#is.value
   }
 
-  get key () {
-    return this.#key.value
-  }
-
   get nodeName () {
     return this.#nodeName
   }
@@ -72,7 +66,6 @@ class Element {
     this.#className = ClassName.create(attrs, this)
     this.#events = Events.create(attrs, this)
     this.#is = Is.create(attrs)
-    this.#key = Key.create(attrs)
     this.#slot = Slot.create(attrs)
   }
 
@@ -129,10 +122,9 @@ class Element {
 
   [reflow.different] (nElement) {
     return (
-      this[paint.instance]?.() !== nElement[paint.instance]?.() ||
-      this.nodeName !== nElement.nodeName ||
-      this.is !== nElement.is ||
-      this.key !== nElement.key
+      (this[paint.instance]?.() !== nElement[paint.instance]?.()) ||
+      (this.nodeName !== nElement.nodeName) ||
+      (this.is !== nElement.is)
     )
   }
 

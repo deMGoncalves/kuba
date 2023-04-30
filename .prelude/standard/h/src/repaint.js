@@ -5,7 +5,7 @@ function repaint (_target, _prop, descriptor) {
 
   Object.assign(descriptor, {
     value () {
-      setImmediate(() => this[repaint.reflow]())
+      requestAnimationFrame(() => this[repaint.reflow]())
       return Reflect.apply(next, this, arguments)
     }
   })
