@@ -2,8 +2,8 @@ import styled from '@kuba/styled'
 
 export default styled`
   .categories {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     gap: var(--spacing_inset-xs);
     width: 100%;
   }
