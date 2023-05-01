@@ -14,7 +14,7 @@ Além disso, o kuba foi criado com uma filosofia que valoriza a simplicidade e a
 
 Em resumo, o kuba é um projeto JavaScript que busca simplificar a forma como desenvolvemos aplicações web, valorizando a simplicidade, a eficiência e a colaboração entre desenvolvedores.
 
-## Índice de Conteúdos
+## Estrutura do projeto
 
 -  [.prelude]()
     -  [artifact]()
