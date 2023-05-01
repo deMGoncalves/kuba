@@ -12,9 +12,6 @@ module.exports = {
   plugins: [
     'stylelint-order'
   ],
-  processors: [
-    'stylelint-processor-styled-components'
-  ],
   rules: {
     'custom-property-pattern': /[\w-_]+/,
     'no-empty-source': null,
