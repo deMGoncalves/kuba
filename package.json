@@ -20,6 +20,7 @@
     "inline-chunk-html-plugin": "^1.1.1",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
+    "lint-staged": "^13.2.2",
     "postcss": "^8.4.19",
     "postcss-styled": "^0.34.0",
     "postcss-syntax": "^0.36.2",
@@ -34,8 +35,7 @@
     "webpack": "^5.76.0",
     "webpack-bundle-analyzer": "^4.7.0",
     "webpack-cli": "^5.0.0",
-    "webpack-dev-server": "^4.11.1",
-    "yarn-run-all": "^3.1.1"
+    "webpack-dev-server": "^4.11.1"
   },
   "main": "src/index.js",
   "name": "kuba",
@@ -43,8 +43,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode production",
-    "lint:es": "eslint './**/*.{js,jsx}'",
-    "lint:style": "stylelint './**/*.{js,jsx}'",
+    "lint-staged": "lint-staged",
     "postinstall": "husky install",
     "start": "webpack server --mode development --open",
     "test": "jest --passWithNoTests"
