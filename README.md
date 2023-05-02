@@ -159,6 +159,12 @@ Este bloco tem como objetivo apresentar uma visão além da programação, onde 
 -  [Evitando o desperdício de tempo: A importância de se concentrar em uma atividade por vez](https://dev.to/demgoncalves/evitando-o-desperdicio-de-tempo-a-importancia-de-se-concentrar-em-uma-atividade-por-vez-1dnh)
 - [A Importância de Dizer Não: Quando a Ética de um Desenvolvedor é Prejudicada](https://dev.to/demgoncalves/a-importancia-de-dizer-nao-quando-a-etica-de-um-desenvolvedor-e-prejudicada-54l)
 
+## Kuba e Kanban: uma parceria perfeita para aprimorar sua metodologia de desenvolvimento
+
+Se você está interessado em saber como a metodologia Kanban pode ser utilizada em conjunto com a arquitetura do Kuba para obter ainda mais eficiência em seus projetos de desenvolvimento de software, este é o lugar certo. Aqui, você encontrará uma série de posts que abordarão desde os conceitos básicos do Kanban até exemplos práticos de como aplicá-lo em seu workflow de desenvolvimento com o Kuba. O Kanban é uma metodologia ágil que se baseia em visualização e limitação do trabalho em andamento, o que a torna ideal para trabalhar em conjunto com a arquitetura do Kuba, que também valoriza a simplicidade e a eficiência. Então, fique atento aos nossos posts e aprenda a utilizar essas duas ferramentas em conjunto para levar o seu desenvolvimento de software para o próximo nível.
+
+- [Kanban Design System: a chave para uma equipe eficaz - A história por trás do prêmio ELITE LATAM H1 2001 do Grupo ASCENTIAL](https://dev.to/demgoncalves/kanban-design-system-a-chave-para-uma-equipe-eficaz-a-historia-por-tras-do-premio-elite-latam-h1-2001-do-grupo-ascential-3efg)
+
 ## Contribuindo
 
 Se você deseja contribuir com o projeto Kuba, siga os passos abaixo:
