@@ -7,7 +7,7 @@ export default new Proxy(localStorage, {
 
   set (target, key, value) {
     target.setItem(key, JSON.stringify(value))
-    echo.emit('local:key', value)
+    echo.emit(`local:${key}`, value)
     return true
   }
 })
