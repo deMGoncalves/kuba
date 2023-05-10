@@ -8,6 +8,7 @@ function reflow (parent, nParent) {
     .forEach(([item, nItem]) => {
       if (!item && nItem) return parent[reflow.add](nItem)
       if (item && !nItem) return parent[reflow.remove](item)
+      if (item[reflow.same]?.(nItem)) return
       if (item[reflow.different](nItem)) return parent[reflow.replace](item, nItem)
       item[repaint.reflow]?.(nItem)
     })
@@ -17,7 +18,8 @@ Object.assign(reflow, {
   add: magic.reflow_add,
   different: magic.reflow_different,
   remove: magic.reflow_remove,
-  replace: magic.reflow_replace
+  replace: magic.reflow_replace,
+  same: magic.reflow_same
 })
 
 export default reflow

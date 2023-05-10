@@ -1,5 +1,4 @@
 import magic from '@kuba/magic'
-import reflow from './reflow'
 import render from './render'
 import repaint from './repaint'
 
@@ -16,7 +15,6 @@ function paint (component) {
         Object.assign(instance, {
           [paint.rootAST]: () => rootAST,
           [paint.rootElement]: () => rootAST.__node__,
-          [reflow.different]: (nInstance) => rootAST[reflow.different](nInstance[paint.rootAST]()),
           [render.flow]: () => rootAST[render.flow](),
           [repaint.reflow]: () => rootAST[repaint.reflow](component(instance, children))
         })
