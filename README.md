@@ -81,22 +81,24 @@ Aqui estão as variáveis de ambiente utilizadas pelo Kuba:
 
 | Variável              | Descrição                                                              |
 | --------------------- | ---------------------------------------------------------------------- |
-| PUBLIC_PATH           | Define o caminho público para os arquivos da aplicação.                |
+| COOKIE_DOMAIN         | Define o dominio em que os valores do cookie podem ser acessados       |
+| ANALYZER_MODE         | Define o modo de análise para o pacote webpack-bundle-analyzer.        |
 | HINTS                 | Define o nível de detalhe dos avisos exibidos durante a compilação.    |
 | MAX_ASSET_SIZE        | Define o tamanho máximo (em bytes) permitido para um arquivo estático. |
 | MAX_ENTRYPOINT_SIZE   | Define o tamanho máximo (em bytes) permitido para um ponto de entrada. |
-| ANALYZER_MODE         | Define o modo de análise para o pacote webpack-bundle-analyzer.        |
 | PORT                  | Define a porta em que o servidor da aplicação será executado.          |
+| PUBLIC_PATH           | Define o caminho público para os arquivos da aplicação.                |
 
 Para definir essas variáveis, basta usar o comando export no terminal, seguido do nome da variável e seu valor:
 
 ```bash
-export PUBLIC_PATH=/
-export HINTS=warning
-export MAX_ASSET_SIZE=2000000
-export MAX_ENTRYPOINT_SIZE=2000000
-export ANALYZER_MODE=
-export PORT=3000
+ANALYZER_MODE=
+COOKIE_DOMAIN=localhost
+HINTS=warning
+MAX_ASSET_SIZE=2000000
+MAX_ENTRYPOINT_SIZE=2000000
+PORT=3000
+PUBLIC_PATH=/
 ```
 
 Alternativamente, você pode definir as variáveis em um arquivo .env na raiz do projeto, usando o formato NOME=VALOR. Lembre-se de adicionar o arquivo .env no seu .gitignore para que as informações confidenciais não sejam versionadas.
