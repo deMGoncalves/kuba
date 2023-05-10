@@ -1244,6 +1244,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/local@workspace:.prelude/standard/local":
+  version: 0.0.0-use.local
+  resolution: "@kuba/local@workspace:.prelude/standard/local"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/login@workspace:oauth/logIn":
   version: 0.0.0-use.local
   resolution: "@kuba/login@workspace:oauth/logIn"
