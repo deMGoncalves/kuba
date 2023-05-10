@@ -1,4 +1,4 @@
-import domain from './domain'
+import echo from '@kuba/echo'
 
 const cookie = new Proxy({}, {
   get (_target, key) {
@@ -6,7 +6,8 @@ const cookie = new Proxy({}, {
   },
 
   set (_target, key, value) {
-    document.cookie = `${key}=${value};domain=${domain};expires=;path=/`
+    document.cookie = `${key}=${value};domain=${process.env.COOKIE_DOMAIN};expires=;path=/`
+    echo.emit(`cookie:${key}`, value)
     return true
   }
 })
