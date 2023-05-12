@@ -1,7 +1,7 @@
-import env from '@kuba/env'
+import ambient from '@kuba/ambient'
 
 window.addEventListener('load', function () {
-  env.production && (
+  ambient.production && (
     navigator
       .serviceWorker
       .register(new URL('./sw', import.meta.url /* webpackChunkName: "sw" */))
