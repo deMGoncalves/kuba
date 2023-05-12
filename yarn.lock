@@ -1002,6 +1002,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kuba/ambient@workspace:.prelude/standard/ambient":
+  version: 0.0.0-use.local
+  resolution: "@kuba/ambient@workspace:.prelude/standard/ambient"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/backtologin@workspace:component/backToLogIn":
   version: 0.0.0-use.local
   resolution: "@kuba/backtologin@workspace:component/backToLogIn"
@@ -1095,12 +1101,6 @@ __metadata:
 "@kuba/email@workspace:component/email":
   version: 0.0.0-use.local
   resolution: "@kuba/email@workspace:component/email"
-  languageName: unknown
-  linkType: soft
-
-"@kuba/env@workspace:.prelude/standard/env":
-  version: 0.0.0-use.local
-  resolution: "@kuba/env@workspace:.prelude/standard/env"
   languageName: unknown
   linkType: soft
 

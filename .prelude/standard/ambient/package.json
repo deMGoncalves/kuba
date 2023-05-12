@@ -1,6 +1,6 @@
 {
   "main": "src/index.js",
-  "name": "@kuba/env",
+  "name": "@kuba/ambient",
   "private": true,
   "version": "1.0.0"
 }
