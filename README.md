@@ -16,6 +16,7 @@ Em resumo, o kuba é um projeto JavaScript que busca simplificar a forma como de
 
 ## Estrutura do projeto
 
+-  [.assets]()
 -  [.prelude]()
     -  [artifact]()
     -  [directive]()
