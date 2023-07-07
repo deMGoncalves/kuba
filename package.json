@@ -26,7 +26,7 @@
     "postcss-styled": "^0.34.0",
     "postcss-syntax": "^0.36.2",
     "style-loader": "^3.3.1",
-    "stylelint": "^14.15.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-processor-styled-components": "^1.10.0",
